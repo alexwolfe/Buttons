@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Alexander Wolfe -- Author -- @alexwolfe
+
+# THANKS
+
+    Google Prettify for making my code snippets look nicer!
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Sass, Compass,
+    jQuery, Modernizr
