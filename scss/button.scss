@@ -1,49 +1,20 @@
 @import 'compass';
-.clear {clear: both;}
+@import 'options';
+@import 'glow';
 
 
-
-//////////////////////////////////////////////////////////
-// BASE DEFAULTS /////////////////////////////////////////
-//////////////////////////////////////////////////////////
-$namespace: '.button'; //prefix for all classes
-$bgcolor: #EEE;
-$font-color: #666;
-$font-size: 14px;
-$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
-
-
-//////////////////////////////////////////////////////////
-// BUTTON OPTIONS ////////////////////////////////////////
-//////////////////////////////////////////////////////////
-
-// types of buttons to create
-$button_styles: 'rounded' 'pill' 'circle';
-
-// button names and associate colors, add as many as you like. (button-name background-color font-color)
-$button_actions: ('primary' #2c9adb #FFF) ('action' #7db500 #FFF) ('highlight' #f19900 #FFF) ('caution' #ed1c24 #FFF) ('royal' #771ead #FFF);
-
-// types of button sizes
-$button_sizes: 'large' 'small' 'tiny';
-
-//radius for circle buttons, circles only have one size
-$circle-size: 120px;
-
+// EDIT STYLES AND OPTIONS IN _options.scss
 
 
 //////////////////////////////////////////////////////////
 // BUTTON BASE STYLES ////////////////////////////////////
 //////////////////////////////////////////////////////////
-
-// BUTTON BASE
 #{$namespace} {
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
-    @include box-sizing(boder-box);
-    @include background(linear-gradient(top,  lighten($bgcolor, 7%), darken($bgcolor, 10%)));
+    @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
     text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
     display: inline-block;
-    border: 1px solid darken($bgcolor, 20%);
+    border: 1px solid darken($bgcolor, 10%);
     height: 28px;
     line-height: 28px;
     padding: 0px 20px;
@@ -56,25 +27,13 @@ $circle-size: 120px;
     color: #666;
 
     &:hover {
-        @include background(linear-gradient(top,  lighten($bgcolor, 15%), darken($bgcolor, 5%)));
+        @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 7%)));
     }
     &:active {
         @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
         text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
         background: desaturate($bgcolor, 20%);
         color: darken($bgcolor, 20%);
-    }
-
-    &.glow {
-        @include transition(box-shadow 1.5s ease-in-out);
-        @include box-shadow(0px 0px 0px rgba(#2c9adb, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));
-    }
-    &.glow-on {
-        @include box-shadow(0px 0px 16px rgba(#2c9adb, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));
-    }
-
-    &.glow:active, &.glow-on:active {
-        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
     }
 }
 
@@ -84,7 +43,7 @@ input#{$namespace}, button#{$namespace} {
     cursor: pointer;
 }
 
-//DISABLED BUTTONS
+// DISABLED  STYLES
 #{$namespace}.disabled,
 #{$namespace}.disabled:hover,
 #{$namespace}.disabled:active,
@@ -98,7 +57,7 @@ button#{$namespace}:disabled {
     cursor: default;
 }
 
-//WRAPPER EFFECT
+// WRAPPER EFFECT
 #{$namespace}-wrap {
     @include background(linear-gradient(top,  #e3e3e3, #f2f2f2));
     @include border-radius(200px);
@@ -107,7 +66,7 @@ button#{$namespace}:disabled {
     display: inline-block;
 }
 
-//BLOCK EFFECT
+// BLOCK EFFECT
 #{$namespace}-block {
     display: block;
 }
@@ -117,7 +76,6 @@ button#{$namespace}:disabled {
 //////////////////////////////////////////////////////////
 // SHAPES ////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
-
 @each $style in $button_styles {
 
     // .button-rounded .button-pill button-circle
@@ -149,7 +107,6 @@ button#{$namespace}:disabled {
 //////////////////////////////////////////////////////////
 // GRAIDENT STYLES ///////////////////////////////////////
 //////////////////////////////////////////////////////////
-
 @each $action in $button_actions {
     //GET NAME & COLOR
     $name: nth($action, 1);
@@ -158,13 +115,13 @@ button#{$namespace}:disabled {
 
     // .button-primary .button-action etc.
     #{$namespace}-#{$name} {
-        @include background(linear-gradient(top,  lighten($bgcolor, 7%), darken($bgcolor, 10%)));
-        border-color: darken($bgcolor, 20%);
+        @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
+        border-color: darken($bgcolor, 10%);
         color: $font-color;
-        text-shadow: 0 -1px 1px rgba(darken($bgcolor, 50%), 0.35);
+        text-shadow: 0 -1px 1px rgba(darken($bgcolor, 30%), 0.35);
 
         &:hover {
-            @include background(linear-gradient(top,  lighten($bgcolor, 12%), darken($bgcolor, 7%)));
+            @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 5%)));
         }
         &:active {
             background: desaturate($bgcolor, 20%);
@@ -172,9 +129,6 @@ button#{$namespace}:disabled {
         }
         &.glow {
             @include box-shadow(0px 0px 0px rgba($bgcolor, 0.3), 0px 1px 3px rgba(0, 0, 0, .30));
-        }
-        &.glow-on {
-            @include box-shadow(0px 0px 16px rgba($bgcolor, 0.9), 0px 1px 3px rgba(0, 0, 0, .30));
         }
     }
 }
@@ -188,7 +142,10 @@ button#{$namespace}:disabled {
 // FLAT BUTTON BASE
 #{$namespace}-flat {
     $bgcolor: #EEE;
+    @include transition-property(background, color);
+    @include transition-duration(.3s);
     @include box-shadow(none);
+
     background: darken($bgcolor, 2%);
     border: none;
     text-shadow: none;
@@ -213,6 +170,8 @@ button#{$namespace}:disabled {
 
     // .button-flat-primary .button-flat-action etc.
     #{$namespace}-flat-#{$name} {
+        @include transition-property(background, color);
+        @include transition-duration(.3s);
         @include box-shadow(none);
         background: $bgcolor;
         border: none;
@@ -221,10 +180,11 @@ button#{$namespace}:disabled {
 
         &:hover {
             @include background(lighten($bgcolor, 5%));
+
         }
         &:active {
             background: desaturate($bgcolor, 20%);
-            color: darken($bgcolor, 20%);
+            color: darken($bgcolor, 15%);
         }
         &.disabled {
             @include box-shadow(none);
@@ -280,3 +240,18 @@ button#{$namespace}:disabled {
         }
     }
 }
+
+
+//////////////////////////////////////////////////////////
+// GLOWING BUTTON STYLES /////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$namespace} {
+    &.#{$glow_namespace} {
+        @include glow;
+    }
+    &.#{$glow_namespace}:active {
+        @include no_animation;
+        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
+    }
+}
+

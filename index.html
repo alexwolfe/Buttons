@@ -3,32 +3,31 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>BUTTON - A css button library built with Sass and Compass</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/button.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A CSS button library built with Sass and Compass">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
 
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-    <nav>
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+
+    <title>BUTTON - A CSS button library built with Sass and Compass</title>
+</head>
+<body id="home">
+
+    <nav id="main-nav">
         <ul class="clearfix">
-            <li class="home"><a href="#">B</a></li>
-            <li class="selected"><a href="#round">Round </a></li>
-            <li><a href="#pill">Pill </a></li>
-            <li><a href="#brick">Flat </a></li>
-            <li><a href="#flat">Square </a></li>
+            <li class="home"><a href="#home">B</a></li>
+            <li class="selected"><a href="#rounded">Rounded</a></li>
+            <li><a href="#pill">Pill</a></li>
+            <li><a href="#flat">Flat</a></li>
+            <li><a href="#square">Square</a></li>
             <li><a href="#circle">Circle</a></li>
             <li><a href="#glow">Glow</a></li>
         </ul>
@@ -38,11 +37,11 @@
 
     <header class="clear">
         <hgroup>
-          <h1>Button</h1>
-          <h2>A css button library built with Sass &amp; Compass</h2>
+          <h1>Buttons</h1>
+          <h2>A CSS button library built with Sass &amp; Compass</h2>
         </hgroup>
 
-        <span class="button-wrap button-download"><a class="button button-circle button-secondary glow" href="#">Download</a></span>
+        <span class="button-wrap button-download"><a class="button button-circle button-secondary glow" href="https://github.com/alexwolfe/Buttons/archive/master.zip">Download</a></span>
     </header>
 
 
@@ -52,7 +51,7 @@
         <!-- SQUARE BUTTONS **************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#square" class="showcase">
+        <section id="square" class="showcase">
             <hgroup>
                 <h3>Square Buttons</h3>
             </hgroup>
@@ -84,7 +83,7 @@
         <!-- ROUNDED BUTTONS *************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#rounded" class="showcase">
+        <section id="rounded" class="showcase">
             <hgroup>
                 <h3>Rounded Buttons</h3>
             </hgroup>
@@ -116,7 +115,7 @@
         <!-- PILL BUTTONS *************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#pill" class="showcase">
+        <section id="pill" class="showcase">
             <hgroup>
                 <h3>Pill Buttons</h3>
             </hgroup>
@@ -148,7 +147,7 @@
         <!-- CIRCLE BUTTONS *************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#circle" class="showcase">
+        <section id="circle" class="showcase">
             <hgroup>
                 <h3>Circle Buttons</h3>
             </hgroup>
@@ -178,7 +177,7 @@
         <!-- FLAT BUTTONS ***************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#flat" class="showcase">
+        <section id="flat" class="showcase">
             <hgroup>
                 <h3>Flat Buttons</h3>
             </hgroup>
@@ -231,17 +230,17 @@
         <!-- BUTTON SIZES ***************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#sizes" class="showcase">
+        <section id="sizes" class="showcase">
             <hgroup>
                 <h3>Button Sizes</h3>
             </hgroup>
 
             <section class="gallery">
                 <ul>
-                    <li><a href="#" class="button button-round button-large">press me</a></li>
-                    <li><a href="#" class="button button-round ">press me</a></li>
-                    <li><a href="#" class="button button-round button-small">press me</a></li>
-                    <li><a href="#" class="button button-round button-tiny">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary button-large">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary button-small">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary button-tiny">press me</a></li>
                 </ul>
             </section>
 
@@ -284,7 +283,7 @@
         <!-- GLOW BUTTONS *************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#glow" class="showcase">
+        <section id="glow" class="showcase">
             <hgroup>
                 <h3>Glow Buttons</h3>
             </hgroup>
@@ -292,12 +291,12 @@
             <section class="gallery">
 
                 <ul>
-                    <li><a href="#" class="button glow button-pill">press me</a></li>
-                    <li><a href="#" class="button glow button-pill button-primary">press me</a>  </li>
-                    <li><a href="#" class="button glow button-pill button-action">press me</a>   </li>
-                    <li><a href="#" class="button glow button-pill button-highlight">press me</a></li>
-                    <li><a href="#" class="button glow button-pill button-caution">press me</a>  </li>
-                    <li><a href="#" class="button glow button-pill button-royal">press me</a>  </li>
+                    <li><a href="#" class="button glow button-rounded button-flat">press me</a></li>
+                    <li><a href="#" class="button glow button-rounded button-flat-primary">press me</a>  </li>
+                    <li><a href="#" class="button glow button-rounded button-flat-action">press me</a>   </li>
+                    <li><a href="#" class="button glow button-rounded button-flat-highlight">press me</a></li>
+                    <li><a href="#" class="button glow button-rounded button-flat-caution">press me</a>  </li>
+                    <li><a href="#" class="button glow button-rounded button-flat-royal">press me</a>  </li>
                 </ul>
             </section>
 
@@ -318,7 +317,7 @@
         <!-- BLOCK BUTTONS *************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#block" class="showcase">
+        <section id="block" class="showcase">
             <hgroup>
                 <h3>Block Buttons</h3>
             </hgroup>
@@ -328,7 +327,7 @@
                 <br/>
                 <a href="#" class="button button-block button-rounded button-primary button-large">press me</a>
                 <br/>
-                <a href="#" class="button button-block button-rounded button-action button-large">press me</a>  
+                <a href="#" class="button button-block button-rounded button-action button-large">press me</a>
                 <br/>
                 <a href="#" class="button button-block button-rounded button-highlight button-large">press me</a>
                 <br/>
@@ -345,7 +344,7 @@
         <!-- FORMS & ANCHORS *************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="#glow" class="showcase">
+        <section id="form" class="showcase">
             <hgroup>
                 <h3>Form Elements Work Too</h3>
             </hgroup>
@@ -379,11 +378,22 @@
 
 
         <footer>
+            <section>
+                <h2>Customize Buttons</h2>
+                <ol>
+                    <li>Open your terminal (command line) and navigate to the Buttons directory</li>
+                    <li>Type  <strong>compass watch</strong> and the css file will be recompile (you must have sass and compass installed)</li>
+                    <li>Edit the _options.scss with your own custom colors, names, fonts, etc.</li>
+                </ol>
+            </section>
+
             <p>Created by <a target="_blank" href="https://twitter.com/alexwolfe">@alexwolfe</a></p>
+            <p>Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p>
+            <p>
         </footer>
 
         <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="js/button.js"></script>
+        <script type="text/javascript" src="js/vendor/scrollto.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sons-of-obsidian"></script>
     </body>

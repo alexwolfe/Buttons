@@ -5,6 +5,39 @@ $border: #EEE;
 $highlight: #d30d15;
 $font: 'Cherry Swash', sans-serif;
 
+
+
+
+
+
+//TITLE ANIMATIONS
+@-webkit-keyframes title,
+ {
+    from {
+        color: #EEE;
+        margin-top: -220px;
+    }
+    to {
+        color: #333;
+        margin-top: 0px;
+    }
+}
+
+@mixin title {
+    -webkit-animation-name: title;
+    -khtml-animation-name: title;
+    -moz-animation-name: title;
+    -ms-animation-name: title;
+    -o-animation-name: title;
+    animation-name: title;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+
+
+.clear {clear: both;}
+
 body {
     padding: 60px 0px 0px 0px;
     margin: 0px;
@@ -14,6 +47,7 @@ body {
 
 // NAVIGATION /////////////////////////
 nav {
+    @include opacity(.9);
     background: #FFF;
     padding: 0px;
     position: fixed;
@@ -21,8 +55,6 @@ nav {
     left: 0px;
     right: 0px;
     z-index: 100;
-    border-bottom: 1px solid $border;
-    border-top: 5px solid #333;
 
     ul {
         width: 900px;
@@ -33,6 +65,7 @@ nav {
 
 
         li {
+            @include transition(border .2s);
             float: left;
             margin-bottom: -3px;
 
@@ -81,17 +114,18 @@ header {
         font-family: $font;
 
         h1 {
-            font-size: 200px;
+            @include title;
+            font-size: 150px;
             font-weight: 700;
-            margin: 0px 10px 20px 10px;
-            line-height: 180px;
+            margin: 0px 10px 0px 10px;
+            line-height: 150px;
             color: #333;
             text-shadow: 0px 1px 0px #FFF;
         }
         h2 {
             color: #999;
             font-weight: normal;
-            margin: 0px 10px 0px 10px;
+            margin: 0px 10px 20px 10px;
             text-shadow: 0px 1px 0px #FFF;
         }
 
@@ -108,7 +142,9 @@ header {
         }
     }
 
+
     .button-download {
+        //@include download;
         position: absolute;
         bottom: -74px;
         left: 50%;
@@ -130,7 +166,6 @@ header {
 
     //BUTTON SHOWCASE /////////////////////////
     .showcase {
-        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .10));
         @include border-radius(10px);
         background: $background;
         margin: 0px 10px 60px 10px;
