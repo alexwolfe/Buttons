@@ -12,19 +12,20 @@
 #{$namespace} {
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
     @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
     display: inline-block;
     border: 1px solid darken($bgcolor, 10%);
-    height: 28px;
-    line-height: 28px;
-    padding: 0px 20px;
+    height: $height;
+    line-height: $height;
+    padding: 0px ($height);
+    font-weight: $font-weight;
+    font-size: $font-size;
+    font-family: $font-family;
+    color:  $font-color;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
     margin: 0;
     text-decoration: none;
     text-align: center;
-    font-weight: 300;
-    font-size: $font-size;
-    font-family: $font-family;
-    color: #666;
+
 
     &:hover {
         @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 7%)));

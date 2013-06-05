@@ -18,7 +18,16 @@
     -o-animation-name: $glow_namespace;
     animation-name: $glow_namespace;
     -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
+    -khtml-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 @mixin no_animation {

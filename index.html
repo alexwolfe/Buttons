@@ -24,12 +24,15 @@
     <nav id="main-nav">
         <ul class="clearfix">
             <li class="home"><a href="#home">B</a></li>
-            <li class="selected"><a href="#rounded">Rounded</a></li>
-            <li><a href="#pill">Pill</a></li>
             <li><a href="#flat">Flat</a></li>
+            <li><a href="#glow">Glow</a></li>
+            <li><a href="#rounded">Rounded</a></li>
+            <li><a href="#pill">Pill</a></li>
             <li><a href="#square">Square</a></li>
             <li><a href="#circle">Circle</a></li>
-            <li><a href="#glow">Glow</a></li>
+            <li><a href="#block">Block</a></li>
+            <li><a href="#more">More</a></li>
+
         </ul>
 
         <div class="clear"></div>
@@ -41,42 +44,107 @@
           <h2>A CSS button library built with Sass &amp; Compass</h2>
         </hgroup>
 
-        <span class="button-wrap button-download"><a class="button button-circle button-secondary glow" href="https://github.com/alexwolfe/Buttons/archive/master.zip">Download</a></span>
+        <span class="button-wrap button-download">
+            <a class="button button-circle button-flat button-flat-primary glow" href="https://raw.github.com/alexwolfe/Buttons/master/css/button.css">Download</a>
+        </span>
+
+        <section class="social-buttons">
+            <!-- GITHUB STAR BUTTON -->
+            <iframe src="http://ghbtns.com/github-btn.html?user=alexwolfe&repo=Buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+
+            <!-- TWITTER TWEET BUTTON -->
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Checking out &quot;Buttons&quot; a customizable CSS button library built with Sass &amp; Compass" data-via="alexwolfe">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </section>
     </header>
 
 
     <section id="page">
 
         <!-- ******************************************************************* -->
-        <!-- SQUARE BUTTONS **************************************************** -->
+        <!-- FLAT BUTTONS ***************************************************** -->
         <!-- ******************************************************************* -->
 
-        <section id="square" class="showcase">
+        <section id="flat" class="showcase">
             <hgroup>
-                <h3>Square Buttons</h3>
+                <h3>Flat Buttons</h3>
+            </hgroup>
+
+            <section class="gallery">
+                <ul>
+                    <li><a href="#" class="button button-rounded button-flat">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary">press me</a>  </li>
+                    <li><a href="#" class="button button-rounded button-flat-action">press me</a>   </li>
+                    <li><a href="#" class="button button-rounded button-flat-highlight">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-caution">press me</a>  </li>
+                    <li><a href="#" class="button button-rounded button-flat-royal">press me</a>  </li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="button button-pill button-flat">press me</a></li>
+                    <li><a href="#" class="button button-pill button-flat-primary">press me</a>  </li>
+                    <li><a href="#" class="button button-pill button-flat-action">press me</a>   </li>
+                    <li><a href="#" class="button button-pill button-flat-highlight">press me</a></li>
+                    <li><a href="#" class="button button-pill button-flat-caution">press me</a>  </li>
+                    <li><a href="#" class="button button-pill button-flat-royal">press me</a>  </li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="button button-flat">press me</a></li>
+                    <li><a href="#" class="button button-flat-primary">press me</a>  </li>
+                    <li><a href="#" class="button button-flat-action">press me</a>   </li>
+                    <li><a href="#" class="button button-flat-highlight">press me</a></li>
+                    <li><a href="#" class="button button-flat-caution">press me</a>  </li>
+                    <li><a href="#" class="button button-flat-royal">press me</a>  </li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="button button-circle button-flat">press me</a></li>
+                    <li><a href="#" class="button button-circle button-flat-primary">press me</a>  </li>
+                    <li><a href="#" class="button button-circle button-flat-action">press me</a>   </li>
+                    <li><a href="#" class="button button-circle button-flat-highlight">press me</a></li>
+                    <li><a href="#" class="button button-circle button-flat-caution">press me</a>  </li>
+                    <li><a href="#" class="button button-circle button-flat-royal">press me</a>  </li>
+                </ul>
+            </section>
+
+            <pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot; class=&quot;button button button-flat-action&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-pill button-flat-primary&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-circle button-flat-secondary&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-highlight&quot;&gt;press me&lt;/a&gt;</pre>
+        </section>
+
+
+        <!-- ******************************************************************* -->
+        <!-- GLOW BUTTONS *************************************************** -->
+        <!-- ******************************************************************* -->
+
+        <section id="glow" class="showcase">
+            <hgroup>
+                <h3>Glow Buttons</h3>
             </hgroup>
 
             <section class="gallery">
 
                 <ul>
-                    <li><a href="#" class="button">press me</a></li>
-                    <li><a href="#" class="button button-primary">press me</a>  </li>
-                    <li><a href="#" class="button button-action">press me</a>   </li>
-                    <li><a href="#" class="button button-highlight">press me</a></li>
-                    <li><a href="#" class="button button-caution">press me</a>  </li>
-                    <li><a href="#" class="button button-royal">press me</a>  </li>
+                    <li><a href="#" class="button glow button-rounded button-flat">press me</a></li>
+                    <li><a href="#" class="button glow button-rounded button-flat-primary">press me</a>  </li>
+                    <li><a href="#" class="button glow button-rounded button-flat-action">press me</a>   </li>
+                    <li><a href="#" class="button glow button-rounded button-flat-highlight">press me</a></li>
+                    <li><a href="#" class="button glow button-rounded button-flat-caution">press me</a>  </li>
+                    <li><a href="#" class="button glow button-rounded button-flat-royal">press me</a>  </li>
                 </ul>
             </section>
 
             <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-royal&quot;&gt;press me&lt;/a&gt;</pre>
-        </section>
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-primary&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-action&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-highlight&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-caution&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-royal&quot;&gt;press me&lt;/a&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;button.js&quot;&gt;&lt;/script&gt;</pre>
+        </section>
 
 
         <!-- ******************************************************************* -->
@@ -142,6 +210,40 @@
         </section>
 
 
+        <!-- ******************************************************************* -->
+        <!-- SQUARE BUTTONS **************************************************** -->
+        <!-- ******************************************************************* -->
+
+        <section id="square" class="showcase">
+            <hgroup>
+                <h3>Square Buttons</h3>
+            </hgroup>
+
+            <section class="gallery">
+
+                <ul>
+                    <li><a href="#" class="button">press me</a></li>
+                    <li><a href="#" class="button button-primary">press me</a>  </li>
+                    <li><a href="#" class="button button-action">press me</a>   </li>
+                    <li><a href="#" class="button button-highlight">press me</a></li>
+                    <li><a href="#" class="button button-caution">press me</a>  </li>
+                    <li><a href="#" class="button button-royal">press me</a>  </li>
+                </ul>
+            </section>
+
+            <pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-primary&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-action&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-highlight&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-caution&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-royal&quot;&gt;press me&lt;/a&gt;</pre>
+        </section>
+
+
+
+
+
 
         <!-- ******************************************************************* -->
         <!-- CIRCLE BUTTONS *************************************************** -->
@@ -173,145 +275,6 @@
         </section>
 
 
-        <!-- ******************************************************************* -->
-        <!-- FLAT BUTTONS ***************************************************** -->
-        <!-- ******************************************************************* -->
-
-        <section id="flat" class="showcase">
-            <hgroup>
-                <h3>Flat Buttons</h3>
-            </hgroup>
-
-            <section class="gallery">
-                <ul>
-                    <li><a href="#" class="button button-rounded button-flat">press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-primary">press me</a>  </li>
-                    <li><a href="#" class="button button-rounded button-flat-action">press me</a>   </li>
-                    <li><a href="#" class="button button-rounded button-flat-highlight">press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-caution">press me</a>  </li>
-                    <li><a href="#" class="button button-rounded button-flat-royal">press me</a>  </li>
-                </ul>
-                <ul>
-                    <li><a href="#" class="button button-pill button-flat">press me</a></li>
-                    <li><a href="#" class="button button-pill button-flat-primary">press me</a>  </li>
-                    <li><a href="#" class="button button-pill button-flat-action">press me</a>   </li>
-                    <li><a href="#" class="button button-pill button-flat-highlight">press me</a></li>
-                    <li><a href="#" class="button button-pill button-flat-caution">press me</a>  </li>
-                    <li><a href="#" class="button button-pill button-flat-royal">press me</a>  </li>
-                </ul>
-                <ul>
-                    <li><a href="#" class="button button-flat">press me</a></li>
-                    <li><a href="#" class="button button-flat-primary">press me</a>  </li>
-                    <li><a href="#" class="button button-flat-action">press me</a>   </li>
-                    <li><a href="#" class="button button-flat-highlight">press me</a></li>
-                    <li><a href="#" class="button button-flat-caution">press me</a>  </li>
-                    <li><a href="#" class="button button-flat-royal">press me</a>  </li>
-                </ul>
-                <ul>
-                    <li><a href="#" class="button button-circle button-flat">press me</a></li>
-                    <li><a href="#" class="button button-circle button-flat-primary">press me</a>  </li>
-                    <li><a href="#" class="button button-circle button-flat-action">press me</a>   </li>
-                    <li><a href="#" class="button button-circle button-flat-highlight">press me</a></li>
-                    <li><a href="#" class="button button-circle button-flat-caution">press me</a>  </li>
-                    <li><a href="#" class="button button-circle button-flat-royal">press me</a>  </li>
-                </ul>
-            </section>
-
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button button-flat-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-flat-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-flat-secondary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-highlight&quot;&gt;press me&lt;/a&gt;</pre>
-        </section>
-
-
-
-        <!-- ******************************************************************* -->
-        <!-- BUTTON SIZES ***************************************************** -->
-        <!-- ******************************************************************* -->
-
-        <section id="sizes" class="showcase">
-            <hgroup>
-                <h3>Button Sizes</h3>
-            </hgroup>
-
-            <section class="gallery">
-                <ul>
-                    <li><a href="#" class="button button-rounded button-flat-primary button-large">press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-primary">press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-primary button-small">press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-primary button-tiny">press me</a></li>
-                </ul>
-            </section>
-
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-large&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button &quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-small&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-tiny&quot;&gt;press me&lt;/a&gt;</section>
-
-
-
-        <!-- ******************************************************************* -->
-        <!-- WRAPPER BUTTONS *************************************************** -->
-        <!-- ******************************************************************* -->
-
-        <section id="#wrappers" class="showcase">
-            <hgroup>
-                <h3>Button Wrappers</h3>
-            </hgroup>
-
-            <section class="gallery">
-
-                <ul>
-                    <li><span class="button-wrap"><a href="#" class="button button-circle">press me</a></span></li>
-                    <li><span class="button-wrap"><a href="#" class="button button-circle button-primary">press me</a></span></li>
-                    <li><span class="button-wrap"><a href="#" class="button button-pill ">press me</a></span></li>
-                    <li><span class="button-wrap"><a href="#" class="button button-pill button-primary">press me</a></span></li>
-                </ul>
-            </section>
-
-            <pre class="prettyprint linenums">&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-circle&quot;&gt;press me&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-circle button-primary&quot;&gt;press me&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-pill &quot;&gt;press me&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-pill button-primary&quot;&gt;press me&lt;/a&gt;&lt;/span&gt;</pre>
-        </section>
-
-
-
-        <!-- ******************************************************************* -->
-        <!-- GLOW BUTTONS *************************************************** -->
-        <!-- ******************************************************************* -->
-
-        <section id="glow" class="showcase">
-            <hgroup>
-                <h3>Glow Buttons</h3>
-            </hgroup>
-
-            <section class="gallery">
-
-                <ul>
-                    <li><a href="#" class="button glow button-rounded button-flat">press me</a></li>
-                    <li><a href="#" class="button glow button-rounded button-flat-primary">press me</a>  </li>
-                    <li><a href="#" class="button glow button-rounded button-flat-action">press me</a>   </li>
-                    <li><a href="#" class="button glow button-rounded button-flat-highlight">press me</a></li>
-                    <li><a href="#" class="button glow button-rounded button-flat-caution">press me</a>  </li>
-                    <li><a href="#" class="button glow button-rounded button-flat-royal">press me</a>  </li>
-                </ul>
-            </section>
-
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-royal&quot;&gt;press me&lt;/a&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;button.js&quot;&gt;&lt;/script&gt;</pre>
-        </section>
-
 
         <!-- ******************************************************************* -->
         <!-- BLOCK BUTTONS *************************************************** -->
@@ -339,6 +302,62 @@
             <pre class="prettyprint linenums">&lt;a href=&quot;#&quot; class=&quot;button button-block button-rounded button-primary button-large&quot;&gt;press me&lt;/a&gt;</pre>
 
         </section>
+
+
+
+        <!-- ******************************************************************* -->
+        <!-- BUTTON SIZES ***************************************************** -->
+        <!-- ******************************************************************* -->
+
+        <section id="more" class="showcase">
+            <hgroup>
+                <h3>Button Sizes</h3>
+            </hgroup>
+
+            <section class="gallery">
+                <ul>
+                    <li><a href="#" class="button button-rounded button-flat-primary button-large">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary button-small">press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary button-tiny">press me</a></li>
+                </ul>
+            </section>
+
+            <pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot; class=&quot;button button-large&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button &quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-small&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button button-tiny&quot;&gt;press me&lt;/a&gt;</section>
+
+
+
+        <!-- ******************************************************************* -->
+        <!-- WRAPPER BUTTONS *************************************************** -->
+        <!-- ******************************************************************* -->
+
+        <section id="wrappers" class="showcase">
+            <hgroup>
+                <h3>Button Wrappers</h3>
+            </hgroup>
+
+            <section class="gallery">
+
+                <ul>
+                    <li><span class="button-wrap"><a href="#" class="button button-circle">press me</a></span></li>
+                    <li><span class="button-wrap"><a href="#" class="button button-circle button-primary">press me</a></span></li>
+                    <li><span class="button-wrap"><a href="#" class="button button-pill ">press me</a></span></li>
+                    <li><span class="button-wrap"><a href="#" class="button button-pill button-primary">press me</a></span></li>
+                </ul>
+            </section>
+
+            <pre class="prettyprint linenums">&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-circle&quot;&gt;press me&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-circle button-primary&quot;&gt;press me&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-pill &quot;&gt;press me&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;button-wrap&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;button button-pill button-primary&quot;&gt;press me&lt;/a&gt;&lt;/span&gt;</pre>
+        </section>
+
+
+
 
         <!-- ******************************************************************* -->
         <!-- FORMS & ANCHORS *************************************************** -->
@@ -378,7 +397,16 @@
 
 
         <footer>
-            <section>
+            <section class="setup">
+                <h2>Setup Buttons</h2>
+                <ol>
+                    <li>Open your terminal (command line) and navigate to the Buttons directory</li>
+                    <li>Type  <strong>compass watch</strong> and the css file will be recompile (you must have sass and compass installed)</li>
+                    <li>Edit the _options.scss with your own custom colors, names, fonts, etc.</li>
+                </ol>
+            </section>
+
+            <section class="customize">
                 <h2>Customize Buttons</h2>
                 <ol>
                     <li>Open your terminal (command line) and navigate to the Buttons directory</li>
@@ -386,6 +414,7 @@
                     <li>Edit the _options.scss with your own custom colors, names, fonts, etc.</li>
                 </ol>
             </section>
+            <div class="clear"></div>
 
             <p>Created by <a target="_blank" href="https://twitter.com/alexwolfe">@alexwolfe</a></p>
             <p>Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p>

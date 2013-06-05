@@ -1,23 +1,23 @@
 @-webkit-keyframes title {
-  /* line 16, ../scss/main.scss */
+  /* line 12, ../scss/main.scss */
   from {
     color: #EEE;
     margin-top: -220px;
   }
 
-  /* line 20, ../scss/main.scss */
+  /* line 16, ../scss/main.scss */
   to {
     color: #333;
     margin-top: 0px;
   }
 }
 
-/* line 39, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 .clear {
   clear: both;
 }
 
-/* line 41, ../scss/main.scss */
+/* line 37, ../scss/main.scss */
 body {
   padding: 60px 0px 0px 0px;
   margin: 0px;
@@ -25,7 +25,7 @@ body {
   font-weight: 300;
 }
 
-/* line 49, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 nav {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
@@ -37,14 +37,14 @@ nav {
   right: 0px;
   z-index: 100;
 }
-/* line 59, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 nav ul {
   width: 900px;
   margin: 0px auto;
   padding: 0px;
   list-style-type: none;
 }
-/* line 67, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 nav ul li {
   -webkit-transition: border 0.2s;
   -moz-transition: border 0.2s;
@@ -53,15 +53,15 @@ nav ul li {
   float: left;
   margin-bottom: -3px;
 }
-/* line 72, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 nav ul li.selected {
   border-bottom: 10px solid #d30d15;
 }
-/* line 76, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 nav ul li.home {
   padding: 10px;
 }
-/* line 79, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 nav ul li.home a {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -78,29 +78,31 @@ nav ul li.home a {
   font-size: 24px;
   padding: 0px;
 }
-/* line 94, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 nav ul a {
   float: left;
   text-decoration: none;
   padding: 20px;
   color: #999;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
-/* line 105, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 header {
   background: #f4f4f4;
   padding: 50px 0px 80px 0px;
   border-bottom: 1px solid #eeeeee;
   position: relative;
   margin-bottom: 100px;
+  position: relative;
 }
-/* line 112, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 header hgroup {
   text-align: center;
   font-family: "Cherry Swash", sans-serif;
 }
-/* line 116, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 header hgroup h1 {
   -webkit-animation-name: title;
   -khtml-animation-name: title;
@@ -117,7 +119,7 @@ header hgroup h1 {
   color: #333;
   text-shadow: 0px 1px 0px white;
 }
-/* line 125, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 header hgroup h2 {
   color: #999;
   font-weight: normal;
@@ -125,19 +127,25 @@ header hgroup h2 {
   text-shadow: 0px 1px 0px white;
 }
 @media only screen and (max-width: 480px) {
-  /* line 133, ../scss/main.scss */
+  /* line 131, ../scss/main.scss */
   header hgroup h1 {
     font-size: 80px;
     line-height: 80px;
     margin: 0px 10px 10px 10px;
   }
-  /* line 138, ../scss/main.scss */
+  /* line 136, ../scss/main.scss */
   header hgroup h2 {
     font-size: 24px;
     margin: 0px 20px 20px 20px;
   }
 }
-/* line 146, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
+header .social-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+}
+/* line 149, ../scss/main.scss */
 header .button-download {
   position: absolute;
   bottom: -74px;
@@ -145,17 +153,13 @@ header .button-download {
   margin-left: -74px;
   z-index: 10;
 }
-/* line 154, ../scss/main.scss */
-header .button-download .button {
-  color: #2c9adb;
-}
 
-/* line 163, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 #page {
   max-width: 920px;
   margin: 0px auto;
 }
-/* line 168, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 #page .showcase {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -166,13 +170,13 @@ header .button-download .button {
   margin: 0px 10px 60px 10px;
   position: relative;
 }
-/* line 174, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 #page .showcase hgroup {
   position: absolute;
   top: -30px;
   z-index: 1;
 }
-/* line 179, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 #page .showcase hgroup h3 {
   font-family: "Cherry Swash", sans-serif;
   font-weight: lighter;
@@ -182,26 +186,26 @@ header .button-download .button {
   margin: 0px;
   padding: 0px;
 }
-/* line 190, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 #page .showcase .gallery {
   padding: 20px 20px 20px 20px;
 }
-/* line 193, ../scss/main.scss */
+/* line 195, ../scss/main.scss */
 #page .showcase .gallery ul {
   list-style-type: none;
   margin: 0px 0px 20px 0px;
   padding: 0;
 }
-/* line 198, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 #page .showcase .gallery ul:last-child {
   margin-bottom: 0px;
 }
-/* line 202, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 #page .showcase .gallery ul li {
   margin: 5px;
   display: inline-block;
 }
-/* line 209, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 #page .showcase .prettyprint {
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
@@ -219,12 +223,12 @@ header .button-download .button {
   line-height: 16px;
   overflow: hidden;
 }
-/* line 219, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 #page .showcase .prettyprint li.L1, #page .showcase .prettyprint li.L3, #page .showcase .prettyprint li.L5, #page .showcase .prettyprint li.L7, #page .showcase .prettyprint li.L9 {
   background: #333;
 }
 
-/* line 228, ../scss/main.scss */
+/* line 230, ../scss/main.scss */
 footer {
   background: #333;
   color: #FFF;
@@ -233,45 +237,63 @@ footer {
   font-size: 12px;
   color: #666;
 }
-/* line 236, ../scss/main.scss */
+/* line 239, ../scss/main.scss */
+footer ol li {
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+/* line 245, ../scss/main.scss */
+footer .customize, footer .setup {
+  width: 45%;
+  text-align: left;
+}
+/* line 250, ../scss/main.scss */
+footer .customize {
+  float: right;
+}
+/* line 254, ../scss/main.scss */
+footer .setup {
+  float: left;
+}
+/* line 258, ../scss/main.scss */
 footer a {
   color: #666;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 251, ../scss/main.scss */
+  /* line 273, ../scss/main.scss */
   body {
     padding: 0px;
   }
 
-  /* line 256, ../scss/main.scss */
+  /* line 278, ../scss/main.scss */
   nav {
     position: static;
   }
-  /* line 259, ../scss/main.scss */
+  /* line 281, ../scss/main.scss */
   nav ul {
     width: auto;
   }
-  /* line 262, ../scss/main.scss */
+  /* line 284, ../scss/main.scss */
   nav ul li {
     float: none;
     display: block;
     border-bottom: 1px solid #eeeeee;
   }
-  /* line 267, ../scss/main.scss */
+  /* line 289, ../scss/main.scss */
   nav ul li.home {
     padding: 10px;
     margin: 5px auto;
   }
-  /* line 270, ../scss/main.scss */
+  /* line 292, ../scss/main.scss */
   nav ul li.home a {
     margin: 5px auto;
   }
-  /* line 276, ../scss/main.scss */
+  /* line 298, ../scss/main.scss */
   nav ul li.selected {
     border-bottom: 1px solid #eeeeee;
   }
-  /* line 280, ../scss/main.scss */
+  /* line 302, ../scss/main.scss */
   nav ul li a {
     float: none;
     display: block;
