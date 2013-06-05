@@ -16,7 +16,7 @@
     border: 1px solid darken($bgcolor, 10%);
     height: $height;
     line-height: $height;
-    padding: 0px ($height);
+    padding: 0px ($height * .8);
     font-weight: $font-weight;
     font-size: $font-size;
     font-family: $font-family;
@@ -206,9 +206,9 @@ button#{$namespace}:disabled {
 
         @if $size == 'large' {
             font-size: $font-size + 5;
-            height: 38px;
-            line-height: 38px;
-            padding: 0px 30px;
+            height: $height * 1.2;
+            line-height: $height * 1.2;
+            padding: 0px ($height * 1.2) * .8;
         }
 
         @if $size == 'small' {
@@ -226,7 +226,7 @@ button#{$namespace}:disabled {
         }
     }
 
-    //HEIGHT NEEDED FOR FORM ELEMENTS
+    //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
     input#{$namespace}-#{$size}, button#{$namespace}-#{$size} {
         @if $size == 'large' {
             height: 40px;
