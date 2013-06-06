@@ -1,0 +1,255 @@
+@import 'compass';
+@import 'options'; // EDIT STYLES AND OPTIONS IN _options.scss
+@import 'glow';
+
+
+//////////////////////////////////////////////////////////
+// BUTTON BASE STYLES ////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$namespace} {
+    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
+    @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
+    display: inline-block;
+    border: 1px solid darken($bgcolor, 10%);
+    height: $height;
+    line-height: $height;
+    padding: 0px ($height * .8);
+    font-weight: $font-weight;
+    font-size: $font-size;
+    font-family: $font-family;
+    color:  $font-color;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+
+
+    &:hover {
+        @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 7%)));
+    }
+    &:active {
+        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
+        background: desaturate($bgcolor, 20%);
+        color: darken($bgcolor, 20%);
+    }
+}
+
+//HEIGHT NEEDED FOR FORM ELEMENTS
+input#{$namespace}, button#{$namespace} {
+    height: $height + 2;
+    cursor: pointer;
+}
+
+// BLOCK BUTTON
+#{$namespace}-block {
+    display: block;
+}
+
+// DISABLED STATE
+#{$namespace}.disabled,
+#{$namespace}.disabled:hover,
+#{$namespace}.disabled:active,
+input#{$namespace}:disabled,
+button#{$namespace}:disabled {
+    @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10));
+    background: #EEE;
+    border: 1px solid #DDD;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+    color: #CCC;
+    cursor: default;
+}
+
+// WRAPPER EFFECT
+#{$namespace}-wrap {
+    @include background(linear-gradient(top,  #e3e3e3, #f2f2f2));
+    @include border-radius(200px);
+    @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.04));
+    padding: 10px;
+    display: inline-block;
+}
+
+
+
+//////////////////////////////////////////////////////////
+// SHAPES ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@each $style in $button_styles {
+
+    // .button-rounded .button-pill button-circle
+    #{$namespace}-#{$style} {
+
+        @if $style == 'rounded' {
+            @include border-radius(3px);
+        }
+
+        @else if $style == 'pill' {
+            @include border-radius(50px);
+        }
+
+        @else if $style == 'circle' {
+            @include border-radius($circle-size * 2);
+            @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
+            width: $circle-size;
+            line-height: $circle-size;
+            height: $circle-size;
+            padding: 0px;
+            border-width: 4px;
+            font-size: $font-size + 4;
+        }
+    }
+}
+
+
+
+//////////////////////////////////////////////////////////
+// GRAIDENT STYLES ///////////////////////////////////////
+//////////////////////////////////////////////////////////
+@each $action in $button_actions {
+    //GET NAME & COLOR
+    $name: nth($action, 1);
+    $bgcolor: nth($action, 2);
+    $font-color: nth($action, 3);
+
+    // .button-primary .button-action etc.
+    #{$namespace}-#{$name} {
+        @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
+        border-color: darken($bgcolor, 10%);
+        color: $font-color;
+        text-shadow: 0 -1px 1px rgba(darken($bgcolor, 30%), 0.35);
+
+        &:hover {
+            @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 5%)));
+        }
+        &:active {
+            background: desaturate($bgcolor, 20%);
+            color: darken($bgcolor, 20%);
+        }
+        &.glow {
+            @include box-shadow(0px 0px 0px rgba($bgcolor, 0.3), 0px 1px 3px rgba(0, 0, 0, .30));
+        }
+    }
+}
+
+
+
+//////////////////////////////////////////////////////////
+// FLAT STYLES ///////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+// FLAT BUTTON BASE
+#{$namespace}-flat {
+    $bgcolor: #EEE;
+    @include transition-property(background, color);
+    @include transition-duration(.3s);
+    @include box-shadow(none);
+
+    background: darken($bgcolor, 2%);
+    border: none;
+    text-shadow: none;
+
+    &:hover {
+        @include background(lighten($bgcolor, 5%));
+    }
+    &:active {
+        background: desaturate($bgcolor, 20%);
+        color: darken($bgcolor, 20%);
+    }
+    &.disabled {
+        @include box-shadow(none);
+    }
+}
+
+@each $action in $button_actions {
+    //GET NAME & COLOR
+    $name: nth($action, 1);
+    $bgcolor: nth($action, 2);
+    $font-color: nth($action, 3);
+
+    // .button-flat-primary .button-flat-action etc.
+    #{$namespace}-flat-#{$name} {
+        @include transition-property(background, color);
+        @include transition-duration(.3s);
+        @include box-shadow(none);
+        background: $bgcolor;
+        border: none;
+        color: $font-color;
+        text-shadow: none;
+
+        &:hover {
+            @include background(lighten($bgcolor, 5%));
+
+        }
+        &:active {
+            background: desaturate($bgcolor, 20%);
+            color: darken($bgcolor, 15%);
+        }
+        &.disabled {
+            @include box-shadow(none);
+        }
+    }
+}
+
+
+
+//////////////////////////////////////////////////////////
+// SIZES /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+@each $size in $button_sizes {
+
+    // .button-large .button-small .button-tiny
+    #{$namespace}-#{$size} {
+
+        @if $size == 'large' {
+            font-size: $font-size + 5;
+            height: $height * 1.2;
+            line-height: $height * 1.2;
+            padding: 0px ($height * 1.2) * .8;
+        }
+
+        @if $size == 'small' {
+            font-size: $font-size - 2;
+            height: $height * .8;
+            line-height: $height * .8;
+            padding: 0px ($height * .8) * .8;
+        }
+
+        @if $size == 'tiny' {
+            font-size: $font-size - 3;
+            height: $height * .7;
+            line-height: $height * .7;
+            padding: 0px ($height * .7) * .8;
+        }
+    }
+
+    //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
+    input#{$namespace}-#{$size}, button#{$namespace}-#{$size} {
+        @if $size == 'large' {
+            height: ($height * 1.2) + 2;
+        }
+
+        @if $size == 'small' {
+            height: ($height * .8) + 2;
+        }
+
+        @if $size == 'tiny' {
+            height: ($height * .7) + 2;
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////////
+// GLOWING BUTTON STYLES /////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$namespace} {
+    &.#{$glow_namespace} {
+        @include glow;
+    }
+    &.#{$glow_namespace}:active {
+        @include no_animation;
+        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
+    }
+}
+

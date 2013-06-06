@@ -1,0 +1,36 @@
+
+//////////////////////////////////////////////////////////
+// BASE DEFAULTS /////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$namespace: '.button'; //prefix for all classes
+$glow_namespace: 'glow';
+$glow_color: #2c9adb;
+$bgcolor: #EEE;
+$height: 32px;
+
+
+//////////////////////////////////////////////////////////
+// TYPOGRAPHY ////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$font-color: #666;
+$font-size: 14px;
+$font-weight: 300;
+$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+//////////////////////////////////////////////////////////
+// BUTTON OPTIONS ////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+// (name background-color font-color) add as many as you like.
+$button_actions: ('primary' #00A1CB #FFF)
+                 ('action' #7db500 #FFF)
+                 ('highlight' #F18D05 #FFF)
+                 ('caution' #E54028 #FFF)
+                 ('royal' #87318C #FFF);
+
+$button_styles: 'rounded' 'pill' 'circle';
+$button_sizes: 'large' 'small' 'tiny';
+$circle-size: 120px; //radius for circle buttons, circles only have one size
+
+
