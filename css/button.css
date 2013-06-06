@@ -21,7 +21,122 @@
   }
 }
 
-/* line 9, ../scss/button.scss */
+@-khtml-keyframes glow {
+  /* line 14, ../scss/_glow.scss */
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 15, ../scss/_glow.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 16, ../scss/_glow.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@-moz-keyframes glow {
+  /* line 20, ../scss/_glow.scss */
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 21, ../scss/_glow.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 22, ../scss/_glow.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@-ms-keyframes glow {
+  /* line 26, ../scss/_glow.scss */
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 27, ../scss/_glow.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 28, ../scss/_glow.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@-o-keyframes glow {
+  /* line 32, ../scss/_glow.scss */
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 33, ../scss/_glow.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 34, ../scss/_glow.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes glow {
+  /* line 38, ../scss/_glow.scss */
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 39, ../scss/_glow.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 40, ../scss/_glow.scss */
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* line 10, ../scss/button.scss */
 .button {
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -45,7 +160,7 @@
   text-decoration: none;
   text-align: center;
 }
-/* line 27, ../scss/button.scss */
+/* line 28, ../scss/button.scss */
 .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dcdcdc));
   background: -webkit-linear-gradient(top, #ffffff, #dcdcdc);
@@ -53,7 +168,7 @@
   background: -o-linear-gradient(top, #ffffff, #dcdcdc);
   background: linear-gradient(top, #ffffff, #dcdcdc);
 }
-/* line 30, ../scss/button.scss */
+/* line 31, ../scss/button.scss */
 .button:active {
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
@@ -63,18 +178,18 @@
   color: #bbbbbb;
 }
 
-/* line 39, ../scss/button.scss */
+/* line 40, ../scss/button.scss */
 input.button, button.button {
   height: 34px;
   cursor: pointer;
 }
 
-/* line 45, ../scss/button.scss */
+/* line 46, ../scss/button.scss */
 .button-block {
   display: block;
 }
 
-/* line 54, ../scss/button.scss */
+/* line 55, ../scss/button.scss */
 .button.disabled,
 .button.disabled:hover,
 .button.disabled:active,
@@ -90,7 +205,7 @@ button.button:disabled {
   cursor: default;
 }
 
-/* line 64, ../scss/button.scss */
+/* line 65, ../scss/button.scss */
 .button-wrap {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3e3e3), color-stop(100%, #f2f2f2));
   background: -webkit-linear-gradient(top, #e3e3e3, #f2f2f2);
@@ -109,7 +224,7 @@ button.button:disabled {
   display: inline-block;
 }
 
-/* line 80, ../scss/button.scss */
+/* line 81, ../scss/button.scss */
 .button-rounded {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -118,7 +233,7 @@ button.button:disabled {
   border-radius: 3px;
 }
 
-/* line 80, ../scss/button.scss */
+/* line 81, ../scss/button.scss */
 .button-pill {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -127,7 +242,7 @@ button.button:disabled {
   border-radius: 50px;
 }
 
-/* line 80, ../scss/button.scss */
+/* line 81, ../scss/button.scss */
 .button-circle {
   -webkit-border-radius: 240px;
   -moz-border-radius: 240px;
@@ -145,7 +260,7 @@ button.button:disabled {
   font-size: 18px;
 }
 
-/* line 115, ../scss/button.scss */
+/* line 116, ../scss/button.scss */
 .button-primary {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b5e5), color-stop(100%, #008db2));
   background: -webkit-linear-gradient(top, #00b5e5, #008db2);
@@ -156,7 +271,7 @@ button.button:disabled {
   color: white;
   text-shadow: 0 -1px 1px rgba(0, 40, 50, 0.35);
 }
-/* line 121, ../scss/button.scss */
+/* line 122, ../scss/button.scss */
 .button-primary:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00c9fe), color-stop(100%, #008db2));
   background: -webkit-linear-gradient(top, #00c9fe, #008db2);
@@ -164,19 +279,13 @@ button.button:disabled {
   background: -o-linear-gradient(top, #00c9fe, #008db2);
   background: linear-gradient(top, #00c9fe, #008db2);
 }
-/* line 124, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-primary:active {
   background: #1495b7;
   color: #005065;
 }
-/* line 128, ../scss/button.scss */
-.button-primary.glow {
-  -webkit-box-shadow: 0px 0px 0px rgba(0, 161, 203, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px rgba(0, 161, 203, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 0px rgba(0, 161, 203, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
 
-/* line 115, ../scss/button.scss */
+/* line 116, ../scss/button.scss */
 .button-action {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8fcf00), color-stop(100%, #6b9c00));
   background: -webkit-linear-gradient(top, #8fcf00, #6b9c00);
@@ -187,7 +296,7 @@ button.button:disabled {
   color: white;
   text-shadow: 0 -1px 1px rgba(19, 28, 0, 0.35);
 }
-/* line 121, ../scss/button.scss */
+/* line 122, ../scss/button.scss */
 .button-action:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a0e800), color-stop(100%, #6b9c00));
   background: -webkit-linear-gradient(top, #a0e800, #6b9c00);
@@ -195,19 +304,13 @@ button.button:disabled {
   background: -o-linear-gradient(top, #a0e800, #6b9c00);
   background: linear-gradient(top, #a0e800, #6b9c00);
 }
-/* line 124, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-action:active {
   background: #76a312;
   color: #374f00;
 }
-/* line 128, ../scss/button.scss */
-.button-action.glow {
-  -webkit-box-shadow: 0px 0px 0px rgba(125, 181, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px rgba(125, 181, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 0px rgba(125, 181, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
 
-/* line 115, ../scss/button.scss */
+/* line 116, ../scss/button.scss */
 .button-highlight {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fa9915), color-stop(100%, #d87e04));
   background: -webkit-linear-gradient(top, #fa9915, #d87e04);
@@ -218,7 +321,7 @@ button.button:disabled {
   color: white;
   text-shadow: 0 -1px 1px rgba(91, 53, 2, 0.35);
 }
-/* line 121, ../scss/button.scss */
+/* line 122, ../scss/button.scss */
 .button-highlight:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fba42e), color-stop(100%, #d87e04));
   background: -webkit-linear-gradient(top, #fba42e, #d87e04);
@@ -226,19 +329,13 @@ button.button:disabled {
   background: -o-linear-gradient(top, #fba42e, #d87e04);
   background: linear-gradient(top, #fba42e, #d87e04);
 }
-/* line 124, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-highlight:active {
   background: #d8891e;
   color: #8d5303;
 }
-/* line 128, ../scss/button.scss */
-.button-highlight.glow {
-  -webkit-box-shadow: 0px 0px 0px rgba(241, 141, 5, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px rgba(241, 141, 5, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 0px rgba(241, 141, 5, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
 
-/* line 115, ../scss/button.scss */
+/* line 116, ../scss/button.scss */
 .button-caution {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8543f), color-stop(100%, #d9331a));
   background: -webkit-linear-gradient(top, #e8543f, #d9331a);
@@ -249,7 +346,7 @@ button.button:disabled {
   color: white;
   text-shadow: 0 -1px 1px rgba(103, 24, 13, 0.35);
 }
-/* line 121, ../scss/button.scss */
+/* line 122, ../scss/button.scss */
 .button-caution:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eb6855), color-stop(100%, #d9331a));
   background: -webkit-linear-gradient(top, #eb6855, #d9331a);
@@ -257,19 +354,13 @@ button.button:disabled {
   background: -o-linear-gradient(top, #eb6855, #d9331a);
   background: linear-gradient(top, #eb6855, #d9331a);
 }
-/* line 124, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-caution:active {
   background: #cd5240;
   color: #952312;
 }
-/* line 128, ../scss/button.scss */
-.button-caution.glow {
-  -webkit-box-shadow: 0px 0px 0px rgba(229, 64, 40, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px rgba(229, 64, 40, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 0px rgba(229, 64, 40, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
 
-/* line 115, ../scss/button.scss */
+/* line 116, ../scss/button.scss */
 .button-royal {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #99389f), color-stop(100%, #752a79));
   background: -webkit-linear-gradient(top, #99389f, #752a79);
@@ -280,7 +371,7 @@ button.button:disabled {
   color: white;
   text-shadow: 0 -1px 1px rgba(26, 9, 27, 0.35);
 }
-/* line 121, ../scss/button.scss */
+/* line 122, ../scss/button.scss */
 .button-royal:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ab3eb2), color-stop(100%, #752a79));
   background: -webkit-linear-gradient(top, #ab3eb2, #752a79);
@@ -288,19 +379,13 @@ button.button:disabled {
   background: -o-linear-gradient(top, #ab3eb2, #752a79);
   background: linear-gradient(top, #ab3eb2, #752a79);
 }
-/* line 124, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-royal:active {
   background: #764479;
   color: #3e1740;
 }
-/* line 128, ../scss/button.scss */
-.button-royal.glow {
-  -webkit-box-shadow: 0px 0px 0px rgba(135, 49, 140, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px rgba(135, 49, 140, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 0px rgba(135, 49, 140, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
 
-/* line 141, ../scss/button.scss */
+/* line 139, ../scss/button.scss */
 .button-flat {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -317,23 +402,23 @@ button.button:disabled {
   border: none;
   text-shadow: none;
 }
-/* line 151, ../scss/button.scss */
+/* line 148, ../scss/button.scss */
 .button-flat:hover {
   background: #fbfbfb;
 }
-/* line 154, ../scss/button.scss */
+/* line 151, ../scss/button.scss */
 .button-flat:active {
   background: #eeeeee;
   color: #bbbbbb;
 }
-/* line 158, ../scss/button.scss */
+/* line 155, ../scss/button.scss */
 .button-flat.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 170, ../scss/button.scss */
+/* line 167, ../scss/button.scss */
 .button-flat-primary {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -347,27 +432,27 @@ button.button:disabled {
   -moz-box-shadow: none;
   box-shadow: none;
   background: #00a1cb;
-  border: none;
   color: white;
   text-shadow: none;
+  border: none;
 }
-/* line 179, ../scss/button.scss */
+/* line 176, ../scss/button.scss */
 .button-flat-primary:hover {
   background: #00b5e5;
 }
-/* line 183, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-primary:active {
   background: #1495b7;
   color: #00647f;
 }
-/* line 187, ../scss/button.scss */
+/* line 184, ../scss/button.scss */
 .button-flat-primary.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 170, ../scss/button.scss */
+/* line 167, ../scss/button.scss */
 .button-flat-action {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -381,27 +466,27 @@ button.button:disabled {
   -moz-box-shadow: none;
   box-shadow: none;
   background: #7db500;
-  border: none;
   color: white;
   text-shadow: none;
+  border: none;
 }
-/* line 179, ../scss/button.scss */
+/* line 176, ../scss/button.scss */
 .button-flat-action:hover {
   background: #8fcf00;
 }
-/* line 183, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-action:active {
   background: #76a312;
   color: #486900;
 }
-/* line 187, ../scss/button.scss */
+/* line 184, ../scss/button.scss */
 .button-flat-action.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 170, ../scss/button.scss */
+/* line 167, ../scss/button.scss */
 .button-flat-highlight {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -415,27 +500,27 @@ button.button:disabled {
   -moz-box-shadow: none;
   box-shadow: none;
   background: #f18d05;
-  border: none;
   color: white;
   text-shadow: none;
+  border: none;
 }
-/* line 179, ../scss/button.scss */
+/* line 176, ../scss/button.scss */
 .button-flat-highlight:hover {
   background: #fa9915;
 }
-/* line 183, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-highlight:active {
   background: #d8891e;
   color: #a66103;
 }
-/* line 187, ../scss/button.scss */
+/* line 184, ../scss/button.scss */
 .button-flat-highlight.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 170, ../scss/button.scss */
+/* line 167, ../scss/button.scss */
 .button-flat-caution {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -449,27 +534,27 @@ button.button:disabled {
   -moz-box-shadow: none;
   box-shadow: none;
   background: #e54028;
-  border: none;
   color: white;
   text-shadow: none;
+  border: none;
 }
-/* line 179, ../scss/button.scss */
+/* line 176, ../scss/button.scss */
 .button-flat-caution:hover {
   background: #e8543f;
 }
-/* line 183, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-caution:active {
   background: #cd5240;
   color: #ac2815;
 }
-/* line 187, ../scss/button.scss */
+/* line 184, ../scss/button.scss */
 .button-flat-caution.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 170, ../scss/button.scss */
+/* line 167, ../scss/button.scss */
 .button-flat-royal {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -483,27 +568,27 @@ button.button:disabled {
   -moz-box-shadow: none;
   box-shadow: none;
   background: #87318c;
-  border: none;
   color: white;
   text-shadow: none;
+  border: none;
 }
-/* line 179, ../scss/button.scss */
+/* line 176, ../scss/button.scss */
 .button-flat-royal:hover {
   background: #99389f;
 }
-/* line 183, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-royal:active {
   background: #764479;
   color: #501d53;
 }
-/* line 187, ../scss/button.scss */
+/* line 184, ../scss/button.scss */
 .button-flat-royal.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 202, ../scss/button.scss */
+/* line 199, ../scss/button.scss */
 .button-large {
   font-size: 19px;
   height: 38.4px;
@@ -511,12 +596,12 @@ button.button:disabled {
   padding: 0px 30.72px;
 }
 
-/* line 227, ../scss/button.scss */
+/* line 224, ../scss/button.scss */
 input.button-large, button.button-large {
   height: 40.4px;
 }
 
-/* line 202, ../scss/button.scss */
+/* line 199, ../scss/button.scss */
 .button-small {
   font-size: 12px;
   height: 25.6px;
@@ -524,12 +609,12 @@ input.button-large, button.button-large {
   padding: 0px 20.48px;
 }
 
-/* line 227, ../scss/button.scss */
+/* line 224, ../scss/button.scss */
 input.button-small, button.button-small {
   height: 27.6px;
 }
 
-/* line 202, ../scss/button.scss */
+/* line 199, ../scss/button.scss */
 .button-tiny {
   font-size: 11px;
   height: 22.4px;
@@ -537,12 +622,12 @@ input.button-small, button.button-small {
   padding: 0px 17.92px;
 }
 
-/* line 227, ../scss/button.scss */
+/* line 224, ../scss/button.scss */
 input.button-tiny, button.button-tiny {
   height: 24.4px;
 }
 
-/* line 247, ../scss/button.scss */
+/* line 244, ../scss/button.scss */
 .button.glow {
   -webkit-animation-name: "glow";
   -khtml-animation-name: "glow";
@@ -562,7 +647,7 @@ input.button-tiny, button.button-tiny {
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 250, ../scss/button.scss */
+/* line 247, ../scss/button.scss */
 .button.glow:active {
   -webkit-animation-name: none;
   -moz-animation-name: none;

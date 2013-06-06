@@ -3,6 +3,7 @@
 @import 'glow';
 
 
+
 //////////////////////////////////////////////////////////
 // BUTTON BASE STYLES ////////////////////////////////////
 //////////////////////////////////////////////////////////
@@ -125,9 +126,6 @@ button#{$namespace}:disabled {
             background: desaturate($bgcolor, 20%);
             color: darken($bgcolor, 20%);
         }
-        &.glow {
-            @include box-shadow(0px 0px 0px rgba($bgcolor, 0.3), 0px 1px 3px rgba(0, 0, 0, .30));
-        }
     }
 }
 
@@ -143,7 +141,6 @@ button#{$namespace}:disabled {
     @include transition-property(background, color);
     @include transition-duration(.3s);
     @include box-shadow(none);
-
     background: darken($bgcolor, 2%);
     border: none;
     text-shadow: none;
@@ -172,9 +169,9 @@ button#{$namespace}:disabled {
         @include transition-duration(.3s);
         @include box-shadow(none);
         background: $bgcolor;
-        border: none;
         color: $font-color;
         text-shadow: none;
+        border: none;
 
         &:hover {
             @include background(lighten($bgcolor, 5%));
