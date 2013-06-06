@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="A CSS button library built with Sass and Compass">
     <meta name="viewport" content="width=device-width">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css" >
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
 
@@ -26,6 +26,7 @@
         <ul class="clearfix">
             <li class="home"><a href="#home">B</a></li>
             <li><a href="#flat">Flat</a></li>
+            <li><a href="#icons">Icons</a></li>
             <li><a href="#glow">Glow</a></li>
             <li><a href="#rounded">Rounded</a></li>
             <li><a href="#pill">Pill</a></li>
@@ -33,6 +34,7 @@
             <li><a href="#circle">Circle</a></li>
             <li><a href="#block">Block</a></li>
             <li><a href="#more">More</a></li>
+            <li><a href="#setup">Get Started</a></li>
 
         </ul>
 
@@ -114,6 +116,38 @@
         </section>
 
 
+
+        <!-- ******************************************************************* -->
+        <!-- ICONS BUTTONS *************************************************** -->
+        <!-- ******************************************************************* -->
+
+        <section id="icons" class="showcase">
+            <hgroup>
+                <h3>Icon Buttons <em>(icons provided by <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>)</em></h3>
+            </hgroup>
+
+            <section class="gallery">
+
+                <ul>
+                    <li><a href="#" class="button button-rounded button-flat"><i class="icon-github"></i></i> press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-primary"><i class="icon-refresh"></i> press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-action"><i class="icon-cloud"></i> press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-highlight"><i class="icon-camera"></i> press me</a></li>
+                    <li><a href="#" class="button button-rounded button-flat-caution"><i class="icon-code"></i> press me</a>  </li>
+                    <li><a href="#" class="button button-rounded button-flat-royal"><i class="icon-envelope-alt"></i> press me</a></li>
+                </ul>
+            </section>
+
+            <pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-primary&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-action&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-highlight&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-caution&quot;&gt;press me&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-royal&quot;&gt;press me&lt;/a&gt;</pre>
+        </section>
+
+
         <!-- ******************************************************************* -->
         <!-- GLOW BUTTONS *************************************************** -->
         <!-- ******************************************************************* -->
@@ -141,10 +175,7 @@
 &lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-action&quot;&gt;press me&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-highlight&quot;&gt;press me&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-royal&quot;&gt;press me&lt;/a&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;button.js&quot;&gt;&lt;/script&gt;</pre>
+&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -305,40 +336,6 @@
         </section>
 
 
-        <!-- ******************************************************************* -->
-        <!-- ICONS BUTTONS *************************************************** -->
-        <!-- ******************************************************************* -->
-
-        <section id="icons" class="showcase">
-            <hgroup>
-                <h3>Icon Buttons</h3>
-            </hgroup>
-
-            <section class="gallery">
-
-                <ul>
-                    <li><a href="#" class="button button-rounded button-flat"><i class="icon-unlink"></i> press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-primary">press me</a>  </li>
-                    <li><a href="#" class="button button-rounded button-flat-action">press me</a>   </li>
-                    <li><a href="#" class="button button-rounded button-flat-highlight">press me</a></li>
-                    <li><a href="#" class="button button-rounded button-flat-caution">press me</a>  </li>
-                    <li><a href="#" class="button button-rounded button-flat-royal">press me</a>  </li>
-                </ul>
-            </section>
-
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-pill button-royal&quot;&gt;press me&lt;/a&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;button.js&quot;&gt;&lt;/script&gt;</pre>
-        </section>
-
-
 
         <!-- ******************************************************************* -->
         <!-- BUTTON SIZES ***************************************************** -->
@@ -427,38 +424,53 @@
 &lt;a href=&quot;#&quot; class=&quot;button disabled button-pill button-primary&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
-
     </section>
 
 
-        <footer>
+    <article id="setup">
+        <section class="instructions">
+            <h2>Getting Started</h2>
             <section class="setup">
-                <h2>Setup Buttons</h2>
-                <ol>
-                    <li>Open your terminal (command line) and navigate to the Buttons directory</li>
-                    <li>Type  <strong>compass watch</strong> and the css file will be recompile (you must have sass and compass installed)</li>
-                    <li>Edit the _options.scss with your own custom colors, names, fonts, etc.</li>
+                <h3><i class="icon-code"></i> Setup Buttons</h2>
+                <ol class="steps">
+                    <li>
+                        <a class="button button-rounded button-flat-primary button-tiny" href="https://raw.github.com/alexwolfe/Buttons/master/css/button.css"><i class="icon-download-alt"></i> Download Buttons</a> and add files to your website.
+                    </li>
+                    <li> Add css in the head of your webpage.
+<pre class="prettyprint linenums">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/button.css&quot;&gt;</pre>
+
+                    <em>You only need the font-awesome css if you're using icons</em>
+                    </li>
+                    <li>Create buttons in your html.</li>
                 </ol>
             </section>
 
             <section class="customize">
-                <h2>Customize Buttons</h2>
-                <ol>
-                    <li>Open your terminal (command line) and navigate to the Buttons directory</li>
-                    <li>Type  <strong>compass watch</strong> and the css file will be recompile (you must have sass and compass installed)</li>
-                    <li>Edit the _options.scss with your own custom colors, names, fonts, etc.</li>
+                <h3><i class="icon-github"></i> Customize Buttons</h2>
+                <ol class="steps">
+                    <li><a class="button button-rounded button-flat-action button-tiny" href="https://github.com/alexwolfe/Buttons/"><i class="icon-github"></i> Fork or Download</a> the Buttons project on github.
+                    </li>
+                    <li>Make sure you have <a target="_blank" href="http://sass-lang.com/download.html">Sass</a> and <a target="_blank" href="http://compass-style.org/install/">Compass</a> installed.</li>
+                    <li>Edit the _options.scss with your own custom values</li>
+                    <li>In the root of the Buttons directory type <strong>compass watch</strong> on the command line.</li>
+                    <li>The buttons.css file should now be updated</li>
                 </ol>
             </section>
             <div class="clear"></div>
+        </section>
+    </article>
 
-            <p>Created by <a target="_blank" href="https://twitter.com/alexwolfe">@alexwolfe</a></p>
-            <p>Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p>
-            <p>
-        </footer>
+    <footer>
 
-        <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="js/vendor/scrollto.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sons-of-obsidian"></script>
-    </body>
+        <p>Created by <a target="_blank" href="https://twitter.com/alexwolfe">@alexwolfe</a></p>
+        <p>Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p>
+        <p>
+    </footer>
+
+    <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/scrollto.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+</body>
 </html>

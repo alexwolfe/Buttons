@@ -90,7 +90,7 @@ nav {
         a {
             float: left;
             text-decoration: none;
-            padding: 20px;
+            padding: 20px 15px;
             color: #999;
             text-transform: uppercase;
             font-size: 14px;
@@ -186,6 +186,16 @@ header {
                 line-height: 30px;
                 margin: 0px;
                 padding: 0px;
+
+                em {
+                    font-size: 11px;
+                    color: #999;
+                    font-style: normal;
+
+                    a {
+                        color: #999;
+                    }
+                }
             }
         }
 
@@ -226,24 +236,64 @@ header {
 }
 
 
+#setup {
+    background: #EEE;
 
-footer {
-    background: #333;
-    color: #FFF;
-    padding: 20px;
-    text-align: center;
-    font-size: 12px;
-    color: #666;
+    h2 {
+        text-align: center;
+        font-weight: 100;
+        font-size: 60px;
+        color: #CCC;
+        text-shadow: 0px 1px 0px #FFF;
+        margin: 0px 0px 20px 0px ;
+        line-height: 60px;
+    }
+    h3 {
+        color: #666;
+        font-size: 22px;
+    }
 
-    ol {
-        li {
-            line-height: 22px;
-            margin-bottom: 10px;
+    .instructions {
+        max-width: 880px;
+        padding: 40px 20px;
+        margin: 0px auto;
+
+        ol.steps {
+            padding-left: 30px;
+            > li {
+                line-height: 22px;
+                margin-bottom: 10px;
+                color: #666;
+            }
+        }
+
+        em {
+            font-size: 12px;
+        }
+    }
+
+
+    .prettyprint {
+        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .40));
+        @include border-radius(3px);
+        background: #333;
+        padding: 5px;
+        margin: 0;
+        font-size: 10px;
+        line-height: 16px;
+        overflow: hidden;
+
+        .linenums {
+            padding-left: 20px;
+        }
+
+        li.L1, li.L3, li.L5, li.L7, li.L9 {
+            background: #333;
         }
     }
 
     .customize, .setup {
-        width: 45%;
+        width: 47%;
         text-align: left;
     }
 
@@ -254,6 +304,18 @@ footer {
     .setup {
         float: left;
     }
+
+}
+
+
+footer {
+    background: #333;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+
 
     a {
         color: #666;

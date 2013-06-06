@@ -8,8 +8,8 @@
 # THANKS
 
     Google Prettify for making my code snippets look nicer!
+    Font Awesome for the great looking font icons.
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, Sass, Compass,
-    jQuery, Modernizr
+    HTML5, CSS3, Sass, Compass

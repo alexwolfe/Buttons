@@ -8,6 +8,7 @@ $glow_color: #2c9adb;
 $bgcolor: #EEE;
 $height: 32px;
 
+
 //////////////////////////////////////////////////////////
 // TYPOGRAPHY ////////////////////////////////////////////
 //////////////////////////////////////////////////////////
@@ -17,23 +18,19 @@ $font-weight: 300;
 $font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 
-
 //////////////////////////////////////////////////////////
 // BUTTON OPTIONS ////////////////////////////////////////
 //////////////////////////////////////////////////////////
 
-// types of buttons to create
+// (name background-color font-color) add as many as you like.
+$button_actions: ('primary' #00A1CB #FFF)
+                 ('action' #7db500 #FFF)
+                 ('highlight' #F18D05 #FFF)
+                 ('caution' #E54028 #FFF)
+                 ('royal' #87318C #FFF);
+
 $button_styles: 'rounded' 'pill' 'circle';
-
-// button names and associate colors, add as many as you like. (button-name background-color font-color)
-// STANDARD COLORS // $button_actions: ('primary' #2c9adb #FFF) ('action' #7db500 #FFF) ('highlight' #f19900 #FFF) ('caution' #ed1c24 #FFF) ('royal' #771ead #FFF);
-$button_actions: ('primary' #00A1CB #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF) ('caution' #E54028 #FFF) ('royal' #87318C #FFF);
-//$button_actions: ('primary' #00ABF0 #FFF) ('action' #B3D334 #FFF) ('highlight' #FFC40A #FFF) ('caution' #EF1C25 #FFF) ('royal' #87318C #FFF);
-
-// types of button sizes
 $button_sizes: 'large' 'small' 'tiny';
-
-//radius for circle buttons, circles only have one size
-$circle-size: 120px;
+$circle-size: 120px; //radius for circle buttons, circles only have one size
 
 

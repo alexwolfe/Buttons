@@ -82,7 +82,7 @@ nav ul li.home a {
 nav ul a {
   float: left;
   text-decoration: none;
-  padding: 20px;
+  padding: 20px 15px;
   color: #999;
   text-transform: uppercase;
   font-size: 14px;
@@ -186,26 +186,36 @@ header .button-download {
   margin: 0px;
   padding: 0px;
 }
-/* line 192, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
+#page .showcase hgroup h3 em {
+  font-size: 11px;
+  color: #999;
+  font-style: normal;
+}
+/* line 195, ../scss/main.scss */
+#page .showcase hgroup h3 em a {
+  color: #999;
+}
+/* line 202, ../scss/main.scss */
 #page .showcase .gallery {
   padding: 20px 20px 20px 20px;
 }
-/* line 195, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 #page .showcase .gallery ul {
   list-style-type: none;
   margin: 0px 0px 20px 0px;
   padding: 0;
 }
-/* line 200, ../scss/main.scss */
+/* line 210, ../scss/main.scss */
 #page .showcase .gallery ul:last-child {
   margin-bottom: 0px;
 }
-/* line 204, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 #page .showcase .gallery ul li {
   margin: 5px;
   display: inline-block;
 }
-/* line 211, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 #page .showcase .prettyprint {
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
@@ -223,12 +233,90 @@ header .button-download {
   line-height: 16px;
   overflow: hidden;
 }
-/* line 221, ../scss/main.scss */
+/* line 231, ../scss/main.scss */
 #page .showcase .prettyprint li.L1, #page .showcase .prettyprint li.L3, #page .showcase .prettyprint li.L5, #page .showcase .prettyprint li.L7, #page .showcase .prettyprint li.L9 {
   background: #333;
 }
 
-/* line 230, ../scss/main.scss */
+/* line 239, ../scss/main.scss */
+#setup {
+  background: #EEE;
+}
+/* line 242, ../scss/main.scss */
+#setup h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 60px;
+  color: #CCC;
+  text-shadow: 0px 1px 0px white;
+  margin: 0px 0px 20px 0px;
+  line-height: 60px;
+}
+/* line 251, ../scss/main.scss */
+#setup h3 {
+  color: #666;
+  font-size: 22px;
+}
+/* line 256, ../scss/main.scss */
+#setup .instructions {
+  max-width: 880px;
+  padding: 40px 20px;
+  margin: 0px auto;
+}
+/* line 261, ../scss/main.scss */
+#setup .instructions ol.steps {
+  padding-left: 30px;
+}
+/* line 263, ../scss/main.scss */
+#setup .instructions ol.steps > li {
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: #666;
+}
+/* line 270, ../scss/main.scss */
+#setup .instructions em {
+  font-size: 12px;
+}
+/* line 276, ../scss/main.scss */
+#setup .prettyprint {
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #333;
+  padding: 5px;
+  margin: 0;
+  font-size: 10px;
+  line-height: 16px;
+  overflow: hidden;
+}
+/* line 286, ../scss/main.scss */
+#setup .prettyprint .linenums {
+  padding-left: 20px;
+}
+/* line 290, ../scss/main.scss */
+#setup .prettyprint li.L1, #setup .prettyprint li.L3, #setup .prettyprint li.L5, #setup .prettyprint li.L7, #setup .prettyprint li.L9 {
+  background: #333;
+}
+/* line 295, ../scss/main.scss */
+#setup .customize, #setup .setup {
+  width: 47%;
+  text-align: left;
+}
+/* line 300, ../scss/main.scss */
+#setup .customize {
+  float: right;
+}
+/* line 304, ../scss/main.scss */
+#setup .setup {
+  float: left;
+}
+
+/* line 311, ../scss/main.scss */
 footer {
   background: #333;
   color: #FFF;
@@ -237,63 +325,45 @@ footer {
   font-size: 12px;
   color: #666;
 }
-/* line 239, ../scss/main.scss */
-footer ol li {
-  line-height: 22px;
-  margin-bottom: 10px;
-}
-/* line 245, ../scss/main.scss */
-footer .customize, footer .setup {
-  width: 45%;
-  text-align: left;
-}
-/* line 250, ../scss/main.scss */
-footer .customize {
-  float: right;
-}
-/* line 254, ../scss/main.scss */
-footer .setup {
-  float: left;
-}
-/* line 258, ../scss/main.scss */
+/* line 320, ../scss/main.scss */
 footer a {
   color: #666;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 273, ../scss/main.scss */
+  /* line 335, ../scss/main.scss */
   body {
     padding: 0px;
   }
 
-  /* line 278, ../scss/main.scss */
+  /* line 340, ../scss/main.scss */
   nav {
     position: static;
   }
-  /* line 281, ../scss/main.scss */
+  /* line 343, ../scss/main.scss */
   nav ul {
     width: auto;
   }
-  /* line 284, ../scss/main.scss */
+  /* line 346, ../scss/main.scss */
   nav ul li {
     float: none;
     display: block;
     border-bottom: 1px solid #eeeeee;
   }
-  /* line 289, ../scss/main.scss */
+  /* line 351, ../scss/main.scss */
   nav ul li.home {
     padding: 10px;
     margin: 5px auto;
   }
-  /* line 292, ../scss/main.scss */
+  /* line 354, ../scss/main.scss */
   nav ul li.home a {
     margin: 5px auto;
   }
-  /* line 298, ../scss/main.scss */
+  /* line 360, ../scss/main.scss */
   nav ul li.selected {
     border-bottom: 1px solid #eeeeee;
   }
-  /* line 302, ../scss/main.scss */
+  /* line 364, ../scss/main.scss */
   nav ul li a {
     float: none;
     display: block;

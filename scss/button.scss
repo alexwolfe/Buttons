@@ -1,9 +1,6 @@
 @import 'compass';
-@import 'options';
+@import 'options'; // EDIT STYLES AND OPTIONS IN _options.scss
 @import 'glow';
-
-
-// EDIT STYLES AND OPTIONS IN _options.scss
 
 
 //////////////////////////////////////////////////////////
@@ -40,11 +37,16 @@
 
 //HEIGHT NEEDED FOR FORM ELEMENTS
 input#{$namespace}, button#{$namespace} {
-    height: 30px;
+    height: $height + 2;
     cursor: pointer;
 }
 
-// DISABLED  STYLES
+// BLOCK BUTTON
+#{$namespace}-block {
+    display: block;
+}
+
+// DISABLED STATE
 #{$namespace}.disabled,
 #{$namespace}.disabled:hover,
 #{$namespace}.disabled:active,
@@ -65,11 +67,6 @@ button#{$namespace}:disabled {
     @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.04));
     padding: 10px;
     display: inline-block;
-}
-
-// BLOCK EFFECT
-#{$namespace}-block {
-    display: block;
 }
 
 
@@ -213,31 +210,31 @@ button#{$namespace}:disabled {
 
         @if $size == 'small' {
             font-size: $font-size - 2;
-            height: 24px;
-            line-height: 24px;
-            padding: 0px 10px;
+            height: $height * .8;
+            line-height: $height * .8;
+            padding: 0px ($height * .8) * .8;
         }
 
         @if $size == 'tiny' {
             font-size: $font-size - 3;
-            height: 20px;
-            line-height: 20px;
-            padding: 0px 7px;
+            height: $height * .7;
+            line-height: $height * .7;
+            padding: 0px ($height * .7) * .8;
         }
     }
 
     //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
     input#{$namespace}-#{$size}, button#{$namespace}-#{$size} {
         @if $size == 'large' {
-            height: 40px;
+            height: ($height * 1.2) + 2;
         }
 
         @if $size == 'small' {
-            height: 26px;
+            height: ($height * .8) + 2;
         }
 
         @if $size == 'tiny' {
-            height: 22px;
+            height: ($height * .7) + 2;
         }
     }
 }
