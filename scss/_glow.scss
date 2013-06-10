@@ -3,37 +3,37 @@
 //////////////////////////////////////////////////////////
 // GLOWING BUTTON STYLES ////////////////////////////////////////
 //////////////////////////////////////////////////////////
-@-webkit-keyframes #{$glow_namespace},
+@-webkit-keyframes glowing,
  {
     from { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
     50% { @include box-shadow(0px 0px 16px rgba($glow_color, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));}
     to { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
 }
-@-khtml-keyframes #{$glow_namespace},
+@-khtml-keyframes glowing,
  {
     from { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
     50% { @include box-shadow(0px 0px 16px rgba($glow_color, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));}
     to { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
 }
-@-moz-keyframes #{$glow_namespace},
+@-moz-keyframes glowing,
  {
     from { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
     50% { @include box-shadow(0px 0px 16px rgba($glow_color, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));}
     to { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
 }
-@-ms-keyframes #{$glow_namespace},
+@-ms-keyframes glowing,
  {
     from { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
     50% { @include box-shadow(0px 0px 16px rgba($glow_color, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));}
     to { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
 }
-@-o-keyframes #{$glow_namespace},
+@-o-keyframes glowing,
  {
     from { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
     50% { @include box-shadow(0px 0px 16px rgba($glow_color, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));}
     to { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
 }
-@keyframes #{$glow_namespace},
+@keyframes glowing,
  {
     from { @include box-shadow(0px 0px 0px rgba($glow_color, 0.3), 0px 1px 2px rgba(0, 0, 0, .20));}
     50% { @include box-shadow(0px 0px 16px rgba($glow_color, 0.8), 0px 1px 2px rgba(0, 0, 0, .20));}
@@ -41,12 +41,6 @@
 }
 
 @mixin glow {
-    -webkit-animation-name: $glow_namespace;
-    -khtml-animation-name: $glow_namespace;
-    -moz-animation-name: $glow_namespace;
-    -ms-animation-name: $glow_namespace;
-    -o-animation-name: $glow_namespace;
-    animation-name: $glow_namespace;
     -webkit-animation-duration: 3s;
     -moz-animation-duration: 3s;
     -ms-animation-duration: 3s;
@@ -58,6 +52,12 @@
     -ms-animation-iteration-count: infinite;
     -o-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-name: glowing;
+    -khtml-animation-name: glowing;
+    -moz-animation-name: glowing;
+    -ms-animation-name: glowing;
+    -o-animation-name: glowing;
+    animation-name: glowing;
 }
 
 @mixin no_animation {
