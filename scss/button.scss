@@ -11,7 +11,7 @@
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
     background-color: $bgcolor;
     @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
-    display: inline-block;
+    @include inline-block(middle);
     border: 1px solid darken($bgcolor, 10%);
     height: $height;
     line-height: $height;
@@ -123,6 +123,7 @@ button#{$namespace}:disabled {
         text-shadow: 0 -1px 1px rgba(darken($bgcolor, 30%), 0.35);
 
         &:hover {
+            background-color: $bgcolor;
             @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 5%)));
         }
         &:active {
