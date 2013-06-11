@@ -5,6 +5,9 @@ A CSS fully customizable button library built using Sass and Compass
 
 Your view code examples on the [Button Website](http://alexwolfe.github.io/Buttons/)
 
+
+[Ruby Gem Friendly Version](https://github.com/rajahafify/buttons-rails)
+
 General Options
 ===============
 
