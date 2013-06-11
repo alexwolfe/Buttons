@@ -7,17 +7,18 @@ $(document).ready(function(){
 
             this.activateNav();
             this.disableDemoButtons();
-            console.log('hello');
         },
 
         activateNav: function() {
+            var that = this;
+
             this.buttons.click(function(e) {
                 e.preventDefault();
                 var currentButton = $(e.currentTarget);
                 var buttonId = currentButton.attr('href');
 
                 //DESELECT ALL BUTTONS & SELECT CURRRENT ONE
-                this.buttons.parent().removeClass('selected');
+                that.buttons.parent().removeClass('selected');
                 currentButton.parent().addClass('selected');
 
                 //ANIMATE SCROLL EFFECT
@@ -25,12 +26,11 @@ $(document).ready(function(){
                     scrollTop: $(buttonId).offset().top - 100
                 }, 'slow');
 
-
-            }.bind(this));
+            });
         },
 
         disableDemoButtons: function() {
-            $('.showcase a').on('click', function(e) {
+            $('.showcase .button').on('click', function(e) {
                 e.preventDefault();
             });
         }

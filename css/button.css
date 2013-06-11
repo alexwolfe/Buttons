@@ -1,4 +1,4 @@
-@-webkit-keyframes glow {
+@-webkit-keyframes glowing {
   /* line 8, ../scss/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -21,7 +21,7 @@
   }
 }
 
-@-khtml-keyframes glow {
+@-khtml-keyframes glowing {
   /* line 14, ../scss/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -44,7 +44,7 @@
   }
 }
 
-@-moz-keyframes glow {
+@-moz-keyframes glowing {
   /* line 20, ../scss/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -67,7 +67,7 @@
   }
 }
 
-@-ms-keyframes glow {
+@-ms-keyframes glowing {
   /* line 26, ../scss/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -90,7 +90,7 @@
   }
 }
 
-@-o-keyframes glow {
+@-o-keyframes glowing {
   /* line 32, ../scss/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -113,7 +113,7 @@
   }
 }
 
-@keyframes glow {
+@keyframes glowing {
   /* line 38, ../scss/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -141,12 +141,18 @@
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #eeeeee;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #e1e1e1));
   background: -webkit-linear-gradient(top, #fbfbfb, #e1e1e1);
   background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
   background: -o-linear-gradient(top, #fbfbfb, #e1e1e1);
   background: linear-gradient(top, #fbfbfb, #e1e1e1);
+  display: -moz-inline-stack;
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   border: 1px solid #d4d4d4;
   height: 32px;
   line-height: 32px;
@@ -160,15 +166,16 @@
   text-decoration: none;
   text-align: center;
 }
-/* line 28, ../scss/button.scss */
+/* line 29, ../scss/button.scss */
 .button:hover {
+  background-color: #eeeeee;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dcdcdc));
   background: -webkit-linear-gradient(top, #ffffff, #dcdcdc);
   background: -moz-linear-gradient(top, #ffffff, #dcdcdc);
   background: -o-linear-gradient(top, #ffffff, #dcdcdc);
   background: linear-gradient(top, #ffffff, #dcdcdc);
 }
-/* line 31, ../scss/button.scss */
+/* line 33, ../scss/button.scss */
 .button:active {
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
   -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
@@ -178,18 +185,18 @@
   color: #bbbbbb;
 }
 
-/* line 40, ../scss/button.scss */
+/* line 42, ../scss/button.scss */
 input.button, button.button {
   height: 34px;
   cursor: pointer;
 }
 
-/* line 46, ../scss/button.scss */
+/* line 48, ../scss/button.scss */
 .button-block {
   display: block;
 }
 
-/* line 55, ../scss/button.scss */
+/* line 57, ../scss/button.scss */
 .button.disabled,
 .button.disabled:hover,
 .button.disabled:active,
@@ -205,7 +212,7 @@ button.button:disabled {
   cursor: default;
 }
 
-/* line 65, ../scss/button.scss */
+/* line 67, ../scss/button.scss */
 .button-wrap {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3e3e3), color-stop(100%, #f2f2f2));
   background: -webkit-linear-gradient(top, #e3e3e3, #f2f2f2);
@@ -224,7 +231,7 @@ button.button:disabled {
   display: inline-block;
 }
 
-/* line 81, ../scss/button.scss */
+/* line 83, ../scss/button.scss */
 .button-rounded {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -233,7 +240,7 @@ button.button:disabled {
   border-radius: 3px;
 }
 
-/* line 81, ../scss/button.scss */
+/* line 83, ../scss/button.scss */
 .button-pill {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -242,7 +249,7 @@ button.button:disabled {
   border-radius: 50px;
 }
 
-/* line 81, ../scss/button.scss */
+/* line 83, ../scss/button.scss */
 .button-circle {
   -webkit-border-radius: 240px;
   -moz-border-radius: 240px;
@@ -260,132 +267,142 @@ button.button:disabled {
   font-size: 18px;
 }
 
-/* line 116, ../scss/button.scss */
+/* line 118, ../scss/button.scss */
 .button-primary {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b5e5), color-stop(100%, #008db2));
   background: -webkit-linear-gradient(top, #00b5e5, #008db2);
   background: -moz-linear-gradient(top, #00b5e5, #008db2);
   background: -o-linear-gradient(top, #00b5e5, #008db2);
   background: linear-gradient(top, #00b5e5, #008db2);
+  background-color: #00a1cb;
   border-color: #007998;
   color: white;
   text-shadow: 0 -1px 1px rgba(0, 40, 50, 0.35);
 }
-/* line 122, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-primary:hover {
+  background-color: #00a1cb;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00c9fe), color-stop(100%, #008db2));
   background: -webkit-linear-gradient(top, #00c9fe, #008db2);
   background: -moz-linear-gradient(top, #00c9fe, #008db2);
   background: -o-linear-gradient(top, #00c9fe, #008db2);
   background: linear-gradient(top, #00c9fe, #008db2);
 }
-/* line 125, ../scss/button.scss */
+/* line 129, ../scss/button.scss */
 .button-primary:active {
   background: #1495b7;
   color: #005065;
 }
 
-/* line 116, ../scss/button.scss */
+/* line 118, ../scss/button.scss */
 .button-action {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8fcf00), color-stop(100%, #6b9c00));
   background: -webkit-linear-gradient(top, #8fcf00, #6b9c00);
   background: -moz-linear-gradient(top, #8fcf00, #6b9c00);
   background: -o-linear-gradient(top, #8fcf00, #6b9c00);
   background: linear-gradient(top, #8fcf00, #6b9c00);
+  background-color: #7db500;
   border-color: #5a8200;
   color: white;
   text-shadow: 0 -1px 1px rgba(19, 28, 0, 0.35);
 }
-/* line 122, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-action:hover {
+  background-color: #7db500;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a0e800), color-stop(100%, #6b9c00));
   background: -webkit-linear-gradient(top, #a0e800, #6b9c00);
   background: -moz-linear-gradient(top, #a0e800, #6b9c00);
   background: -o-linear-gradient(top, #a0e800, #6b9c00);
   background: linear-gradient(top, #a0e800, #6b9c00);
 }
-/* line 125, ../scss/button.scss */
+/* line 129, ../scss/button.scss */
 .button-action:active {
   background: #76a312;
   color: #374f00;
 }
 
-/* line 116, ../scss/button.scss */
+/* line 118, ../scss/button.scss */
 .button-highlight {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fa9915), color-stop(100%, #d87e04));
   background: -webkit-linear-gradient(top, #fa9915, #d87e04);
   background: -moz-linear-gradient(top, #fa9915, #d87e04);
   background: -o-linear-gradient(top, #fa9915, #d87e04);
   background: linear-gradient(top, #fa9915, #d87e04);
+  background-color: #f18d05;
   border-color: #bf7004;
   color: white;
   text-shadow: 0 -1px 1px rgba(91, 53, 2, 0.35);
 }
-/* line 122, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-highlight:hover {
+  background-color: #f18d05;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fba42e), color-stop(100%, #d87e04));
   background: -webkit-linear-gradient(top, #fba42e, #d87e04);
   background: -moz-linear-gradient(top, #fba42e, #d87e04);
   background: -o-linear-gradient(top, #fba42e, #d87e04);
   background: linear-gradient(top, #fba42e, #d87e04);
 }
-/* line 125, ../scss/button.scss */
+/* line 129, ../scss/button.scss */
 .button-highlight:active {
   background: #d8891e;
   color: #8d5303;
 }
 
-/* line 116, ../scss/button.scss */
+/* line 118, ../scss/button.scss */
 .button-caution {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8543f), color-stop(100%, #d9331a));
   background: -webkit-linear-gradient(top, #e8543f, #d9331a);
   background: -moz-linear-gradient(top, #e8543f, #d9331a);
   background: -o-linear-gradient(top, #e8543f, #d9331a);
   background: linear-gradient(top, #e8543f, #d9331a);
+  background-color: #e54028;
   border-color: #c22d18;
   color: white;
   text-shadow: 0 -1px 1px rgba(103, 24, 13, 0.35);
 }
-/* line 122, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-caution:hover {
+  background-color: #e54028;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eb6855), color-stop(100%, #d9331a));
   background: -webkit-linear-gradient(top, #eb6855, #d9331a);
   background: -moz-linear-gradient(top, #eb6855, #d9331a);
   background: -o-linear-gradient(top, #eb6855, #d9331a);
   background: linear-gradient(top, #eb6855, #d9331a);
 }
-/* line 125, ../scss/button.scss */
+/* line 129, ../scss/button.scss */
 .button-caution:active {
   background: #cd5240;
   color: #952312;
 }
 
-/* line 116, ../scss/button.scss */
+/* line 118, ../scss/button.scss */
 .button-royal {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #99389f), color-stop(100%, #752a79));
   background: -webkit-linear-gradient(top, #99389f, #752a79);
   background: -moz-linear-gradient(top, #99389f, #752a79);
   background: -o-linear-gradient(top, #99389f, #752a79);
   background: linear-gradient(top, #99389f, #752a79);
+  background-color: #87318c;
   border-color: #632466;
   color: white;
   text-shadow: 0 -1px 1px rgba(26, 9, 27, 0.35);
 }
-/* line 122, ../scss/button.scss */
+/* line 125, ../scss/button.scss */
 .button-royal:hover {
+  background-color: #87318c;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ab3eb2), color-stop(100%, #752a79));
   background: -webkit-linear-gradient(top, #ab3eb2, #752a79);
   background: -moz-linear-gradient(top, #ab3eb2, #752a79);
   background: -o-linear-gradient(top, #ab3eb2, #752a79);
   background: linear-gradient(top, #ab3eb2, #752a79);
 }
-/* line 125, ../scss/button.scss */
+/* line 129, ../scss/button.scss */
 .button-royal:active {
   background: #764479;
   color: #3e1740;
 }
 
-/* line 139, ../scss/button.scss */
+/* line 143, ../scss/button.scss */
 .button-flat {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -402,23 +419,23 @@ button.button:disabled {
   border: none;
   text-shadow: none;
 }
-/* line 148, ../scss/button.scss */
+/* line 152, ../scss/button.scss */
 .button-flat:hover {
   background: #fbfbfb;
 }
-/* line 151, ../scss/button.scss */
+/* line 155, ../scss/button.scss */
 .button-flat:active {
   background: #eeeeee;
   color: #bbbbbb;
 }
-/* line 155, ../scss/button.scss */
+/* line 159, ../scss/button.scss */
 .button-flat.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 167, ../scss/button.scss */
+/* line 171, ../scss/button.scss */
 .button-flat-primary {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -436,23 +453,23 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 176, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-primary:hover {
   background: #00b5e5;
 }
-/* line 180, ../scss/button.scss */
+/* line 183, ../scss/button.scss */
 .button-flat-primary:active {
   background: #1495b7;
   color: #00647f;
 }
-/* line 184, ../scss/button.scss */
+/* line 187, ../scss/button.scss */
 .button-flat-primary.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 167, ../scss/button.scss */
+/* line 171, ../scss/button.scss */
 .button-flat-action {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -470,23 +487,23 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 176, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-action:hover {
   background: #8fcf00;
 }
-/* line 180, ../scss/button.scss */
+/* line 183, ../scss/button.scss */
 .button-flat-action:active {
   background: #76a312;
   color: #486900;
 }
-/* line 184, ../scss/button.scss */
+/* line 187, ../scss/button.scss */
 .button-flat-action.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 167, ../scss/button.scss */
+/* line 171, ../scss/button.scss */
 .button-flat-highlight {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -504,23 +521,23 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 176, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-highlight:hover {
   background: #fa9915;
 }
-/* line 180, ../scss/button.scss */
+/* line 183, ../scss/button.scss */
 .button-flat-highlight:active {
   background: #d8891e;
   color: #a66103;
 }
-/* line 184, ../scss/button.scss */
+/* line 187, ../scss/button.scss */
 .button-flat-highlight.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 167, ../scss/button.scss */
+/* line 171, ../scss/button.scss */
 .button-flat-caution {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -538,23 +555,23 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 176, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-caution:hover {
   background: #e8543f;
 }
-/* line 180, ../scss/button.scss */
+/* line 183, ../scss/button.scss */
 .button-flat-caution:active {
   background: #cd5240;
   color: #ac2815;
 }
-/* line 184, ../scss/button.scss */
+/* line 187, ../scss/button.scss */
 .button-flat-caution.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 167, ../scss/button.scss */
+/* line 171, ../scss/button.scss */
 .button-flat-royal {
   -webkit-transition-property: background, color;
   -moz-transition-property: background, color;
@@ -572,23 +589,23 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 176, ../scss/button.scss */
+/* line 180, ../scss/button.scss */
 .button-flat-royal:hover {
   background: #99389f;
 }
-/* line 180, ../scss/button.scss */
+/* line 183, ../scss/button.scss */
 .button-flat-royal:active {
   background: #764479;
   color: #501d53;
 }
-/* line 184, ../scss/button.scss */
+/* line 187, ../scss/button.scss */
 .button-flat-royal.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 199, ../scss/button.scss */
+/* line 202, ../scss/button.scss */
 .button-large {
   font-size: 19px;
   height: 38.4px;
@@ -596,12 +613,12 @@ button.button:disabled {
   padding: 0px 30.72px;
 }
 
-/* line 224, ../scss/button.scss */
+/* line 227, ../scss/button.scss */
 input.button-large, button.button-large {
   height: 40.4px;
 }
 
-/* line 199, ../scss/button.scss */
+/* line 202, ../scss/button.scss */
 .button-small {
   font-size: 12px;
   height: 25.6px;
@@ -609,12 +626,12 @@ input.button-large, button.button-large {
   padding: 0px 20.48px;
 }
 
-/* line 224, ../scss/button.scss */
+/* line 227, ../scss/button.scss */
 input.button-small, button.button-small {
   height: 27.6px;
 }
 
-/* line 199, ../scss/button.scss */
+/* line 202, ../scss/button.scss */
 .button-tiny {
   font-size: 11px;
   height: 22.4px;
@@ -622,19 +639,13 @@ input.button-small, button.button-small {
   padding: 0px 17.92px;
 }
 
-/* line 224, ../scss/button.scss */
+/* line 227, ../scss/button.scss */
 input.button-tiny, button.button-tiny {
   height: 24.4px;
 }
 
-/* line 244, ../scss/button.scss */
+/* line 247, ../scss/button.scss */
 .button.glow {
-  -webkit-animation-name: "glow";
-  -khtml-animation-name: "glow";
-  -moz-animation-name: "glow";
-  -ms-animation-name: "glow";
-  -o-animation-name: "glow";
-  animation-name: "glow";
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -ms-animation-duration: 3s;
@@ -646,8 +657,14 @@ input.button-tiny, button.button-tiny {
   -ms-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-name: glowing;
+  -khtml-animation-name: glowing;
+  -moz-animation-name: glowing;
+  -ms-animation-name: glowing;
+  -o-animation-name: glowing;
+  animation-name: glowing;
 }
-/* line 247, ../scss/button.scss */
+/* line 250, ../scss/button.scss */
 .button.glow:active {
   -webkit-animation-name: none;
   -moz-animation-name: none;

@@ -9,8 +9,9 @@
 //////////////////////////////////////////////////////////
 #{$namespace} {
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
+    background-color: $bgcolor;
     @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
-    display: inline-block;
+    @include inline-block(middle);
     border: 1px solid darken($bgcolor, 10%);
     height: $height;
     line-height: $height;
@@ -26,6 +27,7 @@
 
 
     &:hover {
+        background-color: $bgcolor;
         @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 7%)));
     }
     &:active {
@@ -115,11 +117,13 @@ button#{$namespace}:disabled {
     // .button-primary .button-action etc.
     #{$namespace}-#{$name} {
         @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
+        background-color: $bgcolor;
         border-color: darken($bgcolor, 10%);
         color: $font-color;
         text-shadow: 0 -1px 1px rgba(darken($bgcolor, 30%), 0.35);
 
         &:hover {
+            background-color: $bgcolor;
             @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 5%)));
         }
         &:active {
@@ -175,7 +179,6 @@ button#{$namespace}:disabled {
 
         &:hover {
             @include background(lighten($bgcolor, 5%));
-
         }
         &:active {
             background: desaturate($bgcolor, 20%);
@@ -241,10 +244,10 @@ button#{$namespace}:disabled {
 // GLOWING BUTTON STYLES /////////////////////////////////
 //////////////////////////////////////////////////////////
 #{$namespace} {
-    &.#{$glow_namespace} {
+    &#{$glow_namespace} {
         @include glow;
     }
-    &.#{$glow_namespace}:active {
+    &#{$glow_namespace}:active {
         @include no_animation;
         @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
     }
