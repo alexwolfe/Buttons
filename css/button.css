@@ -206,7 +206,7 @@ button.button:disabled {
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   background: #EEE;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   text-shadow: 0 1px 1px white;
   color: #CCC;
   cursor: default;

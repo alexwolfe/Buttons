@@ -2,11 +2,11 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
     Alexander Wolfe -- Author -- @alexwolfe
 
 # THANKS
-
+    The Sass Team
+    The Compass Team
     Google Prettify for making my code snippets look nicer!
     Font Awesome for the great looking font icons.
 
