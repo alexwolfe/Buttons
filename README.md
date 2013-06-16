@@ -3,10 +3,12 @@ Buttons
 
 A CSS fully customizable button library built using Sass and Compass
 
-Your view code examples on the [Button Website](http://alexwolfe.github.io/Buttons/)
+Your view [code examples on the Button Website](http://alexwolfe.github.io/Buttons/)
+
+![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/buttons.png)
 
 
-[Ruby Gem Friendly Version](https://github.com/rajahafify/buttons-rails)
+There is also a [Ruby Gem Friendly Version](https://github.com/rajahafify/buttons-rails)
 
 General Options
 ===============
