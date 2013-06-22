@@ -10,6 +10,26 @@ Your view [code examples on the Button Website](http://alexwolfe.github.io/Butto
 
 There is also a [Ruby Gem Friendly Version](https://github.com/rajahafify/buttons-rails)
 
+Setup & Installation
+====================
+
+1. [Download Buttons](https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip) and add files to your website.
+2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
+    `<link rel="stylesheet" href="css/font-awesome.min.css">`
+    `<link rel="stylesheet" href="css/buttons.css">`
+3. Create buttons in your html.
+
+
+Customize Buttons
+====================
+
+1. Clone the Buttons repo
+2. Make sure you have Sass and Compass installed.
+3. Edit the _options.scss with your own custom values (see values below)
+4. Run the *compass watch* command root of the Buttons directory from the command line.
+5. The buttons.css file should now be updated
+
+
 General Options
 ===============
 
@@ -39,3 +59,5 @@ item will create a new button.
 * **$button_styles:** Correspond to the styles avaialble ('rounded' 'pill' 'circle')
 * **$button_sizes:** Correspond to the sizes avaialble ('large' 'small' 'tiny')
 * **$circle-size:** Radius for circle buttons, circles only have one size (120px)
+
+created with by [@alexwolfe](https://twitter.com/alexwolfe) at [@adroll](https://twitter.com/adroll)
