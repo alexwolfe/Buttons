@@ -21,6 +21,15 @@
     <title>Buttons - A CSS button library built with Sass and Compass</title>
 </head>
 <body id="home">
+   <!-- FACEBOOK LIKE BUTTON -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=162853010460019";
+            fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
     <nav id="main-nav">
@@ -60,19 +69,10 @@
             <iframe class="github-button" src="http://ghbtns.com/github-btn.html?user=alexwolfe&repo=Buttons&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
 
             <!-- TWITTER TWEET BUTTON -->
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Checking out &quot;Buttons&quot; a customizable CSS button library built with Sass &amp; Compass" data-via="alexwolfe">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alexwolfe.github.io/Buttons/" data-text="Buttons - a customizable CSS button library built with Sass &amp; Compass">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
             <!-- FACEBOOK LIKE BUTTON -->
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=162853010460019";
-            fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
             <div class="fb-like" data-href="http://alexwolfe.github.io/Buttons/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
         </section>
     </header>
