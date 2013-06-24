@@ -132,6 +132,10 @@ header {
         position: absolute;
         bottom: 20px;
         right: 100px;
+
+        .github-button {
+            min-width: 100px;
+        }
     }
 
     .button-download {
