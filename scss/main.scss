@@ -126,18 +126,6 @@ header {
             margin: 0px 10px 20px 10px;
             text-shadow: 0px 1px 0px #FFF;
         }
-
-        @media only screen and (max-width: 480px) {
-            h1 {
-                font-size: 80px;
-                line-height: 80px;
-                margin: 0px 10px 10px 10px;
-            }
-            h2 {
-                font-size: 24px;
-                margin: 0px 20px 20px 20px;
-            }
-        }
     }
 
     .social-buttons {
@@ -157,7 +145,27 @@ header {
             //color: #2c9adb;
         }
     }
+    @media only screen and (max-width: 480px) {
+        hgroup {
+            h1 {
+                font-size: 70px;
+                line-height: 80px;
+                margin: 0px 10px 10px 10px;
+            }
+            h2 {
+                font-size: 24px;
+                margin: 0px 20px 20px 20px;
+            }
+        }
 
+        .social-buttons {
+            position: absolute;
+            top: 20px;
+            left: auto;
+            bottom: auto;
+            right: 20px;
+        }
+    }
 }
 
 
@@ -214,6 +222,16 @@ header {
                 li {
                     margin: 5px;
                     display: inline-block;
+                }
+            }
+
+            em {
+                font-size: 11px;
+                color: #999;
+                font-style: normal;
+
+                a {
+                    color: #999;
                 }
             }
         }
@@ -314,11 +332,9 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 12px;
-    color: #666;
-
 
     a {
-        color: #666;
+        color: #FFF;
     }
 }
 
