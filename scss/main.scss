@@ -101,7 +101,7 @@ nav {
 // BILLBOARD /////////////////////////
 header {
     background: $background;
-    padding: 50px 0px 80px 0px;
+    padding: 40px 0px 100px 0px;
     border-bottom: 1px solid $border;
     position: relative;
     margin-bottom: 100px;
@@ -131,10 +131,10 @@ header {
     .social-buttons {
         position: absolute;
         bottom: 20px;
-        right: 100px;
+        left: 20px;
 
         .github-button {
-            min-width: 100px;
+            min-width: 90px;
         }
     }
 
@@ -150,6 +150,8 @@ header {
         }
     }
     @media only screen and (max-width: 480px) {
+    padding: 70px 0px 80px 0px;
+
         hgroup {
             h1 {
                 font-size: 70px;
