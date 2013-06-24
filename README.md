@@ -1,9 +1,11 @@
 Buttons
 =======
 
-A CSS fully customizable button library built using Sass and Compass
+A fully customizable CSS button library built using Sass and Compass
 
-Your view [code examples on the Button Website](http://alexwolfe.github.io/Buttons/)
+Please **[view general use code examples on the Buttons Website](http://alexwolfe.github.io/Buttons/)**
+
+To customize the Buttons library view the documenation below.
 
 ![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/buttons.png)
 
@@ -31,7 +33,7 @@ Customize Buttons
 
 
 General Options
-===============
+---------------
 
 In order to edit your options simple option the *_options.scss* file. After you make your
 edits run *compass watch* in the root of the button directory and the updates should take place.
@@ -49,7 +51,7 @@ You can use index.html to view your changes.
 
 
 Advanced Options
-===============
+----------------
 
 The only option you should adjust here is the button actions. When you need to add/remove/edit another button
 color simple add/remove/edit on of the items in the list. There is not limit to the number of items in your list. Each
