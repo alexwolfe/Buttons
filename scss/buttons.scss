@@ -241,6 +241,72 @@ button#{$namespace}:disabled {
 
 
 //////////////////////////////////////////////////////////
+// DROPDOWN //////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$namespace}-dropdown {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+
+    &:hover {
+        ul {
+            display: block;
+        }
+    }
+
+    .button {
+
+        .icon-caret-down {
+            font-size: 90%;
+            margin: 0px 0px 0px 5px;
+        }
+    }
+
+    ul {
+        @include box-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
+        @include border-radius(3px);
+        display: none;
+        position: absolute;
+        background: #FFF;
+        top: -2px;
+        left: -2px;
+        z-index: 1000;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        min-width: 100%;
+
+        li {
+            padding: 0px;
+            margin: 0px;
+            display: block;
+
+            &:first-child a {
+                 @include border-top-radius(3px);
+            }
+            &:last-child a {
+                 @include border-bottom-radius(3px);
+            }
+        }
+
+        a {
+            display: block;
+            padding: 0px 20px;
+            text-decoration: none;
+            font-size: $font-size - 2;
+            color: $dropdown-link-color;
+            line-height: 30px;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: $dropdown-link-hover-bg;
+                color: $dropdown-link-hover;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////
 // GLOWING BUTTON STYLES /////////////////////////////////
 //////////////////////////////////////////////////////////
 #{$namespace} {

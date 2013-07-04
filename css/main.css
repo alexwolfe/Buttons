@@ -217,17 +217,17 @@ header .button-download {
   padding: 20px 20px 20px 20px;
 }
 /* line 219, ../scss/main.scss */
-#page .showcase .gallery ul {
+#page .showcase .gallery > ul {
   list-style-type: none;
   margin: 0px 0px 20px 0px;
   padding: 0;
 }
 /* line 224, ../scss/main.scss */
-#page .showcase .gallery ul:last-child {
+#page .showcase .gallery > ul:last-child {
   margin-bottom: 0px;
 }
 /* line 228, ../scss/main.scss */
-#page .showcase .gallery ul li {
+#page .showcase .gallery > ul > li {
   margin: 5px;
   display: inline-block;
 }

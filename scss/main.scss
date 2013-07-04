@@ -216,7 +216,7 @@ header {
         .gallery {
             padding: 20px 20px 20px 20px;
 
-            ul {
+            > ul {
                 list-style-type: none;
                 margin: 0px 0px 20px 0px;
                 padding: 0;
@@ -225,7 +225,7 @@ header {
                     margin-bottom: 0px;
                 }
 
-                li {
+                > li {
                     margin: 5px;
                     display: inline-block;
                 }
