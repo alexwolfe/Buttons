@@ -9,6 +9,7 @@
     The Compass Team
     Google Prettify for making my code snippets look nicer!
     Font Awesome for the great looking font icons.
+    jQuery Plugin Boiler Plate @addyosmani and @zenorocha
 
 # TECHNOLOGY COLOPHON
 

@@ -1,6 +1,6 @@
 @import 'compass';
 
-$background: #f4f4f4;
+$background: #fcfcfc;
 $border: #EEE;
 $highlight: #d30d15;
 $font: 'Cherry Swash', sans-serif;
@@ -183,6 +183,7 @@ header {
     //BUTTON SHOWCASE /////////////////////////
     .showcase {
         @include border-radius(10px);
+        @include box-shadow(inset 0px 1px 2px rgba(0, 0, 0, .10));
         background: $background;
         margin: 0px 10px 60px 10px;
         position: relative;
@@ -216,7 +217,7 @@ header {
         .gallery {
             padding: 20px 20px 20px 20px;
 
-            ul {
+            > ul {
                 list-style-type: none;
                 margin: 0px 0px 20px 0px;
                 padding: 0;
@@ -225,7 +226,7 @@ header {
                     margin-bottom: 0px;
                 }
 
-                li {
+                > li {
                     margin: 5px;
                     display: inline-block;
                 }
