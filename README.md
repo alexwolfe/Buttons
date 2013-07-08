@@ -17,7 +17,10 @@ Setup & Installation
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
     `<link rel="stylesheet" href="css/font-awesome.min.css">`
     `<link rel="stylesheet" href="css/buttons.css">`
-3. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
+3. Include jQuery and buttons.js if you're using dropdown menu buttons.
+    `<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>`
+    `<script type="text/javascript" src="js/buttons.js"></script>`
+4. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
 
 Customize Buttons
 ====================
@@ -59,4 +62,14 @@ item will create a new button.
 * **$button_sizes:** Correspond to the sizes avaialble ('large' 'small' 'tiny')
 * **$circle-size:** Radius for circle buttons, circles only have one size (120px)
 
+* **$dropdown-background:** Backround color of dropdown menu
+* **$dropdown-link-color:** Link color in dropdown menu
+* **$dropdown-link-hover:** Hover color for link in dropdown menu
+* **$dropdown-link-hover-background:** Background hover color for link in dropdown menu
+
 created with by [@alexwolfe](https://twitter.com/alexwolfe) at [@adroll](https://twitter.com/adroll)
+
+
+Browser Support
+====================
+Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all the way down to Internet Explorer 8.

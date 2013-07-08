@@ -111,24 +111,24 @@ button#{$namespace}:disabled {
 @each $action in $button_actions {
     //GET NAME & COLOR
     $name: nth($action, 1);
-    $bgcolor: nth($action, 2);
-    $font-color: nth($action, 3);
+    $background: nth($action, 2);
+    $color: nth($action, 3);
 
     // .button-primary .button-action etc.
     #{$namespace}-#{$name} {
-        @include background(linear-gradient(top,  lighten($bgcolor, 5%), darken($bgcolor, 5%)));
-        background-color: $bgcolor;
-        border-color: darken($bgcolor, 10%);
-        color: $font-color;
-        text-shadow: 0 -1px 1px rgba(darken($bgcolor, 30%), 0.35);
+        @include background(linear-gradient(top,  lighten($background, 5%), darken($background, 5%)));
+        background-color: $background;
+        border-color: darken($background, 10%);
+        color: $color;
+        text-shadow: 0 -1px 1px rgba(darken($background, 30%), 0.35);
 
         &:hover {
-            background-color: $bgcolor;
-            @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 5%)));
+            background-color: $background;
+            @include background(linear-gradient(top,  lighten($background, 10%), darken($background, 5%)));
         }
         &:active {
-            background: desaturate($bgcolor, 20%);
-            color: darken($bgcolor, 20%);
+            background: desaturate($background, 20%);
+            color: darken($background, 20%);
         }
     }
 }
@@ -141,20 +141,20 @@ button#{$namespace}:disabled {
 
 // FLAT BUTTON BASE
 #{$namespace}-flat {
-    $bgcolor: #EEE;
+    $background: $bgcolor;
     @include transition-property(background, color);
     @include transition-duration(.3s);
     @include box-shadow(none);
-    background: darken($bgcolor, 2%);
+    background: $background;
     border: none;
     text-shadow: none;
 
     &:hover {
-        @include background(lighten($bgcolor, 5%));
+        @include background(lighten($background, 5%));
     }
     &:active {
-        background: desaturate($bgcolor, 20%);
-        color: darken($bgcolor, 20%);
+        background: desaturate($background, 20%);
+        color: darken($background, 20%);
     }
     &.disabled {
         @include box-shadow(none);
@@ -164,25 +164,25 @@ button#{$namespace}:disabled {
 @each $action in $button_actions {
     //GET NAME & COLOR
     $name: nth($action, 1);
-    $bgcolor: nth($action, 2);
-    $font-color: nth($action, 3);
+    $background: nth($action, 2);
+    $color: nth($action, 3);
 
     // .button-flat-primary .button-flat-action etc.
     #{$namespace}-flat-#{$name} {
         @include transition-property(background, color);
         @include transition-duration(.3s);
         @include box-shadow(none);
-        background: $bgcolor;
-        color: $font-color;
+        background: $background;
+        color: $color;
         text-shadow: none;
         border: none;
 
         &:hover {
-            @include background(lighten($bgcolor, 5%));
+            @include background(lighten($background, 5%));
         }
         &:active {
-            background: desaturate($bgcolor, 20%);
-            color: darken($bgcolor, 15%);
+            background: desaturate($background, 20%);
+            color: darken($background, 15%);
         }
         &.disabled {
             @include box-shadow(none);
@@ -287,7 +287,7 @@ button#{$namespace}:disabled {
         @include border-radius(3px);
         display: none;
         position: absolute;
-        background: $dropdown-bg;
+        background: $dropdown-background;
         top: -2px;
         left: -2px;
         z-index: 1000;
@@ -325,7 +325,7 @@ button#{$namespace}:disabled {
             white-space: nowrap;
 
             &:hover {
-                background-color: $dropdown-link-hover-bg;
+                background-color: $dropdown-link-hover-background;
                 color: $dropdown-link-hover;
             }
         }
