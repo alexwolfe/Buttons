@@ -17,8 +17,7 @@ Setup & Installation
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
     `<link rel="stylesheet" href="css/font-awesome.min.css">`
     `<link rel="stylesheet" href="css/buttons.css">`
-3. Create buttons in your html.
-
+3. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
 
 Customize Buttons
 ====================
