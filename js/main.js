@@ -30,7 +30,7 @@ $(document).ready(function(){
         },
 
         disableDemoButtons: function() {
-            $('.showcase .button').on('click', function(e) {
+            $('.showcase [href^=#]').on('click', function(e) {
                 e.preventDefault();
             });
         }
