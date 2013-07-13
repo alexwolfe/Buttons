@@ -25,7 +25,6 @@
     text-decoration: none;
     text-align: center;
 
-
     &:hover {
         background-color: $bgcolor;
         @include background(linear-gradient(top,  lighten($bgcolor, 10%), darken($bgcolor, 7%)));
@@ -35,6 +34,9 @@
         text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
         background: desaturate($bgcolor, 20%);
         color: darken($bgcolor, 20%);
+    }
+    &:focus {
+        outline: none;
     }
 }
 
@@ -142,17 +144,18 @@ button#{$namespace}:disabled {
 // FLAT BUTTON BASE
 #{$namespace}-flat {
     $background: $bgcolor;
-    @include transition-property(background, color);
-    @include transition-duration(.3s);
     @include box-shadow(none);
+    @include transition-property(background);
+    @include transition-duration(.3s);
     background: $background;
     border: none;
     text-shadow: none;
 
     &:hover {
-        @include background(lighten($background, 5%));
+        background: lighten($background, 5%);
     }
     &:active {
+        @include transition-duration(0s);
         background: desaturate($background, 20%);
         color: darken($background, 20%);
     }
@@ -169,18 +172,19 @@ button#{$namespace}:disabled {
 
     // .button-flat-primary .button-flat-action etc.
     #{$namespace}-flat-#{$name} {
-        @include transition-property(background, color);
-        @include transition-duration(.3s);
         @include box-shadow(none);
+        @include transition-property(background);
+        @include transition-duration(.3s);
         background: $background;
         color: $color;
         text-shadow: none;
         border: none;
 
         &:hover {
-            @include background(lighten($background, 5%));
+            background: lighten($background, 5%);
         }
         &:active {
+            @include transition-duration(0s);
             background: desaturate($background, 20%);
             color: darken($background, 15%);
         }
@@ -279,6 +283,14 @@ button#{$namespace}:disabled {
             margin: 0px 0px 0px 3px;
             vertical-align: middle;
         }
+    }
+
+    ul#{$namespace}-dropdown-menu-below {
+        top: 115%;
+    }
+    ul#{$namespace}-dropdown-menu-above {
+        bottom: 115%;
+        top: auto;
     }
 
     //DROPDOWN MENU STYLES
