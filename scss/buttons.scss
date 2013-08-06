@@ -3,6 +3,21 @@
 @import 'glow';
 
 
+//////////////////////////////////////////////////////////
+// "INHERIT-SAFE" FONT SIZES /////////////////////////////
+//////////////////////////////////////////////////////////
+// If user elects to use font-size: inherit in _options
+// leave out calcs which result in inherit2 etc.
+$smallfs: inherit;
+$tinyfs: inherit;
+$largefs: inherit;
+$mediumfs: inherit;
+@if $font-size != inherit {
+    $largefs: $font-size + 5;
+    $tinyfs: $font-size - 2;
+    $smallfs: $font-size + 2;
+    $mediumfs: $font-size + 4;
+}
 
 //////////////////////////////////////////////////////////
 // BUTTON BASE STYLES ////////////////////////////////////
@@ -100,7 +115,7 @@ button#{$namespace}:disabled {
             height: $circle-size;
             padding: 0px;
             border-width: 4px;
-            font-size: $font-size + 4;
+            font-size: $mediumfs;
         }
     }
 }
@@ -108,7 +123,7 @@ button#{$namespace}:disabled {
 
 
 //////////////////////////////////////////////////////////
-// GRAIDENT STYLES ///////////////////////////////////////
+// GRADIENT STYLES ///////////////////////////////////////
 //////////////////////////////////////////////////////////
 @each $action in $button_actions {
     //GET NAME & COLOR
@@ -204,23 +219,22 @@ button#{$namespace}:disabled {
 
     // .button-large .button-small .button-tiny
     #{$namespace}-#{$size} {
-
         @if $size == 'large' {
-            font-size: $font-size + 5;
+            font-size: $largefs;
             height: $height * 1.2;
             line-height: $height * 1.2;
             padding: 0px ($height * 1.2) * .8;
         }
 
         @if $size == 'small' {
-            font-size: $font-size - 2;
+            font-size: $smallfs;
             height: $height * .8;
             line-height: $height * .8;
             padding: 0px ($height * .8) * .8;
         }
 
         @if $size == 'tiny' {
-            font-size: $font-size - 3;
+            font-size: $tinyfs;
             height: $height * .7;
             line-height: $height * .7;
             padding: 0px ($height * .7) * .8;
@@ -331,7 +345,7 @@ button#{$namespace}:disabled {
             display: block;
             padding: 0px 20px;
             text-decoration: none;
-            font-size: $font-size - 2;
+            font-size: $tinyfs;
             color: $dropdown-link-color;
             line-height: 30px;
             white-space: nowrap;
