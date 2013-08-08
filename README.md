@@ -22,12 +22,20 @@ Setup & Installation
     `<script type="text/javascript" src="js/buttons.js"></script>`
 4. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
 
+Using as a Partial
+==================
+If you'd like to `@import` Buttons and need it to recognize external variables (e.g. you'd like to use predefined variables in the `partials/_options.scss` file) you can place something like the following in your top-level SCSS file:
+```css
+@import 'colors/color-me-sass';
+@import 'buttons/partials/buttons';
+```
+
 Customize Buttons
 ====================
 
 1. Clone the Buttons repo
 2. Make sure you have Sass and Compass installed.
-3. Edit the _options.scss with your own custom values (see values below)
+3. Edit the `partials/_options.scss` with your own custom values (see values below)
 4. Run the *compass watch* command root of the Buttons directory from the command line.
 5. The buttons.css file should now be updated
 
@@ -35,7 +43,7 @@ Customize Buttons
 General Options
 ---------------
 
-In order to edit your options simple option the *_options.scss* file. After you make your
+In order to edit your options simple option the *partials/_options.scss* file. After you make your
 edits run *compass watch* in the root of the button directory and the updates should take place.
 You can use index.html to view your changes.
 
