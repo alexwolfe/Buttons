@@ -24,10 +24,11 @@ Setup & Installation
 
 Using as a Partial
 ==================
-If you'd like to `@import` Buttons and need it to recognize external variables (e.g. you'd like to use predefined variables in the `partials/_options.scss` file) you can place something like the following in your top-level SCSS file:
+You can easily import Buttons as a partial into an existing project.
+
 ```css
-@import 'colors/color-me-sass';
-@import 'buttons/partials/buttons';
+@import 'partials/options';
+@import 'partials/buttons';
 ```
 
 Customize Buttons
@@ -75,9 +76,17 @@ item will create a new button.
 * **$dropdown-link-hover:** Hover color for link in dropdown menu
 * **$dropdown-link-hover-background:** Background hover color for link in dropdown menu
 
-created with by [@alexwolfe](https://twitter.com/alexwolfe) at [@adroll](https://twitter.com/adroll)
-
 
 Browser Support
 ====================
 Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all the way down to Internet Explorer 8.
+
+
+Author
+===================
+Created with by Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) at [@adroll](https://twitter.com/adroll)
+
+
+Contributors
+===================
+Rob Levin @roblevintennis
