@@ -255,22 +255,22 @@ button.button:disabled {
 
 /* line 100, ../scss/partials/_buttons.scss */
 .button-circle {
-  -webkit-border-radius: 240px;
-  -moz-border-radius: 240px;
-  -ms-border-radius: 240px;
-  -o-border-radius: 240px;
-  border-radius: 240px;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  width: 120px;
-  line-height: 120px;
-  height: 120px;
-  padding: 0px;
-  border-width: 4px;
-  font-size: 18px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+    border-radius: 250px;
+    -webkit-box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 120px;
+    line-height: 120px;
+    height: 120px;
+    padding: 0px;
+    border-width: 4px;
+    font-size: 18px;
+    text-align: center;
 }
-
 /* line 135, ../scss/partials/_buttons.scss */
 .button-primary {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00b5e5), color-stop(100%, #008db2));
