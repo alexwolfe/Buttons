@@ -110,13 +110,14 @@ button#{$unicorn-btn-namespace}:disabled {
 
         @else if $unicorn-btn-style == 'circle' {
             @include border-radius($unicorn-btn-circle-size * 2);
-            @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
-            width: $unicorn-btn-circle-size;
-            line-height: $unicorn-btn-circle-size;
-            height: $unicorn-btn-circle-size;
+            @include box-shadow(inset 0px 2px 2px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.5));
+            width: 120px;
+            line-height: 120px;
+            height: 120px;
             padding: 0px;
             border-width: 4px;
-            font-size: $unicorn-btn-mediumfs;
+            font-size: 18px;
+            text-align: center;
         }
     }
 }
