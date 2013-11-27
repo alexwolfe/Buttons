@@ -15,7 +15,7 @@ Setup & Installation
 
 1. [Download Buttons](https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip) and add files to your website.
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
-    `<link rel="stylesheet" href="css/font-awesome.min.css">`
+    `<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">`
     `<link rel="stylesheet" href="css/buttons.css">`
 3. Include jQuery and buttons.js if you're using dropdown menu buttons.
     `<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>`
