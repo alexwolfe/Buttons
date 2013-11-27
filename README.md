@@ -15,7 +15,7 @@ Setup & Installation
 
 1. [Download Buttons](https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip) and add files to your website.
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
-    `<link rel="stylesheet" href="css/font-awesome.min.css">`
+    `<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">`
     `<link rel="stylesheet" href="css/buttons.css">`
 3. Include jQuery and buttons.js if you're using dropdown menu buttons.
     `<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>`
@@ -24,10 +24,11 @@ Setup & Installation
 
 Using as a Partial
 ==================
-If you'd like to `@import` Buttons and need it to recognize external variables (e.g. you'd like to use predefined variables in the `partials/_options.scss` file) you can place something like the following in your top-level SCSS file:
+You can easily import Buttons as a partial into an existing project.
+
 ```css
-@import 'colors/color-me-sass';
-@import 'buttons/partials/buttons';
+@import 'partials/options';
+@import 'partials/buttons';
 ```
 
 Customize Buttons
@@ -75,9 +76,21 @@ item will create a new button.
 * **$dropdown-link-hover:** Hover color for link in dropdown menu
 * **$dropdown-link-hover-background:** Background hover color for link in dropdown menu
 
-created with by [@alexwolfe](https://twitter.com/alexwolfe) at [@adroll](https://twitter.com/adroll)
-
 
 Browser Support
 ====================
 Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all the way down to Internet Explorer 8.
+
+
+Author
+===================
+Created with by Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) at [@adroll](https://twitter.com/adroll)
+
+
+Contributors
+===================
+Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alexwolfe/buttons/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

@@ -1,0 +1,19 @@
+{
+  "name": "Buttons",
+  "version": "0.5.0",
+  "homepage": "https://github.com/alexwolfe/Buttons",
+  "authors": [
+    "alexwolfe"
+  ],
+  "description": "A fully customizable CSS button library built using Sass & Compass",
+  "main": "css/buttons.css",
+  "keywords": [
+    "Buttons",
+    "Sass",
+    "scss",
+    "css",
+    "Css Buttons",
+    "Sass Buttons"
+  ],
+  "license": "Apache License v2.0"
+}
