@@ -21,7 +21,7 @@
   }
 }
 
-@-khtml-keyframes glowing {
+@-moz-keyframes glowing {
   /* line 17, ../scss/partials/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -44,7 +44,7 @@
   }
 }
 
-@-moz-keyframes glowing {
+@-o-keyframes glowing {
   /* line 23, ../scss/partials/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -67,7 +67,7 @@
   }
 }
 
-@-ms-keyframes glowing {
+@keyframes glowing {
   /* line 29, ../scss/partials/_glow.scss */
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -83,52 +83,6 @@
   }
 
   /* line 31, ../scss/partials/_glow.scss */
-  to {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-}
-
-@-o-keyframes glowing {
-  /* line 35, ../scss/partials/_glow.scss */
-  from {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  /* line 36, ../scss/partials/_glow.scss */
-  50% {
-    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  /* line 37, ../scss/partials/_glow.scss */
-  to {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-}
-
-@keyframes glowing {
-  /* line 41, ../scss/partials/_glow.scss */
-  from {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  /* line 42, ../scss/partials/_glow.scss */
-  50% {
-    -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  /* line 43, ../scss/partials/_glow.scss */
   to {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -210,7 +164,7 @@ button.button:disabled {
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   background: #EEE;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   text-shadow: 0 1px 1px white;
   color: #CCC;
   cursor: default;
@@ -710,31 +664,22 @@ input.button-tiny, button.button-tiny {
   overflow: visible;
   display: inline-block;
 }
-/* line 291, ../scss/partials/_buttons.scss */
-.button-dropdown .button-overlay {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 999;
-}
-/* line 302, ../scss/partials/_buttons.scss */
+/* line 293, ../scss/partials/_buttons.scss */
 .button-dropdown .button .icon-caret-down {
   font-size: 90%;
   margin: 0px 0px 0px 3px;
   vertical-align: middle;
 }
-/* line 309, ../scss/partials/_buttons.scss */
+/* line 300, ../scss/partials/_buttons.scss */
 .button-dropdown ul.button-dropdown-menu-below {
   top: 115%;
 }
-/* line 312, ../scss/partials/_buttons.scss */
+/* line 303, ../scss/partials/_buttons.scss */
 .button-dropdown ul.button-dropdown-menu-above {
   bottom: 115%;
   top: auto;
 }
-/* line 318, ../scss/partials/_buttons.scss */
+/* line 309, ../scss/partials/_buttons.scss */
 .button-dropdown ul {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
@@ -755,13 +700,13 @@ input.button-tiny, button.button-tiny {
   list-style-type: none;
   min-width: 102%;
 }
-/* line 332, ../scss/partials/_buttons.scss */
+/* line 323, ../scss/partials/_buttons.scss */
 .button-dropdown ul li {
   padding: 0px;
   margin: 0px;
   display: block;
 }
-/* line 337, ../scss/partials/_buttons.scss */
+/* line 328, ../scss/partials/_buttons.scss */
 .button-dropdown ul li:first-child a {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -770,7 +715,7 @@ input.button-tiny, button.button-tiny {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 340, ../scss/partials/_buttons.scss */
+/* line 331, ../scss/partials/_buttons.scss */
 .button-dropdown ul li:last-child a {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -779,14 +724,14 @@ input.button-tiny, button.button-tiny {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 346, ../scss/partials/_buttons.scss */
+/* line 337, ../scss/partials/_buttons.scss */
 .button-dropdown ul .button-dropdown-divider {
   -webkit-box-shadow: inset 0px 1px 0px white;
   -moz-box-shadow: inset 0px 1px 0px white;
   box-shadow: inset 0px 1px 0px white;
   border-top: 1px solid #e4e4e4;
 }
-/* line 351, ../scss/partials/_buttons.scss */
+/* line 342, ../scss/partials/_buttons.scss */
 .button-dropdown ul a {
   display: block;
   padding: 0px 20px;
@@ -796,7 +741,7 @@ input.button-tiny, button.button-tiny {
   line-height: 30px;
   white-space: nowrap;
 }
-/* line 360, ../scss/partials/_buttons.scss */
+/* line 351, ../scss/partials/_buttons.scss */
 .button-dropdown ul a:hover {
   background-color: #3c6ab9;
   color: white;
