@@ -288,15 +288,6 @@ button#{$unicorn-btn-namespace}:disabled {
         overflow: visible;
         display: inline-block;
 
-        #{$unicorn-btn-namespace}-overlay {
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            z-index: 999;
-        }
-
         //EXTRA STYLES FOR CARET
         .button {
             .icon-caret-down {
