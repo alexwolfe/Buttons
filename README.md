@@ -3,7 +3,7 @@ Buttons
 
 Buttons is A fully customizable CSS button library built using Sass & Compass, created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis)
 
-Get started by [visiting the Buttons Builder Website where you can view live examples and completly customize your Buttons download](http://alexwolfe.github.io/Buttons/).
+Get started by [visiting the Buttons Builder Website](http://alexwolfe.github.io/Buttons/) where you can view live examples and completly customize your Buttons download.
 
 [![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/buttons.png "Example of Buttons")](http://alexwolfe.github.io/Buttons/).
 
