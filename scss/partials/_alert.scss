@@ -1,0 +1,20 @@
+@import 'options';
+
+//////////////////////////////////////////////////////////
+// OPTIONS ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$alert-namespace: '.alert';
+$alert-notice-error: #e43725;
+
+#{$alert-namespace} {
+    @include border-radius(3px);
+    padding: 9px 10px;
+    margin: 20px;
+}
+
+#{$alert-namespace}-error {
+    background: #fff6f6;
+    color: $alert-notice-error;
+    border: 1px solid $alert-notice-error;
+    text-align: center;
+}

@@ -1,0 +1,165 @@
+@import 'options';
+@import 'compass';
+
+//////////////////////////////////////////////////////////
+// OPTIONS ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+$form-namespace: '.form';
+$form-font-size: 16px;
+$form-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$form-font-color: #333;
+$form-label-color: #95a5a6;
+$form-error-text: #e43725;
+$form-error-bg: #fff6f6;
+$form-highlight-border: #00b5e5;
+$form-highlight-bg: #fffff7;
+$form-field-height: 28px;
+
+
+#{$form-namespace} {
+    font-size: $form-font-size;
+    font-family: $form-font-family;
+    color: $form-font-color;
+
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            margin: 0px 0px 0px 0px;
+
+            label {
+                font-size: $form-font-size  - 4;
+                margin-bottom: 5px;
+                color: $form-label-color;
+                display: block;
+
+                &.error {
+                    color: $form-error-text;
+                    clear: both;
+                    margin: 3px 0px 0px 0px;
+                }
+            }
+
+            input[type="text"] {
+                @include box-shadow(0px 1px 3px rgba(0, 0, 0, .2) inset);
+                @include border-radius(3px);
+                padding: 0px 10px;
+                margin: 0px;
+                font-size: $form-font-size;
+                border: 1px solid #CCC;
+                outline: none;
+                line-height: $form-field-height;
+                height: $form-field-height;
+
+                &:focus, &:active {
+                    border: 1px solid $form-highlight-border;
+                    background: $form-highlight-bg;
+                }
+
+                &.error {
+                    border: 1px solid $form-error-text;
+                    background: $form-error-bg;
+                }
+            }
+
+            select {
+                @include border-radius(3px);
+                padding: 5px 10px;
+                margin: 0px;
+                font-size: $form-font-size;
+                border: 1px solid #CCC;
+                outline: none;
+            }
+        }
+
+        .extended {
+            &.prefix {
+                label:first-child {
+                    @include border-radius(3px 0px 0px 3px);
+                    border: 1px solid #CCC;
+                    border-radius: none;
+                    display: inline-block;
+                    background: #EEE;
+                    text-align: right;
+                    line-height: $form-field-height;
+                    padding: 0px 5px;
+                    float: left;
+                    font-size: $form-font-size + 4;
+                    font-weight: bold;
+                }
+                input {
+                    @include border-radius(0px 3px 3px 0px);
+                }
+            }
+
+            &.suffix {
+
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////
+// CUSTOM ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$form-namespace} {
+    .c4 {
+        margin: 0px 60px 20px 0px;
+        float: left;
+    }
+
+    .color-row {
+        @include box-shadow(0px 1px 0px rgba(255, 255, 255, 1) inset);
+        @include border-radius(3px);
+        background: #f7f7f7;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #DDD;
+
+        &:last-child {
+            margin: 0px;
+        }
+
+        .button {
+            min-width: 80px;
+            margin-right: 20px;
+        }
+        input[type="text"] {
+            width: 100px;
+        }
+
+        input[type="text"], input, .sp-light {
+            margin-right: 30px;
+        }
+
+        .sp-light {
+            border: 1px solid #CCC;
+        }
+
+        label {
+            display: inline;
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////
+// MOBILE ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@media only screen and (max-width: 740px) {
+    #{$form-namespace}  {
+        .color-row {
+
+            input[type="text"], input, .sp-light {
+                margin-right: 10px;
+            }
+        }
+
+        .c4 {
+            margin: 0px 20px 20px 0px;
+            float: left;
+        }
+    }
+}

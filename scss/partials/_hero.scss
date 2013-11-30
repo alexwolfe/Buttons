@@ -1,0 +1,97 @@
+@import 'options';
+
+//////////////////////////////////////////////////////////
+// OPTIONS ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$hero-namespace: '.hero';
+$hero-heading-font: 'Cherry Swash', sans-serif;
+$hero-font: sans-serif;
+$hero-title-color: #3f4955;
+$hero-subtitle-color: #bdc3c7;
+
+#{$hero-namespace} {
+    padding: 60px;
+    position: relative;
+    height: 420px;
+    box-sizing: border-box;
+
+    h1, h2 {
+        font-family: $hero-heading-font;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: $hero-heading-font;
+        font-size: 120px;
+        margin: 0px;
+        line-height: 120px;
+        color: $hero-title-color;
+    }
+
+    h2 {
+        color: $hero-subtitle-color;
+        font-size: 24px;
+        margin: 0px 0px 40px 0px ;
+        font-weight: lighter;
+    }
+
+    #{$hero-namespace}-call-to-action {
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+
+        .download {
+            width: 170px;
+            padding: 0px;
+        }
+        .button {
+            margin: 0px 10px;
+            font-size: 18px;
+        }
+    }
+
+    .social-buttons {
+        padding: 20px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        text-align: center;
+    }
+}
+
+
+//////////////////////////////////////////////////////////
+// MOBILE ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@media only screen and (max-width: 480px) {
+    #{$hero-namespace} {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 60px;
+
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        h2 {
+            margin: 20px 40px 0px 40px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        #{$hero-namespace}-call-to-action {
+
+        .download {
+            margin-bottom: 10px;
+        }
+    }
+
+        .social-buttons {
+            .github-button {
+                width: 100px;
+            }
+        }
+    }
+}

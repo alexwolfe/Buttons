@@ -1,0 +1,128 @@
+@import 'compass';
+@import "compass/css3";
+@import 'partials/options';
+@import 'partials/mixins';
+@import 'partials/nav';
+@import 'partials/form';
+@import 'partials/code';
+@import 'partials/hero';
+@import 'partials/modal';
+@import 'partials/spectrum';
+@import 'partials/alert';
+@import 'Buttons/buttons';
+
+
+//////////////////////////////////////////////////////////
+// LAYOUT ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+.clear {
+    clear: both;
+}
+
+body {
+    margin: 0px;
+    font-family: $basefont;
+    font-size: 14px;
+}
+
+a {
+    color: #00A1CB;
+}
+
+.page {
+    background: #ecf0f1;
+    padding: 60px;
+}
+
+
+//////////////////////////////////////////////////////////
+// INSTRUCTIONS //////////////////////////////////////////
+//////////////////////////////////////////////////////////
+.instructions {
+    padding: 60px 60px 0px 60px;
+
+    h2 {
+        font-family: $cherry-font;
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+        margin: 0px 0px 30px 0px;
+        padding: 0px;
+        color: #95a5a6;
+        font-weight: lighter;
+    }
+
+    h3 {
+        font-size: 28px;
+        color: $dark;
+        margin: 0px 0px 20px 0px;
+    }
+
+    ol.steps {
+        margin: 0px;
+        padding: 0px 0px 0px 30px;
+        color: $dark;
+
+        > li {
+            margin: 0px 0px 15px 0px;
+
+            em {
+                font-size: 12px;
+                font-style: normal;
+            }
+        }
+    }
+
+    .instruction-block {
+        padding: 30px;
+        background: $light;
+        margin-bottom: 60px;
+    }
+
+    pre.prettyprint {
+        background: #495563;
+        overflow: auto;
+        font-size: 12px;
+        border: none;
+    }
+}
+
+
+//////////////////////////////////////////////////////////
+// FOOTER ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+footer {
+    padding: 0px 60px 60px 60px;
+
+    h3 {
+        font-size: 14px;
+        color: $dark;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    p {
+        text-align: center;
+        color: $dark;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+//////////////////////////////////////////////////////////
+// MOBILE ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@media only screen and (max-width: 480px) {
+    .page, .instructions {
+        padding: 20px;
+
+        .instruction-block {
+            padding: 15px;
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}

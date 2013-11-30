@@ -1,38 +1,11 @@
+//////////////////////////////////////////////////////////
+// COLOR DEFAULTS ////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$light: #ecf0f1;
+$dark: #566473;
+$darker: #495563;
+$darkest: #3f4955;
+$highlight-color: #2ecc71;
+$cherry-font: 'Cherry Swash', sans-serif;
+$basefont: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-//////////////////////////////////////////////////////////
-// BASE DEFAULTS /////////////////////////////////////////
-//////////////////////////////////////////////////////////
-$unicorn-btn-namespace: '.button'; //prefix for all classes
-$unicorn-btn-glow-namespace: '.glow';
-$unicorn-btn-glow-color: #2c9adb;
-$unicorn-btn-bgcolor: #EEE;
-$unicorn-btn-height: 32px;
-
-
-//////////////////////////////////////////////////////////
-// TYPOGRAPHY ////////////////////////////////////////////
-//////////////////////////////////////////////////////////
-$unicorn-btn-font-color: #666;
-$unicorn-btn-font-size: 14px;
-$unicorn-btn-font-weight: 300;
-$unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
-//////////////////////////////////////////////////////////
-// BUTTON OPTIONS ////////////////////////////////////////
-//////////////////////////////////////////////////////////
-
-// (name background-color font-color) add as many as you like.
-$unicorn-btn-actions: ('primary' #00A1CB #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF);
-// Remove any type to omit from final CSS build
-$unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat';
-$unicorn-btn-sizes: 'large' 'small' 'tiny';
-$unicorn-btn-circle-size: 120px; //radius for circle buttons, circles only have one size
-
-
-//////////////////////////////////////////////////////////
-// DROPDOWN OPTIONS //////////////////////////////////////
-//////////////////////////////////////////////////////////
-$unicorn-btn-dropdown-background: #fcfcfc;
-$unicorn-btn-dropdown-link-color: #333;
-$unicorn-btn-dropdown-link-hover: #FFF;
-$unicorn-btn-dropdown-link-hover-background: #3c6ab9;

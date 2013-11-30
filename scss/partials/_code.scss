@@ -1,0 +1,50 @@
+@import 'options';
+
+//////////////////////////////////////////////////////////
+// OPTIONS ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$showcase-namespace: '.showcase';
+$showcase-bg: #FFF;
+$showcase-code-bg: #495563;
+$showcase-title-color: #95a5a6;
+$showcase-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+;
+
+
+#{$showcase-namespace} {
+    background: $showcase-bg;
+    margin-bottom: 60px;
+
+    h3 {
+        padding: 30px 30px 0px 30px;
+        margin: 0px;
+        font-weight: lighter;
+        font-family: $showcase-font-family;
+        text-transform: uppercase;
+        color: $showcase-title-color;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    //EXAMPLE
+    #{$showcase-namespace}-examples {
+        padding: 30px;
+    }
+
+    //CODE
+    #{$showcase-namespace}-code {
+        background: $showcase-code-bg;
+        padding: 20px;
+        overflow: auto;
+        border: none;
+    }
+
+    //BLANKSTATE
+    &.blankstate{
+        padding: 30px;
+
+        h3 {
+            margin: 0px;
+        }
+    }
+}

@@ -1,0 +1,265 @@
+@import 'options';
+
+//////////////////////////////////////////////////////////
+// OPTIONS ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$nav-namespace: '.nav';
+$nav-hover: #566473;
+$nav-bg: #495563;
+$nav-dark: #3f4955;
+$nav-font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$nav-highlight: #3498db;
+$nav-width: 240px;
+$nav-logo-bg-color: #e74c3c;
+$nav-logo-font-color: #FFF;
+$nav-logo-font: 'Cherry Swash', sans-serif;
+$nav-font-color: #7e8c9a;
+$nav-font-family: sans-serif;
+$nav-toggle-bg: #566473;
+$nav-toggle-selected-bg: #3f4955;
+$nav-toggle-knob: #5e6e81;
+
+
+//////////////////////////////////////////////////////////
+// BODY PADDING CSS //////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$nav-namespace}-pinned-left {
+    padding-left: $nav-width;
+}
+#{$nav-namespace}-pinned-right {
+    padding-right: $nav-width;
+}
+
+
+//////////////////////////////////////////////////////////
+// NAV ///////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$nav-namespace} {
+    font-family: $nav-font-family;
+    width: 240px;
+    background: $nav-bg;
+
+    &.pinned {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: 1;
+
+        &.right {
+            left: auto;
+            right: 0px;
+        }
+    }
+
+    ////////////////////////
+    // HEADER //////////////
+    ////////////////////////
+    header {
+        @include box-shadow(0px 1px 2px rgba(0, 0, 0, .3));
+        background: $nav-dark;
+        height: 40px;
+        padding: 10px;
+
+        h1 {
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            margin: 0px auto;
+
+            a {
+                @include inner_shadow(0px, 1px, 0px, rgba(0, 0, 0, .3));
+                @include border-radius(100px);
+                @include transition(background, 0.3s);
+                background: $nav-logo-bg-color;
+                color: $nav-logo-font-color;
+                line-height: 40px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                font-family: $nav-logo-font;
+                font-weight: normal;
+                padding: 0px;
+                text-decoration: none;
+                display: block;
+
+                &:hover {
+                    background: darken($nav-logo-bg-color, 5%);
+
+                }
+            }
+        }
+
+        .mobile-menu {
+            display: none;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAYCAYAAAACqyaBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAENJREFUeNpiDEsp/s8wQICJYQDBqOUDAhiBWG3ALP//n7LEzsjIOBrnpIfaaCEzavloITNayIwWMqOWjxYy1AAAAQYAU/cNH5fS2asAAAAASUVORK5CYII=) no-repeat;
+            position: absolute;
+            top: 18px;
+            right: 10px;
+            z-index: 1;
+            height: 24px;
+            width: 30px;
+            overflow: hidden;
+            text-indent: -3000px;
+        }
+    }
+
+    ////////////////////////
+    // LIST OF LINKS ///////
+    ////////////////////////
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: 60px;
+        bottom: 60px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        overflow: auto;
+
+        li {
+            @include inner_shadow(0px, 1px, 0px, $nav-hover);
+            height: 59px;
+            border-bottom: 1px solid $nav-dark;
+            color: $nav-font-color;
+            font-size: 16px;
+            position: relative;
+
+            &:first-child {
+                @include no-box-shadow
+            }
+
+            a {
+                display: block;
+                color: $nav-font-color;
+                font-family: $nav-font;
+                font-weight: lighter;
+                font-size: 16px;
+                line-height: 59px;
+                padding: 0px 20px;
+                text-decoration: none;
+                text-transform: capitalize;
+
+                &:hover {
+                    background: $nav-hover;
+                    padding: 0px 20px 0px 15px;
+                    border-left: 5px solid $nav-highlight;
+                }
+            }
+
+            //TOGGLE BUTTON
+            .nav-toggle-button {
+                @include inner_shadow(0px, 1px, 1px, rgba(0, 0, 0, .3));
+                @include border-radius(100px);
+                background: $nav-toggle-bg;
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                z-index: 1;
+                //width: 30px;
+                height: 20px;
+                padding: 0px 10px;
+                cursor: pointer;
+
+                em {
+                    text-transform: uppercase;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 22px;
+                    font-size: 10px;
+                    display: block;
+                    margin: 0px 15px 0px 0px;
+                }
+
+                strong {
+                    @include border-radius(100px);
+                    @include super-shadow(0px, 1px, 0px, rgba(255, 255, 255, .2), 0px, 1px, 1px, rgba(0, 0, 0, .3));
+                    position: absolute;
+                    top: 3px;
+                    right: 3px;
+                    z-index: 1;
+                    background: $nav-toggle-knob;
+                    height: 14px;
+                    width: 14px;
+                }
+
+                &[data-included="false"] {
+                    text-align: right;
+                    background: $nav-toggle-selected-bg;
+
+                    strong {
+                        right: auto;
+                        left: 3px;
+                    }
+                    em {
+                        margin: 0px 0px 0px 15px;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    ////////////////////////
+    // FOOTER //////////////
+    ////////////////////////
+    footer {
+        @include inner_shadow(0px, 1px, 0px, lighten($nav-dark, 5%));
+        border-top: 1px solid $nav-dark;
+        background: $nav-dark;
+        padding: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+
+
+    }
+}
+
+//////////////////////////////////////////////////////////
+// MOBILE ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@media only screen and (max-width: 760px) {
+    #{$nav-namespace}-pinned-left, #{$nav-namespace}-pinned-right{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 60px;
+    }
+
+    #{$nav-namespace} {
+        width: auto;
+
+        &.pinned {
+            bottom: auto;
+            left: 0px;
+            right: 0px;
+        }
+        header .mobile-menu {
+            display: block;
+        }
+
+        ul {
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 100;
+
+
+            background: $nav-bg;
+            display: none;
+
+            &.nav-show {
+                display: block;
+            }
+        }
+        footer {
+            display: none;
+        }
+    }
+}

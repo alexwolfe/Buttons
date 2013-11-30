@@ -20,10 +20,9 @@
     // minified (especially when both are regularly referenced in your plugin).
 
     // Create the defaults once
-    var pluginName = "menuButton";
-    var menuClass = ".button-dropdown";
+    var menuButton = 'menuButton';
     var defaults = {
-        propertyName: "value"
+        propertyName: 'value'
     };
 
     // The actual plugin constructor
@@ -32,7 +31,7 @@
         //SET OPTIONS
         this.options = $.extend( {}, defaults, options );
         this._defaults = defaults;
-        this._name = pluginName;
+        this._name = menuButton;
 
         //REGISTER ELEMENT
         this.$element = $(element);
@@ -50,7 +49,8 @@
             this.toggle();
         },
 
-        toggle: function(el, options) {
+        //function(el, options) are avaialble in toggle method
+        toggle: function() {
             if(this.$element.data('dropdown') === 'show') {
                 this.hideMenu();
             }
@@ -81,16 +81,16 @@
 
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
-    $.fn[pluginName] = function ( options ) {
+    $.fn[menuButton] = function ( options ) {
         return this.each(function () {
 
             // TOGGLE BUTTON IF IT EXISTS
-            if ($.data(this, "plugin_" + pluginName)) {
-                $.data(this, "plugin_" + pluginName).toggle();
+            if ($.data(this, 'plugin_' + menuButton)) {
+                $.data(this, 'plugin_' + menuButton).toggle();
             }
             // OTHERWISE CREATE A NEW INSTANCE
             else {
-                $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+                $.data(this, 'plugin_' + menuButton, new Plugin( this, options ));
             }
         });
     };

@@ -1,0 +1,120 @@
+@import 'options';
+
+//////////////////////////////////////////////////////////
+// OPTIONS ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$modal-namespace: '.modal';
+$modal-hover: #566473;
+$modal-bg: #495563;
+$modal-bg: #ecf0f1;
+$overlay-namespace: '.overlay';
+$modal-title-color: #95a5a6;
+$modal-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+.blur {
+    @include opacity(.6);
+    @include blur(20px);
+}
+
+@include keyframes(fadeIn) {
+    0% {
+        @include opacity(0);
+        @include transform(translateY(-700px));
+    }
+
+    50% {
+        @include opacity(.5);
+        @include transform(translateY(60px));
+    }
+
+    100% {
+        @include opacity(1);
+        @include transform(translateY(0px));
+    }
+}
+
+
+//////////////////////////////////////////////////////////
+// MODAL /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$modal-namespace} {
+    @include box-shadow(0px 5px 200px rgba(0, 0, 0, .7));
+    @include animation(fadeIn, .5s);
+    background: #FFF;
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    right: 60px;
+    z-index: 9999;
+    //For smaller viewports where we may need vertical scrolling
+    max-height: 90%;
+    overflow-y: auto;
+    header {
+        padding: 30px 30px 0px 30px;
+        position: relative;
+
+        h3 {
+            margin: 0px;
+            font-weight: lighter;
+            font-family: $modal-font-family;
+            text-transform: uppercase;
+            color: $modal-title-color;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #CCC;
+            text-decoration: none;
+            font-weight: lighter;
+            font-size: 16px;
+        }
+    }
+
+    #{$modal-namespace}-content {
+        padding: 30px;
+    }
+
+    footer {
+        background: $modal-bg;
+        padding: 10px;
+
+        .button {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////////////
+// OVERLAY ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$overlay-namespace} {
+    @include opacity(.2);
+    background: #000;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 9998;
+
+}
+
+#{$overlay-namespace}-light {
+    background: #FFF;
+}
+
+//////////////////////////////////////////////////////////
+// MOBILE ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@media only screen and (max-width: 740px) {
+    #{$modal-namespace} {
+        left: 0px;
+        right: 0px;
+    }
+}

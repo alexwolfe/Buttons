@@ -1,0 +1,198 @@
+/* VENDOR PREFIXES
+ * ============================================= */
+@mixin prefix($property, $value) {
+    -webkit-#{$property}: $value;/* Safari and Chrome */
+    -khtml-#{$property}: $value; /* IE 9 */
+    -ms-#{$property}: $value; /* IE 9 */
+    -moz-#{$property}: $value; /* Firefox */
+    -o-#{$property}: $value; /* Opera */
+    #{$property}: $value;
+}
+
+
+/* KEYFRAMES
+ * ============================================= */
+@mixin keyframes($name) {
+
+    @-webkit-keyframes $name {
+       @content;
+    }/* Safari and Chrome */
+
+
+    @-khtml-keyframes  $name{
+        @content;
+    }/* IE 9 */
+
+
+    @-ms-keyframes $name {
+        @content;
+    }/* IE 9 */
+
+
+    @-moz-keyframes $name{
+        @content;
+    }/* Firefox */
+
+
+    @-o-keyframes $name {
+        @content;
+    }/* Opera */
+
+
+    @keyframes $name {
+        @content;
+    }
+}
+
+
+/* OPACITY
+ * ============================================= */
+@mixin opacity($trans: 0.75) {
+    @include prefix(opacity, $trans);
+    filter: alpha(opacity = $trans * 100);
+}
+
+/* ROTATE
+ * ============================================= */
+@mixin rotate($degree: 7deg) {
+    @include prefix(rotate, $degree);
+}
+
+/* BORDER BOX - http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * ============================================= */
+@mixin border-box() {
+    @include prefix(border-sizing, border-box);
+}
+
+
+/* ROUND BORDERS
+ * ============================================= */
+@mixin border-radius($radius: 4px) {
+  @include prefix(border-radius, $radius);
+}
+
+/* BLUR
+ * ============================================= */
+ @mixin blur($blur: 10px) {
+    -webkit-filter: blur($blur);
+    -moz-filter: blur($blur);
+    -o-filter: blur($blur);
+    -ms-filter: blur($blur);
+    filter: blur($blur);
+}
+
+
+/* GRADIENTs
+ * ============================================= */
+@mixin linear-gradient($start: white, $end: #cccccc) {
+   background-color: $start;
+   //background-image: url(images/fallback-gradient.png);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start), to($end));
+   background-image: -webkit-linear-gradient(top, $start, $end);
+   background-image:    -moz-linear-gradient(top, $start, $end);
+   background-image:     -ms-linear-gradient(top, $start, $end);
+   background-image:      -o-linear-gradient(top, $start, $end);
+   background-image:         linear-gradient(top, $start, $end);
+}
+
+@mixin radial-gradient($r1: 0, $r2: 200, $start: white, $end: #cccccc, $m1: 0%, $m2: 100%) {
+  background: $end;
+  background: -moz-radial-gradient(center 45deg, circle closest-side, $start $m1, $end $m2);
+  background: -webkit-gradient(radial, center center, $r1, center center, $r2, from($start), to($end));
+}
+
+
+@mixin no-box-shadow {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -khtml-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+@mixin inner_shadow($x: 1px, $y: 1px, $z: 3px, $color: black) {
+  box-shadow: inset $x $y $z $color;
+  -moz-box-shadow: inset $x $y $z $color;
+  -webkit-box-shadow: inset $x $y $z $color;
+  -o-box-shadow: inset $x $y $z $color;
+  -ms-box-shadow: inset $x $y $z $color;
+}
+
+@mixin double_inner_shadow($x: 0px, $y: 1px, $z: 0px, $color: rgba(255, 255, 255, 0.25), $x2: 0px, $y2: 1px, $z2: 0px, $color2: rgba(255, 255, 255, 0.5)) {
+  box-shadow: $x $y $z $color inset, $x2 $y2 $z2 $color2 inset;
+  -moz-box-shadow: $x $y $z $color inset, $x2 $y2 $z2 $color2 inset;
+  -webkit-box-shadow: $x $y $z $color inset, $x2 $y2 $z2 $color2 inset;
+  -o-box-shadow: $x $y $z $color inset, $x2 $y2 $z2 $color2 inset;
+  -ms-box-shadow: $x $y $z $color inset, $x2 $y2 $z2 $color2 inset;
+}
+
+@mixin super-shadow($x: 0px, $y: 1px, $z: 0px, $color: rgba(255, 255, 255, 0.25), $x2: 0px, $y2: 1px, $z2: 0px, $color2: rgba(255, 255, 255, 0.5)) {
+  box-shadow: inset $x $y $z $color, $x2 $y2 $z2 $color2;
+  -moz-box-shadow: inset $x $y $z $color, $x2 $y2 $z2 $color2;
+  -webkit-box-shadow: inset $x $y $z $color, $x2 $y2 $z2 $color2;
+  -o-box-shadow: inset $x $y $z $color, $x2 $y2 $z2 $color2;
+  -ms-box-shadow: inset $x $y $z $color, $x2 $y2 $z2 $color2;
+}
+
+/* TRANSITIONS
+ * ============================================= */
+/* ease, ease-in, ease-out, ease-in-out, linear, */
+/* cubic-bezier(1.0, 0, 0, 1.0) */
+
+@mixin transition($target: all, $duration: 0.5s, $transition: ease-in-out) {
+  transition: $target $duration $transition;
+  -o-transition: $target $duration $transition;
+  -moz-transition: $target $duration $transition;
+  -webkit-transition: $target $duration $transition; }
+
+/* translate(x, y) moves the position of an item */
+/* scale(w, h) changes the size (scale) 1-0 scale */
+/* rotate(rad or deg) Rotates and item */
+/* skew(x, y in deg/rad) skews and item */
+/* matrix() Gives you exact control over an item */
+/* You can chain tranforms together -webkit-transform: skew(15deg, 15deg) translate(20px, 20px) scale(.5, .5); */
+
+//Ex. http://jsfiddle.net/TdMgm/1/
+
+@mixin perspective($p: 800) {
+  //Use for the parent container when using translate3d function
+  -webkit-perspective: $p; }
+
+@mixin transform($transform1: rotate(25deg), $transform2: scale(1, 1), $transform3: translate(0px, 0px)) {
+  //Options: translate(x, y), translateY, scale(.9, 2), scaleY, rotate(25deg), skew(10deg, 10deg)
+  //rotate3d(x,y,z, deg), rotateX(deg), rotateY(deg), rotateZ(deg), traslate3d(x, y, z) Only works in Safari
+  -webkit-transform: $transform1 $transform2 $transform3;
+  -moz-transform: $transform1 $transform2 $transform3;
+  -o-transform: $transform1 $transform2 $transform3;
+  transform: $transform1 $transform2 $transform3; }
+
+@mixin transition_bezier($time: 500ms) {
+  -webkit-transition: all $time cubic-bezier(0, 1, 1, 1);
+  -moz-transition: all $time cubic-bezier(0, 1, 1, 1);
+  -o-transition: all $time cubic-bezier(0, 1, 1, 1);
+  transition: all $time cubic-bezier(0, 1, 1, 1); }
+
+// SET THIS BEFORE THE ANMIATION
+// @-webkit-keyframes $name
+//   from
+//     -webkit-transform: rotate(0deg)
+//   to
+//     -webkit-transform: rotate(30deg)
+
+@mixin animation($name: myanim, $time: 2s, $count: 1, $delay: 0s) {
+  -webkit-animation: $name $time $count alternate ease-in-out $delay;
+  -moz-animation: $name $time $count alternate ease-in-out $delay;
+  -o-animation: $name $time $count alternate ease-in-out $delay;
+  animation: $name $time $count alternate ease-in-out $delay;
+}
+
+  //-webkit-animation-name: $name
+  //-webkit-animation-duration: $time
+  //-webkit-animation-iteration-count: $count //Can ben 'infinite' or '1, 2, 3' etc.
+  //-webkit-animation-direction: alternate //
+  //-webkit-animation-timing-function: ease-in-out
+  //-webkit-animation-delay: $delay }
