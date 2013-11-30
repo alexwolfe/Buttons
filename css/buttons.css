@@ -602,7 +602,7 @@ input.button-large, button.button-large {
 
 /* line 224, ../scss/partials/_buttons.scss */
 .button-small {
-  font-size: 16px;
+  font-size: 15px;
   height: 25.6px;
   line-height: 25.6px;
   padding: 0px 20.48px;
