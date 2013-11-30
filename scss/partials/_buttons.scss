@@ -12,12 +12,10 @@
 $unicorn-btn-smallfs: inherit;
 $unicorn-btn-tinyfs: inherit;
 $unicorn-btn-largefs: inherit;
-$unicorn-btn-mediumfs: inherit;
 @if $unicorn-btn-font-size != inherit {
     $unicorn-btn-largefs: $unicorn-btn-font-size + 5;
     $unicorn-btn-tinyfs: $unicorn-btn-font-size - 2;
-    $unicorn-btn-smallfs: $unicorn-btn-font-size + 2;
-    $unicorn-btn-mediumfs: $unicorn-btn-font-size + 4;
+    $unicorn-btn-smallfs: $unicorn-btn-font-size - 1;
 }
 
 //////////////////////////////////////////////////////////
@@ -116,7 +114,7 @@ button#{$unicorn-btn-namespace}:disabled {
             height: $unicorn-btn-circle-size;
             padding: 0px;
             border-width: 4px;
-            font-size: $unicorn-btn-mediumfs;
+            font-size: $unicorn-btn-largefs;
         }
     }
 }
