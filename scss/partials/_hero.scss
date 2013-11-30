@@ -58,6 +58,10 @@ $hero-subtitle-color: #bdc3c7;
         right: 0px;
         left: 0px;
         text-align: center;
+
+        .github-button {
+            min-width: 100px;
+        }
     }
 }
 
@@ -82,16 +86,10 @@ $hero-subtitle-color: #bdc3c7;
         }
 
         #{$hero-namespace}-call-to-action {
-
-        .download {
-            margin-bottom: 10px;
-        }
-    }
-
-        .social-buttons {
-            .github-button {
-                width: 100px;
+            .download {
+                margin-bottom: 10px;
             }
         }
+
     }
 }
