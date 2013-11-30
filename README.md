@@ -19,6 +19,13 @@ Setup & Installation
     `<script type="text/javascript" src="js/buttons.js"></script>`
 4. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
 
+
+or Install with Bower
+====================
+You can also install Buttons using [Bower](http://bower.io/) if you're using that for your package management.
+
+`Bower install Buttons`
+
 Using as a Partial
 ==================
 You can easily import Buttons as a partial into an existing project.
