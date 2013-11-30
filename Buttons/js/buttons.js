@@ -67,7 +67,7 @@
                 this.$overlay.show();
             }
             else {
-                this.$overlay = $('<div class="button-overlay"></div>');
+                this.$overlay = $('<div style="position: fixed; top: 0px;left: 0px; right: 0px; bottom: 0px; z-index: 999;"></div>');
                 this.$element.append(this.$overlay);
             }
         },
