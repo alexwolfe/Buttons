@@ -58,6 +58,7 @@ $unicorn-btn-largefs: inherit;
 input#{$unicorn-btn-namespace}, button#{$unicorn-btn-namespace} {
     height: $unicorn-btn-height + 2;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 // BLOCK BUTTON
