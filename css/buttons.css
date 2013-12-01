@@ -283,9 +283,9 @@ button.button:disabled {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #d4d4d4, 0px 8px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #d4d4d4, 0px 8px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #d4d4d4, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, #f3f3f3));
   background: -webkit-linear-gradient(top, #e9e9e9, #f3f3f3);
   background: -moz-linear-gradient(top, #e9e9e9, #f3f3f3);
@@ -299,9 +299,9 @@ button.button:disabled {
 }
 /* line 164, ../scss/partials/_buttons.scss */
 .button-3d:hover {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #cfcfcf, 0px 8px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #cfcfcf, 0px 8px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #cfcfcf, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #ffffff));
   background: -webkit-linear-gradient(top, #ebebeb, #ffffff);
   background: -moz-linear-gradient(top, #ebebeb, #ffffff);
@@ -311,9 +311,9 @@ button.button:disabled {
 }
 /* line 169, ../scss/partials/_buttons.scss */
 .button-3d:active {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #d4d4d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #d4d4d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #d4d4d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
   background: #eeeeee;
   color: #bbbbbb;
   border: 1px solid #e1e1e1;
@@ -390,7 +390,7 @@ button.button:disabled {
   color: #005065;
 }
 
-/* line 247, ../scss/partials/_buttons.scss */
+/* line 248, ../scss/partials/_buttons.scss */
 .button-3d-primary {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -400,43 +400,43 @@ button.button:disabled {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0099c1), color-stop(100%, #00a9d5));
-  background: -webkit-linear-gradient(top, #0099c1, #00a9d5);
-  background: -moz-linear-gradient(top, #0099c1, #00a9d5);
-  background: -o-linear-gradient(top, #0099c1, #00a9d5);
-  background: linear-gradient(top, #0099c1, #00a9d5);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a9d5), color-stop(100%, #0099c1));
+  background: -webkit-linear-gradient(top, #00a9d5, #0099c1);
+  background: -moz-linear-gradient(top, #00a9d5, #0099c1);
+  background: -o-linear-gradient(top, #00a9d5, #0099c1);
+  background: linear-gradient(top, #00a9d5, #0099c1);
   background-color: #00a1cb;
   color: white;
-  border: 1px solid #008db2;
+  border: 1px solid #007998;
   text-shadow: none;
   position: relative;
 }
-/* line 258, ../scss/partials/_buttons.scss */
+/* line 259, ../scss/partials/_buttons.scss */
 .button-3d-primary:hover {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #009dc6), color-stop(100%, #00c1f4));
-  background: -webkit-linear-gradient(top, #009dc6, #00c1f4);
-  background: -moz-linear-gradient(top, #009dc6, #00c1f4);
-  background: -o-linear-gradient(top, #009dc6, #00c1f4);
-  background: linear-gradient(top, #009dc6, #00c1f4);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a5d0), color-stop(100%, #0081a2));
+  background: -webkit-linear-gradient(top, #00a5d0, #0081a2);
+  background: -moz-linear-gradient(top, #00a5d0, #0081a2);
+  background: -o-linear-gradient(top, #00a5d0, #0081a2);
+  background: linear-gradient(top, #00a5d0, #0081a2);
   background-color: #00c9fe;
 }
-/* line 263, ../scss/partials/_buttons.scss */
+/* line 264, ../scss/partials/_buttons.scss */
 .button-3d-primary:active {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #007998, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #007998, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #007998, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #007998, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #007998, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #007998, 0px 3px 3px rgba(0, 0, 0, 0.3);
   background: #1495b7;
   color: #005065;
   border: 1px solid #008db2;
   top: 6px;
 }
-/* line 270, ../scss/partials/_buttons.scss */
+/* line 271, ../scss/partials/_buttons.scss */
 .button-3d-primary.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -444,7 +444,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 284, ../scss/partials/_buttons.scss */
+/* line 285, ../scss/partials/_buttons.scss */
 .button-border-primary {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -462,13 +462,13 @@ button.button:disabled {
   background: none;
   text-shadow: none;
 }
-/* line 293, ../scss/partials/_buttons.scss */
+/* line 294, ../scss/partials/_buttons.scss */
 .button-border-primary:hover {
   background: none;
   color: #00c9fe;
   border: 2px solid #00c9fe;
 }
-/* line 298, ../scss/partials/_buttons.scss */
+/* line 299, ../scss/partials/_buttons.scss */
 .button-border-primary:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -478,7 +478,7 @@ button.button:disabled {
   color: #007998;
   border: 2px solid #007998;
 }
-/* line 304, ../scss/partials/_buttons.scss */
+/* line 305, ../scss/partials/_buttons.scss */
 .button-border-primary.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -486,7 +486,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 316, ../scss/partials/_buttons.scss */
+/* line 317, ../scss/partials/_buttons.scss */
 .button-flat-primary {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -504,11 +504,11 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 325, ../scss/partials/_buttons.scss */
+/* line 326, ../scss/partials/_buttons.scss */
 .button-flat-primary:hover {
   background: #00b5e5;
 }
-/* line 328, ../scss/partials/_buttons.scss */
+/* line 329, ../scss/partials/_buttons.scss */
 .button-flat-primary:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -517,7 +517,7 @@ button.button:disabled {
   background: #1495b7;
   color: #00647f;
 }
-/* line 333, ../scss/partials/_buttons.scss */
+/* line 334, ../scss/partials/_buttons.scss */
 .button-flat-primary.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -552,7 +552,7 @@ button.button:disabled {
   color: #374f00;
 }
 
-/* line 247, ../scss/partials/_buttons.scss */
+/* line 248, ../scss/partials/_buttons.scss */
 .button-3d-action {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -562,43 +562,43 @@ button.button:disabled {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #76ab00), color-stop(100%, #84bf00));
-  background: -webkit-linear-gradient(top, #76ab00, #84bf00);
-  background: -moz-linear-gradient(top, #76ab00, #84bf00);
-  background: -o-linear-gradient(top, #76ab00, #84bf00);
-  background: linear-gradient(top, #76ab00, #84bf00);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #84bf00), color-stop(100%, #76ab00));
+  background: -webkit-linear-gradient(top, #84bf00, #76ab00);
+  background: -moz-linear-gradient(top, #84bf00, #76ab00);
+  background: -o-linear-gradient(top, #84bf00, #76ab00);
+  background: linear-gradient(top, #84bf00, #76ab00);
   background-color: #7db500;
   color: white;
-  border: 1px solid #6b9c00;
+  border: 1px solid #5a8200;
   text-shadow: none;
   position: relative;
 }
-/* line 258, ../scss/partials/_buttons.scss */
+/* line 259, ../scss/partials/_buttons.scss */
 .button-3d-action:hover {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79b000), color-stop(100%, #99de00));
-  background: -webkit-linear-gradient(top, #79b000, #99de00);
-  background: -moz-linear-gradient(top, #79b000, #99de00);
-  background: -o-linear-gradient(top, #79b000, #99de00);
-  background: linear-gradient(top, #79b000, #99de00);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81ba00), color-stop(100%, #618c00));
+  background: -webkit-linear-gradient(top, #81ba00, #618c00);
+  background: -moz-linear-gradient(top, #81ba00, #618c00);
+  background: -o-linear-gradient(top, #81ba00, #618c00);
+  background: linear-gradient(top, #81ba00, #618c00);
   background-color: #a0e800;
 }
-/* line 263, ../scss/partials/_buttons.scss */
+/* line 264, ../scss/partials/_buttons.scss */
 .button-3d-action:active {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #5a8200, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #5a8200, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #5a8200, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #5a8200, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #5a8200, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #5a8200, 0px 3px 3px rgba(0, 0, 0, 0.3);
   background: #76a312;
   color: #374f00;
   border: 1px solid #6b9c00;
   top: 6px;
 }
-/* line 270, ../scss/partials/_buttons.scss */
+/* line 271, ../scss/partials/_buttons.scss */
 .button-3d-action.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -606,7 +606,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 284, ../scss/partials/_buttons.scss */
+/* line 285, ../scss/partials/_buttons.scss */
 .button-border-action {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -624,13 +624,13 @@ button.button:disabled {
   background: none;
   text-shadow: none;
 }
-/* line 293, ../scss/partials/_buttons.scss */
+/* line 294, ../scss/partials/_buttons.scss */
 .button-border-action:hover {
   background: none;
   color: #a0e800;
   border: 2px solid #a0e800;
 }
-/* line 298, ../scss/partials/_buttons.scss */
+/* line 299, ../scss/partials/_buttons.scss */
 .button-border-action:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -640,7 +640,7 @@ button.button:disabled {
   color: #5a8200;
   border: 2px solid #5a8200;
 }
-/* line 304, ../scss/partials/_buttons.scss */
+/* line 305, ../scss/partials/_buttons.scss */
 .button-border-action.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -648,7 +648,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 316, ../scss/partials/_buttons.scss */
+/* line 317, ../scss/partials/_buttons.scss */
 .button-flat-action {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -666,11 +666,11 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 325, ../scss/partials/_buttons.scss */
+/* line 326, ../scss/partials/_buttons.scss */
 .button-flat-action:hover {
   background: #8fcf00;
 }
-/* line 328, ../scss/partials/_buttons.scss */
+/* line 329, ../scss/partials/_buttons.scss */
 .button-flat-action:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -679,7 +679,7 @@ button.button:disabled {
   background: #76a312;
   color: #486900;
 }
-/* line 333, ../scss/partials/_buttons.scss */
+/* line 334, ../scss/partials/_buttons.scss */
 .button-flat-action.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -714,7 +714,7 @@ button.button:disabled {
   color: #8d5303;
 }
 
-/* line 247, ../scss/partials/_buttons.scss */
+/* line 248, ../scss/partials/_buttons.scss */
 .button-3d-highlight {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -724,43 +724,43 @@ button.button:disabled {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e78705), color-stop(100%, #fa9306));
-  background: -webkit-linear-gradient(top, #e78705, #fa9306);
-  background: -moz-linear-gradient(top, #e78705, #fa9306);
-  background: -o-linear-gradient(top, #e78705, #fa9306);
-  background: linear-gradient(top, #e78705, #fa9306);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fa9306), color-stop(100%, #e78705));
+  background: -webkit-linear-gradient(top, #fa9306, #e78705);
+  background: -moz-linear-gradient(top, #fa9306, #e78705);
+  background: -o-linear-gradient(top, #fa9306, #e78705);
+  background: linear-gradient(top, #fa9306, #e78705);
   background-color: #f18d05;
   color: white;
-  border: 1px solid #d87e04;
+  border: 1px solid #bf7004;
   text-shadow: none;
   position: relative;
 }
-/* line 258, ../scss/partials/_buttons.scss */
+/* line 259, ../scss/partials/_buttons.scss */
 .button-3d-highlight:hover {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec8a05), color-stop(100%, #faa024));
-  background: -webkit-linear-gradient(top, #ec8a05, #faa024);
-  background: -moz-linear-gradient(top, #ec8a05, #faa024);
-  background: -o-linear-gradient(top, #ec8a05, #faa024);
-  background: linear-gradient(top, #ec8a05, #faa024);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f69005), color-stop(100%, #c97604));
+  background: -webkit-linear-gradient(top, #f69005, #c97604);
+  background: -moz-linear-gradient(top, #f69005, #c97604);
+  background: -o-linear-gradient(top, #f69005, #c97604);
+  background: linear-gradient(top, #f69005, #c97604);
   background-color: #fba42e;
 }
-/* line 263, ../scss/partials/_buttons.scss */
+/* line 264, ../scss/partials/_buttons.scss */
 .button-3d-highlight:active {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bf7004, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bf7004, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bf7004, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bf7004, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bf7004, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #bf7004, 0px 3px 3px rgba(0, 0, 0, 0.3);
   background: #d8891e;
   color: #8d5303;
   border: 1px solid #d87e04;
   top: 6px;
 }
-/* line 270, ../scss/partials/_buttons.scss */
+/* line 271, ../scss/partials/_buttons.scss */
 .button-3d-highlight.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -768,7 +768,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 284, ../scss/partials/_buttons.scss */
+/* line 285, ../scss/partials/_buttons.scss */
 .button-border-highlight {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -786,13 +786,13 @@ button.button:disabled {
   background: none;
   text-shadow: none;
 }
-/* line 293, ../scss/partials/_buttons.scss */
+/* line 294, ../scss/partials/_buttons.scss */
 .button-border-highlight:hover {
   background: none;
   color: #fba42e;
   border: 2px solid #fba42e;
 }
-/* line 298, ../scss/partials/_buttons.scss */
+/* line 299, ../scss/partials/_buttons.scss */
 .button-border-highlight:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -802,7 +802,7 @@ button.button:disabled {
   color: #bf7004;
   border: 2px solid #bf7004;
 }
-/* line 304, ../scss/partials/_buttons.scss */
+/* line 305, ../scss/partials/_buttons.scss */
 .button-border-highlight.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -810,7 +810,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 316, ../scss/partials/_buttons.scss */
+/* line 317, ../scss/partials/_buttons.scss */
 .button-flat-highlight {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -828,11 +828,11 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 325, ../scss/partials/_buttons.scss */
+/* line 326, ../scss/partials/_buttons.scss */
 .button-flat-highlight:hover {
   background: #fa9915;
 }
-/* line 328, ../scss/partials/_buttons.scss */
+/* line 329, ../scss/partials/_buttons.scss */
 .button-flat-highlight:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -841,7 +841,7 @@ button.button:disabled {
   background: #d8891e;
   color: #a66103;
 }
-/* line 333, ../scss/partials/_buttons.scss */
+/* line 334, ../scss/partials/_buttons.scss */
 .button-flat-highlight.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -876,7 +876,7 @@ button.button:disabled {
   color: #952312;
 }
 
-/* line 247, ../scss/partials/_buttons.scss */
+/* line 248, ../scss/partials/_buttons.scss */
 .button-3d-caution {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -886,43 +886,43 @@ button.button:disabled {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4381f), color-stop(100%, #e64831));
-  background: -webkit-linear-gradient(top, #e4381f, #e64831);
-  background: -moz-linear-gradient(top, #e4381f, #e64831);
-  background: -o-linear-gradient(top, #e4381f, #e64831);
-  background: linear-gradient(top, #e4381f, #e64831);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e64831), color-stop(100%, #e4381f));
+  background: -webkit-linear-gradient(top, #e64831, #e4381f);
+  background: -moz-linear-gradient(top, #e64831, #e4381f);
+  background: -o-linear-gradient(top, #e64831, #e4381f);
+  background: linear-gradient(top, #e64831, #e4381f);
   background-color: #e54028;
   color: white;
-  border: 1px solid #d9331a;
+  border: 1px solid #c22d18;
   text-shadow: none;
   position: relative;
 }
-/* line 258, ../scss/partials/_buttons.scss */
+/* line 259, ../scss/partials/_buttons.scss */
 .button-3d-caution:hover {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e43c23), color-stop(100%, #e9604c));
-  background: -webkit-linear-gradient(top, #e43c23, #e9604c);
-  background: -moz-linear-gradient(top, #e43c23, #e9604c);
-  background: -o-linear-gradient(top, #e43c23, #e9604c);
-  background: linear-gradient(top, #e43c23, #e9604c);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6442d), color-stop(100%, #cc2f19));
+  background: -webkit-linear-gradient(top, #e6442d, #cc2f19);
+  background: -moz-linear-gradient(top, #e6442d, #cc2f19);
+  background: -o-linear-gradient(top, #e6442d, #cc2f19);
+  background: linear-gradient(top, #e6442d, #cc2f19);
   background-color: #eb6855;
 }
-/* line 263, ../scss/partials/_buttons.scss */
+/* line 264, ../scss/partials/_buttons.scss */
 .button-3d-caution:active {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #c22d18, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #c22d18, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #c22d18, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #c22d18, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #c22d18, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #c22d18, 0px 3px 3px rgba(0, 0, 0, 0.3);
   background: #cd5240;
   color: #952312;
   border: 1px solid #d9331a;
   top: 6px;
 }
-/* line 270, ../scss/partials/_buttons.scss */
+/* line 271, ../scss/partials/_buttons.scss */
 .button-3d-caution.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -930,7 +930,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 284, ../scss/partials/_buttons.scss */
+/* line 285, ../scss/partials/_buttons.scss */
 .button-border-caution {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -948,13 +948,13 @@ button.button:disabled {
   background: none;
   text-shadow: none;
 }
-/* line 293, ../scss/partials/_buttons.scss */
+/* line 294, ../scss/partials/_buttons.scss */
 .button-border-caution:hover {
   background: none;
   color: #eb6855;
   border: 2px solid #eb6855;
 }
-/* line 298, ../scss/partials/_buttons.scss */
+/* line 299, ../scss/partials/_buttons.scss */
 .button-border-caution:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -964,7 +964,7 @@ button.button:disabled {
   color: #c22d18;
   border: 2px solid #c22d18;
 }
-/* line 304, ../scss/partials/_buttons.scss */
+/* line 305, ../scss/partials/_buttons.scss */
 .button-border-caution.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -972,7 +972,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 316, ../scss/partials/_buttons.scss */
+/* line 317, ../scss/partials/_buttons.scss */
 .button-flat-caution {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -990,11 +990,11 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 325, ../scss/partials/_buttons.scss */
+/* line 326, ../scss/partials/_buttons.scss */
 .button-flat-caution:hover {
   background: #e8543f;
 }
-/* line 328, ../scss/partials/_buttons.scss */
+/* line 329, ../scss/partials/_buttons.scss */
 .button-flat-caution:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -1003,7 +1003,7 @@ button.button:disabled {
   background: #cd5240;
   color: #ac2815;
 }
-/* line 333, ../scss/partials/_buttons.scss */
+/* line 334, ../scss/partials/_buttons.scss */
 .button-flat-caution.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1038,7 +1038,7 @@ button.button:disabled {
   color: #3e1740;
 }
 
-/* line 247, ../scss/partials/_buttons.scss */
+/* line 248, ../scss/partials/_buttons.scss */
 .button-3d-royal {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -1048,43 +1048,43 @@ button.button:disabled {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #802e84), color-stop(100%, #8e3494));
-  background: -webkit-linear-gradient(top, #802e84, #8e3494);
-  background: -moz-linear-gradient(top, #802e84, #8e3494);
-  background: -o-linear-gradient(top, #802e84, #8e3494);
-  background: linear-gradient(top, #802e84, #8e3494);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8e3494), color-stop(100%, #802e84));
+  background: -webkit-linear-gradient(top, #8e3494, #802e84);
+  background: -moz-linear-gradient(top, #8e3494, #802e84);
+  background: -o-linear-gradient(top, #8e3494, #802e84);
+  background: linear-gradient(top, #8e3494, #802e84);
   background-color: #87318c;
   color: white;
-  border: 1px solid #752a79;
+  border: 1px solid #632466;
   text-shadow: none;
   position: relative;
 }
-/* line 258, ../scss/partials/_buttons.scss */
+/* line 259, ../scss/partials/_buttons.scss */
 .button-3d-royal:hover {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #833088), color-stop(100%, #a43caa));
-  background: -webkit-linear-gradient(top, #833088, #a43caa);
-  background: -moz-linear-gradient(top, #833088, #a43caa);
-  background: -o-linear-gradient(top, #833088, #a43caa);
-  background: linear-gradient(top, #833088, #a43caa);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8b3290), color-stop(100%, #6a266e));
+  background: -webkit-linear-gradient(top, #8b3290, #6a266e);
+  background: -moz-linear-gradient(top, #8b3290, #6a266e);
+  background: -o-linear-gradient(top, #8b3290, #6a266e);
+  background: linear-gradient(top, #8b3290, #6a266e);
   background-color: #ab3eb2;
 }
-/* line 263, ../scss/partials/_buttons.scss */
+/* line 264, ../scss/partials/_buttons.scss */
 .button-3d-royal:active {
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #632466, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #632466, 0px 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #632466, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #632466, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #632466, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0px 2px 0px #632466, 0px 3px 3px rgba(0, 0, 0, 0.3);
   background: #764479;
   color: #3e1740;
   border: 1px solid #752a79;
   top: 6px;
 }
-/* line 270, ../scss/partials/_buttons.scss */
+/* line 271, ../scss/partials/_buttons.scss */
 .button-3d-royal.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1092,7 +1092,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 284, ../scss/partials/_buttons.scss */
+/* line 285, ../scss/partials/_buttons.scss */
 .button-border-royal {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1110,13 +1110,13 @@ button.button:disabled {
   background: none;
   text-shadow: none;
 }
-/* line 293, ../scss/partials/_buttons.scss */
+/* line 294, ../scss/partials/_buttons.scss */
 .button-border-royal:hover {
   background: none;
   color: #ab3eb2;
   border: 2px solid #ab3eb2;
 }
-/* line 298, ../scss/partials/_buttons.scss */
+/* line 299, ../scss/partials/_buttons.scss */
 .button-border-royal:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -1126,7 +1126,7 @@ button.button:disabled {
   color: #632466;
   border: 2px solid #632466;
 }
-/* line 304, ../scss/partials/_buttons.scss */
+/* line 305, ../scss/partials/_buttons.scss */
 .button-border-royal.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1134,7 +1134,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 316, ../scss/partials/_buttons.scss */
+/* line 317, ../scss/partials/_buttons.scss */
 .button-flat-royal {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1152,11 +1152,11 @@ button.button:disabled {
   text-shadow: none;
   border: none;
 }
-/* line 325, ../scss/partials/_buttons.scss */
+/* line 326, ../scss/partials/_buttons.scss */
 .button-flat-royal:hover {
   background: #99389f;
 }
-/* line 328, ../scss/partials/_buttons.scss */
+/* line 329, ../scss/partials/_buttons.scss */
 .button-flat-royal:active {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
@@ -1165,7 +1165,7 @@ button.button:disabled {
   background: #764479;
   color: #501d53;
 }
-/* line 333, ../scss/partials/_buttons.scss */
+/* line 334, ../scss/partials/_buttons.scss */
 .button-flat-royal.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1173,7 +1173,7 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 353, ../scss/partials/_buttons.scss */
+/* line 354, ../scss/partials/_buttons.scss */
 .button-jumbo {
   font-size: 24px;
   height: 51.2px;
@@ -1181,7 +1181,7 @@ button.button:disabled {
   padding: 0px 40.96px;
 }
 
-/* line 353, ../scss/partials/_buttons.scss */
+/* line 354, ../scss/partials/_buttons.scss */
 .button-large {
   font-size: 19px;
   height: 38.4px;
@@ -1189,12 +1189,12 @@ button.button:disabled {
   padding: 0px 30.72px;
 }
 
-/* line 384, ../scss/partials/_buttons.scss */
+/* line 385, ../scss/partials/_buttons.scss */
 input.button-large, button.button-large {
   height: 40.4px;
 }
 
-/* line 353, ../scss/partials/_buttons.scss */
+/* line 354, ../scss/partials/_buttons.scss */
 .button-small {
   font-size: 15px;
   height: 25.6px;
@@ -1202,12 +1202,12 @@ input.button-large, button.button-large {
   padding: 0px 20.48px;
 }
 
-/* line 384, ../scss/partials/_buttons.scss */
+/* line 385, ../scss/partials/_buttons.scss */
 input.button-small, button.button-small {
   height: 27.6px;
 }
 
-/* line 353, ../scss/partials/_buttons.scss */
+/* line 354, ../scss/partials/_buttons.scss */
 .button-tiny {
   font-size: 12px;
   height: 22.4px;
@@ -1215,12 +1215,12 @@ input.button-small, button.button-small {
   padding: 0px 17.92px;
 }
 
-/* line 384, ../scss/partials/_buttons.scss */
+/* line 385, ../scss/partials/_buttons.scss */
 input.button-tiny, button.button-tiny {
   height: 24.4px;
 }
 
-/* line 405, ../scss/partials/_buttons.scss */
+/* line 406, ../scss/partials/_buttons.scss */
 .button.glow {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
@@ -1240,7 +1240,7 @@ input.button-tiny, button.button-tiny {
   -o-animation-name: glowing;
   animation-name: glowing;
 }
-/* line 408, ../scss/partials/_buttons.scss */
+/* line 409, ../scss/partials/_buttons.scss */
 .button.glow:active {
   -webkit-animation-name: none;
   -moz-animation-name: none;
@@ -1252,28 +1252,28 @@ input.button-tiny, button.button-tiny {
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
 }
 
-/* line 420, ../scss/partials/_buttons.scss */
+/* line 421, ../scss/partials/_buttons.scss */
 .button-dropdown {
   position: relative;
   overflow: visible;
   display: inline-block;
 }
-/* line 427, ../scss/partials/_buttons.scss */
+/* line 428, ../scss/partials/_buttons.scss */
 .button-dropdown .button .icon-caret-down {
   font-size: 90%;
   margin: 0px 0px 0px 3px;
   vertical-align: middle;
 }
-/* line 434, ../scss/partials/_buttons.scss */
+/* line 435, ../scss/partials/_buttons.scss */
 .button-dropdown ul.button-dropdown-menu-below {
   top: 115%;
 }
-/* line 437, ../scss/partials/_buttons.scss */
+/* line 438, ../scss/partials/_buttons.scss */
 .button-dropdown ul.button-dropdown-menu-above {
   bottom: 115%;
   top: auto;
 }
-/* line 443, ../scss/partials/_buttons.scss */
+/* line 444, ../scss/partials/_buttons.scss */
 .button-dropdown ul {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
@@ -1294,13 +1294,13 @@ input.button-tiny, button.button-tiny {
   list-style-type: none;
   min-width: 102%;
 }
-/* line 457, ../scss/partials/_buttons.scss */
+/* line 458, ../scss/partials/_buttons.scss */
 .button-dropdown ul li {
   padding: 0px;
   margin: 0px;
   display: block;
 }
-/* line 462, ../scss/partials/_buttons.scss */
+/* line 463, ../scss/partials/_buttons.scss */
 .button-dropdown ul li:first-child a {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -1309,7 +1309,7 @@ input.button-tiny, button.button-tiny {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 465, ../scss/partials/_buttons.scss */
+/* line 466, ../scss/partials/_buttons.scss */
 .button-dropdown ul li:last-child a {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -1318,14 +1318,14 @@ input.button-tiny, button.button-tiny {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 471, ../scss/partials/_buttons.scss */
+/* line 472, ../scss/partials/_buttons.scss */
 .button-dropdown ul .button-dropdown-divider {
   -webkit-box-shadow: inset 0px 1px 0px white;
   -moz-box-shadow: inset 0px 1px 0px white;
   box-shadow: inset 0px 1px 0px white;
   border-top: 1px solid #e4e4e4;
 }
-/* line 476, ../scss/partials/_buttons.scss */
+/* line 477, ../scss/partials/_buttons.scss */
 .button-dropdown ul a {
   display: block;
   padding: 0px 20px;
@@ -1335,7 +1335,7 @@ input.button-tiny, button.button-tiny {
   line-height: 30px;
   white-space: nowrap;
 }
-/* line 485, ../scss/partials/_buttons.scss */
+/* line 486, ../scss/partials/_buttons.scss */
 .button-dropdown ul a:hover {
   background-color: #3c6ab9;
   color: white;
