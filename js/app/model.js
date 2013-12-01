@@ -66,7 +66,6 @@
 
         getPayload: function() {
             var payload =  _.pick(this.attributes, 'name', 'btn-name', 'btn-namespace', 'btn-glow-namespace', 'btn-glow-name', 'btn-font-color', 'btn-font-size', 'btn-font-weight', 'btn-font-family', 'btn-actions', 'types', 'build_styleguide');
-
             return $.param(payload);
         },
 
@@ -75,7 +74,9 @@
 
             if (method === 'update' || method === 'create') {
                 //ONLY GRAB THE ATTRIBUTES THE SERVER CAN HANDLE
-                data = _.pick(this.attributes, 'name', 'btn-name', 'btn-namespace',  'btn-glow-namespace', 'btn-glow-name', 'btn-font-color', 'btn-font-size', 'btn-font-weight', 'btn-font-family', 'btn-actions', 'types', 'build_styleguide');
+                data = _.pick(this.attributes, 'name', 'btn-name', 'btn-namespace',  'btn-glow-namespace', 'btn-glow-name', 'btn-font-color', 'btn-font-size', 'btn-font-weight', 'btn-font-family', 'btn-actions', 'build_styleguide');
+                data = _.clone(data);
+                data.types = this.get('allTypes');
             }
             else {
                 data = _.clone(this.attributes);

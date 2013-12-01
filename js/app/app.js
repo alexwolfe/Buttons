@@ -27,6 +27,7 @@
         optionsUpdateStarted: function() {
             //NOTE: We have to use global jquery to grab all .download classes on the page
             $('.download').addClass('disabled');
+            $('.customize').addClass('disabled');
         },
 
         render: function() {
@@ -44,6 +45,7 @@
             //ADD SHOWCASE TYPES TO MODEL
             this.model.set({
                 types: this.buildTypes,
+                allTypes: _.clone(this.buildTypes),
                 showcases: this.showcaseNames
             });
 
@@ -82,12 +84,18 @@
         },
 
         updateGlobalStyles: function() {
+            //UPDATE CSS WITH STYLES WITH CUSTOM BUTTON CSS FROM SERVER
             var css = this.model.get('css');
             var styleTag = $('#custom-styles');
             styleTag.text(css);
+
+            //TRIGGER STYLES UPDATED EVENT
             this.model.trigger('styles:updated');
             NProgress.done();
+
+            //ENABLE BUTTONS ON CALLBACK
             $('.download').removeClass('disabled');
+            $('.customize').removeClass('disabled');
         },
 
 
@@ -98,13 +106,16 @@
 
         customize: function(e) {
             e.preventDefault();
+            var button = $(e.currentTarget);
 
-            //CREATE CUSTOMIZE MODAL
-            var modal = new Unicorn.Views.Customizer({ model: this.model });
+            if(!button.hasClass('disabled')) {
+                //CREATE CUSTOMIZE MODAL
+                var modal = new Unicorn.Views.Customizer({ model: this.model });
 
-            //APPEND THEN RENDER
-            this.$el.append(modal.el);
-            modal.trigger('dom');
+                //APPEND THEN RENDER
+                this.$el.append(modal.el);
+                modal.trigger('dom');
+            }
         },
 
         checkForSelectedTypes: function(model, types) {
@@ -138,9 +149,10 @@
         download: function(e) {
             e.preventDefault();
             var types = this.model.get('types');
+            var button = $(e.currentTarget);
 
             // ONLY DOWNLOAD IF THEY HAVE AT LEAST ONE ITEM SELECTED
-            if (types && types.length) {
+            if (types && types.length && !button.hasClass('disabled')) {
 
                 //CREATE A URL FROM MODEL VALUES
                 var payload = this.model.getPayload();
