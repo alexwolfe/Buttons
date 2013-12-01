@@ -9,6 +9,8 @@ $unicorn-btn-build-rounded: false;
 $unicorn-btn-build-pill: false;
 $unicorn-btn-build-circle: false;
 $unicorn-btn-build-flat: false;
+$unicorn-btn-build-3d: false;
+$unicorn-btn-build-border: false;
 
 // For all types provided by user we mark true
 @each $unicorn-btn-type in $unicorn-btn-types {
@@ -29,6 +31,12 @@ $unicorn-btn-build-flat: false;
     }
     @else if $unicorn-btn-type == 'flat' {
         $unicorn-btn-build-flat: true;
+    }
+    @else if $unicorn-btn-type == 'border' {
+        $unicorn-btn-build-border: true;
+    }
+    @else if $unicorn-btn-type == '3d' {
+        $unicorn-btn-build-3d: true;
     }
 }
 //@debug "$unicorn-btn-build-glow is #{$unicorn-btn-build-glow}";
