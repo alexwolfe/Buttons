@@ -153,8 +153,8 @@ button#{$unicorn-btn-namespace}:disabled {
     #{$unicorn-btn-namespace}-3d {
         @include transition-property(all);
         @include transition-duration(.3s);
-        @include box-shadow(inset 0px -1px 0px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-        @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 2%), lighten($unicorn-btn-bgcolor, 2%)));
+        @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+        @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 2%), darken($unicorn-btn-bgcolor, 2%)));
         background-color: $unicorn-btn-bgcolor;
         color: $unicorn-btn-font-color;
         border: 1px solid darken($unicorn-btn-bgcolor, 5%);
@@ -162,13 +162,14 @@ button#{$unicorn-btn-namespace}:disabled {
         position: relative;
 
         &:hover {
-            @include box-shadow(inset 0px -1px 0px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-            @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 1%), lighten($unicorn-btn-bgcolor, 8%)));
+            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+            @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 8%), darken($unicorn-btn-bgcolor, 1%)));
             background-color: lighten($unicorn-btn-bgcolor, 10%);
         }
         &:active {
-            @include box-shadow(inset 0px -1px 0px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
-            background: desaturate($unicorn-btn-bgcolor, 20%);
+            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
+            @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 2%), lighten($unicorn-btn-bgcolor, 2%)));
+            background-color: desaturate($unicorn-btn-bgcolor, 20%);
             color: darken($unicorn-btn-bgcolor, 20%);
             border: 1px solid darken($unicorn-btn-bgcolor, 5%);
             top: 6px;
@@ -257,13 +258,14 @@ button#{$unicorn-btn-namespace}:disabled {
             position: relative;
 
             &:hover {
-                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
-                @include background(linear-gradient(top,  lighten($unicorn-btn-background, 1%), darken($unicorn-btn-background, 8%)));
+                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
+                @include background(linear-gradient(top,  lighten($unicorn-btn-background, 8%), darken($unicorn-btn-background, 1%)));
                 background-color: lighten($unicorn-btn-background, 10%);
             }
             &:active {
-                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
-                background: desaturate($unicorn-btn-background, 20%);
+                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
+                @include background(linear-gradient(top,  darken($unicorn-btn-background, 2%), lighten($unicorn-btn-background, 2%)));
+                background-color: desaturate($unicorn-btn-background, 20%);
                 color: darken($unicorn-btn-background, 20%);
                 border: 1px solid darken($unicorn-btn-background, 5%);
                 top: 6px;
