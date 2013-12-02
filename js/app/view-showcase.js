@@ -71,8 +71,20 @@
                 _.each(pairs, function(pair){
                     //DON'T REPLACE IF IDENTICAL
                     if(pair[0] !== pair[1]) {
-                        var classname = '.' + namespace + '-' + pair[0] + ' , .' + namespace + '-flat-' + pair[0];
 
+                        //CREATE A CONTAINER FOR CLASS NAMES
+                        var classname = [];
+                        var types = ['-', '-flat-', '-3d-', '-border-'];
+
+                        //ADD CLASS NAMES TO LIST
+                        _.each(types, function(type) {
+                            classname.push('.' + namespace + type + pair[0]);
+                        });
+
+                        //FLATTEN THIS BIZNATCH
+                        classname = classname.join(',');
+
+                        //UPDATE CLASSNAMES
                         this.updateClassName(classname, pair[0], pair[1]);
                     }
                 }, this);
