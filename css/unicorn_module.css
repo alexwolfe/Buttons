@@ -408,10 +408,14 @@
 
 /* line 109, ../scss/partials/_form.scss */
 .form .c4 {
-  margin: 0px 60px 20px 0px;
+  margin: 0px 20px 20px 0px;
   float: left;
 }
-/* line 114, ../scss/partials/_form.scss */
+/* line 113, ../scss/partials/_form.scss */
+.form .c4 input {
+  width: 100px;
+}
+/* line 118, ../scss/partials/_form.scss */
 .form .color-row {
   -webkit-box-shadow: 0px 1px 0px white inset;
   -moz-box-shadow: 0px 1px 0px white inset;
@@ -426,38 +430,38 @@
   margin-bottom: 10px;
   border: 1px solid #dddddd;
 }
-/* line 122, ../scss/partials/_form.scss */
+/* line 126, ../scss/partials/_form.scss */
 .form .color-row:last-child {
   margin: 0px;
 }
-/* line 126, ../scss/partials/_form.scss */
+/* line 130, ../scss/partials/_form.scss */
 .form .color-row .button {
   min-width: 80px;
   margin-right: 20px;
 }
-/* line 130, ../scss/partials/_form.scss */
+/* line 134, ../scss/partials/_form.scss */
 .form .color-row input[type="text"] {
   width: 100px;
 }
-/* line 134, ../scss/partials/_form.scss */
+/* line 138, ../scss/partials/_form.scss */
 .form .color-row input[type="text"], .form .color-row input, .form .color-row .sp-light {
   margin-right: 30px;
 }
-/* line 138, ../scss/partials/_form.scss */
+/* line 142, ../scss/partials/_form.scss */
 .form .color-row .sp-light {
   border: 1px solid #cccccc;
 }
-/* line 142, ../scss/partials/_form.scss */
+/* line 146, ../scss/partials/_form.scss */
 .form .color-row label {
   display: inline;
 }
 
 @media only screen and (max-width: 740px) {
-  /* line 155, ../scss/partials/_form.scss */
+  /* line 159, ../scss/partials/_form.scss */
   .form .color-row input[type="text"], .form .color-row input, .form .color-row .sp-light {
     margin-right: 10px;
   }
-  /* line 160, ../scss/partials/_form.scss */
+  /* line 164, ../scss/partials/_form.scss */
   .form .c4 {
     margin: 0px 20px 20px 0px;
     float: left;
@@ -881,8 +885,14 @@
   background: #FFF;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 1060px) {
   /* line 116, ../scss/partials/_modal.scss */
+  .modal {
+    left: 60px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  /* line 122, ../scss/partials/_modal.scss */
   .modal {
     left: 0px;
     right: 0px;

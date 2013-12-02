@@ -107,8 +107,12 @@ $form-field-height: 28px;
 //////////////////////////////////////////////////////////
 #{$form-namespace} {
     .c4 {
-        margin: 0px 60px 20px 0px;
+        margin: 0px 20px 20px 0px;
         float: left;
+
+        input {
+            width: 100px;
+        }
     }
 
     .color-row {
