@@ -51,16 +51,22 @@
         activateValidation: function() {
             var self = this;
 
+            $.validator.addMethod('cssCharset', function (value, element) {
+                //Loose validation of alphas, digits, underscores, and hyphens
+                return this.optional(element) || /^[A-Za-z0-9\-\_]+$/.test(value);
+            }, 'Please only enter valid CSS characters.');
+
             //DEFAULT RULES
             var rules = {
-                'btn-namespace': {required: true},
+                'btn-namespace': {required: true, cssCharset: true},
                 'btn-font-size': {required: true},
-                'name': {required: true}
+                'name': {required: true, cssCharset: true}
             };
 
             //DYNAMIC RULES (ALL ACTIONS)
             _.each(this.data.actions, function(action) {
                 rules['action-' + action.name] = {
+                    cssCharset: true,
                     required: true
                 };
             });
