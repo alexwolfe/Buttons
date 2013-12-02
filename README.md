@@ -5,7 +5,7 @@ Buttons is a fully customizable CSS button library that's built using Sass & Com
 
 Quickly get started by [visiting the Buttons Builder Website](http://alexwolfe.github.io/Buttons/) where you can view live examples and fully customize your Buttons download.
 
-[![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/buttons.png "Example of Buttons")](http://alexwolfe.github.io/Buttons/).
+[![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/builder.png "Example of Buttons")](http://alexwolfe.github.io/Buttons/)
 
 Setup & Installation
 ====================
