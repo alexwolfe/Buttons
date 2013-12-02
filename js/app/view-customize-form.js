@@ -90,7 +90,8 @@
         updateColorPickers: function() {
             this.$('input[type="color"]').spectrum({
                 preferredFormat: 'hex',
-                showInput: true
+                showInput: true,
+                clickoutFiresChange: true
             });
         },
 
