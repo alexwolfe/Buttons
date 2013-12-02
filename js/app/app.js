@@ -18,7 +18,7 @@
 
         initialize: function() {
             this.listenTo(this.model, 'change:types', this.checkForSelectedTypes);
-            this.listenTo(this.model, 'change:css', this.updateGlobalStyles);
+            this.listenTo(this.model, 'sync', this.updateGlobalStyles);
             this.listenTo(this.model, 'invalid', this.showError);
             this.listenTo(this.model, 'options:update:started', this.optionsUpdateStarted);
             this.render();
