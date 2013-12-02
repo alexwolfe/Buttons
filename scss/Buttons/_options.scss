@@ -24,8 +24,8 @@ $unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, A
 // (name background-color font-color) add as many as you like.
 $unicorn-btn-actions: ('primary' #00A1CB #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF);
 // Remove any type to omit from final CSS build
-$unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat';
-$unicorn-btn-sizes: 'large' 'small' 'tiny';
+$unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat' 'border' '3d';
+$unicorn-btn-sizes: 'jumbo' 'large' 'small' 'tiny';
 $unicorn-btn-circle-size: 120px; //radius for circle buttons, circles only have one size
 
 

@@ -15,7 +15,7 @@ $unicorn-btn-largefs: inherit;
 @if $unicorn-btn-font-size != inherit {
     $unicorn-btn-largefs: $unicorn-btn-font-size + 5;
     $unicorn-btn-tinyfs: $unicorn-btn-font-size - 2;
-    $unicorn-btn-smallfs: $unicorn-btn-font-size - 1;
+    $unicorn-btn-smallfs: $unicorn-btn-font-size + 1;
 }
 
 //////////////////////////////////////////////////////////
@@ -91,6 +91,95 @@ button#{$unicorn-btn-namespace}:disabled {
     display: inline-block;
 }
 
+// FLAT BUTTON BASE
+@if $unicorn-btn-build-flat {
+    #{$unicorn-btn-namespace}-flat {
+        $unicorn-btn-background: $unicorn-btn-bgcolor;
+        @include box-shadow(none);
+        @include transition-property(background);
+        @include transition-duration(.3s);
+        background: $unicorn-btn-background;
+        border: none;
+        text-shadow: none;
+
+        &:hover {
+            background: lighten($unicorn-btn-background, 5%);
+        }
+        &:active {
+            @include transition-duration(0s);
+            background: desaturate($unicorn-btn-background, 20%);
+            color: darken($unicorn-btn-background, 20%);
+        }
+        &.disabled {
+            @include box-shadow(none);
+            -webkit-appearance: none;
+        }
+    }
+}
+
+
+// BORDER BUTTON BASE
+@if $unicorn-btn-build-flat {
+    #{$unicorn-btn-namespace}-border {
+        @include box-shadow(none);
+        @include transition-property(all);
+        @include transition-duration(.3s);
+        color: $unicorn-btn-font-color;
+        border: 2px solid $unicorn-btn-font-color;
+        background: none;
+        text-shadow: none;
+
+        &:hover {
+            background: none;
+            color: lighten($unicorn-btn-font-color, 10%);
+            border: 2px solid lighten($unicorn-btn-font-color, 10%);
+        }
+        &:active {
+            @include transition-duration(0s);
+            background: none;
+            color: darken($unicorn-btn-font-color, 10%);
+            border: 2px solid darken($unicorn-btn-font-color, 10%);
+        }
+        &.disabled {
+            @include box-shadow(none);
+            -webkit-appearance: none;
+        }
+    }
+}
+
+
+// 3D BUTTON BASE
+@if $unicorn-btn-build-3d {
+    #{$unicorn-btn-namespace}-3d {
+        @include transition-property(all);
+        @include transition-duration(.3s);
+        @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+        @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 2%), darken($unicorn-btn-bgcolor, 2%)));
+        background-color: $unicorn-btn-bgcolor;
+        color: $unicorn-btn-font-color;
+        border: 1px solid darken($unicorn-btn-bgcolor, 5%);
+        text-shadow: none;
+        position: relative;
+
+        &:hover {
+            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+            @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 8%), darken($unicorn-btn-bgcolor, 1%)));
+            background-color: lighten($unicorn-btn-bgcolor, 10%);
+        }
+        &:active {
+            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
+            @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 2%), lighten($unicorn-btn-bgcolor, 2%)));
+            background-color: desaturate($unicorn-btn-bgcolor, 20%);
+            color: darken($unicorn-btn-bgcolor, 20%);
+            border: 1px solid darken($unicorn-btn-bgcolor, 5%);
+            top: 6px;
+        }
+        &.disabled {
+            @include box-shadow(none);
+            -webkit-appearance: none;
+        }
+    }
+}
 
 
 //////////////////////////////////////////////////////////
@@ -123,9 +212,8 @@ button#{$unicorn-btn-namespace}:disabled {
 }
 
 
-
 //////////////////////////////////////////////////////////
-// GRADIENT STYLES ///////////////////////////////////////
+// ACTION STYLES /////////////////////////////////////////
 //////////////////////////////////////////////////////////
 @each $unicorn-btn-action in $unicorn-btn-actions {
     //GET NAME & COLOR
@@ -150,46 +238,82 @@ button#{$unicorn-btn-namespace}:disabled {
             color: darken($unicorn-btn-background, 20%);
         }
     }
-}
 
 
+    /////////////////////////////
+    //3D BUTTON STYLES //////////
+    ////////////////////////////
+    @if $unicorn-btn-build-3d {
 
-//////////////////////////////////////////////////////////
-// FLAT STYLES ///////////////////////////////////////////
-//////////////////////////////////////////////////////////
+        // .button-border-primary .button-border-action etc.
+        #{$unicorn-btn-namespace}-3d-#{$unicorn-btn-name} {
+            @include transition-property(all);
+            @include transition-duration(.3s);
+            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
+            @include background(linear-gradient(top,  lighten($unicorn-btn-background, 2%), darken($unicorn-btn-background, 2%)));
+            background-color: $unicorn-btn-background;
+            color: $unicorn-btn-color;
+            border: 1px solid darken($unicorn-btn-background, 10%);
+            text-shadow: none;
+            position: relative;
 
-// FLAT BUTTON BASE
-@if $unicorn-btn-build-flat {
-    #{$unicorn-btn-namespace}-flat {
-        $unicorn-btn-background: $unicorn-btn-bgcolor;
-        @include box-shadow(none);
-        @include transition-property(background);
-        @include transition-duration(.3s);
-        background: $unicorn-btn-background;
-        border: none;
-        text-shadow: none;
-
-        &:hover {
-            background: lighten($unicorn-btn-background, 5%);
-        }
-        &:active {
-            @include transition-duration(0s);
-            background: desaturate($unicorn-btn-background, 20%);
-            color: darken($unicorn-btn-background, 20%);
-        }
-        &.disabled {
-            @include box-shadow(none);
-            -webkit-appearance: none;
+            &:hover {
+                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
+                @include background(linear-gradient(top,  lighten($unicorn-btn-background, 8%), darken($unicorn-btn-background, 1%)));
+                background-color: lighten($unicorn-btn-background, 10%);
+            }
+            &:active {
+                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
+                @include background(linear-gradient(top,  darken($unicorn-btn-background, 2%), lighten($unicorn-btn-background, 2%)));
+                background-color: desaturate($unicorn-btn-background, 20%);
+                color: darken($unicorn-btn-background, 20%);
+                border: 1px solid darken($unicorn-btn-background, 5%);
+                top: 6px;
+            }
+            &.disabled {
+                @include box-shadow(none);
+                -webkit-appearance: none;
+            }
         }
     }
-}
 
-@each $unicorn-btn-action in $unicorn-btn-actions {
-    //GET NAME & COLOR
-    $unicorn-btn-name: nth($unicorn-btn-action, 1);
-    $unicorn-btn-background: nth($unicorn-btn-action, 2);
-    $unicorn-btn-color: nth($unicorn-btn-action, 3);
 
+    /////////////////////////////
+    //BORDER BUTTON STYLES //////
+    ////////////////////////////
+    @if $unicorn-btn-build-border {
+
+        // .button-border-primary .button-border-action etc.
+        #{$unicorn-btn-namespace}-border-#{$unicorn-btn-name} {
+            @include box-shadow(none);
+            @include transition-property(all);
+            @include transition-duration(.3s);
+            color: $unicorn-btn-background;
+            border: 2px solid $unicorn-btn-background;
+            background: none;
+            text-shadow: none;
+
+            &:hover {
+                background: none;
+                color: lighten($unicorn-btn-background, 10%);
+                border: 2px solid lighten($unicorn-btn-background, 10%);
+            }
+            &:active {
+                @include transition-duration(0s);
+                background: none;
+                color: darken($unicorn-btn-background, 10%);
+                border: 2px solid darken($unicorn-btn-background, 10%);
+            }
+            &.disabled {
+                @include box-shadow(none);
+                -webkit-appearance: none;
+            }
+        }
+    }
+
+    //////////////////////////
+    //FLAT BUTTON STYLES /////
+    //////////////////////////
     @if $unicorn-btn-build-flat {
         // .button-flat-primary .button-flat-action etc.
         #{$unicorn-btn-namespace}-flat-#{$unicorn-btn-name} {
@@ -219,6 +343,9 @@ button#{$unicorn-btn-namespace}:disabled {
 
 
 
+
+
+
 //////////////////////////////////////////////////////////
 // SIZES /////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
@@ -227,6 +354,13 @@ button#{$unicorn-btn-namespace}:disabled {
 
     // .button-large .button-small .button-tiny
     #{$unicorn-btn-namespace}-#{$unicorn-btn-size} {
+        @if $unicorn-btn-size == 'jumbo' {
+            font-size: $unicorn-btn-largefs + 5;
+            height: $unicorn-btn-height * 1.6;
+            line-height: $unicorn-btn-height * 1.6;
+            padding: 0px ($unicorn-btn-height * 1.6) * .8;
+        }
+
         @if $unicorn-btn-size == 'large' {
             font-size: $unicorn-btn-largefs;
             height: $unicorn-btn-height * 1.2;
