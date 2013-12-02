@@ -3,6 +3,7 @@
 
 # TEAM
     Alexander Wolfe -- Author -- @alexwolfe
+    Rob Levin  -- Author -- @roblevintennis
 
 # THANKS
     The Sass Team
@@ -10,6 +11,7 @@
     Google Prettify for making my code snippets look nicer!
     Font Awesome for the great looking font icons.
     jQuery Plugin Boiler Plate @addyosmani and @zenorocha
+    Backbone Team
 
 # TECHNOLOGY COLOPHON
 
