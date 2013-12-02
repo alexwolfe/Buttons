@@ -843,8 +843,8 @@
   font-size: 20px;
   line-height: 20px;
 }
-/* line 67, ../scss/partials/_modal.scss */
-.modal header .close {
+/* line 68, ../scss/partials/_modal.scss */
+.modal .close-x {
   position: absolute;
   top: 20px;
   right: 20px;

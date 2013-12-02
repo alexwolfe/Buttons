@@ -63,16 +63,16 @@ $modal-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, 
             font-size: 20px;
             line-height: 20px;
         }
+    }
 
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #CCC;
-            text-decoration: none;
-            font-weight: lighter;
-            font-size: 16px;
-        }
+    .close-x {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #CCC;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 16px;
     }
 
     #{$modal-namespace}-content {
