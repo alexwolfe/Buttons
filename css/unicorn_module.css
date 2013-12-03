@@ -2722,7 +2722,7 @@ input.button-large, button.button-large {
 
 /* line 356, ../scss/Buttons/_buttons.scss */
 .button-small {
-  font-size: 15px;
+  font-size: 13px;
   height: 25.6px;
   line-height: 25.6px;
   padding: 0px 20.48px;

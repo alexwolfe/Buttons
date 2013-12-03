@@ -15,7 +15,7 @@ $unicorn-btn-largefs: inherit;
 @if $unicorn-btn-font-size != inherit {
     $unicorn-btn-largefs: $unicorn-btn-font-size + 5;
     $unicorn-btn-tinyfs: $unicorn-btn-font-size - 2;
-    $unicorn-btn-smallfs: $unicorn-btn-font-size + 1;
+    $unicorn-btn-smallfs: $unicorn-btn-font-size - 1;
 }
 
 //////////////////////////////////////////////////////////
