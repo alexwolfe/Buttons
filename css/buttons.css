@@ -538,6 +538,174 @@ button.button:disabled {
 }
 
 /* line 226, ../scss/partials/_buttons.scss */
+.button-secondary {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+  background: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background: linear-gradient(top, #ffffff, #f2f2f2);
+  background-color: white;
+  border-color: #e6e6e6;
+  color: white;
+  text-shadow: 0 -1px 1px rgba(179, 179, 179, 0.35);
+}
+/* line 233, ../scss/partials/_buttons.scss */
+.button-secondary:hover {
+  background-color: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+  background: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background: linear-gradient(top, #ffffff, #f2f2f2);
+}
+/* line 237, ../scss/partials/_buttons.scss */
+.button-secondary:active {
+  background: white;
+  color: #cccccc;
+}
+
+/* line 250, ../scss/partials/_buttons.scss */
+.button-3d-secondary {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fafafa));
+  background: -webkit-linear-gradient(top, #ffffff, #fafafa);
+  background: -moz-linear-gradient(top, #ffffff, #fafafa);
+  background: -o-linear-gradient(top, #ffffff, #fafafa);
+  background: linear-gradient(top, #ffffff, #fafafa);
+  background-color: white;
+  color: white;
+  border: 1px solid #e6e6e6;
+  text-shadow: none;
+  position: relative;
+  top: 0px;
+}
+/* line 262, ../scss/partials/_buttons.scss */
+.button-3d-secondary:hover {
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fcfcfc));
+  background: -webkit-linear-gradient(top, #ffffff, #fcfcfc);
+  background: -moz-linear-gradient(top, #ffffff, #fcfcfc);
+  background: -o-linear-gradient(top, #ffffff, #fcfcfc);
+  background: linear-gradient(top, #ffffff, #fcfcfc);
+  background-color: white;
+}
+/* line 267, ../scss/partials/_buttons.scss */
+.button-3d-secondary:active {
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #e6e6e6, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #e6e6e6, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #e6e6e6, 0px 3px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #fafafa, #ffffff);
+  background: -moz-linear-gradient(top, #fafafa, #ffffff);
+  background: -o-linear-gradient(top, #fafafa, #ffffff);
+  background: linear-gradient(top, #fafafa, #ffffff);
+  background-color: white;
+  color: #cccccc;
+  border: 1px solid #f2f2f2;
+  top: 5px;
+}
+/* line 275, ../scss/partials/_buttons.scss */
+.button-3d-secondary.disabled {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+/* line 289, ../scss/partials/_buttons.scss */
+.button-border-secondary {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: white;
+  border: 2px solid white;
+  background: none;
+  text-shadow: none;
+}
+/* line 298, ../scss/partials/_buttons.scss */
+.button-border-secondary:hover {
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+/* line 303, ../scss/partials/_buttons.scss */
+.button-border-secondary:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  background: none;
+  color: #e6e6e6;
+  border: 2px solid #e6e6e6;
+}
+/* line 309, ../scss/partials/_buttons.scss */
+.button-border-secondary.disabled {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+/* line 321, ../scss/partials/_buttons.scss */
+.button-flat-secondary {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: white;
+  color: white;
+  text-shadow: none;
+  border: none;
+}
+/* line 330, ../scss/partials/_buttons.scss */
+.button-flat-secondary:hover {
+  background: white;
+}
+/* line 333, ../scss/partials/_buttons.scss */
+.button-flat-secondary:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  background: white;
+  color: #d9d9d9;
+}
+/* line 338, ../scss/partials/_buttons.scss */
+.button-flat-secondary.disabled {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+/* line 226, ../scss/partials/_buttons.scss */
 .button-action {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8fcf00), color-stop(100%, #6b9c00));
   background: -webkit-linear-gradient(top, #8fcf00, #6b9c00);
