@@ -167,7 +167,7 @@ button.button:disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   background: #EEE;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   text-shadow: 0 1px 1px white;
   color: #CCC;
   cursor: default;
@@ -1377,7 +1377,43 @@ button.button:disabled {
   -webkit-appearance: none;
 }
 
-/* line 358, ../scss/partials/_buttons.scss */
+/* line 351, ../scss/partials/_buttons.scss */
+.button-group {
+  position: relative;
+  display: inline-block;
+}
+/* line 354, ../scss/partials/_buttons.scss */
+.button-group .button {
+  float: left;
+}
+/* line 356, ../scss/partials/_buttons.scss */
+.button-group .button:focus, .button-group .button:hover, .button-group .button.active {
+  z-index: 5;
+}
+/* line 359, ../scss/partials/_buttons.scss */
+.button-group .button.active {
+  background: gainsboro;
+}
+/* line 363, ../scss/partials/_buttons.scss */
+.button-group .button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+/* line 366, ../scss/partials/_buttons.scss */
+.button-group .button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 370, ../scss/partials/_buttons.scss */
+.button-group .button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* line 376, ../scss/partials/_buttons.scss */
+.button-group .button + .button {
+  margin-left: -1px;
+}
+
+/* line 389, ../scss/partials/_buttons.scss */
 .button-jumbo {
   font-size: 24px;
   height: 51.2px;
@@ -1385,7 +1421,7 @@ button.button:disabled {
   padding: 0px 40.96px;
 }
 
-/* line 358, ../scss/partials/_buttons.scss */
+/* line 389, ../scss/partials/_buttons.scss */
 .button-large {
   font-size: 19px;
   height: 38.4px;
@@ -1393,12 +1429,12 @@ button.button:disabled {
   padding: 0px 30.72px;
 }
 
-/* line 389, ../scss/partials/_buttons.scss */
+/* line 420, ../scss/partials/_buttons.scss */
 input.button-large, button.button-large {
   height: 40.4px;
 }
 
-/* line 358, ../scss/partials/_buttons.scss */
+/* line 389, ../scss/partials/_buttons.scss */
 .button-small {
   font-size: 15px;
   height: 25.6px;
@@ -1406,12 +1442,12 @@ input.button-large, button.button-large {
   padding: 0px 20.48px;
 }
 
-/* line 389, ../scss/partials/_buttons.scss */
+/* line 420, ../scss/partials/_buttons.scss */
 input.button-small, button.button-small {
   height: 27.6px;
 }
 
-/* line 358, ../scss/partials/_buttons.scss */
+/* line 389, ../scss/partials/_buttons.scss */
 .button-tiny {
   font-size: 12px;
   height: 22.4px;
@@ -1419,12 +1455,12 @@ input.button-small, button.button-small {
   padding: 0px 17.92px;
 }
 
-/* line 389, ../scss/partials/_buttons.scss */
+/* line 420, ../scss/partials/_buttons.scss */
 input.button-tiny, button.button-tiny {
   height: 24.4px;
 }
 
-/* line 410, ../scss/partials/_buttons.scss */
+/* line 441, ../scss/partials/_buttons.scss */
 .button.glow {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
@@ -1444,7 +1480,7 @@ input.button-tiny, button.button-tiny {
   -o-animation-name: glowing;
   animation-name: glowing;
 }
-/* line 413, ../scss/partials/_buttons.scss */
+/* line 444, ../scss/partials/_buttons.scss */
 .button.glow:active {
   -webkit-animation-name: none;
   -moz-animation-name: none;
@@ -1456,28 +1492,28 @@ input.button-tiny, button.button-tiny {
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
 }
 
-/* line 425, ../scss/partials/_buttons.scss */
+/* line 456, ../scss/partials/_buttons.scss */
 .button-dropdown {
   position: relative;
   overflow: visible;
   display: inline-block;
 }
-/* line 432, ../scss/partials/_buttons.scss */
+/* line 463, ../scss/partials/_buttons.scss */
 .button-dropdown .button .icon-caret-down {
   font-size: 90%;
   margin: 0px 0px 0px 3px;
   vertical-align: middle;
 }
-/* line 439, ../scss/partials/_buttons.scss */
+/* line 470, ../scss/partials/_buttons.scss */
 .button-dropdown ul.button-dropdown-menu-below {
   top: 115%;
 }
-/* line 442, ../scss/partials/_buttons.scss */
+/* line 473, ../scss/partials/_buttons.scss */
 .button-dropdown ul.button-dropdown-menu-above {
   bottom: 115%;
   top: auto;
 }
-/* line 448, ../scss/partials/_buttons.scss */
+/* line 479, ../scss/partials/_buttons.scss */
 .button-dropdown ul {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
@@ -1498,13 +1534,13 @@ input.button-tiny, button.button-tiny {
   list-style-type: none;
   min-width: 102%;
 }
-/* line 462, ../scss/partials/_buttons.scss */
+/* line 493, ../scss/partials/_buttons.scss */
 .button-dropdown ul li {
   padding: 0px;
   margin: 0px;
   display: block;
 }
-/* line 467, ../scss/partials/_buttons.scss */
+/* line 498, ../scss/partials/_buttons.scss */
 .button-dropdown ul li:first-child a {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -1513,7 +1549,7 @@ input.button-tiny, button.button-tiny {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 470, ../scss/partials/_buttons.scss */
+/* line 501, ../scss/partials/_buttons.scss */
 .button-dropdown ul li:last-child a {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -1522,14 +1558,14 @@ input.button-tiny, button.button-tiny {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 476, ../scss/partials/_buttons.scss */
+/* line 507, ../scss/partials/_buttons.scss */
 .button-dropdown ul .button-dropdown-divider {
   -webkit-box-shadow: inset 0px 1px 0px white;
   -moz-box-shadow: inset 0px 1px 0px white;
   box-shadow: inset 0px 1px 0px white;
   border-top: 1px solid #e4e4e4;
 }
-/* line 481, ../scss/partials/_buttons.scss */
+/* line 512, ../scss/partials/_buttons.scss */
 .button-dropdown ul a {
   display: block;
   padding: 0px 20px;
@@ -1539,7 +1575,7 @@ input.button-tiny, button.button-tiny {
   line-height: 30px;
   white-space: nowrap;
 }
-/* line 490, ../scss/partials/_buttons.scss */
+/* line 521, ../scss/partials/_buttons.scss */
 .button-dropdown ul a:hover {
   background-color: #3c6ab9;
   color: white;

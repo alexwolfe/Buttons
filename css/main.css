@@ -117,14 +117,14 @@ header hgroup h1 {
   margin: 0px 10px 0px 10px;
   line-height: 150px;
   color: #333;
-  text-shadow: 0px 1px 0px white;
+  text-shadow: 0px 1px 0px #FFF;
 }
 /* line 123, ../scss/main.scss */
 header hgroup h2 {
   color: #999;
   font-weight: normal;
   margin: 0px 10px 20px 10px;
-  text-shadow: 0px 1px 0px white;
+  text-shadow: 0px 1px 0px #FFF;
 }
 /* line 131, ../scss/main.scss */
 header .social-buttons {
@@ -277,7 +277,7 @@ header .button-download {
   font-weight: 100;
   font-size: 60px;
   color: #CCC;
-  text-shadow: 0px 1px 0px white;
+  text-shadow: 0px 1px 0px #FFF;
   margin: 0px 0px 20px 0px;
   line-height: 60px;
 }
@@ -390,7 +390,7 @@ footer a {
   nav ul li {
     float: none;
     display: block;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #EEE;
   }
   /* line 382, ../scss/main.scss */
   nav ul li.home {
@@ -403,7 +403,7 @@ footer a {
   }
   /* line 391, ../scss/main.scss */
   nav ul li.selected {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #EEE;
   }
   /* line 395, ../scss/main.scss */
   nav ul li a {
