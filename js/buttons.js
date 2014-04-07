@@ -46,7 +46,7 @@
 
         init: function() {
             // WE DON'T STOP PROPGATION SO CLICKS WILL AUTOMATICALLY
-            // TOGGLE AND REMOVE THE DROPDOWN & OVERLAY
+            // TOGGLE AND REMOVE THE DROPDOWN
             this.toggle();
         },
 
@@ -62,20 +62,11 @@
         showMenu: function() {
             this.$element.data('dropdown', 'show');
             this.$element.find('ul').show();
-
-            if(this.$overlay) {
-                this.$overlay.show();
-            }
-            else {
-                this.$overlay = $('<div style="position: fixed; top: 0px;left: 0px; right: 0px; bottom: 0px; z-index: 999;"></div>');
-                this.$element.append(this.$overlay);
-            }
         },
 
         hideMenu: function() {
             this.$element.data('dropdown', 'hide');
             this.$element.find('ul').hide();
-            this.$overlay.hide();
         }
     };
 
@@ -95,6 +86,17 @@
         });
     };
 
+    //CLOSE OPEN DROPDOWN MENUS IF CLICKED SOMEWHERE ELSE
+    $(document).on('click', function(e) {
+        $.each($('[data-buttons=dropdown]'), function(i, value) {
+            if ($(e.target.offsetParent)[0] != $(this)[0]) {
+                if ($.data(this, "plugin_" + pluginName)) {
+                    $.data(this, "plugin_" + pluginName).hideMenu();
+                    $(this).find('ul').hide();
+                }
+            }
+        });
+    });
 
     //DELEGATE CLICK EVENT FOR DROPDOWN MENUS
     $(document).on('click', '[data-buttons=dropdown]', function(e) {
