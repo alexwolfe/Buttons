@@ -21,7 +21,7 @@ $unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, A
 //////////////////////////////////////////////////////////
 
 // (name background-color font-color) add as many as you like.
-$unicorn-btn-actions: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF);
+$unicorn-btn-actions: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF) ('inverse' #363636 #FFF);
 // Remove any type to omit from final CSS build
 $unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat' 'border' '3d';
 $unicorn-btn-sizes: 'jumbo' 'large' 'small' 'tiny';
