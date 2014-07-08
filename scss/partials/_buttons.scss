@@ -1,4 +1,3 @@
-@import 'compass';
 @import 'options'; // EDIT STYLES AND OPTIONS IN _options.scss
 @import 'danger';
 @import 'glow';
@@ -22,10 +21,11 @@ $unicorn-btn-largefs: inherit;
 // BUTTON BASE STYLES ////////////////////////////////////
 //////////////////////////////////////////////////////////
 #{$unicorn-btn-namespace} {
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .15));
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .15);
     background-color: $unicorn-btn-bgcolor;
-    @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 5%), darken($unicorn-btn-bgcolor, 5%)));
-    @include inline-block(middle);
+    // background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    background: linear-gradient(to bottom, lighten($unicorn-btn-bgcolor, 5%) 0%, darken($unicorn-btn-bgcolor, 5%) 100%);
+    display: inline-block;
     border: 1px solid darken($unicorn-btn-bgcolor, 10%);
     height: $unicorn-btn-height;
     line-height: $unicorn-btn-height;
@@ -41,10 +41,11 @@ $unicorn-btn-largefs: inherit;
 
     &:hover, &:focus {
         background-color: $unicorn-btn-bgcolor;
-        @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 10%), darken($unicorn-btn-bgcolor, 7%)));
+        background: linear-gradient(to bottom, lighten($unicorn-btn-bgcolor, 10%) 0%, darken($unicorn-btn-bgcolor, 7%) 100%);
+
     }
     &:active {
-        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
+        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1);
         text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
         background: desaturate($unicorn-btn-bgcolor, 20%);
         color: darken($unicorn-btn-bgcolor, 20%);
@@ -73,8 +74,8 @@ input#{$unicorn-btn-namespace}, button#{$unicorn-btn-namespace} {
 #{$unicorn-btn-namespace}.disabled:active,
 input#{$unicorn-btn-namespace}:disabled,
 button#{$unicorn-btn-namespace}:disabled {
-    @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10));
-    @include opacity(.8);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .10);
+    opacity: .8;
     background: #EEE;
     border: 1px solid #DDD;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
@@ -85,9 +86,9 @@ button#{$unicorn-btn-namespace}:disabled {
 
 // WRAPPER EFFECT
 #{$unicorn-btn-namespace}-wrap {
-    @include background(linear-gradient(top,  #e3e3e3, #f2f2f2));
-    @include border-radius(200px);
-    @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.04));
+    background: linear-gradient(to bottom, lighten(#e3e3e3, 10%), darken(#f2f2f2, 7%));
+    border-radius: 200px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.04);
     padding: 10px;
     display: inline-block;
 }
@@ -96,9 +97,9 @@ button#{$unicorn-btn-namespace}:disabled {
 @if $unicorn-btn-build-flat {
     #{$unicorn-btn-namespace}-flat {
         $unicorn-btn-background: $unicorn-btn-bgcolor;
-        @include box-shadow(none);
-        @include transition-property(background);
-        @include transition-duration(.3s);
+        box-shadow: none;
+        transition-property: background;
+        transition-duration: .3s;
         background: $unicorn-btn-background;
         border: none;
         text-shadow: none;
@@ -107,12 +108,13 @@ button#{$unicorn-btn-namespace}:disabled {
             background: lighten($unicorn-btn-background, 5%);
         }
         &:active {
-            @include transition-duration(0s);
-            background: desaturate($unicorn-btn-background, 20%);
-            color: darken($unicorn-btn-background, 20%);
+          transition-property: background;
+          transition-duration: 0s;
+          background: desaturate($unicorn-btn-background, 20%);
+          color: darken($unicorn-btn-background, 20%);
         }
         &.disabled {
-            @include box-shadow(none);
+            box-shadow: none;
             -webkit-appearance: none;
         }
     }
@@ -122,9 +124,9 @@ button#{$unicorn-btn-namespace}:disabled {
 // BORDER BUTTON BASE
 @if $unicorn-btn-build-flat {
     #{$unicorn-btn-namespace}-border {
-        @include box-shadow(none);
-        @include transition-property(all);
-        @include transition-duration(.3s);
+        box-shadow: none;
+        transition-property: all;
+        transition-duration: .3s;
         color: $unicorn-btn-font-color;
         border: 2px solid $unicorn-btn-font-color;
         background: none;
@@ -136,13 +138,13 @@ button#{$unicorn-btn-namespace}:disabled {
             border: 2px solid lighten($unicorn-btn-font-color, 10%);
         }
         &:active {
-            @include transition-duration(0s);
+            transition-duration: 0s;
             background: none;
             color: darken($unicorn-btn-font-color, 10%);
             border: 2px solid darken($unicorn-btn-font-color, 10%);
         }
         &.disabled {
-            @include box-shadow(none);
+            box-shadow: none;
             -webkit-appearance: none;
         }
     }
@@ -152,10 +154,13 @@ button#{$unicorn-btn-namespace}:disabled {
 // 3D BUTTON BASE
 @if $unicorn-btn-build-3d {
     #{$unicorn-btn-namespace}-3d {
-        @include transition-property(all);
-        @include transition-duration(.3s);
-        @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-        @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 2%), darken($unicorn-btn-bgcolor, 2%)));
+        transition-property: all;
+        transition-duration: .3s;
+
+        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+
+        background: linear-gradient(to bottom, lighten($unicorn-btn-bgcolor, 2%) 0%, darken($unicorn-btn-bgcolor, 2%) 100%);
+
         background-color: $unicorn-btn-bgcolor;
         color: $unicorn-btn-font-color;
         border: 1px solid darken($unicorn-btn-bgcolor, 5%);
@@ -164,20 +169,20 @@ button#{$unicorn-btn-namespace}:disabled {
         top: 0px;
 
         &:hover, &:focus {
-            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-            @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 8%), darken($unicorn-btn-bgcolor, 1%)));
+            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+            background: linear-gradient(to bottom, lighten($unicorn-btn-bgcolor, 8%) 0%, darken($unicorn-btn-bgcolor, 1%) 100%);
             background-color: lighten($unicorn-btn-bgcolor, 10%);
         }
         &:active {
-            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
-            @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 2%), lighten($unicorn-btn-bgcolor, 2%)));
+            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
+            background: linear-gradient(to bottom, lighten($unicorn-btn-bgcolor, 2%) 0%, darken($unicorn-btn-bgcolor, 2%) 100%);
             background-color: desaturate($unicorn-btn-bgcolor, 20%);
             color: darken($unicorn-btn-bgcolor, 20%);
             border: 1px solid darken($unicorn-btn-bgcolor, 5%);
             top: 5px;
         }
         &.disabled {
-            @include box-shadow(none);
+            box-shadow: none;
             -webkit-appearance: none;
         }
     }
@@ -193,16 +198,17 @@ button#{$unicorn-btn-namespace}:disabled {
     #{$unicorn-btn-namespace}-#{$unicorn-btn-style} {
 
         @if $unicorn-btn-style == 'rounded' {
-            @include border-radius(3px);
+            border-radius: 3px;
         }
 
         @else if $unicorn-btn-style == 'pill' {
-            @include border-radius(50px);
+            border-radius: 50px;
         }
 
         @else if $unicorn-btn-style == 'circle' {
-            @include border-radius($unicorn-btn-circle-size * 2);
-            @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
+            border-radius: ($unicorn-btn-circle-size * 2);
+
+            box-shadow: inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20);
             width: $unicorn-btn-circle-size;
             line-height: $unicorn-btn-circle-size;
             height: $unicorn-btn-circle-size;
@@ -225,7 +231,7 @@ button#{$unicorn-btn-namespace}:disabled {
 
     // .button-primary .button-action etc.
     #{$unicorn-btn-namespace}-#{$unicorn-btn-name} {
-        @include background(linear-gradient(top,  lighten($unicorn-btn-background, 5%), darken($unicorn-btn-background, 5%)));
+        background: linear-gradient(to bottom, lighten($unicorn-btn-background, 5%) 0%, darken($unicorn-btn-background, 5%) 100%);
         background-color: $unicorn-btn-background;
         border-color: darken($unicorn-btn-background, 10%);
         color: $unicorn-btn-color;
@@ -233,7 +239,7 @@ button#{$unicorn-btn-namespace}:disabled {
 
         &:hover, &:focus {
             background-color: $unicorn-btn-background;
-            @include background(linear-gradient(top,  lighten($unicorn-btn-background, 10%), darken($unicorn-btn-background, 5%)));
+            background: linear-gradient(to bottom, lighten($unicorn-btn-background, 10%) 0%, darken($unicorn-btn-background, 5%) 100%);
         }
         &:active {
             background: desaturate($unicorn-btn-background, 20%);
@@ -249,10 +255,11 @@ button#{$unicorn-btn-namespace}:disabled {
 
         // .button-border-primary .button-border-action etc.
         #{$unicorn-btn-namespace}-3d-#{$unicorn-btn-name} {
-            @include transition-property(all);
-            @include transition-duration(.3s);
-            @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
-            @include background(linear-gradient(top,  lighten($unicorn-btn-background, 2%), darken($unicorn-btn-background, 2%)));
+            transition-property: all;
+            transition-duration: .3s;
+
+            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30);
+            background: linear-gradient(to bottom, lighten($unicorn-btn-background, 2%) 0%, darken($unicorn-btn-background, 2%) 100%);
             background-color: $unicorn-btn-background;
             color: $unicorn-btn-color;
             border: 1px solid darken($unicorn-btn-background, 10%);
@@ -261,20 +268,20 @@ button#{$unicorn-btn-namespace}:disabled {
             top: 0px;
 
             &:hover, &:focus {
-                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
-                @include background(linear-gradient(top,  lighten($unicorn-btn-background, 8%), darken($unicorn-btn-background, 1%)));
+                box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30);
+                background: linear-gradient(to bottom, lighten($unicorn-btn-background, 8%) 0%, darken($unicorn-btn-background, 1%) 100%);
                 background-color: lighten($unicorn-btn-background, 10%);
             }
             &:active {
-                @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
-                @include background(linear-gradient(top,  darken($unicorn-btn-background, 2%), lighten($unicorn-btn-background, 2%)));
+                box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30);
+                background: linear-gradient(to bottom, lighten($unicorn-btn-background, 2%) 0%, darken($unicorn-btn-background, 2%) 100%);
                 background-color: desaturate($unicorn-btn-background, 20%);
                 color: darken($unicorn-btn-background, 20%);
                 border: 1px solid darken($unicorn-btn-background, 5%);
                 top: 5px;
             }
             &.disabled {
-                @include box-shadow(none);
+                box-shadow: none;
                 -webkit-appearance: none;
             }
         }
@@ -288,9 +295,9 @@ button#{$unicorn-btn-namespace}:disabled {
 
         // .button-border-primary .button-border-action etc.
         #{$unicorn-btn-namespace}-border-#{$unicorn-btn-name} {
-            @include box-shadow(none);
-            @include transition-property(all);
-            @include transition-duration(.3s);
+            box-shadow: none;
+            transition-property: all;
+            transition-duration: .3s;
             color: $unicorn-btn-background;
             border: 2px solid $unicorn-btn-background;
             background: none;
@@ -302,13 +309,13 @@ button#{$unicorn-btn-namespace}:disabled {
                 border: 2px solid lighten($unicorn-btn-background, 10%);
             }
             &:active {
-                @include transition-duration(0s);
+                transition-duration: 0s;
                 background: none;
                 color: darken($unicorn-btn-background, 10%);
                 border: 2px solid darken($unicorn-btn-background, 10%);
             }
             &.disabled {
-                @include box-shadow(none);
+                box-shadow: none;
                 -webkit-appearance: none;
             }
         }
@@ -320,9 +327,10 @@ button#{$unicorn-btn-namespace}:disabled {
     @if $unicorn-btn-build-flat {
         // .button-flat-primary .button-flat-action etc.
         #{$unicorn-btn-namespace}-flat-#{$unicorn-btn-name} {
-            @include box-shadow(none);
-            @include transition-property(background);
-            @include transition-duration(.3s);
+            box-shadow: none;
+            transition-property: background;
+            transition-duration: .3s;
+
             background: $unicorn-btn-background;
             color: $unicorn-btn-color;
             text-shadow: none;
@@ -332,12 +340,12 @@ button#{$unicorn-btn-namespace}:disabled {
                 background: lighten($unicorn-btn-background, 5%);
             }
             &:active {
-                @include transition-duration(0s);
+                transition-duration: 0s;
                 background: desaturate($unicorn-btn-background, 20%);
                 color: darken($unicorn-btn-background, 15%);
             }
             &.disabled {
-                @include box-shadow(none);
+                box-shadow: none;
                 -webkit-appearance: none;
             }
         }
@@ -379,6 +387,7 @@ button#{$unicorn-btn-namespace}:disabled {
     }
 
 }
+
 
 //////////////////////////////////////////////////////////
 // SIZES /////////////////////////////////////////////////
@@ -444,7 +453,7 @@ button#{$unicorn-btn-namespace}:disabled {
         }
         &#{$unicorn-btn-glow-namespace}:active {
             @include no_animation;
-            @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
+            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1);
         }
     }
 }
@@ -478,8 +487,8 @@ button#{$unicorn-btn-namespace}:disabled {
 
         //DROPDOWN MENU STYLES
         ul {
-            @include box-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
-            @include border-radius(3px);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+            border-radius: 3px;
             display: none;
             position: absolute;
             background: $unicorn-btn-dropdown-background;
@@ -497,16 +506,18 @@ button#{$unicorn-btn-namespace}:disabled {
                 display: block;
 
                 &:first-child a {
-                     @include border-top-radius(3px);
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
                 }
                 &:last-child a {
-                     @include border-bottom-radius(3px);
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
                 }
             }
 
             //DROPDOWN MENU DIVIDER
             #{$unicorn-btn-namespace}-dropdown-divider {
-                @include box-shadow(inset 0px 1px 0px #FFF);
+                box-shadow: inset 0px 1px 0px #FFF;
                 border-top: 1px solid #e4e4e4;
             }
 
