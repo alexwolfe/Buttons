@@ -15,7 +15,7 @@ $unicorn-btn-largefs: inherit;
 @if $unicorn-btn-font-size != inherit {
     $unicorn-btn-largefs: $unicorn-btn-font-size + 5;
     $unicorn-btn-tinyfs: $unicorn-btn-font-size - 2;
-    $unicorn-btn-smallfs: $unicorn-btn-font-size - 1;
+    $unicorn-btn-smallfs: $unicorn-btn-font-size + 1;
 }
 
 //////////////////////////////////////////////////////////
@@ -39,7 +39,7 @@ $unicorn-btn-largefs: inherit;
     text-decoration: none;
     text-align: center;
 
-    &:hover {
+    &:hover, &:focus {
         background-color: $unicorn-btn-bgcolor;
         @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 10%), darken($unicorn-btn-bgcolor, 7%)));
     }
@@ -69,6 +69,7 @@ input#{$unicorn-btn-namespace}, button#{$unicorn-btn-namespace} {
 // DISABLED STATE
 #{$unicorn-btn-namespace}.disabled,
 #{$unicorn-btn-namespace}.disabled:hover,
+#{$unicorn-btn-namespace}.disabled:focus,
 #{$unicorn-btn-namespace}.disabled:active,
 input#{$unicorn-btn-namespace}:disabled,
 button#{$unicorn-btn-namespace}:disabled {
@@ -102,7 +103,7 @@ button#{$unicorn-btn-namespace}:disabled {
         border: none;
         text-shadow: none;
 
-        &:hover {
+        &:hover, &:focus {
             background: lighten($unicorn-btn-background, 5%);
         }
         &:active {
@@ -129,7 +130,7 @@ button#{$unicorn-btn-namespace}:disabled {
         background: none;
         text-shadow: none;
 
-        &:hover {
+        &:hover, &:focus {
             background: none;
             color: lighten($unicorn-btn-font-color, 10%);
             border: 2px solid lighten($unicorn-btn-font-color, 10%);
@@ -162,7 +163,7 @@ button#{$unicorn-btn-namespace}:disabled {
         position: relative;
         top: 0px;
 
-        &:hover {
+        &:hover, &:focus {
             @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
             @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 8%), darken($unicorn-btn-bgcolor, 1%)));
             background-color: lighten($unicorn-btn-bgcolor, 10%);
@@ -230,7 +231,7 @@ button#{$unicorn-btn-namespace}:disabled {
         color: $unicorn-btn-color;
         text-shadow: 0 -1px 1px rgba(darken($unicorn-btn-background, 30%), 0.35);
 
-        &:hover {
+        &:hover, &:focus {
             background-color: $unicorn-btn-background;
             @include background(linear-gradient(top,  lighten($unicorn-btn-background, 10%), darken($unicorn-btn-background, 5%)));
         }
@@ -257,9 +258,9 @@ button#{$unicorn-btn-namespace}:disabled {
             border: 1px solid darken($unicorn-btn-background, 10%);
             text-shadow: none;
             position: relative;
-            top: 0;
+            top: 0px;
 
-            &:hover {
+            &:hover, &:focus {
                 @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
                 @include background(linear-gradient(top,  lighten($unicorn-btn-background, 8%), darken($unicorn-btn-background, 1%)));
                 background-color: lighten($unicorn-btn-background, 10%);
@@ -295,7 +296,7 @@ button#{$unicorn-btn-namespace}:disabled {
             background: none;
             text-shadow: none;
 
-            &:hover {
+            &:hover, &:focus {
                 background: none;
                 color: lighten($unicorn-btn-background, 10%);
                 border: 2px solid lighten($unicorn-btn-background, 10%);
@@ -327,7 +328,7 @@ button#{$unicorn-btn-namespace}:disabled {
             text-shadow: none;
             border: none;
 
-            &:hover {
+            &:hover, &:focus {
                 background: lighten($unicorn-btn-background, 5%);
             }
             &:active {
@@ -345,8 +346,39 @@ button#{$unicorn-btn-namespace}:disabled {
 
 
 
+//////////////////////////////////////////////////////////
+// BUTTON GROUPS /////////////////////////////////////////
+//////////////////////////////////////////////////////////
+#{$unicorn-btn-namespace}-group {
+    position: relative;
+    display: inline-block;
+    #{$unicorn-btn-namespace} {
+        float: left;
+        &:focus, &:hover, &.active {
+            z-index: 5;
+        }
+        &.active {
+            background: darken($unicorn-btn-bgcolor, 7%);
+        }
+        //Take rounded corners off all middle buttons
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+        &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+    // Remove extra borders
+    #{$unicorn-btn-namespace} + #{$unicorn-btn-namespace} {
+        margin-left: -1px;
+    }
 
-
+}
 
 //////////////////////////////////////////////////////////
 // SIZES /////////////////////////////////////////////////
@@ -487,7 +519,7 @@ button#{$unicorn-btn-namespace}:disabled {
                 line-height: 30px;
                 white-space: nowrap;
 
-                &:hover {
+                &:hover, &:focus {
                     background-color: $unicorn-btn-dropdown-link-hover-background;
                     color: $unicorn-btn-dropdown-link-hover;
                 }
