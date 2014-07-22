@@ -40,6 +40,8 @@ $unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat' 'border' 
 $unicorn-btn-sizes: 'jumbo' 'large' 'small' 'tiny' !default;
 $unicorn-btn-circle-size: 120px !default; //radius for circle buttons, circles only have one size
 
+//Only used for "outlined" border buttons
+$unicorn-btn-border-size: 2px !default;
 
 //////////////////////////////////////////////////////////
 // DROPDOWN OPTIONS //////////////////////////////////////
