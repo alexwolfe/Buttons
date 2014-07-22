@@ -2,3 +2,4 @@
 .DS_Store
 *.psd
 node_modules
+tmp

@@ -1,0 +1,9 @@
+{
+  "name": "Buttons",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt-autoprefixer": "^0.8.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
