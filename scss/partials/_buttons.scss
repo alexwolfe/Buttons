@@ -8,13 +8,15 @@
 //////////////////////////////////////////////////////////
 // If user elects to use font-size: inherit in _options
 // leave out calcs which result in inherit2 etc.
-$unicorn-btn-smallfs: inherit;
 $unicorn-btn-tinyfs: inherit;
+$unicorn-btn-smallfs: inherit;
 $unicorn-btn-largefs: inherit;
+$unicorn-btn-jumbofs: inherit;
 @if $unicorn-btn-font-size != inherit {
-    $unicorn-btn-largefs: $unicorn-btn-font-size + 5;
-    $unicorn-btn-tinyfs: $unicorn-btn-font-size - 2;
-    $unicorn-btn-smallfs: $unicorn-btn-font-size + 1;
+    $unicorn-btn-tinyfs: $unicorn-btn-font-size - 4;
+    $unicorn-btn-smallfs: $unicorn-btn-font-size - 2;
+    $unicorn-btn-largefs: $unicorn-btn-font-size + 2;
+    $unicorn-btn-jumbofs: $unicorn-btn-font-size + 8;
 }
 
 //////////////////////////////////////////////////////////
@@ -28,7 +30,7 @@ $unicorn-btn-largefs: inherit;
     display: inline-block;
     border: 1px solid darken($unicorn-btn-bgcolor, 10%);
     height: $unicorn-btn-height;
-    line-height: $unicorn-btn-height;
+    line-height: $unicorn-btn-height - 2;
     padding: 0px ($unicorn-btn-height * .8);
     font-weight: $unicorn-btn-font-weight;
     font-size: $unicorn-btn-font-size;
@@ -406,7 +408,7 @@ button#{$unicorn-btn-namespace}:disabled {
                 $height: $unicorn-btn-height-jumbo;
             }
 
-            font-size: $unicorn-btn-largefs + 5;
+            font-size: $unicorn-btn-jumbofs;
             height: $height;
             line-height: $height;
             padding: 0px $height * .8;
@@ -434,7 +436,13 @@ button#{$unicorn-btn-namespace}:disabled {
 
             font-size: $unicorn-btn-smallfs;
             height: $height;
-            line-height: $height;
+
+
+            $lineHeight: $unicorn-btn-height * .75;
+            @if $unicorn-btn-height-small {
+                $lineHeight: $unicorn-btn-height-small * .75;
+            }
+            line-height: $lineHeight;
             padding: 0px $height * .8;
         }
 
@@ -449,7 +457,13 @@ button#{$unicorn-btn-namespace}:disabled {
             font-size: $unicorn-btn-tinyfs;
             height: $height;
             line-height: $height;
-            padding: 0px $height * .8;
+
+            $padHeight: $unicorn-btn-height * .75;
+            @if $unicorn-btn-height-tiny {
+                $padHeight: $unicorn-btn-height-tiny * .75;
+            }
+
+            padding: 0px $padHeight * .8;
         }
     }
 
