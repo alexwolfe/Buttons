@@ -128,20 +128,20 @@ button#{$unicorn-btn-namespace}:disabled {
         transition-property: all;
         transition-duration: .3s;
         color: $unicorn-btn-font-color;
-        border: 2px solid $unicorn-btn-font-color;
+        border: $unicorn-btn-border-size solid $unicorn-btn-font-color;
         background: none;
         text-shadow: none;
 
         &:hover, &:focus {
             background: none;
             color: lighten($unicorn-btn-font-color, 10%);
-            border: 2px solid lighten($unicorn-btn-font-color, 10%);
+            border: $unicorn-btn-border-size solid lighten($unicorn-btn-font-color, 10%);
         }
         &:active {
             transition-duration: 0s;
             background: none;
             color: darken($unicorn-btn-font-color, 10%);
-            border: 2px solid darken($unicorn-btn-font-color, 10%);
+            border: $unicorn-btn-border-size solid darken($unicorn-btn-font-color, 10%);
         }
         &.disabled {
             box-shadow: none;
@@ -299,20 +299,20 @@ button#{$unicorn-btn-namespace}:disabled {
             transition-property: all;
             transition-duration: .3s;
             color: $unicorn-btn-background;
-            border: 2px solid $unicorn-btn-background;
+            border: $unicorn-btn-border-size solid $unicorn-btn-background;
             background: none;
             text-shadow: none;
 
             &:hover, &:focus {
                 background: none;
                 color: lighten($unicorn-btn-background, 10%);
-                border: 2px solid lighten($unicorn-btn-background, 10%);
+                border: $unicorn-btn-border-size solid lighten($unicorn-btn-background, 10%);
             }
             &:active {
                 transition-duration: 0s;
                 background: none;
                 color: darken($unicorn-btn-background, 10%);
-                border: 2px solid darken($unicorn-btn-background, 10%);
+                border: $unicorn-btn-border-size solid darken($unicorn-btn-background, 10%);
             }
             &.disabled {
                 box-shadow: none;
@@ -397,47 +397,93 @@ button#{$unicorn-btn-namespace}:disabled {
 
     // .button-large .button-small .button-tiny
     #{$unicorn-btn-namespace}-#{$unicorn-btn-size} {
+
         @if $unicorn-btn-size == 'jumbo' {
+
+            //Defaults to math unless user defines
+            $height: $unicorn-btn-height * 1.6;
+            @if $unicorn-btn-height-jumbo {
+                $height: $unicorn-btn-height-jumbo;
+            }
+
             font-size: $unicorn-btn-largefs + 5;
-            height: $unicorn-btn-height * 1.6;
-            line-height: $unicorn-btn-height * 1.6;
-            padding: 0px ($unicorn-btn-height * 1.6) * .8;
+            height: $height;
+            line-height: $height;
+            padding: 0px $height * .8;
         }
 
         @if $unicorn-btn-size == 'large' {
+
+            $height: $unicorn-btn-height * 1.2;
+            @if $unicorn-btn-height-large {
+                $height: $unicorn-btn-height-large;
+            }
             font-size: $unicorn-btn-largefs;
-            height: $unicorn-btn-height * 1.2;
-            line-height: $unicorn-btn-height * 1.2;
-            padding: 0px ($unicorn-btn-height * 1.2) * .8;
+            height: $height;
+            line-height: $height;
+            padding: 0px $height * .8;
         }
 
         @if $unicorn-btn-size == 'small' {
+
+            //Defaults to math unless user defines
+            $height: $unicorn-btn-height * .8;
+            @if $unicorn-btn-height-small {
+                $height: $unicorn-btn-height-small;
+            }
+
             font-size: $unicorn-btn-smallfs;
-            height: $unicorn-btn-height * .8;
-            line-height: $unicorn-btn-height * .8;
-            padding: 0px ($unicorn-btn-height * .8) * .8;
+            height: $height;
+            line-height: $height;
+            padding: 0px $height * .8;
         }
 
         @if $unicorn-btn-size == 'tiny' {
+
+            //Defaults to math unless user defines
+            $height: $unicorn-btn-height * .7;
+            @if $unicorn-btn-height-tiny {
+                $height: $unicorn-btn-height-tiny;
+            }
+
             font-size: $unicorn-btn-tinyfs;
-            height: $unicorn-btn-height * .7;
-            line-height: $unicorn-btn-height * .7;
-            padding: 0px ($unicorn-btn-height * .7) * .8;
+            height: $height;
+            line-height: $height;
+            padding: 0px $height * .8;
         }
     }
 
     //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
     input#{$unicorn-btn-namespace}-#{$unicorn-btn-size}, button#{$unicorn-btn-namespace}-#{$unicorn-btn-size} {
+
         @if $unicorn-btn-size == 'large' {
-            height: ($unicorn-btn-height * 1.2) + 2;
+
+            //Defaults to math unless user defines
+            $height: ($unicorn-btn-height * 1.2) + 2;
+            @if $unicorn-btn-height-large {
+                $height: $unicorn-btn-height-large + 2;
+            }
+            height: $height;
         }
 
         @if $unicorn-btn-size == 'small' {
-            height: ($unicorn-btn-height * .8) + 2;
+
+            //Defaults to math unless user defines
+            $height: ($unicorn-btn-height * .8) + 2;
+            @if $unicorn-btn-height-large {
+                $height: $unicorn-btn-height-small + 2;
+            }
+            height: $height;
         }
 
         @if $unicorn-btn-size == 'tiny' {
-            height: ($unicorn-btn-height * .7) + 2;
+
+            //Defaults to math unless user defines
+            $height: ($unicorn-btn-height * .7) + 2;
+            @if $unicorn-btn-height-tiny {
+                $height: $unicorn-btn-height-tiny + 2;
+            }
+            height: $height;
         }
     }
 }

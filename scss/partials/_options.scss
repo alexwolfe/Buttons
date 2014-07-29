@@ -8,6 +8,18 @@ $unicorn-btn-glow-color: #2c9adb !default;
 $unicorn-btn-bgcolor: #EEE !default;
 $unicorn-btn-height: 32px !default;
 
+//////////////////////////////////////////////////////////
+// OPTIONAL BUTTON SIZES /////////////////////////////////
+//////////////////////////////////////////////////////////
+
+//Null by default, we use simple math to determine sizes
+//against $unicorn-btn-height e.g. multiplying by 1.2, etc.
+//However, if you DO set these we will use instead.
+$unicorn-btn-height-tiny: null !default;
+$unicorn-btn-height-small: null !default;
+$unicorn-btn-height-large: null !default;
+$unicorn-btn-height-jumbo: null !default;
+
 
 //////////////////////////////////////////////////////////
 // TYPOGRAPHY ////////////////////////////////////////////
@@ -16,7 +28,6 @@ $unicorn-btn-font-color: #666 !default;
 $unicorn-btn-font-size: 14px !default;
 $unicorn-btn-font-weight: 300 !default;
 $unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
-
 
 //////////////////////////////////////////////////////////
 // BUTTON OPTIONS ////////////////////////////////////////
@@ -29,6 +40,8 @@ $unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat' 'border' 
 $unicorn-btn-sizes: 'jumbo' 'large' 'small' 'tiny' !default;
 $unicorn-btn-circle-size: 120px !default; //radius for circle buttons, circles only have one size
 
+//Only used for "outlined" border buttons
+$unicorn-btn-border-size: 2px !default;
 
 //////////////////////////////////////////////////////////
 // DROPDOWN OPTIONS //////////////////////////////////////
