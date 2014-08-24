@@ -1,35 +1,37 @@
-//////////////////////////////////////////////////////////
-// BUTTON BASE STYLES ////////////////////////////////////
-//////////////////////////////////////////////////////////
-#{$unicorn-btn-namespace} {
-    background-color: $unicorn-btn-bgcolor;
+/*
+* Base Button Style
+*
+* The default values for the .button class
+*/
+#{$ubtn-namespace} {
+    background-color: $ubtn-bgcolor;
 
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .15));
-    @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 5%), darken($unicorn-btn-bgcolor, 5%)));
+    @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 5%), darken($ubtn-bgcolor, 5%)));
     @include inline-block(middle);
 
-    border: 1px solid darken($unicorn-btn-bgcolor, 10%);
-    height: $unicorn-btn-height;
-    line-height: $unicorn-btn-height - 2;
-    padding: 0px ($unicorn-btn-height * .8);
-    font-weight: $unicorn-btn-font-weight;
-    font-size: $unicorn-btn-font-size;
-    font-family: $unicorn-btn-font-family;
-    color:  $unicorn-btn-font-color;
+    border: 1px solid darken($ubtn-bgcolor, 10%);
+    height: $ubtn-height;
+    line-height: $ubtn-height - 2;
+    padding: 0px ($ubtn-height * .8);
+    font-weight: $ubtn-font-weight;
+    font-size: $ubtn-font-size;
+    font-family: $ubtn-font-family;
+    color:  $ubtn-font-color;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
     margin: 0;
     text-decoration: none;
     text-align: center;
 
     &:hover, &:focus {
-        background-color: $unicorn-btn-bgcolor;
-        @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 10%), darken($unicorn-btn-bgcolor, 7%)));
+        background-color: $ubtn-bgcolor;
+        @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 10%), darken($ubtn-bgcolor, 7%)));
     }
     &:active {
         @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
         text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
-        background: desaturate($unicorn-btn-bgcolor, 20%);
-        color: darken($unicorn-btn-bgcolor, 20%);
+        background: desaturate($ubtn-bgcolor, 20%);
+        color: darken($ubtn-bgcolor, 20%);
     }
     &:focus {
         outline: none;
@@ -37,19 +39,19 @@
 }
 
 //HEIGHT NEEDED FOR FORM ELEMENTS
-input#{$unicorn-btn-namespace}, button#{$unicorn-btn-namespace} {
-    height: $unicorn-btn-height + 2;
+input#{$ubtn-namespace}, button#{$ubtn-namespace} {
+    height: $ubtn-height + 2;
     cursor: pointer;
     -webkit-appearance: none;
 }
 
 // DISABLED STATE
-#{$unicorn-btn-namespace}.disabled,
-#{$unicorn-btn-namespace}.disabled:hover,
-#{$unicorn-btn-namespace}.disabled:focus,
-#{$unicorn-btn-namespace}.disabled:active,
-input#{$unicorn-btn-namespace}:disabled,
-button#{$unicorn-btn-namespace}:disabled {
+#{$ubtn-namespace}.disabled,
+#{$ubtn-namespace}.disabled:hover,
+#{$ubtn-namespace}.disabled:focus,
+#{$ubtn-namespace}.disabled:active,
+input#{$ubtn-namespace}:disabled,
+button#{$ubtn-namespace}:disabled {
     @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10));
     @include opacity(.8);
     background: #EEE;
@@ -62,12 +64,12 @@ button#{$unicorn-btn-namespace}:disabled {
 
 
 // BLOCK BUTTON
-#{$unicorn-btn-namespace}-block {
+#{$ubtn-namespace}-block {
     display: block;
 }
 
 // WRAPPER EFFECT
-#{$unicorn-btn-namespace}-wrap {
+#{$ubtn-namespace}-wrap {
     @include background(linear-gradient(top,  #e3e3e3, #f2f2f2));
     @include border-radius(200px);
     @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.04));
@@ -82,27 +84,27 @@ button#{$unicorn-btn-namespace}:disabled {
 //////////////////////////////////////////////////////////
 // ACTION STYLES /////////////////////////////////////////
 //////////////////////////////////////////////////////////
-@each $unicorn-btn-action in $unicorn-btn-actions {
+@each $ubtn-action in $ubtn-actions {
   //GET NAME & COLOR
-  $unicorn-btn-name: nth($unicorn-btn-action, 1);
-  $unicorn-btn-background: nth($unicorn-btn-action, 2);
-  $unicorn-btn-color: nth($unicorn-btn-action, 3);
+  $ubtn-name: nth($ubtn-action, 1);
+  $ubtn-background: nth($ubtn-action, 2);
+  $ubtn-color: nth($ubtn-action, 3);
 
   // .button-primary .button-action etc.
-  #{$unicorn-btn-namespace}-#{$unicorn-btn-name} {
-      @include background(linear-gradient(top,  lighten($unicorn-btn-background, 5%), darken($unicorn-btn-background, 5%)));
-      background-color: $unicorn-btn-background;
-      border-color: darken($unicorn-btn-background, 10%);
-      color: $unicorn-btn-color;
-      text-shadow: 0 -1px 1px rgba(darken($unicorn-btn-background, 30%), 0.35);
+  #{$ubtn-namespace}-#{$ubtn-name} {
+      @include background(linear-gradient(top,  lighten($ubtn-background, 5%), darken($ubtn-background, 5%)));
+      background-color: $ubtn-background;
+      border-color: darken($ubtn-background, 10%);
+      color: $ubtn-color;
+      text-shadow: 0 -1px 1px rgba(darken($ubtn-background, 30%), 0.35);
 
       &:hover, &:focus {
-          background-color: $unicorn-btn-background;
-          @include background(linear-gradient(top,  lighten($unicorn-btn-background, 10%), darken($unicorn-btn-background, 5%)));
+          background-color: $ubtn-background;
+          @include background(linear-gradient(top,  lighten($ubtn-background, 10%), darken($ubtn-background, 5%)));
       }
       &:active {
-          background: desaturate($unicorn-btn-background, 20%);
-          color: darken($unicorn-btn-background, 20%);
+          background: desaturate($ubtn-background, 20%);
+          color: darken($ubtn-background, 20%);
       }
   }
 }

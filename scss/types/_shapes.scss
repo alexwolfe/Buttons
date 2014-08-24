@@ -1,28 +1,45 @@
-//////////////////////////////////////////////////////////
-// SHAPES ////////////////////////////////////////////////
-//////////////////////////////////////////////////////////
-@each $unicorn-btn-style in $unicorn-btn-types {
+/*
+* Button Shapes
+*
+* This file creates the various button shapes
+* (ex. Circle, Rounded, Pill)
+*/
+@each $ubtn-style in $ubtn-types {
+  #{$ubtn-namespace}-#{$ubtn-style} {
 
-    // .button-rounded .button-pill button-circle
-    #{$unicorn-btn-namespace}-#{$unicorn-btn-style} {
+    @if $ubtn-style == 'rounded' {
+      border-radius: 3px;
 
-        @if $unicorn-btn-style == 'rounded' {
-            @include border-radius(3px);
-        }
-
-        @else if $unicorn-btn-style == 'pill' {
-            @include border-radius(50px);
-        }
-
-        @else if $unicorn-btn-style == 'circle' {
-            @include border-radius($unicorn-btn-circle-size * 2);
-            @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
-            width: $unicorn-btn-circle-size;
-            line-height: $unicorn-btn-circle-size;
-            height: $unicorn-btn-circle-size;
-            padding: 0px;
-            border-width: 4px;
-            font-size: $unicorn-btn-largefs;
-        }
+      //COMPASS MIXIN
+      @if($use-compass) {
+        @include border-radius(3px);
+      }
     }
+
+    @if $ubtn-style == 'pill' {
+      border-radius: 50px;
+
+      //COMPASS MIXIN
+      @if($use-compass) {
+        @include border-radius(50px);
+      }
+    }
+
+    @if $ubtn-style == 'circle' {
+      box-shadow: inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20);
+      border-radius: ($ubtn-circle-size * 2);
+      width: $ubtn-circle-size;
+      line-height: $ubtn-circle-size;
+      height: $ubtn-circle-size;
+      font-size: $ubtn-largefs;
+      border-width: 4px;
+      padding: 0px;
+
+      //COMPASS MIXIN
+      @if($use-compass) {
+        @include border-radius($ubtn-circle-size * 2);
+        @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
+      }
+    }
+  }
 }

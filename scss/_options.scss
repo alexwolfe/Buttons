@@ -1,30 +1,49 @@
 /*
+* $ubtn prefix (reserved)
+*
+* This prefix stands for Unicorn Button - ubtn
+* We provide a prefix to the Sass Variables to
+* prevent namespace collisions that could occur if
+* you import buttons as part of your Sass build process.
+* We kindly ask you not to use the prefix $ubtn in your project
+* in order to avoid possilbe name conflicts. Thanks!
+*/
+$ubtn: 'Unicorn Buttons';
+
+
+/*
 * Button Namespace (ex .button or .btn)
 *
 */
-$unicorn-btn-namespace: '.button' !default; //prefix for all classes
-$unicorn-btn-glow-namespace: '.glow' !default;
+$ubtn-namespace: '.button' !default; //prefix for all classes
+$ubtn-glow-namespace: '.glow' !default;
+
 
 
 /*
 * Button Appearance & Types (Size, Color, Shape, Name, etc.)
 *
+* Most of these are self explanatory and relate to the appearance
+* of the buttons that will be produced.
+*
+* $ubtn-colors - (name, background, color)
+* Perhaps the most important of these options is $ubtn-colors. This list
+* is used to generate the differnt colors of buttons (ex. class="button-primary")
+* If you modify the colors in this list, your buttons will automatically update to
+* reflect your changes after the Sass file is processed. There is no limit to the number
+* of items you can add to this list. The more you add the more buttons will be created.
+* Each block (name, background, color) generates a class like .button-primary, .button-secondary, etc.
 */
-$unicorn-btn-glow-color: #2c9adb !default;
-$unicorn-btn-bgcolor: #EEE !default;
-$unicorn-btn-height: 32px !default;
-// (name background-color font-color) add as many as you like.
-$unicorn-btn-actions: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF) !default;
-// Remove any type to omit from final CSS build
-$unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat' 'border' '3d' !default;
-$unicorn-btn-sizes: 'jumbo' 'large' 'small' 'tiny' !default;
-$unicorn-btn-circle-size: 120px !default; //radius for circle buttons, circles only have one size
-
-// Dropdown options
-$unicorn-btn-dropdown-background: #fcfcfc !default;
-$unicorn-btn-dropdown-link-color: #333 !default;
-$unicorn-btn-dropdown-link-hover: #FFF !default;
-$unicorn-btn-dropdown-link-hover-background: #3c6ab9 !default;
+$ubtn-colors: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF) !default;
+$ubtn-glow-color: #2c9adb !default;
+$ubtn-bgcolor: #EEE !default;
+$ubtn-height: 32px !default;
+$ubtn-sizes: 'jumbo' 'large' 'small' 'tiny' !default;
+$ubtn-circle-size: 120px !default; //radius for circle buttons, circles only have one size
+$ubtn-dropdown-background: #fcfcfc !default;
+$ubtn-dropdown-link-color: #333 !default;
+$ubtn-dropdown-link-hover: #FFF !default;
+$ubtn-dropdown-link-hover-background: #3c6ab9 !default;
 
 
 
@@ -32,23 +51,19 @@ $unicorn-btn-dropdown-link-hover-background: #3c6ab9 !default;
 * Typographical Settings
 *
 */
-$unicorn-btn-font-color: #666 !default;
-$unicorn-btn-font-size: 16px !default;
-$unicorn-btn-font-weight: 300 !default;
-$unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
+$ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
+$ubtn-font-color: #666 !default;
+$ubtn-font-weight: 300 !default;
+$ubtn-font-size: 16px !default;
+$ubtn-tinyfs: $ubtn-font-size - 4;
+$ubtn-smallfs: $ubtn-font-size - 2;
+$ubtn-largefs: $ubtn-font-size + 2;
+$ubtn-jumbofs: $ubtn-font-size + 8;
 
-// "INHERIT-SAFE" FONT SIZES
-// If user elects to use font-size: inherit in _options
-// leave out calcs which result in inherit2 etc.
-$unicorn-btn-tinyfs: $unicorn-btn-font-size - 4;
-$unicorn-btn-smallfs: $unicorn-btn-font-size - 2;
-$unicorn-btn-largefs: $unicorn-btn-font-size + 2;
-$unicorn-btn-jumbofs: $unicorn-btn-font-size + 8;
-
-@if $unicorn-btn-font-size == inherit {
-  $unicorn-btn-tinyfs: inherit;
-  $unicorn-btn-smallfs: inherit;
-  $unicorn-btn-largefs: inherit;
-  $unicorn-btn-jumbofs: inherit;
+// Inheritted font sizes also supported
+@if $ubtn-font-size == inherit {
+  $ubtn-tinyfs: inherit;
+  $ubtn-smallfs: inherit;
+  $ubtn-largefs: inherit;
+  $ubtn-jumbofs: inherit;
 }
-
