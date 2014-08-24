@@ -1,27 +1,18 @@
-
-//////////////////////////////////////////////////////////
-// BASE DEFAULTS /////////////////////////////////////////
-//////////////////////////////////////////////////////////
+/*
+* Button Namespace (ex .button or .btn)
+*
+*/
 $unicorn-btn-namespace: '.button' !default; //prefix for all classes
 $unicorn-btn-glow-namespace: '.glow' !default;
+
+
+/*
+* Button Appearance & Types (Size, Color, Shape, Name, etc.)
+*
+*/
 $unicorn-btn-glow-color: #2c9adb !default;
 $unicorn-btn-bgcolor: #EEE !default;
 $unicorn-btn-height: 32px !default;
-
-
-//////////////////////////////////////////////////////////
-// TYPOGRAPHY ////////////////////////////////////////////
-//////////////////////////////////////////////////////////
-$unicorn-btn-font-color: #666 !default;
-$unicorn-btn-font-size: 16px !default;
-$unicorn-btn-font-weight: 300 !default;
-$unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
-
-
-//////////////////////////////////////////////////////////
-// BUTTON OPTIONS ////////////////////////////////////////
-//////////////////////////////////////////////////////////
-
 // (name background-color font-color) add as many as you like.
 $unicorn-btn-actions: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF) !default;
 // Remove any type to omit from final CSS build
@@ -29,11 +20,35 @@ $unicorn-btn-types: 'rounded' 'pill' 'circle' 'dropdown' 'glow' 'flat' 'border' 
 $unicorn-btn-sizes: 'jumbo' 'large' 'small' 'tiny' !default;
 $unicorn-btn-circle-size: 120px !default; //radius for circle buttons, circles only have one size
 
-
-//////////////////////////////////////////////////////////
-// DROPDOWN OPTIONS //////////////////////////////////////
-//////////////////////////////////////////////////////////
+// Dropdown options
 $unicorn-btn-dropdown-background: #fcfcfc !default;
 $unicorn-btn-dropdown-link-color: #333 !default;
 $unicorn-btn-dropdown-link-hover: #FFF !default;
 $unicorn-btn-dropdown-link-hover-background: #3c6ab9 !default;
+
+
+
+/*
+* Typographical Settings
+*
+*/
+$unicorn-btn-font-color: #666 !default;
+$unicorn-btn-font-size: 16px !default;
+$unicorn-btn-font-weight: 300 !default;
+$unicorn-btn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
+
+// "INHERIT-SAFE" FONT SIZES
+// If user elects to use font-size: inherit in _options
+// leave out calcs which result in inherit2 etc.
+$unicorn-btn-tinyfs: $unicorn-btn-font-size - 4;
+$unicorn-btn-smallfs: $unicorn-btn-font-size - 2;
+$unicorn-btn-largefs: $unicorn-btn-font-size + 2;
+$unicorn-btn-jumbofs: $unicorn-btn-font-size + 8;
+
+@if $unicorn-btn-font-size == inherit {
+  $unicorn-btn-tinyfs: inherit;
+  $unicorn-btn-smallfs: inherit;
+  $unicorn-btn-largefs: inherit;
+  $unicorn-btn-jumbofs: inherit;
+}
+

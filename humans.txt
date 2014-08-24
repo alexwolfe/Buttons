@@ -3,14 +3,18 @@
 
 # TEAM
     Alexander Wolfe -- Author -- @alexwolfe
+    Rob Levin -- Author -- @roblevintennis
 
 # THANKS
     The Sass Team
     The Compass Team
-    Google Prettify for making my code snippets look nicer!
-    Font Awesome for the great looking font icons.
+    The Gulp Team
+    The Grunt Team
+    The Autoprefixer Team
+    Google Prettify Team
+    Font Awesome Team.
     jQuery Plugin Boiler Plate @addyosmani and @zenorocha
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, Sass, Compass
+    HTML5, CSS3, Sass, Autoprefixer, Compass, Gulp, Grunt

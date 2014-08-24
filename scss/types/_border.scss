@@ -1,0 +1,64 @@
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+#{$unicorn-btn-namespace}-border {
+  @include box-shadow(none);
+  @include transition-property(all);
+  @include transition-duration(.3s);
+  color: $unicorn-btn-font-color;
+  border: 2px solid $unicorn-btn-font-color;
+  background: none;
+  text-shadow: none;
+
+  &:hover, &:focus {
+    background: none;
+    color: lighten($unicorn-btn-font-color, 10%);
+    border: 2px solid lighten($unicorn-btn-font-color, 10%);
+  }
+  &:active {
+    @include transition-duration(0s);
+    background: none;
+    color: darken($unicorn-btn-font-color, 10%);
+    border: 2px solid darken($unicorn-btn-font-color, 10%);
+  }
+  &.disabled {
+    @include box-shadow(none);
+    -webkit-appearance: none;
+  }
+}
+
+
+
+/////////////////////////////
+//BORDER BUTTON STYLES //////
+////////////////////////////
+
+// .button-border-primary .button-border-action etc.
+#{$unicorn-btn-namespace}-border-#{$unicorn-btn-name} {
+  @include box-shadow(none);
+  @include transition-property(all);
+  @include transition-duration(.3s);
+  color: $unicorn-btn-background;
+  border: 2px solid $unicorn-btn-background;
+  background: none;
+  text-shadow: none;
+
+  &:hover, &:focus {
+      background: none;
+      color: lighten($unicorn-btn-background, 10%);
+      border: 2px solid lighten($unicorn-btn-background, 10%);
+  }
+  &:active {
+      @include transition-duration(0s);
+      background: none;
+      color: darken($unicorn-btn-background, 10%);
+      border: 2px solid darken($unicorn-btn-background, 10%);
+  }
+  &.disabled {
+      @include box-shadow(none);
+      -webkit-appearance: none;
+  }
+}

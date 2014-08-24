@@ -1,0 +1,28 @@
+//////////////////////////////////////////////////////////
+// SHAPES ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+@each $unicorn-btn-style in $unicorn-btn-types {
+
+    // .button-rounded .button-pill button-circle
+    #{$unicorn-btn-namespace}-#{$unicorn-btn-style} {
+
+        @if $unicorn-btn-style == 'rounded' {
+            @include border-radius(3px);
+        }
+
+        @else if $unicorn-btn-style == 'pill' {
+            @include border-radius(50px);
+        }
+
+        @else if $unicorn-btn-style == 'circle' {
+            @include border-radius($unicorn-btn-circle-size * 2);
+            @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
+            width: $unicorn-btn-circle-size;
+            line-height: $unicorn-btn-circle-size;
+            height: $unicorn-btn-circle-size;
+            padding: 0px;
+            border-width: 4px;
+            font-size: $unicorn-btn-largefs;
+        }
+    }
+}
