@@ -27,12 +27,11 @@ $ubtn-glow-namespace: '.glow' !default;
 * of the buttons that will be produced.
 *
 * $ubtn-colors - (name, background, color)
-* Perhaps the most important of these options is $ubtn-colors. This list
-* is used to generate the differnt colors of buttons (ex. class="button-primary")
-* If you modify the colors in this list, your buttons will automatically update to
-* reflect your changes after the Sass file is processed. There is no limit to the number
-* of items you can add to this list. The more you add the more buttons will be created.
-* Each block (name, background, color) generates a class like .button-primary, .button-secondary, etc.
+* $ubtn-colors is used to generate the differnt colors
+* (ex. class="button-primary"). Modify the colors and
+* compile with sass to see your changes. You can add as
+* man colors as you want. Each block (name, background, color)
+* generates a class like .button-primary, .button-secondary, etc.
 */
 $ubtn-colors: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF) !default;
 $ubtn-glow-color: #2c9adb !default;
