@@ -4,19 +4,18 @@
 * The default values for the .button class
 */
 #{$ubtn-namespace} {
-  background-color: $ubtn-bgcolor;
   color:  $ubtn-font-color;
-  display: inline-block;
-  line-height: $ubtn-height;
-  height: $ubtn-height;
-  padding: 0px ($ubtn-height * .8);
-  margin: 0;
+  background-color: $ubtn-bgcolor;
   font-weight: $ubtn-font-weight;
   font-size: $ubtn-font-size;
   font-family: $ubtn-font-family;
   text-decoration: none;
   text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+  line-height: $ubtn-height;
+  height: $ubtn-height;
+  padding: 0px $ubtn-height;
+  margin: 0;
+  display: inline-block;
   appearance: none;
   cursor: pointer;
 
@@ -27,12 +26,14 @@
 
   &:hover, &:focus {
     background-color: $ubtn-bgcolor;
+    text-decoration: none;
     outline: none;
   }
 
   &:active {
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
+    text-decoration: none;
     background: desaturate($ubtn-bgcolor, 20%);
     color: darken($ubtn-bgcolor, 20%);
 
@@ -42,73 +43,54 @@
     }
   }
 
-  // Disabled Button State
-  &.disabled,
-  &.disabled:hover,
-  &.disabled:focus,
-  &.disabled:active,
+  /*
+  * Disabled State
+  *
+  * The disabled state uses the class .disabled, is-disabled,
+  * and the form attribute disabled="disabled".
+  */
+  &.disabled, &.disabled:hover, &.disabled:focus, &.disabled:active,
+  &.is-disabled, &.is-disabled:hover, &.is-disabled:focus, &.is-disabled:active,
   &:disabled {
-    @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10));
-    @include opacity(.8);
+    opacity:.8;
     background: #EEE;
     border: 1px solid #DDD;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
     color: #CCC;
     cursor: default;
-    -webkit-appearance: none;
+    appearance: none;
+
+    // Compass Mixin
+    @if $ubtn-use-compass {
+      @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10));
+      @include opacity(.8);
+    }
   }
 }
 
 
-
 /*
-* Base Layout Styles
+* Base Colors
 *
-* Very Miminal Layout Styles
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
 */
-#{$ubtn-namespace}-block,
-#{$ubtn-namespace}-stacked {
-  display: block;
-}
-
-// WRAPPER EFFECT
-#{$ubtn-namespace}-wrap {
-  @include background(linear-gradient(top,  #e3e3e3, #f2f2f2));
-  @include border-radius(200px);
-  @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.04));
-  padding: 10px;
-  display: inline-block;
-}
-
-
-
-
-
-//////////////////////////////////////////////////////////
-// ACTION STYLES /////////////////////////////////////////
-//////////////////////////////////////////////////////////
 @each $ubtn-action in $ubtn-actions {
-  //GET NAME & COLOR
   $ubtn-name: nth($ubtn-action, 1);
   $ubtn-background: nth($ubtn-action, 2);
   $ubtn-color: nth($ubtn-action, 3);
 
-  // .button-primary .button-action etc.
   #{$ubtn-namespace}-#{$ubtn-name} {
-      @include background(linear-gradient(top,  lighten($ubtn-background, 5%), darken($ubtn-background, 5%)));
-      background-color: $ubtn-background;
-      border-color: darken($ubtn-background, 10%);
-      color: $ubtn-color;
-      text-shadow: 0 -1px 1px rgba(darken($ubtn-background, 30%), 0.35);
+    background-color: $ubtn-background;
+    color: $ubtn-color;
 
-      &:hover, &:focus {
-          background-color: $ubtn-background;
-          @include background(linear-gradient(top,  lighten($ubtn-background, 10%), darken($ubtn-background, 5%)));
-      }
-      &:active {
-          background: desaturate($ubtn-background, 20%);
-          color: darken($ubtn-background, 20%);
-      }
+    &:hover, &:focus {
+      background-color: lighten($ubtn-background, 10%);
+    }
+
+    &:active {
+      background: desaturate($ubtn-background, 20%);
+      color: darken($ubtn-background, 20%);
+    }
   }
 }
-
