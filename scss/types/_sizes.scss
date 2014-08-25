@@ -1,52 +1,53 @@
-//////////////////////////////////////////////////////////
-// SIZES /////////////////////////////////////////////////
-//////////////////////////////////////////////////////////
+/*
+* Button Sizes
+*
+* This file creates the various button sizes
+* (ex. .button-large, .button-small, etc.)
+*/
+@each $ubtn-size in $ubtn-sizes {
 
-@each $unicorn-btn-size in $unicorn-btn-sizes {
+  #{$ubtn-namespace}-#{$ubtn-size} {
+    @if $ubtn-size == 'jumbo' {
+      font-size: $ubtn-jumbofs;
+      height: $ubtn-height * 1.6;
+      line-height: $ubtn-height * 1.6;
+      padding: 0px ($ubtn-height * 1.6) * .8;
+    }
 
-  // .button-large .button-small .button-tiny
-  #{$unicorn-btn-namespace}-#{$unicorn-btn-size} {
-      @if $unicorn-btn-size == 'jumbo' {
-          font-size: $unicorn-btn-jumbofs;
-          height: $unicorn-btn-height * 1.6;
-          line-height: $unicorn-btn-height * 1.6;
-          padding: 0px ($unicorn-btn-height * 1.6) * .8;
-      }
+    @if $ubtn-size == 'large' {
+      font-size: $ubtn-largefs;
+      height: $ubtn-height * 1.2;
+      line-height: $ubtn-height * 1.2;
+      padding: 0px ($ubtn-height * 1.2) * .8;
+    }
 
-      @if $unicorn-btn-size == 'large' {
-          font-size: $unicorn-btn-largefs;
-          height: $unicorn-btn-height * 1.2;
-          line-height: $unicorn-btn-height * 1.2;
-          padding: 0px ($unicorn-btn-height * 1.2) * .8;
-      }
+    @if $ubtn-size == 'small' {
+      font-size: $ubtn-smallfs;
+      height: $ubtn-height * .8;
+      line-height: $ubtn-height * .75;
+      padding: 0px ($ubtn-height * .8) * .8;
+    }
 
-      @if $unicorn-btn-size == 'small' {
-          font-size: $unicorn-btn-smallfs;
-          height: $unicorn-btn-height * .8;
-          line-height: $unicorn-btn-height * .75;
-          padding: 0px ($unicorn-btn-height * .8) * .8;
-      }
-
-      @if $unicorn-btn-size == 'tiny' {
-          font-size: $unicorn-btn-tinyfs;
-          height: $unicorn-btn-height * .7;
-          line-height: $unicorn-btn-height * .7;
-          padding: 0px ($unicorn-btn-height * .75) * .8;
-      }
+    @if $ubtn-size == 'tiny' {
+      font-size: $ubtn-tinyfs;
+      height: $ubtn-height * .7;
+      line-height: $ubtn-height * .7;
+      padding: 0px ($ubtn-height * .75) * .8;
+    }
   }
 
   //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
-  input#{$unicorn-btn-namespace}-#{$unicorn-btn-size}, button#{$unicorn-btn-namespace}-#{$unicorn-btn-size} {
-      @if $unicorn-btn-size == 'large' {
-          height: ($unicorn-btn-height * 1.2) + 2;
-      }
+  input#{$ubtn-namespace}-#{$ubtn-size}, button#{$ubtn-namespace}-#{$ubtn-size} {
+    @if $ubtn-size == 'large' {
+      height: ($ubtn-height * 1.2) + 2;
+    }
 
-      @if $unicorn-btn-size == 'small' {
-          height: ($unicorn-btn-height * .8) + 2;
-      }
+    @if $ubtn-size == 'small' {
+      height: ($ubtn-height * .8) + 2;
+    }
 
-      @if $unicorn-btn-size == 'tiny' {
-          height: ($unicorn-btn-height * .7) + 2;
-      }
+    @if $ubtn-size == 'tiny' {
+      height: ($ubtn-height * .7) + 2;
+    }
   }
 }
