@@ -1,0 +1,45 @@
+/*
+* Raised Buttons
+*
+* A classic looking button that has
+* a nice depth highlight that provide
+* great affordance & usability
+*/
+#{$ubtn-namespace}-raised {
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+
+  &:hover, &:focus {
+    background: none;
+  }
+  &:active {
+    background: none;
+  }
+}
+
+
+/*
+* Border Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+#{$ubtn-namespace}-raised {
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+    &#{$ubtn-color-namespace} {
+      color: $ubtn-background;
+
+      &:hover,
+      &:focus {
+        background-color: $ubtn-background;
+        color: $ubtn-color;
+      }
+    }
+  }
+}

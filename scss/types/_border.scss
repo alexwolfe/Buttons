@@ -17,13 +17,31 @@
   }
 }
 
+
+/*
+* Border Optional Sizes
+*
+* A slight variation in border thickness
+*/
+#{$ubtn-namespace}-border-thin {
+  @extend #{$ubtn-namespace}-border;
+  border-width: 1px;
+}
+#{$ubtn-namespace}-border-thick {
+  @extend #{$ubtn-namespace}-border;
+  border-width: 3px;
+}
+
+
 /*
 * Border Button Colors
 *
 * Create colors for buttons
 * (.button-primary, .button-secondary, etc.)
 */
-#{$ubtn-namespace}-border {
+#{$ubtn-namespace}-border,
+#{$ubtn-namespace}-border-thin,
+#{$ubtn-namespace}-border-thick {
 
   @each $ubtn-color in $ubtn-colors {
     $ubtn-name: nth($ubtn-color, 1);
@@ -36,11 +54,13 @@
 
       &:hover,
       &:focus {
-        color: lighten($ubtn-background, 10%);
+        background-color: lighten($ubtn-background, 10%);
+        color: $ubtn-color;
       }
 
       &:active {
-        color: darken($ubtn-background, 10%);
+        background-color: desaturate($ubtn-background, 20%);
+        color: darken($ubtn-background, 20%);
       }
     }
   }
