@@ -80,6 +80,17 @@
 
 
 /*
+* Base Button Tyography
+*
+*/
+#{$ubtn-namespace}-uppercase {
+  text-transform: uppercase;
+}
+#{$ubtn-namespace}-capitalize {
+  text-transform: capitalize;
+}
+
+/*
 * Base Colors
 *
 * Create colors for buttons
