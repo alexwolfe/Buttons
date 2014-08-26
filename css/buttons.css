@@ -67,6 +67,7 @@
           transition-property: all;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
+  border: none;
   /*
   * Disabled State
   *
@@ -95,6 +96,8 @@
   opacity: .8 !important;
   background: #EEE !important;
   border: 1px solid #DDD !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   text-shadow: 0 1px 1px white !important;
   color: #CCC !important;
   cursor: default !important;
@@ -219,6 +222,16 @@
   background-color: #764479;
   border-color: #764479;
   color: #3e1740;
+}
+
+/*
+* Base Layout Styles
+*
+* Very Miminal Layout Styles
+*/
+.button-block,
+.button-stacked {
+  display: block;
 }
 
 /*

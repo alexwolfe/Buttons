@@ -20,6 +20,7 @@
   cursor: pointer;
   transition-property: all;
   transition-duration:.3s;
+  border: none;
 
   // Compass Mixins
   @if $ubtn-use-compass {
@@ -63,6 +64,7 @@
     opacity:.8 !important;
     background: #EEE !important;
     border: 1px solid #DDD !important;
+    box-shadow: none;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 1) !important;
     color: #CCC !important;
     cursor: default !important;
