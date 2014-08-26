@@ -5,75 +5,59 @@
 * style that mimics the visual appearance of a
 * real life button.
 */
-#{$unicorn-btn-namespace}-3d {
-  @include transition-property(all);
-  @include transition-duration(.3s);
-  @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-  @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 2%), darken($unicorn-btn-bgcolor, 2%)));
-  background-color: $unicorn-btn-bgcolor;
-  color: $unicorn-btn-font-color;
-  border: 1px solid darken($unicorn-btn-bgcolor, 5%);
-  text-shadow: none;
+#{$ubtn-namespace}-3d {
+  @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+  @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 2%), darken($ubtn-bgcolor, 2%)));
+  border: 1px solid darken($ubtn-bgcolor, 5%);
   position: relative;
   top: 0px;
 
   &:hover, &:focus {
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-    @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 8%), darken($unicorn-btn-bgcolor, 1%)));
-    background-color: lighten($unicorn-btn-bgcolor, 10%);
+    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+    @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 1%)));
+    background-color: lighten($ubtn-bgcolor, 10%);
   }
   &:active {
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
-    @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 2%), lighten($unicorn-btn-bgcolor, 2%)));
-    background-color: desaturate($unicorn-btn-bgcolor, 20%);
-    color: darken($unicorn-btn-bgcolor, 20%);
-    border: 1px solid darken($unicorn-btn-bgcolor, 5%);
+    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
+    @include background(linear-gradient(top,  darken($ubtn-bgcolor, 2%), lighten($ubtn-bgcolor, 2%)));
+    background-color: desaturate($ubtn-bgcolor, 20%);
+    color: darken($ubtn-bgcolor, 20%);
+    border: 1px solid darken($ubtn-bgcolor, 5%);
     top: 5px;
-  }
-  &.disabled {
-    @include box-shadow(none);
   }
 }
 
-//////////////////////////////////////////////////////////
-// COLORS ////////////////////////////////////////////////
-//////////////////////////////////////////////////////////
-@each $unicorn-btn-action in $unicorn-btn-actions {
-  //GET NAME & COLOR
-  $unicorn-btn-name: nth($unicorn-btn-action, 1);
-  $unicorn-btn-background: nth($unicorn-btn-action, 2);
-  $unicorn-btn-color: nth($unicorn-btn-action, 3);
+
+/*
+* 3D Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+@each $ubtn-action in $ubtn-actions {
+  $ubtn-name: nth($ubtn-action, 1);
+  $ubtn-background: nth($ubtn-action, 2);
+  $ubtn-color: nth($ubtn-action, 3);
 
   // .button-border-primary .button-border-action etc.
-  #{$unicorn-btn-namespace}-3d-#{$unicorn-btn-name} {
-    @include transition-property(all);
-    @include transition-duration(.3s);
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
-    @include background(linear-gradient(top,  lighten($unicorn-btn-background, 2%), darken($unicorn-btn-background, 2%)));
-    background-color: $unicorn-btn-background;
-    color: $unicorn-btn-color;
-    border: 1px solid darken($unicorn-btn-background, 10%);
-    text-shadow: none;
+  #{$ubtn-namespace}-3d-#{$ubtn-name} {
+    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
+    @include background(linear-gradient(top,  lighten($ubtn-background, 2%), darken($ubtn-background, 2%)));
+    border: 1px solid darken($ubtn-background, 10%);
     position: relative;
     top: 0px;
 
     &:hover, &:focus {
-      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($unicorn-btn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
-      @include background(linear-gradient(top,  lighten($unicorn-btn-background, 8%), darken($unicorn-btn-background, 1%)));
-      background-color: lighten($unicorn-btn-background, 10%);
+      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
+      @include background(linear-gradient(top,  lighten($ubtn-background, 8%), darken($ubtn-background, 1%)));
+      background-color: lighten($ubtn-background, 10%);
     }
 
     &:active {
-      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
-      @include background(linear-gradient(top,  darken($unicorn-btn-background, 2%), lighten($unicorn-btn-background, 2%)));
-      background-color: desaturate($unicorn-btn-background, 20%);
-      color: darken($unicorn-btn-background, 20%);
-      border: 1px solid darken($unicorn-btn-background, 5%);
+      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
+      @include background(linear-gradient(top,  darken($ubtn-background, 2%), lighten($ubtn-background, 2%)));
+      border: 1px solid darken($ubtn-background, 5%);
       top: 5px;
-    }
-
-    &.disabled {
-      @include box-shadow(none);
     }
   }
 }

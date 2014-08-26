@@ -18,9 +18,13 @@
   display: inline-block;
   appearance: none;
   cursor: pointer;
+  transition-property: all;
+  transition-duration:.3s;
 
   // Compass Mixins
   @if $ubtn-use-compass {
+    @include transition-property(all);
+    @include transition-duration(.3s);
     @include inline-block(middle);
   }
 
@@ -35,7 +39,7 @@
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
     text-decoration: none;
-    background: desaturate($ubtn-bgcolor, 20%);
+    background-color: desaturate($ubtn-bgcolor, 20%);
     color: darken($ubtn-bgcolor, 20%);
 
     // Compass Mixin
@@ -50,22 +54,24 @@
   *
   * The disabled state uses the class .disabled, is-disabled,
   * and the form attribute disabled="disabled".
+  * The use of !important is only added because this is a state
+  * that must be applied to all buttons when in a disabled state.
   */
   &.disabled, &.disabled:hover, &.disabled:focus, &.disabled:active,
   &.is-disabled, &.is-disabled:hover, &.is-disabled:focus, &.is-disabled:active,
   &:disabled {
-    opacity:.8;
-    background: #EEE;
-    border: 1px solid #DDD;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
-    color: #CCC;
-    cursor: default;
-    appearance: none;
+    opacity:.8 !important;
+    background: #EEE !important;
+    border: 1px solid #DDD !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1) !important;
+    color: #CCC !important;
+    cursor: default !important;
+    appearance: none !important;
 
     // Compass Mixin
     @if $ubtn-use-compass {
-      @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10));
-      @include opacity(.8);
+      @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10)) !important;
+      @include opacity(.8) !important;
     }
   }
 }
@@ -88,13 +94,16 @@
   #{$ubtn-namespace}-#{$ubtn-name}-flat {
     background-color: $ubtn-background;
     color: $ubtn-color;
+    border-color: $ubtn-background;
 
     &:hover, &:focus {
       background-color: lighten($ubtn-background, 10%);
+      border-color: lighten($ubtn-background, 10%);
     }
 
     &:active {
-      background: desaturate($ubtn-background, 20%);
+      background-color: desaturate($ubtn-background, 20%);
+      border-color: desaturate($ubtn-background, 20%);
       color: darken($ubtn-background, 20%);
     }
   }
