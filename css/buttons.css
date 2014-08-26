@@ -331,3 +331,64 @@ input.button-tiny, button.button-tiny {
 .button-border:active {
   background: none;
 }
+
+/*
+* Border Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+.button-border.button-primary {
+  color: #00a1cb;
+}
+.button-border.button-primary:hover, .button-border.button-primary:focus {
+  color: #00c9fe;
+}
+.button-border.button-primary:active {
+  color: #007998;
+}
+.button-border.button-secondary {
+  color: white;
+}
+.button-border.button-secondary:hover, .button-border.button-secondary:focus {
+  color: white;
+}
+.button-border.button-secondary:active {
+  color: #e6e6e6;
+}
+.button-border.button-action {
+  color: #7db500;
+}
+.button-border.button-action:hover, .button-border.button-action:focus {
+  color: #a0e800;
+}
+.button-border.button-action:active {
+  color: #5a8200;
+}
+.button-border.button-highlight {
+  color: #f18d05;
+}
+.button-border.button-highlight:hover, .button-border.button-highlight:focus {
+  color: #fba42e;
+}
+.button-border.button-highlight:active {
+  color: #bf7004;
+}
+.button-border.button-caution {
+  color: #e54028;
+}
+.button-border.button-caution:hover, .button-border.button-caution:focus {
+  color: #eb6855;
+}
+.button-border.button-caution:active {
+  color: #c22d18;
+}
+.button-border.button-royal {
+  color: #87318c;
+}
+.button-border.button-royal:hover, .button-border.button-royal:focus {
+  color: #ab3eb2;
+}
+.button-border.button-royal:active {
+  color: #632466;
+}

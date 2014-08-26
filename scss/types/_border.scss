@@ -16,3 +16,32 @@
     background: none;
   }
 }
+
+/*
+* Border Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+#{$ubtn-namespace}-border {
+
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-fullname: $ubtn-namespace + '-' + $ubtn-name;
+
+    &#{$ubtn-fullname} {
+      color: $ubtn-background;
+
+      &:hover,
+      &:focus {
+        color: lighten($ubtn-background, 10%);
+      }
+
+      &:active {
+        color: darken($ubtn-background, 10%);
+      }
+    }
+  }
+}
