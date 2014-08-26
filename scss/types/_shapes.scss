@@ -4,28 +4,28 @@
 * This file creates the various button shapes
 * (ex. Circle, Rounded, Pill)
 */
-@each $ubtn-style in $ubtn-types {
-  #{$ubtn-namespace}-#{$ubtn-style} {
+@each $ubtn-shape in $ubtn-shapes {
+  #{$ubtn-namespace}-#{$ubtn-shape} {
 
-    @if $ubtn-style == 'rounded' {
+    @if $ubtn-shape == 'rounded' {
       border-radius: 3px;
 
       //COMPASS MIXIN
-      @if($use-compass) {
+      @if($ubtn-use-compass) {
         @include border-radius(3px);
       }
     }
 
-    @if $ubtn-style == 'pill' {
+    @if $ubtn-shape == 'pill' {
       border-radius: 50px;
 
       //COMPASS MIXIN
-      @if($use-compass) {
+      @if($ubtn-use-compass) {
         @include border-radius(50px);
       }
     }
 
-    @if $ubtn-style == 'circle' {
+    @if $ubtn-shape == 'circle' {
       box-shadow: inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20);
       border-radius: ($ubtn-circle-size * 2);
       width: $ubtn-circle-size;
@@ -36,7 +36,7 @@
       padding: 0px;
 
       //COMPASS MIXIN
-      @if($use-compass) {
+      @if($ubtn-use-compass) {
         @include border-radius($ubtn-circle-size * 2);
         @include box-shadow(inset 0px 1px 1px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .20));
       }

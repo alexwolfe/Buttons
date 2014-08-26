@@ -34,10 +34,10 @@
 * Create colors for buttons
 * (.button-primary, .button-secondary, etc.)
 */
-@each $ubtn-action in $ubtn-actions {
-  $ubtn-name: nth($ubtn-action, 1);
-  $ubtn-background: nth($ubtn-action, 2);
-  $ubtn-color: nth($ubtn-action, 3);
+@each $ubtn-color in $ubtn-colors {
+  $ubtn-name: nth($ubtn-color, 1);
+  $ubtn-background: nth($ubtn-color, 2);
+  $ubtn-color: nth($ubtn-color, 3);
 
   // .button-border-primary .button-border-action etc.
   #{$ubtn-namespace}-3d-#{$ubtn-name} {

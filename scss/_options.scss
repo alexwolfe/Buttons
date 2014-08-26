@@ -34,6 +34,7 @@ $ubtn-glow-namespace: '.glow' !default;
 * generates a class like .button-primary, .button-secondary, etc.
 */
 $ubtn-colors: ('primary' #00A1CB #FFF) ('secondary' #FFF #FFF) ('action' #7db500 #FFF) ('highlight' #F18D05 #FFF)('caution' #E54028 #FFF) ('royal' #87318C #FFF) !default;
+$ubtn-shapes: 'pill' 'circle' 'rounded';
 $ubtn-glow-color: #2c9adb !default;
 $ubtn-bgcolor: #EEE !default;
 $ubtn-height: 32px !default;

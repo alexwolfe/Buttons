@@ -1,10 +1,10 @@
 /*
 * Compass (optional)
 *
-* We reccomend the use of autoprefixer instead of compass
-* when using buttons. However, buttons does support compass.
-* simply set this flag to true and buttons will use compass to
-* add css prefixes. Uncomment the code below to use compass.
+* We reccomend the use of autoprefixer instead of Compass
+* when using buttons. However, buttons does support Compass.
+* simply change $ubtn-use-compass to true and uncomment the
+* @import 'compass' code below to use Compass.
 */
 /*
 * Required Files
@@ -13,17 +13,214 @@
 * and base css styles that are required to generate buttons.
 */
 /*
+* $ubtn prefix (reserved)
+*
+* This prefix stands for Unicorn Button - ubtn
+* We provide a prefix to the Sass Variables to
+* prevent namespace collisions that could occur if
+* you import buttons as part of your Sass build process.
+* We kindly ask you not to use the prefix $ubtn in your project
+* in order to avoid possilbe name conflicts. Thanks!
+*/
+/*
 * Button Namespace (ex .button or .btn)
 *
 */
 /*
-* Button Types Settings (Size, Color, Shape, Name, etc.)
+* Button Appearance & Types (Size, Color, Shape, Name, etc.)
 *
+* Most of these are self explanatory and relate to the appearance
+* of the buttons that will be produced.
+*
+* $ubtn-colors - (name, background, color)
+* $ubtn-colors is used to generate the differnt colors
+* (ex. class="button-primary"). Modify the colors and
+* compile with sass to see your changes. You can add as
+* man colors as you want. Each block (name, background, color)
+* generates a class like .button-primary, .button-secondary, etc.
 */
 /*
 * Typographical Settings
 *
 */
+/*
+* Base Button Style
+*
+* The default values for the .button class
+*/
+.button {
+  color: #666666;
+  background-color: #eeeeee;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  height: 32px;
+  padding: 0px 32px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  /*
+  * Disabled State
+  *
+  * The disabled state uses the class .disabled, is-disabled,
+  * and the form attribute disabled="disabled".
+  * The use of !important is only added because this is a state
+  * that must be applied to all buttons when in a disabled state.
+  */
+}
+.button:hover, .button:focus {
+  background-color: #eeeeee;
+  text-decoration: none;
+  outline: none;
+}
+.button:active {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #bbbbbb;
+}
+.button.disabled, .button.disabled:hover, .button.disabled:focus, .button.disabled:active, .button.is-disabled, .button.is-disabled:hover, .button.is-disabled:focus, .button.is-disabled:active, .button:disabled {
+  opacity: .8 !important;
+  background: #EEE !important;
+  border: 1px solid #DDD !important;
+  text-shadow: 0 1px 1px white !important;
+  color: #CCC !important;
+  cursor: default !important;
+  appearance: none !important;
+}
+
+/*
+* Base Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+.button-primary,
+.button-primary-flat {
+  background-color: #00a1cb;
+  color: white;
+  border-color: #00a1cb;
+}
+.button-primary:hover, .button-primary:focus,
+.button-primary-flat:hover,
+.button-primary-flat:focus {
+  background-color: #00c9fe;
+  border-color: #00c9fe;
+}
+.button-primary:active,
+.button-primary-flat:active {
+  background-color: #1495b7;
+  border-color: #1495b7;
+  color: #005065;
+}
+
+.button-secondary,
+.button-secondary-flat {
+  background-color: white;
+  color: white;
+  border-color: white;
+}
+.button-secondary:hover, .button-secondary:focus,
+.button-secondary-flat:hover,
+.button-secondary-flat:focus {
+  background-color: white;
+  border-color: white;
+}
+.button-secondary:active,
+.button-secondary-flat:active {
+  background-color: white;
+  border-color: white;
+  color: #cccccc;
+}
+
+.button-action,
+.button-action-flat {
+  background-color: #7db500;
+  color: white;
+  border-color: #7db500;
+}
+.button-action:hover, .button-action:focus,
+.button-action-flat:hover,
+.button-action-flat:focus {
+  background-color: #a0e800;
+  border-color: #a0e800;
+}
+.button-action:active,
+.button-action-flat:active {
+  background-color: #76a312;
+  border-color: #76a312;
+  color: #374f00;
+}
+
+.button-highlight,
+.button-highlight-flat {
+  background-color: #f18d05;
+  color: white;
+  border-color: #f18d05;
+}
+.button-highlight:hover, .button-highlight:focus,
+.button-highlight-flat:hover,
+.button-highlight-flat:focus {
+  background-color: #fba42e;
+  border-color: #fba42e;
+}
+.button-highlight:active,
+.button-highlight-flat:active {
+  background-color: #d8891e;
+  border-color: #d8891e;
+  color: #8d5303;
+}
+
+.button-caution,
+.button-caution-flat {
+  background-color: #e54028;
+  color: white;
+  border-color: #e54028;
+}
+.button-caution:hover, .button-caution:focus,
+.button-caution-flat:hover,
+.button-caution-flat:focus {
+  background-color: #eb6855;
+  border-color: #eb6855;
+}
+.button-caution:active,
+.button-caution-flat:active {
+  background-color: #cd5240;
+  border-color: #cd5240;
+  color: #952312;
+}
+
+.button-royal,
+.button-royal-flat {
+  background-color: #87318c;
+  color: white;
+  border-color: #87318c;
+}
+.button-royal:hover, .button-royal:focus,
+.button-royal-flat:hover,
+.button-royal-flat:focus {
+  background-color: #ab3eb2;
+  border-color: #ab3eb2;
+}
+.button-royal:active,
+.button-royal-flat:active {
+  background-color: #764479;
+  border-color: #764479;
+  color: #3e1740;
+}
+
 /*
 * Button Types (optional)
 *
@@ -31,6 +228,38 @@
 * types (including shapes & sizes). None of these files
 * are required. Simple remove the uneeded type below and
 * the button type will be excluded from the final build
+*/
+/*
+* Button Shapes
+*
+* This file creates the various button shapes
+* (ex. Circle, Rounded, Pill)
+*/
+.button-pill {
+  border-radius: 50px;
+}
+
+.button-circle {
+  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 240px;
+  width: 120px;
+  line-height: 120px;
+  height: 120px;
+  font-size: 18px;
+  border-width: 4px;
+  padding: 0px;
+}
+
+.button-rounded {
+  border-radius: 3px;
+}
+
+/*
+* Button Sizes
+*
+* This file creates the various button sizes
+* (ex. .button-large, .button-small, etc.)
 */
 .button-jumbo {
   font-size: 24px;
@@ -70,4 +299,22 @@ input.button-small, button.button-small {
 
 input.button-tiny, button.button-tiny {
   height: 24.4px;
+}
+
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+.button-border {
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+}
+.button-border:hover, .button-border:focus {
+  background: none;
+}
+.button-border:active {
+  background: none;
 }

@@ -3,10 +3,11 @@
 *
 * We reccomend the use of autoprefixer instead of Compass
 * when using buttons. However, buttons does support Compass.
-* simply uncomment the code below to use Compass.
+* simply change $ubtn-use-compass to true and uncomment the
+* @import 'compass' code below to use Compass.
 */
 
-// $ubtn-use-compass: true;
+$ubtn-use-compass: false;
 // @import 'compass';
 
 
