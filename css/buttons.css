@@ -1,7 +1,7 @@
 /*
 * Compass (optional)
 *
-* We reccomend the use of autoprefixer instead of Compass
+* We recommend the use of autoprefixer instead of Compass
 * when using buttons. However, buttons does support Compass.
 * simply change $ubtn-use-compass to true and uncomment the
 * @import 'compass' code below to use Compass.
@@ -89,11 +89,11 @@
           transition-duration: 0s;
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
           box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
   text-decoration: none;
   background-color: #eeeeee;
   border-color: #eeeeee;
-  color: #bbbbbb;
+  color: #d4d4d4;
 }
 .button.disabled, .button.disabled:hover, .button.disabled:focus, .button.disabled:active, .button.is-disabled, .button.is-disabled:hover, .button.is-disabled:focus, .button.is-disabled:active, .button:disabled {
   opacity: .8 !important;
@@ -139,9 +139,9 @@
 }
 .button-primary:active,
 .button-primary-flat:active {
-  background-color: #1495b7;
-  border-color: #1495b7;
-  color: #005065;
+  background-color: #0a9bc1;
+  border-color: #0a9bc1;
+  color: #007998;
 }
 
 .button-secondary,
@@ -160,7 +160,7 @@
 .button-secondary-flat:active {
   background-color: white;
   border-color: white;
-  color: #cccccc;
+  color: #e6e6e6;
 }
 
 .button-action,
@@ -177,9 +177,9 @@
 }
 .button-action:active,
 .button-action-flat:active {
-  background-color: #76a312;
-  border-color: #76a312;
-  color: #374f00;
+  background-color: #7aac09;
+  border-color: #7aac09;
+  color: #5a8200;
 }
 
 .button-highlight,
@@ -196,9 +196,9 @@
 }
 .button-highlight:active,
 .button-highlight-flat:active {
-  background-color: #d8891e;
-  border-color: #d8891e;
-  color: #8d5303;
+  background-color: #e58b11;
+  border-color: #e58b11;
+  color: #bf7004;
 }
 
 .button-caution,
@@ -215,9 +215,9 @@
 }
 .button-caution:active,
 .button-caution-flat:active {
-  background-color: #cd5240;
-  border-color: #cd5240;
-  color: #952312;
+  background-color: #d94934;
+  border-color: #d94934;
+  color: #c22d18;
 }
 
 .button-royal,
@@ -234,9 +234,9 @@
 }
 .button-royal:active,
 .button-royal-flat:active {
-  background-color: #764479;
-  border-color: #764479;
-  color: #3e1740;
+  background-color: #7f3a83;
+  border-color: #7f3a83;
+  color: #632466;
 }
 
 /*
@@ -476,4 +476,127 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-royal:active {
   background-color: #764479;
   color: #3e1740;
+}
+
+/*
+* Raised Buttons
+*
+* A classic looking button that offers
+* great depth and affordance.
+*/
+.button-raised {
+  border-color: #e1e1e1;
+  border-style: solid;
+  border-width: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
+  background: -webkit-linear-gradient(#f6f6f6, #e1e1e1);
+  background: linear-gradient(#f6f6f6, #e1e1e1);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.button-raised:hover, .button-raised:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
+  background: -webkit-linear-gradient(top, white, gainsboro);
+  background: linear-gradient(top, white, gainsboro);
+}
+.button-raised:active {
+  background: #eeeeee;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+}
+
+/*
+* Raised Button Colors
+*
+* Create colors for raised buttons
+*/
+.button-raised.button-primary {
+  border-color: #008db2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00b5e5), to(#008db2));
+  background: -webkit-linear-gradient(#00b5e5, #008db2);
+  background: linear-gradient(#00b5e5, #008db2);
+}
+.button-raised.button-primary:hover, .button-raised.button-primary:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c9fe), to(#0085a7));
+  background: -webkit-linear-gradient(top, #00c9fe, #0085a7);
+  background: linear-gradient(top, #00c9fe, #0085a7);
+}
+.button-raised.button-primary:active {
+  border-color: #0081a2;
+  background: #0a9bc1;
+}
+.button-raised.button-secondary {
+  border-color: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f2f2f2));
+  background: -webkit-linear-gradient(white, #f2f2f2);
+  background: linear-gradient(white, #f2f2f2);
+}
+.button-raised.button-secondary:hover, .button-raised.button-secondary:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ededed));
+  background: -webkit-linear-gradient(top, white, #ededed);
+  background: linear-gradient(top, white, #ededed);
+}
+.button-raised.button-secondary:active {
+  border-color: #ebebeb;
+  background: white;
+}
+.button-raised.button-action {
+  border-color: #6b9c00;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8fcf00), to(#6b9c00));
+  background: -webkit-linear-gradient(#8fcf00, #6b9c00);
+  background: linear-gradient(#8fcf00, #6b9c00);
+}
+.button-raised.button-action:hover, .button-raised.button-action:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0e800), to(#649100));
+  background: -webkit-linear-gradient(top, #a0e800, #649100);
+  background: linear-gradient(top, #a0e800, #649100);
+}
+.button-raised.button-action:active {
+  border-color: #618c00;
+  background: #7aac09;
+}
+.button-raised.button-highlight {
+  border-color: #d87e04;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa9915), to(#d87e04));
+  background: -webkit-linear-gradient(#fa9915, #d87e04);
+  background: linear-gradient(#fa9915, #d87e04);
+}
+.button-raised.button-highlight:hover, .button-raised.button-highlight:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fba42e), to(#ce7904));
+  background: -webkit-linear-gradient(top, #fba42e, #ce7904);
+  background: linear-gradient(top, #fba42e, #ce7904);
+}
+.button-raised.button-highlight:active {
+  border-color: #c97604;
+  background: #e58b11;
+}
+.button-raised.button-caution {
+  border-color: #d9331a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e8543f), to(#d9331a));
+  background: -webkit-linear-gradient(#e8543f, #d9331a);
+  background: linear-gradient(#e8543f, #d9331a);
+}
+.button-raised.button-caution:hover, .button-raised.button-caution:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb6855), to(#d03019));
+  background: -webkit-linear-gradient(top, #eb6855, #d03019);
+  background: linear-gradient(top, #eb6855, #d03019);
+}
+.button-raised.button-caution:active {
+  border-color: #cc2f19;
+  background: #d94934;
+}
+.button-raised.button-royal {
+  border-color: #752a79;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99389f), to(#752a79));
+  background: -webkit-linear-gradient(#99389f, #752a79);
+  background: linear-gradient(#99389f, #752a79);
+}
+.button-raised.button-royal:hover, .button-raised.button-royal:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ab3eb2), to(#6d2872));
+  background: -webkit-linear-gradient(top, #ab3eb2, #6d2872);
+  background: linear-gradient(top, #ab3eb2, #6d2872);
+}
+.button-raised.button-royal:active {
+  border-color: #6a266e;
+  background: #7f3a83;
 }

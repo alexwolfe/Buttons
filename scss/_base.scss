@@ -40,11 +40,11 @@
   &:active {
     transition-duration: 0s;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3);
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, .3);
     text-decoration: none;
-    background-color: desaturate($ubtn-bgcolor, 20%);
-    border-color: desaturate($ubtn-bgcolor, 20%);
-    color: darken($ubtn-bgcolor, 20%);
+    background-color: desaturate($ubtn-bgcolor, 10%);
+    border-color: desaturate($ubtn-bgcolor, 10%);
+    color: darken($ubtn-bgcolor, 10%);
 
     // Compass Mixin
     @if $ubtn-use-compass {
@@ -118,9 +118,9 @@
     }
 
     &:active {
-      background-color: desaturate($ubtn-background, 20%);
-      border-color: desaturate($ubtn-background, 20%);
-      color: darken($ubtn-background, 20%);
+      background-color: desaturate($ubtn-background, 10%);
+      border-color: desaturate($ubtn-background, 10%);
+      color: darken($ubtn-background, 10%);
     }
   }
 }
