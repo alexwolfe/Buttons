@@ -6,7 +6,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   /**
   * Grunt Configuration
@@ -56,6 +56,17 @@ module.exports = function (grunt) {
       build: {
         src: ["tmp/"]
       }
+    },
+
+    watch: {
+      scripts: {
+        files: ['js/**/*.js', 'demo/js/**/*.js'],
+        tasks: ['clean']
+      },
+      sass: {
+        files: ['scss/**/*.scss', 'demo/scss/**/*.scss'],
+        tasks: ['sass:dist', 'autoprefixer', 'clean']
+      }
     }
   });
 
@@ -66,5 +77,6 @@ module.exports = function (grunt) {
   *
   */
   grunt.registerTask('default', ['sass:dist', 'autoprefixer', "clean"]);
+  grunt.registerTask('dev', ['sass:dist', 'autoprefixer', "clean", 'watch']);
   grunt.registerTask('demo', ['sass:demo', 'autoprefixer', "clean"]);
 };

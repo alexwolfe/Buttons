@@ -26,7 +26,7 @@
     }
 
     @if $ubtn-shape == 'circle' {
-      border-radius: ($ubtn-circle-size * 2);
+      border-radius: 1000%;
       width: $ubtn-circle-size;
       line-height: $ubtn-circle-size;
       height: $ubtn-circle-size;
