@@ -49,9 +49,9 @@
 * The default values for the .button class
 */
 .button {
-  color: #666666;
-  background-color: #eeeeee;
-  border-color: #eeeeee;
+  color: #666;
+  background-color: #EEE;
+  border-color: #EEE;
   font-weight: 300;
   font-size: 16px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -79,8 +79,8 @@
   */
 }
 .button:hover, .button:focus {
-  background-color: #eeeeee;
-  border-color: #eeeeee;
+  background-color: #EEE;
+  border-color: #EEE;
   text-decoration: none;
   outline: none;
 }
@@ -108,6 +108,18 @@
 }
 
 /*
+* Base Button Tyography
+*
+*/
+.button-uppercase {
+  text-transform: uppercase;
+}
+
+.button-capitalize {
+  text-transform: capitalize;
+}
+
+/*
 * Base Colors
 *
 * Create colors for buttons
@@ -115,9 +127,9 @@
 */
 .button-primary,
 .button-primary-flat {
-  background-color: #00a1cb;
-  color: white;
-  border-color: #00a1cb;
+  background-color: #00A1CB;
+  color: #FFF;
+  border-color: #00A1CB;
 }
 .button-primary:hover, .button-primary:focus,
 .button-primary-flat:hover,
@@ -134,9 +146,9 @@
 
 .button-secondary,
 .button-secondary-flat {
-  background-color: white;
-  color: white;
-  border-color: white;
+  background-color: #FFF;
+  color: #FFF;
+  border-color: #FFF;
 }
 .button-secondary:hover, .button-secondary:focus,
 .button-secondary-flat:hover,
@@ -154,7 +166,7 @@
 .button-action,
 .button-action-flat {
   background-color: #7db500;
-  color: white;
+  color: #FFF;
   border-color: #7db500;
 }
 .button-action:hover, .button-action:focus,
@@ -172,9 +184,9 @@
 
 .button-highlight,
 .button-highlight-flat {
-  background-color: #f18d05;
-  color: white;
-  border-color: #f18d05;
+  background-color: #F18D05;
+  color: #FFF;
+  border-color: #F18D05;
 }
 .button-highlight:hover, .button-highlight:focus,
 .button-highlight-flat:hover,
@@ -191,9 +203,9 @@
 
 .button-caution,
 .button-caution-flat {
-  background-color: #e54028;
-  color: white;
-  border-color: #e54028;
+  background-color: #E54028;
+  color: #FFF;
+  border-color: #E54028;
 }
 .button-caution:hover, .button-caution:focus,
 .button-caution-flat:hover,
@@ -210,9 +222,9 @@
 
 .button-royal,
 .button-royal-flat {
-  background-color: #87318c;
-  color: white;
-  border-color: #87318c;
+  background-color: #87318C;
+  color: #FFF;
+  border-color: #87318C;
 }
 .button-royal:hover, .button-royal:focus,
 .button-royal-flat:hover,
@@ -256,14 +268,11 @@
 }
 
 .button-circle {
-  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 240px;
   width: 120px;
   line-height: 120px;
   height: 120px;
   font-size: 18px;
-  border-width: 4px;
   padding: 0px;
 }
 
@@ -357,7 +366,7 @@ input.button-tiny, button.button-tiny {
 .button-border.button-primary, .button-primary.button-border-thin, .button-primary.button-border-thick,
 .button-border-thin.button-primary,
 .button-border-thick.button-primary {
-  color: #00a1cb;
+  color: #00A1CB;
 }
 .button-border.button-primary:hover, .button-primary.button-border-thin:hover, .button-primary.button-border-thick:hover, .button-border.button-primary:focus, .button-primary.button-border-thin:focus, .button-primary.button-border-thick:focus,
 .button-border-thin.button-primary:hover,
@@ -365,7 +374,7 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-primary:hover,
 .button-border-thick.button-primary:focus {
   background-color: #00c9fe;
-  color: white;
+  color: #FFF;
 }
 .button-border.button-primary:active, .button-primary.button-border-thin:active, .button-primary.button-border-thick:active,
 .button-border-thin.button-primary:active,
@@ -376,7 +385,7 @@ input.button-tiny, button.button-tiny {
 .button-border.button-secondary, .button-secondary.button-border-thin, .button-secondary.button-border-thick,
 .button-border-thin.button-secondary,
 .button-border-thick.button-secondary {
-  color: white;
+  color: #FFF;
 }
 .button-border.button-secondary:hover, .button-secondary.button-border-thin:hover, .button-secondary.button-border-thick:hover, .button-border.button-secondary:focus, .button-secondary.button-border-thin:focus, .button-secondary.button-border-thick:focus,
 .button-border-thin.button-secondary:hover,
@@ -384,7 +393,7 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-secondary:hover,
 .button-border-thick.button-secondary:focus {
   background-color: white;
-  color: white;
+  color: #FFF;
 }
 .button-border.button-secondary:active, .button-secondary.button-border-thin:active, .button-secondary.button-border-thick:active,
 .button-border-thin.button-secondary:active,
@@ -403,7 +412,7 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-action:hover,
 .button-border-thick.button-action:focus {
   background-color: #a0e800;
-  color: white;
+  color: #FFF;
 }
 .button-border.button-action:active, .button-action.button-border-thin:active, .button-action.button-border-thick:active,
 .button-border-thin.button-action:active,
@@ -414,7 +423,7 @@ input.button-tiny, button.button-tiny {
 .button-border.button-highlight, .button-highlight.button-border-thin, .button-highlight.button-border-thick,
 .button-border-thin.button-highlight,
 .button-border-thick.button-highlight {
-  color: #f18d05;
+  color: #F18D05;
 }
 .button-border.button-highlight:hover, .button-highlight.button-border-thin:hover, .button-highlight.button-border-thick:hover, .button-border.button-highlight:focus, .button-highlight.button-border-thin:focus, .button-highlight.button-border-thick:focus,
 .button-border-thin.button-highlight:hover,
@@ -422,7 +431,7 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-highlight:hover,
 .button-border-thick.button-highlight:focus {
   background-color: #fba42e;
-  color: white;
+  color: #FFF;
 }
 .button-border.button-highlight:active, .button-highlight.button-border-thin:active, .button-highlight.button-border-thick:active,
 .button-border-thin.button-highlight:active,
@@ -433,7 +442,7 @@ input.button-tiny, button.button-tiny {
 .button-border.button-caution, .button-caution.button-border-thin, .button-caution.button-border-thick,
 .button-border-thin.button-caution,
 .button-border-thick.button-caution {
-  color: #e54028;
+  color: #E54028;
 }
 .button-border.button-caution:hover, .button-caution.button-border-thin:hover, .button-caution.button-border-thick:hover, .button-border.button-caution:focus, .button-caution.button-border-thin:focus, .button-caution.button-border-thick:focus,
 .button-border-thin.button-caution:hover,
@@ -441,7 +450,7 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-caution:hover,
 .button-border-thick.button-caution:focus {
   background-color: #eb6855;
-  color: white;
+  color: #FFF;
 }
 .button-border.button-caution:active, .button-caution.button-border-thin:active, .button-caution.button-border-thick:active,
 .button-border-thin.button-caution:active,
@@ -452,7 +461,7 @@ input.button-tiny, button.button-tiny {
 .button-border.button-royal, .button-royal.button-border-thin, .button-royal.button-border-thick,
 .button-border-thin.button-royal,
 .button-border-thick.button-royal {
-  color: #87318c;
+  color: #87318C;
 }
 .button-border.button-royal:hover, .button-royal.button-border-thin:hover, .button-royal.button-border-thick:hover, .button-border.button-royal:focus, .button-royal.button-border-thin:focus, .button-royal.button-border-thick:focus,
 .button-border-thin.button-royal:hover,
@@ -460,7 +469,7 @@ input.button-tiny, button.button-tiny {
 .button-border-thick.button-royal:hover,
 .button-border-thick.button-royal:focus {
   background-color: #ab3eb2;
-  color: white;
+  color: #FFF;
 }
 .button-border.button-royal:active, .button-royal.button-border-thin:active, .button-royal.button-border-thick:active,
 .button-border-thin.button-royal:active,
