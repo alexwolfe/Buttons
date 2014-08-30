@@ -89,9 +89,16 @@
 #{$ubtn-namespace}-uppercase {
   text-transform: uppercase;
 }
+#{$ubtn-namespace}-lowercase {
+  text-transform: lowercase;
+}
 #{$ubtn-namespace}-capitalize {
   text-transform: capitalize;
 }
+#{$ubtn-namespace}-small-caps {
+  font-variant: small-caps;
+}
+
 
 /*
 * Base Colors

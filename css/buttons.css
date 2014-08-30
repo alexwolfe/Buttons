@@ -115,8 +115,16 @@
   text-transform: uppercase;
 }
 
+.button-lowercase {
+  text-transform: lowercase;
+}
+
 .button-capitalize {
   text-transform: capitalize;
+}
+
+.button-small-caps {
+  font-variant: small-caps;
 }
 
 /*
@@ -517,9 +525,9 @@ input.button-tiny, button.button-tiny {
   background: linear-gradient(#00b5e5, #008db2);
 }
 .button-raised.button-primary:hover, .button-raised.button-primary:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00c9fe), to(#0085a7));
-  background: -webkit-linear-gradient(top, #00c9fe, #0085a7);
-  background: linear-gradient(top, #00c9fe, #0085a7);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c1f4), to(#0085a7));
+  background: -webkit-linear-gradient(top, #00c1f4, #0085a7);
+  background: linear-gradient(top, #00c1f4, #0085a7);
 }
 .button-raised.button-primary:active {
   border-color: #0081a2;
@@ -547,9 +555,9 @@ input.button-tiny, button.button-tiny {
   background: linear-gradient(#8fcf00, #6b9c00);
 }
 .button-raised.button-action:hover, .button-raised.button-action:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a0e800), to(#649100));
-  background: -webkit-linear-gradient(top, #a0e800, #649100);
-  background: linear-gradient(top, #a0e800, #649100);
+  background: -webkit-gradient(linear, left top, left bottom, from(#99de00), to(#649100));
+  background: -webkit-linear-gradient(top, #99de00, #649100);
+  background: linear-gradient(top, #99de00, #649100);
 }
 .button-raised.button-action:active {
   border-color: #618c00;
@@ -562,9 +570,9 @@ input.button-tiny, button.button-tiny {
   background: linear-gradient(#fa9915, #d87e04);
 }
 .button-raised.button-highlight:hover, .button-raised.button-highlight:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fba42e), to(#ce7904));
-  background: -webkit-linear-gradient(top, #fba42e, #ce7904);
-  background: linear-gradient(top, #fba42e, #ce7904);
+  background: -webkit-gradient(linear, left top, left bottom, from(#faa024), to(#ce7904));
+  background: -webkit-linear-gradient(top, #faa024, #ce7904);
+  background: linear-gradient(top, #faa024, #ce7904);
 }
 .button-raised.button-highlight:active {
   border-color: #c97604;
@@ -577,9 +585,9 @@ input.button-tiny, button.button-tiny {
   background: linear-gradient(#e8543f, #d9331a);
 }
 .button-raised.button-caution:hover, .button-raised.button-caution:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#eb6855), to(#d03019));
-  background: -webkit-linear-gradient(top, #eb6855, #d03019);
-  background: linear-gradient(top, #eb6855, #d03019);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9604c), to(#d03019));
+  background: -webkit-linear-gradient(top, #e9604c, #d03019);
+  background: linear-gradient(top, #e9604c, #d03019);
 }
 .button-raised.button-caution:active {
   border-color: #cc2f19;
@@ -592,9 +600,9 @@ input.button-tiny, button.button-tiny {
   background: linear-gradient(#99389f, #752a79);
 }
 .button-raised.button-royal:hover, .button-raised.button-royal:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ab3eb2), to(#6d2872));
-  background: -webkit-linear-gradient(top, #ab3eb2, #6d2872);
-  background: linear-gradient(top, #ab3eb2, #6d2872);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a43caa), to(#6d2872));
+  background: -webkit-linear-gradient(top, #a43caa, #6d2872);
+  background: linear-gradient(top, #a43caa, #6d2872);
 }
 .button-raised.button-royal:active {
   border-color: #6a266e;
