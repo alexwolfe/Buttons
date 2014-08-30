@@ -608,3 +608,217 @@ input.button-tiny, button.button-tiny {
   border-color: #6a266e;
   background: #7f3a83;
 }
+
+/*
+* 3D Buttons
+*
+* These buttons have a heavy three dimensional
+* style that mimics the visual appearance of a
+* real life button.
+*/
+.button-3d {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e1e1e1;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#e9e9e9));
+  background: -webkit-linear-gradient(#f3f3f3, #e9e9e9);
+  background: linear-gradient(#f3f3f3, #e9e9e9);
+}
+.button-3d:hover, .button-3d:focus {
+  background-color: white;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ebebeb));
+  background: -webkit-linear-gradient(white, #ebebeb);
+  background: linear-gradient(white, #ebebeb);
+}
+.button-3d:active {
+  background-color: #eeeeee;
+  color: #bbbbbb;
+  border: 1px solid #e1e1e1;
+  top: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9e9e9), to(#f3f3f3));
+  background: -webkit-linear-gradient(#e9e9e9, #f3f3f3);
+  background: linear-gradient(#e9e9e9, #f3f3f3);
+}
+
+/*
+* 3D Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+.button-3d.button-primary {
+  border: 1px solid #007998;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #007998, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00a9d5), to(#0099c1));
+  background: -webkit-linear-gradient(#00a9d5, #0099c1);
+  background: linear-gradient(#00a9d5, #0099c1);
+}
+.button-3d.button-primary:hover, .button-3d.button-primary:focus {
+  background-color: #00c9fe;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #00708e, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c1f4), to(#009dc6));
+  background: -webkit-linear-gradient(#00c1f4, #009dc6);
+  background: linear-gradient(#00c1f4, #009dc6);
+}
+.button-3d.button-primary:active {
+  border: 1px solid #008db2;
+  top: 5px;
+  color: #007998;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #005065, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #005065, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0099c1), to(#00a9d5));
+  background: -webkit-linear-gradient(#0099c1, #00a9d5);
+  background: linear-gradient(#0099c1, #00a9d5);
+}
+.button-3d.button-secondary {
+  border: 1px solid #e6e6e6;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafafa));
+  background: -webkit-linear-gradient(white, #fafafa);
+  background: linear-gradient(white, #fafafa);
+}
+.button-3d.button-secondary:hover, .button-3d.button-secondary:focus {
+  background-color: white;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fcfcfc));
+  background: -webkit-linear-gradient(white, #fcfcfc);
+  background: linear-gradient(white, #fcfcfc);
+}
+.button-3d.button-secondary:active {
+  border: 1px solid #f2f2f2;
+  top: 5px;
+  color: #e6e6e6;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(white));
+  background: -webkit-linear-gradient(#fafafa, white);
+  background: linear-gradient(#fafafa, white);
+}
+.button-3d.button-action {
+  border: 1px solid #5a8200;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5a8200, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#84bf00), to(#76ab00));
+  background: -webkit-linear-gradient(#84bf00, #76ab00);
+  background: linear-gradient(#84bf00, #76ab00);
+}
+.button-3d.button-action:hover, .button-3d.button-action:focus {
+  background-color: #a0e800;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #537800, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#99de00), to(#79b000));
+  background: -webkit-linear-gradient(#99de00, #79b000);
+  background: linear-gradient(#99de00, #79b000);
+}
+.button-3d.button-action:active {
+  border: 1px solid #6b9c00;
+  top: 5px;
+  color: #5a8200;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #374f00, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #374f00, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#76ab00), to(#84bf00));
+  background: -webkit-linear-gradient(#76ab00, #84bf00);
+  background: linear-gradient(#76ab00, #84bf00);
+}
+.button-3d.button-highlight {
+  border: 1px solid #bf7004;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bf7004, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa9306), to(#e78705));
+  background: -webkit-linear-gradient(#fa9306, #e78705);
+  background: linear-gradient(#fa9306, #e78705);
+}
+.button-3d.button-highlight:hover, .button-3d.button-highlight:focus {
+  background-color: #fba42e;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b56a04, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#faa024), to(#ec8a05));
+  background: -webkit-linear-gradient(#faa024, #ec8a05);
+  background: linear-gradient(#faa024, #ec8a05);
+}
+.button-3d.button-highlight:active {
+  border: 1px solid #d87e04;
+  top: 5px;
+  color: #bf7004;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #8d5303, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #8d5303, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e78705), to(#fa9306));
+  background: -webkit-linear-gradient(#e78705, #fa9306);
+  background: linear-gradient(#e78705, #fa9306);
+}
+.button-3d.button-caution {
+  border: 1px solid #c22d18;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #c22d18, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e64831), to(#e4381f));
+  background: -webkit-linear-gradient(#e64831, #e4381f);
+  background: linear-gradient(#e64831, #e4381f);
+}
+.button-3d.button-caution:hover, .button-3d.button-caution:focus {
+  background-color: #eb6855;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b92b16, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9604c), to(#e43c23));
+  background: -webkit-linear-gradient(#e9604c, #e43c23);
+  background: linear-gradient(#e9604c, #e43c23);
+}
+.button-3d.button-caution:active {
+  border: 1px solid #d9331a;
+  top: 5px;
+  color: #c22d18;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #952312, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #952312, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4381f), to(#e64831));
+  background: -webkit-linear-gradient(#e4381f, #e64831);
+  background: linear-gradient(#e4381f, #e64831);
+}
+.button-3d.button-royal {
+  border: 1px solid #632466;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #632466, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e3494), to(#802e84));
+  background: -webkit-linear-gradient(#8e3494, #802e84);
+  background: linear-gradient(#8e3494, #802e84);
+}
+.button-3d.button-royal:hover, .button-3d.button-royal:focus {
+  background-color: #ab3eb2;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5b215f, 0px 8px 3px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a43caa), to(#833088));
+  background: -webkit-linear-gradient(#a43caa, #833088);
+  background: linear-gradient(#a43caa, #833088);
+}
+.button-3d.button-royal:active {
+  border: 1px solid #752a79;
+  top: 5px;
+  color: #632466;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #3e1740, 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #3e1740, 0px 3px 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#802e84), to(#8e3494));
+  background: -webkit-linear-gradient(#802e84, #8e3494);
+  background: linear-gradient(#802e84, #8e3494);
+}

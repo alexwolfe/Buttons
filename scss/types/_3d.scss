@@ -6,24 +6,48 @@
 * real life button.
 */
 #{$ubtn-namespace}-3d {
-  @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-  @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 2%), darken($ubtn-bgcolor, 2%)));
-  border: 1px solid darken($ubtn-bgcolor, 5%);
+  border-style: solid;
+  border-width: 1px;
+  border-color: darken($ubtn-bgcolor, 5%);
   position: relative;
   top: 0px;
 
-  &:hover, &:focus {
+  @if($ubtn-use-compass) {
     @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
-    @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 1%)));
-    background-color: lighten($ubtn-bgcolor, 10%);
+    @include background(linear-gradient(lighten($ubtn-bgcolor, 2%), darken($ubtn-bgcolor, 2%)));
   }
+  @else {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+    background: linear-gradient(lighten($ubtn-bgcolor, 2%), darken($ubtn-bgcolor, 2%));
+  }
+
+  &:hover, &:focus {
+    background-color: lighten($ubtn-bgcolor, 10%);
+
+    @if($ubtn-use-compass) {
+      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+      @include background(linear-gradient(lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 1%)));
+    }
+    @else {
+      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+      background: linear-gradient(lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 1%));
+    }
+  }
+
   &:active {
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
-    @include background(linear-gradient(top,  darken($ubtn-bgcolor, 2%), lighten($ubtn-bgcolor, 2%)));
     background-color: desaturate($ubtn-bgcolor, 20%);
     color: darken($ubtn-bgcolor, 20%);
     border: 1px solid darken($ubtn-bgcolor, 5%);
     top: 5px;
+
+    @if($ubtn-use-compass) {
+      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
+      @include background(linear-gradient(darken($ubtn-bgcolor, 2%), lighten($ubtn-bgcolor, 2%)));
+    }
+    @else {
+      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
+      background: linear-gradient(darken($ubtn-bgcolor, 2%), lighten($ubtn-bgcolor, 2%));
+    }
   }
 }
 
@@ -34,30 +58,55 @@
 * Create colors for buttons
 * (.button-primary, .button-secondary, etc.)
 */
-@each $ubtn-color in $ubtn-colors {
-  $ubtn-name: nth($ubtn-color, 1);
-  $ubtn-background: nth($ubtn-color, 2);
-  $ubtn-color: nth($ubtn-color, 3);
+#{$ubtn-namespace}-3d {
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
 
-  // .button-border-primary .button-border-action etc.
-  #{$ubtn-namespace}-3d-#{$ubtn-name} {
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
-    @include background(linear-gradient(top,  lighten($ubtn-background, 2%), darken($ubtn-background, 2%)));
-    border: 1px solid darken($ubtn-background, 10%);
-    position: relative;
-    top: 0px;
+    // .button-border-primary .button-border-action etc.
+    &#{$ubtn-color-namespace} {
+      border: 1px solid darken($ubtn-background, 10%);
+      position: relative;
+      top: 0px;
 
-    &:hover, &:focus {
-      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
-      @include background(linear-gradient(top,  lighten($ubtn-background, 8%), darken($ubtn-background, 1%)));
-      background-color: lighten($ubtn-background, 10%);
-    }
+      @if($ubtn-use-compass) {
+        @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
+        @include background(linear-gradient(lighten($ubtn-background, 2%), darken($ubtn-background, 2%)));
+      }
+      @else {
+        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30);
+        background: linear-gradient(lighten($ubtn-background, 2%), darken($ubtn-background, 2%));
+      }
 
-    &:active {
-      @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
-      @include background(linear-gradient(top,  darken($ubtn-background, 2%), lighten($ubtn-background, 2%)));
-      border: 1px solid darken($ubtn-background, 5%);
-      top: 5px;
+      &:hover, &:focus {
+        background-color: lighten($ubtn-background, 10%);
+
+        @if($ubtn-use-compass) {
+          @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
+          @include background(linear-gradient(lighten($ubtn-background, 8%), darken($ubtn-background, 1%)));
+        }
+        @else {
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 7px 0px darken($ubtn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30);
+          background: linear-gradient(lighten($ubtn-background, 8%), darken($ubtn-background, 1%));
+        }
+      }
+
+      &:active {
+        border: 1px solid darken($ubtn-background, 5%);
+        top: 5px;
+        color: darken($ubtn-background, 10%);
+
+        @if($ubtn-use-compass) {
+          @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-background, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
+          @include background(linear-gradient(darken($ubtn-background, 2%), lighten($ubtn-background, 2%)));
+        }
+        @else {
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($ubtn-background, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
+          background: linear-gradient(darken($ubtn-background, 2%), lighten($ubtn-background, 2%));
+        }
+      }
     }
   }
 }
