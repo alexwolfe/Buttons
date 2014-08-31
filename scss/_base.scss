@@ -27,7 +27,6 @@
   @if $ubtn-use-compass {
     @include transition-property(all);
     @include transition-duration(.3s);
-    @include inline-block(middle);
   }
 
   &:hover, &:focus {

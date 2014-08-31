@@ -9,11 +9,18 @@
   border-width: 2px;
   border-style: solid;
 
-  &:hover, &:focus {
-    background: none;
-  }
   &:active {
-    background: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    @if $ubtn-use-compass {
+      @include transition-property(all);
+      @include transition-duration(.3s);
+    }
+    @else {
+      transition-property: all;
+      transition-duration:.3s;
+    }
   }
 }
 
@@ -59,8 +66,8 @@
       }
 
       &:active {
-        background-color: desaturate($ubtn-background, 20%);
-        color: darken($ubtn-background, 20%);
+        background-color: rgba(desaturate($ubtn-background, 10%), .7);
+        //color: darken($ubtn-background, 10%);
       }
     }
   }
