@@ -19,6 +19,7 @@ $ubtn-use-compass: false;
 * and base css styles that are required to generate buttons.
 */
 @import 'options';
+@import 'mixins';
 @import 'base';
 @import 'layout';
 
@@ -38,6 +39,6 @@ $ubtn-use-compass: false;
 @import 'types/raised';
 @import 'types/3d';
 @import 'types/glow';
-//@import 'types/dropdown';
+@import 'types/dropdown';
 //@import 'types/groups';
 //@import 'types/wrapper';

@@ -44,6 +44,12 @@
 *
 */
 /*
+* Color Mixin
+*
+* Iterates through the list of colors and creates
+*
+*/
+/*
 * Base Button Style
 *
 * The default values for the .button class
@@ -1099,4 +1105,73 @@ input.button-tiny, button.button-tiny {
 .button-glow.button-royal:active else {
   -webkit-animation-name: none;
           animation-name: none;
+}
+
+/*
+* Dropdown menu buttons
+*
+* A pulse like glow that appears
+* rythmically around the edges of
+* a button.
+*/
+.button-dropdown {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+}
+.button-dropdown .button-dropdown-menu-below {
+  top: 115%;
+}
+.button-dropdown .button-dropdown-menu-above {
+  bottom: 115%;
+  top: auto;
+}
+.button-dropdown .button-dropdown-divider {
+  border-top: 1px solid #e4e4e4;
+}
+.button-dropdown .button-dropdown-list,
+.button-dropdown > ul {
+  display: none;
+  position: absolute;
+  background: #fcfcfc;
+  top: -2px;
+  left: -2px;
+  z-index: 1000;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  min-width: 102%;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+}
+.button-dropdown .button-dropdown-list > li,
+.button-dropdown > ul > li {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.button-dropdown .button-dropdown-list > li:first-child a,
+.button-dropdown > ul > li:first-child a {
+  border-top-radius: 3px;
+}
+.button-dropdown .button-dropdown-list > li:last-child a,
+.button-dropdown > ul > li:last-child a {
+  border-bottom-radius: 3px;
+}
+.button-dropdown .button-dropdown-list a,
+.button-dropdown > ul a {
+  display: block;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  line-height: 30px;
+  white-space: nowrap;
+}
+.button-dropdown .button-dropdown-list a:hover, .button-dropdown .button-dropdown-list a:focus,
+.button-dropdown > ul a:hover,
+.button-dropdown > ul a:focus {
+  background-color: #3c6ab9;
+  color: #FFF;
 }
