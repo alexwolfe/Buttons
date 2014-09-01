@@ -823,3 +823,280 @@ input.button-tiny, button.button-tiny {
   background: -webkit-linear-gradient(#7369e8, #837bea);
   background: linear-gradient(#7369e8, #837bea);
 }
+
+/*
+* Glowing Buttons
+*
+* A pulse like glow that appears
+* rythmically around the edges of
+* a button.
+*/
+@-webkit-keyframes glowing {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8);
+            box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+  }
+}
+@keyframes glowing {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8);
+            box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
+  }
+}
+@-webkit-keyframes glowing-primary {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8);
+            box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+  }
+}
+@keyframes glowing-primary {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8);
+            box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
+  }
+}
+@-webkit-keyframes glowing-secondary {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+            box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(220, 212, 249, 0.8);
+            box-shadow: 0px 0px 20px rgba(220, 212, 249, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+            box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+  }
+}
+@keyframes glowing-secondary {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+            box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(220, 212, 249, 0.8);
+            box-shadow: 0px 0px 20px rgba(220, 212, 249, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+            box-shadow: 0px 0px 0px rgba(220, 212, 249, 0.3);
+  }
+}
+@-webkit-keyframes glowing-action {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8);
+            box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+  }
+}
+@keyframes glowing-action {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8);
+            box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
+  }
+}
+@-webkit-keyframes glowing-highlight {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8);
+            box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+  }
+}
+@keyframes glowing-highlight {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8);
+            box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
+  }
+}
+@-webkit-keyframes glowing-caution {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+  }
+}
+@keyframes glowing-caution {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
+  }
+}
+@-webkit-keyframes glowing-royal {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8);
+            box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+  }
+}
+@keyframes glowing-royal {
+  from {
+    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8);
+            box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
+  }
+}
+/*
+* Glowing Buttons Base Styes
+*
+* A pulse like glow that appears
+* rythmically around the edges of
+* a button.
+*/
+.button-glow {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: glowing;
+          animation-name: glowing;
+}
+.button-glow:active {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+/*
+* Glowing Button Colors
+*
+* Create colors for glowing buttons
+*/
+.button-glow.button-primary {
+  -webkit-animation-name: glowing-primary;
+          animation-name: glowing-primary;
+}
+.button-glow.button-primary:active else {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.button-glow.button-secondary {
+  -webkit-animation-name: glowing-secondary;
+          animation-name: glowing-secondary;
+}
+.button-glow.button-secondary:active else {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.button-glow.button-action {
+  -webkit-animation-name: glowing-action;
+          animation-name: glowing-action;
+}
+.button-glow.button-action:active else {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.button-glow.button-highlight {
+  -webkit-animation-name: glowing-highlight;
+          animation-name: glowing-highlight;
+}
+.button-glow.button-highlight:active else {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.button-glow.button-caution {
+  -webkit-animation-name: glowing-caution;
+          animation-name: glowing-caution;
+}
+.button-glow.button-caution:active else {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+.button-glow.button-royal {
+  -webkit-animation-name: glowing-royal;
+          animation-name: glowing-royal;
+}
+.button-glow.button-royal:active else {
+  -webkit-animation-name: none;
+          animation-name: none;
+}
