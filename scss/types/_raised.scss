@@ -71,7 +71,7 @@
         }
       }
       &:active {
-        border-color: darken($ubtn-background, 8%);
+        border-color: darken($ubtn-background, 10%);
         background: desaturate($ubtn-background, 10%);
       }
     }
