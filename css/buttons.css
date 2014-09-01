@@ -1110,9 +1110,8 @@ input.button-tiny, button.button-tiny {
 /*
 * Dropdown menu buttons
 *
-* A pulse like glow that appears
-* rythmically around the edges of
-* a button.
+* A dropdown menu that appears
+* when a dropdown button is pressed
 */
 .button-dropdown {
   position: relative;
@@ -1174,4 +1173,23 @@ input.button-tiny, button.button-tiny {
 .button-dropdown > ul a:focus {
   background-color: #3c6ab9;
   color: #FFF;
+}
+
+/*
+* Button Wrapper
+*
+* A wrap around effect to highlight
+* the shape of the button and offer
+* a subtle visual effect.
+*/
+.button-wrap {
+  border: 1px solid #e3e3e3;
+  display: inline-block;
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#FFF));
+  background: -webkit-linear-gradient(#f2f2f2, #FFF);
+  background: linear-gradient(#f2f2f2, #FFF);
+  border-radius: 200px;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.04);
 }
