@@ -90,7 +90,7 @@
   text-decoration: none;
   outline: none;
 }
-.button:active {
+.button:active, .button.is-active {
   -webkit-transition-duration: 0s;
           transition-duration: 0s;
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -151,8 +151,9 @@
   background-color: #4cb0f9;
   border-color: #4cb0f9;
 }
-.button-primary:active,
-.button-primary-flat:active {
+.button-primary:active, .button-primary.is-active,
+.button-primary-flat:active,
+.button-primary-flat.is-active {
   background-color: #2798eb;
   border-color: #2798eb;
   color: #0880d7;
@@ -170,8 +171,9 @@
   background-color: white;
   border-color: white;
 }
-.button-secondary:active,
-.button-secondary-flat:active {
+.button-secondary:active, .button-secondary.is-active,
+.button-secondary-flat:active,
+.button-secondary-flat.is-active {
   background-color: #ddd6f7;
   border-color: #ddd6f7;
   color: #b8a7f3;
@@ -189,8 +191,9 @@
   background-color: #b9e563;
   border-color: #b9e563;
 }
-.button-action:active,
-.button-action-flat:active {
+.button-action:active, .button-action.is-active,
+.button-action-flat:active,
+.button-action-flat.is-active {
   background-color: #a1d243;
   border-color: #a1d243;
   color: #8bc220;
@@ -208,8 +211,9 @@
   background-color: #fec04e;
   border-color: #fec04e;
 }
-.button-highlight:active,
-.button-highlight-flat:active {
+.button-highlight:active, .button-highlight.is-active,
+.button-highlight-flat:active,
+.button-highlight-flat.is-active {
   background-color: #f3ab26;
   border-color: #f3ab26;
   color: #e59501;
@@ -227,8 +231,9 @@
   background-color: #ff7680;
   border-color: #ff7680;
 }
-.button-caution:active,
-.button-caution-flat:active {
+.button-caution:active, .button-caution.is-active,
+.button-caution-flat:active,
+.button-caution-flat.is-active {
   background-color: #f64c59;
   border-color: #f64c59;
   color: #ff1022;
@@ -246,8 +251,9 @@
   background-color: #a49ef0;
   border-color: #a49ef0;
 }
-.button-royal:active,
-.button-royal-flat:active {
+.button-royal:active, .button-royal.is-active,
+.button-royal-flat:active,
+.button-royal-flat.is-active {
   background-color: #827ae1;
   border-color: #827ae1;
   color: #5246e2;
@@ -1182,8 +1188,20 @@ input.button-tiny, button.button-tiny {
 * displayed edge to edge
 */
 .button-group {
+  *zoom: 1;
   position: relative;
   display: inline-block;
+}
+.button-group:after, .button-group:before {
+  content: '.';
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
 }
 .button-group .button {
   float: left;
@@ -1191,22 +1209,18 @@ input.button-tiny, button.button-tiny {
 .button-group .button:focus, .button-group .button:hover, .button-group .button.active {
   z-index: 5;
 }
-.button-group .button.active {
-  background: gainsboro;
-}
 .button-group .button:not(:first-child):not(:last-child) {
   border-radius: 0;
+  border-right: none;
 }
 .button-group .button:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-right: none;
 }
 .button-group .button:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-.button-group .button + .button {
-  margin-left: -1px;
 }
 
 /*

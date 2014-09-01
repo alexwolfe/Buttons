@@ -29,14 +29,16 @@
     @include transition-duration(.3s);
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $ubtn-bgcolor;
     border-color: $ubtn-bgcolor;
     text-decoration: none;
     outline: none;
   }
 
-  &:active {
+  &:active,
+  &.is-active {
     transition-duration: 0s;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, .3);
@@ -118,12 +120,14 @@
     color: $ubtn-color;
     border-color: $ubtn-background;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: lighten($ubtn-background, 10%);
       border-color: lighten($ubtn-background, 10%);
     }
 
-    &:active {
+    &:active,
+    &.is-active {
       background-color: desaturate($ubtn-background, 10%);
       border-color: desaturate($ubtn-background, 10%);
       color: darken($ubtn-background, 10%);

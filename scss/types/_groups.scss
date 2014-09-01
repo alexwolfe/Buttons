@@ -5,32 +5,29 @@
 * displayed edge to edge
 */
 #{$ubtn-namespace}-group {
+  @include clearfix;
   position: relative;
   display: inline-block;
 
   #{$ubtn-namespace} {
     float: left;
+
     &:focus, &:hover, &.active {
       z-index: 5;
-    }
-    &.active {
-      background: darken($ubtn-bgcolor, 7%);
     }
     //Take rounded corners off all middle buttons
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
+      border-right: none;
     }
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      border-right: none;
     }
     &:last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
-  }
-  // Remove extra borders
-  #{$ubtn-namespace} + #{$ubtn-namespace} {
-    margin-left: -1px;
   }
 }
