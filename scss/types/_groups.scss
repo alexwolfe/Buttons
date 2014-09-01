@@ -1,35 +1,36 @@
+/*
+* Buton Groups
+*
+* A group of related buttons
+* displayed edge to edge
+*/
+#{$ubtn-namespace}-group {
+  position: relative;
+  display: inline-block;
 
-//////////////////////////////////////////////////////////
-// BUTTON GROUPS /////////////////////////////////////////
-//////////////////////////////////////////////////////////
-#{$unicorn-btn-namespace}-group {
-    position: relative;
-    display: inline-block;
-    #{$unicorn-btn-namespace} {
-        float: left;
-        &:focus, &:hover, &.active {
-            z-index: 5;
-        }
-        &.active {
-            background: darken($unicorn-btn-bgcolor, 7%);
-        }
-        //Take rounded corners off all middle buttons
-        &:not(:first-child):not(:last-child) {
-            border-radius: 0;
-        }
-        &:first-child {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        &:last-child {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
+  #{$ubtn-namespace} {
+    float: left;
+    &:focus, &:hover, &.active {
+      z-index: 5;
     }
-    // Remove extra borders
-    #{$unicorn-btn-namespace} + #{$unicorn-btn-namespace} {
-        margin-left: -1px;
+    &.active {
+      background: darken($ubtn-bgcolor, 7%);
     }
-
+    //Take rounded corners off all middle buttons
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  // Remove extra borders
+  #{$ubtn-namespace} + #{$ubtn-namespace} {
+    margin-left: -1px;
+  }
 }
-

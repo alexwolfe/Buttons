@@ -1176,6 +1176,40 @@ input.button-tiny, button.button-tiny {
 }
 
 /*
+* Buton Groups
+*
+* A group of related buttons
+* displayed edge to edge
+*/
+.button-group {
+  position: relative;
+  display: inline-block;
+}
+.button-group .button {
+  float: left;
+}
+.button-group .button:focus, .button-group .button:hover, .button-group .button.active {
+  z-index: 5;
+}
+.button-group .button.active {
+  background: gainsboro;
+}
+.button-group .button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.button-group .button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.button-group .button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.button-group .button + .button {
+  margin-left: -1px;
+}
+
+/*
 * Button Wrapper
 *
 * A wrap around effect to highlight
