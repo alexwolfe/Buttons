@@ -75,7 +75,6 @@
 }
 
 
-
 /*
 * Glowing Buttons Base Styes
 *
@@ -116,15 +115,6 @@
 
     &#{$ubtn-color-namespace} {
       animation-name: glowing-#{$ubtn-name};
-
-      &:active {
-        @if($ubtn-use-compass) {
-          @include no_animation;
-        }
-        else {
-          animation-name: none;
-        }
-      }
     }
   }
 }

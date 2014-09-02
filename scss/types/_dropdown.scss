@@ -5,6 +5,9 @@
 * when a dropdown button is pressed
 */
 #{$ubtn-namespace}-dropdown {
+  font-weight: $ubtn-font-weight;
+  font-size: $ubtn-font-size;
+  font-family: $ubtn-font-family;
   position: relative;
   overflow: visible;
   display: inline-block;

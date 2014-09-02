@@ -6,77 +6,30 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="A variety of highly customizable CSS Buttons built with Sass and Compass. The Buttons framework is ready to use and easy to install.">
+    <meta name="description" content="A highly customizable CSS button library.">
     <meta name="viewport" content="width=device-width">
     <link href='//fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/styleguide.css">
     <link rel="stylesheet" href="../css/buttons.css">
 
     <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
     <![endif]-->
 
-    <title>Buttons - A CSS button library built with Sass and Compass</title>
+    <title>Buttons - A highly customizable CSS button library.</title>
 </head>
 <body id="home">
-   <!-- FACEBOOK LIKE BUTTON -->
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=162853010460019";
-            fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
+  <header class="hero hero-buttons">
+    <i class="logo-buttons">B</i>
 
-    <nav id="main-nav">
-        <ul class="clearfix">
-            <li class="home"><a href="#home">B</a></li>
-            <li><a href="#flat">Flat</a></li>
-            <li><a href="#icons">Icons</a></li>
-            <li><a href="#glow">Glow</a></li>
-            <li><a href="#rounded">Rounded</a></li>
-            <li><a href="#pill">Pill</a></li>
-            <li><a href="#square">Square</a></li>
-            <li><a href="#circle">Circle</a></li>
-            <li><a href="#block">Block</a></li>
-            <li><a href="#more">More</a></li>
-            <li><a href="#setup">Get Started</a></li>
+    <h1>Buttons</h1>
+    <h2>A CSS button library built with Sass &amp; Compass</h2>
 
-        </ul>
-
-        <div class="clear"></div>
-    </nav>
-
-    <header class="clear">
-        <hgroup>
-          <h1>Buttons</h1>
-          <h2>A CSS button library built with Sass &amp; Compass</h2>
-        </hgroup>
-
-        <span class="button-wrap button-download">
-            <a class="button button-circle button-primary button-glow" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip">Download</a>
-        </span>
-
-        <section class="social-buttons">
-            <!-- GITHUB STAR BUTTON -->
-            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=alexwolfe&repo=Buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-
-            <!-- GITHUB FORK BUTTON -->
-            <iframe class="github-button" src="http://ghbtns.com/github-btn.html?user=alexwolfe&repo=Buttons&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
-
-            <!-- TWITTER TWEET BUTTON -->
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alexwolfe.github.io/Buttons/" data-text="Buttons - a customizable CSS button library built with Sass &amp; Compass">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-            <!-- FACEBOOK LIKE BUTTON -->
-            <div class="fb-like" data-href="http://alexwolfe.github.io/Buttons/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-        </section>
-    </header>
-
+    <a href="../css/buttons.css">Download</a>
+  </header>
 
     <section id="page">
 
@@ -124,12 +77,7 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-flat-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-flat-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-flat-primary&quot;&gt;press me&lt;/a&gt;</pre>
-        </section>
+
 
 
 
@@ -153,13 +101,7 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-action&quot;&gt;&lt;i class=&quot;fa fa-cloud&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-highlight&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-caution&quot;&gt;&lt;i class=&quot;fa fa-code&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-royal&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;</pre>
+            <pre class="prettyprint linenums"></pre>
         </section>
 
 
@@ -183,14 +125,6 @@
                     <li><a href="#" class="button button-glow button-rounded button-royal">press me</a>  </li>
                 </ul>
             </section>
-
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button glow button-rounded button-flat&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-rounded button-flat-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-rounded button-flat-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-rounded button-flat-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-rounded button-flat-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button glow button-rounded button-flat-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -215,13 +149,6 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -247,13 +174,6 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-pill&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-pill button-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -279,13 +199,6 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-border&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-border-primary button-rounded&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-border-action button-pill&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-border-highlight button-circle&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-border-caution&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-border-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -311,13 +224,6 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-3d&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-3d-primary button-rounded&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-3d-action button-pill&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-3d-highlight button-circle&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-3d-caution&quot;&gt;&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt; press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-3d-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -343,13 +249,7 @@
                 </ul>
             </section>
 
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-royal&quot;&gt;press me&lt;/a&gt;</pre>
+
         </section>
 
 
@@ -374,14 +274,6 @@
                     <li><a href="#" class="button button-circle button-royal">press me</a>  </li>
                 </ul>
             </section>
-
-            <pre class="prettyprint linenums">
-&lt;a href=&quot;#&quot; class=&quot;button button-circle&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-primary&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-action&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-highlight&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-caution&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-circle button-royal&quot;&gt;press me&lt;/a&gt;</pre>
         </section>
 
 
@@ -432,14 +324,14 @@
                     </li>
                     <li>
                         <span class="button-dropdown" data-buttons="dropdown">
-                            <a href="#" class="button button-highlight button-rounded">
-                                </i> press me <i class="fa fa-caret-down"></i>
-                            </a>
+                            <a href="#" class="button button-highlight button-rounded"> press me <i class="fa fa-caret-down"></i></a>
 
                             <ul>
                                 <li><a href="#">Option 1</a></li>
                                 <li><a href="#">Option 2</a></li>
-                                <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
+                                <li class="button-dropdown-divider">
+                                  <a href="#">Option 3</a>
+                                </li>
                             </ul>
                         </span>
                     </li>
