@@ -66,6 +66,14 @@ module.exports = function (grunt) {
           src: ['**/*'],
           dest: 'styleguide/css'
         }]
+      },
+      js_styleguide: {
+        files: [{
+          expand: true,
+          cwd: 'js',
+          src: ['**/*'],
+          dest: 'styleguide/js'
+        }]
       }
     },
 
