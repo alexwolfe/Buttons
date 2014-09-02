@@ -54,8 +54,7 @@ module.exports = function (grunt) {
     cssmin: {
       add_banner: {
         options: {
-          banner: '/* Buttons */',
-          report: 'gzip'
+          banner: '/* Buttons */'
         },
         files: {
           'tmp/css/buttons.css': ['tmp/css/buttons.css']
