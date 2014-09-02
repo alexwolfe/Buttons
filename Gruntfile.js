@@ -9,6 +9,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   /**
   * Grunt Configuration
@@ -47,6 +48,23 @@ module.exports = function (grunt) {
 
 
     /*
+    * Minify files
+    *
+    */
+    cssmin: {
+      add_banner: {
+        options: {
+          banner: '/* Buttons */',
+          report: 'gzip'
+        },
+        files: {
+          'tmp/css/buttons.css': ['tmp/css/buttons.css']
+        }
+      }
+    },
+
+
+    /*
     * Copy files
     *
     */
@@ -76,6 +94,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+
 
     /*
     * Clean tmp folders
@@ -135,6 +154,6 @@ module.exports = function (grunt) {
   * Grunt Tasks
   *
   */
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'copy', 'clean']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
   grunt.registerTask('dev', ['sass', 'autoprefixer', 'copy', 'clean', 'connect', 'watch']);
 };
