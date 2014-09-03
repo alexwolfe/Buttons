@@ -435,13 +435,13 @@ table {
   background: #FFF;
   width: 100px;
   height: 100px;
-  color: blue;
+  color: #000;
   text-align: center;
   line-height: 100px;
   font-style: normal;
   font-size: 50px;
   font-family: "Lato", sans-serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .hero {
   padding: 150px 40px;
@@ -450,4 +450,9 @@ table {
   color: #FFF; }
   .hero > h1 {
     font-family: "Lato", sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0px; }
+  .hero > h2 {
+    margin-bottom: 40px; }

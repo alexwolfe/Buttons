@@ -7,9 +7,12 @@
   > h1 {
     font-family: $font-logo;
     font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0px;
   }
 
   > h2 {
-
+    margin-bottom: 40px;
   }
 }
