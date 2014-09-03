@@ -9,6 +9,10 @@
   border-width: 2px;
   border-style: solid;
 
+  &:hover {
+    background-color: rgba(lighten($ubtn-bgcolor, 10%), .9)
+  }
+
   &:active {
     box-shadow: none;
     text-shadow: none;
@@ -61,7 +65,7 @@
 
       &:hover,
       &:focus {
-        background-color: lighten($ubtn-background, 10%);
+        background-color: rgba(lighten($ubtn-background, 10%), .9);
         color: $ubtn-color;
       }
 

@@ -1,5 +1,15 @@
 .hero {
-  height: 600px;
-  background: blue;
+  padding: 150px 40px;
+  background: #000;
   text-align: center;
+  color: #FFF;
+
+  > h1 {
+    font-family: $font-logo;
+    font-weight: 400;
+  }
+
+  > h2 {
+
+  }
 }

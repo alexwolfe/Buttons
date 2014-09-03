@@ -1,3 +1,7 @@
+/*
+* Colors
+*
+*/
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -424,7 +428,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.logo {
+  display: block;
+  margin: 0px auto;
+  border-radius: 100%;
+  background: #FFF;
+  width: 100px;
+  height: 100px;
+  color: blue;
+  text-align: center;
+  line-height: 100px;
+  font-style: normal;
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
 .hero {
-  height: 600px;
-  background: blue;
-  text-align: center; }
+  padding: 150px 40px;
+  background: #000;
+  text-align: center;
+  color: #FFF; }
+  .hero > h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400; }

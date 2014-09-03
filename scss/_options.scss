@@ -33,7 +33,7 @@ $ubtn-glow-namespace: '.glow' !default;
 * man colors as you want. Each block (name, background, color)
 * generates a class like .button-primary, .button-secondary, etc.
 */
-$ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
+$ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF #333) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
 $ubtn-shapes: 'pill' 'circle' 'rounded';
 $ubtn-glow-color: #2c9adb !default;
 $ubtn-bgcolor: #EEE !default;
