@@ -428,23 +428,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.l-padding-10 {
+  padding: 10px; }
+
+.l-padding-20 {
+  padding: 20px; }
+
+.l-padding-30 {
+  padding: 30px; }
+
+.l-padding-40 {
+  padding: 40px; }
+
+.l-padding-50 {
+  padding: 50px; }
+
+.l-padding-60 {
+  padding: 60px; }
+
+.l-padding-70 {
+  padding: 70px; }
+
+.l-padding-80 {
+  padding: 80px; }
+
+.l-padding-90 {
+  padding: 90px; }
+
+.l-padding-100 {
+  padding: 100px; }
+
 .logo {
   display: block;
   margin: 0px auto;
   border-radius: 100%;
   background: #FFF;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   color: #000;
   text-align: center;
-  line-height: 100px;
+  line-height: 120px;
   font-style: normal;
   font-size: 50px;
   font-family: "Lato", sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
 
 .hero {
-  padding: 150px 40px;
+  padding: 140px 40px;
   background: #000;
   text-align: center;
   color: #FFF; }
@@ -456,3 +486,11 @@ table {
     margin: 0px; }
   .hero > h2 {
     margin-bottom: 40px; }
+
+.button-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+  .button-list > li {
+    display: inline-block;
+    margin: 10px; }
