@@ -4,15 +4,15 @@
   text-align: center;
   color: #FFF;
 
-  > h1 {
-    font-family: $font-logo;
+  .hero-title {
+    font-family: $brand-font;
     font-weight: 400;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 80px;
+    line-height: 80px;
     margin: 0px;
   }
 
-  > h2 {
+  .hero-sub-title {
     margin-bottom: 40px;
   }
 }

@@ -1,0 +1,18 @@
+.showcase {
+
+  .showcase-title,
+  .showcase-sub-title {
+    font-family: $brand-font;
+    font-weight: 200;
+  }
+
+  .showcase-title {
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .showcase-sub-title {
+    font-size: 18px;
+    margin: 0px 0px 40px 0px;
+  }
+}

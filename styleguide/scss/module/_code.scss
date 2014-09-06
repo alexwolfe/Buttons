@@ -1,0 +1,161 @@
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* Pretty printing styles. Used with prettify.js. */
+/* SPAN elements with the classes below are added by prettyprint. */
+/* plain text */
+.pln {
+  color: #cccccc;
+}
+
+@media screen {
+  /* string content */
+  .str {
+    color: #99cc99;
+  }
+
+  /* a keyword */
+  .kwd {
+    color: #cc99cc;
+  }
+
+  /* a comment */
+  .com {
+    color: #999999;
+  }
+
+  /* a type name */
+  .typ {
+    color: #6699cc;
+  }
+
+  /* a literal value */
+  .lit {
+    color: #f99157;
+  }
+
+  /* punctuation */
+  .pun {
+    color: #cccccc;
+  }
+
+  /* lisp open bracket */
+  .opn {
+    color: #cccccc;
+  }
+
+  /* lisp close bracket */
+  .clo {
+    color: #cccccc;
+  }
+
+  /* a markup tag name */
+  .tag {
+    color: #f2777a;
+  }
+
+  /* a markup attribute name */
+  .atn {
+    color: #f99157;
+  }
+
+  /* a markup attribute value */
+  .atv {
+    color: #66cccc;
+  }
+
+  /* a declaration */
+  .dec {
+    color: #f99157;
+  }
+
+  /* a variable name */
+  .var {
+    color: #f2777a;
+  }
+
+  /* a function name */
+  .fun {
+    color: #6699cc;
+  }
+}
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str {
+    color: #006600;
+  }
+
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+
+  .lit {
+    color: #004444;
+  }
+
+  .pun, .opn, .clo {
+    color: #444400;
+  }
+
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .atn {
+    color: #440044;
+  }
+
+  .atv {
+    color: #006600;
+  }
+}
+/* Style */
+pre.prettyprint {
+  background: #495563;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #FFF;
+}
+
+/* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  /* */
+}
+
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  /* */
+}
