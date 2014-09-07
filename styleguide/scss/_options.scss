@@ -8,6 +8,24 @@ $brand-font: 'Lato', sans-serif;
 * Colors
 *
 */
-$blue: blue;
-$blue-light: blue;
-$blue-dark: navy;
+$blue: #1B9AF7;
+$green: #A5DE37;
+$ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF #333) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
+
+
+
+/*
+* Layer Indexing
+*
+* Can be use for z-index
+*/
+$layer-1: 1;
+$layer-2: 2;
+$layer-3: 3;
+$layer-4: 4;
+$layer-5: 5;
+$layer-6: 6;
+$layer-7: 7;
+$layer-8: 8;
+$layer-9: 9;
+$layer-10: 10;

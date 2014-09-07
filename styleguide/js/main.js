@@ -1,16 +1,5 @@
 $(document).ready(function(){
 
-  var helpers = {
-    htmlEncode: function(value){
-      return $('<div/>').text(value).html();
-    },
-
-    htmlDecode: function(value){
-      return $('<div/>').html(value).text();
-    }
-  };
-
-
   var page = {
     init: function() {
       this.buttons = $('#main-nav a');
@@ -25,11 +14,23 @@ $(document).ready(function(){
 
       $('.showcase').each(function(index, element) {
         var $showcase = $(element);
-        var buttonsHTML = helpers.htmlEncode($showcase.find('.showcase-examples:first').html().trim());
+        var $codeBox = $('<pre class="prettyprint is-preview linenums"></pre>');
+        var $overlay = $('<div class="prettyprint-overlay"></div>');
+        var exampleHTML = self._encodeHTML($showcase.find('.showcase-examples:first').html().trim());
 
-        $showcase.append('<pre class="prettyprint linenums">' + buttonsHTML + '</pre>');
+        //Add click event for overlay
+        $overlay.on('click', function(e) {
+          $overlay.hide();
+          $codeBox.removeClass('is-preview');
+        });
+
+        //Update prettyprint container content
+        $codeBox.html(exampleHTML);
+        $codeBox.append($overlay);
+        $showcase.append($codeBox);
       });
 
+      // Intialize Pretty Print
       prettyPrint();
     },
 
@@ -57,6 +58,10 @@ $(document).ready(function(){
       $('[href^=#]').on('click', function(e) {
         e.preventDefault();
       });
+    },
+
+    _encodeHTML: function(str) {
+      return String(str).replace(/(<br>)\s+/gim, '').replace(/\t+/gim, '').replace(/(href="#" )*/gim, '').replace(/&/g, '&amp;').replace(/(<)+/g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
   };
 

@@ -6,6 +6,11 @@
 * Colors
 *
 */
+/*
+* Layer Indexing
+*
+* Can be use for z-index
+*/
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
 /* ==========================================================================
  HTML5 display definitions
@@ -506,7 +511,7 @@ table {
   margin-right: auto; }
 
 .hero-dark {
-  background: #000; }
+  background: #1B9AF7; }
 
 .logo {
   display: block;
@@ -525,7 +530,7 @@ table {
 
 .hero {
   padding: 140px 40px;
-  background: #000;
+  background: #1B9AF7;
   text-align: center;
   color: #FFF; }
   .hero .hero-title {
@@ -556,18 +561,49 @@ table {
   font-size: 18px;
   margin: 0px 0px 40px 0px; }
 
-/* Tomorrow Night Eighties Theme */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* Pretty printing styles. Used with prettify.js. */
-/* SPAN elements with the classes below are added by prettyprint. */
-/* plain text */
-.pln {
-  color: #cccccc; }
+/*
+* Code Base Styles
+*
+*/
+.prettyprint {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  background: #FFF;
+  font-family: Monaco, Consolas, monospace;
+  font-size: 14px; }
+  .prettyprint.is-preview {
+    max-height: 100px; }
+  .prettyprint .linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #afdbfc;
+    line-height: 1.5; }
+  .prettyprint .prettyprint-overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.9)));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)); }
 
+/*
+* Sreen Style Language Formatting
+*
+*/
 @media screen {
   /* string content */
   .str {
     color: #99cc99; }
+
+  .pln {
+    color: #999; }
 
   /* a keyword */
   .kwd {
@@ -620,8 +656,14 @@ table {
   /* a function name */
   .fun {
     color: #6699cc; } }
-/* Use higher contrast and text-weight for printable form. */
+/*
+* Print Style Language Formatting
+*
+*/
 @media print, projection {
+  .is-preview {
+    max-height: 100% !important; }
+
   .str {
     color: #006600; }
 
@@ -652,38 +694,3 @@ table {
 
   .atv {
     color: #006600; } }
-/* Style */
-pre.prettyprint {
-  background: #495563;
-  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
-  font-size: 12px;
-  line-height: 1.5;
-  border: 1px solid #cccccc;
-  padding: 10px; }
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #FFF; }
-
-/* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L4,
-li.L5,
-li.L6,
-li.L7,
-li.L8,
-li.L9 {
-  /* */ }
-
-/* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
-  /* */ }
