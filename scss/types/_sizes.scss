@@ -6,17 +6,18 @@
 */
 @each $ubtn-size in $ubtn-sizes {
   $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
-  $ubtn-circel-namespace: #{$ubtn-namespace}-circle;
+  $ubtn-circle-namespace: #{$ubtn-namespace}-circle;
 
   #{$ubtn-size-namespace} {
     @if $ubtn-size == 'giant' {
       font-size: $ubtn-jumbofs * 1.2;
       height: $ubtn-height * 2.5;
       line-height: $ubtn-height * 2.5;
-      padding: 0px ($ubtn-height * 2.5) * 1;
+      padding: 0px ($ubtn-height * 2.5);
 
-      &#{$ubtn-circel-namespace} {
+      &#{$ubtn-circle-namespace} {
         width: $ubtn-height * 2.5;
+        line-height: $ubtn-height * 2.5 - 4;
       }
     }
 
@@ -24,10 +25,11 @@
       font-size: $ubtn-jumbofs;
       height: $ubtn-height * 1.6;
       line-height: $ubtn-height * 1.6;
-      padding: 0px ($ubtn-height * 1.6) * 1;
+      padding: 0px ($ubtn-height * 1.6);
 
-      &#{$ubtn-circel-namespace} {
+      &#{$ubtn-circle-namespace} {
         width: $ubtn-height * 1.6;
+        line-height: $ubtn-height * 1.6 - 4;
       }
     }
 
@@ -35,10 +37,11 @@
       font-size: $ubtn-largefs;
       height: $ubtn-height * 1.2;
       line-height: $ubtn-height * 1.2;
-      padding: 0px ($ubtn-height * 1.2) * 1;
+      padding: 0px ($ubtn-height * 1.2);
 
-      &#{$ubtn-circel-namespace} {
+      &#{$ubtn-circle-namespace} {
         width: $ubtn-height * 1.2;
+        line-height: $ubtn-height * 1.2 - 4;
       }
     }
 
@@ -46,10 +49,11 @@
       font-size: $ubtn-smallfs;
       height: $ubtn-height * .75;
       line-height: $ubtn-height * .75;
-      padding: 0px ($ubtn-height * .75) * 1;
+      padding: 0px ($ubtn-height * .75);
 
-      &#{$ubtn-circel-namespace} {
+      &#{$ubtn-circle-namespace} {
         width: $ubtn-height * .75;
+        line-height: $ubtn-height * .75 - 4;
       }
     }
 
@@ -57,10 +61,11 @@
       font-size: $ubtn-tinyfs;
       height: $ubtn-height * .5;
       line-height: $ubtn-height * .5;
-      padding: 0px ($ubtn-height * .75) * 1;
+      padding: 0px ($ubtn-height * .5);
 
-      &#{$ubtn-circel-namespace} {
+      &#{$ubtn-circle-namespace} {
         width: $ubtn-height * .5;
+        line-height: $ubtn-height * .5 - 4;
       }
     }
   }

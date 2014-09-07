@@ -59,7 +59,7 @@
   background-color: #EEE;
   border-color: #EEE;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
   text-align: center;
@@ -75,6 +75,8 @@
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /*
   * Disabled State
   *
@@ -293,44 +295,49 @@
 * (ex. .button-large, .button-small, etc.)
 */
 .button-giant {
-  font-size: 28.8px;
+  font-size: 26.4px;
   height: 100px;
   line-height: 100px;
   padding: 0px 100px; }
   .button-giant.button-circle {
-    width: 100px; }
+    width: 100px;
+    line-height: 96px; }
 
 .button-jumbo {
-  font-size: 24px;
+  font-size: 22px;
   height: 64px;
   line-height: 64px;
   padding: 0px 64px; }
   .button-jumbo.button-circle {
-    width: 64px; }
+    width: 64px;
+    line-height: 60px; }
 
 .button-large {
-  font-size: 18px;
+  font-size: 16px;
   height: 48px;
   line-height: 48px;
   padding: 0px 48px; }
   .button-large.button-circle {
-    width: 48px; }
+    width: 48px;
+    line-height: 44px; }
 
 .button-small {
-  font-size: 14px;
+  font-size: 12px;
   height: 30px;
   line-height: 30px;
   padding: 0px 30px; }
   .button-small.button-circle {
-    width: 30px; }
+    width: 30px;
+    line-height: 26px; }
 
 .button-tiny {
-  font-size: 12px;
+  font-size: 10px;
   height: 20px;
   line-height: 20px;
-  padding: 0px 30px; }
+  padding: 0px 20px; }
   .button-tiny.button-circle {
-    width: 20px; }
+    width: 20px;
+    line-height: 16px; }
 
 /*
 * Border Buttons
@@ -1039,7 +1046,7 @@
 */
 .button-dropdown {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   position: relative;
   overflow: visible;
@@ -1082,7 +1089,7 @@
       display: block;
       padding: 0px 20px;
       text-decoration: none;
-      font-size: 12px;
+      font-size: 10px;
       color: #333;
       line-height: 30px;
       white-space: nowrap; }
