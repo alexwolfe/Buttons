@@ -562,6 +562,14 @@ table {
   margin: 0px 0px 40px 0px; }
 
 /*
+* Showcase Colors
+*
+*/
+.showcase-dark {
+  color: #FFF;
+  background: #1B9AF7; }
+
+/*
 * Code Base Styles
 *
 */
@@ -589,9 +597,9 @@ table {
     right: 0px;
     bottom: 0px;
     z-index: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.9)));
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)); }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(white));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), white);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), white); }
 
 /*
 * Sreen Style Language Formatting

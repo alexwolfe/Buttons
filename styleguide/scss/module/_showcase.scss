@@ -1,5 +1,4 @@
 .showcase {
-
   .showcase-title,
   .showcase-sub-title {
     font-family: $brand-font;
@@ -15,4 +14,14 @@
     font-size: 18px;
     margin: 0px 0px 40px 0px;
   }
+}
+
+/*
+* Showcase Colors
+*
+*/
+
+.showcase-dark {
+  color: #FFF;
+  background: $blue;
 }

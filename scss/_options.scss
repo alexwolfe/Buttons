@@ -37,9 +37,8 @@ $ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF
 $ubtn-shapes: 'pill' 'circle' 'rounded';
 $ubtn-glow-color: #2c9adb !default;
 $ubtn-bgcolor: #EEE !default;
-$ubtn-height: 32px !default;
-$ubtn-sizes: 'jumbo' 'large' 'small' 'tiny' !default;
-$ubtn-circle-size: 120px !default; //radius for circle buttons, circles only have one size
+$ubtn-height: 44px !default;
+$ubtn-sizes: 'giant' 'jumbo' 'large' 'small' 'tiny' !default;
 $ubtn-dropdown-background: #fcfcfc !default;
 $ubtn-dropdown-link-color: #333 !default;
 $ubtn-dropdown-link-hover: #FFF !default;

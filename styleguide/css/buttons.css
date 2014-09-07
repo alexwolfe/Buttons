@@ -63,9 +63,9 @@
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
   text-align: center;
-  line-height: 32px;
-  height: 32px;
-  padding: 0px 32px;
+  line-height: 44px;
+  height: 44px;
+  padding: 0px 44px;
   margin: 0;
   display: inline-block;
   appearance: none;
@@ -75,6 +75,8 @@
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /*
   * Disabled State
   *
@@ -274,15 +276,14 @@
 * (ex. Circle, Rounded, Pill)
 */
 .button-pill {
-  border-radius: 50px; }
+  border-radius: 200px; }
 
 .button-circle {
-  border-radius: 1000%;
-  width: 120px;
-  line-height: 120px;
-  height: 120px;
-  font-size: 18px;
-  padding: 0px; }
+  padding: 0px !important;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 100%; }
 
 .button-rounded {
   border-radius: 3px; }
@@ -293,38 +294,45 @@
 * This file creates the various button sizes
 * (ex. .button-large, .button-small, etc.)
 */
+.button-giant {
+  font-size: 24px;
+  height: 110px;
+  line-height: 110px;
+  padding: 0px 110px; }
+  .button-giant.button-circle {
+    width: 110px; }
+
 .button-jumbo {
   font-size: 24px;
-  height: 51.2px;
-  line-height: 51.2px;
-  padding: 0px 40.96px; }
+  height: 70.4px;
+  line-height: 70.4px;
+  padding: 0px 70.4px; }
+  .button-jumbo.button-circle {
+    width: 70.4px; }
 
 .button-large {
   font-size: 18px;
-  height: 38.4px;
-  line-height: 38.4px;
-  padding: 0px 30.72px; }
-
-input.button-large, button.button-large {
-  height: 40.4px; }
+  height: 52.8px;
+  line-height: 52.8px;
+  padding: 0px 52.8px; }
+  .button-large.button-circle {
+    width: 52.8px; }
 
 .button-small {
   font-size: 14px;
-  height: 25.6px;
-  line-height: 24px;
-  padding: 0px 20.48px; }
-
-input.button-small, button.button-small {
-  height: 27.6px; }
+  height: 33px;
+  line-height: 33px;
+  padding: 0px 33px; }
+  .button-small.button-circle {
+    width: 33px; }
 
 .button-tiny {
   font-size: 12px;
-  height: 22.4px;
-  line-height: 22.4px;
-  padding: 0px 19.2px; }
-
-input.button-tiny, button.button-tiny {
-  height: 24.4px; }
+  height: 22px;
+  line-height: 22px;
+  padding: 0px 33px; }
+  .button-tiny.button-circle {
+    width: 22px; }
 
 /*
 * Border Buttons

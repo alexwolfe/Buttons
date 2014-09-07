@@ -5,49 +5,63 @@
 * (ex. .button-large, .button-small, etc.)
 */
 @each $ubtn-size in $ubtn-sizes {
+  $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
+  $ubtn-circel-namespace: #{$ubtn-namespace}-circle;
 
-  #{$ubtn-namespace}-#{$ubtn-size} {
+  #{$ubtn-size-namespace} {
+    @if $ubtn-size == 'giant' {
+      font-size: $ubtn-jumbofs;
+      height: $ubtn-height * 2.5;
+      line-height: $ubtn-height * 2.5;
+      padding: 0px ($ubtn-height * 2.5) * 1;
+
+      &#{$ubtn-circel-namespace} {
+        width: $ubtn-height * 2.5;
+      }
+    }
+
     @if $ubtn-size == 'jumbo' {
       font-size: $ubtn-jumbofs;
       height: $ubtn-height * 1.6;
       line-height: $ubtn-height * 1.6;
-      padding: 0px ($ubtn-height * 1.6) * .8;
+      padding: 0px ($ubtn-height * 1.6) * 1;
+
+      &#{$ubtn-circel-namespace} {
+        width: $ubtn-height * 1.6;
+      }
     }
 
     @if $ubtn-size == 'large' {
       font-size: $ubtn-largefs;
       height: $ubtn-height * 1.2;
       line-height: $ubtn-height * 1.2;
-      padding: 0px ($ubtn-height * 1.2) * .8;
+      padding: 0px ($ubtn-height * 1.2) * 1;
+
+      &#{$ubtn-circel-namespace} {
+        width: $ubtn-height * 1.2;
+      }
     }
 
     @if $ubtn-size == 'small' {
       font-size: $ubtn-smallfs;
-      height: $ubtn-height * .8;
+      height: $ubtn-height * .75;
       line-height: $ubtn-height * .75;
-      padding: 0px ($ubtn-height * .8) * .8;
+      padding: 0px ($ubtn-height * .75) * 1;
+
+      &#{$ubtn-circel-namespace} {
+        width: $ubtn-height * .75;
+      }
     }
 
     @if $ubtn-size == 'tiny' {
       font-size: $ubtn-tinyfs;
-      height: $ubtn-height * .7;
-      line-height: $ubtn-height * .7;
-      padding: 0px ($ubtn-height * .75) * .8;
-    }
-  }
+      height: $ubtn-height * .5;
+      line-height: $ubtn-height * .5;
+      padding: 0px ($ubtn-height * .75) * 1;
 
-  //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
-  input#{$ubtn-namespace}-#{$ubtn-size}, button#{$ubtn-namespace}-#{$ubtn-size} {
-    @if $ubtn-size == 'large' {
-      height: ($ubtn-height * 1.2) + 2;
-    }
-
-    @if $ubtn-size == 'small' {
-      height: ($ubtn-height * .8) + 2;
-    }
-
-    @if $ubtn-size == 'tiny' {
-      height: ($ubtn-height * .7) + 2;
+      &#{$ubtn-circel-namespace} {
+        width: $ubtn-height * .5;
+      }
     }
   }
 }
