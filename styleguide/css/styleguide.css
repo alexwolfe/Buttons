@@ -551,12 +551,37 @@ table {
     margin: 10px; }
 
 .phone {
-  height: 600px;
-  width: 290px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 120px 30px 110px 40px;
+  position: relative;
+  height: 810px;
+  width: 380px;
   background: url("../images/iphone.png") top left no-repeat; }
+  .phone .phone-status-bar {
+    background: url("../images/iphone-status-bar.png") top left no-repeat;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+    height: 20px;
+    z-index: 2; }
+  .phone .phone-header {
+    padding: 30px 10px 10px 10px;
+    background: #0880d7;
+    text-align: center; }
+  .phone .phone-screen {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+    bottom: 124px;
+    z-index: 1; }
+  .phone .phone-footer {
+    padding: 20px 60px;
+    background: #088ef0;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 124px;
+    z-index: 2; }
 
 .showcase .showcase-title,
 .showcase .showcase-sub-title {

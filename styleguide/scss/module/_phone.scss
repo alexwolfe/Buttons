@@ -1,7 +1,41 @@
 .phone {
-  height: 600px;
-  width: 290px;
-  box-sizing: border-box;
-  padding: 120px 30px 110px 40px;
+  position: relative;
+  height: 810px;
+  width: 380px;
   background: url("../images/iphone.png") top left no-repeat;
+
+  .phone-status-bar {
+    background: url("../images/iphone-status-bar.png") top left no-repeat;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+    height: 20px;
+    z-index: $layer-2;
+  }
+
+  .phone-header {
+    padding: 30px 10px 10px 10px;
+    background: darken($blue, 10%);
+    text-align: center;
+  }
+
+  .phone-screen {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 30px;
+    bottom: 124px;
+    z-index: $layer-1;
+  }
+
+  .phone-footer {
+    padding: 20px 60px;
+    background: darken($blue, 5%);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 124px;
+    z-index: $layer-2;
+  }
 }

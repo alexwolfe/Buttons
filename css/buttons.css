@@ -63,9 +63,9 @@
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
   text-align: center;
-  line-height: 44px;
-  height: 44px;
-  padding: 0px 44px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0px 40px;
   margin: 0;
   display: inline-block;
   appearance: none;
@@ -278,9 +278,9 @@
 
 .button-circle {
   padding: 0px !important;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   border-radius: 100%; }
 
 .button-rounded {
@@ -294,43 +294,43 @@
 */
 .button-giant {
   font-size: 28.8px;
-  height: 110px;
-  line-height: 110px;
-  padding: 0px 110px; }
+  height: 100px;
+  line-height: 100px;
+  padding: 0px 100px; }
   .button-giant.button-circle {
-    width: 110px; }
+    width: 100px; }
 
 .button-jumbo {
   font-size: 24px;
-  height: 70.4px;
-  line-height: 70.4px;
-  padding: 0px 70.4px; }
+  height: 64px;
+  line-height: 64px;
+  padding: 0px 64px; }
   .button-jumbo.button-circle {
-    width: 70.4px; }
+    width: 64px; }
 
 .button-large {
   font-size: 18px;
-  height: 52.8px;
-  line-height: 52.8px;
-  padding: 0px 52.8px; }
+  height: 48px;
+  line-height: 48px;
+  padding: 0px 48px; }
   .button-large.button-circle {
-    width: 52.8px; }
+    width: 48px; }
 
 .button-small {
   font-size: 14px;
-  height: 33px;
-  line-height: 33px;
-  padding: 0px 33px; }
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 30px; }
   .button-small.button-circle {
-    width: 33px; }
+    width: 30px; }
 
 .button-tiny {
   font-size: 12px;
-  height: 22px;
-  line-height: 22px;
-  padding: 0px 33px; }
+  height: 20px;
+  line-height: 20px;
+  padding: 0px 30px; }
   .button-tiny.button-circle {
-    width: 22px; }
+    width: 20px; }
 
 /*
 * Border Buttons
