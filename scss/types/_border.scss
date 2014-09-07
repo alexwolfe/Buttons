@@ -66,12 +66,12 @@
       &:hover,
       &:focus {
         background-color: rgba(lighten($ubtn-background, 10%), .9);
-        color: $ubtn-color;
+        color: rgba($ubtn-color, .7);
       }
 
       &:active {
         background-color: rgba(desaturate($ubtn-background, 10%), .7);
-        //color: darken($ubtn-background, 10%);
+        color: rgba($ubtn-color, .5);
       }
     }
   }

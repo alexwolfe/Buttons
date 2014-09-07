@@ -22,7 +22,6 @@
   transition-property: all;
   transition-duration:.3s;
   border: none;
-  box-sizing: border-box;
 
   // Compass Mixins
   @if $ubtn-use-compass {

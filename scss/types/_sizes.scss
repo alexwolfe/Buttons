@@ -10,7 +10,7 @@
 
   #{$ubtn-size-namespace} {
     @if $ubtn-size == 'giant' {
-      font-size: $ubtn-jumbofs;
+      font-size: $ubtn-jumbofs * 1.2;
       height: $ubtn-height * 2.5;
       line-height: $ubtn-height * 2.5;
       padding: 0px ($ubtn-height * 2.5) * 1;
