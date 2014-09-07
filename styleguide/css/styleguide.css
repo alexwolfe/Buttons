@@ -550,6 +550,14 @@ table {
     display: inline-block;
     margin: 10px; }
 
+.phone {
+  height: 600px;
+  width: 290px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 120px 30px 110px 40px;
+  background: url("../images/iphone.png") top left no-repeat; }
+
 .showcase .showcase-title,
 .showcase .showcase-sub-title {
   font-family: "Lato", sans-serif;
@@ -579,7 +587,6 @@ table {
   padding: 20px;
   border: 1px solid #EEE;
   border-radius: 10px;
-  background: #FFF;
   font-family: Monaco, Consolas, monospace;
   font-size: 14px; }
   .prettyprint.is-preview {
