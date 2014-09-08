@@ -4,69 +4,13 @@
 * This file creates the various button sizes
 * (ex. .button-large, .button-small, etc.)
 */
-@each $ubtn-size in $ubtn-sizes {
+@each $ubtn-size, $ubtn-multiplier in $ubtn-sizes {
   $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
-  $ubtn-circle-namespace: #{$ubtn-namespace}-circle;
 
   #{$ubtn-size-namespace} {
-    @if $ubtn-size == 'giant' {
-      font-size: $ubtn-jumbofs * 1.2;
-      height: $ubtn-height * 2.5;
-      line-height: $ubtn-height * 2.5;
-      padding: 0px ($ubtn-height * 2.5);
-
-      &#{$ubtn-circle-namespace} {
-        width: $ubtn-height * 2.5;
-        line-height: $ubtn-height * 2.5 - 4;
-      }
-    }
-
-    @if $ubtn-size == 'jumbo' {
-      font-size: $ubtn-jumbofs;
-      height: $ubtn-height * 1.6;
-      line-height: $ubtn-height * 1.6;
-      padding: 0px ($ubtn-height * 1.6);
-
-      &#{$ubtn-circle-namespace} {
-        width: $ubtn-height * 1.6;
-        line-height: $ubtn-height * 1.6 - 4;
-      }
-    }
-
-    @if $ubtn-size == 'large' {
-      font-size: $ubtn-largefs;
-      height: $ubtn-height * 1.2;
-      line-height: $ubtn-height * 1.2;
-      padding: 0px ($ubtn-height * 1.2);
-
-      &#{$ubtn-circle-namespace} {
-        width: $ubtn-height * 1.2;
-        line-height: $ubtn-height * 1.2 - 4;
-      }
-    }
-
-    @if $ubtn-size == 'small' {
-      font-size: $ubtn-smallfs;
-      height: $ubtn-height * .75;
-      line-height: $ubtn-height * .75;
-      padding: 0px ($ubtn-height * .75);
-
-      &#{$ubtn-circle-namespace} {
-        width: $ubtn-height * .75;
-        line-height: $ubtn-height * .75 - 4;
-      }
-    }
-
-    @if $ubtn-size == 'tiny' {
-      font-size: $ubtn-tinyfs;
-      height: $ubtn-height * .5;
-      line-height: $ubtn-height * .5;
-      padding: 0px ($ubtn-height * .5);
-
-      &#{$ubtn-circle-namespace} {
-        width: $ubtn-height * .5;
-        line-height: $ubtn-height * .5 - 4;
-      }
-    }
+    font-size: $ubtn-font-size * $ubtn-multiplier;
+    height: $ubtn-height * $ubtn-multiplier;
+    line-height: $ubtn-height * $ubtn-multiplier;
+    padding: 0px ($ubtn-height * $ubtn-multiplier);
   }
 }

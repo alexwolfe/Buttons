@@ -44,16 +44,17 @@
 }
 
 
-/*
-* Border Button Colors
-*
-* Create colors for buttons
-* (.button-primary, .button-secondary, etc.)
-*/
+
 #{$ubtn-namespace}-border,
 #{$ubtn-namespace}-border-thin,
 #{$ubtn-namespace}-border-thick {
 
+  /*
+  * Border Button Colors
+  *
+  * Create colors for buttons
+  * (.button-primary, .button-secondary, etc.)
+  */
   @each $ubtn-color in $ubtn-colors {
     $ubtn-name: nth($ubtn-color, 1);
     $ubtn-background: nth($ubtn-color, 2);
@@ -73,6 +74,20 @@
         background-color: rgba(desaturate($ubtn-background, 10%), .7);
         color: rgba($ubtn-color, .5);
       }
+    }
+  }
+
+  /*
+  * Border Button Size Adjustment
+  *
+  * The line-height must be adjusted to compinsate for
+  * the width of the border.
+  */
+  @each $ubtn-size, $ubtn-multiplier in $ubtn-sizes {
+    $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
+
+    &#{$ubtn-size-namespace} {
+      line-height: $ubtn-height * $ubtn-multiplier - 4;
     }
   }
 }

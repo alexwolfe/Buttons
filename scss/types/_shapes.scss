@@ -4,39 +4,34 @@
 * This file creates the various button shapes
 * (ex. Circle, Rounded, Pill)
 */
-@each $ubtn-shape in $ubtn-shapes {
+@each $ubtn-shape, $ubtn-shape-radius in $ubtn-shapes {
   #{$ubtn-namespace}-#{$ubtn-shape} {
-    @if $ubtn-shape == 'rounded' {
-      @if($ubtn-use-compass) {
-        @include border-radius(3px);
-      }
-      @else {
-        border-radius: 3px;
-      }
+    @if($ubtn-use-compass) {
+      @include border-radius($ubtn-shape-radius);
     }
-
-    @if $ubtn-shape == 'pill' {
-      @if($ubtn-use-compass) {
-        @include border-radius(200px);
-      }
-      @else {
-        border-radius: 200px;
-      }
+    @else {
+      border-radius: $ubtn-shape-radius;
     }
+  }
+}
 
-    @if $ubtn-shape == 'circle' {
-      padding: 0px !important;
-      width: $ubtn-height;
-      height: $ubtn-height;
-      line-height: $ubtn-height;
+/*
+* Circle Button Size Adjustment
+*
+* The line-height must be adjusted to compinsate for
+* the width of the border.
+*/
+#{$ubtn-namespace}-circle {
+  padding: 0px !important;
+  width: $ubtn-height;
+  height: $ubtn-height;
+  line-height: $ubtn-height;
 
-      //COMPASS MIXIN
-      @if($ubtn-use-compass) {
-        @include border-radius(100%);
-      }
-      @else {
-        border-radius: 100%;
-      }
+  @each $ubtn-size, $ubtn-multiplier in $ubtn-sizes {
+    $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
+
+    &#{$ubtn-size-namespace} {
+      width: $ubtn-height * $ubtn-multiplier;
     }
   }
 }

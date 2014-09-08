@@ -34,16 +34,26 @@ $ubtn-glow-namespace: '.glow' !default;
 * generates a class like .button-primary, .button-secondary, etc.
 */
 $ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF #333) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
-$ubtn-shapes: 'pill' 'circle' 'rounded';
+$ubtn-sizes: (
+  giant: 2,
+  jumbo: 1.5,
+  large: 1.25,
+  default: 1,
+  small: .75,
+  tiny: .5
+) !default;
+$ubtn-shapes: (
+  pill: 200px,
+  circle: 100%,
+  rounded: 3px
+) !default;
 $ubtn-glow-color: #2c9adb !default;
 $ubtn-bgcolor: #EEE !default;
 $ubtn-height: 40px !default;
-$ubtn-sizes: 'giant' 'jumbo' 'large' 'small' 'tiny' !default;
 $ubtn-dropdown-background: #fcfcfc !default;
 $ubtn-dropdown-link-color: #333 !default;
 $ubtn-dropdown-link-hover: #FFF !default;
 $ubtn-dropdown-link-hover-background: #3c6ab9 !default;
-
 
 
 /*

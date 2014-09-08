@@ -61,7 +61,7 @@ $(document).ready(function(){
     },
 
     _encodeHTML: function(str) {
-      return String(str).replace(/(<br>)\s+/gim, '').replace(/\t+/gim, '').replace(/(href="#" )*/gim, '').replace(/&/g, '&amp;').replace(/(<)+/g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return String(str).replace(/(<br>)/gim, '').replace(/\t+/gim, '').replace(/(href="#" )*/gim, '').replace(/&/g, '&amp;').replace(/(<)+/g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
   };
 
