@@ -285,6 +285,9 @@
 .button-square {
   border-radius: 0px; }
 
+.button-box {
+  border-radius: 10px; }
+
 .button-rounded {
   border-radius: 3px; }
 
@@ -300,25 +303,32 @@
 * Remove padding and set a fixed width.
 */
 .button-circle,
+.button-box,
 .button-square {
   padding: 0px !important;
   width: 40px; }
   .button-circle.button-giant,
+  .button-box.button-giant,
   .button-square.button-giant {
     width: 80px; }
   .button-circle.button-jumbo,
+  .button-box.button-jumbo,
   .button-square.button-jumbo {
     width: 60px; }
   .button-circle.button-large,
+  .button-box.button-large,
   .button-square.button-large {
     width: 50px; }
   .button-circle.button-default,
+  .button-box.button-default,
   .button-square.button-default {
     width: 40px; }
   .button-circle.button-small,
+  .button-box.button-small,
   .button-square.button-small {
     width: 30px; }
   .button-circle.button-tiny,
+  .button-box.button-tiny,
   .button-square.button-tiny {
     width: 20px; }
 
