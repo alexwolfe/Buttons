@@ -550,26 +550,30 @@
 .hero .social-buttons .github-button {
   min-width: 100px;
 }
+/* line 66, ../scss/partials/_hero.scss */
+.hero .fb-like {
+  vertical-align: top;
+}
 
 @media only screen and (max-width: 480px) {
-  /* line 73, ../scss/partials/_hero.scss */
+  /* line 76, ../scss/partials/_hero.scss */
   .hero {
     padding-left: 0;
     padding-right: 0;
     padding-top: 60px;
   }
-  /* line 78, ../scss/partials/_hero.scss */
+  /* line 81, ../scss/partials/_hero.scss */
   .hero h1 {
     font-size: 60px;
     line-height: 60px;
   }
-  /* line 82, ../scss/partials/_hero.scss */
+  /* line 85, ../scss/partials/_hero.scss */
   .hero h2 {
     margin: 20px 40px 0px 40px;
     font-size: 18px;
     line-height: 24px;
   }
-  /* line 90, ../scss/partials/_hero.scss */
+  /* line 93, ../scss/partials/_hero.scss */
   .hero .hero-call-to-action .download {
     margin-bottom: 10px;
   }
