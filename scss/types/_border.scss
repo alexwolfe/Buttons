@@ -8,6 +8,7 @@
   background: none;
   border-width: 2px;
   border-style: solid;
+  line-height: $ubtn-height - 4;
 
   &:hover {
     background-color: rgba(lighten($ubtn-bgcolor, 10%), .9)

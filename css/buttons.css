@@ -128,6 +128,13 @@
   font-variant: small-caps; }
 
 /*
+* Base padding
+*
+*/
+.button-width-small {
+  padding: 0px 10px !important; }
+
+/*
 * Base Colors
 *
 * Create colors for buttons
@@ -356,7 +363,8 @@
 .button-border, .button-border-thin, .button-border-thick {
   background: none;
   border-width: 2px;
-  border-style: solid; }
+  border-style: solid;
+  line-height: 36px; }
   .button-border:hover, .button-border-thin:hover, .button-border-thick:hover {
     background-color: rgba(255, 255, 255, 0.9); }
   .button-border:active, .button-border-thin:active, .button-border-thick:active {
@@ -530,6 +538,69 @@
   .button-border-thin.button-tiny,
   .button-border-thick.button-tiny {
     line-height: 16px; }
+
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+.button-borderless {
+  background: none;
+  border: none;
+  padding: 0px 8px !important;
+  color: #EEE;
+  font-size: 18.2px;
+  font-weight: 200;
+  /*
+  * Borderless Button Colors
+  *
+  * Create colors for buttons
+  * (.button-primary, .button-secondary, etc.)
+  */
+  /*
+  * Borderles Size Adjustment
+  *
+  * The font-size must be large to compinsate for
+  * the lack of a hit target.
+  */ }
+  .button-borderless:hover, .button-borderless:focus {
+    background: none; }
+  .button-borderless:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    -webkit-transition-property: all;
+            transition-property: all;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    opacity: .5; }
+  .button-borderless.button-primary {
+    color: #1B9AF7; }
+  .button-borderless.button-secondary {
+    color: #DCD4F9; }
+  .button-borderless.button-plain {
+    color: #FFF; }
+  .button-borderless.button-action {
+    color: #A5DE37; }
+  .button-borderless.button-highlight {
+    color: #FEAE1B; }
+  .button-borderless.button-caution {
+    color: #FF4351; }
+  .button-borderless.button-royal {
+    color: #7B72E9; }
+  .button-borderless.button-giant {
+    font-size: 36.4px; }
+  .button-borderless.button-jumbo {
+    font-size: 27.3px; }
+  .button-borderless.button-large {
+    font-size: 22.75px; }
+  .button-borderless.button-default {
+    font-size: 18.2px; }
+  .button-borderless.button-small {
+    font-size: 13.65px; }
+  .button-borderless.button-tiny {
+    font-size: 9.1px; }
 
 /*
 * Raised Buttons
@@ -1130,7 +1201,7 @@
       display: block;
       padding: 0px 20px;
       text-decoration: none;
-      font-size: 10px;
+      font-size: 14px;
       color: #333;
       line-height: 30px;
       white-space: nowrap; }

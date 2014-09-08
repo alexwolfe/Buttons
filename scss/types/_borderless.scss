@@ -1,0 +1,68 @@
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+#{$ubtn-namespace}-borderless {
+  background: none;
+  border: none;
+  padding: 0px 8px !important;
+  color: $ubtn-bgcolor;
+  font-size: $ubtn-font-size * 1.3;
+  font-weight: 200;
+
+  &:hover,
+  &:focus {
+    background: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    text-shadow: none;
+
+    @if $ubtn-use-compass {
+      @include transition-property(all);
+      @include transition-duration(.3s);
+      @include opacity(.5);
+    }
+    @else {
+      transition-property: all;
+      transition-duration:.3s;
+      opacity: .5;
+    }
+  }
+
+
+  /*
+  * Borderless Button Colors
+  *
+  * Create colors for buttons
+  * (.button-primary, .button-secondary, etc.)
+  */
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+    &#{$ubtn-color-namespace} {
+      color: $ubtn-background;
+    }
+  }
+
+
+  /*
+  * Borderles Size Adjustment
+  *
+  * The font-size must be large to compinsate for
+  * the lack of a hit target.
+  */
+  @each $ubtn-size, $ubtn-multiplier in $ubtn-sizes {
+    $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
+
+    &#{$ubtn-size-namespace} {
+      font-size: $ubtn-font-size * $ubtn-multiplier * 1.3;
+    }
+  }
+}

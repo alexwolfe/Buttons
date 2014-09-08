@@ -15,9 +15,33 @@
   }
 
   .phone-header {
-    padding: 30px 10px 10px 10px;
+    padding: 20px 0px 0px 0px;
     background: darken($blue, 10%);
     text-align: center;
+    height: 44px;
+
+    > h3 {
+      font-family: $brand-font;
+      font-weight: 100;
+      font-style: 18px;
+      margin: 0px;
+      padding: 0px;
+      line-height: 44px;
+    }
+
+    .button-left {
+      position: absolute;
+      left: 0px;
+      top: 22px;
+      z-index: $layer-1;
+    }
+
+    .button-right {
+      position: absolute;
+      right: 0px;
+      top: 22px;
+      z-index: $layer-1;
+    }
   }
 
   .phone-screen {

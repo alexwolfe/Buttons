@@ -4,7 +4,7 @@
 * The default values for the .button class
 */
 #{$ubtn-namespace} {
-  color:  $ubtn-font-color;
+  color: $ubtn-font-color;
   background-color: $ubtn-bgcolor;
   border-color: $ubtn-bgcolor;
   font-weight: $ubtn-font-weight;
@@ -100,6 +100,15 @@
 #{$ubtn-namespace}-small-caps {
   font-variant: small-caps;
 }
+
+/*
+* Base padding
+*
+*/
+#{$ubtn-namespace}-width-small {
+  padding: 0px 10px !important;
+}
+
 
 
 /*

@@ -564,9 +564,27 @@ table {
     height: 20px;
     z-index: 2; }
   .phone .phone-header {
-    padding: 30px 10px 10px 10px;
+    padding: 20px 0px 0px 0px;
     background: #0880d7;
-    text-align: center; }
+    text-align: center;
+    height: 44px; }
+    .phone .phone-header > h3 {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-style: 18px;
+      margin: 0px;
+      padding: 0px;
+      line-height: 44px; }
+    .phone .phone-header .button-left {
+      position: absolute;
+      left: 0px;
+      top: 22px;
+      z-index: 1; }
+    .phone .phone-header .button-right {
+      position: absolute;
+      right: 0px;
+      top: 22px;
+      z-index: 1; }
   .phone .phone-screen {
     position: absolute;
     top: 120px;
