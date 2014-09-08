@@ -24,12 +24,12 @@
     @if $ubtn-use-compass {
       @include transition-property(all);
       @include transition-duration(.3s);
-      @include opacity(.5);
+      @include opacity(.3);
     }
     @else {
       transition-property: all;
       transition-duration:.3s;
-      opacity: .5;
+      opacity: .3;
     }
   }
 

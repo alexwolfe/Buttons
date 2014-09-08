@@ -574,7 +574,7 @@
             transition-property: all;
     -webkit-transition-duration: .3s;
             transition-duration: .3s;
-    opacity: .5; }
+    opacity: .3; }
   .button-borderless.button-primary {
     color: #1B9AF7; }
   .button-borderless.button-secondary {
