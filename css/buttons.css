@@ -287,14 +287,11 @@
 /*
 * Circle Button Size Adjustment
 *
-* The line-height must be adjusted to compinsate for
-* the width of the border.
+* Remove padding and set a fixed width.
 */
 .button-circle {
   padding: 0px !important;
-  width: 40px;
-  height: 40px;
-  line-height: 40px; }
+  width: 40px; }
   .button-circle.button-giant {
     width: 80px; }
   .button-circle.button-jumbo {
