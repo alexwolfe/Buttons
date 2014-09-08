@@ -282,34 +282,44 @@
 * This file creates the various button shapes
 * (ex. Circle, Rounded, Pill)
 */
+.button-square {
+  border-radius: 0px; }
+
+.button-rounded {
+  border-radius: 3px; }
+
 .button-pill {
   border-radius: 200px; }
 
 .button-circle {
   border-radius: 100%; }
 
-.button-rounded {
-  border-radius: 3px; }
-
 /*
 * Circle Button Size Adjustment
 *
 * Remove padding and set a fixed width.
 */
-.button-circle {
+.button-circle,
+.button-square {
   padding: 0px !important;
   width: 40px; }
-  .button-circle.button-giant {
+  .button-circle.button-giant,
+  .button-square.button-giant {
     width: 80px; }
-  .button-circle.button-jumbo {
+  .button-circle.button-jumbo,
+  .button-square.button-jumbo {
     width: 60px; }
-  .button-circle.button-large {
+  .button-circle.button-large,
+  .button-square.button-large {
     width: 50px; }
-  .button-circle.button-default {
+  .button-circle.button-default,
+  .button-square.button-default {
     width: 40px; }
-  .button-circle.button-small {
+  .button-circle.button-small,
+  .button-square.button-small {
     width: 30px; }
-  .button-circle.button-tiny {
+  .button-circle.button-tiny,
+  .button-square.button-tiny {
     width: 20px; }
 
 /*
@@ -590,17 +600,29 @@
   .button-borderless.button-royal {
     color: #7B72E9; }
   .button-borderless.button-giant {
-    font-size: 36.4px; }
+    font-size: 36.4px;
+    height: 52.4px;
+    line-height: 52.4px; }
   .button-borderless.button-jumbo {
-    font-size: 27.3px; }
+    font-size: 27.3px;
+    height: 43.3px;
+    line-height: 43.3px; }
   .button-borderless.button-large {
-    font-size: 22.75px; }
+    font-size: 22.75px;
+    height: 38.75px;
+    line-height: 38.75px; }
   .button-borderless.button-default {
-    font-size: 18.2px; }
+    font-size: 18.2px;
+    height: 34.2px;
+    line-height: 34.2px; }
   .button-borderless.button-small {
-    font-size: 13.65px; }
+    font-size: 13.65px;
+    height: 29.65px;
+    line-height: 29.65px; }
   .button-borderless.button-tiny {
-    font-size: 9.1px; }
+    font-size: 9.1px;
+    height: 25.1px;
+    line-height: 25.1px; }
 
 /*
 * Raised Buttons

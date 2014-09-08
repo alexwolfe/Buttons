@@ -20,7 +20,8 @@
 *
 * Remove padding and set a fixed width.
 */
-#{$ubtn-namespace}-circle {
+#{$ubtn-namespace}-circle,
+#{$ubtn-namespace}-square {
   padding: 0px !important;
   width: $ubtn-height;
 

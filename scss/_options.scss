@@ -45,9 +45,10 @@ $ubtn-sizes: (
 ) !default;
 
 $ubtn-shapes: (
+  square: 0px,
+  rounded: 3px,
   pill: 200px,
-  circle: 100%,
-  rounded: 3px
+  circle: 100%
 ) !default;
 
 $ubtn-glow-color: #2c9adb !default;
