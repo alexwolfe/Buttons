@@ -1263,18 +1263,20 @@
     line-height: 0;
     width: 0;
     height: 0; }
-  .button-group .button {
+  .button-group .button,
+  .button-group .button-dropdown {
     float: left; }
-    .button-group .button:focus, .button-group .button:hover, .button-group .button.active {
-      z-index: 5; }
-    .button-group .button:not(:first-child):not(:last-child) {
+    .button-group .button:not(:first-child):not(:last-child),
+    .button-group .button-dropdown:not(:first-child):not(:last-child) {
       border-radius: 0;
       border-right: none; }
-    .button-group .button:first-child {
+    .button-group .button:first-child,
+    .button-group .button-dropdown:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       border-right: none; }
-    .button-group .button:last-child {
+    .button-group .button:last-child,
+    .button-group .button-dropdown:last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
 

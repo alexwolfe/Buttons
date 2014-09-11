@@ -9,13 +9,10 @@
   position: relative;
   display: inline-block;
 
-  #{$ubtn-namespace} {
+  #{$ubtn-namespace},
+  #{$ubtn-namespace}-dropdown {
     float: left;
 
-    &:focus, &:hover, &.active {
-      z-index: 5;
-    }
-    //Take rounded corners off all middle buttons
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
       border-right: none;
