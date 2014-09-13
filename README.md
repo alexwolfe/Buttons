@@ -32,6 +32,7 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 5. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
 
 	`$ compass watch # compile with Compass`
+
 	`$ sass --watch --scss scss/buttons.scss:css/buttons.css # compile with Sass`
 
 6. The `css/buttons.css` file should now be updated
