@@ -1,14 +1,12 @@
-Buttons
-=======
+# Buttons
 
-Buttons is a fully customizable CSS button library that's built using Sass & Compass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
+Buttons is a fully customizable CSS button library that's built using Sass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
 
 Quickly get started by [visiting the Buttons Builder Website](http://alexwolfe.github.io/Buttons/) where you can view live examples and fully customize your Buttons download.
 
 [![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/builder.png "Example of Buttons")](http://alexwolfe.github.io/Buttons/)
 
-Setup & Installation
-====================
+## Setup & Installation
 
 1. Visit the [Buttons Builder Website](http://alexwolfe.github.io/Buttons/), download and add files to your website.
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
@@ -20,74 +18,64 @@ Setup & Installation
 4. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
 
 
-or Install with Bower
-====================
+## or Install with Bower
 You can also install Buttons using [Bower](http://bower.io/) if you're using that for your package management.
 
-`Bower install Buttons`
+`bower install buttons`
 
-Using as a Partial
-==================
-You can easily import Buttons as a partial into an existing project.
-
-```css
-@import 'partials/buttons';
-```
-
-The buttons partial will, in turn, import compass plus any additional partials included in the Buttons library that you'll need.
-
-Customize Buttons
-====================
+##Customize Buttons
 
 1. Clone the Buttons repo
-2. Make sure you have Sass and Compass installed
-3. Edit the `partials/_options.scss` with your own custom values (see example values below)
-4. Run the *compass watch* command from the root directory of the Buttons directory from the command line
-5. The buttons.css file should now be updated
+2. Make sure you have Sass installed
+3. Run `npm install; bower install` from your terminal
+4. Edit the `_options.scss` with your own custom values (see example values below)
+5. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
+	`$ compass watch # compile with Compass`
+	`$ sass --watch --scss scss/buttons.scss:css/buttons.css # compile with Sass`
+6. The `css/buttons.css` file should now be updated
 
 
-General Options
----------------
+### General Options
 
-In order to edit your Button options, simply change option values within the *partials/_options.scss* file to your liking. After you make your edits run *compass watch* in the root of the button directory and the updates should take place.
-You can open up index.html in a browser to view your changes.
+In order to edit your Button options, simply change option values within the `_options.scss` file to your liking. After you make your edits run `compass watch`, or, `sass --watch --scss scss/buttons.scss:css/buttons.css` from Button's root directory and your updates should be reflected in `css/buttons.css`.
 
-* **$unicorn-btn-namespace:**  Desired CSS namespace for your buttons (default .button)
-* **$unicorn-btn-glow_namespace:** Desired CSS namespace for your glow effect (default .glow)
-* **$unicorn-btn-glow_color:** Default glow color (#2c9adb, light blue)
-* **$unicorn-btn-bgcolor:** Default button background color (#EEE, light gray)
-* **$unicorn-btn-height:** Default height, also used to calculate padding on the sides (32px)
-* **$unicorn-btn-font-color:** Default font color (#666, gray)
-* **$unicorn-btn-font-size:** Default font size (14px)
-* **$unicorn-btn-font-weight:** Default font weight (300)
-* **$unicorn-btn-font-family:**  Default font family ("HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif)
+At any time, you can directly open up the `index.html` file in a browser to view your changes.
 
+#### Options
 
-Advanced Options
-----------------
-
-The only option you should adjust here is the button actions. When you need to add/remove/edit another button
-color simply add/remove/edit one of the items in the list. There is no limit to the number of items in your list (hint: you can create additional items if you wish). Each item will create a new button.
-
-* **$unicorn-btn-actions:** Edit this to add new buttons ('name' background-color font-color) example: ('highlight' #F18D05 #FFF) ('caution' #E54028 #FFF)
-* **$unicorn-btn-types:** Correspond to the styles avaialble ('rounded' 'pill' 'circle')
-* **$unicorn-btn-sizes:** Correspond to the sizes avaialble ('large' 'small' 'tiny')
-* **$unicorn-btn-circle-size:** Radius for circle buttons, circles only have one size (120px)
-
-* **$unicorn-btn-dropdown-background:** Backround color of dropdown menu
-* **$unicorn-btn-dropdown-link-color:** Link color in dropdown menu
-* **$unicorn-btn-dropdown-link-hover:** Hover color for link in dropdown menu
-* **$unicorn-btn-dropdown-link-hover-background:** Background hover color for link in dropdown menu
+* **$ubtn:** This prefix stands for Unicorn Button and prevents namespace collisions that could occur if you import buttons as part of your Sass build process. We kindly ask you not to use the prefix $ubtn in your project in order to avoid possilbe name conflicts. Thanks!
+* **$ubtn-namespace:**  Desired CSS namespace for your buttons (default .button)
+* **$ubtn-glow-namespace:** Desired CSS namespace for your glow effect (default .glow)
+* **$ubtn-colors:** List of colors in format like `(name, background, color)`.
+* **$ubtn-shapes:** List of shapes in format like `(square 0px)`. You can use Sass maps if you're using 3.3. See `_options.scss` for details.
+* **$ubtn-sizes:** List of sizes in format like `(jumbo 1.5)`. You can use Sass maps if you're using 3.3. See `_options.scss` for details.
+* **$ubtn-glow-color:** Default glow color (#2c9adb, light blue)
+* **$ubtn-bgcolor:** Default button background color (#EEE, light gray)
+* **$ubtn-height:** Default height, also used to calculate padding on the sides (32px)
+* **$ubtn-dropdown-background:** Default dropdown background color.
+* **$ubtn-dropdown-link-color:** Default dropdown link color.
+* **$ubtn-dropdown-link-hover:** Default dropdown link hover color.
+* **$ubtn-dropdown-link-hover-background:** Default dropdown link hover background color.
+* **$ubtn-font-family:**  Default font family
+* **$ubtn-font-color:** Default font color (#666, gray)
+* **$ubtn-font-weight:** Default font weight
+* **$ubtn-font-size:** Default font size (14px). You can also specify a value of `inherit` and it will be respected.
 
 
-Browser Support
-====================
+## Excluding Button Types
+
+By default, Buttons will compile all *Button Types* to your `css/buttons.css` file. However, you can exclude types from your compilation unit in order to improve performance. To do so, simply comment out or delete the *import* line for that button type. For example, to remove the 3D button type, find the corresponding line in the `scss/button.scss` file that reads:
+```shell
+@import 'types/3d';
+```
+and comment out or remove that line and then recompile (see instructions on how to compile above).
+
+## Browser Support
 Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all the way down to Internet Explorer 8.
 
 
-Authors
-===================
-Created by Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis)
+## Authors
+Created by Unicorn-UI (visit us at [unicorn-ui.com](unicorn-ui.com)) whos team members consist of Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis).
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alexwolfe/buttons/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
