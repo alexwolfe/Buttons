@@ -1,6 +1,19 @@
 {
   "name": "Buttons",
   "version": "2.0.0",
+  "description": "A CSS button library built with Sass",
+  "author": "Unicorn-UI <updates@unicorn-ui.com>",
+  "homepage": "http://unicorn-ui.com/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexwolfe/Buttons.git"
+  },
+  "contributors": "https://github.com/alexwolfe/Buttons/graphs/contributors",
+  "keywords": ["Buttons", "Sass Buttons"],
+  "license": "Apache License, Version 2.0",
+  "bugs": {
+    "url": "https://github.com/alexwolfe/Buttons/issues"
+  },
   "devDependencies": {
     "grunt-autoprefixer": "^0.8.1",
     "grunt-contrib-clean": "^0.6.0",
