@@ -4,8 +4,12 @@
 * This file creates the various button shapes
 * (ex. Circle, Rounded, Pill)
 */
-@each $ubtn-shape, $ubtn-shape-radius in $ubtn-shapes {
-  #{$ubtn-namespace}-#{$ubtn-shape} {
+
+@each $ubtn-shape in $ubtn-shapes {
+  $ubtn-shape-name: nth($ubtn-shape, 1);
+  $ubtn-shape-radius: nth($ubtn-shape, 2);
+
+  #{$ubtn-namespace}-#{$ubtn-shape-name} {
     @if($ubtn-use-compass) {
       @include border-radius($ubtn-shape-radius);
     }
@@ -15,8 +19,9 @@
   }
 }
 
+
 /*
-* Circle Button Size Adjustment
+* Size Adjustment for equal height & widht buttons
 *
 * Remove padding and set a fixed width.
 */

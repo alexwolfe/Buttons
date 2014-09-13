@@ -35,22 +35,27 @@ $ubtn-glow-namespace: '.glow' !default;
 */
 $ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF #333) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
 
-$ubtn-sizes: (
-  giant: 2,
-  jumbo: 1.5,
-  large: 1.25,
-  default: 1,
-  small: .75,
-  tiny: .5
-) !default;
+$ubtn-shapes: (square 0px) (box 10px) (rounded 3px) (pill 200px) (circle 100%) !default;
+// Use a map if you prefer when running Sass 3.3+
+// $ubtn-shapes: (
+//   square: 0px,
+//   box: 10px,
+//   rounded: 3px,
+//   pill: 200px,
+//   circle: 100%
+// ) !default;
 
-$ubtn-shapes: (
-  square: 0px,
-  box: 10px,
-  rounded: 3px,
-  pill: 200px,
-  circle: 100%
-) !default;
+$ubtn-sizes: (giant 2) (jumbo 1.5) (large 1.25) (default 1) (small .75) (tiny .5) !default;
+// Use a map if you prefer when running Sass 3.3+
+// $ubtn-sizes: (
+//   giant: 2,
+//   jumbo: 1.5,
+//   large: 1.25,
+//   default: 1,
+//   small: .75,
+//   tiny: .5
+// ) !default;
+
 
 $ubtn-glow-color: #2c9adb !default;
 $ubtn-bgcolor: #EEE !default;
@@ -68,7 +73,7 @@ $ubtn-dropdown-link-hover-background: #3c6ab9 !default;
 $ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
 $ubtn-font-color: #666 !default;
 $ubtn-font-weight: 300 !default;
-$ubtn-font-size: 14px !default;
+$ubtn-font-size: 16px !default;
 $ubtn-tinyfs: $ubtn-font-size - 4;
 $ubtn-smallfs: $ubtn-font-size - 2;
 $ubtn-largefs: $ubtn-font-size + 2;

@@ -57,7 +57,7 @@ module.exports = function (grunt) {
           banner: '/* Buttons */'
         },
         files: {
-          'tmp/css/buttons.css': ['tmp/css/buttons.css']
+          'tmp/css/buttons.min.css': ['tmp/css/buttons.css']
         }
       }
     },
@@ -154,5 +154,5 @@ module.exports = function (grunt) {
   *
   */
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
-  grunt.registerTask('dev', ['sass', 'autoprefixer', 'copy', 'clean', 'connect', 'watch']);
+  grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
 };
