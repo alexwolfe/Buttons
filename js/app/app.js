@@ -28,6 +28,12 @@
             //NOTE: We have to use global jquery to grab all .download classes on the page
             $('.download').addClass('disabled');
             $('.customize').addClass('disabled');
+
+            //Track GA Event
+            // https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide
+            var d = new Date();
+            var customizedAt = d.getMonth() + '-' + d.getDate() + '-' + d.getFullYear() + '__' + d.getHours() + ':' + d.getMinutes();
+            _gaq.push(['_trackEvent', 'Customize', 'Customized-Buttons-Options', 'Customized-At--' + customizedAt]);
         },
 
         render: function() {
@@ -157,7 +163,16 @@
                 //CREATE A URL FROM MODEL VALUES
                 var payload = this.model.getPayload();
                 var url = this.url + payload;
+                var start = new Date().getTime();
                 window.open(url, 'Download');
+                var finished = new Date().getTime();
+                var timeItTook = finished - start;
+
+                //Track GA Event and append -<TIME IT TOOK>
+                // https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide
+                // _trackEvent(category, action, opt_label, opt_value, opt_noninteraction)
+                _gaq.push(['_trackEvent', 'Downloads', 'Downloaded-Buttons-Zip', 'Download-Time', timeItTook, true]);
+
             }
         }
     });
