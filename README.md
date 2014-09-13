@@ -23,7 +23,7 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 
 `bower install buttons`
 
-##Customize Buttons
+## Customize Buttons
 
 1. Clone the Buttons repo
 2. Make sure you have Sass installed
@@ -34,6 +34,14 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 	`$ sass --watch --scss scss/buttons.scss:css/buttons.css # compile with Sass`
 6. The `css/buttons.css` file should now be updated
 
+## Grunt
+
+If you plan to make any significant modifications or contributions to Buttons, you'll likely want to take advantage of the Grunt tasks available. You'll of course need to ensure you have [Grunt Setup](http://gruntjs.com/). You can run one of the following from the root directory of Buttons:
+
+```shell
+grunt # default task which compiles with sass and leverages autoprefixer and cssmin
+grunt dev # does same as above but starts a &ldquo;live watch&rdquo; too
+```
 
 ### General Options
 
