@@ -644,6 +644,7 @@
   border-color: #e1e1e1;
   border-style: solid;
   border-width: 1px;
+  line-height: 38px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
   background: -webkit-linear-gradient(#f6f6f6, #e1e1e1);
   background: linear-gradient(#f6f6f6, #e1e1e1);
@@ -756,37 +757,21 @@
 * real life button.
 */
 .button-3d {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #e1e1e1;
   position: relative;
   top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#e9e9e9));
-  background: -webkit-linear-gradient(#f3f3f3, #e9e9e9);
-  background: linear-gradient(#f3f3f3, #e9e9e9); }
+  -webkit-box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2); }
   .button-3d:hover, .button-3d:focus {
-    background-color: white;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ebebeb));
-    background: -webkit-linear-gradient(white, #ebebeb);
-    background: linear-gradient(white, #ebebeb); }
+    -webkit-box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2); }
   .button-3d:active {
-    background-color: #eeeeee;
-    color: #bbbbbb;
-    border: 1px solid #e1e1e1;
     top: 5px;
     -webkit-transition-property: all;
             transition-property: all;
     -webkit-transition-duration: .3s;
             transition-duration: .3s;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#e9e9e9), to(#f3f3f3));
-    background: -webkit-linear-gradient(#e9e9e9, #f3f3f3);
-    background: linear-gradient(#e9e9e9, #f3f3f3); }
+    -webkit-box-shadow: 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 
 /*
 * 3D Button Colors
@@ -795,180 +780,68 @@
 * (.button-primary, .button-secondary, etc.)
 */
 .button-3d.button-primary {
-  border: 1px solid #0880d7;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #0880d7, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #0880d7, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#259ef7), to(#1196f7));
-  background: -webkit-linear-gradient(#259ef7, #1196f7);
-  background: linear-gradient(#259ef7, #1196f7); }
+  -webkit-box-shadow: 0px 7px 0px #0880d7, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #0880d7, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-primary:hover, .button-3d.button-primary:focus {
-    background-color: #4cb0f9;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #077ace, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #077ace, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(#42abf8), to(#1698f7));
-    background: -webkit-linear-gradient(#42abf8, #1698f7);
-    background: linear-gradient(#42abf8, #1698f7); }
+    -webkit-box-shadow: 0px 7px 0px #077ace, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #077ace, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-primary:active {
-    border: 1px solid #088ef0;
-    top: 5px;
-    color: #0880d7;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #0662a6, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #0662a6, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#1196f7), to(#259ef7));
-    background: -webkit-linear-gradient(#1196f7, #259ef7);
-    background: linear-gradient(#1196f7, #259ef7); }
+    -webkit-box-shadow: 0px 2px 0px #0662a6, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #0662a6, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-secondary {
-  border: 1px solid #b8a7f3;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b8a7f3, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b8a7f3, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#e3ddfa), to(#d5cbf8));
-  background: -webkit-linear-gradient(#e3ddfa, #d5cbf8);
-  background: linear-gradient(#e3ddfa, #d5cbf8); }
+  -webkit-box-shadow: 0px 7px 0px #b8a7f3, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #b8a7f3, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-secondary:hover, .button-3d.button-secondary:focus {
-    background-color: white;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b09ef2, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #b09ef2, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(#f9f8fe), to(#d8d0f8));
-    background: -webkit-linear-gradient(#f9f8fe, #d8d0f8);
-    background: linear-gradient(#f9f8fe, #d8d0f8); }
+    -webkit-box-shadow: 0px 7px 0px #b09ef2, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #b09ef2, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-secondary:active {
-    border: 1px solid #cabef6;
-    top: 5px;
-    color: #b8a7f3;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #937aed, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #937aed, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#d5cbf8), to(#e3ddfa));
-    background: -webkit-linear-gradient(#d5cbf8, #e3ddfa);
-    background: linear-gradient(#d5cbf8, #e3ddfa); }
+    -webkit-box-shadow: 0px 2px 0px #937aed, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #937aed, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-plain {
-  border: 1px solid #e6e6e6;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafafa));
-  background: -webkit-linear-gradient(white, #fafafa);
-  background: linear-gradient(white, #fafafa); }
+  -webkit-box-shadow: 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-plain:hover, .button-3d.button-plain:focus {
-    background-color: white;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fcfcfc));
-    background: -webkit-linear-gradient(white, #fcfcfc);
-    background: linear-gradient(white, #fcfcfc); }
+    -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-plain:active {
-    border: 1px solid #f2f2f2;
-    top: 5px;
-    color: #e6e6e6;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(white));
-    background: -webkit-linear-gradient(#fafafa, white);
-    background: linear-gradient(#fafafa, white); }
+    -webkit-box-shadow: 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-action {
-  border: 1px solid #8bc220;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #8bc220, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #8bc220, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#a9df40), to(#a1dd2e));
-  background: -webkit-linear-gradient(#a9df40, #a1dd2e);
-  background: linear-gradient(#a9df40, #a1dd2e); }
+  -webkit-box-shadow: 0px 7px 0px #8bc220, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #8bc220, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-action:hover, .button-3d.button-action:focus {
-    background-color: #b9e563;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #84b91f, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #84b91f, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(#b5e45a), to(#a3dd33));
-    background: -webkit-linear-gradient(#b5e45a, #a3dd33);
-    background: linear-gradient(#b5e45a, #a3dd33); }
+    -webkit-box-shadow: 0px 7px 0px #84b91f, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #84b91f, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-action:active {
-    border: 1px solid #9ad824;
-    top: 5px;
-    color: #8bc220;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #6b9619, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #6b9619, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#a1dd2e), to(#a9df40));
-    background: -webkit-linear-gradient(#a1dd2e, #a9df40);
-    background: linear-gradient(#a1dd2e, #a9df40); }
+    -webkit-box-shadow: 0px 2px 0px #6b9619, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #6b9619, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-highlight {
-  border: 1px solid #e59501;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e59501, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #e59501, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#feb225), to(#feaa11));
-  background: -webkit-linear-gradient(#feb225, #feaa11);
-  background: linear-gradient(#feb225, #feaa11); }
+  -webkit-box-shadow: 0px 7px 0px #e59501, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #e59501, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-highlight:hover, .button-3d.button-highlight:focus {
-    background-color: #fec04e;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #db8e01, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #db8e01, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(#febc44), to(#feac16));
-    background: -webkit-linear-gradient(#febc44, #feac16);
-    background: linear-gradient(#febc44, #feac16); }
+    -webkit-box-shadow: 0px 7px 0px #db8e01, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #db8e01, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-highlight:active {
-    border: 1px solid #fea502;
-    top: 5px;
-    color: #e59501;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #b27401, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #b27401, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#feaa11), to(#feb225));
-    background: -webkit-linear-gradient(#feaa11, #feb225);
-    background: linear-gradient(#feaa11, #feb225); }
+    -webkit-box-shadow: 0px 2px 0px #b27401, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #b27401, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-caution {
-  border: 1px solid #ff1022;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #ff1022, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #ff1022, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff4d5a), to(#ff3948));
-  background: -webkit-linear-gradient(#ff4d5a, #ff3948);
-  background: linear-gradient(#ff4d5a, #ff3948); }
+  -webkit-box-shadow: 0px 7px 0px #ff1022, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #ff1022, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-caution:hover, .button-3d.button-caution:focus {
-    background-color: #ff7680;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #ff0618, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #ff0618, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff6c77), to(#ff3e4c));
-    background: -webkit-linear-gradient(#ff6c77, #ff3e4c);
-    background: linear-gradient(#ff6c77, #ff3e4c); }
+    -webkit-box-shadow: 0px 7px 0px #ff0618, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #ff0618, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-caution:active {
-    border: 1px solid #ff2939;
-    top: 5px;
-    color: #ff1022;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #dc0010, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #dc0010, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff3948), to(#ff4d5a));
-    background: -webkit-linear-gradient(#ff3948, #ff4d5a);
-    background: linear-gradient(#ff3948, #ff4d5a); }
+    -webkit-box-shadow: 0px 2px 0px #dc0010, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #dc0010, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-royal {
-  border: 1px solid #5246e2;
-  position: relative;
-  top: 0px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5246e2, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #5246e2, 0px 8px 3px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#837bea), to(#7369e8));
-  background: -webkit-linear-gradient(#837bea, #7369e8);
-  background: linear-gradient(#837bea, #7369e8); }
+  -webkit-box-shadow: 0px 7px 0px #5246e2, 0px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 0px #5246e2, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-royal:hover, .button-3d.button-royal:focus {
-    background-color: #a49ef0;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #493de1, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 7px 0px #493de1, 0px 8px 3px rgba(0, 0, 0, 0.3);
-    background: -webkit-gradient(linear, left top, left bottom, from(#9c95ef), to(#776ee8));
-    background: -webkit-linear-gradient(#9c95ef, #776ee8);
-    background: linear-gradient(#9c95ef, #776ee8); }
+    -webkit-box-shadow: 0px 7px 0px #493de1, 0px 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 7px 0px #493de1, 0px 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-royal:active {
-    border: 1px solid #665ce6;
-    top: 5px;
-    color: #5246e2;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #2f21d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(255, 255, 255, 0.15), 0px 2px 0px #2f21d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
-    background: -webkit-gradient(linear, left top, left bottom, from(#7369e8), to(#837bea));
-    background: -webkit-linear-gradient(#7369e8, #837bea);
-    background: linear-gradient(#7369e8, #837bea); }
+    -webkit-box-shadow: 0px 2px 0px #2f21d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 0px #2f21d4, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 
 /*
 * Glowing Buttons
