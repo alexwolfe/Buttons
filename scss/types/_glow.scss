@@ -7,45 +7,10 @@
 */
 
 
-@if($ubtn-use-compass) {
-  @include keyframes(glowing) {
-    from { @include box-shadow(0px 0px 0px rgba($ubtn-glow-color, 0.3));}
-    50% { @include box-shadow(0px 0px 20px rgba($ubtn-glow-color, 0.8));}
-    to { @include box-shadow(0px 0px 0px rgba($ubtn-glow-color, 0.3));}
-  }
-}
-@else {
-  @keyframes glowing {
-  from { box-shadow: 0px 0px 0px rgba($ubtn-glow-color, 0.3);}
-  50% { box-shadow: 0px 0px 20px rgba($ubtn-glow-color, 0.8);}
-  to { box-shadow: 0px 0px 0px rgba($ubtn-glow-color, 0.3);}
-  }
-}
-
-
-
-@each $ubtn-color in $ubtn-colors {
-  $ubtn-name: nth($ubtn-color, 1);
-  $ubtn-background: nth($ubtn-color, 2);
-  $ubtn-color: nth($ubtn-color, 3);
-
-  @if($ubtn-use-compass) {
-    @include keyframes(glowing-#{$ubtn-name}) {
-      from { @include box-shadow(0px 0px 0px rgba($ubtn-background, 0.3));}
-      50% { @include box-shadow(0px 0px 20px rgba($ubtn-background, 0.8));}
-      to { @include box-shadow(0px 0px 0px rgba($ubtn-background, 0.3));}
-    }
-  }
-  @else {
-    @keyframes glowing-#{$ubtn-name} {
-    from { box-shadow: 0px 0px 0px rgba($ubtn-background, 0.3);}
-    50% { box-shadow: 0px 0px 20px rgba($ubtn-background, 0.8);}
-    to { box-shadow: 0px 0px 0px rgba($ubtn-background, 0.3);}
-    }
-  }
-}
-
-
+/*
+* Glow animation mixin for Compass users
+*
+*/
 @mixin glow($animation-name) {
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
@@ -66,14 +31,51 @@
   animation-name: $animation-name;
 }
 
-@mixin no_animation {
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -ms-animation-name: none;
-  -o-animation-name: none;
-  animation-name: none;
+
+/*
+* Glowing Keyframes
+*
+*/
+@if($ubtn-use-compass) {
+  @include keyframes(glowing) {
+    from { @include box-shadow(0px 0px 0px rgba($ubtn-glow-color, 0.3));}
+    50% { @include box-shadow(0px 0px 20px rgba($ubtn-glow-color, 0.8));}
+    to { @include box-shadow(0px 0px 0px rgba($ubtn-glow-color, 0.3));}
+  }
+}
+@else {
+  @keyframes glowing {
+  from { box-shadow: 0px 0px 0px rgba($ubtn-glow-color, 0.3);}
+  50% { box-shadow: 0px 0px 20px rgba($ubtn-glow-color, 0.8);}
+  to { box-shadow: 0px 0px 0px rgba($ubtn-glow-color, 0.3);}
+  }
 }
 
+
+/*
+* Glowing Keyframes for various colors
+*
+*/
+@each $ubtn-color in $ubtn-colors {
+  $ubtn-name: nth($ubtn-color, 1);
+  $ubtn-background: nth($ubtn-color, 2);
+  $ubtn-color: nth($ubtn-color, 3);
+
+  @if($ubtn-use-compass) {
+    @include keyframes(glowing-#{$ubtn-name}) {
+      from { @include box-shadow(0px 0px 0px rgba($ubtn-background, 0.3));}
+      50% { @include box-shadow(0px 0px 20px rgba($ubtn-background, 0.8));}
+      to { @include box-shadow(0px 0px 0px rgba($ubtn-background, 0.3));}
+    }
+  }
+  @else {
+    @keyframes glowing-#{$ubtn-name} {
+    from { box-shadow: 0px 0px 0px rgba($ubtn-background, 0.3);}
+    50% { box-shadow: 0px 0px 20px rgba($ubtn-background, 0.8);}
+    to { box-shadow: 0px 0px 0px rgba($ubtn-background, 0.3);}
+    }
+  }
+}
 
 /*
 * Glowing Buttons Base Styes

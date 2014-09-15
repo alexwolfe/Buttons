@@ -128,7 +128,7 @@ module.exports = function (grunt) {
     watch: {
       scripts: {
         files: ['js/**/*.js', 'styleguide/js/**/*.js'],
-        tasks: ['clean']
+        tasks: ['copy:js_styleguide', 'clean']
       },
       sass: {
         files: ['scss/**/*.scss', 'styleguide/scss/**/*.scss'],

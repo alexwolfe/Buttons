@@ -66,10 +66,11 @@
   &.disabled, &.disabled:hover, &.disabled:focus, &.disabled:active,
   &.is-disabled, &.is-disabled:hover, &.is-disabled:focus, &.is-disabled:active,
   &:disabled {
+    top: 0 !important;
     opacity:.8 !important;
     background: #EEE !important;
     border: 1px solid #DDD !important;
-    box-shadow: none;
+    box-shadow: none !important;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 1) !important;
     color: #CCC !important;
     cursor: default !important;

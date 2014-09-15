@@ -50,6 +50,16 @@
 *
 */
 /*
+* No Animation
+*
+* Sets animation property to none
+*/
+/*
+* Clearfix
+*
+* Clears floats inside the container
+*/
+/*
 * Base Button Style
 *
 * The default values for the .button class
@@ -101,11 +111,12 @@
     border-color: #d4d4d4;
     color: #d4d4d4; }
   .button.disabled, .button.disabled:hover, .button.disabled:focus, .button.disabled:active, .button.is-disabled, .button.is-disabled:hover, .button.is-disabled:focus, .button.is-disabled:active, .button:disabled {
+    top: 0 !important;
     opacity: .8 !important;
     background: #EEE !important;
     border: 1px solid #DDD !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     text-shadow: 0 1px 1px white !important;
     color: #CCC !important;
     cursor: default !important;
@@ -768,8 +779,8 @@
     top: 5px;
     -webkit-transition-property: all;
             transition-property: all;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
+    -webkit-transition-duration: .15s;
+            transition-duration: .15s;
     -webkit-box-shadow: 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2); }
 
@@ -850,6 +861,14 @@
 * rythmically around the edges of
 * a button.
 */
+/*
+* Glow animation mixin for Compass users
+*
+*/
+/*
+* Glowing Keyframes
+*
+*/
 @-webkit-keyframes glowing {
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
@@ -870,6 +889,10 @@
   to {
     -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
             box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3); } }
+/*
+* Glowing Keyframes for various colors
+*
+*/
 @-webkit-keyframes glowing-primary {
   from {
     -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
@@ -1063,15 +1086,15 @@
 */
 .button-dropdown {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   position: relative;
   overflow: visible;
   display: inline-block; }
-  .button-dropdown .button-dropdown-menu-below {
-    top: 115%; }
-  .button-dropdown .button-dropdown-menu-above {
-    bottom: 115%;
+  .button-dropdown .button-dropdown-is-below {
+    top: 100%; }
+  .button-dropdown .button-dropdown-is-above {
+    bottom: 100%;
     top: auto; }
   .button-dropdown .button-dropdown-divider {
     border-top: 1px solid #e4e4e4; }
@@ -1080,13 +1103,13 @@
     display: none;
     position: absolute;
     background: #fcfcfc;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 1000;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
-    min-width: 102%;
+    min-width: 100%;
     -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
     border-radius: 3px; }
@@ -1095,26 +1118,15 @@
       padding: 0px;
       margin: 0px;
       display: block; }
+      .button-dropdown .button-dropdown-list > li .button,
+      .button-dropdown > ul > li .button {
+        display: block; }
       .button-dropdown .button-dropdown-list > li:first-child a,
       .button-dropdown > ul > li:first-child a {
         border-top-radius: 3px; }
       .button-dropdown .button-dropdown-list > li:last-child a,
       .button-dropdown > ul > li:last-child a {
         border-bottom-radius: 3px; }
-    .button-dropdown .button-dropdown-list a,
-    .button-dropdown > ul a {
-      display: block;
-      padding: 0px 20px;
-      text-decoration: none;
-      font-size: 16px;
-      color: #333;
-      line-height: 30px;
-      white-space: nowrap; }
-      .button-dropdown .button-dropdown-list a:hover, .button-dropdown .button-dropdown-list a:focus,
-      .button-dropdown > ul a:hover,
-      .button-dropdown > ul a:focus {
-        background-color: #3c6ab9;
-        color: #FFF; }
 
 /*
 * Buton Groups

@@ -6,17 +6,17 @@
 */
 #{$ubtn-namespace}-dropdown {
   font-weight: $ubtn-font-weight;
-  font-size: $ubtn-font-size;
+  font-size: $ubtn-font-size - 2;
   font-family: $ubtn-font-family;
   position: relative;
   overflow: visible;
   display: inline-block;
 
-  #{$ubtn-namespace}-dropdown-menu-below {
-    top: 115%;
+  #{$ubtn-namespace}-dropdown-is-below {
+    top: 100%;
   }
-  #{$ubtn-namespace}-dropdown-menu-above {
-    bottom: 115%;
+  #{$ubtn-namespace}-dropdown-is-above {
+    bottom: 100%;
     top: auto;
   }
 
@@ -30,13 +30,13 @@
     display: none;
     position: absolute;
     background: $ubtn-dropdown-background;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 1000;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
-    min-width: 102%;
+    min-width: 100%;
 
     @if($ubtn-use-compass) {
       @include box-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
@@ -51,6 +51,10 @@
       padding: 0px;
       margin: 0px;
       display: block;
+
+      #{$ubtn-namespace} {
+        display: block;
+      }
 
       &:first-child a {
         @if($ubtn-use-compass) {
@@ -67,21 +71,6 @@
         @else {
           border-bottom-radius: 3px;
         }
-      }
-    }
-
-    a {
-      display: block;
-      padding: 0px 20px;
-      text-decoration: none;
-      font-size: $ubtn-font-size;
-      color: $ubtn-dropdown-link-color;
-      line-height: 30px;
-      white-space: nowrap;
-
-      &:hover, &:focus {
-        background-color: $ubtn-dropdown-link-hover-background;
-        color: $ubtn-dropdown-link-hover;
       }
     }
   }

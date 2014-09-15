@@ -171,7 +171,7 @@
       <a href="#" class="button button-glow button-circle button-action button-jumbo"><i class="fa fa-thumbs-up"></i></a>
       <a href="#" class="button button-glow button-rounded button-highlight">press me</a>
       <a href="#" class="button button-glow button-rounded button-caution">press me</a>
-      <a href="#" class="button button-glow button-rounded button-royal">press me</a>
+      <a href="#" class="button button-glow  button-rounded button-royal button-3d">press me</a>
     </div>
   </section>
 
@@ -197,39 +197,54 @@
   <!-- DROPDOWN BUTTONS -->
   <section class="showcase l-padding-60">
     <header class="l-center">
-      <h3 class="showcase-title">3D Buttons</h3>
+      <h3 class="showcase-title">Dropdown Buttons</h3>
       <h4 class="showcase-sub-title"></h4>
     </header>
 
     <div class="showcase-examples l-center">
       <span class="button-dropdown" data-buttons="dropdown">
-        <a href="#" class="button button-rounded"> press me <i class="fa fa-caret-down"></i></a>
+        <a href="#" class="button button-rounded">
+          press me <i class="fa fa-caret-down"></i>
+        </a>
 
         <ul class="button-dropdown-list">
           <li><a href="#">Option 1</a></li>
           <li><a href="#">Option 2</a></li>
-          <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
+          <li class="button-dropdown-divider">
+            <a href="#">Option 3</a>
+          </li>
         </ul>
       </span>
 
       <span class="button-dropdown" data-buttons="dropdown">
-        <a href="#" class="button button-rounded button-primary"> press me <i class="fa fa-caret-down"></i></a>
+        <a href="#" class="button button-rounded button-primary">
+          <i class="fa fa-bars"></i> press me
+        </a>
 
-        <ul class="button-dropdown-menu-below">
-            <li><a href="#">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
-            <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
+        <ul class="button-dropdown-is-below">
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+          <li class="button-dropdown-divider">
+            <a href="#">Option 3</a>
+          </li>
         </ul>
       </span>
 
       <span class="button-dropdown" data-buttons="dropdown">
-        <a href="#" class="button button-rounded button-action"> press me <i class="fa fa-caret-down"></i></a>
+        <a href="#" class="button button-rounded button-action">
+          press me <i class="fa fa-caret-down"></i>
+        </a>
 
-        <ul class="button-dropdown-menu-above">
-            <li><a href="#">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
-            <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
+        <ul class="button-dropdown-is-above">
+          <li>
+            <a href="#" class="button button-primary">Option 1</a>
+          </li>
+          <li><a href="#">Option 2</a></li>
+          <li class="button-dropdown-divider">
+            <a href="#">Option 3</a>
+          </li>
         </ul>
+
       </span>
 
       <span class="button-dropdown" data-buttons="dropdown">
@@ -269,6 +284,104 @@
   </section>
 
 
+  <!-- GROUP BUTTONS -->
+  <section class="showcase l-padding-60">
+    <header class="l-center">
+      <h3 class="showcase-title">Buttons Groups</h3>
+      <h4 class="showcase-sub-title"></h4>
+    </header>
+
+    <div class="showcase-examples l-center">
+      <div class="button-group">
+        <button type="button" class="button button-primary">Option 1</button>
+        <button type="button" class="button button-primary">Option 2</button>
+        <button type="button" class="button button-primary">Option 3</button>
+        <span class="button-dropdown" data-buttons="dropdown">
+          <a href="#" class="button button-primary"> press me <i class="fa fa-caret-down"></i></a>
+
+          <ul>
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="button button-primary">Option 1</button>
+        <button type="button" class="button button-primary">Option 2</button>
+        <button type="button" class="button button-primary">Option 3</button>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="button button-pill button-action is-active">Option 1</button>
+        <button type="button" class="button button-pill button-action">Option 2</button>
+        <button type="button" class="button button-pill button-action">Option 3</button>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="button button-pill button-action">Option 1</button>
+        <button type="button" class="button button-pill button-action">Option 2</button>
+        <button type="button" class="button button-pill button-action">Option 3</button>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
+        <button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
+        <button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="button button-royal button-rounded">Option 1</button>
+        <button type="button" class="button button-royal button-rounded">Option 2</button>
+        <button type="button" class="button button-royal button-rounded">Option 3</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BLOCK BUTTONS -->
+  <section class="showcase l-padding-60">
+    <header class="l-center">
+      <h3 class="showcase-title">Block Buttons</h3>
+      <h4 class="showcase-sub-title"></h4>
+    </header>
+
+    <div class="showcase-examples l-center">
+      <a href="#" class="button button-block button-rounded button-large">press me</a>
+      <a href="#" class="button button-block button-rounded button-primary button-large">press me</a>
+      <a href="#" class="button button-block button-rounded button-action button-large">press me</a>
+      <a href="#" class="button button-block button-rounded button-highlight button-large">press me</a>
+      <a href="#" class="button button-block button-rounded button-caution button-large">press me</a>
+      <a href="#" class="button button-block button-rounded button-royal button-large">press me</a>
+    </div>
+  </section>
+
+
+
+  <!-- BUTTONS WRAPPERS-->
+  <section class="showcase l-padding-60">
+    <header class="l-center">
+      <h3 class="showcase-title">Button Wrappers</h3>
+      <h4 class="showcase-sub-title"></h4>
+    </header>
+
+    <div class="showcase-examples l-center">
+      <span class="button-wrap">
+        <a href="#" class="button button-circle">
+          <i class="fa fa-cloud"></i>
+        </a>
+      </span>
+      <span class="button-wrap">
+        <a href="#" class="button button-circle button-primary">
+          <i class="fa fa-cloud"></i>
+        </a>
+      </span>
+      <span class="button-wrap"><a href="#" class="button button-pill ">press me</a></span>
+      <span class="button-wrap"><a href="#" class="button button-pill button-primary">press me</a></span>
+    </div>
+  </section>
 
 
 
@@ -276,129 +389,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- ******************************************************************* -->
-        <!-- BLOCK BUTTONS *************************************************** -->
-        <!-- ******************************************************************* -->
-
-                <a href="#" class="button button-block button-rounded button-large">press me</a>
-                <br/>
-                <a href="#" class="button button-block button-rounded button-primary button-large">press me</a>
-                <br/>
-                <a href="#" class="button button-block button-rounded button-action button-large">press me</a>
-                <br/>
-                <a href="#" class="button button-block button-rounded button-highlight button-large">press me</a>
-                <br/>
-                <a href="#" class="button button-block button-rounded button-caution button-large">press me</a>
-                <br/>
-                <a href="#" class="button button-block button-rounded button-royal button-large">press me</a>
-
-
-
-
-
-
-        <!-- ******************************************************************* -->
-        <!-- WRAPPER BUTTONS *************************************************** -->
-        <!-- ******************************************************************* -->
-
-
-                <ul class="button-list">
-                    <li><span class="button-wrap"><a href="#" class="button button-circle">press me</a></span></li>
-                    <li><span class="button-wrap"><a href="#" class="button button-circle button-primary">press me</a></span></li>
-                    <li><span class="button-wrap"><a href="#" class="button button-pill ">press me</a></span></li>
-                    <li><span class="button-wrap"><a href="#" class="button button-pill button-primary">press me</a></span></li>
-                </ul>
-
-
-
-
-        <!-- ******************************************************************* -->
-        <!-- BUTTON GROUPS ***************************************************** -->
-        <!-- ******************************************************************* -->
-
-
-                <ul class="button-list">
-                    <li>
-                        <div class="button-group">
-                            <button type="button" class="button button-primary">Option 1</button>
-                            <button type="button" class="button button-primary">Option 2</button>
-                            <button type="button" class="button button-primary">Option 3</button>
-                            <span class="button-dropdown" data-buttons="dropdown">
-                              <a href="#" class="button button-primary"> press me <i class="fa fa-caret-down"></i></a>
-
-                              <ul>
-                                  <li><a href="#">Option 1</a></li>
-                                  <li><a href="#">Option 2</a></li>
-                                  <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
-                              </ul>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button-group">
-                            <button type="button" class="button button-primary">Option 1</button>
-                            <button type="button" class="button button-primary">Option 2</button>
-                            <button type="button" class="button button-primary">Option 3</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button-group">
-                            <button type="button" class="button button-pill button-action is-active">Option 1</button>
-                            <button type="button" class="button button-pill button-action">Option 2</button>
-                            <button type="button" class="button button-pill button-action">Option 3</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button-group">
-                            <button type="button" class="button button-pill button-action">Option 1</button>
-                            <button type="button" class="button button-pill button-action">Option 2</button>
-                            <button type="button" class="button button-pill button-action">Option 3</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button-group">
-                            <button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
-                            <button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
-                            <button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button-group">
-                            <button type="button" class="button button-royal button-rounded">Option 1</button>
-                            <button type="button" class="button button-royal button-rounded">Option 2</button>
-                            <button type="button" class="button button-royal button-rounded">Option 3</button>
-                        </div>
-                    </li>
-                </ul>
 
 
         <!-- ******************************************************************* -->
