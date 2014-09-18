@@ -84,7 +84,9 @@
   * The line-height must be adjusted to compinsate for
   * the width of the border.
   */
-  @each $ubtn-size, $ubtn-multiplier in $ubtn-sizes {
+  @each $ubtn-sizes-hash in $ubtn-sizes {
+    $ubtn-size: nth($ubtn-sizes-hash, 1);
+    $ubtn-multiplier : nth($ubtn-sizes-hash, 2);
     $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
 
     &#{$ubtn-size-namespace} {
