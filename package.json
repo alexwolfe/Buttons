@@ -9,7 +9,10 @@
     "url": "git@github.com:alexwolfe/Buttons.git"
   },
   "contributors": "https://github.com/alexwolfe/Buttons/graphs/contributors",
-  "keywords": ["Buttons", "Sass Buttons"],
+  "keywords": [
+    "Buttons",
+    "Sass Buttons"
+  ],
   "license": "Apache License, Version 2.0",
   "bugs": {
     "url": "https://github.com/alexwolfe/Buttons/issues"
@@ -20,7 +23,9 @@
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-qunit": "^0.5.2",
     "grunt-contrib-sass": "^0.7.4",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-saucelabs": "^8.3.2"
   }
 }

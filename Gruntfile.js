@@ -10,6 +10,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-saucelabs');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
 
   /**
   * Grunt Configuration
@@ -118,6 +120,13 @@ module.exports = function (grunt) {
           base: 'styleguide',
           open: true
         }
+      },
+      sauce: {
+        options: {
+          port: 9999,
+          hostname: 'localhost',
+          base: '',
+        }
       }
     },
 
@@ -145,7 +154,54 @@ module.exports = function (grunt) {
           'styleguide/**/*'
         ]
       }
+    },
+
+    /*
+    * QUnit
+    *
+    */
+    qunit: {
+      options: {
+        urls:[
+          'http://localhost:9999/js/tests/*.html'
+        ]
+      }
+    },
+
+    /*
+    * Saucelabs
+    * Requires environment variables set e.g. export SAUCE_USERNAME=XX; export SAUCE_ACCESS_KEY=XX
+    *
+    */
+    'saucelabs-qunit': { //DO NOT CHANGE NAME
+      all: {
+        options: {
+          build: process.env.TRAVIS_JOB_ID,
+          concurrency: 3,
+          tunnelTimeout: 5,
+          urls: ['http://localhost:9999/js/tests/index.html'],
+          testname: 'Buttons Sauce Unit Tests',
+          browsers: [
+            {
+              browserName: 'safari',
+              version: '6',
+              platform: 'OS X 10.8'
+            },
+            {
+              browserName: 'firefox',
+              version: '25',
+              platform: 'OS X 10.6'
+            },
+            {
+              browserName: 'chrome',
+              version: '31',
+              platform: 'Windows 8.1'
+            }
+          ]
+        }
+      }
     }
+
   });
 
 
@@ -153,6 +209,21 @@ module.exports = function (grunt) {
   * Grunt Tasks
   *
   */
+
+  // Test task.
+  grunt.registerTask('test', 'qunit');
+  grunt.registerTask('sauceserver', 'connect:sauce');
+  grunt.registerTask('sauce', 'saucelabs-qunit');
+
+  var testSubtasks = ['test'];
+  if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined') {
+    testSubtasks.push('sauceserver');
+    testSubtasks.push('sauce');
+  }
+  grunt.registerTask('tests', testSubtasks);
+
+
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
   grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
+
 };
