@@ -31,7 +31,9 @@
   padding: 0px !important;
   width: $ubtn-height;
 
-  @each $ubtn-size, $ubtn-multiplier in $ubtn-sizes {
+  @each $ubtn-sizes-hash in $ubtn-sizes {
+    $ubtn-size: nth($ubtn-sizes-hash, 1);
+    $ubtn-multiplier : nth($ubtn-sizes-hash, 2);
     $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
 
     &#{$ubtn-size-namespace} {
