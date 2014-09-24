@@ -601,16 +601,18 @@ table {
     bottom: 124px;
     z-index: 2; }
 
-.showcase .showcase-title,
-.showcase .showcase-sub-title {
-  font-family: "Lato", sans-serif;
-  font-weight: 200; }
-.showcase .showcase-title {
-  font-size: 30px;
-  margin: 0px 0px 10px 0px; }
-.showcase .showcase-sub-title {
-  font-size: 18px;
-  margin: 0px 0px 40px 0px; }
+.showcase {
+  padding: 40px; }
+  .showcase .showcase-title,
+  .showcase .showcase-sub-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 200; }
+  .showcase .showcase-title {
+    font-size: 30px;
+    margin: 0px 0px 10px 0px; }
+  .showcase .showcase-sub-title {
+    font-size: 18px;
+    margin: 0px 0px 40px 0px; }
 
 /*
 * Showcase Colors
