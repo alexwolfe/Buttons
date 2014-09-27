@@ -56,7 +56,8 @@ module.exports = function (grunt) {
     cssmin: {
       add_banner: {
         options: {
-          banner: '/* Buttons */'
+          banner: '/* Buttons */',
+          keepSpecialComments: 1
         },
         files: {
           'tmp/css/buttons.min.css': ['tmp/css/buttons.css']
@@ -216,14 +217,12 @@ module.exports = function (grunt) {
   grunt.registerTask('sauce', 'saucelabs-qunit');
 
   var testSubtasks = ['test'];
-  if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined') {
+  if (process.env.SAUCE_ACCESS_KEY !== undefined) {
     testSubtasks.push('sauceserver');
     testSubtasks.push('sauce');
   }
-  grunt.registerTask('tests', testSubtasks);
-
 
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
   grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
-
+  grunt.registerTask('tests', testSubtasks);
 };
