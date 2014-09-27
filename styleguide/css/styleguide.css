@@ -380,6 +380,7 @@ input[disabled] {
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
           box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -397,6 +398,7 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
@@ -601,15 +603,20 @@ table {
     bottom: 124px;
     z-index: 2; }
 
+.accessibility,
 .showcase {
   padding: 40px; }
+  .accessibility .showcase-title,
+  .accessibility .showcase-sub-title,
   .showcase .showcase-title,
   .showcase .showcase-sub-title {
     font-family: "Lato", sans-serif;
     font-weight: 200; }
+  .accessibility .showcase-title,
   .showcase .showcase-title {
     font-size: 30px;
     margin: 0px 0px 10px 0px; }
+  .accessibility .showcase-sub-title,
   .showcase .showcase-sub-title {
     font-size: 18px;
     margin: 0px 0px 40px 0px; }
