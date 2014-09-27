@@ -16,7 +16,10 @@ $(document).ready(function(){
         var $showcase = $(element);
         var $codeBox = $('<pre class="prettyprint is-preview linenums"></pre>');
         var $overlay = $('<div class="prettyprint-overlay"></div>');
-        var exampleHTML = self._encodeHTML($showcase.find('.showcase-examples:first').html().trim());
+        var exampleHTML = self._encodeHTML($showcase.find('.showcase-examples:first').html());
+
+        //Trim newlines
+        exampleHTML = exampleHTML.replace(/^\s*[\r\n]/gm, "");
 
         //Add click event for overlay
         $overlay.on('click', function(e) {
