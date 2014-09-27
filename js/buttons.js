@@ -1,4 +1,4 @@
-/*
+/*! @license
  *  Project: Buttons
  *  Description: A highly customizable CSS button library built with Sass and Compass
  *  Author: Alex Wolfe

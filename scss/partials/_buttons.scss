@@ -45,7 +45,7 @@ $unicorn-btn-jumbofs: inherit;
         background-color: $unicorn-btn-bgcolor;
         @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 10%), darken($unicorn-btn-bgcolor, 7%)));
     }
-    &:active {
+    &:active, &.is-active, &.active {
         @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
         text-shadow: 0px 1px 0px rgba(255, 255, 255, .4);
         background: desaturate($unicorn-btn-bgcolor, 20%);
@@ -108,7 +108,7 @@ button#{$unicorn-btn-namespace}:disabled {
         &:hover, &:focus {
             background: lighten($unicorn-btn-background, 5%);
         }
-        &:active {
+        &:active, &.is-active, &.active {
             @include transition-duration(0s);
             background: desaturate($unicorn-btn-background, 20%);
             color: darken($unicorn-btn-background, 20%);
@@ -137,7 +137,7 @@ button#{$unicorn-btn-namespace}:disabled {
             color: lighten($unicorn-btn-font-color, 10%);
             border: 2px solid lighten($unicorn-btn-font-color, 10%);
         }
-        &:active {
+        &:active, &.is-active, &.active {
             @include transition-duration(0s);
             background: none;
             color: darken($unicorn-btn-font-color, 10%);
@@ -170,7 +170,7 @@ button#{$unicorn-btn-namespace}:disabled {
             @include background(linear-gradient(top,  lighten($unicorn-btn-bgcolor, 8%), darken($unicorn-btn-bgcolor, 1%)));
             background-color: lighten($unicorn-btn-bgcolor, 10%);
         }
-        &:active {
+        &:active, &.is-active, &.active {
             @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
             @include background(linear-gradient(top,  darken($unicorn-btn-bgcolor, 2%), lighten($unicorn-btn-bgcolor, 2%)));
             background-color: desaturate($unicorn-btn-bgcolor, 20%);
@@ -237,7 +237,7 @@ button#{$unicorn-btn-namespace}:disabled {
             background-color: $unicorn-btn-background;
             @include background(linear-gradient(top,  lighten($unicorn-btn-background, 10%), darken($unicorn-btn-background, 5%)));
         }
-        &:active {
+        &:active, &.is-active, &.active {
             background: desaturate($unicorn-btn-background, 20%);
             color: darken($unicorn-btn-background, 20%);
         }
@@ -267,7 +267,7 @@ button#{$unicorn-btn-namespace}:disabled {
                 @include background(linear-gradient(top,  lighten($unicorn-btn-background, 8%), darken($unicorn-btn-background, 1%)));
                 background-color: lighten($unicorn-btn-background, 10%);
             }
-            &:active {
+            &:active, &.is-active, &.active {
                 @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .3), inset 0px -1px 1px rgba(255, 255, 255, .15), 0px 2px 0px darken($unicorn-btn-background, 10%), 0px 3px 3px rgba(0, 0, 0, .30));
                 @include background(linear-gradient(top,  darken($unicorn-btn-background, 2%), lighten($unicorn-btn-background, 2%)));
                 background-color: desaturate($unicorn-btn-background, 20%);
@@ -303,7 +303,7 @@ button#{$unicorn-btn-namespace}:disabled {
                 color: lighten($unicorn-btn-background, 10%);
                 border: 2px solid lighten($unicorn-btn-background, 10%);
             }
-            &:active {
+            &:active, &.is-active, &.active {
                 @include transition-duration(0s);
                 background: none;
                 color: darken($unicorn-btn-background, 10%);
@@ -333,7 +333,7 @@ button#{$unicorn-btn-namespace}:disabled {
             &:hover, &:focus {
                 background: lighten($unicorn-btn-background, 5%);
             }
-            &:active {
+            &:active, &.is-active, &.active {
                 @include transition-duration(0s);
                 background: desaturate($unicorn-btn-background, 20%);
                 color: darken($unicorn-btn-background, 15%);
@@ -359,7 +359,7 @@ button#{$unicorn-btn-namespace}:disabled {
         &:focus, &:hover, &.active {
             z-index: 5;
         }
-        &.active {
+        &:active, &.active {
             background: darken($unicorn-btn-bgcolor, 7%);
         }
         //Take rounded corners off all middle buttons
