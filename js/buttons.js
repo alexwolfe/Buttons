@@ -1,7 +1,7 @@
-/*
+/*! @license
 *  Project: Buttons
 *  Description: A highly customizable CSS button library built with Sass and Compass
-*  Author: Alex Wolfe
+*  Author: Alex Wolfe and Rob Levin
 *  License: Apache License v2.0
 */
 
@@ -23,93 +23,92 @@
   var pluginName = "menuButton";
   var menuClass = ".button-dropdown";
   var defaults = {
-      propertyName: "value"
+    propertyName: "value"
   };
 
   // The actual plugin constructor
   function Plugin( element, options ) {
 
-      //SET OPTIONS
-      this.options = $.extend( {}, defaults, options );
-      this._defaults = defaults;
-      this._name = pluginName;
+    //SET OPTIONS
+    this.options = $.extend( {}, defaults, options );
+    this._defaults = defaults;
+    this._name = pluginName;
 
-      //REGISTER ELEMENT
-      this.$element = $(element);
+    //REGISTER ELEMENT
+    this.$element = $(element);
 
-      //INITIALIZE
-      this.init();
+    //INITIALIZE
+    this.init();
   }
 
   Plugin.prototype = {
-      constructor: Plugin,
+    constructor: Plugin,
 
-      init: function() {
-          // WE DON'T STOP PROPGATION SO CLICKS WILL AUTOMATICALLY
-          // TOGGLE AND REMOVE THE DROPDOWN
-          this.toggle();
-      },
+    init: function() {
+      // WE DON'T STOP PROPGATION SO CLICKS WILL AUTOMATICALLY
+      // TOGGLE AND REMOVE THE DROPDOWN
+      this.toggle();
+    },
 
-      toggle: function(el, options) {
-          if(this.$element.data('dropdown') === 'show') {
-              this.hideMenu();
-          }
-          else {
-              this.showMenu();
-          }
-      },
-
-      showMenu: function() {
-          this.$element.data('dropdown', 'show');
-          this.$element.find('ul').show();
-          this.$element.find('.button:first').addClass('is-active');
-          console.log('testing');
-      },
-
-      hideMenu: function() {
-          this.$element.data('dropdown', 'hide');
-          this.$element.find('ul').hide();
-          this.$element.find('.button:first').removeClass('is-active');
+    toggle: function(el, options) {
+      if(this.$element.data('dropdown') === 'show') {
+        this.hideMenu();
       }
+      else {
+        this.showMenu();
+      }
+    },
+
+    showMenu: function() {
+      this.$element.data('dropdown', 'show');
+      this.$element.find('ul').show();
+      this.$element.find('.button:first').addClass('is-active');
+    },
+
+    hideMenu: function() {
+      this.$element.data('dropdown', 'hide');
+      this.$element.find('ul').hide();
+      this.$element.find('.button:first').removeClass('is-active');
+    }
   };
 
   // A really lightweight plugin wrapper around the constructor,
   // preventing against multiple instantiations
   $.fn[pluginName] = function ( options ) {
-      return this.each(function () {
+    return this.each(function () {
 
-          // TOGGLE BUTTON IF IT EXISTS
-          if ($.data(this, "plugin_" + pluginName)) {
-              $.data(this, "plugin_" + pluginName).toggle();
-          }
-          // OTHERWISE CREATE A NEW INSTANCE
-          else {
-              $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
-          }
-      });
+      // TOGGLE BUTTON IF IT EXISTS
+      if ($.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName).toggle();
+      }
+      // OTHERWISE CREATE A NEW INSTANCE
+      else {
+        $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+      }
+    });
   };
 
   //CLOSE OPEN DROPDOWN MENUS IF CLICKED SOMEWHERE ELSE
   $(document).on('click', function(e) {
-      $.each($('[data-buttons=dropdown]'), function(i, value) {
-          if ($(e.target.offsetParent)[0] != $(this)[0]) {
-              if ($.data(this, "plugin_" + pluginName)) {
-                  $.data(this, "plugin_" + pluginName).hideMenu();
-                  $(this).find('ul').hide();
-              }
-          }
-      });
+    $.each($('[data-buttons=dropdown]'), function(i, value) {
+      if ($(e.target.offsetParent)[0] != $(this)[0]) {
+        if ($.data(this, "plugin_" + pluginName)) {
+          $.data(this, "plugin_" + pluginName).hideMenu();
+          $(this).find('ul').hide();
+        }
+      }
+    });
   });
 
   //DELEGATE CLICK EVENT FOR DROPDOWN MENUS
   $(document).on('click', '[data-buttons=dropdown]', function(e) {
-      var $dropdown = $(e.currentTarget);
-      $dropdown.menuButton();
+    var $dropdown = $(e.currentTarget);
+    $dropdown.menuButton();
   });
 
   //IGNORE CLICK EVENTS FROM DISPLAY BUTTON IN DROPDOWN
   $(document).on('click', '[data-buttons=dropdown] > a', function(e) {
-      e.preventDefault();
+    e.preventDefault();
   });
 
 })( jQuery, window, document);
