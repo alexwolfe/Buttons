@@ -363,9 +363,9 @@
   .button-box.button-large,
   .button-square.button-large {
     width: 50px; }
-  .button-circle.button-default,
-  .button-box.button-default,
-  .button-square.button-default {
+  .button-circle.button-normal,
+  .button-box.button-normal,
+  .button-square.button-normal {
     width: 40px; }
   .button-circle.button-small,
   .button-box.button-small,
@@ -400,7 +400,7 @@
   line-height: 50px;
   padding: 0px 50px; }
 
-.button-default {
+.button-normal {
   font-size: 16px;
   height: 40px;
   line-height: 40px;
@@ -590,9 +590,9 @@
   .button-border-thin.button-large,
   .button-border-thick.button-large {
     line-height: 46px; }
-  .button-border.button-default, .button-default.button-border-thin, .button-default.button-border-thick,
-  .button-border-thin.button-default,
-  .button-border-thick.button-default {
+  .button-border.button-normal, .button-normal.button-border-thin, .button-normal.button-border-thick,
+  .button-border-thin.button-normal,
+  .button-border-thick.button-normal {
     line-height: 36px; }
   .button-border.button-small, .button-small.button-border-thin, .button-small.button-border-thick,
   .button-border-thin.button-small,
@@ -665,7 +665,7 @@
     font-size: 26px;
     height: 42px;
     line-height: 42px; }
-  .button-borderless.button-default {
+  .button-borderless.button-normal {
     font-size: 20.8px;
     height: 36.8px;
     line-height: 36.8px; }
