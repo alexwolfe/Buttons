@@ -1159,7 +1159,15 @@
 * when a dropdown button is pressed
 */
 /*
-* Dropdown menu wrapper
+* Dropdown Colors
+*
+* $ubtn-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
+*/
+/*
+* Dropdown Wrapper
 *
 */
 .button-dropdown {
@@ -1167,14 +1175,15 @@
   overflow: visible;
   display: inline-block; }
   .button-dropdown .button-dropdown-divider {
-    -webkit-box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2);
-            box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2); }
+    border-top: 1px dotted #EFEFEF; }
 
 /*
 * Dropdown menu list
 *
 */
 .button-dropdown-list {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #CCC;
   display: none;
   position: absolute;
   padding: 0px;
@@ -1184,40 +1193,48 @@
   z-index: 1000;
   min-width: 100%;
   list-style-type: none;
-  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   /*
-  * Dropdown Direction
+  * Dropdown Below
   *
-  * Placement above or below
   */
   /*
-  * List Elements <li>
+  * Dropdown Above
+  *
+  */
+  /*
+  * Dropdown Buttons
   *
   */ }
   .button-dropdown-list.button-dropdown-is-below {
-    top: 100%; }
-    .button-dropdown-list.button-dropdown-is-below > li:first-child .button {
-      border-radius: 0px; }
+    top: 100%;
+    border-top: none;
+    border-radius: 0px 0px 3px 3px; }
   .button-dropdown-list.button-dropdown-is-above {
     bottom: 100%;
-    top: auto; }
-    .button-dropdown-list.button-dropdown-is-above > li:last-child .button {
-      border-radius: 0px; }
+    top: auto;
+    border-bottom: none;
+    border-radius: 3px 3px 0px 0px; }
   .button-dropdown-list > li {
     padding: 0px;
     margin: 0px;
     display: block; }
-    .button-dropdown-list > li .button {
+    .button-dropdown-list > li > a {
       display: block;
-      padding: 0px 10px;
+      line-height: 40px;
+      font-size: 12.8px;
+      padding: 5px 10px;
       float: none;
-      border-radius: 0px; }
-    .button-dropdown-list > li:first-child .button {
-      border-radius: 3px 3px 0px 0px; }
-    .button-dropdown-list > li:last-child .button {
-      border-radius: 0px 0px 3px 3px; }
+      color: #666;
+      text-decoration: none; }
+      .button-dropdown-list > li > a:hover {
+        color: #666;
+        background: #fafafa; }
 
 /*
 * Buton Groups

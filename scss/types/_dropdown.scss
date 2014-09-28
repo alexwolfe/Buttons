@@ -7,7 +7,20 @@
 
 
 /*
-* Dropdown menu wrapper
+* Dropdown Colors
+*
+* $ubtn-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
+*/
+$ubtn-dropdown-colors: ('light' #FFF  #1B9AF7) ('dark' #000 #CCC);
+$ubtn-dropdown-bg: #FFF;
+$ubtn-dropdown-border: #CCC;
+$ubtn-dropdown-font-size: $ubtn-font-size * .8;
+
+/*
+* Dropdown Wrapper
 *
 */
 #{$ubtn-namespace}-dropdown {
@@ -17,12 +30,7 @@
 
 
   #{$ubtn-namespace}-dropdown-divider {
-    @if($ubtn-use-compass) {
-      @include box-shadow(0px -1px 0px rgba(#FFF, .2));
-    }
-    @else {
-      box-shadow: 0px -1px 0px rgba(#FFF, .2);
-    }
+    border-top: 1px dotted #EFEFEF;
   }
 }
 
@@ -32,6 +40,8 @@
 *
 */
 #{$ubtn-namespace}-dropdown-list {
+  background: rgba($ubtn-dropdown-bg, .95);
+  border: 1px solid $ubtn-dropdown-border;
   display: none;
   position: absolute;
   padding: 0px;
@@ -43,51 +53,53 @@
   list-style-type: none;
 
   @if($ubtn-use-compass) {
-    @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+    @include box-shadow(0px 2px 7px rgba(0, 0, 0, 0.2));
+    @include box-sizing(border-box);
     @include border-radius(3px);
   }
   @else {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+    box-sizing: border-box;
   }
 
 
   /*
-  * Dropdown Direction
+  * Dropdown Below
   *
-  * Placement above or below
   */
   &#{$ubtn-namespace}-dropdown-is-below {
     top: 100%;
+    border-top: none;
 
-    // DROPDOWN IS FLUSH TO BUTTON
-    > li:first-child #{$ubtn-namespace} {
-      @if($ubtn-use-compass) {
-        @include border-radius(0px);
-      }
-      @else {
-        border-radius: 0px;
-      }
+    @if($ubtn-use-compass) {
+      @include border-radius(0px 0px 3px 3px);
+    }
+    @else {
+      border-radius: 0px 0px 3px 3px;
     }
   }
+
+  /*
+  * Dropdown Above
+  *
+  */
   &#{$ubtn-namespace}-dropdown-is-above {
     bottom: 100%;
     top: auto;
+    border-bottom: none;
 
-    // DROPDOWN IS FLUSH TO BUTTON
-    > li:last-child #{$ubtn-namespace} {
-      @if($ubtn-use-compass) {
-        @include border-radius(0px);
-      }
-      @else {
-        border-radius: 0px;
-      }
+    @if($ubtn-use-compass) {
+      @include border-radius(3px 3px 0px 0px);
+    }
+    @else {
+      border-radius: 3px 3px 0px 0px;
     }
   }
 
 
   /*
-  * List Elements <li>
+  * Dropdown Buttons
   *
   */
   > li {
@@ -95,34 +107,19 @@
     margin: 0px;
     display: block;
 
-    #{$ubtn-namespace} {
+    > a {
       display: block;
-      padding: 0px 10px;
+      line-height: $ubtn-height;
+      font-size: $ubtn-dropdown-font-size;
+      padding: 5px 10px;
       float: none;
+      color: $ubtn-font-color;
+      text-decoration: none;
 
-      @if($ubtn-use-compass) {
-        @include border-radius(0px);
-      }
-      @else {
-        border-radius: 0px;
-      }
-    }
+      &:hover {
+        color: $ubtn-font-color;
+        background: darken($ubtn-dropdown-bg, 2%);
 
-    &:first-child #{$ubtn-namespace} {
-      @if($ubtn-use-compass) {
-        @include border-radius(3px 3px 0px 0px);
-      }
-      @else {
-        border-radius: 3px 3px 0px 0px;
-      }
-    }
-
-    &:last-child #{$ubtn-namespace} {
-      @if($ubtn-use-compass) {
-        @include border-radius(0px 0px 3px 3px);
-      }
-      @else {
-        border-radius: 0px 0px 3px 3px;
       }
     }
   }
