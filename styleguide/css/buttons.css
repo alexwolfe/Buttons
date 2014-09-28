@@ -143,7 +143,7 @@
     background-color: #eeeeee;
     border-color: #d4d4d4;
     color: #d4d4d4; }
-  .button.disabled, .button.disabled:hover, .button.disabled:focus, .button.disabled:active, .button.is-disabled, .button.is-disabled:hover, .button.is-disabled:focus, .button.is-disabled:active, .button:disabled {
+  .button.disabled, .button.is-disabled, .button:disabled {
     top: 0 !important;
     opacity: .8 !important;
     background: #EEE !important;

@@ -64,8 +64,8 @@
   * The use of !important is only added because this is a state
   * that must be applied to all buttons when in a disabled state.
   */
-  &.disabled, &.disabled:hover, &.disabled:focus, &.disabled:active,
-  &.is-disabled, &.is-disabled:hover, &.is-disabled:focus, &.is-disabled:active,
+  &.disabled,
+  &.is-disabled,
   &:disabled {
     top: 0 !important;
     opacity:.8 !important;
