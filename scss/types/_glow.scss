@@ -89,7 +89,9 @@ $ubtn-default-glow-color: #2c9adb !default;
   @if($ubtn-use-compass) {
     @include glow(glowing);
 
-    &:active {
+    &:active,
+    &.active,
+    &.is-active {
       @include no_animation;
     }
   }
@@ -98,7 +100,9 @@ $ubtn-default-glow-color: #2c9adb !default;
     animation-iteration-count: infinite;
     animation-name: glowing;
 
-    &:active {
+    &:active,
+    &.active,
+    &.is-active {
       animation-name: none;
     }
   }

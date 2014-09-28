@@ -17,7 +17,9 @@
     background: none;
   }
 
-  &:active {
+  &:active,
+  &.active,
+  &.is-active {
     box-shadow: none;
     text-shadow: none;
 

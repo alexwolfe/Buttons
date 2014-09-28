@@ -39,6 +39,7 @@
   }
 
   &:active,
+  &.active,
   &.is-active {
     transition-duration: 0s;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3);
@@ -139,6 +140,7 @@
     }
 
     &:active,
+    &.active,
     &.is-active {
       background-color: desaturate($ubtn-background, 10%);
       border-color: desaturate($ubtn-background, 10%);

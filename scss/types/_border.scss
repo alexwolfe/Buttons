@@ -14,7 +14,9 @@
     background-color: rgba(lighten($ubtn-bgcolor, 10%), .9)
   }
 
-  &:active {
+  &:active,
+  &.active,
+  &.is-active {
     box-shadow: none;
     text-shadow: none;
 
@@ -71,7 +73,9 @@
         color: rgba($ubtn-color, .7);
       }
 
-      &:active {
+      &:active,
+      &.active,
+      &.is-active {
         background-color: rgba(desaturate($ubtn-background, 10%), .7);
         color: rgba($ubtn-color, .5);
       }

@@ -27,7 +27,9 @@
       background: linear-gradient(top,  lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 7%));
     }
   }
-  &:active {
+  &:active,
+  &.active,
+  &.is-active {
     background: desaturate($ubtn-bgcolor, 10%);
 
     @if($ubtn-use-compass) {
@@ -71,7 +73,9 @@
           background: linear-gradient(top,  lighten($ubtn-background, 8%), darken($ubtn-background, 7%));
         }
       }
-      &:active {
+      &:active,
+      &.active,
+      &.is-active  {
         border-color: darken($ubtn-background, 10%);
         background: desaturate($ubtn-background, 10%);
       }
