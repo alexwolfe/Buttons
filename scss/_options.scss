@@ -16,25 +16,27 @@ $ubtn: 'Unicorn Buttons';
 *
 */
 $ubtn-namespace: '.button' !default; //prefix for all classes
-$ubtn-glow-namespace: '.glow' !default;
-
 
 
 /*
-* Button Appearance & Types (Size, Color, Shape, Name, etc.)
+* Button Colors
 *
-* Most of these are self explanatory and relate to the appearance
-* of the buttons that will be produced.
-*
-* $ubtn-colors - (name, background, color)
-* $ubtn-colors is used to generate the differnt colors
-* (ex. class="button-primary"). Modify the colors and
-* compile with sass to see your changes. You can add as
-* man colors as you want. Each block (name, background, color)
-* generates a class like .button-primary, .button-secondary, etc.
+* $ubtn-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
 */
 $ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF #333) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
 
+
+/*
+* Button Shapes
+*
+* $ubtn-shapes is used to generate the different button shapes.
+* Edit or add shapes to the list below and recompile.
+* Each block contains the (name, border-radius).
+* The class is generated using the name: (ex .button-square).
+*/
 $ubtn-shapes: (square 0px) (box 10px) (rounded 3px) (pill 200px) (circle 100%) !default;
 // Use a map if you prefer when running Sass 3.3+
 // $ubtn-shapes: (
@@ -45,6 +47,15 @@ $ubtn-shapes: (square 0px) (box 10px) (rounded 3px) (pill 200px) (circle 100%) !
 //   circle: 100%
 // ) !default;
 
+
+/*
+* Button Sizes
+*
+* $ubtn-sizes is used to generate the different button sizes.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, size multiplier).
+* The class is generated using the name: (ex .button-primary).
+*/
 $ubtn-sizes: (giant 2) (jumbo 1.5) (large 1.25) (default 1) (small .75) (tiny .5) !default;
 // Use a map if you prefer when running Sass 3.3+
 // $ubtn-sizes: (
@@ -56,14 +67,8 @@ $ubtn-sizes: (giant 2) (jumbo 1.5) (large 1.25) (default 1) (small .75) (tiny .5
 //   tiny: .5
 // ) !default;
 
-
-$ubtn-glow-color: #2c9adb !default;
 $ubtn-bgcolor: #EEE !default;
 $ubtn-height: 40px !default;
-$ubtn-dropdown-background: #fcfcfc !default;
-$ubtn-dropdown-link-color: #333 !default;
-$ubtn-dropdown-link-hover: #FFF !default;
-$ubtn-dropdown-link-hover-background: #3c6ab9 !default;
 
 
 /*
@@ -74,15 +79,3 @@ $ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "
 $ubtn-font-color: #666 !default;
 $ubtn-font-weight: 300 !default;
 $ubtn-font-size: 16px !default;
-$ubtn-tinyfs: $ubtn-font-size - 4;
-$ubtn-smallfs: $ubtn-font-size - 2;
-$ubtn-largefs: $ubtn-font-size + 2;
-$ubtn-jumbofs: $ubtn-font-size + 8;
-
-// Inheritted font sizes also supported
-@if $ubtn-font-size == inherit {
-  $ubtn-tinyfs: inherit;
-  $ubtn-smallfs: inherit;
-  $ubtn-largefs: inherit;
-  $ubtn-jumbofs: inherit;
-}

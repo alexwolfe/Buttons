@@ -43,17 +43,28 @@
 *
 */
 /*
-* Button Appearance & Types (Size, Color, Shape, Name, etc.)
+* Button Colors
 *
-* Most of these are self explanatory and relate to the appearance
-* of the buttons that will be produced.
+* $ubtn-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
+*/
+/*
+* Button Shapes
 *
-* $ubtn-colors - (name, background, color)
-* $ubtn-colors is used to generate the differnt colors
-* (ex. class="button-primary"). Modify the colors and
-* compile with sass to see your changes. You can add as
-* man colors as you want. Each block (name, background, color)
-* generates a class like .button-primary, .button-secondary, etc.
+* $ubtn-shapes is used to generate the different button shapes.
+* Edit or add shapes to the list below and recompile.
+* Each block contains the (name, border-radius).
+* The class is generated using the name: (ex .button-square).
+*/
+/*
+* Button Sizes
+*
+* $ubtn-sizes is used to generate the different button sizes.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, size multiplier).
+* The class is generated using the name: (ex .button-primary).
 */
 /*
 * Typographical Settings
@@ -1119,7 +1130,7 @@
   .button-dropdown > ul {
     display: none;
     position: absolute;
-    background: #fcfcfc;
+    background: #EEE;
     top: 0px;
     left: 0px;
     z-index: 1000;
