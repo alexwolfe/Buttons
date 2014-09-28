@@ -19,6 +19,23 @@ $ubtn-namespace: '.button' !default; //prefix for all classes
 
 
 /*
+* Button Defaults
+*
+* Some default settings that are used throughout the button library.
+* Changes to these settings will be picked up by all of the other modules.
+* The colors used here are the default colors for the base button (gray).
+* The font size and height are used to set the base size for the buttons.
+* The size values will be used to calculate the larger and smaller button sizes.
+*/
+$ubtn-bgcolor: #EEE !default;
+$ubtn-font-color: #666 !default;
+$ubtn-font-weight: 300 !default;
+$ubtn-font-size: 16px !default;
+$ubtn-height: 40px !default;
+$ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
+
+
+/*
 * Button Colors
 *
 * $ubtn-colors is used to generate the different button colors.
@@ -54,7 +71,7 @@ $ubtn-shapes: (square 0px) (box 10px) (rounded 3px) (pill 200px) (circle 100%) !
 * $ubtn-sizes is used to generate the different button sizes.
 * Edit or add colors to the list below and recompile.
 * Each block contains the (name, size multiplier).
-* The class is generated using the name: (ex .button-primary).
+* The class is generated using the name: (ex .button-giant).
 */
 $ubtn-sizes: (giant 2) (jumbo 1.5) (large 1.25) (default 1) (small .75) (tiny .5) !default;
 // Use a map if you prefer when running Sass 3.3+
@@ -66,16 +83,3 @@ $ubtn-sizes: (giant 2) (jumbo 1.5) (large 1.25) (default 1) (small .75) (tiny .5
 //   small: .75,
 //   tiny: .5
 // ) !default;
-
-$ubtn-bgcolor: #EEE !default;
-$ubtn-height: 40px !default;
-
-
-/*
-* Typographical Settings
-*
-*/
-$ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
-$ubtn-font-color: #666 !default;
-$ubtn-font-weight: 300 !default;
-$ubtn-font-size: 16px !default;

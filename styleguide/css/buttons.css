@@ -43,6 +43,15 @@
 *
 */
 /*
+* Button Defaults
+*
+* Some default settings that are used throughout the button library.
+* Changes to these settings will be picked up by all of the other modules.
+* The colors used here are the default colors for the base button (gray).
+* The font size and height are used to set the base size for the buttons.
+* The size values will be used to calculate the larger and smaller button sizes.
+*/
+/*
 * Button Colors
 *
 * $ubtn-colors is used to generate the different button colors.
@@ -64,11 +73,7 @@
 * $ubtn-sizes is used to generate the different button sizes.
 * Edit or add colors to the list below and recompile.
 * Each block contains the (name, size multiplier).
-* The class is generated using the name: (ex .button-primary).
-*/
-/*
-* Typographical Settings
-*
+* The class is generated using the name: (ex .button-giant).
 */
 /*
 * Color Mixin
