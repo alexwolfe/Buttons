@@ -130,18 +130,17 @@
   */ }
   .button:hover, .button:focus {
     background-color: #fbfbfb;
-    border-color: #fbfbfb;
     text-decoration: none;
     outline: none; }
   .button:active, .button.active, .button.is-active {
     -webkit-transition-duration: 0s;
             transition-duration: 0s;
-    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
     text-decoration: none;
     background-color: #eeeeee;
-    border-color: #d4d4d4;
+    border-color: #cfcfcf;
     color: #d4d4d4; }
   .button.disabled, .button.is-disabled, .button:disabled {
     top: 0 !important;

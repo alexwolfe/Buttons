@@ -33,7 +33,6 @@
   &:hover,
   &:focus {
     background-color: lighten($ubtn-bgcolor, 5%);
-    border-color: lighten($ubtn-bgcolor, 5%);
     text-decoration: none;
     outline: none;
   }
@@ -42,17 +41,17 @@
   &.active,
   &.is-active {
     transition-duration: 0s;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, .3);
     text-decoration: none;
     background-color: desaturate($ubtn-bgcolor, 10%);
-    border-color: darken($ubtn-bgcolor, 10%);
+    border-color: darken($ubtn-bgcolor, 12%);
     color: darken($ubtn-bgcolor, 10%);
 
     // Compass Mixin
     @if $ubtn-use-compass {
       @include transition-duration(0s);
-      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3));
+      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .2));
     }
   }
 
