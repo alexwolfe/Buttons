@@ -129,8 +129,8 @@
   * that must be applied to all buttons when in a disabled state.
   */ }
   .button:hover, .button:focus {
-    background-color: #EEE;
-    border-color: #EEE;
+    background-color: #fbfbfb;
+    border-color: #fbfbfb;
     text-decoration: none;
     outline: none; }
   .button:active, .button.is-active {
@@ -1125,13 +1125,9 @@
   position: relative;
   overflow: visible;
   display: inline-block; }
-  .button-dropdown .button-dropdown-is-below {
-    top: 100%; }
-  .button-dropdown .button-dropdown-is-above {
-    bottom: 100%;
-    top: auto; }
   .button-dropdown .button-dropdown-divider {
-    border-top: 1px solid #e4e4e4; }
+    -webkit-box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2);
+            box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2); }
 
 /*
 * Dropdown menu list
@@ -1147,20 +1143,40 @@
   z-index: 1000;
   min-width: 100%;
   list-style-type: none;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
-  border-radius: 3px; }
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  /*
+  * Dropdown Direction
+  *
+  * Placement above or below
+  */
+  /*
+  * List Elements <li>
+  *
+  */ }
+  .button-dropdown-list.button-dropdown-is-below {
+    top: 100%; }
+    .button-dropdown-list.button-dropdown-is-below > li:first-child .button {
+      border-radius: 0px; }
+  .button-dropdown-list.button-dropdown-is-above {
+    bottom: 100%;
+    top: auto; }
+    .button-dropdown-list.button-dropdown-is-above > li:last-child .button {
+      border-radius: 0px; }
   .button-dropdown-list > li {
     padding: 0px;
     margin: 0px;
     display: block; }
-    .button-dropdown-list > li a {
+    .button-dropdown-list > li .button {
       display: block;
-      border-top-radius: 0px; }
-    .button-dropdown-list > li:first-child a {
-      border-top-radius: 3px; }
-    .button-dropdown-list > li:last-child a {
-      border-bottom-radius: 3px; }
+      padding: 0px 10px;
+      float: none;
+      border-radius: 0px; }
+    .button-dropdown-list > li:first-child .button {
+      border-radius: 3px 3px 0px 0px; }
+    .button-dropdown-list > li:last-child .button {
+      border-radius: 0px 0px 3px 3px; }
 
 /*
 * Buton Groups

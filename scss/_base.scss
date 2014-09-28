@@ -32,8 +32,8 @@
 
   &:hover,
   &:focus {
-    background-color: $ubtn-bgcolor;
-    border-color: $ubtn-bgcolor;
+    background-color: lighten($ubtn-bgcolor, 5%);
+    border-color: lighten($ubtn-bgcolor, 5%);
     text-decoration: none;
     outline: none;
   }

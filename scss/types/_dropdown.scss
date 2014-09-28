@@ -15,17 +15,14 @@
   overflow: visible;
   display: inline-block;
 
-  #{$ubtn-namespace}-dropdown-is-below {
-    top: 100%;
-  }
-
-  #{$ubtn-namespace}-dropdown-is-above {
-    bottom: 100%;
-    top: auto;
-  }
 
   #{$ubtn-namespace}-dropdown-divider {
-    border-top: 1px solid rgba(#e4e4e4, 20%);
+    @if($ubtn-use-compass) {
+      @include box-shadow(0px -1px 0px rgba(#FFF, .2));
+    }
+    @else {
+      box-shadow: 0px -1px 0px rgba(#FFF, .2);
+    }
   }
 }
 
@@ -46,45 +43,86 @@
   list-style-type: none;
 
   @if($ubtn-use-compass) {
-    @include box-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
+    @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
     @include border-radius(3px);
   }
   @else {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
   }
 
+
+  /*
+  * Dropdown Direction
+  *
+  * Placement above or below
+  */
+  &#{$ubtn-namespace}-dropdown-is-below {
+    top: 100%;
+
+    // DROPDOWN IS FLUSH TO BUTTON
+    > li:first-child #{$ubtn-namespace} {
+      @if($ubtn-use-compass) {
+        @include border-radius(0px);
+      }
+      @else {
+        border-radius: 0px;
+      }
+    }
+  }
+  &#{$ubtn-namespace}-dropdown-is-above {
+    bottom: 100%;
+    top: auto;
+
+    // DROPDOWN IS FLUSH TO BUTTON
+    > li:last-child #{$ubtn-namespace} {
+      @if($ubtn-use-compass) {
+        @include border-radius(0px);
+      }
+      @else {
+        border-radius: 0px;
+      }
+    }
+  }
+
+
+  /*
+  * List Elements <li>
+  *
+  */
   > li {
     padding: 0px;
     margin: 0px;
     display: block;
 
-    a {
+    #{$ubtn-namespace} {
       display: block;
+      padding: 0px 10px;
+      float: none;
 
       @if($ubtn-use-compass) {
-        @include border-top-radius(0px);
+        @include border-radius(0px);
       }
       @else {
-        border-top-radius: 0px;
+        border-radius: 0px;
       }
     }
 
-    &:first-child a {
+    &:first-child #{$ubtn-namespace} {
       @if($ubtn-use-compass) {
-        @include border-top-radius(3px);
+        @include border-radius(3px 3px 0px 0px);
       }
       @else {
-        border-top-radius: 3px;
+        border-radius: 3px 3px 0px 0px;
       }
     }
 
-    &:last-child a {
+    &:last-child #{$ubtn-namespace} {
       @if($ubtn-use-compass) {
-        @include border-bottom-radius(3px);
+        @include border-radius(0px 0px 3px 3px);
       }
       @else {
-        border-bottom-radius: 3px;
+        border-radius: 0px 0px 3px 3px;
       }
     }
   }
