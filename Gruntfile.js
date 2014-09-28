@@ -83,7 +83,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'tmp/css',
-          src: ['**/*'],
+          src: ['**/*', '!buttons.min.css', '!buttons.css.map'],
           dest: 'styleguide/css'
         }]
       },
@@ -137,7 +137,7 @@ module.exports = function (grunt) {
     */
     watch: {
       scripts: {
-        files: ['js/**/*.js', 'styleguide/js/**/*.js'],
+        files: ['js/**/*.js'],
         tasks: ['copy:js_styleguide', 'clean']
       },
       sass: {

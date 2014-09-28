@@ -629,6 +629,18 @@ table {
   color: #FFF;
   background: #1B9AF7; }
 
+.subscribe-form {
+  padding: 60px 60px 0 60px; }
+
+.mc-field-group label {
+  margin-left: 2px; }
+.mc-field-group input[type="email"] {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 3px; }
+.mc-field-group #mc-embedded-subscribe {
+  margin-top: -2px; }
+
 /*
 * Code Base Styles
 *
