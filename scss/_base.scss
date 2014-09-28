@@ -128,13 +128,14 @@
   #{$ubtn-namespace}-#{$ubtn-name},
   #{$ubtn-namespace}-#{$ubtn-name}-flat {
     background-color: $ubtn-background;
-    color: $ubtn-color;
     border-color: $ubtn-background;
+    color: $ubtn-color;
 
     &:hover,
     &:focus {
       background-color: lighten($ubtn-background, 10%);
       border-color: lighten($ubtn-background, 10%);
+      color: $ubtn-color;
     }
 
     &:active,
