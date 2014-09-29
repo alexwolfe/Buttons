@@ -1,3 +1,6 @@
+var log = [];
+var testName;
+
 QUnit.done(function (test_results) {
   var tests = [];
   for(var i = 0, len = log.length; i < len; i++) {
