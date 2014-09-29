@@ -12,10 +12,10 @@ Setup & Installation
 
 1. Visit the [Buttons Builder Website](http://alexwolfe.github.io/Buttons/), download and add files to your website.
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
-    `<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">`
+    `<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">`
     `<link rel="stylesheet" href="css/buttons.css">`
 3. Include jQuery and buttons.js if you're using dropdown menu buttons.
-    `<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>`
+    `<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>`
     `<script type="text/javascript" src="js/buttons.js"></script>`
 4. Create buttons in your html. [View code examples here](http://alexwolfe.github.io/Buttons/).
 
