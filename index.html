@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/unicorn_module.css">
     <link rel="stylesheet" href="css/prettify.css">
     <link rel="stylesheet" href="css/nprogress.css">
@@ -22,19 +22,7 @@
 
     <title>Buttons - A button library built with Sass and Compass</title>
 
-    <script type="text/javascript">
-        //GOOGLE ANALYTICS
-        // https://developers.google.com/analytics/devguides/collection/gajs/asyncMigrationExamples
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-41954774-1']);
-        _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
 </head>
 <body class="nav-pinned-left">
 <div id="unicorn-app">
@@ -59,6 +47,19 @@
             <a class="button download button-flat-primary button-large button-rounded" href="#">Download</a>
             <a title="Adjust your settings" class="customize button button-flat button-large button-rounded" href="#"><i class="fa fa-bolt"></i> Customize</a>
         </section>
+
+
+        <form class="subscribe-form" action="//github.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;id=04d53dbcbd" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+            <label for="mce-EMAIL"><i class="fa fa-hand-o-right"></i> Buttons 2.0 is coming soon!</label>
+            <input type="email" placeholder="email@example.com" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+            <label class="label-hint" for="mce-EMAIL">Enter your email to get notified when it launches!</label>
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_8d64dfb6a9a561029375e03a8_04d53dbcbd" tabindex="-1" value="">
+            </div>
+        </form>
+
 
 
         <section class="social-buttons">
@@ -482,16 +483,16 @@
     </section>
 
     <section class="instruction-block form">
-    <h3><i class="fa fa-flask"></i> Find out what we're &ldquo;cooking up in the lab&rdquo; :)</h3>
+    <h3>Buttons 2.0 is coming soon!</h3>
     <ul>
         <li>
         <!-- Begin MailChimp Signup Form -->
         <div id="mc_embed_signup">
-            <form action="//github.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;id=04d53dbcbd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="//github.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;id=04d53dbcbd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
             <div class="mc-field-group">
-                <label for="mce-EMAIL">Enter your email to hear about our upcoming releases. No spam. Period. Unsubscribe any time. </label>
+                <label for="mce-EMAIL">Enter your email to get notified when it launches!</label>
                 <input type="email" placeholder="email@example.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-rounded button-flat-action button-tiny">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-rounded button-flat-primary button-small">
             </div>
                 <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none"></div>
@@ -634,6 +635,20 @@
         var model = new Unicorn.Model(Unicorn.Options);
         new Unicorn.Views.App({model: model});
     });
+</script>
+
+<script type="text/javascript">
+//GOOGLE ANALYTICS
+// https://developers.google.com/analytics/devguides/collection/gajs/asyncMigrationExamples
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-41954774-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
 </body>
 </html>

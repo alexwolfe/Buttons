@@ -12,7 +12,7 @@ $hero-subtitle-color: #bdc3c7;
 #{$hero-namespace} {
     padding: 60px;
     position: relative;
-    height: 420px;
+    height: 480px;
     box-sizing: border-box;
 
     h1, h2 {
@@ -37,7 +37,7 @@ $hero-subtitle-color: #bdc3c7;
     }
 
     #{$hero-namespace}-call-to-action {
-        margin: 20px auto;
+        margin: 20px auto 40px auto;
         display: block;
         text-align: center;
 
@@ -48,6 +48,48 @@ $hero-subtitle-color: #bdc3c7;
         .button {
             margin: 0px 10px;
             font-size: 18px;
+        }
+    }
+
+    .subscribe-form {
+        display: block;
+        text-align: center;
+
+        input, label {
+            display: block;
+            box-sizing: border-box;
+        }
+
+        label {
+            color: #00b5e5;
+            font-size: 18px;
+
+            &.label-hint {
+                color: #bdc3c7;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+        input {
+            @include box-shadow(0px 1px 2px rgba(0, 0, 0, .1) inset);
+            @include border-radius(3px);
+            width: 350px;
+            min-width: 200px;
+            height: 40px;
+            border: 1px solid #CCC;
+            margin: 5px auto;
+            background: #FFF;
+            font-size: 18px;
+            font-weight: 200;
+            padding: 0px 10px;
+            color: #999;
+
+            &:active, &:focus {
+                color: darken(#00b5e5, 10%);
+                border: 1px solid #00b5e5;
+                outline: none;
+            }
         }
     }
 
