@@ -464,15 +464,15 @@
 .button-border-thick {
   border-width: 3px; }
 
+/*
+* Border Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
 .button-border, .button-border-thin, .button-border-thick,
 .button-border-thin,
 .button-border-thick {
-  /*
-  * Border Button Colors
-  *
-  * Create colors for buttons
-  * (.button-primary, .button-secondary, etc.)
-  */
   /*
   * Border Button Size Adjustment
   *
@@ -1161,29 +1161,25 @@
 /*
 * Dropdown Colors
 *
-* $ubtn-colors is used to generate the different button colors.
+* $ubtn-dropdown-colors is used to generate the different dropdowns.
 * Edit or add colors to the list below and recompile.
 * Each block contains the (name, background, color)
-* The class is generated using the name: (ex .button-primary)
+* The class is generated using the name: (ex .button-dropdown-dark)
 */
 /*
-* Dropdown Wrapper
+* Dropdown Container
 *
 */
 .button-dropdown {
   position: relative;
   overflow: visible;
   display: inline-block; }
-  .button-dropdown .button-dropdown-divider {
-    border-top: 1px dotted #EFEFEF; }
 
 /*
-* Dropdown menu list
+* Dropdown List Style
 *
 */
 .button-dropdown-list {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #CCC;
   display: none;
   position: absolute;
   padding: 0px;
@@ -1193,6 +1189,9 @@
   z-index: 1000;
   min-width: 100%;
   list-style-type: none;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #CCC;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
@@ -1206,35 +1205,76 @@
   /*
   * Dropdown Above
   *
-  */
-  /*
-  * Dropdown Buttons
-  *
   */ }
-  .button-dropdown-list.button-dropdown-is-below {
+  .button-dropdown-list.is-below {
     top: 100%;
     border-top: none;
     border-radius: 0px 0px 3px 3px; }
-  .button-dropdown-list.button-dropdown-is-above {
+  .button-dropdown-list.is-above {
     bottom: 100%;
     top: auto;
     border-bottom: none;
     border-radius: 3px 3px 0px 0px; }
-  .button-dropdown-list > li {
-    padding: 0px;
-    margin: 0px;
-    display: block; }
-    .button-dropdown-list > li > a {
-      display: block;
-      line-height: 40px;
-      font-size: 12.8px;
-      padding: 5px 10px;
-      float: none;
-      color: #666;
+
+/*
+* Dropdown Buttons
+*
+*/
+.button-dropdown-list > li {
+  padding: 0px;
+  margin: 0px;
+  display: block; }
+  .button-dropdown-list > li.button-dropdown-divider {
+    border-top: 1px dotted #CCC; }
+  .button-dropdown-list > li > a {
+    display: block;
+    line-height: 40px;
+    font-size: 12.8px;
+    padding: 5px 10px;
+    float: none;
+    color: #999;
+    text-decoration: none; }
+    .button-dropdown-list > li > a:hover {
+      color: #919191;
+      background: #f7f7f7;
       text-decoration: none; }
-      .button-dropdown-list > li > a:hover {
-        color: #666;
-        background: #fafafa; }
+
+/*
+* Dropdown Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+.button-dropdown.button-dropdown-light .button-dropdown-list {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #e6e6e6; }
+  .button-dropdown.button-dropdown-light .button-dropdown-list > li.button-dropdown-divider {
+    border-color: #e6e6e6; }
+  .button-dropdown.button-dropdown-light .button-dropdown-list > li > a {
+    color: #1B9AF7; }
+    .button-dropdown.button-dropdown-light .button-dropdown-list > li > a:hover {
+      color: #0c93f6;
+      background: #f7f7f7; }
+.button-dropdown.button-dropdown-dark .button-dropdown-list {
+  background: rgba(34, 34, 34, 0.95);
+  border-color: #090909; }
+  .button-dropdown.button-dropdown-dark .button-dropdown-list > li.button-dropdown-divider {
+    border-color: #090909; }
+  .button-dropdown.button-dropdown-dark .button-dropdown-list > li > a {
+    color: #CCC; }
+    .button-dropdown.button-dropdown-dark .button-dropdown-list > li > a:hover {
+      color: #c4c4c4;
+      background: #1a1a1a; }
+.button-dropdown.button-dropdown-primary .button-dropdown-list {
+  background: rgba(27, 154, 247, 0.95);
+  border-color: #0880d7; }
+  .button-dropdown.button-dropdown-primary .button-dropdown-list > li.button-dropdown-divider {
+    border-color: #0880d7; }
+  .button-dropdown.button-dropdown-primary .button-dropdown-list > li > a {
+    color: #FFF; }
+    .button-dropdown.button-dropdown-primary .button-dropdown-list > li > a:hover {
+      color: #f7f7f7;
+      background: #0c93f6; }
 
 /*
 * Buton Groups

@@ -9,39 +9,34 @@
 /*
 * Dropdown Colors
 *
-* $ubtn-colors is used to generate the different button colors.
+* $ubtn-dropdown-colors is used to generate the different dropdowns.
 * Edit or add colors to the list below and recompile.
 * Each block contains the (name, background, color)
-* The class is generated using the name: (ex .button-primary)
+* The class is generated using the name: (ex .button-dropdown-dark)
 */
-$ubtn-dropdown-colors: ('light' #FFF  #1B9AF7) ('dark' #000 #CCC);
+$ubtn-dropdown-colors: ('light' #FFF  #1B9AF7) ('dark' #222 #CCC)  ('primary' #1B9AF7  #FFF);
 $ubtn-dropdown-bg: #FFF;
 $ubtn-dropdown-border: #CCC;
+$ubtn-dropdown-button-height: 40px;
 $ubtn-dropdown-font-size: $ubtn-font-size * .8;
+$ubtn-dropdown-font-color: #999;
 
 /*
-* Dropdown Wrapper
+* Dropdown Container
 *
 */
 #{$ubtn-namespace}-dropdown {
   position: relative;
   overflow: visible;
   display: inline-block;
-
-
-  #{$ubtn-namespace}-dropdown-divider {
-    border-top: 1px dotted #EFEFEF;
-  }
 }
 
 
 /*
-* Dropdown menu list
+* Dropdown List Style
 *
 */
 #{$ubtn-namespace}-dropdown-list {
-  background: rgba($ubtn-dropdown-bg, .95);
-  border: 1px solid $ubtn-dropdown-border;
   display: none;
   position: absolute;
   padding: 0px;
@@ -51,6 +46,9 @@ $ubtn-dropdown-font-size: $ubtn-font-size * .8;
   z-index: 1000;
   min-width: 100%;
   list-style-type: none;
+  background: rgba($ubtn-dropdown-bg, .95);
+  border: 1px solid $ubtn-dropdown-border;
+  font-family: $ubtn-font-family;
 
   @if($ubtn-use-compass) {
     @include box-shadow(0px 2px 7px rgba(0, 0, 0, 0.2));
@@ -68,7 +66,7 @@ $ubtn-dropdown-font-size: $ubtn-font-size * .8;
   * Dropdown Below
   *
   */
-  &#{$ubtn-namespace}-dropdown-is-below {
+  &.is-below {
     top: 100%;
     border-top: none;
 
@@ -84,7 +82,7 @@ $ubtn-dropdown-font-size: $ubtn-font-size * .8;
   * Dropdown Above
   *
   */
-  &#{$ubtn-namespace}-dropdown-is-above {
+  &.is-above {
     bottom: 100%;
     top: auto;
     border-bottom: none;
@@ -96,30 +94,74 @@ $ubtn-dropdown-font-size: $ubtn-font-size * .8;
       border-radius: 3px 3px 0px 0px;
     }
   }
+}
 
 
-  /*
-  * Dropdown Buttons
-  *
-  */
-  > li {
-    padding: 0px;
-    margin: 0px;
+/*
+* Dropdown Buttons
+*
+*/
+#{$ubtn-namespace}-dropdown-list > li {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+
+  &#{$ubtn-namespace}-dropdown-divider {
+   border-top: 1px dotted $ubtn-dropdown-border;
+  }
+
+  > a {
     display: block;
+    line-height: $ubtn-dropdown-button-height;
+    font-size: $ubtn-dropdown-font-size;
+    padding: 5px 10px;
+    float: none;
+    color: $ubtn-dropdown-font-color;
+    text-decoration: none;
 
-    > a {
-      display: block;
-      line-height: $ubtn-height;
-      font-size: $ubtn-dropdown-font-size;
-      padding: 5px 10px;
-      float: none;
-      color: $ubtn-font-color;
+    &:hover {
+      color: darken($ubtn-dropdown-font-color, 3%);
+      background: darken($ubtn-dropdown-bg, 3%);
       text-decoration: none;
+    }
+  }
+}
 
-      &:hover {
-        color: $ubtn-font-color;
-        background: darken($ubtn-dropdown-bg, 2%);
 
+/*
+* Dropdown Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+#{$ubtn-namespace}-dropdown {
+
+  @each $ubtn-dropdown-color in $ubtn-dropdown-colors {
+    $ubtn-name: nth($ubtn-dropdown-color, 1);
+    $ubtn-background: nth($ubtn-dropdown-color, 2);
+    $ubtn-color: nth($ubtn-dropdown-color, 3);
+
+    // Crete class for .button-primary
+    &#{$ubtn-namespace}-dropdown-#{$ubtn-name} {
+
+      #{$ubtn-namespace}-dropdown-list {
+        background: rgba($ubtn-background, .95);
+        border-color: darken($ubtn-background, 10%);
+
+        > li {
+          &#{$ubtn-namespace}-dropdown-divider {
+           border-color: darken($ubtn-background, 10%);
+          }
+
+          > a {
+            color: $ubtn-color;
+
+            &:hover {
+              color: darken($ubtn-color, 3%);
+              background: darken($ubtn-background, 3%);
+            }
+          }
+        }
       }
     }
   }
