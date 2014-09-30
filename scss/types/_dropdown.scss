@@ -88,10 +88,12 @@ $ubtn-dropdown-font-color: #999;
     border-bottom: none;
 
     @if($ubtn-use-compass) {
+      @include box-shadow(0px -2px 7px rgba(0, 0, 0, 0.2));
       @include border-radius(3px 3px 0px 0px);
     }
     @else {
       border-radius: 3px 3px 0px 0px;
+      box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -136,13 +138,14 @@ $ubtn-dropdown-font-color: #999;
 */
 #{$ubtn-namespace}-dropdown {
 
-  @each $ubtn-dropdown-color in $ubtn-dropdown-colors {
-    $ubtn-name: nth($ubtn-dropdown-color, 1);
-    $ubtn-background: nth($ubtn-dropdown-color, 2);
-    $ubtn-color: nth($ubtn-dropdown-color, 3);
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-dropdown-' + $ubtn-name;
 
     // Crete class for .button-primary
-    &#{$ubtn-namespace}-dropdown-#{$ubtn-name} {
+    &#{$ubtn-color-namespace} {
 
       #{$ubtn-namespace}-dropdown-list {
         background: rgba($ubtn-background, .95);
@@ -157,8 +160,8 @@ $ubtn-dropdown-font-color: #999;
             color: $ubtn-color;
 
             &:hover {
-              color: darken($ubtn-color, 3%);
-              background: darken($ubtn-background, 3%);
+              color: darken($ubtn-color, 5%);
+              background: darken($ubtn-background, 5%);
             }
           }
         }

@@ -27,16 +27,17 @@
       background: linear-gradient(top,  lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 7%));
     }
   }
+
   &:active,
   &.active,
   &.is-active {
     background: desaturate($ubtn-bgcolor, 10%);
 
     @if($ubtn-use-compass) {
-      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1));
+      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1));
     }
     @else {
-      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .3), 0px 1px 0px rgba(255, 255, 255, 1);
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1);
     }
   }
 }
