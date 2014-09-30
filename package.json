@@ -13,6 +13,9 @@
     "Buttons",
     "Sass Buttons"
   ],
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
   "license": "Apache License, Version 2.0",
   "bugs": {
     "url": "https://github.com/alexwolfe/Buttons/issues"

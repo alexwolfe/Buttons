@@ -225,4 +225,5 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
   grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
   grunt.registerTask('tests', testSubtasks);
+  grunt.registerTask('travis', ['qunit']);
 };
