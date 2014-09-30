@@ -1,5 +1,7 @@
 var log = [];
 var testName;
+var $dropdown;
+var plugin;
 
 QUnit.done(function (test_results) {
   var tests = [];
@@ -24,8 +26,32 @@ QUnit.testStart(function(testDetails){
       log.push(details);
     }
   });
+  $dropdown = $("#testmeout").menuButton();
+  plugin = $dropdown.data().plugin_menuButton;
 });
 
-test( "hello test", function() {
-  ok( 1 == "1", "Passed!" );
+QUnit.testDone(function( details ) {
+  $dropdown = null;
+  plugin = null;
 });
+
+test("plugin defaults", function() {
+  equal(plugin._name, "menuButton", "default plugin name");
+  equal(plugin.options.propertyName, "value", "default property name");
+  ok($(plugin.$element).hasClass('button-dropdown'), "has button-dropdown class");
+});
+
+test("shows", function() {
+  var $dropdown = $("#testmeout").menuButton();
+  plugin = $dropdown.data().plugin_menuButton;
+  plugin.showMenu();
+  equal($dropdown.data('dropdown'), "show", "gets shown");
+});
+
+test("hides", function() {
+  var $dropdown = $("#testmeout").menuButton();
+  plugin = $dropdown.data().plugin_menuButton;
+  plugin.hideMenu();
+  equal($dropdown.data('dropdown'), "hide", "gets hidden");
+});
+
