@@ -6,15 +6,6 @@
 */
 
 
-/*
-* Dropdown Colors
-*
-* $ubtn-dropdown-colors is used to generate the different dropdowns.
-* Edit or add colors to the list below and recompile.
-* Each block contains the (name, background, color)
-* The class is generated using the name: (ex .button-dropdown-dark)
-*/
-$ubtn-dropdown-colors: ('light' #FFF  #1B9AF7) ('dark' #222 #CCC)  ('primary' #1B9AF7  #FFF);
 $ubtn-dropdown-bg: #FFF;
 $ubtn-dropdown-border: #CCC;
 $ubtn-dropdown-button-height: 40px;
