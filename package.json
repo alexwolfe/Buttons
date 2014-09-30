@@ -15,12 +15,12 @@
   ],
   "scripts": {
     "test": "grunt travis --verbose"
-  }
+  },
   "license": "Apache License, Version 2.0",
   "bugs": {
     "url": "https://github.com/alexwolfe/Buttons/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "grunt-autoprefixer": "^0.8.1",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-connect": "^0.8.0",
@@ -29,6 +29,9 @@
     "grunt-contrib-qunit": "^0.5.2",
     "grunt-contrib-sass": "^0.7.4",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-saucelabs": "^8.3.2"
+  },
+  "dependencies": {
     "grunt-saucelabs": "^8.3.2"
   }
 }
