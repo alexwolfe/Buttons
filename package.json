@@ -14,7 +14,7 @@
     "Sass Buttons"
   ],
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt tests --verbose"
   },
   "license": "Apache License, Version 2.0",
   "bugs": {
