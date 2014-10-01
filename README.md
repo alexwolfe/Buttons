@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
 
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
+
 Buttons is a fully customizable CSS button library that's built using Sass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
 
 Quickly get started by [visiting the Buttons Builder Website](http://alexwolfe.github.io/Buttons/) where you can view live examples and fully customize your Buttons download.
