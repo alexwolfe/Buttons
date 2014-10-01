@@ -180,7 +180,7 @@ module.exports = function (grunt) {
           build: process.env.TRAVIS_JOB_ID,
           concurrency: 3,
           tunnelTimeout: 5,
-          urls: ['http://localhost:9999/js/tests/index.html'],
+          urls: ['http://localhost:9999/tests/index.html'],
           testname: 'Buttons Sauce Unit Tests',
           browsers: [
             {
