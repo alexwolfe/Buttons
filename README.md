@@ -67,10 +67,6 @@ At any time, you can directly open up the `index.html` file in a browser to view
 * **$ubtn-glow-color:** Default glow color (#2c9adb, light blue)
 * **$ubtn-bgcolor:** Default button background color (#EEE, light gray)
 * **$ubtn-height:** Default height, also used to calculate padding on the sides (32px)
-* **$ubtn-dropdown-background:** Default dropdown background color.
-* **$ubtn-dropdown-link-color:** Default dropdown link color.
-* **$ubtn-dropdown-link-hover:** Default dropdown link hover color.
-* **$ubtn-dropdown-link-hover-background:** Default dropdown link hover background color.
 * **$ubtn-font-family:**  Default font family
 * **$ubtn-font-color:** Default font color (#666, gray)
 * **$ubtn-font-weight:** Default font weight
