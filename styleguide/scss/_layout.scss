@@ -25,3 +25,12 @@
   margin-right: auto;
 }
 
+.showcase-examples {
+  > .button-wrap,
+  > .button-dropdown,
+  > .button-group,
+  > .button {
+    margin: 5px;
+  }
+}
+

@@ -512,6 +512,12 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
+.showcase-examples > .button-wrap,
+.showcase-examples > .button-dropdown,
+.showcase-examples > .button-group,
+.showcase-examples > .button {
+  margin: 5px; }
+
 .hero-dark {
   background: #1B9AF7; }
 
