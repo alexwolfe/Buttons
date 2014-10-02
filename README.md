@@ -62,9 +62,9 @@ At any time, you can directly open up the `index.html` file in a browser to view
 * **$ubtn-namespace:**  Desired CSS namespace for your buttons (default .button)
 * **$ubtn-glow-namespace:** Desired CSS namespace for your glow effect (default .glow)
 * **$ubtn-colors:** List of colors in format like `(name, background, color)`.
+* **$ubtn-glow-color:** Default glow color (#2c9adb, light blue)
 * **$ubtn-shapes:** List of shapes in format like `(square 0px)`. You can use Sass maps if you're using 3.3. See `_options.scss` for details.
 * **$ubtn-sizes:** List of sizes in format like `(jumbo 1.5)`. You can use Sass maps if you're using 3.3. See `_options.scss` for details.
-* **$ubtn-glow-color:** Default glow color (#2c9adb, light blue)
 * **$ubtn-bgcolor:** Default button background color (#EEE, light gray)
 * **$ubtn-height:** Default height, also used to calculate padding on the sides (32px)
 * **$ubtn-font-family:**  Default font family
@@ -75,7 +75,7 @@ At any time, you can directly open up the `index.html` file in a browser to view
 
 ## Excluding Button Types
 
-By default, Buttons will compile all *Button Types* to your `css/buttons.css` file. However, you can exclude types from your compilation unit in order to improve performance. To do so, simply comment out or delete the *import* line for that button type. For example, to remove the 3D button type, find the corresponding line in the `scss/button.scss` file that reads:
+By default, Buttons will compile all *Button Types* to your `css/buttons.css` file. However, you can exclude types from your compilation unit in order to improve performance. To do so, simply comment out or delete the corresponding *import* line for that button type. For example, to remove the 3D button type, find the corresponding line in the `scss/button.scss` file that reads:
 ```shell
 @import 'types/3d';
 ```
@@ -86,7 +86,7 @@ Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefull
 
 
 ## Authors
-Created by Unicorn-UI (visit us at [unicorn-ui.com](unicorn-ui.com)) whos team members consist of Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis).
+Created by Unicorn-UI (visit us at [unicorn-ui.com](http://unicorn-ui.com)) whos team members consist of Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis).
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alexwolfe/buttons/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
