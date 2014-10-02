@@ -12,7 +12,6 @@ $hero-subtitle-color: #bdc3c7;
 #{$hero-namespace} {
     padding: 60px;
     position: relative;
-    height: 480px;
     box-sizing: border-box;
 
     h1, h2 {
@@ -62,12 +61,14 @@ $hero-subtitle-color: #bdc3c7;
 
         label {
             color: #00b5e5;
-            font-size: 18px;
+            font-size: 24px;
+            margin-top: 15px;
 
             &.label-hint {
                 color: #bdc3c7;
                 font-size: 12px;
                 text-transform: uppercase;
+                margin-top: 15px;
             }
         }
 
@@ -85,6 +86,10 @@ $hero-subtitle-color: #bdc3c7;
                 padding: 0px;
                 text-transform: uppercase;
                 width: 120px;
+            }
+
+            input[type="email"] {
+              width: 230px;
             }
         }
 
@@ -113,11 +118,7 @@ $hero-subtitle-color: #bdc3c7;
     }
 
     .social-buttons {
-        padding: 20px;
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
+        padding: 30px;
         text-align: center;
 
         .github-button {

@@ -29,6 +29,39 @@ a {
     color: #00A1CB;
 }
 
+/////////////////////////////////////////////////
+// PLACEHOLDERS /////////////////////////////////
+/////////////////////////////////////////////////
+
+//Note these have to be grouped separately!
+::-webkit-input-placeholder {
+  font-weight: $unicorn-btn-font-weight;
+  font-size: $unicorn-btn-font-size;
+  color: $hero-subtitle-color;
+  font-family: $unicorn-btn-font-family;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: $unicorn-btn-font-weight;
+  font-size: $unicorn-btn-font-size;
+  color: $hero-subtitle-color;
+  font-family: $unicorn-btn-font-family;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-weight: $unicorn-btn-font-weight;
+  font-size: $unicorn-btn-font-size;
+  color: $hero-subtitle-color;
+  font-family: $unicorn-btn-font-family;
+}
+
+:-ms-input-placeholder {
+  font-weight: $unicorn-btn-font-weight;
+  font-size: $unicorn-btn-font-size;
+  color: $hero-subtitle-color;
+  font-family: $unicorn-btn-font-family;
+}
+
 .page {
     background: #ecf0f1;
     padding: 60px;

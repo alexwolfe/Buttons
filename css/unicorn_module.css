@@ -501,15 +501,14 @@
 .hero {
   padding: 60px;
   position: relative;
-  height: 480px;
   box-sizing: border-box;
 }
-/* line 18, ../scss/partials/_hero.scss */
+/* line 17, ../scss/partials/_hero.scss */
 .hero h1, .hero h2 {
   font-family: "Cherry Swash", sans-serif;
   text-align: center;
 }
-/* line 23, ../scss/partials/_hero.scss */
+/* line 22, ../scss/partials/_hero.scss */
 .hero h1 {
   text-align: center;
   font-family: "Cherry Swash", sans-serif;
@@ -518,56 +517,58 @@
   line-height: 120px;
   color: #3f4955;
 }
-/* line 32, ../scss/partials/_hero.scss */
+/* line 31, ../scss/partials/_hero.scss */
 .hero h2 {
   color: #bdc3c7;
   font-size: 24px;
   margin: 0px 0px 40px 0px;
   font-weight: lighter;
 }
-/* line 39, ../scss/partials/_hero.scss */
+/* line 38, ../scss/partials/_hero.scss */
 .hero .hero-call-to-action {
   margin: 20px auto 40px auto;
   display: block;
   text-align: center;
 }
-/* line 44, ../scss/partials/_hero.scss */
+/* line 43, ../scss/partials/_hero.scss */
 .hero .hero-call-to-action .download {
   width: 170px;
   padding: 0px;
 }
-/* line 48, ../scss/partials/_hero.scss */
+/* line 47, ../scss/partials/_hero.scss */
 .hero .hero-call-to-action .button {
   margin: 0px 10px;
   font-size: 18px;
 }
-/* line 54, ../scss/partials/_hero.scss */
+/* line 53, ../scss/partials/_hero.scss */
 .hero .subscribe-form {
   display: block;
   text-align: center;
 }
-/* line 58, ../scss/partials/_hero.scss */
+/* line 57, ../scss/partials/_hero.scss */
 .hero .subscribe-form input, .hero .subscribe-form label {
   display: block;
   box-sizing: border-box;
 }
-/* line 63, ../scss/partials/_hero.scss */
+/* line 62, ../scss/partials/_hero.scss */
 .hero .subscribe-form label {
   color: #00b5e5;
-  font-size: 18px;
+  font-size: 24px;
+  margin-top: 15px;
 }
 /* line 67, ../scss/partials/_hero.scss */
 .hero .subscribe-form label.label-hint {
   color: #bdc3c7;
   font-size: 12px;
   text-transform: uppercase;
+  margin-top: 15px;
 }
-/* line 74, ../scss/partials/_hero.scss */
+/* line 75, ../scss/partials/_hero.scss */
 .hero .subscribe-form .subscribe-field-container {
   width: 350px;
   margin: 5px auto;
 }
-/* line 78, ../scss/partials/_hero.scss */
+/* line 79, ../scss/partials/_hero.scss */
 .hero .subscribe-form .subscribe-field-container .button {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
@@ -586,6 +587,10 @@
   width: 120px;
 }
 /* line 91, ../scss/partials/_hero.scss */
+.hero .subscribe-form .subscribe-field-container input[type="email"] {
+  width: 230px;
+}
+/* line 96, ../scss/partials/_hero.scss */
 .hero .subscribe-form input[type="text"],
 .hero .subscribe-form input[type="email"] {
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
@@ -606,7 +611,7 @@
   float: left;
   margin: 0px;
 }
-/* line 107, ../scss/partials/_hero.scss */
+/* line 112, ../scss/partials/_hero.scss */
 .hero .subscribe-form input[type="text"]:active, .hero .subscribe-form input[type="text"]:focus,
 .hero .subscribe-form input[type="email"]:active,
 .hero .subscribe-form input[type="email"]:focus {
@@ -614,43 +619,39 @@
   border: 1px solid #00b5e5;
   outline: none;
 }
-/* line 115, ../scss/partials/_hero.scss */
+/* line 120, ../scss/partials/_hero.scss */
 .hero .social-buttons {
-  padding: 20px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
+  padding: 30px;
   text-align: center;
 }
-/* line 123, ../scss/partials/_hero.scss */
+/* line 124, ../scss/partials/_hero.scss */
 .hero .social-buttons .github-button {
   min-width: 100px;
 }
-/* line 127, ../scss/partials/_hero.scss */
+/* line 128, ../scss/partials/_hero.scss */
 .hero .fb-like {
   vertical-align: top;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 137, ../scss/partials/_hero.scss */
+  /* line 138, ../scss/partials/_hero.scss */
   .hero {
     padding-left: 0;
     padding-right: 0;
     padding-top: 60px;
   }
-  /* line 142, ../scss/partials/_hero.scss */
+  /* line 143, ../scss/partials/_hero.scss */
   .hero h1 {
     font-size: 60px;
     line-height: 60px;
   }
-  /* line 146, ../scss/partials/_hero.scss */
+  /* line 147, ../scss/partials/_hero.scss */
   .hero h2 {
     margin: 20px 40px 0px 40px;
     font-size: 18px;
     line-height: 24px;
   }
-  /* line 154, ../scss/partials/_hero.scss */
+  /* line 155, ../scss/partials/_hero.scss */
   .hero .hero-call-to-action .download {
     margin-bottom: 10px;
   }
@@ -2994,17 +2995,51 @@ a {
   color: #00A1CB;
 }
 
-/* line 32, ../scss/unicorn_module.scss */
+/* line 37, ../scss/unicorn_module.scss */
+::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #bdc3c7;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 44, ../scss/unicorn_module.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 300;
+  font-size: 16px;
+  color: #bdc3c7;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 51, ../scss/unicorn_module.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 300;
+  font-size: 16px;
+  color: #bdc3c7;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 58, ../scss/unicorn_module.scss */
+:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #bdc3c7;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 65, ../scss/unicorn_module.scss */
 .page {
   background: #ecf0f1;
   padding: 60px;
 }
 
-/* line 41, ../scss/unicorn_module.scss */
+/* line 74, ../scss/unicorn_module.scss */
 .instructions {
   padding: 60px 60px 0px 60px;
 }
-/* line 44, ../scss/unicorn_module.scss */
+/* line 77, ../scss/unicorn_module.scss */
 .instructions h2 {
   font-family: "Cherry Swash", sans-serif;
   text-align: center;
@@ -3015,34 +3050,34 @@ a {
   color: #95a5a6;
   font-weight: lighter;
 }
-/* line 55, ../scss/unicorn_module.scss */
+/* line 88, ../scss/unicorn_module.scss */
 .instructions h3 {
   font-size: 28px;
   color: #566473;
   margin: 0px 0px 20px 0px;
 }
-/* line 61, ../scss/unicorn_module.scss */
+/* line 94, ../scss/unicorn_module.scss */
 .instructions ol.steps {
   margin: 0px;
   padding: 0px 0px 0px 30px;
   color: #566473;
 }
-/* line 66, ../scss/unicorn_module.scss */
+/* line 99, ../scss/unicorn_module.scss */
 .instructions ol.steps > li {
   margin: 0px 0px 15px 0px;
 }
-/* line 69, ../scss/unicorn_module.scss */
+/* line 102, ../scss/unicorn_module.scss */
 .instructions ol.steps > li em {
   font-size: 12px;
   font-style: normal;
 }
-/* line 76, ../scss/unicorn_module.scss */
+/* line 109, ../scss/unicorn_module.scss */
 .instructions .instruction-block {
   padding: 30px;
   background: #ecf0f1;
   margin-bottom: 60px;
 }
-/* line 82, ../scss/unicorn_module.scss */
+/* line 115, ../scss/unicorn_module.scss */
 .instructions pre.prettyprint {
   background: #495563;
   overflow: auto;
@@ -3050,33 +3085,33 @@ a {
   border: none;
 }
 
-/* line 96, ../scss/unicorn_module.scss */
+/* line 129, ../scss/unicorn_module.scss */
 .mc-field-group label {
   margin-left: 2px;
 }
-/* line 99, ../scss/unicorn_module.scss */
+/* line 132, ../scss/unicorn_module.scss */
 .mc-field-group input[type="email"] {
   font-size: 12px;
   padding: 4px;
   border-radius: 3px;
 }
-/* line 104, ../scss/unicorn_module.scss */
+/* line 137, ../scss/unicorn_module.scss */
 .mc-field-group #mc-embedded-subscribe {
   margin-top: -2px;
 }
 
-/* line 113, ../scss/unicorn_module.scss */
+/* line 146, ../scss/unicorn_module.scss */
 footer {
   padding: 0px 60px 60px 60px;
 }
-/* line 116, ../scss/unicorn_module.scss */
+/* line 149, ../scss/unicorn_module.scss */
 footer h3 {
   font-size: 14px;
   color: #566473;
   text-align: center;
   margin-bottom: 15px;
 }
-/* line 123, ../scss/unicorn_module.scss */
+/* line 156, ../scss/unicorn_module.scss */
 footer p {
   text-align: center;
   color: #566473;
@@ -3085,16 +3120,16 @@ footer p {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 135, ../scss/unicorn_module.scss */
+  /* line 168, ../scss/unicorn_module.scss */
   .page, .instructions {
     padding: 20px;
   }
-  /* line 138, ../scss/unicorn_module.scss */
+  /* line 171, ../scss/unicorn_module.scss */
   .page .instruction-block, .instructions .instruction-block {
     padding: 15px;
     margin-bottom: 30px;
   }
-  /* line 142, ../scss/unicorn_module.scss */
+  /* line 175, ../scss/unicorn_module.scss */
   .page .instruction-block h3, .instructions .instruction-block h3 {
     font-size: 20px;
   }
