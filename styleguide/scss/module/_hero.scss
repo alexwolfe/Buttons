@@ -4,15 +4,12 @@
   text-align: center;
   color: #FFF;
 
-  .hero-title {
+  .hero-pitch {
+    width: 320px;
+    margin: 0px auto 30px auto;
     font-family: $brand-font;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
-    margin: 0px;
-  }
-
-  .hero-sub-title {
-    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
   }
 }

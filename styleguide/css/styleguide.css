@@ -564,7 +564,7 @@ table {
 .logo-title {
   display: inline-block;
   position: relative;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 10px auto;
   font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
   font-size: 48px;
   font-weight: 100;
@@ -582,14 +582,13 @@ table {
   background: #229ffd;
   text-align: center;
   color: #FFF; }
-  .hero .hero-title {
+  .hero .hero-pitch {
+    width: 320px;
+    margin: 0px auto 30px auto;
     font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
-    margin: 0px; }
-  .hero .hero-sub-title {
-    margin-bottom: 40px; }
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px; }
 
 .button-list {
   list-style-type: none;
