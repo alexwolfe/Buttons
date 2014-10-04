@@ -825,3 +825,12 @@ table {
 
   .atv {
     color: #006600; } }
+/*
+* Font Awesome Overrides
+*
+*/
+.fa-2x {
+  line-height: 80px; }
+  .fa-2x.fa-rss, .fa-2x.fa-google-plus {
+    position: relative;
+    top: 2px; }

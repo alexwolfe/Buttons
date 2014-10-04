@@ -1,0 +1,62 @@
+/*
+* Long Shadow Buttons
+*
+* Known to appear on Winter's days is the long shadow.
+* Oh, and it's also a super popular effect these days!
+*/
+
+//Loops $length times building a long shadow. Defaults downward right.
+@function longshadow($color, $length, $direction: right) {
+    $values: 0px 0px $color;
+    @if $direction == right {
+        @for $i from 1 through $length {
+            $values: #{$values}, #{$i}px #{$i}px #{$color};
+        }
+    }
+    @if $direction == left {
+        @for $i from 1 through $length {
+            $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$color};
+        }
+    }
+    @return $values;
+}
+
+%base {
+    overflow: hidden;
+}
+
+//Long Shadow downwards to the right (default)
+#{$ubtn-namespace}-longshadow,
+#{$ubtn-namespace}-longshadow-right {
+    @extend %base;
+
+    //Create long shadow for each of our action colors
+    @each $ubtn-color in $ubtn-colors {
+        $ubtn-name: nth($ubtn-color, 1);
+        $ubtn-background: nth($ubtn-color, 2);
+        $ubtn-color: nth($ubtn-color, 3);
+
+        &#{$ubtn-namespace}-#{$ubtn-name} {
+            background-color: $ubtn-background;
+            text-shadow: longshadow(darken($ubtn-background, 10%), 40, right);
+        }
+    }
+}
+
+//Long Shadow downwards to the left
+#{$ubtn-namespace}-longshadow-left {
+    @extend %base;
+
+    //Create long shadow for each of our action colors
+    @each $ubtn-color in $ubtn-colors {
+        $ubtn-name: nth($ubtn-color, 1);
+        $ubtn-background: nth($ubtn-color, 2);
+        $ubtn-color: nth($ubtn-color, 3);
+
+        &#{$ubtn-namespace}-#{$ubtn-name} {
+            background-color: $ubtn-background;
+            text-shadow: longshadow(darken($ubtn-background, 10%), 40, left);
+        }
+    }
+}
+
