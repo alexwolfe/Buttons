@@ -5,9 +5,10 @@
 .arrow {
   position: absolute;
   z-index: $layer-1;
-  font-size: 680px;
+  font-size: 681px;
   height: 680px;
 }
+
 
 /*
 * Arrow Type
@@ -30,6 +31,7 @@
   left: 0px;
 }
 
+
 /*
 * Arrow Visibility
 *
@@ -43,4 +45,13 @@
   &.arrow-bottom-right {
     left: 50%;
   }
+}
+
+
+/*
+* Arrow Colors
+*
+*/
+.arrow-dark {
+  color: darken($blue-shade-6, 3%);
 }

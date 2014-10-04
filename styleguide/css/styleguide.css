@@ -855,7 +855,7 @@ table {
 .arrow {
   position: absolute;
   z-index: 1;
-  font-size: 680px;
+  font-size: 681px;
   height: 680px; }
 
 /*
@@ -886,3 +886,10 @@ table {
   right: 50%; }
 .arrow-half.arrow-top-right, .arrow-half.arrow-bottom-right {
   left: 50%; }
+
+/*
+* Arrow Colors
+*
+*/
+.arrow-dark {
+  color: #1398fd; }
