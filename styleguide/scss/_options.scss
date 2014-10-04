@@ -2,16 +2,25 @@
 * Typography
 *
 */
-$brand-font: 'Lato', sans-serif;
+$brand-font: 'Lato', Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
 
 /*
 * Colors
 *
 */
-$blue: #1B9AF7;
-$green: #A5DE37;
-$ubtn-colors: ('primary' #1B9AF7  #FFF) ('secondary' #DCD4F9 #FFF) ('plain' #FFF #333) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
+$white: #FFFFFF;
+$black: #000000;
 
+$blue-shade-1: #dff1fe;
+$blue-shade-2: #c0e3fe;
+$blue-shade-3: #a0d6fe;
+$blue-shade-4: #80c8fd;
+$blue-shade-5: #61bafd;
+$blue-shade-6: #229ffd;
+$blue-shade-7: #1a7fcc;
+$blue-shade-8: #145f98;
+$blue-shade-9: #0d3f66;
+$blue-shade-10: #062032;
 
 
 /*

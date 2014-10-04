@@ -1,15 +1,32 @@
 .logo {
   display: block;
-  margin: 0px auto;
+  margin: 0px auto 20px auto;
   border-radius: 100%;
-  background: #FFF;
+  background: $white;
   width: 120px;
   height: 120px;
-  color: #000;
+  color: $blue-shade-8;
   text-align: center;
+  text-shadow: 0px 1px 0px $white;
   line-height: 120px;
   font-style: normal;
-  font-size: 50px;
+  font-size: 60px;
   font-family: $brand-font;
-  font-weight: 300;
+  font-weight: 100;
+  position: relative;
+  top: 0px;
+  box-shadow: 0px 7px 0px darken($white, 12%), 0px 12px 0px rgba(0, 0, 0, .1);
+
+  &:hover, &:focus {
+    box-shadow: 0px 7px 0px darken($white, 12%), 0px 12px 0px rgba(0, 0, 0, .1);
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    top: 5px;
+    transition-property: all;
+    transition-duration: .15s;
+    box-shadow: 0px 2px 0px darken($white, 12%), 0px 4px 0px rgba(0, 0, 0, .1);
+  }
 }

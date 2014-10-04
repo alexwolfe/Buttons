@@ -523,18 +523,34 @@ table {
 
 .logo {
   display: block;
-  margin: 0px auto;
+  margin: 0px auto 20px auto;
   border-radius: 100%;
-  background: #FFF;
+  background: #FFFFFF;
   width: 120px;
   height: 120px;
-  color: #000;
+  color: #145f98;
   text-align: center;
+  text-shadow: 0px 1px 0px #FFFFFF;
   line-height: 120px;
   font-style: normal;
-  font-size: 50px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300; }
+  font-size: 60px;
+  font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  .logo:hover, .logo:focus {
+    -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  .logo:active, .logo.active, .logo.is-active {
+    top: 5px;
+    -webkit-transition-property: all;
+            transition-property: all;
+    -webkit-transition-duration: .15s;
+            transition-duration: .15s;
+    -webkit-box-shadow: 0px 2px 0px #e0e0e0, 0px 4px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 0px #e0e0e0, 0px 4px 0px rgba(0, 0, 0, 0.1); }
 
 .hero {
   padding: 140px 40px;
@@ -542,7 +558,7 @@ table {
   text-align: center;
   color: #FFF; }
   .hero .hero-title {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -573,11 +589,11 @@ table {
     z-index: 2; }
   .phone .phone-header {
     padding: 20px 0px 0px 0px;
-    background: #0880d7;
+    background: #0286ea;
     text-align: center;
     height: 44px; }
     .phone .phone-header > h3 {
-      font-family: "Lato", sans-serif;
+      font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
       font-weight: 100;
       font-style: 18px;
       margin: 0px;
@@ -602,7 +618,7 @@ table {
     z-index: 1; }
   .phone .phone-footer {
     padding: 20px 60px;
-    background: #088ef0;
+    background: #0994fd;
     position: absolute;
     left: 30px;
     right: 30px;
@@ -616,7 +632,7 @@ table {
   .accessibility .showcase-sub-title,
   .showcase .showcase-title,
   .showcase .showcase-sub-title {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-weight: 200; }
   .accessibility .showcase-title,
   .showcase .showcase-title {
@@ -633,7 +649,7 @@ table {
 */
 .showcase-dark {
   color: #FFF;
-  background: #1B9AF7; }
+  background: #229ffd; }
 
 .subscribe-form {
   padding: 60px 60px 0 60px; }
@@ -664,7 +680,7 @@ table {
   .prettyprint .linenums {
     margin-top: 0;
     margin-bottom: 0;
-    color: #afdbfc;
+    color: #bae1fe;
     line-height: 1.5; }
   .prettyprint .prettyprint-overlay {
     cursor: pointer;
