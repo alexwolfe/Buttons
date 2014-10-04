@@ -6,57 +6,54 @@
 */
 
 //Loops $length times building a long shadow. Defaults downward right.
-@function longshadow($color, $length, $direction: right) {
+@function longshadow($type, $color, $length, $direction: right) {
     $values: 0px 0px $color;
     @if $direction == right {
         @for $i from 1 through $length {
-            $values: #{$values}, #{$i}px #{$i}px #{$color};
+            $kolor: $color;
+            @if $type == box {
+                $kolor: rgba($color, 1 - $i / $length)
+            }
+            $values: #{$values}, #{$i}px #{$i}px #{$kolor};
         }
     }
     @if $direction == left {
         @for $i from 1 through $length {
-            $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$color};
+            $kolor: $color;
+            @if $type == box {
+                $kolor: rgba($color, 1 - $i / $length)
+            }
+            $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$kolor};
         }
     }
     @return $values;
 }
 
-%base {
+@mixin base($direction) {
     overflow: hidden;
+
+    //Create long shadow for each of our action colors
+    @each $ubtn-color in $ubtn-colors {
+        $ubtn-name: nth($ubtn-color, 1);
+        $ubtn-background: nth($ubtn-color, 2);
+        $ubtn-color: nth($ubtn-color, 3);
+
+        &#{$ubtn-namespace}-#{$ubtn-name} {
+            background-color: $ubtn-background;
+            text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, $direction);
+        }
+
+        //If they want the whole button long shadow'd
+        &#{$ubtn-namespace}-longshadow-box {
+            box-shadow: longshadow(box, darken(desaturate($ubtn-background, 55%), 30%), 45, $direction);
+        }
+    }
 }
 
 //Long Shadow downwards to the right (default)
 #{$ubtn-namespace}-longshadow,
-#{$ubtn-namespace}-longshadow-right {
-    @extend %base;
-
-    //Create long shadow for each of our action colors
-    @each $ubtn-color in $ubtn-colors {
-        $ubtn-name: nth($ubtn-color, 1);
-        $ubtn-background: nth($ubtn-color, 2);
-        $ubtn-color: nth($ubtn-color, 3);
-
-        &#{$ubtn-namespace}-#{$ubtn-name} {
-            background-color: $ubtn-background;
-            text-shadow: longshadow(darken($ubtn-background, 10%), 40, right);
-        }
-    }
-}
+#{$ubtn-namespace}-longshadow-right {@include base(right);}
 
 //Long Shadow downwards to the left
-#{$ubtn-namespace}-longshadow-left {
-    @extend %base;
-
-    //Create long shadow for each of our action colors
-    @each $ubtn-color in $ubtn-colors {
-        $ubtn-name: nth($ubtn-color, 1);
-        $ubtn-background: nth($ubtn-color, 2);
-        $ubtn-color: nth($ubtn-color, 3);
-
-        &#{$ubtn-namespace}-#{$ubtn-name} {
-            background-color: $ubtn-background;
-            text-shadow: longshadow(darken($ubtn-background, 10%), 40, left);
-        }
-    }
-}
+#{$ubtn-namespace}-longshadow-left {@include base(left);}
 
