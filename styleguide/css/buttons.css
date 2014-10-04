@@ -228,13 +228,13 @@
 .button-plain-flat {
   background-color: #FFF;
   border-color: #FFF;
-  color: #333; }
+  color: #1B9AF7; }
   .button-plain:hover, .button-plain:focus,
   .button-plain-flat:hover,
   .button-plain-flat:focus {
     background-color: white;
     border-color: white;
-    color: #333; }
+    color: #1B9AF7; }
   .button-plain:active, .button-plain.active, .button-plain.is-active,
   .button-plain-flat:active,
   .button-plain-flat.active,
@@ -368,7 +368,7 @@
   border-radius: 10px; }
 
 .button-rounded {
-  border-radius: 3px; }
+  border-radius: 4px; }
 
 .button-pill {
   border-radius: 200px; }
@@ -409,7 +409,7 @@
   .button-circle.button-tiny,
   .button-box.button-tiny,
   .button-square.button-tiny {
-    width: 20px; }
+    width: 24px; }
 
 /*
 * Button Sizes
@@ -448,10 +448,10 @@
   padding: 0px 30px; }
 
 .button-tiny {
-  font-size: 7px;
-  height: 20px;
-  line-height: 20px;
-  padding: 0px 20px; }
+  font-size: 8.4px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0px 24px; }
 
 /*
 * Border Buttons
@@ -551,7 +551,7 @@
     .button-border-thick.button-plain:hover,
     .button-border-thick.button-plain:focus {
       background-color: rgba(255, 255, 255, 0.9);
-      color: rgba(51, 51, 51, 0.7); }
+      color: rgba(27, 154, 247, 0.7); }
     .button-border.button-plain:active, .button-plain.button-border-thin:active, .button-plain.button-border-thick:active, .button-border.button-plain.active, .button-plain.active.button-border-thin, .button-plain.active.button-border-thick, .button-border.button-plain.is-active, .button-plain.is-active.button-border-thin, .button-plain.is-active.button-border-thick,
     .button-border-thin.button-plain:active,
     .button-border-thin.button-plain.active,
@@ -560,7 +560,7 @@
     .button-border-thick.button-plain.active,
     .button-border-thick.button-plain.is-active {
       background-color: rgba(255, 255, 255, 0.7);
-      color: rgba(51, 51, 51, 0.5); }
+      color: rgba(27, 154, 247, 0.5); }
   .button-border.button-inverse, .button-inverse.button-border-thin, .button-inverse.button-border-thick,
   .button-border-thin.button-inverse,
   .button-border-thick.button-inverse {
@@ -684,7 +684,7 @@
   .button-border.button-tiny, .button-tiny.button-border-thin, .button-tiny.button-border-thick,
   .button-border-thin.button-tiny,
   .button-border-thick.button-tiny {
-    line-height: 16px; }
+    line-height: 20px; }
 
 /*
 * Border Buttons
@@ -759,9 +759,9 @@
     height: 29.65px;
     line-height: 29.65px; }
   .button-borderless.button-tiny {
-    font-size: 9.1px;
-    height: 25.1px;
-    line-height: 25.1px; }
+    font-size: 10.92px;
+    height: 26.92px;
+    line-height: 26.92px; }
 
 /*
 * Raised Buttons
@@ -1355,9 +1355,9 @@
   .button-dropdown.button-dropdown-plain .button-dropdown-list > li.button-dropdown-divider {
     border-color: #e6e6e6; }
   .button-dropdown.button-dropdown-plain .button-dropdown-list > li > a {
-    color: #333; }
+    color: #1B9AF7; }
     .button-dropdown.button-dropdown-plain .button-dropdown-list > li > a:hover {
-      color: #262626;
+      color: #088ef0;
       background: #f2f2f2; }
 .button-dropdown.button-dropdown-inverse .button-dropdown-list {
   background: rgba(34, 34, 34, 0.95);

@@ -505,6 +505,26 @@ table {
   padding: 100px; }
 
 /*
+* Layout Over & Under
+*
+* Used to create dynamic background effects that.
+* The main content should be over and the background
+* sould remain under.
+*/
+.l-over {
+  position: relative;
+  z-index: 2; }
+
+.l-under {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px; }
+
+/*
 * Alignment
 *
 */
@@ -512,15 +532,6 @@ table {
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
-
-.showcase-examples > .button-wrap,
-.showcase-examples > .button-dropdown,
-.showcase-examples > .button-group,
-.showcase-examples > .button {
-  margin: 5px; }
-
-.hero-dark {
-  background: #1B9AF7; }
 
 /*
 * Logo Icon
@@ -570,7 +581,7 @@ table {
   font-size: 48px;
   font-weight: 100;
   text-transform: uppercase;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.15); }
   .logo-title > sup {
     position: absolute;
     top: -5px;
@@ -578,11 +589,21 @@ table {
     z-index: 1;
     font-size: 12px; }
 
+/*
+* Hero Module
+*
+*/
 .hero {
+  position: relative;
   padding: 60px 40px;
   background: #229ffd;
   text-align: center;
-  color: #FFF; }
+  color: #FFF;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 470px; }
   .hero .hero-pitch {
     width: 320px;
     margin: 0px auto 30px auto;
@@ -590,7 +611,6 @@ table {
     font-weight: 100;
     line-height: 24px; }
   .hero .hero-cta {
-    color: #229ffd;
     font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-weight: 500;
     line-height: 44px;
@@ -655,22 +675,22 @@ table {
     bottom: 124px;
     z-index: 2; }
 
-.accessibility,
 .showcase {
-  padding: 40px; }
-  .accessibility .showcase-title,
-  .accessibility .showcase-sub-title,
+  padding: 60px; }
+  .showcase.is-light {
+    color: #a9adb1; }
+  .showcase.is-dark {
+    color: #FFFFFF; }
   .showcase .showcase-title,
   .showcase .showcase-sub-title {
     font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
-    font-weight: 200; }
-  .accessibility .showcase-title,
+    font-weight: 300; }
   .showcase .showcase-title {
-    font-size: 30px;
-    margin: 0px 0px 10px 0px; }
-  .accessibility .showcase-sub-title,
+    font-size: 26px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase; }
   .showcase .showcase-sub-title {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px 0px 40px 0px; }
 
 /*
@@ -825,3 +845,41 @@ table {
 
   .atv {
     color: #006600; } }
+/*
+* Arrow Module
+*
+*/
+.arrow {
+  position: absolute;
+  z-index: 1;
+  font-size: 680px;
+  height: 680px; }
+
+/*
+* Arrow Type
+*
+*/
+.arrow-top-left {
+  top: 0px;
+  right: 0px; }
+
+.arrow-top-right {
+  top: 0px;
+  left: 0px; }
+
+.arrow-bottom-left {
+  bottom: 0px;
+  right: 0px; }
+
+.arrow-bottom-right {
+  bottom: 0px;
+  left: 0px; }
+
+/*
+* Arrow Visibility
+*
+*/
+.arrow-half.arrow-top-left, .arrow-half.arrow-bottom-left {
+  right: 50%; }
+.arrow-half.arrow-top-right, .arrow-half.arrow-bottom-right {
+  left: 50%; }

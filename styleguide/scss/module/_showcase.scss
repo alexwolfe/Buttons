@@ -1,20 +1,28 @@
-.accessibility,
 .showcase {
-  padding: 40px;
+  padding: 60px;
+
+  &.is-light {
+    color: $gray;
+  }
+
+  &.is-dark {
+    color: $white;
+  }
 
   .showcase-title,
   .showcase-sub-title {
     font-family: $brand-font;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   .showcase-title {
-    font-size: 30px;
-    margin: 0px 0px 10px 0px;
+    font-size: 26px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
   }
 
   .showcase-sub-title {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px 0px 40px 0px;
   }
 }

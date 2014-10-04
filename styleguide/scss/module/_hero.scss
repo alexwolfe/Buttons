@@ -1,8 +1,17 @@
+/*
+* Hero Module
+*
+*/
+
 .hero {
+  position: relative;
   padding: 60px 40px;
   background: $blue-shade-6;
   text-align: center;
   color: #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  height: 470px;
 
   .hero-pitch {
     width: 320px;
@@ -13,7 +22,6 @@
   }
 
   .hero-cta {
-    color: $blue-shade-6;
     font-family: $brand-font;
     font-weight: 500;
     line-height: 44px;

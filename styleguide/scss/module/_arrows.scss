@@ -1,0 +1,46 @@
+/*
+* Arrow Module
+*
+*/
+.arrow {
+  position: absolute;
+  z-index: $layer-1;
+  font-size: 680px;
+  height: 680px;
+}
+
+/*
+* Arrow Type
+*
+*/
+.arrow-top-left {
+  top: 0px;
+  right: 0px;
+}
+.arrow-top-right {
+  top: 0px;
+  left: 0px;
+}
+.arrow-bottom-left {
+  bottom: 0px;
+  right: 0px;
+}
+.arrow-bottom-right {
+  bottom: 0px;
+  left: 0px;
+}
+
+/*
+* Arrow Visibility
+*
+*/
+.arrow-half {
+  &.arrow-top-left,
+  &.arrow-bottom-left {
+    right: 50%;
+  }
+  &.arrow-top-right,
+  &.arrow-bottom-right {
+    left: 50%;
+  }
+}
