@@ -641,17 +641,21 @@
     padding-top: 60px;
   }
   /* line 143, ../scss/partials/_hero.scss */
+  .hero .subscribe-form label {
+    font-size: 12px;
+  }
+  /* line 145, ../scss/partials/_hero.scss */
   .hero h1 {
     font-size: 60px;
     line-height: 60px;
   }
-  /* line 147, ../scss/partials/_hero.scss */
+  /* line 149, ../scss/partials/_hero.scss */
   .hero h2 {
     margin: 20px 40px 0px 40px;
     font-size: 18px;
     line-height: 24px;
   }
-  /* line 155, ../scss/partials/_hero.scss */
+  /* line 157, ../scss/partials/_hero.scss */
   .hero .hero-call-to-action .download {
     margin-bottom: 10px;
   }
