@@ -7,9 +7,16 @@
   .hero-pitch {
     width: 320px;
     margin: 0px auto 30px auto;
-    font-family: $brand-font;
     font-size: 16px;
     font-weight: 100;
     line-height: 24px;
+  }
+
+  .hero-cta {
+    color: $blue-shade-6;
+    font-family: $brand-font;
+    font-weight: 500;
+    line-height: 44px;
+    height: 40px;
   }
 }

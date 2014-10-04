@@ -89,7 +89,8 @@ textarea {
 * Addresses margins handled incorrectly in IE 6/7.
 */
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif; }
 
 /* ==========================================================================
  Links
@@ -585,10 +586,15 @@ table {
   .hero .hero-pitch {
     width: 320px;
     margin: 0px auto 30px auto;
-    font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
     font-weight: 100;
     line-height: 24px; }
+  .hero .hero-cta {
+    color: #229ffd;
+    font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    height: 40px; }
 
 .button-list {
   list-style-type: none;
