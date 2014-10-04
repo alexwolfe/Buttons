@@ -101,7 +101,7 @@
   background-color: #EEE;
   border-color: #EEE;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
   text-align: center;
@@ -418,37 +418,37 @@
 * (ex. .button-large, .button-small, etc.)
 */
 .button-giant {
-  font-size: 28px;
+  font-size: 32px;
   height: 80px;
   line-height: 80px;
   padding: 0px 80px; }
 
 .button-jumbo {
-  font-size: 21px;
+  font-size: 24px;
   height: 60px;
   line-height: 60px;
   padding: 0px 60px; }
 
 .button-large {
-  font-size: 17.5px;
+  font-size: 20px;
   height: 50px;
   line-height: 50px;
   padding: 0px 50px; }
 
 .button-normal {
-  font-size: 14px;
+  font-size: 16px;
   height: 40px;
   line-height: 40px;
   padding: 0px 40px; }
 
 .button-small {
-  font-size: 10.5px;
+  font-size: 12px;
   height: 30px;
   line-height: 30px;
   padding: 0px 30px; }
 
 .button-tiny {
-  font-size: 8.4px;
+  font-size: 9.6px;
   height: 24px;
   line-height: 24px;
   padding: 0px 24px; }
@@ -697,7 +697,7 @@
   border: none;
   padding: 0px 8px !important;
   color: #EEE;
-  font-size: 18.2px;
+  font-size: 20.8px;
   font-weight: 200;
   /*
   * Borderless Button Colors
@@ -739,29 +739,29 @@
   .button-borderless.button-royal {
     color: #7B72E9; }
   .button-borderless.button-giant {
-    font-size: 36.4px;
-    height: 52.4px;
-    line-height: 52.4px; }
+    font-size: 41.6px;
+    height: 57.6px;
+    line-height: 57.6px; }
   .button-borderless.button-jumbo {
-    font-size: 27.3px;
-    height: 43.3px;
-    line-height: 43.3px; }
+    font-size: 31.2px;
+    height: 47.2px;
+    line-height: 47.2px; }
   .button-borderless.button-large {
-    font-size: 22.75px;
-    height: 38.75px;
-    line-height: 38.75px; }
+    font-size: 26px;
+    height: 42px;
+    line-height: 42px; }
   .button-borderless.button-normal {
-    font-size: 18.2px;
-    height: 34.2px;
-    line-height: 34.2px; }
+    font-size: 20.8px;
+    height: 36.8px;
+    line-height: 36.8px; }
   .button-borderless.button-small {
-    font-size: 13.65px;
-    height: 29.65px;
-    line-height: 29.65px; }
+    font-size: 15.6px;
+    height: 31.6px;
+    line-height: 31.6px; }
   .button-borderless.button-tiny {
-    font-size: 10.92px;
-    height: 26.92px;
-    line-height: 26.92px; }
+    font-size: 12.48px;
+    height: 28.48px;
+    line-height: 28.48px; }
 
 /*
 * Raised Buttons
@@ -1313,7 +1313,7 @@
   .button-dropdown-list > li > a {
     display: block;
     line-height: 40px;
-    font-size: 11.2px;
+    font-size: 12.8px;
     padding: 5px 10px;
     float: none;
     color: #666;
