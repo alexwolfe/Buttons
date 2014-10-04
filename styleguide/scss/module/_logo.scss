@@ -1,32 +1,60 @@
+/*
+* Logo Icon
+*
+*/
+
 .logo {
+  top: 0px;
   display: block;
   margin: 0px auto 20px auto;
-  border-radius: 100%;
-  background: $white;
   width: 120px;
   height: 120px;
-  color: $blue-shade-8;
+  line-height: 130px;
   text-align: center;
-  text-shadow: 0px 1px 0px $white;
-  line-height: 120px;
   font-style: normal;
   font-size: 60px;
   font-family: $brand-font;
   font-weight: 100;
   position: relative;
-  top: 0px;
+  border-radius: 100%;
+  background: $white;
+  color: $blue-shade-8;
+  text-shadow: 0px 1px 0px $white;
   box-shadow: 0px 7px 0px darken($white, 12%), 0px 12px 0px rgba(0, 0, 0, .1);
 
   &:hover, &:focus {
     box-shadow: 0px 7px 0px darken($white, 12%), 0px 12px 0px rgba(0, 0, 0, .1);
   }
 
-  &:active,
-  &.active,
-  &.is-active {
+  &:active {
     top: 5px;
     transition-property: all;
     transition-duration: .15s;
     box-shadow: 0px 2px 0px darken($white, 12%), 0px 4px 0px rgba(0, 0, 0, .1);
+  }
+}
+
+
+/*
+* Logo Title
+*
+*/
+
+.logo-title {
+  display: inline-block;
+  position: relative;
+  margin: 0px auto 30px auto;
+  font-family: $brand-font;
+  font-size: 48px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, .1);
+
+  > sup {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    z-index: $layer-1;
+    font-size: 12px;
   }
 }

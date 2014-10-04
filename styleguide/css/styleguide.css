@@ -521,29 +521,33 @@ table {
 .hero-dark {
   background: #1B9AF7; }
 
+/*
+* Logo Icon
+*
+*/
 .logo {
+  top: 0px;
   display: block;
   margin: 0px auto 20px auto;
-  border-radius: 100%;
-  background: #FFFFFF;
   width: 120px;
   height: 120px;
-  color: #145f98;
+  line-height: 130px;
   text-align: center;
-  text-shadow: 0px 1px 0px #FFFFFF;
-  line-height: 120px;
   font-style: normal;
   font-size: 60px;
-  font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
   position: relative;
-  top: 0px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  color: #145f98;
+  text-shadow: 0px 1px 0px #FFFFFF;
   -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1); }
   .logo:hover, .logo:focus {
     -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1); }
-  .logo:active, .logo.active, .logo.is-active {
+  .logo:active {
     top: 5px;
     -webkit-transition-property: all;
             transition-property: all;
@@ -552,13 +556,33 @@ table {
     -webkit-box-shadow: 0px 2px 0px #e0e0e0, 0px 4px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 2px 0px #e0e0e0, 0px 4px 0px rgba(0, 0, 0, 0.1); }
 
+/*
+* Logo Title
+*
+*/
+.logo-title {
+  display: inline-block;
+  position: relative;
+  margin: 0px auto 30px auto;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+  font-size: 48px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  .logo-title > sup {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    z-index: 1;
+    font-size: 12px; }
+
 .hero {
   padding: 140px 40px;
   background: #1B9AF7;
   text-align: center;
   color: #FFF; }
   .hero .hero-title {
-    font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+    font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -593,7 +617,7 @@ table {
     text-align: center;
     height: 44px; }
     .phone .phone-header > h3 {
-      font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+      font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
       font-weight: 100;
       font-style: 18px;
       margin: 0px;
@@ -632,7 +656,7 @@ table {
   .accessibility .showcase-sub-title,
   .showcase .showcase-title,
   .showcase .showcase-sub-title {
-    font-family: "Lato", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+    font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-weight: 200; }
   .accessibility .showcase-title,
   .showcase .showcase-title {
