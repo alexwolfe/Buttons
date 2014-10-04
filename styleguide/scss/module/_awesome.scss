@@ -1,0 +1,15 @@
+/*
+* Font Awesome Overrides
+*
+*/
+
+.fa-2x {
+	line-height: 80px;
+
+	&.fa-rss,
+	&.fa-google-plus {
+		//fa 2x feel just a bit vertically off center
+		position: relative;
+		top: 2px;
+	}
+}
