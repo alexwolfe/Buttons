@@ -543,7 +543,8 @@ table {
   color: #145f98;
   text-shadow: 0px 1px 0px #FFFFFF;
   -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
   .logo:hover, .logo:focus {
     -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1); }
@@ -577,8 +578,8 @@ table {
     font-size: 12px; }
 
 .hero {
-  padding: 140px 40px;
-  background: #1B9AF7;
+  padding: 60px 40px;
+  background: #229ffd;
   text-align: center;
   color: #FFF; }
   .hero .hero-title {
