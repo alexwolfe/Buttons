@@ -140,7 +140,12 @@ $hero-subtitle-color: #bdc3c7;
         padding-right: 0;
         padding-top: 60px;
 
-        .subscribe-form label {font-size: 12px; }
+        .subscribe-form {
+            label[for="mce-EMAIL"] {
+                font-size: 18px;
+                &.label-hint { font-size: 10px; }
+            }
+        }
 
         h1 {
             font-size: 60px;
