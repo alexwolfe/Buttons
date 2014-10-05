@@ -32,6 +32,17 @@
     &#{$ubtn-namespace}-#{$ubtn-name} {
       background-color: $ubtn-background;
       text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, $direction);
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(top,  lighten($ubtn-background, 7%), darken($ubtn-background, 7%));
+      }
+
+      &:active,
+      &.active,
+      &.is-active  {
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+      }
     }
   }
 }
