@@ -618,6 +618,19 @@ table {
     font-weight: 500;
     line-height: 44px;
     height: 40px; }
+  .hero .hero-unicorn-badge {
+    padding: 8px 0px 0px 30px;
+    border-top: 2px solid #1a7fcc;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    color: #1a7fcc;
+    font-size: 12px;
+    text-decoration: none; }
+    .hero .hero-unicorn-badge > em {
+      display: block;
+      font-style: normal; }
 
 .button-list {
   list-style-type: none;
@@ -696,6 +709,12 @@ table {
   .showcase .showcase-sub-title {
     font-size: 16px;
     margin: 0px 0px 40px 0px; }
+  .showcase .button,
+  .showcase .button-dropdown {
+    margin: 5px; }
+    .showcase .button .button,
+    .showcase .button-dropdown .button {
+      margin: 0px; }
 
 /*
 * Showcase Colors

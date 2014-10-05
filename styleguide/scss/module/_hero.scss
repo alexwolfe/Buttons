@@ -27,4 +27,25 @@
     line-height: 44px;
     height: 40px;
   }
+
+  .hero-unicorn-badge {
+    padding: 8px 0px 0px 30px;
+    border-top: 2px solid $blue-shade-7;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: $layer-2;
+    color: $blue-shade-7;
+    font-size: 12px;
+    text-decoration: none;
+
+    > em {
+      display: block;
+      font-style: normal;
+    }
+  }
+
+  .hero-mobile-badge {
+
+  }
 }
