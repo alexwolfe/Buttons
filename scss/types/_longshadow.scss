@@ -3,12 +3,21 @@
 */
 
 //Loops $length times building a long shadow. Defaults downward right.
-@function longshadow($type, $color, $length, $direction: right) {
+@function longshadow($type, $color, $length, $expand: false, $direction: right) {
   $values: 0px 0px $color;
+  @if $expand == true {
+    $values: 0px 0px 0px $color;
+  }
+
   @if $direction == right {
     @for $i from 1 through $length {
       $kolor: $color;
-      $values: #{$values}, #{$i}px #{$i}px #{$kolor};
+
+      @if $expand == true {
+        $values: #{$values}, #{$i}px #{$i}px unquote($i * .15 + 'px ') $kolor;
+      } @else {
+        $values: #{$values}, #{$i}px #{$i}px #{$kolor};
+      }
     }
   }
   @if $direction == left {
@@ -31,7 +40,12 @@
 
     &#{$ubtn-namespace}-#{$ubtn-name} {
       background-color: $ubtn-background;
-      text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, $direction);
+      text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, false, $direction);
+
+      //Expand (skew)
+      &#{$ubtn-namespace}-longshadow-expand {
+        text-shadow: longshadow(text, darken($ubtn-background, 10%), 50, true, $direction);
+      }
 
       &:hover,
       &:focus {
@@ -45,12 +59,17 @@
       }
     }
   }
+
 }
 
 //Long Shadow downwards to the right (default)
 #{$ubtn-namespace}-longshadow,
-#{$ubtn-namespace}-longshadow-right {@include base(right);}
+#{$ubtn-namespace}-longshadow-right {
+  @include base(right);
+}
 
 //Long Shadow downwards to the left
-#{$ubtn-namespace}-longshadow-left {@include base(left);}
+#{$ubtn-namespace}-longshadow-left {
+  @include base(left);
+}
 
