@@ -710,10 +710,15 @@ table {
     font-size: 16px;
     margin: 0px 0px 40px 0px; }
   .showcase .button,
-  .showcase .button-dropdown {
+  .showcase .button-dropdown,
+  .showcase .button-group {
     margin: 5px; }
     .showcase .button .button,
-    .showcase .button-dropdown .button {
+    .showcase .button .button-dropdown,
+    .showcase .button-dropdown .button,
+    .showcase .button-dropdown .button-dropdown,
+    .showcase .button-group .button,
+    .showcase .button-group .button-dropdown {
       margin: 0px; }
 
 /*

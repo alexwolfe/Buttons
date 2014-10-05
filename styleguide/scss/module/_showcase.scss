@@ -28,10 +28,12 @@
   }
 
   .button,
-  .button-dropdown {
+  .button-dropdown,
+  .button-group {
     margin: 5px;
 
-    .button {
+    .button,
+    .button-dropdown {
       margin: 0px;
     }
   }
