@@ -679,6 +679,7 @@ table {
     z-index: 2; }
 
 .showcase {
+  position: relative;
   padding: 60px; }
   .showcase.is-light {
     color: #a9adb1; }
@@ -893,3 +894,6 @@ table {
 */
 .arrow-dark {
   color: #1398fd; }
+
+.arrow-light {
+  color: #f3faff; }
