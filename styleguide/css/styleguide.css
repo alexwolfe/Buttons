@@ -690,9 +690,9 @@ table {
     font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
     font-weight: 300; }
   .showcase .showcase-title {
-    font-size: 26px;
+    font-size: 36px;
     margin: 0px 0px 0px 0px;
-    text-transform: uppercase; }
+    font-variant: small-caps; }
   .showcase .showcase-sub-title {
     font-size: 16px;
     margin: 0px 0px 40px 0px; }
