@@ -11,18 +11,20 @@
     @if $direction == right {
         @for $i from 1 through $length {
             $kolor: $color;
-            @if $type == box {
-                $kolor: rgba($color, 1 - $i / $length)
-            }
+            //TODO
+            // @if $type == box {
+            //     $kolor: rgba($color, 1 - $i / $length)
+            // }
             $values: #{$values}, #{$i}px #{$i}px #{$kolor};
         }
     }
     @if $direction == left {
         @for $i from 1 through $length {
             $kolor: $color;
-            @if $type == box {
-                $kolor: rgba($color, 1 - $i / $length)
-            }
+            //TODO
+            // @if $type == box {
+            //     $kolor: rgba($color, 1 - $i / $length)
+            // }
             $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$kolor};
         }
     }
@@ -43,10 +45,10 @@
             text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, $direction);
         }
 
-        //If they want the whole button long shadow'd
-        &#{$ubtn-namespace}-longshadow-box {
-            box-shadow: longshadow(box, darken(desaturate($ubtn-background, 55%), 30%), 45, $direction);
-        }
+        //TODO: If they want the whole button long shadow'd
+        // &#{$ubtn-namespace}-longshadow-box {
+        //     box-shadow: longshadow(box, darken(desaturate($ubtn-background, 55%), 30%), 45, $direction);
+        // }
     }
 }
 
