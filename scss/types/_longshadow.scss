@@ -1,55 +1,39 @@
 /*
 * Long Shadow Buttons
-*
-* Known to appear on Winter's days is the long shadow.
-* Oh, and it's also a super popular effect these days!
 */
 
 //Loops $length times building a long shadow. Defaults downward right.
 @function longshadow($type, $color, $length, $direction: right) {
-    $values: 0px 0px $color;
-    @if $direction == right {
-        @for $i from 1 through $length {
-            $kolor: $color;
-            //TODO
-            // @if $type == box {
-            //     $kolor: rgba($color, 1 - $i / $length)
-            // }
-            $values: #{$values}, #{$i}px #{$i}px #{$kolor};
-        }
+  $values: 0px 0px $color;
+  @if $direction == right {
+    @for $i from 1 through $length {
+      $kolor: $color;
+      $values: #{$values}, #{$i}px #{$i}px #{$kolor};
     }
-    @if $direction == left {
-        @for $i from 1 through $length {
-            $kolor: $color;
-            //TODO
-            // @if $type == box {
-            //     $kolor: rgba($color, 1 - $i / $length)
-            // }
-            $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$kolor};
-        }
+  }
+  @if $direction == left {
+    @for $i from 1 through $length {
+      $kolor: $color;
+      $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$kolor};
     }
-    @return $values;
+  }
+  @return $values;
 }
 
 @mixin base($direction) {
-    overflow: hidden;
+  overflow: hidden;
 
-    //Create long shadow for each of our action colors
-    @each $ubtn-color in $ubtn-colors {
-        $ubtn-name: nth($ubtn-color, 1);
-        $ubtn-background: nth($ubtn-color, 2);
-        $ubtn-color: nth($ubtn-color, 3);
+  //Create long shadow for each of our action colors
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
 
-        &#{$ubtn-namespace}-#{$ubtn-name} {
-            background-color: $ubtn-background;
-            text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, $direction);
-        }
-
-        //TODO: If they want the whole button long shadow'd
-        // &#{$ubtn-namespace}-longshadow-box {
-        //     box-shadow: longshadow(box, darken(desaturate($ubtn-background, 55%), 30%), 45, $direction);
-        // }
+    &#{$ubtn-namespace}-#{$ubtn-name} {
+      background-color: $ubtn-background;
+      text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, $direction);
     }
+  }
 }
 
 //Long Shadow downwards to the right (default)
