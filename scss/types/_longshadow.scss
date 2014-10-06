@@ -39,17 +39,11 @@
     $ubtn-color: nth($ubtn-color, 3);
 
     &#{$ubtn-namespace}-#{$ubtn-name} {
-      background-color: $ubtn-background;
       text-shadow: longshadow(text, darken($ubtn-background, 10%), 35, false, $direction);
 
       //Expand (skew)
       &#{$ubtn-namespace}-longshadow-expand {
         text-shadow: longshadow(text, darken($ubtn-background, 10%), 50, true, $direction);
-      }
-
-      &:hover,
-      &:focus {
-        background: linear-gradient(top,  lighten($ubtn-background, 7%), darken($ubtn-background, 7%));
       }
 
       &:active,

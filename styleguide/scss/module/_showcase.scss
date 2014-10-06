@@ -1,25 +1,37 @@
+/*
+* Showcase Module
+*
+* used to describe and showcase elements
+*/
 .showcase {
   position: relative;
   padding: 60px;
 
-  &.is-light {
-    color: $gray;
+  .showcase-header-top-right,
+  .showcase-header-top-left {
+    position: absolute;
+    top: 40px;
+    z-index: $layer-3;
   }
 
-  &.is-dark {
-    color: $white;
+  .showcase-header-top-right {
+    right: 60px;
+  }
+
+  .showcase-header-top-left {
+    left: 60px;
   }
 
   .showcase-title,
   .showcase-sub-title {
     font-family: $brand-font;
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .showcase-title {
-    font-size: 36px;
+    font-size: 32px;
     margin: 0px 0px 0px 0px;
-    font-variant: small-caps;
+    text-transform: uppercase;
   }
 
   .showcase-sub-title {
@@ -27,6 +39,8 @@
     margin: 0px 0px 40px 0px;
   }
 
+
+  // BUTTON MARGINS
   .button,
   .button-dropdown,
   .button-group {
@@ -39,12 +53,17 @@
   }
 }
 
-/*
-* Showcase Colors
-*
-*/
 
-.showcase-dark {
-  color: #FFF;
-  background: $blue-shade-6;
+/*
+* Showcase with Phone
+*
+* used to showcase a phone module
+*/
+.showcase-phone {
+  min-height: 680px;
+  padding: 160px 500px 60px 40px;
+
+  .l-over {
+    max-width: 490px;
+  }
 }

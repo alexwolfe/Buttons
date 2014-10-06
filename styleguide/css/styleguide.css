@@ -533,8 +533,33 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
-.l-longshadows {
-  margin-bottom: 50px; }
+.l-right {
+  text-align: right; }
+
+.l-left {
+  text-align: left; }
+
+/*
+* Background Colors
+*
+*/
+.background-dark {
+  color: #FFFFFF;
+  background: #229ffd; }
+
+.background-light {
+  color: #a9adb1;
+  background: #FFFFFF; }
+
+/*
+* Text Colors
+*
+*/
+.text-nuetral {
+  color: #a9adb1; }
+
+.text-light {
+  color: #FFFFFF; }
 
 /*
 * Logo Icon
@@ -632,25 +657,20 @@ table {
       display: block;
       font-style: normal; }
 
-.button-list {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px; }
-  .button-list > li {
-    display: inline-block;
-    margin: 10px; }
-
 .phone {
-  position: relative;
-  height: 810px;
-  width: 380px;
-  background: url("../images/iphone.png") top left no-repeat; }
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  z-index: 3;
+  height: 800px;
+  width: 440px;
+  background: url("../images/iphone-6.png") top left no-repeat; }
   .phone .phone-status-bar {
     background: url("../images/iphone-status-bar.png") top left no-repeat;
     position: absolute;
-    top: 120px;
-    left: 30px;
-    right: 30px;
+    top: 170px;
+    left: 70px;
+    right: 70px;
     height: 20px;
     z-index: 2; }
   .phone .phone-header {
@@ -677,9 +697,9 @@ table {
       z-index: 1; }
   .phone .phone-screen {
     position: absolute;
-    top: 120px;
-    left: 30px;
-    right: 30px;
+    top: 170px;
+    left: 70px;
+    right: 70px;
     bottom: 124px;
     z-index: 1; }
   .phone .phone-footer {
@@ -691,21 +711,31 @@ table {
     bottom: 124px;
     z-index: 2; }
 
+/*
+* Showcase Module
+*
+* used to describe and showcase elements
+*/
 .showcase {
   position: relative;
   padding: 60px; }
-  .showcase.is-light {
-    color: #a9adb1; }
-  .showcase.is-dark {
-    color: #FFFFFF; }
+  .showcase .showcase-header-top-right,
+  .showcase .showcase-header-top-left {
+    position: absolute;
+    top: 40px;
+    z-index: 3; }
+  .showcase .showcase-header-top-right {
+    right: 60px; }
+  .showcase .showcase-header-top-left {
+    left: 60px; }
   .showcase .showcase-title,
   .showcase .showcase-sub-title {
     font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300; }
+    font-weight: 100; }
   .showcase .showcase-title {
-    font-size: 36px;
+    font-size: 32px;
     margin: 0px 0px 0px 0px;
-    font-variant: small-caps; }
+    text-transform: uppercase; }
   .showcase .showcase-sub-title {
     font-size: 16px;
     margin: 0px 0px 40px 0px; }
@@ -722,24 +752,15 @@ table {
       margin: 0px; }
 
 /*
-* Showcase Colors
+* Showcase with Phone
 *
+* used to showcase a phone module
 */
-.showcase-dark {
-  color: #FFF;
-  background: #229ffd; }
-
-.subscribe-form {
-  padding: 60px 60px 0 60px; }
-
-.mc-field-group label {
-  margin-left: 2px; }
-.mc-field-group input[type="email"] {
-  font-size: 12px;
-  padding: 4px;
-  border-radius: 3px; }
-.mc-field-group #mc-embedded-subscribe {
-  margin-top: -2px; }
+.showcase-phone {
+  min-height: 680px;
+  padding: 160px 500px 60px 40px; }
+  .showcase-phone .l-over {
+    max-width: 490px; }
 
 /*
 * Code Base Styles
@@ -881,7 +902,8 @@ table {
   position: absolute;
   z-index: 1;
   font-size: 681px;
-  height: 680px; }
+  height: 680px;
+  width: 2310px; }
 
 /*
 * Arrow Type
@@ -916,6 +938,9 @@ table {
 * Arrow Colors
 *
 */
+.arrow-inverse {
+  color: #229ffd; }
+
 .arrow-dark {
   color: #1398fd; }
 

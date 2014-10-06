@@ -7,6 +7,7 @@
   z-index: $layer-1;
   font-size: 681px;
   height: 680px;
+  width: 2310px;
 }
 
 
@@ -52,6 +53,9 @@
 * Arrow Colors
 *
 */
+.arrow-inverse {
+  color: $blue-shade-6;
+}
 .arrow-dark {
   color: darken($blue-shade-6, 3%);
 }
