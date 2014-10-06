@@ -12,7 +12,7 @@ $(document).ready(function(){
     generateCodeSamples: function() {
       var self = this;
 
-      $('.showcase').each(function(index, element) {
+      $('.showcase .l-over').each(function(index, element) {
         var $showcase = $(element);
         var $codeBox = $('<pre class="prettyprint is-preview linenums"></pre>');
         var $overlay = $('<div class="prettyprint-overlay"></div>');

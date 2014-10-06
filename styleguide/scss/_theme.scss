@@ -13,6 +13,10 @@
   background: $white;
 }
 
+.background-subtle {
+  background: lighten($blue-shade-1, 4%);
+}
+
 /*
 * Text Colors
 *
