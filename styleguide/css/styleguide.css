@@ -524,6 +524,25 @@ table {
   right: 0px;
   bottom: 0px; }
 
+/*
+* Alignment
+*
+*/
+.l-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.l-right {
+  text-align: right; }
+
+.l-left {
+  text-align: left; }
+
+/*
+* Footer
+*
+*/
 .l-footer {
   position: fixed;
   bottom: 0;
@@ -551,21 +570,6 @@ table {
     line-height: 28px; }
   .l-footer .mc-field-group {
     margin-top: 6px; }
-
-/*
-* Alignment
-*
-*/
-.l-center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
-
-.l-right {
-  text-align: right; }
-
-.l-left {
-  text-align: left; }
 
 /*
 * Background Colors

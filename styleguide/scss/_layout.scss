@@ -14,6 +14,7 @@
   }
 }
 
+
 /*
 * Layout Over & Under
 *
@@ -36,6 +37,29 @@
   bottom: 0px;
 }
 
+
+/*
+* Alignment
+*
+*/
+
+.l-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.l-right {
+  text-align: right;
+}
+.l-left {
+  text-align: left;
+}
+
+
+/*
+* Footer
+*
+*/
 
 .l-footer {
   position: fixed;
@@ -70,23 +94,3 @@
     margin-top: 6px;
   }
 }
-
-
-
-/*
-* Alignment
-*
-*/
-
-.l-center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.l-right {
-  text-align: right;
-}
-.l-left {
-  text-align: left;
-}
-
