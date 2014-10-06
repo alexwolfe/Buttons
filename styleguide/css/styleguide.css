@@ -532,11 +532,25 @@ table {
   width: 100%;
   -webkit-transition: height .5s ease-in;
           transition: height .5s ease-in;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 -2px 100px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 -2px 100px rgba(0, 0, 0, 0.15); }
   .l-footer.is-visible {
     height: 100px; }
   .l-footer.is-hidden {
     height: 0; }
+  .l-footer .author-info,
+  .l-footer .newsletter-blurb {
+    margin: 12px 0 0; }
+  .l-footer .newsletter-email {
+    border-radius: 4px;
+    padding: 4px;
+    vertical-align: middle; }
+  .l-footer .mc-field-group,
+  .l-footer .newsletter-button {
+    line-height: 28px; }
+  .l-footer .mc-field-group {
+    margin-top: 6px; }
 
 /*
 * Alignment
@@ -648,7 +662,7 @@ table {
   height: 470px; }
   .hero .hero-pitch {
     width: 320px;
-    margin: 0px auto 30px auto;
+    margin: 0px auto 30px;
     font-size: 16px;
     font-weight: 100;
     line-height: 24px; }
