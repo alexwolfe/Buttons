@@ -36,6 +36,21 @@
   bottom: 0px;
 }
 
+
+.l-footer {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: $layer-10;
+  width: 100%;
+  transition: height .5s ease-in;
+  background-color: $white;
+  &.is-visible {height: 100px;}
+  &.is-hidden  {height: 0; }
+}
+
+
+
 /*
 * Alignment
 *

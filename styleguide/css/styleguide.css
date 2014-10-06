@@ -524,6 +524,20 @@ table {
   right: 0px;
   bottom: 0px; }
 
+.l-footer {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+  -webkit-transition: height .5s ease-in;
+          transition: height .5s ease-in;
+  background-color: #FFFFFF; }
+  .l-footer.is-visible {
+    height: 100px; }
+  .l-footer.is-hidden {
+    height: 0; }
+
 /*
 * Alignment
 *
