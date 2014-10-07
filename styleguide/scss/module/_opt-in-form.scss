@@ -1,20 +1,63 @@
 /*
 * Opt In Form
 */
+
+$line-height: 24px;
+
 .author-info,
 .newsletter-blurb {
-  margin: 12px 0 0;
+  margin: $line-height/2 0 0;
+}
+
+.opt-in-field {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 .newsletter-email {
-  border-radius: 4px;
-  padding: 4px;
+  float: left;
+  padding: 4px 8px;
   vertical-align: middle;
+  line-height: $line-height;
+  border: 1px solid lighten($gray, 10%);
+}
+
+.email-icon {
+  float: left;
+  border: 1px solid lighten($gray, 10%);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 4px 8px;
+  line-height: $line-height;
+  text-align: center;
+  background-color: #eeeeee;
+  margin-right: -1px;;
+  color: lighten($gray, 10%);
 }
 
 .mc-field-group,
 .newsletter-button {
-  line-height: 28px;
+  line-height: $line-height;
+}
+
+.newsletter-button {
+  float: left;
+  border: 1px solid lighten($gray, 10%);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 4px 8px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #eeeeee;
+  margin-left: -2px;
+  font-size: 14px;
+  color: darken($gray, 10%);
+  &:hover {
+    color: darken($gray, 20%);
+  }
 }
 .mc-field-group {
   margin-top: 6px;

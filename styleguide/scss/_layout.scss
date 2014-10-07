@@ -50,7 +50,7 @@
   z-index: $layer-10;
   width: 100%;
   transition: height .5s ease-in;
-  background-color: $white;
+  background-color: rgba(255,255,255,0.95);
   box-shadow: 0 -2px 100px rgba(0, 0, 0, 0.15);
 
   &.is-visible {height: 100px;}
