@@ -11,12 +11,12 @@ $(document).ready(function(){
     },
 
     showFooter: function() {
-      var footer = $('.l-footer');
+      var footer = $('.l-slide-in-footer');
       footer.removeClass('is-hidden').addClass('is-visible');
     },
 
     hideFooter: function() {
-      var footer = $('.l-footer');
+      var footer = $('.l-slide-in-footer');
       footer.removeClass('is-visible').addClass('is-hidden');
     },
 
