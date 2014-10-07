@@ -440,6 +440,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.clear {
+  clear: both; }
+
 /*
 * Layout margin & padding
 *
@@ -641,59 +644,51 @@ table {
     font-size: 12px; }
 
 /*
-* Opt In Form
+* Promotional Module
+*
 */
-.author-info,
-.newsletter-blurb {
-  margin: 12px 0 0; }
-
-.opt-in-field {
-  display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap; }
-
-.newsletter-email {
-  float: left;
-  padding: 4px 8px;
-  vertical-align: middle;
-  line-height: 24px;
-  border: 1px solid #c4c7c9; }
-
-.email-icon {
-  float: left;
-  border: 1px solid #c4c7c9;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  padding: 4px 8px;
-  line-height: 24px;
-  text-align: center;
-  background-color: #eeeeee;
-  margin-right: -1px;
-  color: #c4c7c9; }
-
-.mc-field-group,
-.newsletter-button {
-  line-height: 24px; }
-
-.newsletter-button {
-  float: left;
-  border: 1px solid #c4c7c9;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  padding: 4px 8px;
-  line-height: 24px;
-  text-align: center;
-  background-color: #eeeeee;
-  margin-left: -2px;
-  font-size: 14px;
-  color: #8e9499; }
-  .newsletter-button:hover {
-    color: #747a80; }
-
-.mc-field-group {
-  margin-top: 6px; }
+.promotional {
+  text-align: center; }
+  .promotional > p {
+    line-height: 24px; }
+  .promotional .form-field {
+    margin: 0px auto;
+    width: 340px; }
+  .promotional .newsletter-email {
+    float: left;
+    padding: 4px 8px;
+    vertical-align: middle;
+    line-height: 24px;
+    border: 1px solid #c4c7c9; }
+  .promotional .email-icon {
+    float: left;
+    border: 1px solid #c4c7c9;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px 8px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-right: -1px;
+    color: #c4c7c9; }
+  .promotional .newsletter-button {
+    line-height: 24px; }
+  .promotional .newsletter-button {
+    float: left;
+    border: 1px solid #c4c7c9;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 4px 8px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-left: -2px;
+    font-size: 14px;
+    color: #8e9499; }
+    .promotional .newsletter-button:hover {
+      color: #747a80; }
 
 /*
 * Hero Module
