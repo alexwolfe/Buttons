@@ -43,21 +43,26 @@
       line-height: 44px;
     }
 
-    .button-left {
+    .button-left,
+    .button-right {
       position: absolute;
-      left: 0px;
-      top: 25px;
       z-index: $layer-1;
       margin: 0px;
     }
 
+    .button-left {
+      left: 0px;
+      top: 25px;
+    }
+
     .button-right {
-      position: absolute;
       right: 0px;
       top: 22px;
-      z-index: $layer-1;
-      margin: 0px;
     }
+  }
+
+  .phone-body {
+    padding: 10px;
   }
 
   .phone-footer {

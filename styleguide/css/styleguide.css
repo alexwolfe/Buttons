@@ -773,18 +773,19 @@ table {
       margin: 0px;
       padding: 0px;
       line-height: 44px; }
-    .phone .phone-header .button-left {
-      position: absolute;
-      left: 0px;
-      top: 25px;
-      z-index: 1;
-      margin: 0px; }
+    .phone .phone-header .button-left,
     .phone .phone-header .button-right {
       position: absolute;
-      right: 0px;
-      top: 22px;
       z-index: 1;
       margin: 0px; }
+    .phone .phone-header .button-left {
+      left: 0px;
+      top: 25px; }
+    .phone .phone-header .button-right {
+      right: 0px;
+      top: 22px; }
+  .phone .phone-body {
+    padding: 10px; }
   .phone .phone-footer {
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.2);
