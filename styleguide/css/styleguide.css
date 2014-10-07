@@ -700,19 +700,29 @@ table {
   height: 800px;
   width: 440px;
   background: url("../images/iphone-6.png") top left no-repeat; }
+  .phone .phone-screen {
+    position: absolute;
+    width: 300px;
+    height: 538px;
+    top: 130px;
+    left: 70px;
+    z-index: 2;
+    background: -webkit-linear-gradient(0deg, #9D50BB 10%, #6E48AA 90%);
+    background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%); }
   .phone .phone-status-bar {
     background: url("../images/iphone-status-bar.png") top left no-repeat;
     position: absolute;
-    top: 170px;
-    left: 70px;
-    right: 70px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     height: 20px;
-    z-index: 2; }
+    z-index: 1; }
   .phone .phone-header {
     padding: 20px 0px 0px 0px;
-    background: #0286ea;
+    background: rgba(255, 255, 255, 0.2);
     text-align: center;
-    height: 44px; }
+    height: 44px;
+    line-height: 44px; }
     .phone .phone-header > h3 {
       font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
       font-weight: 100;
@@ -723,28 +733,23 @@ table {
     .phone .phone-header .button-left {
       position: absolute;
       left: 0px;
-      top: 22px;
-      z-index: 1; }
+      top: 25px;
+      z-index: 1;
+      margin: 0px; }
     .phone .phone-header .button-right {
       position: absolute;
       right: 0px;
       top: 22px;
-      z-index: 1; }
-  .phone .phone-screen {
-    position: absolute;
-    top: 170px;
-    left: 70px;
-    right: 70px;
-    bottom: 124px;
-    z-index: 1; }
+      z-index: 1;
+      margin: 0px; }
   .phone .phone-footer {
-    padding: 20px 60px;
-    background: #0994fd;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
     position: absolute;
-    left: 30px;
-    right: 30px;
-    bottom: 124px;
-    z-index: 2; }
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1; }
 
 /*
 * Showcase Module
