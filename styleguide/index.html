@@ -551,13 +551,16 @@
       </div>
     </section>
 
-  <footer class="l-footer l-center is-hidden">
+  <footer class="l-slide-in-footer l-center is-hidden">
     <p class="newsletter-blurb">Subscribe to our email list to find out what new awesome modules we're planning to release!</p>
     <div id="mc_embed_signup">
       <form action="//unicorn-ui.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;amp;id=b5db98a4bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" role="form" target="_blank" novalidate="novalidate" class="validate newsletter-form">
         <div class="mc-field-group">
-          <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="required email newsletter-email"/>
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button newsletter-button button-primary button-small button-rounded"/>
+          <div class="opt-in-field">
+            <span class="email-icon"><i class="fa fa-envelope"></i></span>
+            <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="required email newsletter-email"/>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="newsletter-button"/>
+          </div>
         </div>
         <div id="mce-responses" class="clear">
           <div id="mce-error-response" style="display:none" class="response"></div>

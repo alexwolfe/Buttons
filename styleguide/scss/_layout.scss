@@ -39,6 +39,25 @@
 
 
 /*
+* Slide In Footer
+*
+*/
+
+.l-slide-in-footer {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  z-index: $layer-10;
+  width: 100%;
+  transition: height .5s ease-in;
+  background-color: rgba(255,255,255,0.95);
+  box-shadow: 0 -2px 100px rgba(0, 0, 0, 0.15);
+
+  &.is-visible {height: 100px;}
+  &.is-hidden  {height: 0; }
+}
+
+/*
 * Alignment
 *
 */
@@ -55,42 +74,3 @@
   text-align: left;
 }
 
-
-/*
-* Footer
-*
-*/
-
-.l-footer {
-  position: fixed;
-  bottom: 0;
-  overflow: hidden;
-  z-index: $layer-10;
-  width: 100%;
-  transition: height .5s ease-in;
-  background-color: $white;
-  box-shadow: 0 -2px 100px rgba(0, 0, 0, 0.15);
-
-  &.is-visible {height: 100px;}
-  &.is-hidden  {height: 0; }
-
-
-  .author-info,
-  .newsletter-blurb {
-    margin: 12px 0 0;
-  }
-
-  .newsletter-email {
-    border-radius: 4px;
-    padding: 4px;
-    vertical-align: middle;
-  }
-
-  .mc-field-group,
-  .newsletter-button {
-    line-height: 28px;
-  }
-  .mc-field-group {
-    margin-top: 6px;
-  }
-}
