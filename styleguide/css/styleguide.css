@@ -443,6 +443,18 @@ table {
 .clear {
   clear: both; }
 
+::-webkit-input-placeholder {
+  color: #dee0e2; }
+
+::-moz-placeholder {
+  color: #dee0e2; }
+
+:-ms-input-placeholder {
+  color: #dee0e2; }
+
+:-moz-placeholder {
+  color: #dee0e2; }
+
 /*
 * Layout margin & padding
 *
@@ -649,8 +661,6 @@ table {
 */
 .promotional {
   text-align: center; }
-  .promotional > p {
-    line-height: 24px; }
   .promotional .form-field {
     margin: 0px auto;
     width: 340px; }
@@ -673,6 +683,10 @@ table {
     color: #c4c7c9; }
   .promotional .newsletter-button {
     line-height: 24px; }
+  .promotional .coming-soon {
+    color: #61bafd;
+    font-size: 24px;
+    margin: 12px 0 8px; }
   .promotional .newsletter-button {
     float: left;
     border: 1px solid #c4c7c9;
@@ -683,12 +697,15 @@ table {
     padding: 4px 8px;
     line-height: 24px;
     text-align: center;
-    background-color: #eeeeee;
+    background-color: #61bafd;
     margin-left: -2px;
     font-size: 14px;
-    color: #8e9499; }
+    color: #FFFFFF;
+    -webkit-transition: all .3s ease-in;
+            transition: all .3s ease-in; }
     .promotional .newsletter-button:hover {
-      color: #747a80; }
+      color: rgba(255, 255, 255, 0.9);
+      background-color: #229ffd; }
 
 /*
 * Hero Module

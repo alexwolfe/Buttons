@@ -8,10 +8,6 @@ $line-height: 24px;
 .promotional {
   text-align: center;
 
-  > p {
-    line-height: $line-height;
-  }
-
   .form-field {
     margin: 0px auto;
     width: 340px;
@@ -42,6 +38,12 @@ $line-height: 24px;
     line-height: $line-height;
   }
 
+  .coming-soon {
+    color: $blue-shade-5;
+    font-size: 24px;
+    margin: 12px 0 8px;
+  }
+
   .newsletter-button {
     float: left;
     border: 1px solid lighten($gray, 10%);
@@ -52,12 +54,15 @@ $line-height: 24px;
     padding: 4px 8px;
     line-height: 24px;
     text-align: center;
-    background-color: #eeeeee;
+    background-color: $blue-shade-5;
     margin-left: -2px;
     font-size: 14px;
-    color: darken($gray, 10%);
+    color: $white;
+    transition: all .3s ease-in;
+
     &:hover {
-      color: darken($gray, 20%);
+      color: rgba(255, 255, 255, .9);
+      background-color: $blue-shade-6;
     }
   }
 }
