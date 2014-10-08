@@ -42,6 +42,10 @@ $line-height: 24px;
     color: $blue-shade-5;
     font-size: 24px;
     margin: 12px 0 8px;
+
+    .fa-hand-o-left {
+      margin-left: 12px;
+    }
   }
 
   .newsletter-button {
