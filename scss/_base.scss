@@ -27,10 +27,11 @@
     @include transition-property(all);
     @include transition-duration(.3s);
   }
-  else {
+  @else {
     transition-property: all;
-    transition-duration: .3s;
+    transition-duration:.3s;
   }
+
 
   &:hover,
   &:focus {
@@ -53,7 +54,7 @@
       @include transition-duration(0s);
       @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .2));
     }
-    else {
+    @else {
       transition-duration: 0s;
       box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2);
     }
@@ -141,15 +142,6 @@
     border-color: $ubtn-background;
     color: $ubtn-color;
 
-    // Compass Mixins
-    @if $ubtn-use-compass {
-      @include transition-property(all);
-      @include transition-duration(.3s);
-    }
-    else {
-      transition-property: all;
-      transition-duration: .3s;
-    }
 
     &:hover,
     &:focus {
