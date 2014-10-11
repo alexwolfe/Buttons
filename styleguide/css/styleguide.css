@@ -903,6 +903,7 @@ table {
       .codebox header .codebox-copy:hover {
         color: #229ffd; }
   .codebox .codebox-body {
+    margin: 0px;
     padding: 20px;
     font-family: Monaco, Consolas, monospace;
     font-size: 14px;
