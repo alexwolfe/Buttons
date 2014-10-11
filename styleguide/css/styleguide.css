@@ -98,6 +98,9 @@ body {
 /*
 * Addresses `outline` inconsistency between Chrome and other browsers.
 */
+a, a:visited {
+  color: #229ffd; }
+
 a:focus {
   outline: thin dotted; }
 

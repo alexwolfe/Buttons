@@ -101,6 +101,10 @@ body {
 * Addresses `outline` inconsistency between Chrome and other browsers.
 */
 
+a, a:visited {
+  color: $blue-shade-6;
+}
+
 a:focus {
   outline: thin dotted;
 }

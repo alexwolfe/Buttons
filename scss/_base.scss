@@ -33,6 +33,10 @@
   }
 
 
+  &:visited {
+    color: $ubtn-font-color;
+  }
+
   &:hover,
   &:focus {
     background-color: lighten($ubtn-bgcolor, 5%);
@@ -142,6 +146,9 @@
     border-color: $ubtn-background;
     color: $ubtn-color;
 
+    &:visited {
+      color: $ubtn-color;
+    }
 
     &:hover,
     &:focus {

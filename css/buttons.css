@@ -128,6 +128,8 @@
   * The use of !important is only added because this is a state
   * that must be applied to all buttons when in a disabled state.
   */ }
+  .button:visited {
+    color: #666; }
   .button:hover, .button:focus {
     background-color: #fbfbfb;
     text-decoration: none;
@@ -192,6 +194,9 @@
   background-color: #1B9AF7;
   border-color: #1B9AF7;
   color: #FFF; }
+  .button-primary:visited,
+  .button-primary-flat:visited {
+    color: #FFF; }
   .button-primary:hover, .button-primary:focus,
   .button-primary-flat:hover,
   .button-primary-flat:focus {
@@ -211,6 +216,9 @@
   background-color: #FFF;
   border-color: #FFF;
   color: #1B9AF7; }
+  .button-plain:visited,
+  .button-plain-flat:visited {
+    color: #1B9AF7; }
   .button-plain:hover, .button-plain:focus,
   .button-plain-flat:hover,
   .button-plain-flat:focus {
@@ -230,6 +238,9 @@
   background-color: #222;
   border-color: #222;
   color: #EEE; }
+  .button-inverse:visited,
+  .button-inverse-flat:visited {
+    color: #EEE; }
   .button-inverse:hover, .button-inverse:focus,
   .button-inverse-flat:hover,
   .button-inverse-flat:focus {
@@ -249,6 +260,9 @@
   background-color: #A5DE37;
   border-color: #A5DE37;
   color: #FFF; }
+  .button-action:visited,
+  .button-action-flat:visited {
+    color: #FFF; }
   .button-action:hover, .button-action:focus,
   .button-action-flat:hover,
   .button-action-flat:focus {
@@ -268,6 +282,9 @@
   background-color: #FEAE1B;
   border-color: #FEAE1B;
   color: #FFF; }
+  .button-highlight:visited,
+  .button-highlight-flat:visited {
+    color: #FFF; }
   .button-highlight:hover, .button-highlight:focus,
   .button-highlight-flat:hover,
   .button-highlight-flat:focus {
@@ -287,6 +304,9 @@
   background-color: #FF4351;
   border-color: #FF4351;
   color: #FFF; }
+  .button-caution:visited,
+  .button-caution-flat:visited {
+    color: #FFF; }
   .button-caution:hover, .button-caution:focus,
   .button-caution-flat:hover,
   .button-caution-flat:focus {
@@ -306,6 +326,9 @@
   background-color: #7B72E9;
   border-color: #7B72E9;
   color: #FFF; }
+  .button-royal:visited,
+  .button-royal-flat:visited {
+    color: #FFF; }
   .button-royal:hover, .button-royal:focus,
   .button-royal-flat:hover,
   .button-royal-flat:focus {
@@ -1166,8 +1189,8 @@
 /*
 * Dropdown menu buttons
 *
-* A dropdown menu that appears
-* when a dropdown button is pressed
+* A dropdown menu appears
+* when a button is pressed
 */
 /*
 * Dropdown Container
@@ -1380,6 +1403,8 @@
 
 /*
 * Long Shadow Buttons
+*
+* A visual effect adding a flat shadow to the text of a button
 */
 .button-longshadow,
 .button-longshadow-right {
