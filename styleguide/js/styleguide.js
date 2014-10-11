@@ -57,30 +57,16 @@ $(document).ready(function(){
 
     generateCodeSamples: function() {
       var self = this;
-      var data = {title: 'hellow', code: 'blah'};
 
       $('.showcase').each(function(index, element) {
         var $showcase = $(element);
-        var $codeBox = $('<pre class="prettyprint is-preview linenums"></pre>');
-        var $overlay = $('<div class="prettyprint-overlay"></div>');
-
-        //GET DATA
         var title = $showcase.find('.showcase-title:first').text();
-        var exampleHTML = self._encodeHTML($showcase.find('.showcase-examples:first').html());
-        exampleHTML = exampleHTML.replace(/^\s*[\r\n]/gm, "");
-
-
-        //Add click event for overlay
-        $overlay.on('click', function(e) {
-          $overlay.hide();
-          $codeBox.removeClass('is-preview');
-        });
-
-        //Update prettyprint container content
+        var code = self._encodeHTML($showcase.find('.showcase-examples:first').html());
+        code = code.replace(/^\s*[\r\n\s]*/gm, "");
 
         $showcase.append(self.templates.codebox({
           title: title,
-          code: exampleHTML
+          code: code
         }));
       });
 

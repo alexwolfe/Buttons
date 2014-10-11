@@ -876,7 +876,7 @@ table {
   *
   */ }
   .codebox.is-preview {
-    max-height: 100px; }
+    max-height: 200px; }
   .codebox header {
     border-bottom: 1px solid #e8edf2;
     height: 39px; }

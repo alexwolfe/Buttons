@@ -580,19 +580,19 @@
   </footer>
 
 
-  <!-- JAVASCRIPT TEMPLATING -->
-  <script id="template-codebox" type="text/x-handlebars-template">
-    <div class="codebox is-preview">
-      <header class="clearfix">
-        <h3>{{title}}</h3>
-        <button class="codebox-copy">Copy</button>
-      </header>
+<!-- JAVASCRIPT TEMPLATING -->
+<script id="template-codebox" type="text/x-handlebars-template">
+  <div class="codebox is-preview">
+    <div class="codebox-overlay"></div>
 
-      <pre class="prettyprint codebox-body linenums">
-        {{{code}}}
-      </pre>
-    </div>
-  </script>
+    <header class="clearfix">
+      <h3>{{title}}</h3>
+      <button class="codebox-copy"><i class="fa fa-cut"></i> Copy</button>
+    </header>
+
+<pre class="prettyprint codebox-body linenums">{{{code}}}</pre>
+  </div>
+</script>
 
   <!-- JAVASCRIPT INCLUDES -->
   <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
@@ -601,7 +601,7 @@
   <script type="text/javascript" src="js/scrollMonitor.js"></script>
   <script type="text/javascript" src="js/buttons.js"></script>
   <script type="text/javascript" src="js/handlebars.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/styleguide.js"></script>
 
 
   <!-- GOOGLE ANALYTICS -->
