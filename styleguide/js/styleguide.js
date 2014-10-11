@@ -61,16 +61,38 @@ $(document).ready(function(){
       $('.showcase').each(function(index, element) {
         var $showcase = $(element);
         var title = $showcase.find('.showcase-title:first').text();
+        var id = title.toLowerCase().replace(/\s*(\&amp;)*/gi, '');
         var code = $showcase.find('.showcase-examples:first').html();
 
         $showcase.append(self.templates.codebox({
           title: title,
+          id: id,
           code: code
         }));
+
+        self.activateCopyButton($showcase);
       });
+
+
 
       // Intialize Pretty Print
       prettyPrint();
+    },
+
+    activateCopyButton: function($showcase) {
+      var button = $showcase.find('.codebox-copy:first');
+      var client = new ZeroClipboard( button );
+
+      client.on( "ready", function( readyEvent ) {
+        // alert( "ZeroClipboard SWF is ready!" );
+
+        client.on( "aftercopy", function( event ) {
+          // `this` === `client`
+          // `event.target` === the element that was clicked
+          event.target.style.display = "none";
+          alert("Copied text to clipboard: " + event.data["text/plain"] );
+        } );
+      } );
     },
 
     activateNav: function() {
