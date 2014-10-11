@@ -861,25 +861,57 @@ table {
     max-width: 490px; }
 
 /*
-* Code Base Styles
+* Codebox Module
 *
 */
-.prettyprint {
-  position: relative;
+.codebox {
+  border: 1px solid #e8edf2;
+  border-radius: 4px;
   overflow: hidden;
-  padding: 20px;
-  border: 1px solid #EEE;
-  border-radius: 10px;
-  font-family: Monaco, Consolas, monospace;
-  font-size: 14px; }
-  .prettyprint.is-preview {
+  position: relative;
+  background: #FFFFFF;
+  margin-top: 40px;
+  /*
+  * Codebox Header
+  *
+  */ }
+  .codebox.is-preview {
     max-height: 100px; }
-  .prettyprint .linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #bae1fe;
-    line-height: 1.5; }
-  .prettyprint .prettyprint-overlay {
+  .codebox header {
+    border-bottom: 1px solid #e8edf2;
+    height: 39px; }
+    .codebox header h3,
+    .codebox header .codebox-copy {
+      padding: 0px 20px;
+      margin: 0px;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #a9adb1; }
+    .codebox header h3 {
+      line-height: 39px;
+      float: left; }
+    .codebox header .codebox-copy {
+      height: 39px;
+      float: right;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      appearance: none;
+      border-left: 1px solid #e8edf2;
+      background: #FFFFFF; }
+      .codebox header .codebox-copy:hover {
+        color: #229ffd; }
+  .codebox .codebox-body {
+    padding: 20px;
+    font-family: Monaco, Consolas, monospace;
+    font-size: 14px; }
+    .codebox .codebox-body .linenums {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #bae1fe;
+      line-height: 1.5; }
+  .codebox .codebox-overlay {
     cursor: pointer;
     position: absolute;
     top: 0px;

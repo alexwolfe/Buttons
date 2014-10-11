@@ -1,30 +1,74 @@
 /*
-* Code Base Styles
+* Codebox Module
 *
 */
 
-.prettyprint {
-  position: relative;
+.codebox {
+  border: 1px solid $light;
+  border-radius: 4px;
   overflow: hidden;
-  padding: 20px;
-  border: 1px solid #EEE;
-  border-radius: 10px;
-  font-family: Monaco, Consolas, monospace;
-  font-size: 14px;
-
+  position: relative;
+  background: $white;
+  margin-top: 40px;
 
   &.is-preview {
     max-height: 100px;
   }
 
-  .linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: lighten($blue-shade-6, 30%);
-    line-height: 1.5;
+  /*
+  * Codebox Header
+  *
+  */
+
+  header {
+    border-bottom: 1px solid $light;
+    height: 39px;
+
+    h3,
+    .codebox-copy {
+      padding: 0px 20px;
+      margin: 0px;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $gray;
+    }
+
+    h3 {
+      line-height: 39px;
+      float: left;
+    }
+
+    .codebox-copy {
+      height: 39px;
+      float: right;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      appearance: none;
+      border-left: 1px solid $light;
+      background: $white;
+
+      &:hover {
+        color: $blue-shade-6;
+      }
+    }
   }
 
-  .prettyprint-overlay {
+  .codebox-body {
+    padding: 20px;
+    font-family: Monaco, Consolas, monospace;
+    font-size: 14px;
+
+    .linenums {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: lighten($blue-shade-6, 30%);
+      line-height: 1.5;
+    }
+  }
+
+  .codebox-overlay {
     cursor: pointer;
     position: absolute;
     top: 0px;
@@ -35,6 +79,7 @@
     background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, 1));
   }
 }
+
 
 
 /*

@@ -579,15 +579,22 @@
     </form>
   </footer>
 
-    <script id="template-codebox" type="text/x-handlebars-template">
-    <div class="code-box">
-      <header>{{title}}</header>
-      <pre class="prettyprint is-preview linenums">
+
+  <!-- JAVASCRIPT TEMPLATING -->
+  <script id="template-codebox" type="text/x-handlebars-template">
+    <div class="codebox is-preview">
+      <header class="clearfix">
+        <h3>{{title}}</h3>
+        <button class="codebox-copy">Copy</button>
+      </header>
+
+      <pre class="prettyprint codebox-body linenums">
         {{{code}}}
       </pre>
     </div>
-    </script>
+  </script>
 
+  <!-- JAVASCRIPT INCLUDES -->
   <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="js/scrollto.js"></script>
@@ -596,6 +603,8 @@
   <script type="text/javascript" src="js/handlebars.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
+
+  <!-- GOOGLE ANALYTICS -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
