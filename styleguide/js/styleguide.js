@@ -61,8 +61,7 @@ $(document).ready(function(){
       $('.showcase').each(function(index, element) {
         var $showcase = $(element);
         var title = $showcase.find('.showcase-title:first').text();
-        var code = self._encodeHTML($showcase.find('.showcase-examples:first').html());
-        code = code.replace(/^\s*[\r\n\s]*/gm, "");
+        var code = $showcase.find('.showcase-examples:first').html();
 
         $showcase.append(self.templates.codebox({
           title: title,
@@ -101,7 +100,7 @@ $(document).ready(function(){
     },
 
     _encodeHTML: function(str) {
-      return String(str).replace(/(<br>)/gim, '').replace(/\t+/gim, '').replace(/(href="#" )*/gim, '').replace(/&/g, '&amp;').replace(/(<)+/g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return String(str).replace(/<br>/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
   };
 
