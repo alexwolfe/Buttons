@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
   var page = {
+    templates: {
+      codebox: Handlebars.compile($("#template-codebox").html())
+    },
+
     init: function() {
       this.buttons = $('#main-nav a');
 
@@ -53,15 +57,18 @@ $(document).ready(function(){
 
     generateCodeSamples: function() {
       var self = this;
+      var data = {title: 'hellow', code: 'blah'};
 
-      $('.showcase .l-over').each(function(index, element) {
+      $('.showcase').each(function(index, element) {
         var $showcase = $(element);
         var $codeBox = $('<pre class="prettyprint is-preview linenums"></pre>');
         var $overlay = $('<div class="prettyprint-overlay"></div>');
-        var exampleHTML = self._encodeHTML($showcase.find('.showcase-examples:first').html());
 
-        //Trim newlines
+        //GET DATA
+        var title = $showcase.find('.showcase-title:first').text();
+        var exampleHTML = self._encodeHTML($showcase.find('.showcase-examples:first').html());
         exampleHTML = exampleHTML.replace(/^\s*[\r\n]/gm, "");
+
 
         //Add click event for overlay
         $overlay.on('click', function(e) {
@@ -70,9 +77,11 @@ $(document).ready(function(){
         });
 
         //Update prettyprint container content
-        $codeBox.html(exampleHTML);
-        $codeBox.append($overlay);
-        $showcase.append($codeBox);
+
+        $showcase.append(self.templates.codebox({
+          title: title,
+          code: exampleHTML
+        }));
       });
 
       // Intialize Pretty Print
