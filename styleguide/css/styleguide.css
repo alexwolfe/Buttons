@@ -905,12 +905,14 @@ table {
   .codebox .codebox-body {
     padding: 20px;
     font-family: Monaco, Consolas, monospace;
-    font-size: 14px; }
+    font-size: 14px;
+    overflow: auto; }
     .codebox .codebox-body .linenums {
       margin-top: 0;
       margin-bottom: 0;
       color: #bae1fe;
-      line-height: 1.5; }
+      line-height: 1.5;
+      white-space: nowrap; }
   .codebox .codebox-overlay {
     cursor: pointer;
     position: absolute;
