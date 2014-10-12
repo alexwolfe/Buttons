@@ -48,8 +48,14 @@
       appearance: none;
       border-left: 1px solid $light;
       background: $white;
+      display: none;
 
-      &:hover {
+      &.is-visible {
+        display: block;
+      }
+
+      &:hover,
+      &.is-selected {
         color: $blue-shade-6;
       }
     }

@@ -902,8 +902,11 @@ table {
       font-size: 12px;
       appearance: none;
       border-left: 1px solid #e8edf2;
-      background: #FFFFFF; }
-      .codebox header .codebox-copy:hover {
+      background: #FFFFFF;
+      display: none; }
+      .codebox header .codebox-copy.is-visible {
+        display: block; }
+      .codebox header .codebox-copy:hover, .codebox header .codebox-copy.is-selected {
         color: #229ffd; }
   .codebox .codebox-body {
     margin: 0px;

@@ -83,14 +83,18 @@ $(document).ready(function(){
       var button = $showcase.find('.codebox-copy:first');
       var client = new ZeroClipboard( button );
 
+      //ENSURE FLASH IS INSTALLED
       client.on( "ready", function( readyEvent ) {
-        // alert( "ZeroClipboard SWF is ready!" );
+        button.addClass('is-visible');
 
-        client.on( "aftercopy", function( event ) {
-          // `this` === `client`
-          // `event.target` === the element that was clicked
-          event.target.style.display = "none";
-          alert("Copied text to clipboard: " + event.data["text/plain"] );
+        //TEXT COPIED
+        client.on( "aftercopy", function(event) {
+          button.text('Copied!').addClass('is-selected');
+
+          setTimeout(function() {
+            button.html('<i class="fa fa-cut"></i> Copy').removeClass('is-selected');
+          }, 1000);
+
         } );
       } );
     },
