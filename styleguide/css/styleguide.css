@@ -596,6 +596,16 @@ body {
   background: #f3faff; }
 
 /*
+* Background Shapes
+*
+*/
+.background-arrow-top-left {
+  background: url("../images/arrows/white-arrows-left.png") left -200px no-repeat; }
+
+.background-arrow-top-right {
+  background: url("../images/arrows/white-arrows-right.png") right -200px no-repeat; }
+
+/*
 * Text Colors
 *
 */
@@ -869,7 +879,7 @@ body {
 * used to showcase a phone module
 */
 .showcase-phone {
-  min-height: 680px;
+  min-height: 480px;
   padding: 160px 500px 60px 40px; }
   .showcase-phone .l-over {
     max-width: 490px; }

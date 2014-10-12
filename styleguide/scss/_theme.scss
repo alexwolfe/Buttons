@@ -17,6 +17,21 @@
   background: lighten($blue-shade-1, 4%);
 }
 
+
+/*
+* Background Shapes
+*
+*/
+
+.background-arrow-top-left {
+  background: url('../images/arrows/white-arrows-left.png') left -200px no-repeat;
+}
+
+.background-arrow-top-right {
+  background: url('../images/arrows/white-arrows-right.png') right -200px no-repeat;
+}
+
+
 /*
 * Text Colors
 *

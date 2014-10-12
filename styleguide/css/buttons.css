@@ -131,7 +131,7 @@
   .button:visited {
     color: #666; }
   .button:hover, .button:focus {
-    background-color: #fbfbfb;
+    background-color: #f6f6f6;
     text-decoration: none;
     outline: none; }
   .button:active, .button.active, .button.is-active {
