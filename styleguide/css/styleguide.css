@@ -458,6 +458,9 @@ table {
 :-moz-placeholder {
   color: #dee0e2; }
 
+body {
+  padding-bottom: 100px; }
+
 /*
 * Layout margin & padding
 *
@@ -759,7 +762,7 @@ table {
   z-index: 3;
   height: 800px;
   width: 440px;
-  background: url("../images/iphone-6.png") top left no-repeat; }
+  background: url("../images/mobile/iphone-6.png") top left no-repeat; }
   .phone .phone-screen {
     position: absolute;
     width: 300px;
@@ -770,7 +773,7 @@ table {
     background: -webkit-linear-gradient(0deg, #9D50BB 10%, #6E48AA 90%);
     background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%); }
   .phone .phone-status-bar {
-    background: url("../images/iphone-status-bar.png") top left no-repeat;
+    background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -819,7 +822,15 @@ table {
 */
 .showcase {
   position: relative;
-  padding: 60px 60px 120px; }
+  padding: 60px 120px;
+  /*
+  * Showcase Titles
+  *
+  */
+  /*
+  * Buttons
+  *
+  */ }
   .showcase .showcase-header-top-right,
   .showcase .showcase-header-top-left {
     position: absolute;
@@ -907,7 +918,7 @@ table {
       display: none; }
       .codebox header .codebox-copy.is-visible {
         display: block; }
-      .codebox header .codebox-copy:hover, .codebox header .codebox-copy.is-selected {
+      .codebox header .codebox-copy:hover, .codebox header .codebox-copy.is-selected, .codebox header .codebox-copy.zeroclipboard-is-hover {
         color: #229ffd; }
   .codebox .codebox-body {
     margin: 0px;

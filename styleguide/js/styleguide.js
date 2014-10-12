@@ -58,7 +58,7 @@ $(document).ready(function(){
     generateCodeSamples: function() {
       var self = this;
 
-      $('.showcase').each(function(index, element) {
+      $('.showcase-content').each(function(index, element) {
         var $showcase = $(element);
         var title = $showcase.find('.showcase-title:first').text();
         var id = title.toLowerCase().replace(/\s*(\&amp;)*/gi, '');

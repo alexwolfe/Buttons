@@ -50,7 +50,8 @@
       }
 
       &:hover,
-      &.is-selected {
+      &.is-selected,
+      &.zeroclipboard-is-hover {
         color: $blue-shade-6;
       }
     }

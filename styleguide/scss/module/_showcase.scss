@@ -5,7 +5,7 @@
 */
 .showcase {
   position: relative;
-  padding: 60px 60px 120px;
+  padding: 60px 120px;
 
   .showcase-header-top-right,
   .showcase-header-top-left {
@@ -21,6 +21,12 @@
   .showcase-header-top-left {
     left: 60px;
   }
+
+
+  /*
+  * Showcase Titles
+  *
+  */
 
   .showcase-title,
   .showcase-sub-title {
@@ -40,7 +46,11 @@
   }
 
 
-  // BUTTON MARGINS
+  /*
+  * Buttons
+  *
+  */
+
   .button,
   .button-dropdown,
   .button-group {

@@ -12,12 +12,30 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-saucelabs');
   grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-includes');
 
   /**
   * Grunt Configuration
   *
   */
   grunt.initConfig({
+
+    /*
+    * Template Includes
+    *
+    */
+
+    includes: {
+      build: {
+        cwd: 'styleguide/pages',
+        src: ['*.html' ],
+        dest: 'styleguide/',
+        options: {
+          includePath: 'styleguide/includes'
+        }
+      }
+    },
+
 
     /*
     * Sass Compilation
@@ -144,6 +162,10 @@ module.exports = function (grunt) {
         files: ['scss/**/*.scss', 'styleguide/scss/**/*.scss'],
         tasks: ['sass', 'autoprefixer', 'copy', 'clean']
       },
+      includes: {
+        files: ['styleguide/includes/**/*.html', 'styleguide/pages/**/*.html'],
+        tasks: ['includes']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.livereload.options.livereload %>'
@@ -223,6 +245,6 @@ module.exports = function (grunt) {
   }
 
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
-  grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
+  grunt.registerTask('dev', ['includes', 'sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
   grunt.registerTask('tests', testSubtasks);
 };

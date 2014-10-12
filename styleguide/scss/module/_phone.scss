@@ -5,7 +5,7 @@
   z-index: $layer-3;
   height: 800px;
   width: 440px;
-  background: url("../images/iphone-6.png") top left no-repeat;
+  background: url("../images/mobile/iphone-6.png") top left no-repeat;
 
   .phone-screen {
     position: absolute;
@@ -18,7 +18,7 @@
   }
 
   .phone-status-bar {
-    background: url("../images/iphone-status-bar.png") top left no-repeat;
+    background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
     position: absolute;
     top: 0px;
     left: 0px;
