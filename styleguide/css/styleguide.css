@@ -587,6 +587,8 @@ body {
 .background-dark {
   color: #FFFFFF;
   background: #229ffd; }
+  .background-dark a {
+    color: #FFFFFF; }
 
 .background-light {
   color: #a9adb1;
@@ -614,6 +616,8 @@ body {
 
 .text-light {
   color: #FFFFFF; }
+  .text-light a {
+    color: #FFFFFF; }
 
 /*
 * Logo Icon
@@ -767,8 +771,8 @@ body {
 
 .phone {
   position: absolute;
-  top: 120px;
-  right: 60px;
+  top: 40px;
+  right: 40px;
   z-index: 3;
   height: 800px;
   width: 440px;

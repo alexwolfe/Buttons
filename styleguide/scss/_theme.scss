@@ -6,6 +6,10 @@
 .background-dark {
   color: $white;
   background: $blue-shade-6;
+
+  a {
+    color: $white;
+  }
 }
 
 .background-light {
@@ -42,4 +46,8 @@
 
 .text-light {
   color: $white;
+
+  a {
+    color: $white;
+  }
 }
