@@ -877,14 +877,15 @@ table {
   /*
   * Codebox Header
   *
+  */
+  /*
+  * Codebox Body
+  *
   */ }
-  .codebox.is-preview {
-    max-height: 200px; }
   .codebox header {
     border-bottom: 1px solid #e8edf2;
     height: 39px; }
-    .codebox header h3,
-    .codebox header .codebox-copy {
+    .codebox header h3, .codebox header .codebox-copy {
       padding: 0px 20px;
       margin: 0px;
       font-weight: 300;
@@ -913,13 +914,13 @@ table {
     padding: 20px;
     font-family: Monaco, Consolas, monospace;
     font-size: 14px;
-    overflow: auto; }
+    overflow: auto;
+    max-height: 200px; }
     .codebox .codebox-body .linenums {
       margin-top: 0;
       margin-bottom: 0;
       color: #bae1fe;
-      line-height: 1.5;
-      white-space: nowrap; }
+      line-height: 1.5; }
   .codebox .codebox-overlay {
     cursor: pointer;
     position: absolute;

@@ -11,10 +11,6 @@
   background: $white;
   margin-top: 40px;
 
-  &.is-preview {
-    max-height: 200px;
-  }
-
   /*
   * Codebox Header
   *
@@ -24,8 +20,7 @@
     border-bottom: 1px solid $light;
     height: 39px;
 
-    h3,
-    .codebox-copy {
+    h3, .codebox-copy {
       padding: 0px 20px;
       margin: 0px;
       font-weight: 300;
@@ -61,19 +56,25 @@
     }
   }
 
+
+  /*
+  * Codebox Body
+  *
+  */
+
   .codebox-body {
     margin: 0px;
     padding: 20px;
     font-family: Monaco, Consolas, monospace;
     font-size: 14px;
     overflow: auto;
+    max-height: 200px;
 
     .linenums {
       margin-top: 0;
       margin-bottom: 0;
       color: lighten($blue-shade-6, 30%);
       line-height: 1.5;
-      white-space: nowrap;
     }
   }
 
@@ -95,6 +96,7 @@
 * Sreen Style Language Formatting
 *
 */
+
 @media screen {
   /* string content */
   .str {
@@ -175,6 +177,7 @@
 * Print Style Language Formatting
 *
 */
+
 @media print, projection {
 
   .is-preview {

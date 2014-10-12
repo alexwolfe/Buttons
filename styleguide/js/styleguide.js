@@ -64,22 +64,22 @@ $(document).ready(function(){
         var id = title.toLowerCase().replace(/\s*(\&amp;)*/gi, '');
         var code = $showcase.find('.showcase-examples:first').html();
 
+
         $showcase.append(self.templates.codebox({
           title: title,
           id: id,
-          code: code
+          code: self._encodeHTML(code)
         }));
 
-        self.activateCopyButton($showcase);
+        self.activateCopyButton($showcase, code);
       });
-
-
 
       // Intialize Pretty Print
       prettyPrint();
     },
 
-    activateCopyButton: function($showcase) {
+
+    activateCopyButton: function($showcase, code) {
       var button = $showcase.find('.codebox-copy:first');
       var client = new ZeroClipboard( button );
 
@@ -88,16 +88,18 @@ $(document).ready(function(){
         button.addClass('is-visible');
 
         //TEXT COPIED
-        client.on( "aftercopy", function(event) {
+        client.on( "copy", function(event) {
+          event.clipboardData.setData('text/plain', code);
+
           button.text('Copied!').addClass('is-selected');
 
           setTimeout(function() {
             button.html('<i class="fa fa-cut"></i> Copy').removeClass('is-selected');
           }, 1000);
-
-        } );
-      } );
+        });
+      });
     },
+
 
     activateNav: function() {
       var that = this;
