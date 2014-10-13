@@ -122,7 +122,7 @@ $(document).ready(function(){
 
 
     disableDemoButtons: function() {
-      $('[href^=#]').on('click', function(e) {
+      $('.showcase .button').on('click', function(e) {
         e.preventDefault();
       });
     },
