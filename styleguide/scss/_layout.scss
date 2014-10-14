@@ -13,6 +13,14 @@ body {
     margin: 0px + $l-space;
   }
 
+  .l-margin-top-#{$l-space} {
+    margin-top: 0px + $l-space;
+  }
+
+  .l-margin-bottom-#{$l-space} {
+    margin-bottom: 0px + $l-space;
+  }
+
   .l-padding-#{$l-space} {
     padding: 0px + $l-space;
   }
