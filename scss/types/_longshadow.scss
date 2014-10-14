@@ -6,9 +6,9 @@
 
 //Loops $length times building a long shadow. Defaults downward right.
 @function longshadow($type, $color, $length, $expand: false, $direction: right) {
-  $values: 0px 0px $color;
+  $values: 0 0 $color;
   @if $expand == true {
-    $values: 0px 0px 0px $color;
+    $values: 0 0 0 $color;
   }
 
   @if $direction == right {

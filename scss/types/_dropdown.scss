@@ -24,10 +24,10 @@
 #{$ubtn-namespace}-dropdown-list {
   display: none;
   position: absolute;
-  padding: 0px;
-  margin: 0px;
-  top: 0px;
-  left: 0px;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
   z-index: 1000;
   min-width: 100%;
   list-style-type: none;
@@ -38,12 +38,12 @@
   font-family: $ubtn-font-family;
 
   @if($ubtn-use-compass) {
-    @include box-shadow(0px 2px 7px rgba(0, 0, 0, 0.2));
+    @include box-shadow(0 2px 7px rgba(0, 0, 0, 0.2));
     @include box-sizing(border-box);
     @include border-radius(3px);
   }
   @else {
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-sizing: border-box;
   }
@@ -58,10 +58,10 @@
     border-top: none;
 
     @if($ubtn-use-compass) {
-      @include border-radius(0px 0px 3px 3px);
+      @include border-radius(0 0 3px 3px);
     }
     @else {
-      border-radius: 0px 0px 3px 3px;
+      border-radius: 0 0 3px 3px;
     }
   }
 
@@ -75,12 +75,12 @@
     border-bottom: none;
 
     @if($ubtn-use-compass) {
-      @include box-shadow(0px -2px 7px rgba(0, 0, 0, 0.2));
-      @include border-radius(3px 3px 0px 0px);
+      @include box-shadow(0 -2px 7px rgba(0, 0, 0, 0.2));
+      @include border-radius(3px 3px 0 0);
     }
     @else {
-      border-radius: 3px 3px 0px 0px;
-      box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.2);
+      border-radius: 3px 3px 0 0;
+      box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -91,8 +91,8 @@
 *
 */
 #{$ubtn-namespace}-dropdown-list > li {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   display: block;
 
   &#{$ubtn-namespace}-dropdown-divider {

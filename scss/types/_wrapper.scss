@@ -13,11 +13,11 @@
   @if($ubtn-use-compass) {
     @include background(linear-gradient(#f2f2f2, #FFF));
     @include border-radius(200px);
-    @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.04));
+    @include box-shadow(inset 0 1px 3px rgba(0, 0, 0, 0.04));
   }
   @else {
     background: linear-gradient(#f2f2f2, #FFF);
     border-radius: 200px;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
   }
 }

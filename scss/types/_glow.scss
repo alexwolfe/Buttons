@@ -25,16 +25,16 @@ $ubtn-default-glow-color: #2c9adb !default;
 */
 @if($ubtn-use-compass) {
   @include keyframes(glowing) {
-    from { @include box-shadow(0px 0px 0px rgba($ubtn-default-glow-color, 0.3));}
-    50% { @include box-shadow(0px 0px 20px rgba($ubtn-default-glow-color, 0.8));}
-    to { @include box-shadow(0px 0px 0px rgba($ubtn-default-glow-color, 0.3));}
+    from { @include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));}
+    50% { @include box-shadow(0 0 20px rgba($ubtn-default-glow-color, 0.8));}
+    to { @include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));}
   }
 }
 @else {
   @keyframes glowing {
-  from { box-shadow: 0px 0px 0px rgba($ubtn-default-glow-color, 0.3);}
-  50% { box-shadow: 0px 0px 20px rgba($ubtn-default-glow-color, 0.8);}
-  to { box-shadow: 0px 0px 0px rgba($ubtn-default-glow-color, 0.3);}
+  from { box-shadow: 0 0 0 rgba($ubtn-default-glow-color, 0.3);}
+  50% { box-shadow: 0 0 20px rgba($ubtn-default-glow-color, 0.8);}
+  to { box-shadow: 0 0 0 rgba($ubtn-default-glow-color, 0.3);}
   }
 }
 
@@ -50,16 +50,16 @@ $ubtn-default-glow-color: #2c9adb !default;
 
   @if($ubtn-use-compass) {
     @include keyframes(glowing-#{$ubtn-name}) {
-      from { @include box-shadow(0px 0px 0px rgba($ubtn-background, 0.3));}
-      50% { @include box-shadow(0px 0px 20px rgba($ubtn-background, 0.8));}
-      to { @include box-shadow(0px 0px 0px rgba($ubtn-background, 0.3));}
+      from { @include box-shadow(0 0 0 rgba($ubtn-background, 0.3));}
+      50% { @include box-shadow(0 0 20px rgba($ubtn-background, 0.8));}
+      to { @include box-shadow(0 0 0 rgba($ubtn-background, 0.3));}
     }
   }
   @else {
     @keyframes glowing-#{$ubtn-name} {
-    from { box-shadow: 0px 0px 0px rgba($ubtn-background, 0.3);}
-    50% { box-shadow: 0px 0px 20px rgba($ubtn-background, 0.8);}
-    to { box-shadow: 0px 0px 0px rgba($ubtn-background, 0.3);}
+    from { box-shadow: 0 0 0 rgba($ubtn-background, 0.3);}
+    50% { box-shadow: 0 0 20px rgba($ubtn-background, 0.8);}
+    to { box-shadow: 0 0 0 rgba($ubtn-background, 0.3);}
     }
   }
 }

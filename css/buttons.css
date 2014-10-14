@@ -107,7 +107,7 @@
   text-align: center;
   line-height: 40px;
   height: 40px;
-  padding: 0px 40px;
+  padding: 0 40px;
   margin: 0;
   display: inline-block;
   appearance: none;
@@ -135,15 +135,15 @@
     text-decoration: none;
     outline: none; }
   .button:active, .button.active, .button.is-active {
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
     text-decoration: none;
     background-color: #eeeeee;
     border-color: #cfcfcf;
     color: #d4d4d4;
     -webkit-transition-duration: 0s;
             transition-duration: 0s;
-    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
   .button.disabled, .button.is-disabled, .button:disabled {
     top: 0 !important;
     background: #EEE !important;
@@ -181,7 +181,7 @@
 *
 */
 .button-width-small {
-  padding: 0px 10px !important; }
+  padding: 0 10px !important; }
 
 /*
 * Base Colors
@@ -367,7 +367,7 @@
 * (ex. Circle, Rounded, Pill)
 */
 .button-square {
-  border-radius: 0px; }
+  border-radius: 0; }
 
 .button-box {
   border-radius: 10px; }
@@ -389,7 +389,7 @@
 .button-circle,
 .button-box,
 .button-square {
-  padding: 0px !important;
+  padding: 0 !important;
   width: 40px; }
   .button-circle.button-giant,
   .button-box.button-giant,
@@ -426,37 +426,37 @@
   font-size: 32px;
   height: 80px;
   line-height: 80px;
-  padding: 0px 80px; }
+  padding: 0 80px; }
 
 .button-jumbo {
   font-size: 24px;
   height: 60px;
   line-height: 60px;
-  padding: 0px 60px; }
+  padding: 0 60px; }
 
 .button-large {
   font-size: 20px;
   height: 50px;
   line-height: 50px;
-  padding: 0px 50px; }
+  padding: 0 50px; }
 
 .button-normal {
   font-size: 16px;
   height: 40px;
   line-height: 40px;
-  padding: 0px 40px; }
+  padding: 0 40px; }
 
 .button-small {
   font-size: 12px;
   height: 30px;
   line-height: 30px;
-  padding: 0px 30px; }
+  padding: 0 30px; }
 
 .button-tiny {
   font-size: 9.6px;
   height: 24px;
   line-height: 24px;
-  padding: 0px 24px; }
+  padding: 0 24px; }
 
 /*
 * Border Buttons
@@ -687,7 +687,7 @@
 .button-borderless {
   background: none;
   border: none;
-  padding: 0px 8px !important;
+  padding: 0 8px !important;
   color: #EEE;
   font-size: 20.8px;
   font-weight: 200;
@@ -767,16 +767,16 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
   background: -webkit-linear-gradient(#f6f6f6, #e1e1e1);
   background: linear-gradient(#f6f6f6, #e1e1e1);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.15); }
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15); }
   .button-raised:hover, .button-raised:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
     background: -webkit-linear-gradient(top, white, gainsboro);
     background: linear-gradient(top, white, gainsboro); }
   .button-raised:active, .button-raised.active, .button-raised.is-active {
     background: #eeeeee;
-    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;
-            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white; }
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 white;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 white; }
 
 /*
 * Raised Button Colors
@@ -877,20 +877,20 @@
 */
 .button-3d {
   position: relative;
-  top: 0px;
-  -webkit-box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2); }
+  top: 0;
+  -webkit-box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2); }
   .button-3d:hover, .button-3d:focus {
-    -webkit-box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 7px 0px #bbbbbb, 0px 8px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2); }
   .button-3d:active, .button-3d.active, .button-3d.is-active {
     top: 5px;
     -webkit-transition-property: all;
             transition-property: all;
     -webkit-transition-duration: .15s;
             transition-duration: .15s;
-    -webkit-box-shadow: 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #bbbbbb, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #bbbbbb, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #bbbbbb, 0 3px 3px rgba(0, 0, 0, 0.2); }
 
 /*
 * 3D Button Colors
@@ -899,68 +899,68 @@
 * (.button-primary, .button-secondary, etc.)
 */
 .button-3d.button-primary {
-  -webkit-box-shadow: 0px 7px 0px #0880d7, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #0880d7, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #0880d7, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #0880d7, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-primary:hover, .button-3d.button-primary:focus {
-    -webkit-box-shadow: 0px 7px 0px #077ace, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #077ace, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #077ace, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #077ace, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-primary:active, .button-3d.button-primary.active, .button-3d.button-primary.is-active {
-    -webkit-box-shadow: 0px 2px 0px #0662a6, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #0662a6, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #0662a6, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #0662a6, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-plain {
-  -webkit-box-shadow: 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #e6e6e6, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #e6e6e6, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #e6e6e6, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-plain:hover, .button-3d.button-plain:focus {
-    -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #e0e0e0, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #e0e0e0, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #e0e0e0, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-plain:active, .button-3d.button-plain.active, .button-3d.button-plain.is-active {
-    -webkit-box-shadow: 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #cccccc, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #cccccc, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #cccccc, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-inverse {
-  -webkit-box-shadow: 0px 7px 0px #090909, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #090909, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #090909, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #090909, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-inverse:hover, .button-3d.button-inverse:focus {
-    -webkit-box-shadow: 0px 7px 0px #030303, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #030303, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #030303, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #030303, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-inverse:active, .button-3d.button-inverse.active, .button-3d.button-inverse.is-active {
-    -webkit-box-shadow: 0px 2px 0px black, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px black, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 black, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 black, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-action {
-  -webkit-box-shadow: 0px 7px 0px #8bc220, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #8bc220, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #8bc220, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #8bc220, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-action:hover, .button-3d.button-action:focus {
-    -webkit-box-shadow: 0px 7px 0px #84b91f, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #84b91f, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #84b91f, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #84b91f, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-action:active, .button-3d.button-action.active, .button-3d.button-action.is-active {
-    -webkit-box-shadow: 0px 2px 0px #6b9619, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #6b9619, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #6b9619, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #6b9619, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-highlight {
-  -webkit-box-shadow: 0px 7px 0px #e59501, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #e59501, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #e59501, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #e59501, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-highlight:hover, .button-3d.button-highlight:focus {
-    -webkit-box-shadow: 0px 7px 0px #db8e01, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #db8e01, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #db8e01, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #db8e01, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-highlight:active, .button-3d.button-highlight.active, .button-3d.button-highlight.is-active {
-    -webkit-box-shadow: 0px 2px 0px #b27401, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #b27401, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #b27401, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #b27401, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-caution {
-  -webkit-box-shadow: 0px 7px 0px #ff1022, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #ff1022, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #ff1022, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #ff1022, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-caution:hover, .button-3d.button-caution:focus {
-    -webkit-box-shadow: 0px 7px 0px #ff0618, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #ff0618, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #ff0618, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #ff0618, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-caution:active, .button-3d.button-caution.active, .button-3d.button-caution.is-active {
-    -webkit-box-shadow: 0px 2px 0px #dc0010, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #dc0010, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #dc0010, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #dc0010, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-royal {
-  -webkit-box-shadow: 0px 7px 0px #5246e2, 0px 8px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 7px 0px #5246e2, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0 7px 0 #5246e2, 0 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 0 #5246e2, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-royal:hover, .button-3d.button-royal:focus {
-    -webkit-box-shadow: 0px 7px 0px #493de1, 0px 8px 3px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 7px 0px #493de1, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0 7px 0 #493de1, 0 8px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 7px 0 #493de1, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-royal:active, .button-3d.button-royal.active, .button-3d.button-royal.is-active {
-    -webkit-box-shadow: 0px 2px 0px #2f21d4, 0px 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 0px #2f21d4, 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 2px 0 #2f21d4, 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 0 #2f21d4, 0 3px 3px rgba(0, 0, 0, 0.2); }
 
 /*
 * Glowing Buttons
@@ -979,168 +979,168 @@
 */
 @-webkit-keyframes glowing {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
-            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);
+            box-shadow: 0 0 0 rgba(44, 154, 219, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8);
-            box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(44, 154, 219, 0.8);
+            box-shadow: 0 0 20px rgba(44, 154, 219, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
-            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);
+            box-shadow: 0 0 0 rgba(44, 154, 219, 0.3); } }
 @keyframes glowing {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
-            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);
+            box-shadow: 0 0 0 rgba(44, 154, 219, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8);
-            box-shadow: 0px 0px 20px rgba(44, 154, 219, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(44, 154, 219, 0.8);
+            box-shadow: 0 0 20px rgba(44, 154, 219, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3);
-            box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);
+            box-shadow: 0 0 0 rgba(44, 154, 219, 0.3); } }
 /*
 * Glowing Keyframes for various colors
 *
 */
 @-webkit-keyframes glowing-primary {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
-            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(27, 154, 247, 0.3);
+            box-shadow: 0 0 0 rgba(27, 154, 247, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8);
-            box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(27, 154, 247, 0.8);
+            box-shadow: 0 0 20px rgba(27, 154, 247, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
-            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(27, 154, 247, 0.3);
+            box-shadow: 0 0 0 rgba(27, 154, 247, 0.3); } }
 @keyframes glowing-primary {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
-            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(27, 154, 247, 0.3);
+            box-shadow: 0 0 0 rgba(27, 154, 247, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8);
-            box-shadow: 0px 0px 20px rgba(27, 154, 247, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(27, 154, 247, 0.8);
+            box-shadow: 0 0 20px rgba(27, 154, 247, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3);
-            box-shadow: 0px 0px 0px rgba(27, 154, 247, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(27, 154, 247, 0.3);
+            box-shadow: 0 0 0 rgba(27, 154, 247, 0.3); } }
 @-webkit-keyframes glowing-plain {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3); } }
 @keyframes glowing-plain {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3); } }
 @-webkit-keyframes glowing-inverse {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3);
-            box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);
+            box-shadow: 0 0 0 rgba(34, 34, 34, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.8);
-            box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(34, 34, 34, 0.8);
+            box-shadow: 0 0 20px rgba(34, 34, 34, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3);
-            box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);
+            box-shadow: 0 0 0 rgba(34, 34, 34, 0.3); } }
 @keyframes glowing-inverse {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3);
-            box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);
+            box-shadow: 0 0 0 rgba(34, 34, 34, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.8);
-            box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(34, 34, 34, 0.8);
+            box-shadow: 0 0 20px rgba(34, 34, 34, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3);
-            box-shadow: 0px 0px 0px rgba(34, 34, 34, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);
+            box-shadow: 0 0 0 rgba(34, 34, 34, 0.3); } }
 @-webkit-keyframes glowing-action {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
-            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(165, 222, 55, 0.3);
+            box-shadow: 0 0 0 rgba(165, 222, 55, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8);
-            box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(165, 222, 55, 0.8);
+            box-shadow: 0 0 20px rgba(165, 222, 55, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
-            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(165, 222, 55, 0.3);
+            box-shadow: 0 0 0 rgba(165, 222, 55, 0.3); } }
 @keyframes glowing-action {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
-            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(165, 222, 55, 0.3);
+            box-shadow: 0 0 0 rgba(165, 222, 55, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8);
-            box-shadow: 0px 0px 20px rgba(165, 222, 55, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(165, 222, 55, 0.8);
+            box-shadow: 0 0 20px rgba(165, 222, 55, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3);
-            box-shadow: 0px 0px 0px rgba(165, 222, 55, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(165, 222, 55, 0.3);
+            box-shadow: 0 0 0 rgba(165, 222, 55, 0.3); } }
 @-webkit-keyframes glowing-highlight {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
-            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+            box-shadow: 0 0 0 rgba(254, 174, 27, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8);
-            box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(254, 174, 27, 0.8);
+            box-shadow: 0 0 20px rgba(254, 174, 27, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
-            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+            box-shadow: 0 0 0 rgba(254, 174, 27, 0.3); } }
 @keyframes glowing-highlight {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
-            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+            box-shadow: 0 0 0 rgba(254, 174, 27, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8);
-            box-shadow: 0px 0px 20px rgba(254, 174, 27, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(254, 174, 27, 0.8);
+            box-shadow: 0 0 20px rgba(254, 174, 27, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3);
-            box-shadow: 0px 0px 0px rgba(254, 174, 27, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+            box-shadow: 0 0 0 rgba(254, 174, 27, 0.3); } }
 @-webkit-keyframes glowing-caution {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3); } }
 @keyframes glowing-caution {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8);
-            box-shadow: 0px 0px 20px rgba(255, 67, 81, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(255, 67, 81, 0.8);
+            box-shadow: 0 0 20px rgba(255, 67, 81, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3);
-            box-shadow: 0px 0px 0px rgba(255, 67, 81, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(255, 67, 81, 0.3);
+            box-shadow: 0 0 0 rgba(255, 67, 81, 0.3); } }
 @-webkit-keyframes glowing-royal {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
-            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            box-shadow: 0 0 0 rgba(123, 114, 233, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8);
-            box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(123, 114, 233, 0.8);
+            box-shadow: 0 0 20px rgba(123, 114, 233, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
-            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            box-shadow: 0 0 0 rgba(123, 114, 233, 0.3); } }
 @keyframes glowing-royal {
   from {
-    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
-            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3); }
+    -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            box-shadow: 0 0 0 rgba(123, 114, 233, 0.3); }
   50% {
-    -webkit-box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8);
-            box-shadow: 0px 0px 20px rgba(123, 114, 233, 0.8); }
+    -webkit-box-shadow: 0 0 20px rgba(123, 114, 233, 0.8);
+            box-shadow: 0 0 20px rgba(123, 114, 233, 0.8); }
   to {
-    -webkit-box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3);
-            box-shadow: 0px 0px 0px rgba(123, 114, 233, 0.3); } }
+    -webkit-box-shadow: 0 0 0 rgba(123, 114, 233, 0.3);
+            box-shadow: 0 0 0 rgba(123, 114, 233, 0.3); } }
 /*
 * Glowing Buttons Base Styes
 *
@@ -1208,10 +1208,10 @@
 .button-dropdown-list {
   display: none;
   position: absolute;
-  padding: 0px;
-  margin: 0px;
-  top: 0px;
-  left: 0px;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
   z-index: 1000;
   min-width: 100%;
   list-style-type: none;
@@ -1220,8 +1220,8 @@
   border-width: 1px;
   border-color: #d4d4d4;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1237,22 +1237,22 @@
   .button-dropdown-list.is-below {
     top: 100%;
     border-top: none;
-    border-radius: 0px 0px 3px 3px; }
+    border-radius: 0 0 3px 3px; }
   .button-dropdown-list.is-above {
     bottom: 100%;
     top: auto;
     border-bottom: none;
-    border-radius: 3px 3px 0px 0px;
-    -webkit-box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.2); }
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2); }
 
 /*
 * Dropdown Buttons
 *
 */
 .button-dropdown-list > li {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   display: block; }
   .button-dropdown-list > li.button-dropdown-divider {
     border-top: 1px solid #e6e6e6; }
@@ -1398,8 +1398,8 @@
   background: -webkit-linear-gradient(#f2f2f2, #FFF);
   background: linear-gradient(#f2f2f2, #FFF);
   border-radius: 200px;
-  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.04);
-          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.04); }
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04); }
 
 /*
 * Long Shadow Buttons
@@ -1411,10 +1411,10 @@
   overflow: hidden; }
   .button-longshadow.button-primary,
   .button-longshadow-right.button-primary {
-    text-shadow: 0px 0px #0880d7, 1px 1px #0880d7, 2px 2px #0880d7, 3px 3px #0880d7, 4px 4px #0880d7, 5px 5px #0880d7, 6px 6px #0880d7, 7px 7px #0880d7, 8px 8px #0880d7, 9px 9px #0880d7, 10px 10px #0880d7, 11px 11px #0880d7, 12px 12px #0880d7, 13px 13px #0880d7, 14px 14px #0880d7, 15px 15px #0880d7, 16px 16px #0880d7, 17px 17px #0880d7, 18px 18px #0880d7, 19px 19px #0880d7, 20px 20px #0880d7, 21px 21px #0880d7, 22px 22px #0880d7, 23px 23px #0880d7, 24px 24px #0880d7, 25px 25px #0880d7, 26px 26px #0880d7, 27px 27px #0880d7, 28px 28px #0880d7, 29px 29px #0880d7, 30px 30px #0880d7, 31px 31px #0880d7, 32px 32px #0880d7, 33px 33px #0880d7, 34px 34px #0880d7, 35px 35px #0880d7; }
+    text-shadow: 0 0 #0880d7, 1px 1px #0880d7, 2px 2px #0880d7, 3px 3px #0880d7, 4px 4px #0880d7, 5px 5px #0880d7, 6px 6px #0880d7, 7px 7px #0880d7, 8px 8px #0880d7, 9px 9px #0880d7, 10px 10px #0880d7, 11px 11px #0880d7, 12px 12px #0880d7, 13px 13px #0880d7, 14px 14px #0880d7, 15px 15px #0880d7, 16px 16px #0880d7, 17px 17px #0880d7, 18px 18px #0880d7, 19px 19px #0880d7, 20px 20px #0880d7, 21px 21px #0880d7, 22px 22px #0880d7, 23px 23px #0880d7, 24px 24px #0880d7, 25px 25px #0880d7, 26px 26px #0880d7, 27px 27px #0880d7, 28px 28px #0880d7, 29px 29px #0880d7, 30px 30px #0880d7, 31px 31px #0880d7, 32px 32px #0880d7, 33px 33px #0880d7, 34px 34px #0880d7, 35px 35px #0880d7; }
     .button-longshadow.button-primary.button-longshadow-expand,
     .button-longshadow-right.button-primary.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #0880d7, 1px 1px 0.15px  #0880d7, 2px 2px 0.3px  #0880d7, 3px 3px 0.45px  #0880d7, 4px 4px 0.6px  #0880d7, 5px 5px 0.75px  #0880d7, 6px 6px 0.9px  #0880d7, 7px 7px 1.05px  #0880d7, 8px 8px 1.2px  #0880d7, 9px 9px 1.35px  #0880d7, 10px 10px 1.5px  #0880d7, 11px 11px 1.65px  #0880d7, 12px 12px 1.8px  #0880d7, 13px 13px 1.95px  #0880d7, 14px 14px 2.1px  #0880d7, 15px 15px 2.25px  #0880d7, 16px 16px 2.4px  #0880d7, 17px 17px 2.55px  #0880d7, 18px 18px 2.7px  #0880d7, 19px 19px 2.85px  #0880d7, 20px 20px 3px  #0880d7, 21px 21px 3.15px  #0880d7, 22px 22px 3.3px  #0880d7, 23px 23px 3.45px  #0880d7, 24px 24px 3.6px  #0880d7, 25px 25px 3.75px  #0880d7, 26px 26px 3.9px  #0880d7, 27px 27px 4.05px  #0880d7, 28px 28px 4.2px  #0880d7, 29px 29px 4.35px  #0880d7, 30px 30px 4.5px  #0880d7, 31px 31px 4.65px  #0880d7, 32px 32px 4.8px  #0880d7, 33px 33px 4.95px  #0880d7, 34px 34px 5.1px  #0880d7, 35px 35px 5.25px  #0880d7, 36px 36px 5.4px  #0880d7, 37px 37px 5.55px  #0880d7, 38px 38px 5.7px  #0880d7, 39px 39px 5.85px  #0880d7, 40px 40px 6px  #0880d7, 41px 41px 6.15px  #0880d7, 42px 42px 6.3px  #0880d7, 43px 43px 6.45px  #0880d7, 44px 44px 6.6px  #0880d7, 45px 45px 6.75px  #0880d7, 46px 46px 6.9px  #0880d7, 47px 47px 7.05px  #0880d7, 48px 48px 7.2px  #0880d7, 49px 49px 7.35px  #0880d7, 50px 50px 7.5px  #0880d7; }
+      text-shadow: 0 0 0 #0880d7, 1px 1px 0.15px  #0880d7, 2px 2px 0.3px  #0880d7, 3px 3px 0.45px  #0880d7, 4px 4px 0.6px  #0880d7, 5px 5px 0.75px  #0880d7, 6px 6px 0.9px  #0880d7, 7px 7px 1.05px  #0880d7, 8px 8px 1.2px  #0880d7, 9px 9px 1.35px  #0880d7, 10px 10px 1.5px  #0880d7, 11px 11px 1.65px  #0880d7, 12px 12px 1.8px  #0880d7, 13px 13px 1.95px  #0880d7, 14px 14px 2.1px  #0880d7, 15px 15px 2.25px  #0880d7, 16px 16px 2.4px  #0880d7, 17px 17px 2.55px  #0880d7, 18px 18px 2.7px  #0880d7, 19px 19px 2.85px  #0880d7, 20px 20px 3px  #0880d7, 21px 21px 3.15px  #0880d7, 22px 22px 3.3px  #0880d7, 23px 23px 3.45px  #0880d7, 24px 24px 3.6px  #0880d7, 25px 25px 3.75px  #0880d7, 26px 26px 3.9px  #0880d7, 27px 27px 4.05px  #0880d7, 28px 28px 4.2px  #0880d7, 29px 29px 4.35px  #0880d7, 30px 30px 4.5px  #0880d7, 31px 31px 4.65px  #0880d7, 32px 32px 4.8px  #0880d7, 33px 33px 4.95px  #0880d7, 34px 34px 5.1px  #0880d7, 35px 35px 5.25px  #0880d7, 36px 36px 5.4px  #0880d7, 37px 37px 5.55px  #0880d7, 38px 38px 5.7px  #0880d7, 39px 39px 5.85px  #0880d7, 40px 40px 6px  #0880d7, 41px 41px 6.15px  #0880d7, 42px 42px 6.3px  #0880d7, 43px 43px 6.45px  #0880d7, 44px 44px 6.6px  #0880d7, 45px 45px 6.75px  #0880d7, 46px 46px 6.9px  #0880d7, 47px 47px 7.05px  #0880d7, 48px 48px 7.2px  #0880d7, 49px 49px 7.35px  #0880d7, 50px 50px 7.5px  #0880d7; }
     .button-longshadow.button-primary:active, .button-longshadow.button-primary.active, .button-longshadow.button-primary.is-active,
     .button-longshadow-right.button-primary:active,
     .button-longshadow-right.button-primary.active,
@@ -1422,10 +1422,10 @@
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow.button-plain,
   .button-longshadow-right.button-plain {
-    text-shadow: 0px 0px #e6e6e6, 1px 1px #e6e6e6, 2px 2px #e6e6e6, 3px 3px #e6e6e6, 4px 4px #e6e6e6, 5px 5px #e6e6e6, 6px 6px #e6e6e6, 7px 7px #e6e6e6, 8px 8px #e6e6e6, 9px 9px #e6e6e6, 10px 10px #e6e6e6, 11px 11px #e6e6e6, 12px 12px #e6e6e6, 13px 13px #e6e6e6, 14px 14px #e6e6e6, 15px 15px #e6e6e6, 16px 16px #e6e6e6, 17px 17px #e6e6e6, 18px 18px #e6e6e6, 19px 19px #e6e6e6, 20px 20px #e6e6e6, 21px 21px #e6e6e6, 22px 22px #e6e6e6, 23px 23px #e6e6e6, 24px 24px #e6e6e6, 25px 25px #e6e6e6, 26px 26px #e6e6e6, 27px 27px #e6e6e6, 28px 28px #e6e6e6, 29px 29px #e6e6e6, 30px 30px #e6e6e6, 31px 31px #e6e6e6, 32px 32px #e6e6e6, 33px 33px #e6e6e6, 34px 34px #e6e6e6, 35px 35px #e6e6e6; }
+    text-shadow: 0 0 #e6e6e6, 1px 1px #e6e6e6, 2px 2px #e6e6e6, 3px 3px #e6e6e6, 4px 4px #e6e6e6, 5px 5px #e6e6e6, 6px 6px #e6e6e6, 7px 7px #e6e6e6, 8px 8px #e6e6e6, 9px 9px #e6e6e6, 10px 10px #e6e6e6, 11px 11px #e6e6e6, 12px 12px #e6e6e6, 13px 13px #e6e6e6, 14px 14px #e6e6e6, 15px 15px #e6e6e6, 16px 16px #e6e6e6, 17px 17px #e6e6e6, 18px 18px #e6e6e6, 19px 19px #e6e6e6, 20px 20px #e6e6e6, 21px 21px #e6e6e6, 22px 22px #e6e6e6, 23px 23px #e6e6e6, 24px 24px #e6e6e6, 25px 25px #e6e6e6, 26px 26px #e6e6e6, 27px 27px #e6e6e6, 28px 28px #e6e6e6, 29px 29px #e6e6e6, 30px 30px #e6e6e6, 31px 31px #e6e6e6, 32px 32px #e6e6e6, 33px 33px #e6e6e6, 34px 34px #e6e6e6, 35px 35px #e6e6e6; }
     .button-longshadow.button-plain.button-longshadow-expand,
     .button-longshadow-right.button-plain.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #e6e6e6, 1px 1px 0.15px  #e6e6e6, 2px 2px 0.3px  #e6e6e6, 3px 3px 0.45px  #e6e6e6, 4px 4px 0.6px  #e6e6e6, 5px 5px 0.75px  #e6e6e6, 6px 6px 0.9px  #e6e6e6, 7px 7px 1.05px  #e6e6e6, 8px 8px 1.2px  #e6e6e6, 9px 9px 1.35px  #e6e6e6, 10px 10px 1.5px  #e6e6e6, 11px 11px 1.65px  #e6e6e6, 12px 12px 1.8px  #e6e6e6, 13px 13px 1.95px  #e6e6e6, 14px 14px 2.1px  #e6e6e6, 15px 15px 2.25px  #e6e6e6, 16px 16px 2.4px  #e6e6e6, 17px 17px 2.55px  #e6e6e6, 18px 18px 2.7px  #e6e6e6, 19px 19px 2.85px  #e6e6e6, 20px 20px 3px  #e6e6e6, 21px 21px 3.15px  #e6e6e6, 22px 22px 3.3px  #e6e6e6, 23px 23px 3.45px  #e6e6e6, 24px 24px 3.6px  #e6e6e6, 25px 25px 3.75px  #e6e6e6, 26px 26px 3.9px  #e6e6e6, 27px 27px 4.05px  #e6e6e6, 28px 28px 4.2px  #e6e6e6, 29px 29px 4.35px  #e6e6e6, 30px 30px 4.5px  #e6e6e6, 31px 31px 4.65px  #e6e6e6, 32px 32px 4.8px  #e6e6e6, 33px 33px 4.95px  #e6e6e6, 34px 34px 5.1px  #e6e6e6, 35px 35px 5.25px  #e6e6e6, 36px 36px 5.4px  #e6e6e6, 37px 37px 5.55px  #e6e6e6, 38px 38px 5.7px  #e6e6e6, 39px 39px 5.85px  #e6e6e6, 40px 40px 6px  #e6e6e6, 41px 41px 6.15px  #e6e6e6, 42px 42px 6.3px  #e6e6e6, 43px 43px 6.45px  #e6e6e6, 44px 44px 6.6px  #e6e6e6, 45px 45px 6.75px  #e6e6e6, 46px 46px 6.9px  #e6e6e6, 47px 47px 7.05px  #e6e6e6, 48px 48px 7.2px  #e6e6e6, 49px 49px 7.35px  #e6e6e6, 50px 50px 7.5px  #e6e6e6; }
+      text-shadow: 0 0 0 #e6e6e6, 1px 1px 0.15px  #e6e6e6, 2px 2px 0.3px  #e6e6e6, 3px 3px 0.45px  #e6e6e6, 4px 4px 0.6px  #e6e6e6, 5px 5px 0.75px  #e6e6e6, 6px 6px 0.9px  #e6e6e6, 7px 7px 1.05px  #e6e6e6, 8px 8px 1.2px  #e6e6e6, 9px 9px 1.35px  #e6e6e6, 10px 10px 1.5px  #e6e6e6, 11px 11px 1.65px  #e6e6e6, 12px 12px 1.8px  #e6e6e6, 13px 13px 1.95px  #e6e6e6, 14px 14px 2.1px  #e6e6e6, 15px 15px 2.25px  #e6e6e6, 16px 16px 2.4px  #e6e6e6, 17px 17px 2.55px  #e6e6e6, 18px 18px 2.7px  #e6e6e6, 19px 19px 2.85px  #e6e6e6, 20px 20px 3px  #e6e6e6, 21px 21px 3.15px  #e6e6e6, 22px 22px 3.3px  #e6e6e6, 23px 23px 3.45px  #e6e6e6, 24px 24px 3.6px  #e6e6e6, 25px 25px 3.75px  #e6e6e6, 26px 26px 3.9px  #e6e6e6, 27px 27px 4.05px  #e6e6e6, 28px 28px 4.2px  #e6e6e6, 29px 29px 4.35px  #e6e6e6, 30px 30px 4.5px  #e6e6e6, 31px 31px 4.65px  #e6e6e6, 32px 32px 4.8px  #e6e6e6, 33px 33px 4.95px  #e6e6e6, 34px 34px 5.1px  #e6e6e6, 35px 35px 5.25px  #e6e6e6, 36px 36px 5.4px  #e6e6e6, 37px 37px 5.55px  #e6e6e6, 38px 38px 5.7px  #e6e6e6, 39px 39px 5.85px  #e6e6e6, 40px 40px 6px  #e6e6e6, 41px 41px 6.15px  #e6e6e6, 42px 42px 6.3px  #e6e6e6, 43px 43px 6.45px  #e6e6e6, 44px 44px 6.6px  #e6e6e6, 45px 45px 6.75px  #e6e6e6, 46px 46px 6.9px  #e6e6e6, 47px 47px 7.05px  #e6e6e6, 48px 48px 7.2px  #e6e6e6, 49px 49px 7.35px  #e6e6e6, 50px 50px 7.5px  #e6e6e6; }
     .button-longshadow.button-plain:active, .button-longshadow.button-plain.active, .button-longshadow.button-plain.is-active,
     .button-longshadow-right.button-plain:active,
     .button-longshadow-right.button-plain.active,
@@ -1433,10 +1433,10 @@
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow.button-inverse,
   .button-longshadow-right.button-inverse {
-    text-shadow: 0px 0px #090909, 1px 1px #090909, 2px 2px #090909, 3px 3px #090909, 4px 4px #090909, 5px 5px #090909, 6px 6px #090909, 7px 7px #090909, 8px 8px #090909, 9px 9px #090909, 10px 10px #090909, 11px 11px #090909, 12px 12px #090909, 13px 13px #090909, 14px 14px #090909, 15px 15px #090909, 16px 16px #090909, 17px 17px #090909, 18px 18px #090909, 19px 19px #090909, 20px 20px #090909, 21px 21px #090909, 22px 22px #090909, 23px 23px #090909, 24px 24px #090909, 25px 25px #090909, 26px 26px #090909, 27px 27px #090909, 28px 28px #090909, 29px 29px #090909, 30px 30px #090909, 31px 31px #090909, 32px 32px #090909, 33px 33px #090909, 34px 34px #090909, 35px 35px #090909; }
+    text-shadow: 0 0 #090909, 1px 1px #090909, 2px 2px #090909, 3px 3px #090909, 4px 4px #090909, 5px 5px #090909, 6px 6px #090909, 7px 7px #090909, 8px 8px #090909, 9px 9px #090909, 10px 10px #090909, 11px 11px #090909, 12px 12px #090909, 13px 13px #090909, 14px 14px #090909, 15px 15px #090909, 16px 16px #090909, 17px 17px #090909, 18px 18px #090909, 19px 19px #090909, 20px 20px #090909, 21px 21px #090909, 22px 22px #090909, 23px 23px #090909, 24px 24px #090909, 25px 25px #090909, 26px 26px #090909, 27px 27px #090909, 28px 28px #090909, 29px 29px #090909, 30px 30px #090909, 31px 31px #090909, 32px 32px #090909, 33px 33px #090909, 34px 34px #090909, 35px 35px #090909; }
     .button-longshadow.button-inverse.button-longshadow-expand,
     .button-longshadow-right.button-inverse.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #090909, 1px 1px 0.15px  #090909, 2px 2px 0.3px  #090909, 3px 3px 0.45px  #090909, 4px 4px 0.6px  #090909, 5px 5px 0.75px  #090909, 6px 6px 0.9px  #090909, 7px 7px 1.05px  #090909, 8px 8px 1.2px  #090909, 9px 9px 1.35px  #090909, 10px 10px 1.5px  #090909, 11px 11px 1.65px  #090909, 12px 12px 1.8px  #090909, 13px 13px 1.95px  #090909, 14px 14px 2.1px  #090909, 15px 15px 2.25px  #090909, 16px 16px 2.4px  #090909, 17px 17px 2.55px  #090909, 18px 18px 2.7px  #090909, 19px 19px 2.85px  #090909, 20px 20px 3px  #090909, 21px 21px 3.15px  #090909, 22px 22px 3.3px  #090909, 23px 23px 3.45px  #090909, 24px 24px 3.6px  #090909, 25px 25px 3.75px  #090909, 26px 26px 3.9px  #090909, 27px 27px 4.05px  #090909, 28px 28px 4.2px  #090909, 29px 29px 4.35px  #090909, 30px 30px 4.5px  #090909, 31px 31px 4.65px  #090909, 32px 32px 4.8px  #090909, 33px 33px 4.95px  #090909, 34px 34px 5.1px  #090909, 35px 35px 5.25px  #090909, 36px 36px 5.4px  #090909, 37px 37px 5.55px  #090909, 38px 38px 5.7px  #090909, 39px 39px 5.85px  #090909, 40px 40px 6px  #090909, 41px 41px 6.15px  #090909, 42px 42px 6.3px  #090909, 43px 43px 6.45px  #090909, 44px 44px 6.6px  #090909, 45px 45px 6.75px  #090909, 46px 46px 6.9px  #090909, 47px 47px 7.05px  #090909, 48px 48px 7.2px  #090909, 49px 49px 7.35px  #090909, 50px 50px 7.5px  #090909; }
+      text-shadow: 0 0 0 #090909, 1px 1px 0.15px  #090909, 2px 2px 0.3px  #090909, 3px 3px 0.45px  #090909, 4px 4px 0.6px  #090909, 5px 5px 0.75px  #090909, 6px 6px 0.9px  #090909, 7px 7px 1.05px  #090909, 8px 8px 1.2px  #090909, 9px 9px 1.35px  #090909, 10px 10px 1.5px  #090909, 11px 11px 1.65px  #090909, 12px 12px 1.8px  #090909, 13px 13px 1.95px  #090909, 14px 14px 2.1px  #090909, 15px 15px 2.25px  #090909, 16px 16px 2.4px  #090909, 17px 17px 2.55px  #090909, 18px 18px 2.7px  #090909, 19px 19px 2.85px  #090909, 20px 20px 3px  #090909, 21px 21px 3.15px  #090909, 22px 22px 3.3px  #090909, 23px 23px 3.45px  #090909, 24px 24px 3.6px  #090909, 25px 25px 3.75px  #090909, 26px 26px 3.9px  #090909, 27px 27px 4.05px  #090909, 28px 28px 4.2px  #090909, 29px 29px 4.35px  #090909, 30px 30px 4.5px  #090909, 31px 31px 4.65px  #090909, 32px 32px 4.8px  #090909, 33px 33px 4.95px  #090909, 34px 34px 5.1px  #090909, 35px 35px 5.25px  #090909, 36px 36px 5.4px  #090909, 37px 37px 5.55px  #090909, 38px 38px 5.7px  #090909, 39px 39px 5.85px  #090909, 40px 40px 6px  #090909, 41px 41px 6.15px  #090909, 42px 42px 6.3px  #090909, 43px 43px 6.45px  #090909, 44px 44px 6.6px  #090909, 45px 45px 6.75px  #090909, 46px 46px 6.9px  #090909, 47px 47px 7.05px  #090909, 48px 48px 7.2px  #090909, 49px 49px 7.35px  #090909, 50px 50px 7.5px  #090909; }
     .button-longshadow.button-inverse:active, .button-longshadow.button-inverse.active, .button-longshadow.button-inverse.is-active,
     .button-longshadow-right.button-inverse:active,
     .button-longshadow-right.button-inverse.active,
@@ -1444,10 +1444,10 @@
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow.button-action,
   .button-longshadow-right.button-action {
-    text-shadow: 0px 0px #8bc220, 1px 1px #8bc220, 2px 2px #8bc220, 3px 3px #8bc220, 4px 4px #8bc220, 5px 5px #8bc220, 6px 6px #8bc220, 7px 7px #8bc220, 8px 8px #8bc220, 9px 9px #8bc220, 10px 10px #8bc220, 11px 11px #8bc220, 12px 12px #8bc220, 13px 13px #8bc220, 14px 14px #8bc220, 15px 15px #8bc220, 16px 16px #8bc220, 17px 17px #8bc220, 18px 18px #8bc220, 19px 19px #8bc220, 20px 20px #8bc220, 21px 21px #8bc220, 22px 22px #8bc220, 23px 23px #8bc220, 24px 24px #8bc220, 25px 25px #8bc220, 26px 26px #8bc220, 27px 27px #8bc220, 28px 28px #8bc220, 29px 29px #8bc220, 30px 30px #8bc220, 31px 31px #8bc220, 32px 32px #8bc220, 33px 33px #8bc220, 34px 34px #8bc220, 35px 35px #8bc220; }
+    text-shadow: 0 0 #8bc220, 1px 1px #8bc220, 2px 2px #8bc220, 3px 3px #8bc220, 4px 4px #8bc220, 5px 5px #8bc220, 6px 6px #8bc220, 7px 7px #8bc220, 8px 8px #8bc220, 9px 9px #8bc220, 10px 10px #8bc220, 11px 11px #8bc220, 12px 12px #8bc220, 13px 13px #8bc220, 14px 14px #8bc220, 15px 15px #8bc220, 16px 16px #8bc220, 17px 17px #8bc220, 18px 18px #8bc220, 19px 19px #8bc220, 20px 20px #8bc220, 21px 21px #8bc220, 22px 22px #8bc220, 23px 23px #8bc220, 24px 24px #8bc220, 25px 25px #8bc220, 26px 26px #8bc220, 27px 27px #8bc220, 28px 28px #8bc220, 29px 29px #8bc220, 30px 30px #8bc220, 31px 31px #8bc220, 32px 32px #8bc220, 33px 33px #8bc220, 34px 34px #8bc220, 35px 35px #8bc220; }
     .button-longshadow.button-action.button-longshadow-expand,
     .button-longshadow-right.button-action.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #8bc220, 1px 1px 0.15px  #8bc220, 2px 2px 0.3px  #8bc220, 3px 3px 0.45px  #8bc220, 4px 4px 0.6px  #8bc220, 5px 5px 0.75px  #8bc220, 6px 6px 0.9px  #8bc220, 7px 7px 1.05px  #8bc220, 8px 8px 1.2px  #8bc220, 9px 9px 1.35px  #8bc220, 10px 10px 1.5px  #8bc220, 11px 11px 1.65px  #8bc220, 12px 12px 1.8px  #8bc220, 13px 13px 1.95px  #8bc220, 14px 14px 2.1px  #8bc220, 15px 15px 2.25px  #8bc220, 16px 16px 2.4px  #8bc220, 17px 17px 2.55px  #8bc220, 18px 18px 2.7px  #8bc220, 19px 19px 2.85px  #8bc220, 20px 20px 3px  #8bc220, 21px 21px 3.15px  #8bc220, 22px 22px 3.3px  #8bc220, 23px 23px 3.45px  #8bc220, 24px 24px 3.6px  #8bc220, 25px 25px 3.75px  #8bc220, 26px 26px 3.9px  #8bc220, 27px 27px 4.05px  #8bc220, 28px 28px 4.2px  #8bc220, 29px 29px 4.35px  #8bc220, 30px 30px 4.5px  #8bc220, 31px 31px 4.65px  #8bc220, 32px 32px 4.8px  #8bc220, 33px 33px 4.95px  #8bc220, 34px 34px 5.1px  #8bc220, 35px 35px 5.25px  #8bc220, 36px 36px 5.4px  #8bc220, 37px 37px 5.55px  #8bc220, 38px 38px 5.7px  #8bc220, 39px 39px 5.85px  #8bc220, 40px 40px 6px  #8bc220, 41px 41px 6.15px  #8bc220, 42px 42px 6.3px  #8bc220, 43px 43px 6.45px  #8bc220, 44px 44px 6.6px  #8bc220, 45px 45px 6.75px  #8bc220, 46px 46px 6.9px  #8bc220, 47px 47px 7.05px  #8bc220, 48px 48px 7.2px  #8bc220, 49px 49px 7.35px  #8bc220, 50px 50px 7.5px  #8bc220; }
+      text-shadow: 0 0 0 #8bc220, 1px 1px 0.15px  #8bc220, 2px 2px 0.3px  #8bc220, 3px 3px 0.45px  #8bc220, 4px 4px 0.6px  #8bc220, 5px 5px 0.75px  #8bc220, 6px 6px 0.9px  #8bc220, 7px 7px 1.05px  #8bc220, 8px 8px 1.2px  #8bc220, 9px 9px 1.35px  #8bc220, 10px 10px 1.5px  #8bc220, 11px 11px 1.65px  #8bc220, 12px 12px 1.8px  #8bc220, 13px 13px 1.95px  #8bc220, 14px 14px 2.1px  #8bc220, 15px 15px 2.25px  #8bc220, 16px 16px 2.4px  #8bc220, 17px 17px 2.55px  #8bc220, 18px 18px 2.7px  #8bc220, 19px 19px 2.85px  #8bc220, 20px 20px 3px  #8bc220, 21px 21px 3.15px  #8bc220, 22px 22px 3.3px  #8bc220, 23px 23px 3.45px  #8bc220, 24px 24px 3.6px  #8bc220, 25px 25px 3.75px  #8bc220, 26px 26px 3.9px  #8bc220, 27px 27px 4.05px  #8bc220, 28px 28px 4.2px  #8bc220, 29px 29px 4.35px  #8bc220, 30px 30px 4.5px  #8bc220, 31px 31px 4.65px  #8bc220, 32px 32px 4.8px  #8bc220, 33px 33px 4.95px  #8bc220, 34px 34px 5.1px  #8bc220, 35px 35px 5.25px  #8bc220, 36px 36px 5.4px  #8bc220, 37px 37px 5.55px  #8bc220, 38px 38px 5.7px  #8bc220, 39px 39px 5.85px  #8bc220, 40px 40px 6px  #8bc220, 41px 41px 6.15px  #8bc220, 42px 42px 6.3px  #8bc220, 43px 43px 6.45px  #8bc220, 44px 44px 6.6px  #8bc220, 45px 45px 6.75px  #8bc220, 46px 46px 6.9px  #8bc220, 47px 47px 7.05px  #8bc220, 48px 48px 7.2px  #8bc220, 49px 49px 7.35px  #8bc220, 50px 50px 7.5px  #8bc220; }
     .button-longshadow.button-action:active, .button-longshadow.button-action.active, .button-longshadow.button-action.is-active,
     .button-longshadow-right.button-action:active,
     .button-longshadow-right.button-action.active,
@@ -1455,10 +1455,10 @@
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow.button-highlight,
   .button-longshadow-right.button-highlight {
-    text-shadow: 0px 0px #e59501, 1px 1px #e59501, 2px 2px #e59501, 3px 3px #e59501, 4px 4px #e59501, 5px 5px #e59501, 6px 6px #e59501, 7px 7px #e59501, 8px 8px #e59501, 9px 9px #e59501, 10px 10px #e59501, 11px 11px #e59501, 12px 12px #e59501, 13px 13px #e59501, 14px 14px #e59501, 15px 15px #e59501, 16px 16px #e59501, 17px 17px #e59501, 18px 18px #e59501, 19px 19px #e59501, 20px 20px #e59501, 21px 21px #e59501, 22px 22px #e59501, 23px 23px #e59501, 24px 24px #e59501, 25px 25px #e59501, 26px 26px #e59501, 27px 27px #e59501, 28px 28px #e59501, 29px 29px #e59501, 30px 30px #e59501, 31px 31px #e59501, 32px 32px #e59501, 33px 33px #e59501, 34px 34px #e59501, 35px 35px #e59501; }
+    text-shadow: 0 0 #e59501, 1px 1px #e59501, 2px 2px #e59501, 3px 3px #e59501, 4px 4px #e59501, 5px 5px #e59501, 6px 6px #e59501, 7px 7px #e59501, 8px 8px #e59501, 9px 9px #e59501, 10px 10px #e59501, 11px 11px #e59501, 12px 12px #e59501, 13px 13px #e59501, 14px 14px #e59501, 15px 15px #e59501, 16px 16px #e59501, 17px 17px #e59501, 18px 18px #e59501, 19px 19px #e59501, 20px 20px #e59501, 21px 21px #e59501, 22px 22px #e59501, 23px 23px #e59501, 24px 24px #e59501, 25px 25px #e59501, 26px 26px #e59501, 27px 27px #e59501, 28px 28px #e59501, 29px 29px #e59501, 30px 30px #e59501, 31px 31px #e59501, 32px 32px #e59501, 33px 33px #e59501, 34px 34px #e59501, 35px 35px #e59501; }
     .button-longshadow.button-highlight.button-longshadow-expand,
     .button-longshadow-right.button-highlight.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #e59501, 1px 1px 0.15px  #e59501, 2px 2px 0.3px  #e59501, 3px 3px 0.45px  #e59501, 4px 4px 0.6px  #e59501, 5px 5px 0.75px  #e59501, 6px 6px 0.9px  #e59501, 7px 7px 1.05px  #e59501, 8px 8px 1.2px  #e59501, 9px 9px 1.35px  #e59501, 10px 10px 1.5px  #e59501, 11px 11px 1.65px  #e59501, 12px 12px 1.8px  #e59501, 13px 13px 1.95px  #e59501, 14px 14px 2.1px  #e59501, 15px 15px 2.25px  #e59501, 16px 16px 2.4px  #e59501, 17px 17px 2.55px  #e59501, 18px 18px 2.7px  #e59501, 19px 19px 2.85px  #e59501, 20px 20px 3px  #e59501, 21px 21px 3.15px  #e59501, 22px 22px 3.3px  #e59501, 23px 23px 3.45px  #e59501, 24px 24px 3.6px  #e59501, 25px 25px 3.75px  #e59501, 26px 26px 3.9px  #e59501, 27px 27px 4.05px  #e59501, 28px 28px 4.2px  #e59501, 29px 29px 4.35px  #e59501, 30px 30px 4.5px  #e59501, 31px 31px 4.65px  #e59501, 32px 32px 4.8px  #e59501, 33px 33px 4.95px  #e59501, 34px 34px 5.1px  #e59501, 35px 35px 5.25px  #e59501, 36px 36px 5.4px  #e59501, 37px 37px 5.55px  #e59501, 38px 38px 5.7px  #e59501, 39px 39px 5.85px  #e59501, 40px 40px 6px  #e59501, 41px 41px 6.15px  #e59501, 42px 42px 6.3px  #e59501, 43px 43px 6.45px  #e59501, 44px 44px 6.6px  #e59501, 45px 45px 6.75px  #e59501, 46px 46px 6.9px  #e59501, 47px 47px 7.05px  #e59501, 48px 48px 7.2px  #e59501, 49px 49px 7.35px  #e59501, 50px 50px 7.5px  #e59501; }
+      text-shadow: 0 0 0 #e59501, 1px 1px 0.15px  #e59501, 2px 2px 0.3px  #e59501, 3px 3px 0.45px  #e59501, 4px 4px 0.6px  #e59501, 5px 5px 0.75px  #e59501, 6px 6px 0.9px  #e59501, 7px 7px 1.05px  #e59501, 8px 8px 1.2px  #e59501, 9px 9px 1.35px  #e59501, 10px 10px 1.5px  #e59501, 11px 11px 1.65px  #e59501, 12px 12px 1.8px  #e59501, 13px 13px 1.95px  #e59501, 14px 14px 2.1px  #e59501, 15px 15px 2.25px  #e59501, 16px 16px 2.4px  #e59501, 17px 17px 2.55px  #e59501, 18px 18px 2.7px  #e59501, 19px 19px 2.85px  #e59501, 20px 20px 3px  #e59501, 21px 21px 3.15px  #e59501, 22px 22px 3.3px  #e59501, 23px 23px 3.45px  #e59501, 24px 24px 3.6px  #e59501, 25px 25px 3.75px  #e59501, 26px 26px 3.9px  #e59501, 27px 27px 4.05px  #e59501, 28px 28px 4.2px  #e59501, 29px 29px 4.35px  #e59501, 30px 30px 4.5px  #e59501, 31px 31px 4.65px  #e59501, 32px 32px 4.8px  #e59501, 33px 33px 4.95px  #e59501, 34px 34px 5.1px  #e59501, 35px 35px 5.25px  #e59501, 36px 36px 5.4px  #e59501, 37px 37px 5.55px  #e59501, 38px 38px 5.7px  #e59501, 39px 39px 5.85px  #e59501, 40px 40px 6px  #e59501, 41px 41px 6.15px  #e59501, 42px 42px 6.3px  #e59501, 43px 43px 6.45px  #e59501, 44px 44px 6.6px  #e59501, 45px 45px 6.75px  #e59501, 46px 46px 6.9px  #e59501, 47px 47px 7.05px  #e59501, 48px 48px 7.2px  #e59501, 49px 49px 7.35px  #e59501, 50px 50px 7.5px  #e59501; }
     .button-longshadow.button-highlight:active, .button-longshadow.button-highlight.active, .button-longshadow.button-highlight.is-active,
     .button-longshadow-right.button-highlight:active,
     .button-longshadow-right.button-highlight.active,
@@ -1466,10 +1466,10 @@
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow.button-caution,
   .button-longshadow-right.button-caution {
-    text-shadow: 0px 0px #ff1022, 1px 1px #ff1022, 2px 2px #ff1022, 3px 3px #ff1022, 4px 4px #ff1022, 5px 5px #ff1022, 6px 6px #ff1022, 7px 7px #ff1022, 8px 8px #ff1022, 9px 9px #ff1022, 10px 10px #ff1022, 11px 11px #ff1022, 12px 12px #ff1022, 13px 13px #ff1022, 14px 14px #ff1022, 15px 15px #ff1022, 16px 16px #ff1022, 17px 17px #ff1022, 18px 18px #ff1022, 19px 19px #ff1022, 20px 20px #ff1022, 21px 21px #ff1022, 22px 22px #ff1022, 23px 23px #ff1022, 24px 24px #ff1022, 25px 25px #ff1022, 26px 26px #ff1022, 27px 27px #ff1022, 28px 28px #ff1022, 29px 29px #ff1022, 30px 30px #ff1022, 31px 31px #ff1022, 32px 32px #ff1022, 33px 33px #ff1022, 34px 34px #ff1022, 35px 35px #ff1022; }
+    text-shadow: 0 0 #ff1022, 1px 1px #ff1022, 2px 2px #ff1022, 3px 3px #ff1022, 4px 4px #ff1022, 5px 5px #ff1022, 6px 6px #ff1022, 7px 7px #ff1022, 8px 8px #ff1022, 9px 9px #ff1022, 10px 10px #ff1022, 11px 11px #ff1022, 12px 12px #ff1022, 13px 13px #ff1022, 14px 14px #ff1022, 15px 15px #ff1022, 16px 16px #ff1022, 17px 17px #ff1022, 18px 18px #ff1022, 19px 19px #ff1022, 20px 20px #ff1022, 21px 21px #ff1022, 22px 22px #ff1022, 23px 23px #ff1022, 24px 24px #ff1022, 25px 25px #ff1022, 26px 26px #ff1022, 27px 27px #ff1022, 28px 28px #ff1022, 29px 29px #ff1022, 30px 30px #ff1022, 31px 31px #ff1022, 32px 32px #ff1022, 33px 33px #ff1022, 34px 34px #ff1022, 35px 35px #ff1022; }
     .button-longshadow.button-caution.button-longshadow-expand,
     .button-longshadow-right.button-caution.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #ff1022, 1px 1px 0.15px  #ff1022, 2px 2px 0.3px  #ff1022, 3px 3px 0.45px  #ff1022, 4px 4px 0.6px  #ff1022, 5px 5px 0.75px  #ff1022, 6px 6px 0.9px  #ff1022, 7px 7px 1.05px  #ff1022, 8px 8px 1.2px  #ff1022, 9px 9px 1.35px  #ff1022, 10px 10px 1.5px  #ff1022, 11px 11px 1.65px  #ff1022, 12px 12px 1.8px  #ff1022, 13px 13px 1.95px  #ff1022, 14px 14px 2.1px  #ff1022, 15px 15px 2.25px  #ff1022, 16px 16px 2.4px  #ff1022, 17px 17px 2.55px  #ff1022, 18px 18px 2.7px  #ff1022, 19px 19px 2.85px  #ff1022, 20px 20px 3px  #ff1022, 21px 21px 3.15px  #ff1022, 22px 22px 3.3px  #ff1022, 23px 23px 3.45px  #ff1022, 24px 24px 3.6px  #ff1022, 25px 25px 3.75px  #ff1022, 26px 26px 3.9px  #ff1022, 27px 27px 4.05px  #ff1022, 28px 28px 4.2px  #ff1022, 29px 29px 4.35px  #ff1022, 30px 30px 4.5px  #ff1022, 31px 31px 4.65px  #ff1022, 32px 32px 4.8px  #ff1022, 33px 33px 4.95px  #ff1022, 34px 34px 5.1px  #ff1022, 35px 35px 5.25px  #ff1022, 36px 36px 5.4px  #ff1022, 37px 37px 5.55px  #ff1022, 38px 38px 5.7px  #ff1022, 39px 39px 5.85px  #ff1022, 40px 40px 6px  #ff1022, 41px 41px 6.15px  #ff1022, 42px 42px 6.3px  #ff1022, 43px 43px 6.45px  #ff1022, 44px 44px 6.6px  #ff1022, 45px 45px 6.75px  #ff1022, 46px 46px 6.9px  #ff1022, 47px 47px 7.05px  #ff1022, 48px 48px 7.2px  #ff1022, 49px 49px 7.35px  #ff1022, 50px 50px 7.5px  #ff1022; }
+      text-shadow: 0 0 0 #ff1022, 1px 1px 0.15px  #ff1022, 2px 2px 0.3px  #ff1022, 3px 3px 0.45px  #ff1022, 4px 4px 0.6px  #ff1022, 5px 5px 0.75px  #ff1022, 6px 6px 0.9px  #ff1022, 7px 7px 1.05px  #ff1022, 8px 8px 1.2px  #ff1022, 9px 9px 1.35px  #ff1022, 10px 10px 1.5px  #ff1022, 11px 11px 1.65px  #ff1022, 12px 12px 1.8px  #ff1022, 13px 13px 1.95px  #ff1022, 14px 14px 2.1px  #ff1022, 15px 15px 2.25px  #ff1022, 16px 16px 2.4px  #ff1022, 17px 17px 2.55px  #ff1022, 18px 18px 2.7px  #ff1022, 19px 19px 2.85px  #ff1022, 20px 20px 3px  #ff1022, 21px 21px 3.15px  #ff1022, 22px 22px 3.3px  #ff1022, 23px 23px 3.45px  #ff1022, 24px 24px 3.6px  #ff1022, 25px 25px 3.75px  #ff1022, 26px 26px 3.9px  #ff1022, 27px 27px 4.05px  #ff1022, 28px 28px 4.2px  #ff1022, 29px 29px 4.35px  #ff1022, 30px 30px 4.5px  #ff1022, 31px 31px 4.65px  #ff1022, 32px 32px 4.8px  #ff1022, 33px 33px 4.95px  #ff1022, 34px 34px 5.1px  #ff1022, 35px 35px 5.25px  #ff1022, 36px 36px 5.4px  #ff1022, 37px 37px 5.55px  #ff1022, 38px 38px 5.7px  #ff1022, 39px 39px 5.85px  #ff1022, 40px 40px 6px  #ff1022, 41px 41px 6.15px  #ff1022, 42px 42px 6.3px  #ff1022, 43px 43px 6.45px  #ff1022, 44px 44px 6.6px  #ff1022, 45px 45px 6.75px  #ff1022, 46px 46px 6.9px  #ff1022, 47px 47px 7.05px  #ff1022, 48px 48px 7.2px  #ff1022, 49px 49px 7.35px  #ff1022, 50px 50px 7.5px  #ff1022; }
     .button-longshadow.button-caution:active, .button-longshadow.button-caution.active, .button-longshadow.button-caution.is-active,
     .button-longshadow-right.button-caution:active,
     .button-longshadow-right.button-caution.active,
@@ -1477,10 +1477,10 @@
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow.button-royal,
   .button-longshadow-right.button-royal {
-    text-shadow: 0px 0px #5246e2, 1px 1px #5246e2, 2px 2px #5246e2, 3px 3px #5246e2, 4px 4px #5246e2, 5px 5px #5246e2, 6px 6px #5246e2, 7px 7px #5246e2, 8px 8px #5246e2, 9px 9px #5246e2, 10px 10px #5246e2, 11px 11px #5246e2, 12px 12px #5246e2, 13px 13px #5246e2, 14px 14px #5246e2, 15px 15px #5246e2, 16px 16px #5246e2, 17px 17px #5246e2, 18px 18px #5246e2, 19px 19px #5246e2, 20px 20px #5246e2, 21px 21px #5246e2, 22px 22px #5246e2, 23px 23px #5246e2, 24px 24px #5246e2, 25px 25px #5246e2, 26px 26px #5246e2, 27px 27px #5246e2, 28px 28px #5246e2, 29px 29px #5246e2, 30px 30px #5246e2, 31px 31px #5246e2, 32px 32px #5246e2, 33px 33px #5246e2, 34px 34px #5246e2, 35px 35px #5246e2; }
+    text-shadow: 0 0 #5246e2, 1px 1px #5246e2, 2px 2px #5246e2, 3px 3px #5246e2, 4px 4px #5246e2, 5px 5px #5246e2, 6px 6px #5246e2, 7px 7px #5246e2, 8px 8px #5246e2, 9px 9px #5246e2, 10px 10px #5246e2, 11px 11px #5246e2, 12px 12px #5246e2, 13px 13px #5246e2, 14px 14px #5246e2, 15px 15px #5246e2, 16px 16px #5246e2, 17px 17px #5246e2, 18px 18px #5246e2, 19px 19px #5246e2, 20px 20px #5246e2, 21px 21px #5246e2, 22px 22px #5246e2, 23px 23px #5246e2, 24px 24px #5246e2, 25px 25px #5246e2, 26px 26px #5246e2, 27px 27px #5246e2, 28px 28px #5246e2, 29px 29px #5246e2, 30px 30px #5246e2, 31px 31px #5246e2, 32px 32px #5246e2, 33px 33px #5246e2, 34px 34px #5246e2, 35px 35px #5246e2; }
     .button-longshadow.button-royal.button-longshadow-expand,
     .button-longshadow-right.button-royal.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #5246e2, 1px 1px 0.15px  #5246e2, 2px 2px 0.3px  #5246e2, 3px 3px 0.45px  #5246e2, 4px 4px 0.6px  #5246e2, 5px 5px 0.75px  #5246e2, 6px 6px 0.9px  #5246e2, 7px 7px 1.05px  #5246e2, 8px 8px 1.2px  #5246e2, 9px 9px 1.35px  #5246e2, 10px 10px 1.5px  #5246e2, 11px 11px 1.65px  #5246e2, 12px 12px 1.8px  #5246e2, 13px 13px 1.95px  #5246e2, 14px 14px 2.1px  #5246e2, 15px 15px 2.25px  #5246e2, 16px 16px 2.4px  #5246e2, 17px 17px 2.55px  #5246e2, 18px 18px 2.7px  #5246e2, 19px 19px 2.85px  #5246e2, 20px 20px 3px  #5246e2, 21px 21px 3.15px  #5246e2, 22px 22px 3.3px  #5246e2, 23px 23px 3.45px  #5246e2, 24px 24px 3.6px  #5246e2, 25px 25px 3.75px  #5246e2, 26px 26px 3.9px  #5246e2, 27px 27px 4.05px  #5246e2, 28px 28px 4.2px  #5246e2, 29px 29px 4.35px  #5246e2, 30px 30px 4.5px  #5246e2, 31px 31px 4.65px  #5246e2, 32px 32px 4.8px  #5246e2, 33px 33px 4.95px  #5246e2, 34px 34px 5.1px  #5246e2, 35px 35px 5.25px  #5246e2, 36px 36px 5.4px  #5246e2, 37px 37px 5.55px  #5246e2, 38px 38px 5.7px  #5246e2, 39px 39px 5.85px  #5246e2, 40px 40px 6px  #5246e2, 41px 41px 6.15px  #5246e2, 42px 42px 6.3px  #5246e2, 43px 43px 6.45px  #5246e2, 44px 44px 6.6px  #5246e2, 45px 45px 6.75px  #5246e2, 46px 46px 6.9px  #5246e2, 47px 47px 7.05px  #5246e2, 48px 48px 7.2px  #5246e2, 49px 49px 7.35px  #5246e2, 50px 50px 7.5px  #5246e2; }
+      text-shadow: 0 0 0 #5246e2, 1px 1px 0.15px  #5246e2, 2px 2px 0.3px  #5246e2, 3px 3px 0.45px  #5246e2, 4px 4px 0.6px  #5246e2, 5px 5px 0.75px  #5246e2, 6px 6px 0.9px  #5246e2, 7px 7px 1.05px  #5246e2, 8px 8px 1.2px  #5246e2, 9px 9px 1.35px  #5246e2, 10px 10px 1.5px  #5246e2, 11px 11px 1.65px  #5246e2, 12px 12px 1.8px  #5246e2, 13px 13px 1.95px  #5246e2, 14px 14px 2.1px  #5246e2, 15px 15px 2.25px  #5246e2, 16px 16px 2.4px  #5246e2, 17px 17px 2.55px  #5246e2, 18px 18px 2.7px  #5246e2, 19px 19px 2.85px  #5246e2, 20px 20px 3px  #5246e2, 21px 21px 3.15px  #5246e2, 22px 22px 3.3px  #5246e2, 23px 23px 3.45px  #5246e2, 24px 24px 3.6px  #5246e2, 25px 25px 3.75px  #5246e2, 26px 26px 3.9px  #5246e2, 27px 27px 4.05px  #5246e2, 28px 28px 4.2px  #5246e2, 29px 29px 4.35px  #5246e2, 30px 30px 4.5px  #5246e2, 31px 31px 4.65px  #5246e2, 32px 32px 4.8px  #5246e2, 33px 33px 4.95px  #5246e2, 34px 34px 5.1px  #5246e2, 35px 35px 5.25px  #5246e2, 36px 36px 5.4px  #5246e2, 37px 37px 5.55px  #5246e2, 38px 38px 5.7px  #5246e2, 39px 39px 5.85px  #5246e2, 40px 40px 6px  #5246e2, 41px 41px 6.15px  #5246e2, 42px 42px 6.3px  #5246e2, 43px 43px 6.45px  #5246e2, 44px 44px 6.6px  #5246e2, 45px 45px 6.75px  #5246e2, 46px 46px 6.9px  #5246e2, 47px 47px 7.05px  #5246e2, 48px 48px 7.2px  #5246e2, 49px 49px 7.35px  #5246e2, 50px 50px 7.5px  #5246e2; }
     .button-longshadow.button-royal:active, .button-longshadow.button-royal.active, .button-longshadow.button-royal.is-active,
     .button-longshadow-right.button-royal:active,
     .button-longshadow-right.button-royal.active,
@@ -1490,44 +1490,44 @@
 .button-longshadow-left {
   overflow: hidden; }
   .button-longshadow-left.button-primary {
-    text-shadow: 0px 0px #0880d7, -1px 1px #0880d7, -2px 2px #0880d7, -3px 3px #0880d7, -4px 4px #0880d7, -5px 5px #0880d7, -6px 6px #0880d7, -7px 7px #0880d7, -8px 8px #0880d7, -9px 9px #0880d7, -10px 10px #0880d7, -11px 11px #0880d7, -12px 12px #0880d7, -13px 13px #0880d7, -14px 14px #0880d7, -15px 15px #0880d7, -16px 16px #0880d7, -17px 17px #0880d7, -18px 18px #0880d7, -19px 19px #0880d7, -20px 20px #0880d7, -21px 21px #0880d7, -22px 22px #0880d7, -23px 23px #0880d7, -24px 24px #0880d7, -25px 25px #0880d7, -26px 26px #0880d7, -27px 27px #0880d7, -28px 28px #0880d7, -29px 29px #0880d7, -30px 30px #0880d7, -31px 31px #0880d7, -32px 32px #0880d7, -33px 33px #0880d7, -34px 34px #0880d7, -35px 35px #0880d7; }
+    text-shadow: 0 0 #0880d7, -1px 1px #0880d7, -2px 2px #0880d7, -3px 3px #0880d7, -4px 4px #0880d7, -5px 5px #0880d7, -6px 6px #0880d7, -7px 7px #0880d7, -8px 8px #0880d7, -9px 9px #0880d7, -10px 10px #0880d7, -11px 11px #0880d7, -12px 12px #0880d7, -13px 13px #0880d7, -14px 14px #0880d7, -15px 15px #0880d7, -16px 16px #0880d7, -17px 17px #0880d7, -18px 18px #0880d7, -19px 19px #0880d7, -20px 20px #0880d7, -21px 21px #0880d7, -22px 22px #0880d7, -23px 23px #0880d7, -24px 24px #0880d7, -25px 25px #0880d7, -26px 26px #0880d7, -27px 27px #0880d7, -28px 28px #0880d7, -29px 29px #0880d7, -30px 30px #0880d7, -31px 31px #0880d7, -32px 32px #0880d7, -33px 33px #0880d7, -34px 34px #0880d7, -35px 35px #0880d7; }
     .button-longshadow-left.button-primary.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #0880d7, -1px 1px #0880d7, -2px 2px #0880d7, -3px 3px #0880d7, -4px 4px #0880d7, -5px 5px #0880d7, -6px 6px #0880d7, -7px 7px #0880d7, -8px 8px #0880d7, -9px 9px #0880d7, -10px 10px #0880d7, -11px 11px #0880d7, -12px 12px #0880d7, -13px 13px #0880d7, -14px 14px #0880d7, -15px 15px #0880d7, -16px 16px #0880d7, -17px 17px #0880d7, -18px 18px #0880d7, -19px 19px #0880d7, -20px 20px #0880d7, -21px 21px #0880d7, -22px 22px #0880d7, -23px 23px #0880d7, -24px 24px #0880d7, -25px 25px #0880d7, -26px 26px #0880d7, -27px 27px #0880d7, -28px 28px #0880d7, -29px 29px #0880d7, -30px 30px #0880d7, -31px 31px #0880d7, -32px 32px #0880d7, -33px 33px #0880d7, -34px 34px #0880d7, -35px 35px #0880d7, -36px 36px #0880d7, -37px 37px #0880d7, -38px 38px #0880d7, -39px 39px #0880d7, -40px 40px #0880d7, -41px 41px #0880d7, -42px 42px #0880d7, -43px 43px #0880d7, -44px 44px #0880d7, -45px 45px #0880d7, -46px 46px #0880d7, -47px 47px #0880d7, -48px 48px #0880d7, -49px 49px #0880d7, -50px 50px #0880d7; }
+      text-shadow: 0 0 0 #0880d7, -1px 1px #0880d7, -2px 2px #0880d7, -3px 3px #0880d7, -4px 4px #0880d7, -5px 5px #0880d7, -6px 6px #0880d7, -7px 7px #0880d7, -8px 8px #0880d7, -9px 9px #0880d7, -10px 10px #0880d7, -11px 11px #0880d7, -12px 12px #0880d7, -13px 13px #0880d7, -14px 14px #0880d7, -15px 15px #0880d7, -16px 16px #0880d7, -17px 17px #0880d7, -18px 18px #0880d7, -19px 19px #0880d7, -20px 20px #0880d7, -21px 21px #0880d7, -22px 22px #0880d7, -23px 23px #0880d7, -24px 24px #0880d7, -25px 25px #0880d7, -26px 26px #0880d7, -27px 27px #0880d7, -28px 28px #0880d7, -29px 29px #0880d7, -30px 30px #0880d7, -31px 31px #0880d7, -32px 32px #0880d7, -33px 33px #0880d7, -34px 34px #0880d7, -35px 35px #0880d7, -36px 36px #0880d7, -37px 37px #0880d7, -38px 38px #0880d7, -39px 39px #0880d7, -40px 40px #0880d7, -41px 41px #0880d7, -42px 42px #0880d7, -43px 43px #0880d7, -44px 44px #0880d7, -45px 45px #0880d7, -46px 46px #0880d7, -47px 47px #0880d7, -48px 48px #0880d7, -49px 49px #0880d7, -50px 50px #0880d7; }
     .button-longshadow-left.button-primary:active, .button-longshadow-left.button-primary.active, .button-longshadow-left.button-primary.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow-left.button-plain {
-    text-shadow: 0px 0px #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6; }
+    text-shadow: 0 0 #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6; }
     .button-longshadow-left.button-plain.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6, -36px 36px #e6e6e6, -37px 37px #e6e6e6, -38px 38px #e6e6e6, -39px 39px #e6e6e6, -40px 40px #e6e6e6, -41px 41px #e6e6e6, -42px 42px #e6e6e6, -43px 43px #e6e6e6, -44px 44px #e6e6e6, -45px 45px #e6e6e6, -46px 46px #e6e6e6, -47px 47px #e6e6e6, -48px 48px #e6e6e6, -49px 49px #e6e6e6, -50px 50px #e6e6e6; }
+      text-shadow: 0 0 0 #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6, -36px 36px #e6e6e6, -37px 37px #e6e6e6, -38px 38px #e6e6e6, -39px 39px #e6e6e6, -40px 40px #e6e6e6, -41px 41px #e6e6e6, -42px 42px #e6e6e6, -43px 43px #e6e6e6, -44px 44px #e6e6e6, -45px 45px #e6e6e6, -46px 46px #e6e6e6, -47px 47px #e6e6e6, -48px 48px #e6e6e6, -49px 49px #e6e6e6, -50px 50px #e6e6e6; }
     .button-longshadow-left.button-plain:active, .button-longshadow-left.button-plain.active, .button-longshadow-left.button-plain.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow-left.button-inverse {
-    text-shadow: 0px 0px #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909; }
+    text-shadow: 0 0 #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909; }
     .button-longshadow-left.button-inverse.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909, -36px 36px #090909, -37px 37px #090909, -38px 38px #090909, -39px 39px #090909, -40px 40px #090909, -41px 41px #090909, -42px 42px #090909, -43px 43px #090909, -44px 44px #090909, -45px 45px #090909, -46px 46px #090909, -47px 47px #090909, -48px 48px #090909, -49px 49px #090909, -50px 50px #090909; }
+      text-shadow: 0 0 0 #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909, -36px 36px #090909, -37px 37px #090909, -38px 38px #090909, -39px 39px #090909, -40px 40px #090909, -41px 41px #090909, -42px 42px #090909, -43px 43px #090909, -44px 44px #090909, -45px 45px #090909, -46px 46px #090909, -47px 47px #090909, -48px 48px #090909, -49px 49px #090909, -50px 50px #090909; }
     .button-longshadow-left.button-inverse:active, .button-longshadow-left.button-inverse.active, .button-longshadow-left.button-inverse.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow-left.button-action {
-    text-shadow: 0px 0px #8bc220, -1px 1px #8bc220, -2px 2px #8bc220, -3px 3px #8bc220, -4px 4px #8bc220, -5px 5px #8bc220, -6px 6px #8bc220, -7px 7px #8bc220, -8px 8px #8bc220, -9px 9px #8bc220, -10px 10px #8bc220, -11px 11px #8bc220, -12px 12px #8bc220, -13px 13px #8bc220, -14px 14px #8bc220, -15px 15px #8bc220, -16px 16px #8bc220, -17px 17px #8bc220, -18px 18px #8bc220, -19px 19px #8bc220, -20px 20px #8bc220, -21px 21px #8bc220, -22px 22px #8bc220, -23px 23px #8bc220, -24px 24px #8bc220, -25px 25px #8bc220, -26px 26px #8bc220, -27px 27px #8bc220, -28px 28px #8bc220, -29px 29px #8bc220, -30px 30px #8bc220, -31px 31px #8bc220, -32px 32px #8bc220, -33px 33px #8bc220, -34px 34px #8bc220, -35px 35px #8bc220; }
+    text-shadow: 0 0 #8bc220, -1px 1px #8bc220, -2px 2px #8bc220, -3px 3px #8bc220, -4px 4px #8bc220, -5px 5px #8bc220, -6px 6px #8bc220, -7px 7px #8bc220, -8px 8px #8bc220, -9px 9px #8bc220, -10px 10px #8bc220, -11px 11px #8bc220, -12px 12px #8bc220, -13px 13px #8bc220, -14px 14px #8bc220, -15px 15px #8bc220, -16px 16px #8bc220, -17px 17px #8bc220, -18px 18px #8bc220, -19px 19px #8bc220, -20px 20px #8bc220, -21px 21px #8bc220, -22px 22px #8bc220, -23px 23px #8bc220, -24px 24px #8bc220, -25px 25px #8bc220, -26px 26px #8bc220, -27px 27px #8bc220, -28px 28px #8bc220, -29px 29px #8bc220, -30px 30px #8bc220, -31px 31px #8bc220, -32px 32px #8bc220, -33px 33px #8bc220, -34px 34px #8bc220, -35px 35px #8bc220; }
     .button-longshadow-left.button-action.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #8bc220, -1px 1px #8bc220, -2px 2px #8bc220, -3px 3px #8bc220, -4px 4px #8bc220, -5px 5px #8bc220, -6px 6px #8bc220, -7px 7px #8bc220, -8px 8px #8bc220, -9px 9px #8bc220, -10px 10px #8bc220, -11px 11px #8bc220, -12px 12px #8bc220, -13px 13px #8bc220, -14px 14px #8bc220, -15px 15px #8bc220, -16px 16px #8bc220, -17px 17px #8bc220, -18px 18px #8bc220, -19px 19px #8bc220, -20px 20px #8bc220, -21px 21px #8bc220, -22px 22px #8bc220, -23px 23px #8bc220, -24px 24px #8bc220, -25px 25px #8bc220, -26px 26px #8bc220, -27px 27px #8bc220, -28px 28px #8bc220, -29px 29px #8bc220, -30px 30px #8bc220, -31px 31px #8bc220, -32px 32px #8bc220, -33px 33px #8bc220, -34px 34px #8bc220, -35px 35px #8bc220, -36px 36px #8bc220, -37px 37px #8bc220, -38px 38px #8bc220, -39px 39px #8bc220, -40px 40px #8bc220, -41px 41px #8bc220, -42px 42px #8bc220, -43px 43px #8bc220, -44px 44px #8bc220, -45px 45px #8bc220, -46px 46px #8bc220, -47px 47px #8bc220, -48px 48px #8bc220, -49px 49px #8bc220, -50px 50px #8bc220; }
+      text-shadow: 0 0 0 #8bc220, -1px 1px #8bc220, -2px 2px #8bc220, -3px 3px #8bc220, -4px 4px #8bc220, -5px 5px #8bc220, -6px 6px #8bc220, -7px 7px #8bc220, -8px 8px #8bc220, -9px 9px #8bc220, -10px 10px #8bc220, -11px 11px #8bc220, -12px 12px #8bc220, -13px 13px #8bc220, -14px 14px #8bc220, -15px 15px #8bc220, -16px 16px #8bc220, -17px 17px #8bc220, -18px 18px #8bc220, -19px 19px #8bc220, -20px 20px #8bc220, -21px 21px #8bc220, -22px 22px #8bc220, -23px 23px #8bc220, -24px 24px #8bc220, -25px 25px #8bc220, -26px 26px #8bc220, -27px 27px #8bc220, -28px 28px #8bc220, -29px 29px #8bc220, -30px 30px #8bc220, -31px 31px #8bc220, -32px 32px #8bc220, -33px 33px #8bc220, -34px 34px #8bc220, -35px 35px #8bc220, -36px 36px #8bc220, -37px 37px #8bc220, -38px 38px #8bc220, -39px 39px #8bc220, -40px 40px #8bc220, -41px 41px #8bc220, -42px 42px #8bc220, -43px 43px #8bc220, -44px 44px #8bc220, -45px 45px #8bc220, -46px 46px #8bc220, -47px 47px #8bc220, -48px 48px #8bc220, -49px 49px #8bc220, -50px 50px #8bc220; }
     .button-longshadow-left.button-action:active, .button-longshadow-left.button-action.active, .button-longshadow-left.button-action.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow-left.button-highlight {
-    text-shadow: 0px 0px #e59501, -1px 1px #e59501, -2px 2px #e59501, -3px 3px #e59501, -4px 4px #e59501, -5px 5px #e59501, -6px 6px #e59501, -7px 7px #e59501, -8px 8px #e59501, -9px 9px #e59501, -10px 10px #e59501, -11px 11px #e59501, -12px 12px #e59501, -13px 13px #e59501, -14px 14px #e59501, -15px 15px #e59501, -16px 16px #e59501, -17px 17px #e59501, -18px 18px #e59501, -19px 19px #e59501, -20px 20px #e59501, -21px 21px #e59501, -22px 22px #e59501, -23px 23px #e59501, -24px 24px #e59501, -25px 25px #e59501, -26px 26px #e59501, -27px 27px #e59501, -28px 28px #e59501, -29px 29px #e59501, -30px 30px #e59501, -31px 31px #e59501, -32px 32px #e59501, -33px 33px #e59501, -34px 34px #e59501, -35px 35px #e59501; }
+    text-shadow: 0 0 #e59501, -1px 1px #e59501, -2px 2px #e59501, -3px 3px #e59501, -4px 4px #e59501, -5px 5px #e59501, -6px 6px #e59501, -7px 7px #e59501, -8px 8px #e59501, -9px 9px #e59501, -10px 10px #e59501, -11px 11px #e59501, -12px 12px #e59501, -13px 13px #e59501, -14px 14px #e59501, -15px 15px #e59501, -16px 16px #e59501, -17px 17px #e59501, -18px 18px #e59501, -19px 19px #e59501, -20px 20px #e59501, -21px 21px #e59501, -22px 22px #e59501, -23px 23px #e59501, -24px 24px #e59501, -25px 25px #e59501, -26px 26px #e59501, -27px 27px #e59501, -28px 28px #e59501, -29px 29px #e59501, -30px 30px #e59501, -31px 31px #e59501, -32px 32px #e59501, -33px 33px #e59501, -34px 34px #e59501, -35px 35px #e59501; }
     .button-longshadow-left.button-highlight.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #e59501, -1px 1px #e59501, -2px 2px #e59501, -3px 3px #e59501, -4px 4px #e59501, -5px 5px #e59501, -6px 6px #e59501, -7px 7px #e59501, -8px 8px #e59501, -9px 9px #e59501, -10px 10px #e59501, -11px 11px #e59501, -12px 12px #e59501, -13px 13px #e59501, -14px 14px #e59501, -15px 15px #e59501, -16px 16px #e59501, -17px 17px #e59501, -18px 18px #e59501, -19px 19px #e59501, -20px 20px #e59501, -21px 21px #e59501, -22px 22px #e59501, -23px 23px #e59501, -24px 24px #e59501, -25px 25px #e59501, -26px 26px #e59501, -27px 27px #e59501, -28px 28px #e59501, -29px 29px #e59501, -30px 30px #e59501, -31px 31px #e59501, -32px 32px #e59501, -33px 33px #e59501, -34px 34px #e59501, -35px 35px #e59501, -36px 36px #e59501, -37px 37px #e59501, -38px 38px #e59501, -39px 39px #e59501, -40px 40px #e59501, -41px 41px #e59501, -42px 42px #e59501, -43px 43px #e59501, -44px 44px #e59501, -45px 45px #e59501, -46px 46px #e59501, -47px 47px #e59501, -48px 48px #e59501, -49px 49px #e59501, -50px 50px #e59501; }
+      text-shadow: 0 0 0 #e59501, -1px 1px #e59501, -2px 2px #e59501, -3px 3px #e59501, -4px 4px #e59501, -5px 5px #e59501, -6px 6px #e59501, -7px 7px #e59501, -8px 8px #e59501, -9px 9px #e59501, -10px 10px #e59501, -11px 11px #e59501, -12px 12px #e59501, -13px 13px #e59501, -14px 14px #e59501, -15px 15px #e59501, -16px 16px #e59501, -17px 17px #e59501, -18px 18px #e59501, -19px 19px #e59501, -20px 20px #e59501, -21px 21px #e59501, -22px 22px #e59501, -23px 23px #e59501, -24px 24px #e59501, -25px 25px #e59501, -26px 26px #e59501, -27px 27px #e59501, -28px 28px #e59501, -29px 29px #e59501, -30px 30px #e59501, -31px 31px #e59501, -32px 32px #e59501, -33px 33px #e59501, -34px 34px #e59501, -35px 35px #e59501, -36px 36px #e59501, -37px 37px #e59501, -38px 38px #e59501, -39px 39px #e59501, -40px 40px #e59501, -41px 41px #e59501, -42px 42px #e59501, -43px 43px #e59501, -44px 44px #e59501, -45px 45px #e59501, -46px 46px #e59501, -47px 47px #e59501, -48px 48px #e59501, -49px 49px #e59501, -50px 50px #e59501; }
     .button-longshadow-left.button-highlight:active, .button-longshadow-left.button-highlight.active, .button-longshadow-left.button-highlight.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow-left.button-caution {
-    text-shadow: 0px 0px #ff1022, -1px 1px #ff1022, -2px 2px #ff1022, -3px 3px #ff1022, -4px 4px #ff1022, -5px 5px #ff1022, -6px 6px #ff1022, -7px 7px #ff1022, -8px 8px #ff1022, -9px 9px #ff1022, -10px 10px #ff1022, -11px 11px #ff1022, -12px 12px #ff1022, -13px 13px #ff1022, -14px 14px #ff1022, -15px 15px #ff1022, -16px 16px #ff1022, -17px 17px #ff1022, -18px 18px #ff1022, -19px 19px #ff1022, -20px 20px #ff1022, -21px 21px #ff1022, -22px 22px #ff1022, -23px 23px #ff1022, -24px 24px #ff1022, -25px 25px #ff1022, -26px 26px #ff1022, -27px 27px #ff1022, -28px 28px #ff1022, -29px 29px #ff1022, -30px 30px #ff1022, -31px 31px #ff1022, -32px 32px #ff1022, -33px 33px #ff1022, -34px 34px #ff1022, -35px 35px #ff1022; }
+    text-shadow: 0 0 #ff1022, -1px 1px #ff1022, -2px 2px #ff1022, -3px 3px #ff1022, -4px 4px #ff1022, -5px 5px #ff1022, -6px 6px #ff1022, -7px 7px #ff1022, -8px 8px #ff1022, -9px 9px #ff1022, -10px 10px #ff1022, -11px 11px #ff1022, -12px 12px #ff1022, -13px 13px #ff1022, -14px 14px #ff1022, -15px 15px #ff1022, -16px 16px #ff1022, -17px 17px #ff1022, -18px 18px #ff1022, -19px 19px #ff1022, -20px 20px #ff1022, -21px 21px #ff1022, -22px 22px #ff1022, -23px 23px #ff1022, -24px 24px #ff1022, -25px 25px #ff1022, -26px 26px #ff1022, -27px 27px #ff1022, -28px 28px #ff1022, -29px 29px #ff1022, -30px 30px #ff1022, -31px 31px #ff1022, -32px 32px #ff1022, -33px 33px #ff1022, -34px 34px #ff1022, -35px 35px #ff1022; }
     .button-longshadow-left.button-caution.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #ff1022, -1px 1px #ff1022, -2px 2px #ff1022, -3px 3px #ff1022, -4px 4px #ff1022, -5px 5px #ff1022, -6px 6px #ff1022, -7px 7px #ff1022, -8px 8px #ff1022, -9px 9px #ff1022, -10px 10px #ff1022, -11px 11px #ff1022, -12px 12px #ff1022, -13px 13px #ff1022, -14px 14px #ff1022, -15px 15px #ff1022, -16px 16px #ff1022, -17px 17px #ff1022, -18px 18px #ff1022, -19px 19px #ff1022, -20px 20px #ff1022, -21px 21px #ff1022, -22px 22px #ff1022, -23px 23px #ff1022, -24px 24px #ff1022, -25px 25px #ff1022, -26px 26px #ff1022, -27px 27px #ff1022, -28px 28px #ff1022, -29px 29px #ff1022, -30px 30px #ff1022, -31px 31px #ff1022, -32px 32px #ff1022, -33px 33px #ff1022, -34px 34px #ff1022, -35px 35px #ff1022, -36px 36px #ff1022, -37px 37px #ff1022, -38px 38px #ff1022, -39px 39px #ff1022, -40px 40px #ff1022, -41px 41px #ff1022, -42px 42px #ff1022, -43px 43px #ff1022, -44px 44px #ff1022, -45px 45px #ff1022, -46px 46px #ff1022, -47px 47px #ff1022, -48px 48px #ff1022, -49px 49px #ff1022, -50px 50px #ff1022; }
+      text-shadow: 0 0 0 #ff1022, -1px 1px #ff1022, -2px 2px #ff1022, -3px 3px #ff1022, -4px 4px #ff1022, -5px 5px #ff1022, -6px 6px #ff1022, -7px 7px #ff1022, -8px 8px #ff1022, -9px 9px #ff1022, -10px 10px #ff1022, -11px 11px #ff1022, -12px 12px #ff1022, -13px 13px #ff1022, -14px 14px #ff1022, -15px 15px #ff1022, -16px 16px #ff1022, -17px 17px #ff1022, -18px 18px #ff1022, -19px 19px #ff1022, -20px 20px #ff1022, -21px 21px #ff1022, -22px 22px #ff1022, -23px 23px #ff1022, -24px 24px #ff1022, -25px 25px #ff1022, -26px 26px #ff1022, -27px 27px #ff1022, -28px 28px #ff1022, -29px 29px #ff1022, -30px 30px #ff1022, -31px 31px #ff1022, -32px 32px #ff1022, -33px 33px #ff1022, -34px 34px #ff1022, -35px 35px #ff1022, -36px 36px #ff1022, -37px 37px #ff1022, -38px 38px #ff1022, -39px 39px #ff1022, -40px 40px #ff1022, -41px 41px #ff1022, -42px 42px #ff1022, -43px 43px #ff1022, -44px 44px #ff1022, -45px 45px #ff1022, -46px 46px #ff1022, -47px 47px #ff1022, -48px 48px #ff1022, -49px 49px #ff1022, -50px 50px #ff1022; }
     .button-longshadow-left.button-caution:active, .button-longshadow-left.button-caution.active, .button-longshadow-left.button-caution.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
   .button-longshadow-left.button-royal {
-    text-shadow: 0px 0px #5246e2, -1px 1px #5246e2, -2px 2px #5246e2, -3px 3px #5246e2, -4px 4px #5246e2, -5px 5px #5246e2, -6px 6px #5246e2, -7px 7px #5246e2, -8px 8px #5246e2, -9px 9px #5246e2, -10px 10px #5246e2, -11px 11px #5246e2, -12px 12px #5246e2, -13px 13px #5246e2, -14px 14px #5246e2, -15px 15px #5246e2, -16px 16px #5246e2, -17px 17px #5246e2, -18px 18px #5246e2, -19px 19px #5246e2, -20px 20px #5246e2, -21px 21px #5246e2, -22px 22px #5246e2, -23px 23px #5246e2, -24px 24px #5246e2, -25px 25px #5246e2, -26px 26px #5246e2, -27px 27px #5246e2, -28px 28px #5246e2, -29px 29px #5246e2, -30px 30px #5246e2, -31px 31px #5246e2, -32px 32px #5246e2, -33px 33px #5246e2, -34px 34px #5246e2, -35px 35px #5246e2; }
+    text-shadow: 0 0 #5246e2, -1px 1px #5246e2, -2px 2px #5246e2, -3px 3px #5246e2, -4px 4px #5246e2, -5px 5px #5246e2, -6px 6px #5246e2, -7px 7px #5246e2, -8px 8px #5246e2, -9px 9px #5246e2, -10px 10px #5246e2, -11px 11px #5246e2, -12px 12px #5246e2, -13px 13px #5246e2, -14px 14px #5246e2, -15px 15px #5246e2, -16px 16px #5246e2, -17px 17px #5246e2, -18px 18px #5246e2, -19px 19px #5246e2, -20px 20px #5246e2, -21px 21px #5246e2, -22px 22px #5246e2, -23px 23px #5246e2, -24px 24px #5246e2, -25px 25px #5246e2, -26px 26px #5246e2, -27px 27px #5246e2, -28px 28px #5246e2, -29px 29px #5246e2, -30px 30px #5246e2, -31px 31px #5246e2, -32px 32px #5246e2, -33px 33px #5246e2, -34px 34px #5246e2, -35px 35px #5246e2; }
     .button-longshadow-left.button-royal.button-longshadow-expand {
-      text-shadow: 0px 0px 0px #5246e2, -1px 1px #5246e2, -2px 2px #5246e2, -3px 3px #5246e2, -4px 4px #5246e2, -5px 5px #5246e2, -6px 6px #5246e2, -7px 7px #5246e2, -8px 8px #5246e2, -9px 9px #5246e2, -10px 10px #5246e2, -11px 11px #5246e2, -12px 12px #5246e2, -13px 13px #5246e2, -14px 14px #5246e2, -15px 15px #5246e2, -16px 16px #5246e2, -17px 17px #5246e2, -18px 18px #5246e2, -19px 19px #5246e2, -20px 20px #5246e2, -21px 21px #5246e2, -22px 22px #5246e2, -23px 23px #5246e2, -24px 24px #5246e2, -25px 25px #5246e2, -26px 26px #5246e2, -27px 27px #5246e2, -28px 28px #5246e2, -29px 29px #5246e2, -30px 30px #5246e2, -31px 31px #5246e2, -32px 32px #5246e2, -33px 33px #5246e2, -34px 34px #5246e2, -35px 35px #5246e2, -36px 36px #5246e2, -37px 37px #5246e2, -38px 38px #5246e2, -39px 39px #5246e2, -40px 40px #5246e2, -41px 41px #5246e2, -42px 42px #5246e2, -43px 43px #5246e2, -44px 44px #5246e2, -45px 45px #5246e2, -46px 46px #5246e2, -47px 47px #5246e2, -48px 48px #5246e2, -49px 49px #5246e2, -50px 50px #5246e2; }
+      text-shadow: 0 0 0 #5246e2, -1px 1px #5246e2, -2px 2px #5246e2, -3px 3px #5246e2, -4px 4px #5246e2, -5px 5px #5246e2, -6px 6px #5246e2, -7px 7px #5246e2, -8px 8px #5246e2, -9px 9px #5246e2, -10px 10px #5246e2, -11px 11px #5246e2, -12px 12px #5246e2, -13px 13px #5246e2, -14px 14px #5246e2, -15px 15px #5246e2, -16px 16px #5246e2, -17px 17px #5246e2, -18px 18px #5246e2, -19px 19px #5246e2, -20px 20px #5246e2, -21px 21px #5246e2, -22px 22px #5246e2, -23px 23px #5246e2, -24px 24px #5246e2, -25px 25px #5246e2, -26px 26px #5246e2, -27px 27px #5246e2, -28px 28px #5246e2, -29px 29px #5246e2, -30px 30px #5246e2, -31px 31px #5246e2, -32px 32px #5246e2, -33px 33px #5246e2, -34px 34px #5246e2, -35px 35px #5246e2, -36px 36px #5246e2, -37px 37px #5246e2, -38px 38px #5246e2, -39px 39px #5246e2, -40px 40px #5246e2, -41px 41px #5246e2, -42px 42px #5246e2, -43px 43px #5246e2, -44px 44px #5246e2, -45px 45px #5246e2, -46px 46px #5246e2, -47px 47px #5246e2, -48px 48px #5246e2, -49px 49px #5246e2, -50px 50px #5246e2; }
     .button-longshadow-left.button-royal:active, .button-longshadow-left.button-royal.active, .button-longshadow-left.button-royal.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
