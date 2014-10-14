@@ -31,7 +31,7 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 
 1. Clone the Buttons repo
 2. Make sure you have Sass installed
-3. Run `npm install; bower install` from your terminal
+3. Run `npm install` from your terminal
 4. Edit the `_options.scss` with your own custom values (see example values below)
 5. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
 
