@@ -778,7 +778,7 @@ body {
 .phone {
   position: absolute;
   top: 40px;
-  right: 40px;
+  right: 0px;
   z-index: 3;
   height: 800px;
   width: 440px;
@@ -890,7 +890,7 @@ body {
 */
 .showcase-phone {
   min-height: 480px;
-  padding: 160px 500px 60px 40px; }
+  padding: 160px 430px 60px 40px; }
   .showcase-phone .l-over {
     max-width: 490px; }
 
@@ -944,7 +944,7 @@ body {
     margin: 0px;
     padding: 20px;
     font-family: Monaco, Consolas, monospace;
-    font-size: 14px;
+    font-size: 13px;
     overflow: auto;
     max-height: 200px; }
     .codebox .codebox-body .linenums {

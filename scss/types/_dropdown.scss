@@ -96,7 +96,7 @@
   display: block;
 
   &#{$ubtn-namespace}-dropdown-divider {
-   border-top: 1px dotted darken($ubtn-bgcolor, 10%);
+   border-top: 1px solid darken($ubtn-bgcolor, 3%);
   }
 
   > a {
@@ -140,7 +140,7 @@
 
         > li {
           &#{$ubtn-namespace}-dropdown-divider {
-           border-color: darken($ubtn-background, 10%);
+           border-color: darken($ubtn-background, 7%);
           }
 
           > a {

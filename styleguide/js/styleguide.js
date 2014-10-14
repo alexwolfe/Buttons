@@ -26,9 +26,10 @@ $(document).ready(function(){
 
     attachScrollMonitor: function() {
       var self = this;
+      var footer = $('.l-slide-in-footer');
 
       //Create a watcher on the header. If not in viewport show footer
-      var watcher = scrollMonitor.create($('.monitor-scrolling'));
+      var watcher = scrollMonitor.create($('.hero'));
       if (!watcher.isInViewport) {
         self.showFooter();
       }
