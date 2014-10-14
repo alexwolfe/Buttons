@@ -13,20 +13,6 @@ $ubtn-default-glow-color: #2c9adb !default;
 *
 */
 @mixin glow($animation-name) {
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -ms-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -khtml-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  -webkit-animation-name: $animation-name;
-  -khtml-animation-name: $animation-name;
-  -moz-animation-name: $animation-name;
-  -ms-animation-name: $animation-name;
-  -o-animation-name: $animation-name;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: $animation-name;

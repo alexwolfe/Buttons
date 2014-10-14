@@ -27,10 +27,6 @@
 * Sets animation property to none
 */
 @mixin no_animation {
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -ms-animation-name: none;
-  -o-animation-name: none;
   animation-name: none;
 }
 
