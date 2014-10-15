@@ -417,48 +417,6 @@
     width: 24px; }
 
 /*
-* Button Sizes
-*
-* This file creates the various button sizes
-* (ex. .button-large, .button-small, etc.)
-*/
-.button-giant {
-  font-size: 32px;
-  height: 80px;
-  line-height: 80px;
-  padding: 0 80px; }
-
-.button-jumbo {
-  font-size: 24px;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 60px; }
-
-.button-large {
-  font-size: 20px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 50px; }
-
-.button-normal {
-  font-size: 16px;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 40px; }
-
-.button-small {
-  font-size: 12px;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 30px; }
-
-.button-tiny {
-  font-size: 9.6px;
-  height: 24px;
-  line-height: 24px;
-  padding: 0 24px; }
-
-/*
 * Border Buttons
 *
 * These buttons have no fill they only have a
@@ -1531,3 +1489,45 @@
       text-shadow: 0 0 0 #5246e2, -1px 1px #5246e2, -2px 2px #5246e2, -3px 3px #5246e2, -4px 4px #5246e2, -5px 5px #5246e2, -6px 6px #5246e2, -7px 7px #5246e2, -8px 8px #5246e2, -9px 9px #5246e2, -10px 10px #5246e2, -11px 11px #5246e2, -12px 12px #5246e2, -13px 13px #5246e2, -14px 14px #5246e2, -15px 15px #5246e2, -16px 16px #5246e2, -17px 17px #5246e2, -18px 18px #5246e2, -19px 19px #5246e2, -20px 20px #5246e2, -21px 21px #5246e2, -22px 22px #5246e2, -23px 23px #5246e2, -24px 24px #5246e2, -25px 25px #5246e2, -26px 26px #5246e2, -27px 27px #5246e2, -28px 28px #5246e2, -29px 29px #5246e2, -30px 30px #5246e2, -31px 31px #5246e2, -32px 32px #5246e2, -33px 33px #5246e2, -34px 34px #5246e2, -35px 35px #5246e2, -36px 36px #5246e2, -37px 37px #5246e2, -38px 38px #5246e2, -39px 39px #5246e2, -40px 40px #5246e2, -41px 41px #5246e2, -42px 42px #5246e2, -43px 43px #5246e2, -44px 44px #5246e2, -45px 45px #5246e2, -46px 46px #5246e2, -47px 47px #5246e2, -48px 48px #5246e2, -49px 49px #5246e2, -50px 50px #5246e2; }
     .button-longshadow-left.button-royal:active, .button-longshadow-left.button-royal.active, .button-longshadow-left.button-royal.is-active {
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
+
+/*
+* Button Sizes
+*
+* This file creates the various button sizes
+* (ex. .button-large, .button-small, etc.)
+*/
+.button-giant {
+  font-size: 32px;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 80px; }
+
+.button-jumbo {
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 60px; }
+
+.button-large {
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px; }
+
+.button-normal {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 40px; }
+
+.button-small {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 30px; }
+
+.button-tiny {
+  font-size: 9.6px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 24px; }
