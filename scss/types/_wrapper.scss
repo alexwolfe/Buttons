@@ -8,7 +8,7 @@
 #{$ubtn-namespace}-wrap {
   border: 1px solid #e3e3e3;
   display: inline-block;
-  padding: 10px;
+  padding: 9px;
 
   @if($ubtn-use-compass) {
     @include background(linear-gradient(#f2f2f2, #FFF));

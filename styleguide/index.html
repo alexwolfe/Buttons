@@ -211,21 +211,18 @@
 
   </section>
   <!-- Raised BUTTONS -->
-  <section class="showcase">
-    <div class="l-over showcase-content">
+  <section class="showcase showcase-content background-light">
       <header class="l-center">
         <h3 class="showcase-title">Raised Buttons</h3>
         <h4 class="showcase-sub-title">A classic looking button that offers great depth and affordance</h4>
       </header>
 
   <div class="showcase-examples l-center">
-  <button class="button button-raised button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
-  <a href="http://unicorn-ui.com/" class="button button-raised button-primary button-rounded">Check out the new site!</a>
-  <a href="http://unicorn-ui.com/" class="button button-raised button-action button-pill">Visit Us!</a>
+  <a href="http://unicorn-ui.com/" class="button button-raised button-primary button-pill">Visit Us!</a>
   <button class="button button-raised button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
   <a href="http://unicorn-ui.com/" class="button button-raised button-caution"><i class="fa fa-camera"></i> Go</a>
   <a href="http://unicorn-ui.com/" class="button button-raised button-royal">Say Hi!</a>
-  <a href="http://unicorn-ui.com/" class="button button-raised button-inverse">Say Hi!</a>
+  <a href="http://unicorn-ui.com/" class="button button-raised button-pill button-inverse">Say Hi!</a>
   </div>
 
     </div>
@@ -252,9 +249,9 @@
     <i class="fa fa-rss"></i>
   </button>
 
-  <button class="button button-primary button-rounded button-longshadow-right">Order Now</button>
-  <button class="button button-primary button-circle button-giant button-longshadow-left"><i class="fa fa-gear"></i></button>
-  <button class="button button-primary button-circle button-giant button-longshadow"><i class="fa fa-gear"></i></button></div>
+  <button class="button button-primary button-circle button-giant button-longshadow">
+    <i class="fa fa-gear"></i>
+  </button></div>
 
   </section>
 
@@ -280,7 +277,7 @@
   </section>
 
   <!-- DROPDOWN BUTTONS -->
-  <section class="showcase background-light">
+  <section class="showcase  showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Dropdown Buttons</h3>
       <h4 class="showcase-sub-title">A dropdown menu appears when the button is pressed</h4>
@@ -303,7 +300,7 @@
   </span>
 
   <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
-    <button class="button button-rounded button-primary button-large">
+    <button class="button button-primary button-large">
       <i class="fa fa-bars"></i> Select Me
     </button>
 
@@ -316,22 +313,9 @@
     </ul>
   </span>
 
+
   <span class="button-dropdown button-dropdown-action" data-buttons="dropdown">
-    <button class="button button-action button-large">
-      <i class="fa fa-bars"></i> Select Me
-    </button>
-
-    <ul class="button-dropdown-list is-below">
-      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-      <li class="button-dropdown-divider">
-        <a href="#">Option Link 3</a>
-      </li>
-    </ul>
-  </span>
-
-  <span class="button-dropdown button-dropdown-highlight" data-buttons="dropdown">
-    <button class="button button-highlight">
+    <button class="button button-action">
       Select Me <i class="fa fa-caret-up"></i>
     </button>
 
@@ -374,14 +358,11 @@
         <a href="#">Option Link 3</a>
       </li>
     </ul>
-  </span>
-  </div>
-
-
+  </span></div>
   </section>
 
   <!-- GROUP BUTTONS -->
-  <section class="showcase background-light">
+  <section class="showcase showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Buttons Groups</h3>
       <h4 class="showcase-sub-title">A group of related buttons displayed edge to edge</h4>
@@ -392,29 +373,17 @@
     <button type="button" class="button button-primary">Option 1</button>
     <button type="button" class="button button-primary">Option 2</button>
     <button type="button" class="button button-primary">Option 3</button>
-    <span class="button-dropdown" data-buttons="dropdown">
+
+    <!-- DROPDOWN MENU -->
+    <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
       <a href="#" class="button button-primary"> Select Me <i class="fa fa-caret-down"></i></a>
 
       <ul class="button-dropdown-list is-below">
         <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
         <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-        <li class="button-dropdown-divider">
-          <a href="#">Option Link 3</a>
-        </li>
+        <li class="button-dropdown-divider"><a href="#">Option Link 3</a></li>
       </ul>
     </span>
-  </div>
-
-  <div class="button-group">
-    <button type="button" class="button button-primary">Option 1</button>
-    <button type="button" class="button button-primary">Option 2</button>
-    <button type="button" class="button button-primary">Option 3</button>
-  </div>
-
-  <div class="button-group">
-    <button type="button" class="button button-pill button-action is-active">Option 1</button>
-    <button type="button" class="button button-pill button-action">Option 2</button>
-    <button type="button" class="button button-pill button-action">Option 3</button>
   </div>
 
   <div class="button-group">
@@ -427,22 +396,14 @@
     <button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
     <button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
     <button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
-  </div>
-
-  <div class="button-group">
-    <button type="button" class="button button-royal button-rounded">Option 1</button>
-    <button type="button" class="button button-royal button-rounded">Option 2</button>
-    <button type="button" class="button button-royal button-rounded">Option 3</button>
-  </div>
-
-  </div>
+  </div></div>
   </section>
 
   <!-- BLOCK BUTTONS -->
-  <section class="showcase background-light">
+  <section class="showcase showcase-content background-light">
     <header class="l-center">
-      <h3 class="showcase-title">Block Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h3 class="showcase-title">Stacked Buttons</h3>
+      <h4 class="showcase-sub-title">Block level buttons that expand the width of their container</h4>
     </header>
 
   <div class="showcase-examples l-center">
@@ -451,15 +412,13 @@
   <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-action button-large">Go</a>
   <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-highlight button-large">Go</a>
   <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-caution button-large">Go</a>
-  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-royal button-large">Go</a>
-  </div>
-
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-royal button-large">Go</a></div>
   </section>
   <!-- BUTTONS WRAPPERS-->
-  <section class="showcase background-light">
+  <section class="showcase showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Button Wrappers</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">A wrap around effect to highlight the shape of the button and offer a subtle visual effect</h4>
     </header>
 
   <div class="showcase-examples l-center">
@@ -468,21 +427,26 @@
       <i class="fa fa-cloud"></i>
     </button>
   </span>
+
   <span class="button-wrap">
-    <button class="button button-circle button-primary">
+    <button class="button button-circle button-raised button-primary">
       <i class="fa fa-cloud"></i>
     </button>
   </span>
-  <span class="button-wrap"><a href="http://unicorn-ui.com/" class="button button-pill ">Go</a></span>
-  <span class="button-wrap"><a href="http://unicorn-ui.com/" class="button button-pill button-primary">Go</a></span>
-  </div>
+
+  <span class="button-wrap">
+    <a href="http://unicorn-ui.com/" class="button button-pill ">Go</a>
+  </span>
+  <span class="button-wrap">
+    <a href="http://unicorn-ui.com/" class="button button-pill button-raised button-primary">Go</a>
+  </span></div>
 
   </section>
   <!-- FORM BUTTONS -->
-  <section class="showcase background-light">
+  <section class="showcase  showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Form Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">Buttons works great on form elements too</h4>
     </header>
 
   <div class="showcase-examples l-center">
@@ -493,8 +457,7 @@
   <input  disabled type="submit"  value="Go" class="button button-pill button-primary"/>
   <button disabled class="button  button-pill button-primary">Go</button>
   <button disabled class="button button-pill button-flat-primary">Go</button>
-  <a href="#" class="button disabled button-pill button-primary ">Go</a>
-  </div>
+  <a href="#" class="button disabled button-pill button-primary ">Go</a></div>
 
   </section>
 
