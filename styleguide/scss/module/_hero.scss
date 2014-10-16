@@ -47,6 +47,18 @@
     color: $blue-shade-7;
     font-size: 12px;
 
+    > i {
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      z-index: $layer-1;
+      font-size: 40px;
+      line-height: 30px;
+      height: 30px;
+      font-style: normal;
+      font-weight: bold;
+    }
+
     > em {
       display: block;
       font-style: normal;

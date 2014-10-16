@@ -835,6 +835,16 @@ body {
     left: 20px;
     color: #1a7fcc;
     font-size: 12px; }
+    .hero .hero-unicorn-badge > i {
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      z-index: 1;
+      font-size: 40px;
+      line-height: 30px;
+      height: 30px;
+      font-style: normal;
+      font-weight: bold; }
     .hero .hero-unicorn-badge > em {
       display: block;
       font-style: normal; }
