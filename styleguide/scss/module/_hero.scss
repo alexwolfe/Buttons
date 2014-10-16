@@ -11,7 +11,7 @@
   color: #FFF;
   width: 100%;
   box-sizing: border-box;
-  height: 470px;
+  height: 560px;
 
   .hero-pitch {
     width: 320px;
@@ -28,16 +28,24 @@
     height: 40px;
   }
 
-  .hero-unicorn-badge {
-    padding: 8px 0px 0px 30px;
+  // BADGES
+
+  .hero-badge {
     border-top: 2px solid $blue-shade-7;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
     z-index: $layer-2;
     color: $blue-shade-7;
-    font-size: 12px;
     text-decoration: none;
+    width: 140px;
+    height: 30px;
+  }
+
+  .hero-unicorn-badge {
+    padding: 8px 0px 0px 30px;
+    bottom: 20px;
+    left: 20px;
+    color: $blue-shade-7;
+    font-size: 12px;
 
     > em {
       display: block;
@@ -46,6 +54,14 @@
   }
 
   .hero-mobile-badge {
+    padding: 8px 10px 0px 10px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-align: left;
 
+    > i {
+      margin: 0px 2px;
+    }
   }
 }
