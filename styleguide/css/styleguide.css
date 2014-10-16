@@ -685,6 +685,48 @@ body {
   .text-light a {
     color: #FFFFFF; }
 
+.top-nav {
+  display: none;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 6;
+  background: rgba(255, 255, 255, 0.9);
+  height: 50px;
+  padding: 0px 20px; }
+  .top-nav > h1 {
+    font-weight: 100;
+    line-height: 50px;
+    height: 50px;
+    font-size: 23px;
+    margin: 0px;
+    padding: 0px;
+    color: #a9adb1;
+    text-transform: uppercase;
+    float: left; }
+  .top-nav > ul {
+    float: right;
+    margin: 0px;
+    padding: 0px; }
+    .top-nav > ul li {
+      float: right;
+      margin: 0px; }
+    .top-nav > ul a {
+      -webkit-transition-property: all;
+              transition-property: all;
+      -webkit-transition-duration: .3s;
+              transition-duration: .3s;
+      font-weight: 100;
+      display: inline-block;
+      line-height: 50px;
+      padding: 0px 10px;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .top-nav > ul a:hover {
+        background: white; }
+
 /*
 * Logo Icon
 *

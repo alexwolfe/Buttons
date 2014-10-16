@@ -1,0 +1,50 @@
+.top-nav {
+  display: none;
+  font-family: $brand-font;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: $layer-6;
+  background: rgba($white, .9);
+  height: 50px;
+  padding: 0px 20px;
+
+  > h1 {
+    font-weight: 100;
+    line-height: 50px;
+    height:  50px;
+    font-size: 23px;
+    margin: 0px;
+    padding: 0px;
+    color: $gray;
+    text-transform: uppercase;
+    float: left;
+  }
+
+  > ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      float: right;
+      margin: 0px;
+    }
+
+    a {
+      transition-property: all;
+      transition-duration: .3s;
+      font-weight: 100;
+      display: inline-block;
+      line-height: 50px;
+      padding: 0px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        background: rgba($white, 1);
+      }
+    }
+  }
+}

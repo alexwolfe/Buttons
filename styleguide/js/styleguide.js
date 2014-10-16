@@ -6,7 +6,7 @@ $(document).ready(function(){
     },
 
     init: function() {
-      this.buttons = $('#main-nav a');
+      this.nav = $('#top-nav');
 
       this.activateNav();
       this.disableDemoButtons();
@@ -104,8 +104,19 @@ $(document).ready(function(){
 
     activateNav: function() {
       var that = this;
+      var buttons = this.nav.find('ul a');
+      var $showcases = $('.showcase');
+      var sections = [];
 
-      this.buttons.click(function(e) {
+      $showcases.each(function(index, item){
+        if(item.id) {
+          console.log(item.id);
+        }
+      });
+
+      this.nav.show();
+
+      buttons.click(function(e) {
         e.preventDefault();
         var currentButton = $(e.currentTarget);
         var buttonId = currentButton.attr('href');
