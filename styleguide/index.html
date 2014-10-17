@@ -30,13 +30,20 @@
 <body>
   <!-- NAV -->
   <nav id="top-nav" class="top-nav clearfix">
-    <h1>Buttons</h1>
+    <h1><a href="#hero">Buttons</a></h1>
 
-    <ul></ul>
+    <ul class="top-nav-links"></ul>
+
+    <span class="button-dropdown" data-buttons="dropdown">
+      <button class="button button-plain button">Menu</button>
+      <ul class="button-dropdown-list is-below"></ul>
+    </span>
   </nav>
 
+
+
   <!-- HERO -->
-  <header class="hero hero-buttons">
+  <header id="hero" class="hero hero-buttons">
     <div class="l-under">
       <div class="arrow arrow-half arrow-dark arrow-top-left">
         <i class="icon-arrow-top-left"></i>
@@ -154,12 +161,8 @@
 
   <div class="showcase-examples l-center ">
   <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
-  <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
-  <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
   <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
   <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
-  <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
-  <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
   <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button></div>
 
       </div>
@@ -581,10 +584,10 @@
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="js/scrollto.js"></script>
   <script type="text/javascript" src="js/scrollMonitor.js"></script>
-  <script type="text/javascript" src="js/buttons.js"></script>
   <script type="text/javascript" src="js/zeroclipboard/dist/ZeroClipboard.js"></script>
   <script type="text/javascript" src="js/handlebars.js"></script>
   <script type="text/javascript" src="js/styleguide.js"></script>
+  <script type="text/javascript" src="js/buttons.js"></script>
 
 
   <!-- GOOGLE ANALYTICS -->

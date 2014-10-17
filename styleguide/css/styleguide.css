@@ -11,6 +11,10 @@
 *
 * Can be use for z-index
 */
+/*
+* Mobile Layout Breakpoints
+*
+*/
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
 /* ==========================================================================
  HTML5 display definitions
@@ -695,25 +699,35 @@ body {
   z-index: 6;
   background: rgba(255, 255, 255, 0.9);
   height: 50px;
-  padding: 0px 20px; }
+  padding: 0px; }
+  .top-nav .button-dropdown {
+    float: right;
+    display: none; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 900px) {
+    .top-nav .top-nav-links {
+      display: none; }
+    .top-nav .button-dropdown {
+      display: block; } }
   .top-nav > h1 {
     font-weight: 100;
     line-height: 50px;
     height: 50px;
     font-size: 23px;
-    margin: 0px;
+    margin: 0px 0px 0px 20px;
     padding: 0px;
-    color: #a9adb1;
     text-transform: uppercase;
     float: left; }
-  .top-nav > ul {
+    .top-nav > h1 a {
+      color: #a9adb1;
+      text-decoration: none; }
+  .top-nav .top-nav-links {
     float: right;
-    margin: 0px;
+    margin: 0px 20px 0px 0px;
     padding: 0px; }
-    .top-nav > ul li {
+    .top-nav .top-nav-links li {
       float: right;
       margin: 0px; }
-    .top-nav > ul a {
+    .top-nav .top-nav-links a {
       -webkit-transition-property: all;
               transition-property: all;
       -webkit-transition-duration: .3s;
@@ -723,8 +737,9 @@ body {
       line-height: 50px;
       padding: 0px 10px;
       text-decoration: none;
-      text-transform: uppercase; }
-      .top-nav > ul a:hover {
+      text-transform: uppercase;
+      font-size: 14px; }
+      .top-nav .top-nav-links a:hover {
         background: white; }
 
 /*
@@ -1025,7 +1040,6 @@ body {
 .codebox {
   border: 1px solid #e8edf2;
   border-radius: 4px;
-  overflow: hidden;
   position: relative;
   background: #FFFFFF;
   margin-top: 40px;
@@ -1069,8 +1083,7 @@ body {
     padding: 20px;
     font-family: Monaco, Consolas, monospace;
     font-size: 13px;
-    overflow: auto;
-    max-height: 200px; }
+    overflow: auto; }
     .codebox .codebox-body .linenums {
       margin-top: 0;
       margin-bottom: 0;

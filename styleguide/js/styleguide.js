@@ -6,6 +6,8 @@ $(document).ready(function(){
     },
 
     init: function() {
+      this.nav = $('#top-nav');
+
       this.activateNav();
       this.disableDemoButtons();
       this.generateCodeSamples();
@@ -31,11 +33,13 @@ $(document).ready(function(){
       var watcher = scrollMonitor.create($('.hero'));
       if (!watcher.isInViewport) {
         self.showFooter();
+        self.nav.show();
       }
 
       //Don't want a footer when header is visible…period
       watcher.enterViewport(function() {
         self.hideFooter();
+        self.nav.hide();
       });
 
       //Listen for scroll since we don't want to show the footer until
@@ -50,6 +54,7 @@ $(document).ready(function(){
           //User's stopped scrolling for and header's scrolled out of view
           if (!watcher.isInViewport) {
             self.showFooter();
+            self.nav.show();
           }
         }, 300));
       });
@@ -103,19 +108,16 @@ $(document).ready(function(){
 
     activateNav: function() {
       var that = this;
-      var nav = $('#top-nav');
-      var buttonList = nav.find('ul:first');
+      var buttonList = this.nav.find('.top-nav-links, .button-dropdown-list');
       var $showcases = $('.showcase');
       var sections = [];
 
       $showcases.each(function(index, item){
         if(item.id) {
           var name = item.id.replace('buttons-', '');
-          buttonList.append('<li><a href="#' + item.id + '">' + name + '</a></li>');
+          buttonList.prepend('<li><a href="#' + item.id + '">' + name + '</a></li>');
         }
       });
-
-      nav.show();
     },
 
 

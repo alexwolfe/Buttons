@@ -6,7 +6,6 @@
 .codebox {
   border: 1px solid $light;
   border-radius: 4px;
-  overflow: hidden;
   position: relative;
   background: $white;
   margin-top: 40px;
@@ -69,7 +68,6 @@
     font-family: Monaco, Consolas, monospace;
     font-size: 13px;
     overflow: auto;
-    max-height: 200px;
 
     .linenums {
       margin-top: 0;

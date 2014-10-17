@@ -8,23 +8,48 @@
   z-index: $layer-6;
   background: rgba($white, .9);
   height: 50px;
-  padding: 0px 20px;
+  padding: 0px;
+
+
+  .button-dropdown {
+    float: right;
+    display: none;
+  }
+
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+
+    .top-nav-links {
+      display: none;
+    }
+
+    .button-dropdown {
+      display: block;
+    }
+  }
 
   > h1 {
     font-weight: 100;
     line-height: 50px;
     height:  50px;
     font-size: 23px;
-    margin: 0px;
+    margin: 0px 0px 0px 20px;
     padding: 0px;
-    color: $gray;
     text-transform: uppercase;
     float: left;
+
+    a {
+      color: $gray;
+      text-decoration: none;
+    }
   }
 
-  > ul {
+
+  .top-nav-links {
     float: right;
-    margin: 0px;
+    margin: 0px 20px 0px 0px;
     padding: 0px;
 
     li {
@@ -41,6 +66,7 @@
       padding: 0px 10px;
       text-decoration: none;
       text-transform: uppercase;
+      font-size: 14px;
 
       &:hover {
         background: rgba($white, 1);
