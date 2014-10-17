@@ -6,12 +6,11 @@ $(document).ready(function(){
     },
 
     init: function() {
-      this.nav = $('#top-nav');
-
       this.activateNav();
       this.disableDemoButtons();
       this.generateCodeSamples();
       this.attachScrollMonitor();
+      this.activateSmoothScrolling();
     },
 
     showFooter: function() {
@@ -104,34 +103,36 @@ $(document).ready(function(){
 
     activateNav: function() {
       var that = this;
-      var buttons = this.nav.find('ul a');
+      var nav = $('#top-nav');
+      var buttonList = nav.find('ul:first');
       var $showcases = $('.showcase');
       var sections = [];
 
       $showcases.each(function(index, item){
         if(item.id) {
-          console.log(item.id);
+          var name = item.id.replace('buttons-', '');
+          buttonList.append('<li><a href="#' + item.id + '">' + name + '</a></li>');
         }
       });
 
-      this.nav.show();
-
-      buttons.click(function(e) {
-        e.preventDefault();
-        var currentButton = $(e.currentTarget);
-        var buttonId = currentButton.attr('href');
-
-        //DESELECT ALL BUTTONS & SELECT CURRRENT ONE
-        that.buttons.parent().removeClass('selected');
-        currentButton.parent().addClass('selected');
-
-        //ANIMATE SCROLL EFFECT
-        $("html, body").animate({
-            scrollTop: $(buttonId).offset().top - 100
-        }, 'slow');
-      });
+      nav.show();
     },
 
+
+    activateSmoothScrolling: function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - 40
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    },
 
     disableDemoButtons: function() {
       $('.showcase .button').on('click', function(e) {
