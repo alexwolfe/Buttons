@@ -10,6 +10,10 @@ $svgPrimary: #3498db;
     //TODO: Do we need to support sizes all the way up at the Button module level
     //or is it the burden of user? Icon fonts like fa currently have to be set
     //independently by user so we should probably just let them set.
+
+    // That's up to the user, too many use cases. Buttons allow you to use the font lib of
+    // your choice or svgs. But development is up to you, too many edge cases and it will
+    // bloat our library with little payoff since most devs doing this must customize anyway.
     width: 32px;
     height: 32px;
     display: block;
