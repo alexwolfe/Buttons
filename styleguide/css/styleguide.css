@@ -1254,3 +1254,36 @@ body {
 
 .arrow-light {
   color: #f3faff; }
+
+.svgs svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto; }
+  .svgs svg use {
+    fill: #bbb; }
+    .svgs svg use.completed {
+      color: #27ae60; }
+    .svgs svg use.overdue {
+      color: #e74c3c; }
+    .svgs svg use.take-survey {
+      color: #e67e22; }
+    .svgs svg use.view-completed {
+      color: #27ae60; }
+    .svgs svg use.view-trending {
+      color: #3498db; }
+    .svgs svg use.late {
+      color: #e74c3c; }
+
+.button:hover svg use.completed {
+  color: #2ecb70; }
+.button:hover svg use.overdue {
+  color: #eb695c; }
+.button:hover svg use.take-survey {
+  color: #ea9142; }
+.button:hover svg use.view-completed {
+  color: #2ecb70; }
+.button:hover svg use.view-trending {
+  color: #52a7e0; }
+.button:hover svg use.late {
+  color: #eb695c; }
