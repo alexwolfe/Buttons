@@ -24,9 +24,9 @@ $svgPrimary: #3498db;
 
       &.completed { color: $svgSuccess; }
       &.overdue { color: $svgCaution; }
-      &.take-survey { color: $svgHighlight; }
-      &.view-completed { color: $svgSuccess;  }
-      &.view-trending { color: $svgPrimary; }
+      &.survey { color: $svgHighlight; }
+      &.completed { color: $svgSuccess;  }
+      &.trending { color: $svgPrimary; }
       &.late { color: $svgCaution; }
     }
   }
@@ -39,9 +39,9 @@ $svgPrimary: #3498db;
 .button:hover svg use {
   &.completed { color: lighten($svgSuccess, 7%); }
   &.overdue { color: lighten($svgCaution, 7%); }
-  &.take-survey { color: lighten($svgHighlight, 7%); }
-  &.view-completed { color: lighten($svgSuccess, 7%);  }
-  &.view-trending { color: lighten($svgPrimary, 7%); }
+  &.survey { color: lighten($svgHighlight, 7%); }
+  &.completed { color: lighten($svgSuccess, 7%);  }
+  &.trending { color: lighten($svgPrimary, 7%); }
   &.late { color: lighten($svgCaution, 7%); }
 }
 

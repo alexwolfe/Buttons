@@ -1299,11 +1299,11 @@ body {
       color: #27ae60; }
     .svgs svg use.overdue {
       color: #e74c3c; }
-    .svgs svg use.take-survey {
+    .svgs svg use.survey {
       color: #e67e22; }
-    .svgs svg use.view-completed {
+    .svgs svg use.completed {
       color: #27ae60; }
-    .svgs svg use.view-trending {
+    .svgs svg use.trending {
       color: #3498db; }
     .svgs svg use.late {
       color: #e74c3c; }
@@ -1312,11 +1312,11 @@ body {
   color: #2ecb70; }
 .button:hover svg use.overdue {
   color: #eb695c; }
-.button:hover svg use.take-survey {
+.button:hover svg use.survey {
   color: #ea9142; }
-.button:hover svg use.view-completed {
+.button:hover svg use.completed {
   color: #2ecb70; }
-.button:hover svg use.view-trending {
+.button:hover svg use.trending {
   color: #52a7e0; }
 .button:hover svg use.late {
   color: #eb695c; }
