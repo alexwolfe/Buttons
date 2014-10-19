@@ -1,0 +1,26 @@
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	color: #000000;
+	fill: currentColor;
+}
+.icon-checkbox-checked {
+	width: 32px;
+	height: 32px;
+}
+# .path {
+	fill: ;
+}
+.icon-checkbox-partial {
+	width: 32px;
+	height: 32px;
+}
+# .path {
+	fill: ;
+}
+.icon-radio-checked {
+	width: 32px;
+	height: 32px;
+}
+# .path {
+	fill: ;
+}
