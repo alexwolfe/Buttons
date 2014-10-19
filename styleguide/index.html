@@ -36,7 +36,8 @@
 
     <span class="button-dropdown" data-buttons="dropdown">
       <button class="button button-plain button">Menu</button>
-      <ul class="button-dropdown-list is-below"></ul>
+      <ul class="button-dropdown-list is-below">
+      </ul>
     </span>
   </nav>
 
@@ -480,7 +481,7 @@
 
   </section>
   <!-- BLOCK BUTTONS -->
-  <section class="showcase showcase-content background-light">
+  <section id="buttons-type" class="showcase showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Tyographic Styles</h3>
       <h4 class="showcase-sub-title">A variety of tyographic styles for buttons</h4>
@@ -496,57 +497,59 @@
 
   <!-- INSTRUCTIONS -->
   <!-- ACCESSIBILITY NOTES -->
-  <section id="buttons-accessibility" class="accessibility">
-    <header class="l-center">
-      <h3 class="showcase-title">Buttons Accessibility</h3>
-      <h4 class="showcase-sub-title"></h4>
-      <p>Buttons should be used responsibly with accessibility in mind. In general, you should use anchor tags when you have a link that, well, links to something–generally an external resource or an internal page link–and use a button when you have some sort of &ldquo;application command&rdquo; such as <em>Save</em> or <em>Close</em>. Obviously, this is an oversimplification–what about <em>calls to action</em>, <em>menus</em>, etc.? Here are some of our favorite articles that we've found provide helpful guidance and are particularly useful:</p>
+  <section id="buttons-accessibility" class="docs background-subtle">
+    <header >
+      <h3 class="docs-title"><i class="fa fa-wheelchair"></i> Semantics &amp; Accessibility</h3>
     </header>
 
-    <div class="l-center">
-      <a href="http://formidablelabs.com/blog/2014/05/08/anchors-buttons-and-accessibility/">Anchors, Buttons, and Accessibility</a> by the folks at Formidable Labs.
-      <a href="http://www.nngroup.com/articles/command-links/">Commands Links</a> article by the Nielsen Norman Group.</a>
-      <a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/">Links Are Not Buttons</a> by Karl Groves.
+    <div class="docs-content">
+      <p>
+        Buttons should be used responsibly with accessibility in mind. You should use <strong>anchor</strong> tags when you are linking to an external resource or an internal page link. Use the <strong>button</strong> tag when you have an application command such as <strong>add to shopping cart</strong>. Use <strong>input</strong> tags (such as the submit input type) when creating forms. If you would like to learn more on this subject we highly reccomend reading the following articles.</p>
+
+      <ul class="docs-list">
+        <li>
+          <a href="http://formidablelabs.com/blog/2014/05/08/anchors-buttons-and-accessibility/">Anchors, Buttons, and Accessibility</a> by Formidable Labs.
+        </li>
+
+        <li>
+          <a href="http://www.nngroup.com/articles/command-links/">Commands Links</a> article by the Nielsen Norman Group.</a>
+        </li>
+
+        <li>
+          <a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/">Links Are Not Buttons</a> by Karl Groves.
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- FORM BUTTONS -->
-  <section id="buttons-setup" class="showcase">
-    <header class="l-center">
-      <h3 class="showcase-title">Getting Started</h3>
+  <section id="buttons-setup" class="docs background-subtle">
+    <header>
+      <h3 class="docs-title"><i class="fa fa-code"></i> Installation &amp; Setup</h3>
     </header>
 
-
-    <div class="setup">
-      <h4 class="showcase-sub-title"><i class="fa fa-code"></i> Setup Buttons</h4>
-      <ol class="steps">
+    <div class="docs-content">
+      <ol class="docs-list">
           <li>
-              <a class="button button-rounded button-flat-primary button-tiny" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> Download Buttons</a> and add files to your website.
+              <a class="button button-rounded button-primary button-small" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> Download Buttons</a> and add files to your website.
           </li>
           <li> Add css in the head of your webpage.
-  <pre tabindex="0" class="prettyprint linenums">&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+  <div class="codebox">
+  <header>
+    <h3>Buttons Setup</h3>
+    <button class="codebox-copy">Copy</button>
+  </header>
+  <pre tabindex="0" class="prettyprint linenums codebox-body">&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;css/buttons.css&quot;&gt;
   &lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
   &lt;script type=&quot;text/javascript&quot; src=&quot;js/buttons.js&quot;&gt;&lt;/script&gt;</pre>
+  </div>
           <em>* You only need the font-awesome css if you're using icons</em><br/>
           <em>* You only need jquery &amp; buttons.js if you're using dropdown buttons</em>
           </li>
           <li>Create buttons in your html.</li>
       </ol>
-    </div>
-
-
-    <div class="customize">
-      <h4 class="showcase-sub-title"><i class="fa fa-github"></i> Customize Buttons</h4>
-      <ol class="steps">
-          <li><a class="button button-rounded button-flat-action button-tiny" href="https://github.com/alexwolfe/Buttons/"><i class="fa fa-github"></i> Fork or Download</a> the Buttons project on github.
-          </li>
-          <li>Make sure you have <a target="_blank" href="http://sass-lang.com/download.html">Sass</a> and <a target="_blank" href="http://compass-style.org/install/">Compass</a> installed.</li>
-          <li>Edit the _options.scss with your own custom values</li>
-          <li>In the root of the Buttons directory type <strong>compass watch</strong> on the command line.</li>
-          <li>The buttons.css file should now be updated</li>
-      </ol>
-    </div>
   </section>
 
 
@@ -582,9 +585,10 @@
   <!-- JAVASCRIPT INCLUDES -->
   <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="js/scrollto.js"></script>
   <script type="text/javascript" src="js/scrollMonitor.js"></script>
   <script type="text/javascript" src="js/zeroclipboard/dist/ZeroClipboard.js"></script>
+  <script type="text/javascript" src="js/polyfill.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/handlebars.js"></script>
   <script type="text/javascript" src="js/styleguide.js"></script>
   <script type="text/javascript" src="js/buttons.js"></script>
@@ -599,7 +603,6 @@
 
     ga('create', 'UA-41954774-1', 'alexwolfe.github.io');
     ga('send', 'pageview');
-
   </script>
 </body>
 </html>

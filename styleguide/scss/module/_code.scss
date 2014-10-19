@@ -74,6 +74,11 @@
       margin-bottom: 0;
       color: lighten($blue-shade-6, 30%);
       line-height: 1.5;
+      font-size: 13px;
+
+      li {
+        font-size: 13px;
+      }
     }
   }
 

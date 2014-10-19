@@ -12,7 +12,6 @@ $(document).ready(function(){
       this.disableDemoButtons();
       this.generateCodeSamples();
       this.attachScrollMonitor();
-      this.activateSmoothScrolling();
     },
 
     showFooter: function() {
@@ -118,22 +117,13 @@ $(document).ready(function(){
           buttonList.prepend('<li><a href="#' + item.id + '">' + name + '</a></li>');
         }
       });
+
+      this.activateSmoothScrolling();
     },
 
 
     activateSmoothScrolling: function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 1000);
-            return false;
-          }
-        }
-      });
+      smoothScroll.init();
     },
 
     disableDemoButtons: function() {

@@ -703,7 +703,7 @@ body {
   .top-nav .button-dropdown {
     float: right;
     display: none; }
-  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 900px) {
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
     .top-nav .top-nav-links {
       display: none; }
     .top-nav .button-dropdown {
@@ -1033,6 +1033,36 @@ body {
   .showcase-phone .l-over {
     max-width: 490px; }
 
+.docs {
+  position: relative;
+  padding: 140px 120px 60px 120px;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+  border-top: 1px solid #e8edf2; }
+  .docs > header {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    padding: 0px 20px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+    .docs > header .docs-title {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 60px;
+      padding: 0px;
+      margin: 0px;
+      color: #a9adb1; }
+  .docs .docs-content {
+    color: #686d73; }
+    .docs .docs-content > p {
+      line-height: 1.68;
+      font-size: 18px;
+      margin-bottom: 30px; }
+    .docs .docs-content .docs-list > li {
+      font-size: 18px;
+      margin-bottom: 10px; }
+
 /*
 * Codebox Module
 *
@@ -1088,7 +1118,10 @@ body {
       margin-top: 0;
       margin-bottom: 0;
       color: #bae1fe;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: 13px; }
+      .codebox .codebox-body .linenums li {
+        font-size: 13px; }
   .codebox .codebox-overlay {
     cursor: pointer;
     position: absolute;
