@@ -1,0 +1,43 @@
+//One off colors for svg demo
+$svgCaution: #e74c3c;
+$svgSuccess: #27ae60;
+$svgHighlight: #e67e22;
+$svgPrimary: #3498db;
+
+.svgs {
+
+  svg {
+    //TODO: Do we need to support sizes all the way up at the Button module level
+    //or is it the burden of user? Icon fonts like fa currently have to be set
+    //independently by user so we should probably just let them set.
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+
+    use {
+      fill: #bbb;
+
+      &.completed { color: $svgSuccess; }
+      &.overdue { color: $svgCaution; }
+      &.take-survey { color: $svgHighlight; }
+      &.view-completed { color: $svgSuccess;  }
+      &.view-trending { color: $svgPrimary; }
+      &.late { color: $svgCaution; }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// TODO: FIXME -- we'll need to add SVG hover in Button module proper so it //
+// uses the current namespace                                               //
+//////////////////////////////////////////////////////////////////////////////
+.button:hover svg use {
+  &.completed { color: lighten($svgSuccess, 7%); }
+  &.overdue { color: lighten($svgCaution, 7%); }
+  &.take-survey { color: lighten($svgHighlight, 7%); }
+  &.view-completed { color: lighten($svgSuccess, 7%);  }
+  &.view-trending { color: lighten($svgPrimary, 7%); }
+  &.late { color: lighten($svgCaution, 7%); }
+}
+
