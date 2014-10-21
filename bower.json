@@ -1,11 +1,11 @@
 {
   "name": "Buttons",
   "version": "1.1.1",
-  "homepage": "https://github.com/alexwolfe/Buttons",
+  "homepage": "https://github.com/unicorn-ui/Buttons",
   "authors": [
     "alexwolfe"
   ],
-  "description": "A fully customizable CSS button library built using Sass & Compass",
+  "description": "A fully customizable CSS button library built using Sass",
   "main": "css/buttons.css",
   "keywords": [
     "Buttons",
