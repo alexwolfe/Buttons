@@ -1,6 +1,6 @@
 # Buttons 2.0
 
-Welcome to Unicorn-UI! Yup, we've got a new home &#9786;
+Welcome to Unicorn-UI Buttons! Yup, we've got a new home &#9786;
 
 Buttons 2.0 is a fully customizable CSS button library that's built using Sass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
 
