@@ -8,6 +8,10 @@ Buttons 2.0 is a fully customizable CSS button library that's built using Sass, 
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
 
+Quickly get started by [visiting the Buttons Builder Website](http://unicorn-ui.github.io/Buttons/) where you can view live examples and fully customize your Buttons download.
+
+[![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/builder.png "Example of Buttons")](http://unicorn-ui.github.io/Buttons/)
+
 ## Buttons 2.0 Showcase
 
 We've created the Buttons 2.0 [showcase page](http://unicorn-ui.com/buttons/showcase/) to show off the latest version of Buttons. It features copy and paste ready example snippets:
