@@ -7,21 +7,21 @@
 */
 #{$ubtn-namespace}-3d {
   position: relative;
-  top: 0px;
+  top: 0;
 
   @if($ubtn-use-compass) {
-    @include box-shadow(0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+    @include box-shadow(0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2));
   }
   @else {
-    box-shadow: 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2);
   }
 
   &:hover, &:focus {
     @if($ubtn-use-compass) {
-      @include box-shadow(0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2));
+      @include box-shadow(0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2));
     }
     @else {
-      box-shadow: 0px 7px 0px darken($ubtn-bgcolor, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+      box-shadow: 0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2);
     }
   }
 
@@ -33,12 +33,12 @@
     @if($ubtn-use-compass) {
       @include transition-property(all);
       @include transition-duration(.15s);
-      @include box-shadow(0px 2px 0px darken($ubtn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2));
+      @include box-shadow(0 2px 0 darken($ubtn-bgcolor, 20%), 0 3px 3px rgba(0, 0, 0, .2));
     }
     @else {
       transition-property: all;
       transition-duration: .15s;
-      box-shadow: 0px 2px 0px darken($ubtn-bgcolor, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
+      box-shadow: 0 2px 0 darken($ubtn-bgcolor, 20%), 0 3px 3px rgba(0, 0, 0, .2);
     }
   }
 }
@@ -60,18 +60,18 @@
     // .button-border-primary .button-border-action etc.
     &#{$ubtn-color-namespace} {
       @if($ubtn-use-compass) {
-        @include box-shadow(0px 7px 0px darken($ubtn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30));
+        @include box-shadow(0 7px 0 darken($ubtn-background, 10%), 0 8px 3px rgba(0, 0, 0, .30));
       }
       @else {
-        box-shadow: 0px 7px 0px darken($ubtn-background, 10%), 0px 8px 3px rgba(0, 0, 0, .30);
+        box-shadow: 0 7px 0 darken($ubtn-background, 10%), 0 8px 3px rgba(0, 0, 0, .30);
       }
 
       &:hover, &:focus {
         @if($ubtn-use-compass) {
-          @include box-shadow(0px 7px 0px darken($ubtn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30));
+          @include box-shadow(0 7px 0 darken($ubtn-background, 12%), 0 8px 3px rgba(0, 0, 0, .30));
         }
         @else {
-          box-shadow: 0px 7px 0px darken($ubtn-background, 12%), 0px 8px 3px rgba(0, 0, 0, .30);
+          box-shadow: 0 7px 0 darken($ubtn-background, 12%), 0 8px 3px rgba(0, 0, 0, .30);
         }
       }
 
@@ -79,10 +79,10 @@
       &.active,
       &.is-active {
         @if($ubtn-use-compass) {
-          @include box-shadow(0px 2px 0px darken($ubtn-background, 20%), 0px 4px 3px rgba(0, 0, 0, .2));
+          @include box-shadow(0 2px 0 darken($ubtn-background, 20%), 0 4px 3px rgba(0, 0, 0, .2));
         }
         @else {
-          box-shadow: 0px 2px 0px darken($ubtn-background, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
+          box-shadow: 0 2px 0 darken($ubtn-background, 20%), 0 3px 3px rgba(0, 0, 0, .2);
         }
       }
     }

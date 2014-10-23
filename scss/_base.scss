@@ -14,7 +14,7 @@
   text-align: center;
   line-height: $ubtn-height;
   height: $ubtn-height;
-  padding: 0px $ubtn-height;
+  padding: 0 $ubtn-height;
   margin: 0;
   display: inline-block;
   appearance: none;
@@ -27,14 +27,19 @@
     @include transition-property(all);
     @include transition-duration(.3s);
   }
-  else {
+  @else {
     transition-property: all;
     transition-duration:.3s;
   }
 
+
+  &:visited {
+    color: $ubtn-font-color;
+  }
+
   &:hover,
   &:focus {
-    background-color: lighten($ubtn-bgcolor, 5%);
+    background-color: lighten($ubtn-bgcolor, 3%);
     text-decoration: none;
     outline: none;
   }
@@ -42,7 +47,7 @@
   &:active,
   &.active,
   &.is-active {
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, .3);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
     text-decoration: none;
     background-color: desaturate($ubtn-bgcolor, 10%);
     border-color: darken($ubtn-bgcolor, 12%);
@@ -51,11 +56,11 @@
     // Compass Mixin
     @if $ubtn-use-compass {
       @include transition-duration(0s);
-      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .2));
+      @include box-shadow(inset 0 1px 3px rgba(0, 0, 0, .2));
     }
-    else {
+    @else {
       transition-duration: 0s;
-      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
     }
   }
 
@@ -80,7 +85,7 @@
 
     // Compass Mixin
     @if $ubtn-use-compass {
-      @include box-shadow(0px 1px 2px rgba(0, 0, 0, .10) !important);
+      @include box-shadow(0 1px 2px rgba(0, 0, 0, .10) !important);
       @include opacity(.8 !important);
     }
     else {
@@ -108,12 +113,16 @@
   font-variant: small-caps;
 }
 
+#{$ubtn-namespace}-icon-txt-large {
+  font-size: 36px !important;
+}
+
 /*
 * Base padding
 *
 */
 #{$ubtn-namespace}-width-small {
-  padding: 0px 10px !important;
+  padding: 0 10px !important;
 }
 
 
@@ -136,6 +145,10 @@
     background-color: $ubtn-background;
     border-color: $ubtn-background;
     color: $ubtn-color;
+
+    &:visited {
+      color: $ubtn-color;
+    }
 
     &:hover,
     &:focus {

@@ -101,6 +101,10 @@ body {
 * Addresses `outline` inconsistency between Chrome and other browsers.
 */
 
+a, a:visited {
+  color: $blue-shade-6;
+}
+
 a:focus {
   outline: thin dotted;
 }
@@ -498,4 +502,25 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+::-webkit-input-placeholder {
+  color: lighten($gray, 20%);
+}
+
+::-moz-placeholder {
+  color: lighten($gray, 20%);
+}
+
+:-ms-input-placeholder {
+  color: lighten($gray, 20%);
+}
+
+:-moz-placeholder {
+  color: lighten($gray, 20%);
 }

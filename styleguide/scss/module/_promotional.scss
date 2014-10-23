@@ -1,0 +1,85 @@
+/*
+* Promotional Module
+*
+*/
+
+$line-height: 24px;
+
+.promotional {
+  background: rgba($white, .9);
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  z-index: $layer-5;
+  padding: 10px;
+
+  .form-field {
+    margin: 0px auto;
+    width: 340px;
+  }
+
+  .newsletter-email {
+    float: left;
+    padding: 4px 8px;
+    vertical-align: middle;
+    line-height: $line-height;
+    border: 1px solid lighten($gray, 10%);
+  }
+
+  .email-icon {
+    float: left;
+    border: 1px solid lighten($gray, 10%);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px 8px;
+    line-height: $line-height;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-right: -1px;;
+    color: lighten($gray, 10%);
+  }
+
+  .newsletter-button {
+    line-height: $line-height;
+  }
+
+  .coming-soon {
+    color: $blue-shade-5;
+    font-size: 24px;
+    margin: 12px 0 8px;
+
+    .fa-hand-o-left {
+      margin-left: 12px;
+    }
+  }
+
+  .newsletter-button {
+    float: left;
+    border: 1px solid lighten($gray, 10%);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 4px 8px;
+    line-height: 24px;
+    text-align: center;
+    background-color: $blue-shade-5;
+    margin-left: -2px;
+    font-size: 14px;
+    color: $white;
+    transition: all .3s ease-in;
+
+    &:hover {
+      color: rgba(255, 255, 255, .9);
+      background-color: $blue-shade-6;
+    }
+  }
+}
+
+
+
+
+

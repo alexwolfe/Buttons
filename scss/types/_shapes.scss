@@ -28,7 +28,7 @@
 #{$ubtn-namespace}-circle,
 #{$ubtn-namespace}-box,
 #{$ubtn-namespace}-square {
-  padding: 0px !important;
+  padding: 0 !important;
   width: $ubtn-height;
 
   @each $ubtn-sizes-hash in $ubtn-sizes {

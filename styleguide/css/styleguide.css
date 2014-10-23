@@ -11,6 +11,10 @@
 *
 * Can be use for z-index
 */
+/*
+* Mobile Layout Breakpoints
+*
+*/
 /*! normalize.css v1.0.0 | MIT License | git.io/normalize */
 /* ==========================================================================
  HTML5 display definitions
@@ -98,6 +102,9 @@ body {
 /*
 * Addresses `outline` inconsistency between Chrome and other browsers.
 */
+a, a:visited {
+  color: #229ffd; }
+
 a:focus {
   outline: thin dotted; }
 
@@ -440,6 +447,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.clear {
+  clear: both; }
+
+::-webkit-input-placeholder {
+  color: #dee0e2; }
+
+::-moz-placeholder {
+  color: #dee0e2; }
+
+:-ms-input-placeholder {
+  color: #dee0e2; }
+
+:-moz-placeholder {
+  color: #dee0e2; }
+
+body {
+  padding-bottom: 100px; }
+
 /*
 * Layout margin & padding
 *
@@ -447,62 +472,182 @@ table {
 .l-margin-10 {
   margin: 10px; }
 
+.l-margin-top-10 {
+  margin-top: 10px; }
+
+.l-margin-bottom-10 {
+  margin-bottom: 10px; }
+
 .l-padding-10 {
   padding: 10px; }
+
+.l-padding-top-10 {
+  padding-top: 10px; }
+
+.l-padding-bottom-10 {
+  padding-bottom: 10px; }
 
 .l-margin-20 {
   margin: 20px; }
 
+.l-margin-top-20 {
+  margin-top: 20px; }
+
+.l-margin-bottom-20 {
+  margin-bottom: 20px; }
+
 .l-padding-20 {
   padding: 20px; }
+
+.l-padding-top-20 {
+  padding-top: 20px; }
+
+.l-padding-bottom-20 {
+  padding-bottom: 20px; }
 
 .l-margin-30 {
   margin: 30px; }
 
+.l-margin-top-30 {
+  margin-top: 30px; }
+
+.l-margin-bottom-30 {
+  margin-bottom: 30px; }
+
 .l-padding-30 {
   padding: 30px; }
+
+.l-padding-top-30 {
+  padding-top: 30px; }
+
+.l-padding-bottom-30 {
+  padding-bottom: 30px; }
 
 .l-margin-40 {
   margin: 40px; }
 
+.l-margin-top-40 {
+  margin-top: 40px; }
+
+.l-margin-bottom-40 {
+  margin-bottom: 40px; }
+
 .l-padding-40 {
   padding: 40px; }
+
+.l-padding-top-40 {
+  padding-top: 40px; }
+
+.l-padding-bottom-40 {
+  padding-bottom: 40px; }
 
 .l-margin-50 {
   margin: 50px; }
 
+.l-margin-top-50 {
+  margin-top: 50px; }
+
+.l-margin-bottom-50 {
+  margin-bottom: 50px; }
+
 .l-padding-50 {
   padding: 50px; }
+
+.l-padding-top-50 {
+  padding-top: 50px; }
+
+.l-padding-bottom-50 {
+  padding-bottom: 50px; }
 
 .l-margin-60 {
   margin: 60px; }
 
+.l-margin-top-60 {
+  margin-top: 60px; }
+
+.l-margin-bottom-60 {
+  margin-bottom: 60px; }
+
 .l-padding-60 {
   padding: 60px; }
+
+.l-padding-top-60 {
+  padding-top: 60px; }
+
+.l-padding-bottom-60 {
+  padding-bottom: 60px; }
 
 .l-margin-70 {
   margin: 70px; }
 
+.l-margin-top-70 {
+  margin-top: 70px; }
+
+.l-margin-bottom-70 {
+  margin-bottom: 70px; }
+
 .l-padding-70 {
   padding: 70px; }
+
+.l-padding-top-70 {
+  padding-top: 70px; }
+
+.l-padding-bottom-70 {
+  padding-bottom: 70px; }
 
 .l-margin-80 {
   margin: 80px; }
 
+.l-margin-top-80 {
+  margin-top: 80px; }
+
+.l-margin-bottom-80 {
+  margin-bottom: 80px; }
+
 .l-padding-80 {
   padding: 80px; }
+
+.l-padding-top-80 {
+  padding-top: 80px; }
+
+.l-padding-bottom-80 {
+  padding-bottom: 80px; }
 
 .l-margin-90 {
   margin: 90px; }
 
+.l-margin-top-90 {
+  margin-top: 90px; }
+
+.l-margin-bottom-90 {
+  margin-bottom: 90px; }
+
 .l-padding-90 {
   padding: 90px; }
+
+.l-padding-top-90 {
+  padding-top: 90px; }
+
+.l-padding-bottom-90 {
+  padding-bottom: 90px; }
 
 .l-margin-100 {
   margin: 100px; }
 
+.l-margin-top-100 {
+  margin-top: 100px; }
+
+.l-margin-bottom-100 {
+  margin-bottom: 100px; }
+
 .l-padding-100 {
   padding: 100px; }
+
+.l-padding-top-100 {
+  padding-top: 100px; }
+
+.l-padding-bottom-100 {
+  padding-bottom: 100px; }
 
 /*
 * Layout Over & Under
@@ -533,8 +678,127 @@ table {
   margin-left: auto;
   margin-right: auto; }
 
-.l-longshadows {
-  margin-bottom: 50px; }
+.l-right {
+  text-align: right; }
+
+.l-left {
+  text-align: left; }
+
+/*
+* Background Colors
+*
+*/
+.background-dark {
+  color: #FFFFFF;
+  background: #229ffd; }
+  .background-dark a {
+    color: #FFFFFF; }
+
+.background-light {
+  color: #a9adb1;
+  background: #FFFFFF; }
+
+.background-inverse {
+  color: #FFFFFF;
+  background: #145f98; }
+  .background-inverse a {
+    color: #FFFFFF; }
+
+.background-subtle {
+  background: #f3faff; }
+
+/*
+* Background Patterns
+*
+*/
+.pattern-p6 {
+  background: url("../images/backgrounds/p6.png") top left repeat; }
+
+.pattern-debut {
+  background: url("../images/backgrounds/debut_light.png") top left repeat; }
+
+/*
+* Background Shapes
+*
+*/
+.background-arrow-top-left {
+  background: url("../images/arrows/white-arrows-left.png") left -200px no-repeat; }
+
+.background-arrow-top-right {
+  background: url("../images/arrows/white-arrows-right.png") right -200px no-repeat; }
+
+.background-blue-arrow-top-left {
+  background: url("../images/arrows/blue-arrows-left.png") left -200px no-repeat; }
+
+.background-blue-arrow-top-right {
+  background: url("../images/arrows/blue-arrows-right.png") right -200px no-repeat; }
+
+/*
+* Text Colors
+*
+*/
+.text-nuetral {
+  color: #a9adb1; }
+
+.text-light {
+  color: #FFFFFF; }
+  .text-light a {
+    color: #FFFFFF; }
+
+.top-nav {
+  display: none;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 6;
+  background: rgba(255, 255, 255, 0.9);
+  height: 60px;
+  padding: 0px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .top-nav .button-dropdown {
+    float: right;
+    display: none; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+    .top-nav .top-nav-links {
+      display: none; }
+    .top-nav .button-dropdown {
+      display: block; } }
+  .top-nav > h1 {
+    font-weight: 300;
+    line-height: 60px;
+    height: 60px;
+    font-size: 23px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    text-transform: uppercase;
+    float: left; }
+    .top-nav > h1 a {
+      color: #a9adb1;
+      text-decoration: none; }
+  .top-nav .top-nav-links {
+    float: right;
+    margin: 0px 20px 0px 0px;
+    padding: 0px; }
+    .top-nav .top-nav-links li {
+      float: right;
+      margin: 0px; }
+    .top-nav .top-nav-links a {
+      -webkit-transition-property: all;
+              transition-property: all;
+      -webkit-transition-duration: .3s;
+              transition-duration: .3s;
+      font-weight: 300;
+      display: inline-block;
+      line-height: 60px;
+      padding: 0px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px; }
+      .top-nav .top-nav-links a:hover {
+        background: white; }
 
 /*
 * Logo Icon
@@ -593,6 +857,68 @@ table {
     font-size: 12px; }
 
 /*
+* Promotional Module
+*
+*/
+.promotional {
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+  padding: 10px; }
+  .promotional .form-field {
+    margin: 0px auto;
+    width: 340px; }
+  .promotional .newsletter-email {
+    float: left;
+    padding: 4px 8px;
+    vertical-align: middle;
+    line-height: 24px;
+    border: 1px solid #c4c7c9; }
+  .promotional .email-icon {
+    float: left;
+    border: 1px solid #c4c7c9;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px 8px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-right: -1px;
+    color: #c4c7c9; }
+  .promotional .newsletter-button {
+    line-height: 24px; }
+  .promotional .coming-soon {
+    color: #61bafd;
+    font-size: 24px;
+    margin: 12px 0 8px; }
+    .promotional .coming-soon .fa-hand-o-left {
+      margin-left: 12px; }
+  .promotional .newsletter-button {
+    float: left;
+    border: 1px solid #c4c7c9;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 4px 8px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #61bafd;
+    margin-left: -2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    -webkit-transition: all .3s ease-in;
+            transition: all .3s ease-in; }
+    .promotional .newsletter-button:hover {
+      color: rgba(255, 255, 255, 0.9);
+      background-color: #229ffd; }
+
+/*
 * Hero Module
 *
 */
@@ -606,10 +932,10 @@ table {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  height: 470px; }
+  height: 560px; }
   .hero .hero-pitch {
     width: 320px;
-    margin: 0px auto 30px auto;
+    margin: 0px auto 30px;
     font-size: 16px;
     font-weight: 100;
     line-height: 24px; }
@@ -618,33 +944,72 @@ table {
     font-weight: 500;
     line-height: 44px;
     height: 40px; }
-
-.button-list {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px; }
-  .button-list > li {
-    display: inline-block;
-    margin: 10px; }
+  .hero .hero-badge {
+    border-top: 2px solid #1a7fcc;
+    position: absolute;
+    z-index: 2;
+    color: #1a7fcc;
+    text-decoration: none;
+    width: 140px;
+    height: 30px; }
+  .hero .hero-unicorn-badge {
+    padding: 8px 0px 0px 30px;
+    bottom: 20px;
+    left: 20px;
+    color: #1a7fcc;
+    font-size: 12px; }
+    .hero .hero-unicorn-badge > i {
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      z-index: 1;
+      font-size: 40px;
+      line-height: 30px;
+      height: 30px;
+      font-style: normal;
+      font-weight: bold; }
+    .hero .hero-unicorn-badge > em {
+      display: block;
+      font-style: normal; }
+  .hero .hero-mobile-badge {
+    padding: 8px 10px 0px 10px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-align: left; }
+    .hero .hero-mobile-badge > i {
+      margin: 0px 2px; }
 
 .phone {
-  position: relative;
-  height: 810px;
-  width: 380px;
-  background: url("../images/iphone.png") top left no-repeat; }
-  .phone .phone-status-bar {
-    background: url("../images/iphone-status-bar.png") top left no-repeat;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 3;
+  height: 800px;
+  width: 440px;
+  background: url("../images/mobile/iphone-6.png") top left no-repeat; }
+  .phone .phone-screen {
     position: absolute;
-    top: 120px;
-    left: 30px;
-    right: 30px;
+    width: 300px;
+    height: 538px;
+    top: 130px;
+    left: 70px;
+    z-index: 2;
+    background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%); }
+  .phone .phone-status-bar {
+    background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     height: 20px;
-    z-index: 2; }
+    z-index: 1; }
   .phone .phone-header {
     padding: 20px 0px 0px 0px;
-    background: #0286ea;
+    background: rgba(255, 255, 255, 0.2);
     text-align: center;
-    height: 44px; }
+    height: 44px;
+    line-height: 44px; }
     .phone .phone-header > h3 {
       font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
       font-weight: 100;
@@ -652,90 +1017,175 @@ table {
       margin: 0px;
       padding: 0px;
       line-height: 44px; }
-    .phone .phone-header .button-left {
-      position: absolute;
-      left: 0px;
-      top: 22px;
-      z-index: 1; }
+    .phone .phone-header .button-left,
     .phone .phone-header .button-right {
       position: absolute;
+      z-index: 1;
+      margin: 0px; }
+    .phone .phone-header .button-left {
+      left: 0px;
+      top: 25px; }
+    .phone .phone-header .button-right {
       right: 0px;
-      top: 22px;
-      z-index: 1; }
-  .phone .phone-screen {
-    position: absolute;
-    top: 120px;
-    left: 30px;
-    right: 30px;
-    bottom: 124px;
-    z-index: 1; }
+      top: 22px; }
+  .phone .phone-body {
+    padding: 10px; }
   .phone .phone-footer {
-    padding: 20px 60px;
-    background: #0994fd;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
     position: absolute;
-    left: 30px;
-    right: 30px;
-    bottom: 124px;
-    z-index: 2; }
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1; }
 
+/*
+* Showcase Module
+*
+* used to describe and showcase elements
+*/
 .showcase {
-  padding: 60px; }
-  .showcase.is-light {
-    color: #a9adb1; }
-  .showcase.is-dark {
-    color: #FFFFFF; }
+  position: relative;
+  padding: 60px 120px;
+  /*
+  * Showcase Titles
+  *
+  */
+  /*
+  * Buttons
+  *
+  */ }
+  .showcase .showcase-header-top-right,
+  .showcase .showcase-header-top-left {
+    position: absolute;
+    top: 40px;
+    z-index: 3; }
+  .showcase .showcase-header-top-right {
+    right: 60px; }
+  .showcase .showcase-header-top-left {
+    left: 60px; }
   .showcase .showcase-title,
   .showcase .showcase-sub-title {
     font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300; }
+    font-weight: 100; }
   .showcase .showcase-title {
-    font-size: 26px;
+    font-size: 32px;
     margin: 0px 0px 0px 0px;
     text-transform: uppercase; }
   .showcase .showcase-sub-title {
     font-size: 16px;
     margin: 0px 0px 40px 0px; }
+  .showcase .button,
+  .showcase .button-dropdown,
+  .showcase .button-group {
+    margin: 5px; }
+    .showcase .button .button,
+    .showcase .button .button-dropdown,
+    .showcase .button-dropdown .button,
+    .showcase .button-dropdown .button-dropdown,
+    .showcase .button-group .button,
+    .showcase .button-group .button-dropdown {
+      margin: 0px; }
 
 /*
-* Showcase Colors
+* Showcase with Phone
 *
+* used to showcase a phone module
 */
-.showcase-dark {
-  color: #FFF;
-  background: #229ffd; }
+.showcase-phone {
+  min-height: 480px;
+  padding: 160px 430px 60px 40px; }
+  .showcase-phone .l-over {
+    max-width: 490px; }
 
-.subscribe-form {
-  padding: 60px 60px 0 60px; }
-
-.mc-field-group label {
-  margin-left: 2px; }
-.mc-field-group input[type="email"] {
-  font-size: 12px;
-  padding: 4px;
-  border-radius: 3px; }
-.mc-field-group #mc-embedded-subscribe {
-  margin-top: -2px; }
-
-/*
-* Code Base Styles
-*
-*/
-.prettyprint {
+.docs {
   position: relative;
-  overflow: hidden;
-  padding: 20px;
-  border: 1px solid #EEE;
-  border-radius: 10px;
-  font-family: Monaco, Consolas, monospace;
-  font-size: 14px; }
-  .prettyprint.is-preview {
-    max-height: 100px; }
-  .prettyprint .linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #bae1fe;
-    line-height: 1.5; }
-  .prettyprint .prettyprint-overlay {
+  padding: 140px 120px 60px 120px;
+  font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif; }
+  .docs > header {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    padding: 0px 40px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 3px 3px 0px; }
+    .docs > header .docs-title {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 60px;
+      padding: 0px;
+      margin: 0px;
+      color: #686d73; }
+  .docs .docs-content > p {
+    line-height: 1.7;
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .docs .docs-content .docs-list > li {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+/*
+* Codebox Module
+*
+*/
+.codebox {
+  border: 1px solid #e8edf2;
+  border-radius: 4px;
+  position: relative;
+  background: #FFFFFF;
+  margin-top: 40px;
+  /*
+  * Codebox Header
+  *
+  */
+  /*
+  * Codebox Body
+  *
+  */ }
+  .codebox header {
+    border-bottom: 1px solid #e8edf2;
+    height: 39px; }
+    .codebox header h3, .codebox header .codebox-copy {
+      padding: 0px 20px;
+      margin: 0px;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #a9adb1; }
+    .codebox header h3 {
+      line-height: 39px;
+      float: left; }
+    .codebox header .codebox-copy {
+      height: 39px;
+      float: right;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      appearance: none;
+      border-left: 1px solid #e8edf2;
+      background: #FFFFFF;
+      display: none; }
+      .codebox header .codebox-copy.is-visible {
+        display: block; }
+      .codebox header .codebox-copy:hover, .codebox header .codebox-copy.is-selected, .codebox header .codebox-copy.zeroclipboard-is-hover {
+        color: #229ffd; }
+  .codebox .codebox-body {
+    margin: 0px;
+    padding: 20px;
+    font-family: Monaco, Consolas, monospace;
+    font-size: 13px;
+    overflow: auto; }
+    .codebox .codebox-body .linenums {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #bae1fe;
+      line-height: 1.5;
+      font-size: 13px; }
+      .codebox .codebox-body .linenums li {
+        font-size: 13px; }
+  .codebox .codebox-overlay {
     cursor: pointer;
     position: absolute;
     top: 0px;
@@ -744,7 +1194,6 @@ table {
     bottom: 0px;
     z-index: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(white));
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), white);
     background: linear-gradient(rgba(255, 255, 255, 0.1), white); }
 
 /*
@@ -855,8 +1304,9 @@ table {
 .arrow {
   position: absolute;
   z-index: 1;
-  font-size: 680px;
-  height: 680px; }
+  font-size: 681px;
+  height: 680px;
+  width: 2310px; }
 
 /*
 * Arrow Type
@@ -888,11 +1338,47 @@ table {
   left: 50%; }
 
 /*
-* Font Awesome Overrides
+* Arrow Colors
 *
 */
-.fa-2x {
-  line-height: 80px; }
-  .fa-2x.fa-rss, .fa-2x.fa-google-plus {
-    position: relative;
-    top: 2px; }
+.arrow-inverse {
+  color: #229ffd; }
+
+.arrow-dark {
+  color: #1398fd; }
+
+.arrow-light {
+  color: #f3faff; }
+
+.svgs svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto; }
+  .svgs svg use {
+    fill: #bbb; }
+    .svgs svg use.completed {
+      color: #27ae60; }
+    .svgs svg use.overdue {
+      color: #e74c3c; }
+    .svgs svg use.take-survey {
+      color: #e67e22; }
+    .svgs svg use.view-completed {
+      color: #27ae60; }
+    .svgs svg use.view-trending {
+      color: #3498db; }
+    .svgs svg use.late {
+      color: #e74c3c; }
+
+.button:hover svg use.completed {
+  color: #2ecb70; }
+.button:hover svg use.overdue {
+  color: #eb695c; }
+.button:hover svg use.take-survey {
+  color: #ea9142; }
+.button:hover svg use.view-completed {
+  color: #2ecb70; }
+.button:hover svg use.view-trending {
+  color: #52a7e0; }
+.button:hover svg use.late {
+  color: #eb695c; }

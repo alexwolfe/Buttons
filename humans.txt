@@ -14,6 +14,9 @@
     Google Prettify Team
     Font Awesome Team.
     jQuery Plugin Boiler Plate @addyosmani and @zenorocha
+    The Saucelabs Team.
+    The QUnit Team.
+    The Travic CI Team.
 
 # TECHNOLOGY COLOPHON
 

@@ -10,9 +10,11 @@
   <meta name="viewport" content="width=device-width">
 
   <!-- UNICORN CSS STYLES -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
   <link rel="stylesheet" href="css/styleguide.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/grids.css">
+
 
   <!-- ICONS & FONTS -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,19 +30,34 @@
   <title>Buttons - A highly customizable CSS button library.</title>
 </head>
 <body>
+  <!-- NAV -->
+  <nav id="top-nav" class="top-nav clearfix animated fadeInDown">
+    <h1><a href="#hero">Buttons</a></h1>
 
-  <header class="hero hero-buttons">
+    <ul class="top-nav-links"></ul>
+
+    <span class="button-dropdown" data-buttons="dropdown">
+      <button class="button button-plain button">Menu</button>
+      <ul class="button-dropdown-list is-below">
+      </ul>
+    </span>
+  </nav>
+
+
+
+  <!-- HERO -->
+  <header id="hero" class="hero hero-buttons">
     <div class="l-under">
-      <div class="arrow arrow-half arrow-top-left">
+      <div class="arrow arrow-half arrow-dark arrow-top-left">
         <i class="icon-arrow-top-left"></i>
       </div>
-      <div class="arrow arrow-half arrow-top-right">
+      <div class="arrow arrow-half arrow-dark arrow-top-right">
         <i class="icon-arrow-top-right"></i>
       </div>
-      <div class="arrow arrow-half arrow-bottom-left">
+      <div class="arrow arrow-half arrow-dark arrow-bottom-left">
         <i class="icon-arrow-bottom-left"></i>
       </div>
-      <div class="arrow arrow-half arrow-bottom-right">
+      <div class="arrow arrow-half arrow-dark arrow-bottom-right">
         <i class="icon-arrow-bottom-right"></i>
       </div>
     </div>
@@ -55,506 +72,567 @@
 
       <a class="hero-cta button button-plain button-uppercase button-rounded" href="css/buttons.css">Download</a>
     </div>
+
+
+    <!-- BADGES -->
+    <div class="hero-badge hero-mobile-badge" title="Desktop and Mobile Ready">
+      <i class="fa fa-desktop"></i>
+      <i class="fa fa-laptop"></i>
+      <i class="fa fa-tablet"></i>
+      <i class="fa fa-mobile"></i>
+    </div>
+
+    <a class="hero-badge hero-unicorn-badge" href="http://www.unicorn-ui.com">
+      <i>U</i>
+      <em>A Unicorn UI Module</em>
+      <em>www.unicorn-ui.com</em>
+    </a>
   </header>
 
-  <!-- SHAPES & SIZES -->
-  <section class="showcase is-light">
-    <h3 class="showcase-title l-center">Shapes &amp; Sizes</h3>
-    <h4 class="showcase-sub-title l-center">Choose from a variety of shapes and sizes.</h4>
 
-    <div class="showcase-examples l-center">
-      <a href="http://unicorn-ui.com/" class="button button-primary button-giant">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-rounded button-giant">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-pill button-giant">Go</a>
-      <button class="button button-primary button-square button-giant"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-box button-giant"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-circle button-giant"><i class="fa fa-plus"></i></button>
-      <br/>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-jumbo">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-rounded button-jumbo">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-pill button-jumbo">Go</a>
-      <button class="button button-primary button-square button-jumbo"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-box button-jumbo"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-circle button-jumbo"><i class="fa fa-plus"></i></button>
-      <br/>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-rounded button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-pill button-large">Go</a>
-      <button class="button button-primary button-square button-large"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-box button-large"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-circle button-large"><i class="fa fa-plus"></i></button>
-      <br/>
-      <a href="http://unicorn-ui.com/" class="button button-primary">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-rounded">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-pill">Go</a>
-      <button class="button button-primary button-square"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-box"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-circle"><i class="fa fa-plus"></i></button>
-      <br/>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-small">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-rounded button-small">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-pill button-small">Go</a>
-      <button class="button button-primary button-square button-small"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-box button-small"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-circle button-small"><i class="fa fa-plus"></i></button>
-      <br/>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-tiny">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-rounded button-tiny">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-primary button-pill button-tiny">Go</a>
-      <button class="button button-primary button-square button-tiny"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-box button-tiny"><i class="fa fa-plus"></i></button>
-      <button class="button button-primary button-circle button-tiny"><i class="fa fa-plus"></i></button>
+  <!-- BUTTON EXAMPLES -->
+  <!-- SHAPES & SIZES -->
+  <section id="buttons-sizes" class="showcase background-light">
+    <div class="l-under">
+      <div class="arrow arrow-half arrow-light arrow-top-left">
+        <i class="icon-arrow-top-left"></i>
+      </div>
+      <div class="arrow arrow-half arrow-light arrow-top-right">
+        <i class="icon-arrow-top-right"></i>
+      </div>
+    </div>
+
+    <div class="l-over showcase-content">
+      <h3 class="showcase-title l-center">Shapes &amp; Sizes</h3>
+      <h4 class="showcase-sub-title l-center">Choose from a variety of shapes and sizes.</h4>
+
+  <div class="showcase-examples l-center">
+  <a href="http://unicorn-ui.com/" class="button button-tiny">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-rounded button-tiny">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-pill button-tiny">Go</a>
+  <button class="button button-square button-tiny"><i class="fa fa-plus"></i></button>
+  <button class="button button-box button-tiny"><i class="fa fa-plus"></i></button>
+  <button class="button button-circle button-tiny"><i class="fa fa-plus"></i></button>
+  <br/>
+  <a href="http://unicorn-ui.com/" class="button button-primary button-small">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-primary button-rounded button-small">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-primary button-pill button-small">Go</a>
+  <button class="button button-primary button-square button-small"><i class="fa fa-plus"></i></button>
+  <button class="button button-primary button-box button-small"><i class="fa fa-plus"></i></button>
+  <button class="button button-primary button-circle button-small"><i class="fa fa-plus"></i></button>
+  <br/>
+  <a href="http://unicorn-ui.com/" class="button button-action">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-action button-rounded">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-action button-pill">Go</a>
+  <button class="button button-action button-square"><i class="fa fa-plus"></i></button>
+  <button class="button button-action button-box"><i class="fa fa-plus"></i></button>
+  <button class="button button-action button-circle"><i class="fa fa-plus"></i></button>
+  <br/>
+  <a href="http://unicorn-ui.com/" class="button button-highlight button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-highlight button-rounded button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-highlight button-pill button-large">Go</a>
+  <button class="button button-highlight button-square button-large"><i class="fa fa-plus"></i></button>
+  <button class="button button-highlight button-box button-large"><i class="fa fa-plus"></i></button>
+  <button class="button button-highlight button-circle button-large"><i class="fa fa-plus"></i></button>
+  <br/>
+  <a href="http://unicorn-ui.com/" class="button button-caution button-jumbo">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-caution button-rounded button-jumbo">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-caution button-pill button-jumbo">Go</a>
+  <button class="button button-caution button-square button-jumbo"><i class="fa fa-plus"></i></button>
+  <button class="button button-caution button-box button-jumbo"><i class="fa fa-plus"></i></button>
+  <button class="button button-caution button-circle button-jumbo"><i class="fa fa-plus"></i></button>
+  <br/>
+  <a href="http://unicorn-ui.com/" class="button button-royal button-giant">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-royal button-rounded button-giant">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-royal button-pill button-giant">Go</a>
+  <button class="button button-royal button-square button-giant"><i class="fa fa-plus"></i></button>
+  <button class="button button-royal button-box button-giant"><i class="fa fa-plus"></i></button>
+  <button class="button button-royal button-circle button-giant"><i class="fa fa-plus"></i></button></div>
+
     </div>
   </section>
-
-
   <!-- BORDER BUTTONS -->
-  <section class="showcase showcase-inverse">
-    <header class="l-center">
-      <h3 class="showcase-title">Border &amp; Borderless Buttons</h3>
-      <h4 class="showcase-sub-title ">
-        Icons provided by <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
-      </h4>
-      <h4 class="showcase-sub-title">Great for mobile devices</h4>
-    </header>
+  <div id="buttons-border" class="background-dark l-margin-bottom-60">
+    <section class="showcase showcase-phone background-arrow-top-right">
 
-    <div class="grid-fixed">
-      <div class="showcase-examples l-center c6">
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-star"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-trash-o"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-tag"></i></a>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-volume-down"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-volume-up"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-wifi"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-times"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-power-off"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-times"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-heart-o"></i></button>
-        <button class="button button-jumbo button-plain button-border button-circle"><i class="fa fa-spinner"></i></button>
-        <br/>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-reply"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-star"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-trash-o"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-tag"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-volume-down"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-volume-up"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-wifi"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-times"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-power-off"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-times"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-heart-o"></i></button>
-        <button class="button button-jumbo button-plain button-border button-box"><i class="fa fa-spinner"></i></button>
-        <br/>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-reply"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-star"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-trash-o"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-tag"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-volume-down"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-volume-up"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-wifi"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-times"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-power-off"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-times"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-heart-o"></i></button>
-        <button class="button button-jumbo button-plain button-borderless"><i class="fa fa-spinner"></i></button>
+      <div class="showcase-content">
+        <header class="l-center">
+          <h3 class="showcase-title">Border &amp; Borderless Buttons</h3>
+          <h4 class="showcase-sub-title ">
+            Icons provided by <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Great for mobile devices</h4>
+        </header>
+
+      <div class="showcase-examples l-center svgs">
+        <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
+        <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
+        <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
+        <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
       </div>
 
       <!-- Phone Demo -->
-      <div class="c6">
-        <div class="phone">
+      <div class="phone">
+        <div class="phone-screen">
           <div class="phone-status-bar"></div>
-          <div class="phone-screen">
-            <header class="phone-header">
-              <button aria-label="Back" class="button-left button button-borderless button-plain"><i class="fa fa-chevron-left"></i> Back</button>
-              <h3>Buttons App</h3>
-              <button aria-label="Email" class="button-right button button-borderless button-plain"><i class="fa fa-envelope-o"></i></button>
-            </header>
+
+          <header class="phone-header">
+            <button aria-label="Back" class="button-left button button-small button-borderless button-plain"><i class="fa fa-chevron-left"></i> Back</button>
+            <h3>Buttons App</h3>
+            <button aria-label="Email" class="button-right button button-borderless button-plain"><i class="fa fa-envelope-o"></i></button>
+          </header>
+
+          <div class="phone-body l-center">
             <button class="button button-large button-plain button-border button-circle"><i class="fa fa-bitcoin"></i></button>
             <button class="button button-large button-plain button-border button-circle"><i class="fa fa-refresh"></i></button>
             <button class="button button-large button-plain button-border button-circle"><i class="fa fa-angle-left"></i></button>
             <button class="button button-large button-plain button-border button-circle"><i class="fa fa-angle-right"></i></button>
-          </div>
+            <button class="button button-large button-plain button-border button-box"><i class="fa fa-reply"></i></button>
+            <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
+            <button class="button button-large button-plain button-border button-box"><i class="fa fa-trash-o"></i></button>
+            <button class="button button-large button-plain button-border button-box"><i class="fa fa-tag"></i></button>
+            <button class="button button-large button-plain button-border button-box"><i class="fa fa-volume-down"></i></button>
+            <button class="button button-large button-plain button-border button-box"><i class="fa fa-volume-up"></i></button>
+            <button class="button button-large button-plain button-border button-square"><i class="fa fa-reply"></i></button>
+            <button class="button button-large button-plain button-border button-square"><i class="fa fa-star"></i></button>
+            <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
+            <button class="button button-large button-plain button-border button-square"><i class="fa fa-tag"></i></button>
+            <button class="button button-large button-plain button-border button-square"><i class="fa fa-volume-down"></i></button>
+            <button class="button button-large button-plain button-border button-square"><i class="fa fa-volume-up"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-reply"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-star"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-trash-o"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-volume-down"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-volume-up"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-volume-up"></i></button>
+            <button class="button button-large button-plain button-borderless"><i class="fa fa-volume-up"></i></button>
+                    </div>
+
           <footer class="phone-footer">
             <a href="http://unicorn-ui.com/" class="button button-plain button-border button-pill button-block button-uppercase">Sign Up Free</a>
           </footer>
         </div>
       </div>
-    </div>
-  </section>
 
+    </section>
+  </div>
 
-  <!-- GLOWING BUTTONS -->
-  <section class="showcase">
-    <header class="l-center">
-      <h3 class="showcase-title">Glowing</h3>
-      <h4 class="showcase-sub-title"></h4>
-    </header>
-
-    <div class="showcase-examples l-center">
-      <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-raised button-primary">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-glow button-border button-rounded button-primary">Go</a>
-      <button class="button button-glow button-circle button-action button-jumbo"><i class="fa fa-thumbs-up"></i></button>
-      <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-highlight">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-caution">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-royal">Go</a>
-    </div>
-  </section>
-
-
-  <!-- Raised BUTTONS -->
-  <section class="showcase">
-    <header class="l-center">
-      <h3 class="showcase-title">Raised Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
-    </header>
-
-    <div class="showcase-examples l-center">
-      <button class="button button-raised button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
-      <a href="http://unicorn-ui.com/" class="button button-raised button-primary button-rounded">Check out the new site!</a>
-      <a href="http://unicorn-ui.com/" class="button button-raised button-action button-pill">Visit Us!</a>
-      <button class="button button-raised button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
-      <a href="http://unicorn-ui.com/" class="button button-raised button-caution"><i class="fa fa-camera"></i> Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-raised button-royal">Say Hi!</a>
-      <a href="http://unicorn-ui.com/" class="button button-raised button-inverse">Say Hi!</a>
-    </div>
-  </section>
 
 
   <!-- 3D BUTTONS -->
-  <section class="showcase">
+  <section id="buttons-3d" class="showcase showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">3D Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">Mimics the appearance of a real life button</h4>
     </header>
 
-    <div class="showcase-examples l-center">
-      <button class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
-      <a href="http://unicorn-ui.com/" class="button button-3d button-primary button-rounded">Check out the new site!</a>
-      <a href="http://unicorn-ui.com/" class="button button-3d button-action button-pill">Visit Us!</a>
-      <button class="button button-3d button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
-      <a href="http://unicorn-ui.com/" class="button button-3d button-caution"><i class="fa fa-camera"></i> Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-3d button-royal">Say Hi!</a>
+  <div class="showcase-examples l-center">
+  <button class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+  <a href="http://unicorn-ui.com/" class="button button-3d button-primary button-rounded">Check out the new site!</a>
+  <a href="http://unicorn-ui.com/" class="button button-3d button-action button-pill">Visit Us!</a>
+  <button class="button button-3d button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+  <a href="http://unicorn-ui.com/" class="button button-3d button-caution"><i class="fa fa-camera"></i> Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-3d button-royal">Say Hi!</a></div>
+
+  </section>
+  <!-- Raised BUTTONS -->
+  <section id="buttons-raised" class="showcase showcase-content background-light">
+      <header class="l-center">
+        <h3 class="showcase-title">Raised Buttons</h3>
+        <h4 class="showcase-sub-title">A classic looking button that offers great depth and affordance</h4>
+      </header>
+
+  <div class="showcase-examples l-center">
+  <a href="http://unicorn-ui.com/" class="button button-raised button-primary button-pill">Visit Us!</a>
+  <button class="button button-raised button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+  <a href="http://unicorn-ui.com/" class="button button-raised button-caution"><i class="fa fa-camera"></i> Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-raised button-royal">Say Hi!</a>
+  <a href="http://unicorn-ui.com/" class="button button-raised button-pill button-inverse">Say Hi!</a>
+  </div>
+
     </div>
   </section>
-
-
   <!-- LONG SHADOW -->
-  <section class="showcase">
+  <section id="buttons-longshadow" class="showcase showcase-content background-light">
     <h3 class="showcase-title l-center">Long Shadows</h3>
-    <h4 class="showcase-sub-title l-center">Apply a long shadow effect with <em>button-longshadow</em>. Additionally, apply shadow to button itself with <em>button-longshadow-box</em> (as seen on example to lower right)</h4>
+    <h4 class="showcase-sub-title l-center">A visual effect adding a flat shadow to the text of a button</h4>
 
-    <div class="showcase-examples l-center l-longshadows">
-      <button class="button button-primary button-box button-giant button-longshadow-right"><i class="fa fa-twitter "></i></button>
-      <button class="button button-caution button-box button-raised button-giant button-longshadow"><i class="fa fa-google-plus "></i></button>
-      <button class="button button-action button-box button-giant button-longshadow-left"><i class="fa fa-share-alt "></i></button>
-      <button class="button button-highlight button-box button-giant button-longshadow-right"><i class="fa fa-rss "></i></button>
-      <button class="button button-primary button-circle button-giant button-longshadow-left"><i class="fa fa-gear "></i></button>
-      <button class="button button-primary button-circle button-giant button-longshadow button-longshadow-box"><i class="fa fa-gear "></i></button>
+  <div class="showcase-examples l-center l-longshadows">
+  <button class="button button-primary button-box button-giant button-longshadow-right">
+    <i class="fa fa-twitter"></i>
+  </button>
+
+  <button class="button button-caution button-box button-raised button-giant button-longshadow">
+    <i class="fa fa-google-plus"></i>
+  </button>
+
+  <button class="button button-action button-box button-giant button-longshadow-left">
+    <i class="fa fa-share-alt"></i>
+  </button>
+
+  <button class="button button-highlight button-box button-giant button-longshadow-right button-longshadow-expand">
+    <i class="fa fa-rss"></i>
+  </button>
+
+  <button class="button button-primary button-circle button-giant button-longshadow">
+    <i class="fa fa-gear"></i>
+  </button></div>
+
+  </section>
+  <!-- GLOWING BUTTONS -->
+  <section id="buttons-glow" class="showcase">
+    <div class="l-over showcase-content">
+      <header class="text-nuetral l-center">
+        <h3 class="showcase-title">Glowing</h3>
+        <h4 class="showcase-sub-title">A pulse like glow around the edges of a button</h4>
+      </header>
+
+  <div class="showcase-examples l-over l-center">
+  <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-raised button-primary">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-glow button-border button-rounded button-primary">Go</a>
+  <button class="button button-glow button-circle button-action button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+  <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-highlight">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-caution">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-glow button-rounded button-royal">Go</a>
+  </div>
+
     </div>
+
   </section>
 
   <!-- DROPDOWN BUTTONS -->
-  <section class="showcase">
+  <section  id="buttons-dropdown" class="showcase  showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Dropdown Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">A dropdown menu appears when the button is pressed</h4>
     </header>
 
-    <div class="showcase-examples l-center">
-      <span class="button-dropdown" data-buttons="dropdown">
-        <button class="button button-rounded">
-          Select Me <i class="fa fa-caret-down"></i>
-        </button>
 
-        <ul class="button-dropdown-list">
-          <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-          <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-          <li class="button-dropdown-divider">
-            <a href="#">Option Link 3</a>
-          </li>
-        </ul>
-      </span>
+  <div class="showcase-examples l-center">
+  <span class="button-dropdown" data-buttons="dropdown">
+    <button class="button button-rounded">
+      Select Me <i class="fa fa-caret-down"></i>
+    </button>
 
-      <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
-        <button class="button button-rounded button-primary button-large">
-          <i class="fa fa-bars"></i> Select Me
-        </button>
+    <ul class="button-dropdown-list">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
 
-        <ul class="button-dropdown-list is-below">
-          <li><a href="http://unicorn-ui.com/"><i class="fa fa-heart-o"></i> Option Link 1</a></li>
-          <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-          <li class="button-dropdown-divider">
-            <a href="#">Option Link 3</a>
-          </li>
-        </ul>
-      </span>
+  <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+    <button class="button button-primary button-large">
+      <i class="fa fa-bars"></i> Select Me
+    </button>
 
-      <span class="button-dropdown button-dropdown-action" data-buttons="dropdown">
-        <button class="button button-action button-large">
-          <i class="fa fa-bars"></i> Select Me
-        </button>
+    <ul class="button-dropdown-list is-below">
+      <li><a href="http://unicorn-ui.com/"><i class="fa fa-heart-o"></i> Option Link 1</a></li>
+      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
 
-        <ul class="button-dropdown-list is-below">
-          <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-          <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-          <li class="button-dropdown-divider">
-            <a href="#">Option Link 3</a>
-          </li>
-        </ul>
-      </span>
 
-      <span class="button-dropdown button-dropdown-highlight" data-buttons="dropdown">
-        <button class="button button-highlight">
-          Select Me <i class="fa fa-caret-up"></i>
-        </button>
+  <span class="button-dropdown button-dropdown-action" data-buttons="dropdown">
+    <button class="button button-action">
+      Select Me <i class="fa fa-caret-up"></i>
+    </button>
 
-        <ul class="button-dropdown-list is-above">
-          <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-          <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-          <li class="button-dropdown-divider">
-            <a href="#">Option Link 3</a>
-          </li>
-        </ul>
-      </span>
+    <ul class="button-dropdown-list is-above">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
 
-      <span class="button-dropdown button-dropdown-plain" data-buttons="dropdown">
-        <button class="button button-caution button-pill">
-          Select Me <i class="fa fa-caret-down"></i>
-        </button>
+  <span class="button-dropdown button-dropdown-plain" data-buttons="dropdown">
+    <button class="button button-caution button-pill">
+      Select Me <i class="fa fa-caret-down"></i>
+    </button>
 
-        <ul class="button-dropdown-list">
-          <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-          <li class="button-dropdown-divider">
-            <a href="http://unicorn-ui.com/">Option Link 2</a>
-          </li>
-          <li>
-            <a href="#">Option Link 3</a>
-          </li>
-        </ul>
-      </span>
+    <ul class="button-dropdown-list">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li class="button-dropdown-divider">
+        <a href="http://unicorn-ui.com/">Option Link 2</a>
+      </li>
+      <li>
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
 
-      <span class="button-dropdown button-dropdown-inverse" data-buttons="dropdown">
-        <a href="#" class="button button-inverse">
-            <i class="fa fa-envelope"></i> Select Me <i class="fa fa-caret-down"></i>
-        </a>
+  <span class="button-dropdown button-dropdown-inverse" data-buttons="dropdown">
+    <a href="#" class="button button-inverse">
+        <i class="fa fa-envelope"></i> Select Me <i class="fa fa-caret-down"></i>
+    </a>
 
-        <ul class="button-dropdown-list is-below">
-          <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-          <li class="button-dropdown-divider">
-            <a href="http://unicorn-ui.com/">Option Link 2</a>
-          </li>
-          <li>
-            <a href="#">Option Link 3</a>
-          </li>
-        </ul>
-      </span>
-    </div>
+    <ul class="button-dropdown-list is-below">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li class="button-dropdown-divider">
+        <a href="http://unicorn-ui.com/">Option Link 2</a>
+      </li>
+      <li>
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span></div>
   </section>
-
 
   <!-- GROUP BUTTONS -->
-  <section class="showcase">
+  <section id="buttons-group" class="showcase showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Buttons Groups</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">A group of related buttons displayed edge to edge</h4>
     </header>
 
-    <div class="showcase-examples l-center">
-      <div class="button-group">
-        <button type="button" class="button button-primary">Option 1</button>
-        <button type="button" class="button button-primary">Option 2</button>
-        <button type="button" class="button button-primary">Option 3</button>
-        <span class="button-dropdown" data-buttons="dropdown">
-          <a href="#" class="button button-primary"> Select Me <i class="fa fa-caret-down"></i></a>
+  <div class="showcase-examples l-center">
+  <div class="button-group">
+    <button type="button" class="button button-primary">Option 1</button>
+    <button type="button" class="button button-primary">Option 2</button>
+    <button type="button" class="button button-primary">Option 3</button>
 
-          <ul class="button-dropdown-list is-below">
-            <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
-            <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
-            <li class="button-dropdown-divider">
-              <a href="#">Option Link 3</a>
-            </li>
-          </ul>
-        </span>
-      </div>
+    <!-- DROPDOWN MENU -->
+    <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+      <a href="#" class="button button-primary"> Select Me <i class="fa fa-caret-down"></i></a>
 
-      <div class="button-group">
-        <button type="button" class="button button-primary">Option 1</button>
-        <button type="button" class="button button-primary">Option 2</button>
-        <button type="button" class="button button-primary">Option 3</button>
-      </div>
+      <ul class="button-dropdown-list is-below">
+        <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+        <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+        <li class="button-dropdown-divider"><a href="#">Option Link 3</a></li>
+      </ul>
+    </span>
+  </div>
 
-      <div class="button-group">
-        <button type="button" class="button button-pill button-action is-active">Option 1</button>
-        <button type="button" class="button button-pill button-action">Option 2</button>
-        <button type="button" class="button button-pill button-action">Option 3</button>
-      </div>
+  <div class="button-group">
+    <button type="button" class="button button-pill button-action">Option 1</button>
+    <button type="button" class="button button-pill button-action">Option 2</button>
+    <button type="button" class="button button-pill button-action">Option 3</button>
+  </div>
 
-      <div class="button-group">
-        <button type="button" class="button button-pill button-action">Option 1</button>
-        <button type="button" class="button button-pill button-action">Option 2</button>
-        <button type="button" class="button button-pill button-action">Option 3</button>
-      </div>
-
-      <div class="button-group">
-        <button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
-        <button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
-        <button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
-      </div>
-
-      <div class="button-group">
-        <button type="button" class="button button-royal button-rounded">Option 1</button>
-        <button type="button" class="button button-royal button-rounded">Option 2</button>
-        <button type="button" class="button button-royal button-rounded">Option 3</button>
-      </div>
-
-    </div>
+  <div class="button-group">
+    <button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
+    <button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
+    <button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
+  </div></div>
   </section>
-
 
   <!-- BLOCK BUTTONS -->
-  <section class="showcase">
+  <section id="buttons-block" class="showcase showcase-content background-light">
     <header class="l-center">
-      <h3 class="showcase-title">Block Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h3 class="showcase-title">Stacked Buttons</h3>
+      <h4 class="showcase-sub-title">Block level buttons that expand the width of their container</h4>
     </header>
 
-    <div class="showcase-examples l-center">
-      <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-primary button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-action button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-highlight button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-caution button-large">Go</a>
-      <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-royal button-large">Go</a>
-    </div>
+  <div class="showcase-examples l-center">
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-primary button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-action button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-highlight button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-caution button-large">Go</a>
+  <a href="http://unicorn-ui.com/" class="button button-block button-rounded button-royal button-large">Go</a></div>
   </section>
-
-
   <!-- BUTTONS WRAPPERS-->
-  <section class="showcase">
+  <section id="buttons-wrapper" class="showcase showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Button Wrappers</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">A wrap around effect to highlight the shape of the button and offer a subtle visual effect</h4>
     </header>
 
-    <div class="showcase-examples l-center">
-      <span class="button-wrap">
-        <button class="button button-circle">
-          <i class="fa fa-cloud"></i>
-        </button>
-      </span>
-      <span class="button-wrap">
-        <button class="button button-circle button-primary">
-          <i class="fa fa-cloud"></i>
-        </button>
-      </span>
-      <span class="button-wrap"><a href="http://unicorn-ui.com/" class="button button-pill ">Go</a></span>
-      <span class="button-wrap"><a href="http://unicorn-ui.com/" class="button button-pill button-primary">Go</a></span>
-    </div>
+  <div class="showcase-examples l-center">
+  <span class="button-wrap">
+    <button class="button button-circle">
+      <i class="fa fa-cloud"></i>
+    </button>
+  </span>
+
+  <span class="button-wrap">
+    <button class="button button-circle button-raised button-primary">
+      <i class="fa fa-cloud"></i>
+    </button>
+  </span>
+
+  <span class="button-wrap">
+    <a href="http://unicorn-ui.com/" class="button button-pill ">Go</a>
+  </span>
+  <span class="button-wrap">
+    <a href="http://unicorn-ui.com/" class="button button-pill button-raised button-primary">Go</a>
+  </span></div>
+
   </section>
-
-
   <!-- FORM BUTTONS -->
-  <section class="showcase">
+  <section id="buttons-form" class="showcase  showcase-content background-light">
     <header class="l-center">
       <h3 class="showcase-title">Form Buttons</h3>
-      <h4 class="showcase-sub-title"></h4>
+      <h4 class="showcase-sub-title">Buttons works great on form elements too</h4>
     </header>
 
-    <div class="showcase-examples l-center">
-      <input type="submit" value="Go" class="button button-pill button-primary"/>
-      <button class="button button-pill button-primary">Go</button>
+  <div class="showcase-examples l-center">
+  <input type="submit" value="Go" class="button button-pill button-primary"/>
+  <button class="button button-pill button-primary">Go</button>
 
-      <!-- DISABLED BUTTONS -->
-      <input  disabled type="submit"  value="Go" class="button button-pill button-primary"/>
-      <button disabled class="button  button-pill button-primary">Go</button>
-      <button disabled class="button button-pill button-flat-primary">Go</button>
-      <a href="#" class="button disabled button-pill button-primary ">Go</a>
-    </div>
+  <!-- DISABLED BUTTONS -->
+  <input  disabled type="submit"  value="Go" class="button button-pill button-primary"/>
+  <button disabled class="button  button-pill button-primary">Go</button>
+  <button disabled class="button button-pill button-flat-primary">Go</button>
+  <a href="#" class="button disabled button-pill button-primary ">Go</a></div>
+
+  </section>
+  <!-- BLOCK BUTTONS -->
+  <section id="buttons-type" class="showcase showcase-content background-light">
+    <header class="l-center">
+      <h3 class="showcase-title">Tyographic Styles</h3>
+      <h4 class="showcase-sub-title">A variety of tyographic styles for buttons</h4>
+    </header>
+
+  <div class="showcase-examples l-center">
+  <a href="http://unicorn-ui.com/" class="button button-uppercase button-primary">uppercase</a>
+  <a href="http://unicorn-ui.com/" class="button button-lowercase button-primary ">lowercase</a>
+  <a href="http://unicorn-ui.com/" class="button button-capitalize button-primary">capitalize</a>
+  <a href="http://unicorn-ui.com/" class="button button-small-caps button-primary">small caps</a></div>
   </section>
 
 
-    <!-- ACCESSIBILITY NOTES -->
-  <section class="accessibility">
-    <header class="l-center">
-      <h3 class="showcase-title">Buttons Accessibility</h3>
-      <h4 class="showcase-sub-title"></h4>
-      <p>Buttons should be used responsibly with accessibility in mind. In general, you should use anchor tags when you have a link that, well, links to something–generally an external resource or an internal page link–and use a button when you have some sort of &ldquo;application command&rdquo; such as <em>Save</em> or <em>Close</em>. Obviously, this is an oversimplification–what about <em>calls to action</em>, <em>menus</em>, etc.? Here are some of our favorite articles that we've found provide helpful guidance and are particularly useful:</p>
-    </header>
+  <!-- INSTRUCTIONS -->
+  <!-- ACCESSIBILITY NOTES -->
+  <div class="background-inverse">
+    <div class="background-arrow-top-right l-padding-top-100">
+      <section id="buttons-accessibility" class="docs">
+        <header >
+          <h3 class="docs-title"><i class="fa fa-wheelchair"></i> Semantics &amp; Accessibility</h3>
+        </header>
 
-    <div class="l-center">
-      <a href="http://formidablelabs.com/blog/2014/05/08/anchors-buttons-and-accessibility/">Anchors, Buttons, and Accessibility</a> by the folks at Formidable Labs.
-      <a href="http://www.nngroup.com/articles/command-links/">Commands Links</a> article by the Nielsen Norman Group.</a>
-      <a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/">Links Are Not Buttons</a> by Karl Groves.
-    </div>
-  </section>
+        <div class="docs-content">
+          <p>
+            Buttons should be used responsibly with accessibility in mind. You should use <strong>anchor</strong> tags when you are linking to an external resource or an internal page link. Use the <strong>button</strong> tag when you have an application command such as <strong>add to shopping cart</strong>. Use <strong>input</strong> tags (such as the submit input type) when creating forms. If you would like to learn more on this subject we highly reccomend reading the following articles.</p>
 
-
-
-    <!-- FORM BUTTONS -->
-  <section class="showcase">
-    <header class="l-center">
-      <h3 class="showcase-title">Getting Started</h3>
-    </header>
-        <div class="showcase-examples l-center">
-        </div>
-
-
-      <div class="setup">
-        <h4 class="showcase-sub-title"><i class="fa fa-code"></i> Setup Buttons</h4>
-        <ol class="steps">
+          <ul class="docs-list">
             <li>
-                <a class="button button-rounded button-flat-primary button-tiny" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> Download Buttons</a> and add files to your website.
+              <a href="http://formidablelabs.com/blog/2014/05/08/anchors-buttons-and-accessibility/">Anchors, Buttons, and Accessibility</a> by Formidable Labs.
             </li>
-            <li> Add css in the head of your webpage.
-<pre tabindex="0" class="prettyprint linenums">&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;css/buttons.css&quot;&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;js/buttons.js&quot;&gt;&lt;/script&gt;</pre>
-            <em>* You only need the font-awesome css if you're using icons</em><br/>
-            <em>* You only need jquery &amp; buttons.js if you're using dropdown buttons</em>
+
+            <li>
+              <a href="http://www.nngroup.com/articles/command-links/">Commands Links</a> article by the Nielsen Norman Group.</a>
             </li>
-            <li>Create buttons in your html.</li>
-        </ol>
-      </div>
 
-
-      <div class="customize">
-        <h4 class="showcase-sub-title"><i class="fa fa-github"></i> Customize Buttons</h4>
-        <ol class="steps">
-            <li><a class="button button-rounded button-flat-action button-tiny" href="https://github.com/alexwolfe/Buttons/"><i class="fa fa-github"></i> Fork or Download</a> the Buttons project on github.
+            <li>
+              <a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/">Links Are Not Buttons</a> by Karl Groves.
             </li>
-            <li>Make sure you have <a target="_blank" href="http://sass-lang.com/download.html">Sass</a> and <a target="_blank" href="http://compass-style.org/install/">Compass</a> installed.</li>
-            <li>Edit the _options.scss with your own custom values</li>
-            <li>In the root of the Buttons directory type <strong>compass watch</strong> on the command line.</li>
-            <li>The buttons.css file should now be updated</li>
-        </ol>
-      </div>
-    </section>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- FORM BUTTONS -->
+  <section id="buttons-setup" class="docs background-inverse">
+    <header>
+      <h3 class="docs-title"><i class="fa fa-code"></i> Installation &amp; Setup</h3>
+    </header>
 
-  <footer>
+    <div class="docs-content">
+      <ol class="docs-list">
+          <li>
+              <a class="button button-rounded button-plain button-small-caps button-border" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> DOWNLOAD BUTTONS</a>
+          </li>
+          <li> Include buttons in your website
+            <div class="codebox l-margin-top-0">
+              <header>
+                <h3>Buttons Setup</h3>
+                <button class="codebox-copy">Copy</button>
+              </header>
+  <pre tabindex="0" class="prettyprint linenums codebox-body">
+  &lt;!-- Buttons core css --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/buttons.css&quot;&gt;
 
+  &lt;!-- Only needed if you want support for dropdown menus --&gt;
+  &lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/buttons.js&quot;&gt;&lt;/script&gt;
 
-  <footer >
-    <section class="subscribe-form">
-        <h3><i class="fa fa-flask"></i> Find out what we're &ldquo;cooking up in the lab&rdquo; :)</h3>
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup"><form action="//unicorn-ui.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;amp;id=b5db98a4bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" role="form" target="_blank" novalidate="novalidate" class="validate newsletter-form"><div class="mc-field-group"><input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="required email newsletter-email"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button newsletter-button button-primary"></div><div id="mce-responses" class="clear"><div id="mce-error-response" style="display:none" class="response"></div><div id="mce-success-response" style="display:none" class="response"></div></div><div style="position: absolute; left: -5000px;"><input type="text" name="b_8d64dfb6a9a561029375e03a8_b5db98a4bb" tabindex="-1" value="" aria-hidden="true"></div></form></div>
-        <!--End mc_embed_signup-->
-    </section>
+  &lt;!-- Only needed if you want font icons --&gt;
+  &lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
+            </div>
+          </li>
+      </ol>
+  </section>
 
-    <p>Created at by <a target="_blank" href="https://twitter.com/alexwolfe">@alexwolfe</a> and <a target="_blank" href="https://twitter.com/roblevintennis">@roblevintennis</a> </p>
+  <!-- Buttons core css -->
+  <link rel="stylesheet" href="css/buttons.css">
 
-    <p>Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a></p>
-    <p>
-  </footer>
-
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
+  <!-- Only needed if you want support for dropdown menus -->
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="js/scrollto.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/buttons.js"></script>
 
+  <!-- Only needed if you want font icons -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
+  <!-- FORM BUTTONS -->
+  <section id="buttons-setup" class="docs background-inverse">
+    <header>
+      <h3 class="docs-title"><i class="fa fa-github"></i> Customize Buttons</h3>
+    </header>
+
+    <div class="docs-content">
+      <ol class="docs-list">
+          <li>
+              <a class="button button-rounded button-plain button-small-caps button-border" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-github"></i> CLONE GITHUB REPO</a>
+          </li>
+          <li>C</li>
+          <li> Include buttons in your website
+
+          </li>
+      </ol>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="l-center background-inverse  docs">
+    <p> copyright &copy; 2013 Alex Wolfe &amp; Rob Levin.</p>
+  </footer>
+  <footer class="promotional animated fadeInUp">
+    <p class="coming-soon">Forms module coming soon! <i class="fa fa-hand-o-left"></i></p>
+    <form class="newsletter-form" action="//unicorn-ui.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;amp;id=b5db98a4bb" method="post"  name="mc-embedded-subscribe-form" role="form" target="_blank" novalidate="novalidate" >
+      <div class="form-field">
+        <span class="email-icon"><i class="fa fa-envelope"></i></span>
+        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="required email newsletter-email"/>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="newsletter-button"/>
+        <div class="clear"></div>
+      </div>
+    </form>
+  </footer>
+
+
+  <!-- JS TEMPLATING FILES -->
+  <!-- JAVASCRIPT TEMPLATING -->
+  <script id="template-codebox" type="text/x-handlebars-template">
+    <div  class="codebox">
+      <header class="clearfix">
+        <h3>{{title}}</h3>
+        <button class="codebox-copy" data-clipboard-target="{{id}}"><i class="fa fa-cut"></i> Copy</button>
+      </header>
+
+      <pre class="prettyprint codebox-body linenums" id="{{id}}">{{{code}}}</pre>
+    </div>
+  </script>
+
+
+  <!-- JAVASCRIPT INCLUDES -->
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/scrollMonitor.js"></script>
+  <script type="text/javascript" src="js/zeroclipboard/dist/ZeroClipboard.js"></script>
+  <script type="text/javascript" src="js/polyfill.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/handlebars.js"></script>
+  <script type="text/javascript" src="js/styleguide.js"></script>
+  <script type="text/javascript" src="js/buttons.js"></script>
+
+
+  <!-- GOOGLE ANALYTICS -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -563,7 +641,6 @@
 
     ga('create', 'UA-41954774-1', 'alexwolfe.github.io');
     ga('send', 'pageview');
-
   </script>
 </body>
 </html>

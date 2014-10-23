@@ -1,30 +1,88 @@
 /*
-* Code Base Styles
+* Codebox Module
 *
 */
 
-.prettyprint {
+.codebox {
+  border: 1px solid $light;
+  border-radius: 4px;
   position: relative;
-  overflow: hidden;
-  padding: 20px;
-  border: 1px solid #EEE;
-  border-radius: 10px;
-  font-family: Monaco, Consolas, monospace;
-  font-size: 14px;
+  background: $white;
+  margin-top: 40px;
 
+  /*
+  * Codebox Header
+  *
+  */
 
-  &.is-preview {
-    max-height: 100px;
+  header {
+    border-bottom: 1px solid $light;
+    height: 39px;
+
+    h3, .codebox-copy {
+      padding: 0px 20px;
+      margin: 0px;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $gray;
+    }
+
+    h3 {
+      line-height: 39px;
+      float: left;
+    }
+
+    .codebox-copy {
+      height: 39px;
+      float: right;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      appearance: none;
+      border-left: 1px solid $light;
+      background: $white;
+      display: none;
+
+      &.is-visible {
+        display: block;
+      }
+
+      &:hover,
+      &.is-selected,
+      &.zeroclipboard-is-hover {
+        color: $blue-shade-6;
+      }
+    }
   }
 
-  .linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: lighten($blue-shade-6, 30%);
-    line-height: 1.5;
+
+  /*
+  * Codebox Body
+  *
+  */
+
+  .codebox-body {
+    margin: 0px;
+    padding: 20px;
+    font-family: Monaco, Consolas, monospace;
+    font-size: 13px;
+    overflow: auto;
+
+    .linenums {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: lighten($blue-shade-6, 30%);
+      line-height: 1.5;
+      font-size: 13px;
+
+      li {
+        font-size: 13px;
+      }
+    }
   }
 
-  .prettyprint-overlay {
+  .codebox-overlay {
     cursor: pointer;
     position: absolute;
     top: 0px;
@@ -37,10 +95,12 @@
 }
 
 
+
 /*
 * Sreen Style Language Formatting
 *
 */
+
 @media screen {
   /* string content */
   .str {
@@ -121,6 +181,7 @@
 * Print Style Language Formatting
 *
 */
+
 @media print, projection {
 
   .is-preview {

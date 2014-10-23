@@ -11,12 +11,12 @@
   line-height: $ubtn-height - 2;
 
   @if($ubtn-use-compass) {
-    @include box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5), 0px 1px 2px rgba(0, 0, 0, .15));
+    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 2px rgba(0, 0, 0, .15));
     @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 5%), darken($ubtn-bgcolor, 5%)));
   }
   @else {
     background: linear-gradient(lighten($ubtn-bgcolor, 3%), darken($ubtn-bgcolor, 5%));
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), 0px 1px 2px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .15);
   }
 
   &:hover, &:focus {
@@ -34,10 +34,10 @@
     background: desaturate($ubtn-bgcolor, 10%);
 
     @if($ubtn-use-compass) {
-      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1));
+      @include box-shadow(inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, 1));
     }
     @else {
-      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, 1);
     }
   }
 }

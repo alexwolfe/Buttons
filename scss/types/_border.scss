@@ -71,7 +71,7 @@
       &:hover,
       &:focus {
         background-color: rgba(lighten($ubtn-background, 10%), .9);
-        color: rgba($ubtn-color, .7);
+        color: rgba($ubtn-color, .9);
       }
 
       &:active,
@@ -79,6 +79,13 @@
       &.is-active {
         background-color: rgba(desaturate($ubtn-background, 10%), .7);
         color: rgba($ubtn-color, .5);
+
+        @if $ubtn-use-compass {
+          @include opacity(.3);
+        }
+        @else {
+          opacity: .3;
+        }
       }
     }
   }
