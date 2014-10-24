@@ -929,7 +929,6 @@ body {
     top: 130px;
     left: 70px;
     z-index: 2;
-    background: -webkit-linear-gradient(0deg, #9D50BB 10%, #6E48AA 90%);
     background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%); }
   .phone .phone-status-bar {
     background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
@@ -1131,7 +1130,6 @@ body {
     bottom: 0px;
     z-index: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(white));
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), white);
     background: linear-gradient(rgba(255, 255, 255, 0.1), white); }
 
 /*
@@ -1288,24 +1286,37 @@ body {
 .arrow-light {
   color: #f3faff; }
 
+svg use {
+  pointer-events: none; }
+
 .svgs svg {
   width: 32px;
   height: 32px;
   display: block;
   margin: 0 auto; }
-  .svgs svg use {
+  .svgs svg use,
+  .svgs svg path {
     fill: #bbb; }
-    .svgs svg use.completed {
+    .svgs svg use.completed,
+    .svgs svg path.completed {
       color: #27ae60; }
-    .svgs svg use.overdue {
+    .svgs svg use.completed-2,
+    .svgs svg path.completed-2 {
+      color: hotpink; }
+    .svgs svg use.overdue,
+    .svgs svg path.overdue {
       color: #e74c3c; }
-    .svgs svg use.survey {
+    .svgs svg use.survey,
+    .svgs svg path.survey {
       color: #e67e22; }
-    .svgs svg use.completed {
+    .svgs svg use.completed,
+    .svgs svg path.completed {
       color: #27ae60; }
-    .svgs svg use.trending {
+    .svgs svg use.trending,
+    .svgs svg path.trending {
       color: #3498db; }
-    .svgs svg use.late {
+    .svgs svg use.late,
+    .svgs svg path.late {
       color: #e74c3c; }
 
 .button:hover svg use.completed {
