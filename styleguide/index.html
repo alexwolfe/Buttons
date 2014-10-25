@@ -162,12 +162,12 @@
             Icons provided by <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Great for mobile devices</h4>
         </header>
 
-      <div class="showcase-examples l-center svgs">
-        <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
-        <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
-        <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
-        <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
-      </div>
+  <div class="showcase-examples l-center svgs">
+  <button class="button button-large button-plain button-border button-circle"><i class="fa fa-reply"></i></button>
+  <button class="button button-large button-plain button-border button-box"><i class="fa fa-star"></i></button>
+  <button class="button button-large button-plain button-border button-square"><i class="fa fa-trash-o"></i></button>
+  <button class="button button-large button-plain button-borderless"><i class="fa fa-tag"></i></button>
+  </div>
 
       <!-- Phone Demo -->
       <div class="phone">
@@ -540,11 +540,26 @@
               <a class="button button-rounded button-plain button-small-caps button-border" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> DOWNLOAD BUTTONS</a>
           </li>
           <li> Include buttons in your website
-            <div class="codebox l-margin-top-0">
+            <div class="codebox docs-setup-guide l-margin-top-0">
               <header>
                 <h3>Buttons Setup</h3>
                 <button class="codebox-copy">Copy</button>
               </header>
+
+  <!-- USED FOR COPY AND PASTE SCRIPT --> 
+  <div class="is-hidden docs-setup-code">
+  <!-- Buttons core css -->
+  <link rel="stylesheet" href="css/buttons.css">
+
+  <!-- Only needed if you want support for dropdown menus -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/buttons.js"></script>
+
+  <!-- Only needed if you want font icons -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+  </div>
+
+
   <pre tabindex="0" class="prettyprint linenums codebox-body">
   &lt;!-- Buttons core css --&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;css/buttons.css&quot;&gt;
@@ -560,16 +575,6 @@
       </ol>
   </section>
 
-  <!-- Buttons core css -->
-  <link rel="stylesheet" href="css/buttons.css">
-
-  <!-- Only needed if you want support for dropdown menus -->
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="js/buttons.js"></script>
-
-  <!-- Only needed if you want font icons -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
-
   <!-- FORM BUTTONS -->
   <section id="buttons-setup" class="docs background-inverse">
     <header>
@@ -581,27 +586,31 @@
           <li>
               <a class="button button-rounded button-plain button-small-caps button-border" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-github"></i> CLONE GITHUB REPO</a>
           </li>
-          <li>C</li>
-          <li> Include buttons in your website
-
-          </li>
+          <li>Make sure you have <a href="">Node.js</a> installed.</li>
+          <li>From the command line cd into the root for the Buttons directory</li>
+          <li>Run <code>npm install</code> or <code>sudo npm install</code> (depending on your system permissions).</li>
+          <li>On the command line run <code>grunt dev</code>, this will open a browser with Buttons</li>
+          <li>Locate <strong>scss</strong> in the root directory</li>
+          <li>You can modify the _options.scss where you can customize colors, typography, and …</li>
+          <li>Anytime you save your changes the Buttons showcase page will live reload with your changes!</li>
       </ol>
   </section>
 
 
   <!-- FOOTER -->
-  <footer class="l-center background-inverse  docs">
+  <footer class="l-center background-inverse l-padding-bottom-100 l-padding-top-60">
     <p> copyright &copy; 2013 Alex Wolfe &amp; Rob Levin.</p>
   </footer>
   <footer class="promotional animated fadeInUp">
-    <p class="coming-soon">Forms module coming soon! <i class="fa fa-hand-o-left"></i></p>
-    <form class="newsletter-form" action="//unicorn-ui.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;amp;id=b5db98a4bb" method="post"  name="mc-embedded-subscribe-form" role="form" target="_blank" novalidate="novalidate" >
-      <div class="form-field">
-        <span class="email-icon"><i class="fa fa-envelope"></i></span>
-        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="required email newsletter-email"/>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="newsletter-button"/>
-        <div class="clear"></div>
-      </div>
+
+    <form action="//unicorn-ui.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;amp;id=b5db98a4bb" method="post"  name="mc-embedded-subscribe-form" target="_blank">
+
+  	  <h3>New goodies on the way! Be the first to know! <i class="fa fa-hand-o-right"></i></h3>
+
+      <input type="submit" value="Let's do this!" name="subscribe" id="mc-embedded-subscribe" class="button button-primary button-rounded button-raised button-small button-newsletter"/>
+      <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="newsletter-email"/>
+      <span class="email-icon"><i class="fa fa-envelope"></i></span>
+      <div class="clear"></div>
     </form>
   </footer>
 

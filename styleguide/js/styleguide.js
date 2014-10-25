@@ -12,6 +12,7 @@ $(document).ready(function(){
       this.disableDemoButtons();
       this.generateCodeSamples();
       this.attachScrollMonitor();
+      this.activateSetupGuide(); 
     },
 
     attachScrollMonitor: function() {
@@ -94,6 +95,12 @@ $(document).ready(function(){
       });
     },
 
+    activateSetupGuide: function() {
+      var $showcase = $('.docs-setup-guide');
+      var code = $showcase.find('.docs-setup-code:first').html();
+
+      this.activateCopyButton($showcase, code);
+    },
 
     activateNav: function() {
       var that = this;

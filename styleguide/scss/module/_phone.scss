@@ -7,6 +7,12 @@
   width: 440px;
   background: url("../images/mobile/iphone-6.png") top left no-repeat;
 
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+
   .phone-screen {
     position: absolute;
     width: 300px;

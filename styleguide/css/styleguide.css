@@ -462,9 +462,6 @@ table {
 :-moz-placeholder {
   color: #dee0e2; }
 
-body {
-  padding-bottom: 100px; }
-
 /*
 * Layout margin & padding
 *
@@ -700,7 +697,8 @@ body {
 
 .background-inverse {
   color: #FFFFFF;
-  background: #145f98; }
+  background: linear-gradient(90deg, #1a7fcc 10%, #229ffd 90%);
+  /* W3C */ }
   .background-inverse a {
     color: #FFFFFF; }
 
@@ -862,28 +860,40 @@ body {
 */
 .promotional {
   background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1);
   display: none;
   text-align: center;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   left: 0px;
   right: 0px;
   z-index: 5;
-  padding: 10px; }
-  .promotional .form-field {
-    margin: 0px auto;
-    width: 340px; }
+  padding: 20px; }
+  .promotional h3 {
+    color: #61bafd;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px;
+    line-height: 34px;
+    float: left; }
+    .promotional h3 .fa-hand-o-left {
+      margin-left: 12px; }
+  .promotional > form {
+    width: 750px;
+    margin: 0px auto; }
   .promotional .newsletter-email {
-    float: left;
+    float: right;
     padding: 4px 8px;
     vertical-align: middle;
     line-height: 24px;
-    border: 1px solid #c4c7c9; }
-  .promotional .email-icon {
-    float: left;
     border: 1px solid #c4c7c9;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    outline: none; }
+  .promotional .email-icon {
+    float: right;
+    border: 1px solid #c4c7c9;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     padding: 4px 8px;
     line-height: 24px;
     text-align: center;
@@ -892,31 +902,33 @@ body {
     color: #c4c7c9; }
   .promotional .newsletter-button {
     line-height: 24px; }
-  .promotional .coming-soon {
-    color: #61bafd;
-    font-size: 24px;
-    margin: 12px 0 8px; }
-    .promotional .coming-soon .fa-hand-o-left {
-      margin-left: 12px; }
-  .promotional .newsletter-button {
-    float: left;
-    border: 1px solid #c4c7c9;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    padding: 4px 8px;
-    line-height: 24px;
-    text-align: center;
-    background-color: #61bafd;
-    margin-left: -2px;
-    font-size: 14px;
-    color: #FFFFFF;
-    -webkit-transition: all .3s ease-in;
-            transition: all .3s ease-in; }
-    .promotional .newsletter-button:hover {
+  .promotional .button-newsletter {
+    float: right;
+    border-radius: 0px 3px 3px 0px;
+    border-left-color: #a9adb1;
+    padding: 0px 10px;
+    height: 34px;
+    line-height: 34px; }
+    .promotional .button-newsletter:hover {
       color: rgba(255, 255, 255, 0.9);
       background-color: #229ffd; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+    .promotional h3,
+    .promotional form {
+      width: auto;
+      display: block;
+      font-size: 14px; }
+    .promotional .email-icon {
+      display: none; }
+    .promotional h3,
+    .promotional form {
+      float: none; }
+    .promotional .newsletter-email {
+      float: left; }
+    .promotional .newsletter-email,
+    .promotional .button-newsletter {
+      margin: 0px;
+      border-radius: 3px; } }
 
 /*
 * Hero Module
@@ -988,6 +1000,9 @@ body {
   height: 800px;
   width: 440px;
   background: url("../images/mobile/iphone-6.png") top left no-repeat; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+    .phone {
+      display: none; } }
   .phone .phone-screen {
     position: absolute;
     width: 300px;
@@ -1055,6 +1070,9 @@ body {
   * Buttons
   *
   */ }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+    .showcase {
+      padding: 20px 10px; } }
   .showcase .showcase-header-top-right,
   .showcase .showcase-header-top-left {
     position: absolute;
@@ -1095,21 +1113,24 @@ body {
 .showcase-phone {
   min-height: 480px;
   padding: 160px 430px 60px 40px; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+    .showcase-phone {
+      padding: 20px 10px; } }
   .showcase-phone .l-over {
     max-width: 490px; }
 
 .docs {
   position: relative;
-  padding: 140px 120px 60px 120px;
+  padding: 120px 120px 20px 120px;
   font-family: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif; }
   .docs > header {
     position: absolute;
     left: 0px;
-    top: 60px;
+    top: 40px;
     padding: 0px 40px;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 0px 3px 3px 0px; }
     .docs > header .docs-title {
       font-weight: 300;
@@ -1120,8 +1141,9 @@ body {
       color: #686d73; }
   .docs .docs-content > p {
     line-height: 1.7;
-    font-size: 20px;
-    margin-bottom: 30px; }
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 300; }
   .docs .docs-content .docs-list > li {
     font-size: 18px;
     margin-bottom: 10px; }

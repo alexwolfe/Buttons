@@ -17,7 +17,7 @@
 }
 .background-inverse {
   color: $white;
-  background: $blue-shade-8;
+  background: linear-gradient(90deg, $blue-shade-7 10%, $blue-shade-6 90%); /* W3C */
 
   a {
     color: $white;

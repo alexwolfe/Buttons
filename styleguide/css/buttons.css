@@ -724,15 +724,15 @@
   line-height: 38px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e1e1e1));
   background: linear-gradient(#f6f6f6, #e1e1e1);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15); }
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15); }
   .button-raised:hover, .button-raised:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
     background: linear-gradient(top, white, gainsboro); }
   .button-raised:active, .button-raised.active, .button-raised.is-active {
     background: #eeeeee;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 white;
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 white; }
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;
+            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white; }
 
 /*
 * Raised Button Colors
