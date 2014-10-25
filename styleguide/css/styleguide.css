@@ -767,7 +767,13 @@ table {
     .top-nav .top-nav-links {
       display: none; }
     .top-nav .button-dropdown {
-      display: block; } }
+      display: block;
+      line-height: 60px; }
+      .top-nav .button-dropdown .button {
+        line-height: 60px;
+        height: 60px; }
+      .top-nav .button-dropdown .button-dropdown-list li a {
+        line-height: 28px; } }
   .top-nav > h1 {
     font-weight: 300;
     line-height: 60px;

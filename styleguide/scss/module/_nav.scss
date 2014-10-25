@@ -27,6 +27,19 @@
 
     .button-dropdown {
       display: block;
+      line-height: 60px;
+
+      .button {
+        line-height: 60px;
+        height: 60px;
+      }
+
+      .button-dropdown-list  {
+
+        li a {
+          line-height: 28px; 
+        }
+      }
     }
   }
 
