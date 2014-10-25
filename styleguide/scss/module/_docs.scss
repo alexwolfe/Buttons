@@ -3,6 +3,8 @@
   padding: 120px 120px 20px 120px;
   font-family: $brand-font;
 
+
+
   > header {
     position: absolute;
     left: 0px;
@@ -33,6 +35,21 @@
     .docs-list > li {
       font-size: 18px;
       margin-bottom: 10px;
+    }
+  }
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    padding: 80px 10px 20px 10px;
+
+    header {
+      top: 20px;
+
+      .docs-title {
+        font-size: 18px;
+        line-height: 40px;
+      }
     }
   }
 }

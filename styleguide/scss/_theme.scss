@@ -60,6 +60,18 @@
   background: url('../images/arrows/blue-arrows-right.png') right -200px no-repeat;
 }
 
+
+@media handheld and (max-width: $phone-breakpoint),
+screen and (max-device-width: $phone-breakpoint),
+screen and (max-width: $tablet-breakpoint) {
+
+  .background-arrow-top-left, 
+  .background-arrow-top-right  {
+    background: none;
+  }
+}
+
+
 /*
 * Text Colors
 *

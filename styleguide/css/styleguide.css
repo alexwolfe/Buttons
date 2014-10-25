@@ -731,6 +731,10 @@ table {
 .background-blue-arrow-top-right {
   background: url("../images/arrows/blue-arrows-right.png") right -200px no-repeat; }
 
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+  .background-arrow-top-left,
+  .background-arrow-top-right {
+    background: none; } }
 /*
 * Text Colors
 *
@@ -1147,6 +1151,14 @@ table {
   .docs .docs-content .docs-list > li {
     font-size: 18px;
     margin-bottom: 10px; }
+  @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 940px) {
+    .docs {
+      padding: 80px 10px 20px 10px; }
+      .docs header {
+        top: 20px; }
+        .docs header .docs-title {
+          font-size: 18px;
+          line-height: 40px; } }
 
 /*
 * Codebox Module
