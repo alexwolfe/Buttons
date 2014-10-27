@@ -1294,40 +1294,58 @@ svg use {
   height: 32px;
   display: block;
   margin: 0 auto; }
-  .svgs svg use,
-  .svgs svg path {
-    fill: #bbb; }
-    .svgs svg use.completed,
-    .svgs svg path.completed {
-      color: #27ae60; }
-    .svgs svg use.completed-2,
-    .svgs svg path.completed-2 {
-      color: hotpink; }
-    .svgs svg use.overdue,
-    .svgs svg path.overdue {
-      color: #e74c3c; }
-    .svgs svg use.survey,
-    .svgs svg path.survey {
-      color: #e67e22; }
-    .svgs svg use.completed,
-    .svgs svg path.completed {
-      color: #27ae60; }
-    .svgs svg use.trending,
-    .svgs svg path.trending {
-      color: #3498db; }
-    .svgs svg use.late,
-    .svgs svg path.late {
-      color: #e74c3c; }
+  .svgs svg.completed {
+    fill: #ccc;
+    color: #27ae60; }
+    .svgs svg.completed * [fill='currentColor'] {
+      fill: currentColor; }
+  .svgs svg.completed-2 {
+    fill: #ccc;
+    color: deeppink; }
+    .svgs svg.completed-2 * [fill='currentColor'] {
+      fill: currentColor; }
+  .svgs svg.overdue {
+    fill: #ccc;
+    color: #e74c3c; }
+    .svgs svg.overdue * [fill='currentColor'] {
+      fill: currentColor; }
+  .svgs svg.survey {
+    fill: #ccc;
+    color: #e67e22; }
+    .svgs svg.survey * [fill='currentColor'] {
+      fill: currentColor; }
+  .svgs svg.trending {
+    fill: #ccc;
+    color: #3498db; }
+    .svgs svg.trending * [fill='currentColor'] {
+      fill: currentColor; }
+  .svgs svg.late {
+    fill: #ccc;
+    color: #e74c3c; }
+    .svgs svg.late * [fill='currentColor'] {
+      fill: currentColor; }
 
-.button:hover svg use.completed {
-  color: #2ecb70; }
-.button:hover svg use.overdue {
-  color: #eb695c; }
-.button:hover svg use.survey {
-  color: #ea9142; }
-.button:hover svg use.completed {
-  color: #2ecb70; }
-.button:hover svg use.trending {
-  color: #52a7e0; }
-.button:hover svg use.late {
-  color: #eb695c; }
+.button:hover svg.completed {
+  color: #36d278; }
+  .button:hover svg.completed * [fill='currentColor'] {
+    fill: currentColor; }
+.button:hover svg.completed-2 {
+  color: fuchsia; }
+  .button:hover svg.completed-2 * [fill='currentColor'] {
+    fill: currentColor; }
+.button:hover svg.overdue {
+  color: #ed7669; }
+  .button:hover svg.overdue * [fill='currentColor'] {
+    fill: currentColor; }
+.button:hover svg.survey {
+  color: #eb9950; }
+  .button:hover svg.survey * [fill='currentColor'] {
+    fill: currentColor; }
+.button:hover svg.trending {
+  color: #5faee3; }
+  .button:hover svg.trending * [fill='currentColor'] {
+    fill: currentColor; }
+.button:hover svg.late {
+  color: #ed7669; }
+  .button:hover svg.late * [fill='currentColor'] {
+    fill: currentColor; }
