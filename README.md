@@ -20,13 +20,11 @@ Oh, and you've heard it right–Buttons 2.0 is mobile optimized and ready to dro
 
 ## Coming Soon–Buttons Builder 2.0
 
-Currently, [the Buttons Builder Website](http://unicorn-ui.github.io/Buttons/) uses Buttons 1.0. We're working hard to get that updated to work with the new Buttons 2.0 library so check back soon or get on our mailing list to get notified. The Buttons Builder let's you view live examples and fully customize your Buttons download.
-
-[![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/builder.png "Example of Buttons")](http://unicorn-ui.github.io/Buttons/)
+Currently, [the Buttons Builder Website](http://unicorn-ui.com/buttons/builder/) uses Buttons 1.0 :disappointed:, but we're working hard to get that updated to work with the new Buttons 2.0 library so check back soon or get on our mailing list (via the [showcase page](http://unicorn-ui.com/buttons/showcase/)) to get notified. The Buttons Builder let's you view live examples and fully customize your Buttons download.
 
 ## Coming Soon–Buttons 2.0 Playground
 
-We're planning to create a Buttons playground which will incorporate SVG, animations, etc., and spark your creative juices. Again, check back soon or get on the mailing list to get notified.
+We're planning to create a Buttons playground which will incorporate SVG, animations, etc., and spark your creative juices. Again, check back soon or get on the mailing list to get notified (via the [showcase page](http://unicorn-ui.com/buttons/showcase/)).
 
 ---
 
