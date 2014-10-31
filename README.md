@@ -6,9 +6,29 @@
 
 Buttons 2.0 is a fully customizable CSS button library that's built using Sass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
 
-Quickly get started by [visiting the Buttons Builder Website](http://unicorn-ui.github.io/Buttons/) where you can view live examples and fully customize your Buttons download.
+## Buttons 2.0 Showcase
+
+We've created the Buttons 2.0 [showcase page](http://unicorn-ui.com/buttons/showcase/) to show off the latest version of Buttons. It features copy and paste ready example snippets:
+
+[![Buttons 2.0 Showcase](https://www.dropbox.com/s/y9cbmxmih6uwrmm/buttons-showcase.png?dl=0)](http://unicorn-ui.com/buttons/showcase/)
+
+Oh, and you've heard it right–Buttons 2.0 is mobile optimized and ready to drop in to your &ldquo;mobile first&rdquo; sites:
+
+[![Buttons 2.0 Showcase](https://www.dropbox.com/s/t92eti7adipz32p/buttons-showcase-mobile.png?dl=0)](http://unicorn-ui.com/buttons/showcase/)
+
+*Note that you'll have access to that same showcase page locally, if you choose to clone the repo and utilize our Grunt development workflow (see below for instructions on setting that up).*
+
+## Coming Soon–Buttons Builder 2.0
+
+Currently, [the Buttons Builder Website](http://unicorn-ui.github.io/Buttons/) uses Buttons 1.0. We're working hard to get that updated to work with the new Buttons 2.0 library so check back soon or get on our mailing list to get notified. The Buttons Builder let's you view live examples and fully customize your Buttons download.
 
 [![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/builder.png "Example of Buttons")](http://unicorn-ui.github.io/Buttons/)
+
+## Coming Soon–Buttons 2.0 Playground
+
+We're planning to create a Buttons playground which will incorporate SVG, animations, etc., and spark your creative juices. Again, check back soon or get on the mailing list to get notified.
+
+---
 
 ## Setup & Installation
 
