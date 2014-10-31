@@ -10,11 +10,11 @@ Buttons 2.0 is a fully customizable CSS button library that's built using Sass, 
 
 We've created the Buttons 2.0 [showcase page](http://unicorn-ui.com/buttons/showcase/) to show off the latest version of Buttons. It features copy and paste ready example snippets:
 
-[![Buttons 2.0 Showcase](https://www.dropbox.com/s/y9cbmxmih6uwrmm/buttons-showcase.png?dl=1) "Buttons 2.0 Showcase"](http://unicorn-ui.com/buttons/showcase/)
+[![Buttons 2.0 Showcase](https://www.dropbox.com/s/y9cbmxmih6uwrmm/buttons-showcase.png?dl=1 "Buttons 2.0 Showcase")](http://unicorn-ui.com/buttons/showcase/)
 
 Oh, and you've heard it right–Buttons 2.0 is mobile optimized and ready to drop in to your &ldquo;mobile first&rdquo; sites:
 
-[![Buttons 2.0 Showcase–Mobile](https://www.dropbox.com/s/t92eti7adipz32p/buttons-showcase-mobile.png?dl=1) "Buttons 2.0 Showcase Mobile"](http://unicorn-ui.com/buttons/showcase/)
+[![Buttons 2.0 Showcase–Mobile](https://www.dropbox.com/s/t92eti7adipz32p/buttons-showcase-mobile.png?dl=1 "Buttons 2.0 Showcase Mobile")](http://unicorn-ui.com/buttons/showcase/)
 
 *Note that you'll have access to that same showcase page locally, if you choose to clone the repo and utilize our Grunt development workflow (see below for instructions on setting that up).*
 
