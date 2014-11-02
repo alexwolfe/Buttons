@@ -115,7 +115,14 @@ module.exports = function (grunt) {
           }]
         }
       },
-      showcase_dist: {}
+      showcase_dist: {
+        files: [{
+          expand: true,
+          cwd: 'showcase',
+          src: ['*.html', 'css/**/*', 'fonts/**/*', 'images/**/*', 'js/**/*'],
+          dest: 'showcase-dist'
+        }]
+      }
     },
 
 
@@ -124,8 +131,11 @@ module.exports = function (grunt) {
     *
     */
     clean: {
-      build: {
+      dev: {
         src: ["tmp"]
+      },
+      build: {
+        src: ["showcase-dist"]
       }
     },
 
@@ -159,11 +169,11 @@ module.exports = function (grunt) {
     watch: {
       scripts: {
         files: ['js/**/*.js'],
-        tasks: ['copy:main:js_showcase', 'clean']
+        tasks: ['copy:main:js_showcase', 'clean:dev']
       },
       sass: {
         files: ['scss/**/*.scss', 'showcase/scss/**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'copy:main', 'clean']
+        tasks: ['sass', 'autoprefixer', 'copy:main', 'clean:dev']
       },
       includes: {
         files: ['showcase/includes/**/*.html', 'showcase/pages/**/*.html'],
@@ -247,7 +257,8 @@ module.exports = function (grunt) {
     testSubtasks.push('sauce');
   }
 
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy:main', 'clean']);
-  grunt.registerTask('dev', ['includes', 'sass', 'autoprefixer', 'cssmin', 'copy:main', 'clean', 'connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy:main', 'clean:dev']);
+  grunt.registerTask('dev', ['includes', 'sass', 'autoprefixer', 'cssmin', 'copy:main', 'clean:dev', 'connect', 'watch']);
+  grunt.registerTask('dist', ['clean:build', 'includes', 'sass', 'autoprefixer', 'cssmin', 'copy:main', 'copy:showcase_dist', 'clean:dev']);
   grunt.registerTask('tests', testSubtasks);
 };
