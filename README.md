@@ -1,12 +1,11 @@
 # Buttons 2.0
 
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
+[![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
+
 Welcome to Unicorn-UI Buttons! Yup, we've got a new home &#9786;
 
 Buttons 2.0 is a fully customizable CSS button library that's built using Sass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
-
-[![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
-
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
 
 ## Buttons 2.0 Showcase
 
