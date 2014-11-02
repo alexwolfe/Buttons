@@ -89,30 +89,33 @@ module.exports = function (grunt) {
     *
     */
     copy: {
-      css_library: {
-        files: [{
-          expand: true,
-          cwd: 'tmp/css',
-          src: ['**/*', '!showcase.css', '!showcase.css.map'],
-          dest: 'css'
-        }]
+      main: {
+        css_library: {
+          files: [{
+            expand: true,
+            cwd: 'tmp/css',
+            src: ['**/*', '!showcase.css', '!showcase.css.map'],
+            dest: 'css'
+          }]
+        },
+        css_showcase: {
+          files: [{
+            expand: true,
+            cwd: 'tmp/css',
+            src: ['**/*', '!buttons.min.css', '!buttons.css.map'],
+            dest: 'showcase/css'
+          }]
+        },
+        js_showcase: {
+          files: [{
+            expand: true,
+            cwd: 'js',
+            src: ['**/*'],
+            dest: 'showcase/js'
+          }]
+        }
       },
-      css_showcase: {
-        files: [{
-          expand: true,
-          cwd: 'tmp/css',
-          src: ['**/*', '!buttons.min.css', '!buttons.css.map'],
-          dest: 'showcase/css'
-        }]
-      },
-      js_showcase: {
-        files: [{
-          expand: true,
-          cwd: 'js',
-          src: ['**/*'],
-          dest: 'showcase/js'
-        }]
-      }
+      showcase_dist: {}
     },
 
 
@@ -156,11 +159,11 @@ module.exports = function (grunt) {
     watch: {
       scripts: {
         files: ['js/**/*.js'],
-        tasks: ['copy:js_showcase', 'clean']
+        tasks: ['copy:main:js_showcase', 'clean']
       },
       sass: {
         files: ['scss/**/*.scss', 'showcase/scss/**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'copy', 'clean']
+        tasks: ['sass', 'autoprefixer', 'copy:main', 'clean']
       },
       includes: {
         files: ['showcase/includes/**/*.html', 'showcase/pages/**/*.html'],
@@ -244,7 +247,7 @@ module.exports = function (grunt) {
     testSubtasks.push('sauce');
   }
 
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy', 'clean']);
-  grunt.registerTask('dev', ['includes', 'sass', 'autoprefixer', 'cssmin', 'copy', 'clean', 'connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copy:main', 'clean']);
+  grunt.registerTask('dev', ['includes', 'sass', 'autoprefixer', 'cssmin', 'copy:main', 'clean', 'connect', 'watch']);
   grunt.registerTask('tests', testSubtasks);
 };
