@@ -8,10 +8,6 @@ Buttons 2.0 is a fully customizable CSS button library that's built using Sass, 
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
 
-Quickly get started by [visiting the Buttons Builder Website](http://unicorn-ui.github.io/Buttons/) where you can view live examples and fully customize your Buttons download.
-
-[![Example of Buttons](https://dl.dropboxusercontent.com/u/1517246/builder.png "Example of Buttons")](http://unicorn-ui.github.io/Buttons/)
-
 ## Buttons 2.0 Showcase
 
 We've created the Buttons 2.0 [showcase page](http://unicorn-ui.com/buttons/showcase/) to show off the latest version of Buttons. It features copy and paste ready example snippets:
@@ -35,15 +31,16 @@ We're planning to create a Buttons playground which will incorporate SVG, animat
 ---
 
 ## Setup & Installation
+*Note: Uses Buttons 1.0 :disappointed:*
 
-1. Visit the [Buttons Builder Website](http://unicorn-ui.github.io/Buttons/), download and add files to your website.
+1. Visit the [Buttons Builder Website](http://unicorn-ui.com/buttons/builder), download and add files to your website.
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
     `<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">`
     `<link rel="stylesheet" href="css/buttons.css">`
 3. Include jQuery and buttons.js if you're using dropdown menu buttons.
     `<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>`
     `<script type="text/javascript" src="js/buttons.js"></script>`
-4. Create buttons in your html. [View code examples here](http://unicorn-ui.github.io/Buttons/).
+4. Create buttons in your html. [View code examples here](http://unicorn-ui.com/buttons/builder/).
 
 
 ## or Install with Bower
@@ -52,6 +49,7 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 `bower install buttons`
 
 ## Customize Buttons
+*Gets you all the new Buttons 2.0 you're probably after*
 
 1. Clone the Buttons repo
 2. Make sure you have Sass installed
@@ -59,9 +57,9 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 4. Edit the `_options.scss` with your own custom values (see example values below)
 5. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
 
-	`$ compass watch # compile with Compass`
-
 	`$ sass --watch --scss scss/buttons.scss:css/buttons.css # compile with Sass`
+
+	`$ compass watch # compile with Compass`
 
 6. The `css/buttons.css` file should now be updated
 
