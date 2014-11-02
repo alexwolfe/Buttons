@@ -106,5 +106,3 @@ Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefull
 ## Authors
 Created by Unicorn-UI (visit us at [unicorn-ui.com](http://unicorn-ui.com)) whos team members consist of Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis).
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alexwolfe/buttons/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
