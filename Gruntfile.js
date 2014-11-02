@@ -27,11 +27,11 @@ module.exports = function (grunt) {
 
     includes: {
       build: {
-        cwd: 'styleguide/pages',
+        cwd: 'showcase/pages',
         src: ['*.html' ],
-        dest: 'styleguide/',
+        dest: 'showcase/',
         options: {
-          includePath: 'styleguide/includes'
+          includePath: 'showcase/includes'
         }
       }
     },
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
       all: {
         files: {
           'tmp/css/buttons.css': 'scss/buttons.scss',
-          'tmp/css/styleguide.css': 'styleguide/scss/styleguide.scss'
+          'tmp/css/showcase.css': 'showcase/scss/showcase.scss'
         }
       }
     },
@@ -93,24 +93,24 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'tmp/css',
-          src: ['**/*', '!styleguide.css', '!styleguide.css.map'],
+          src: ['**/*', '!showcase.css', '!showcase.css.map'],
           dest: 'css'
         }]
       },
-      css_styleguide: {
+      css_showcase: {
         files: [{
           expand: true,
           cwd: 'tmp/css',
           src: ['**/*', '!buttons.min.css', '!buttons.css.map'],
-          dest: 'styleguide/css'
+          dest: 'showcase/css'
         }]
       },
-      js_styleguide: {
+      js_showcase: {
         files: [{
           expand: true,
           cwd: 'js',
           src: ['**/*'],
-          dest: 'styleguide/js'
+          dest: 'showcase/js'
         }]
       }
     },
@@ -136,7 +136,7 @@ module.exports = function (grunt) {
           port: 8000,
           livereload: 35729, // change this to '0.0.0.0' to access the server from outside
           hostname: 'localhost',
-          base: 'styleguide',
+          base: 'showcase',
           open: true
         }
       },
@@ -156,14 +156,14 @@ module.exports = function (grunt) {
     watch: {
       scripts: {
         files: ['js/**/*.js'],
-        tasks: ['copy:js_styleguide', 'clean']
+        tasks: ['copy:js_showcase', 'clean']
       },
       sass: {
-        files: ['scss/**/*.scss', 'styleguide/scss/**/*.scss'],
+        files: ['scss/**/*.scss', 'showcase/scss/**/*.scss'],
         tasks: ['sass', 'autoprefixer', 'copy', 'clean']
       },
       includes: {
-        files: ['styleguide/includes/**/*.html', 'styleguide/pages/**/*.html'],
+        files: ['showcase/includes/**/*.html', 'showcase/pages/**/*.html'],
         tasks: ['includes']
       },
       livereload: {
@@ -174,7 +174,7 @@ module.exports = function (grunt) {
           'scss/**/*.scss',
           'css/**/*.css',
           'js/**/*',
-          'styleguide/**/*'
+          'showcase/**/*'
         ]
       }
     },

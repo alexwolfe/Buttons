@@ -2,4 +2,4 @@
 .DS_Store
 *.psd
 node_modules
-styleguide/css/styleguide.css.map
+showcase/css/showcase.css.map
