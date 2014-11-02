@@ -31,16 +31,15 @@ We're planning to create a Buttons playground which will incorporate SVG, animat
 ---
 
 ## Setup & Installation
-*Note: Uses Buttons 1.0 :disappointed:*
 
-1. Visit the [Buttons Builder Website](http://unicorn-ui.com/buttons/builder), download and add files to your website.
+1. Download the latest [buttons.css](http://unicorn-ui.com/buttons/showcase/css/buttons.css)
 2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
     `<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">`
     `<link rel="stylesheet" href="css/buttons.css">`
 3. Include jQuery and buttons.js if you're using dropdown menu buttons.
     `<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>`
     `<script type="text/javascript" src="js/buttons.js"></script>`
-4. Create buttons in your html. [View code examples here](http://unicorn-ui.com/buttons/builder/).
+4. Create buttons in your html. [View code examples here](http://unicorn-ui.com/buttons/showcase/).
 
 
 ## or Install with Bower
@@ -49,7 +48,6 @@ You can also install Buttons using [Bower](http://bower.io/) if you're using tha
 `bower install buttons`
 
 ## Customize Buttons
-*Gets you all the new Buttons 2.0 you're probably after*
 
 1. Clone the Buttons repo
 2. Make sure you have Sass installed
@@ -69,7 +67,7 @@ If you plan to make any significant modifications or contributions to Buttons, y
 
 ```shell
 grunt # default task which compiles with sass and leverages autoprefixer and cssmin
-grunt dev # does same as above but starts a &ldquo;live watch&rdquo; too
+grunt dev # does same as above but starts a live watch too
 ```
 
 ### General Options
