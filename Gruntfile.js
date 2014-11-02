@@ -41,8 +41,12 @@ module.exports = function (grunt) {
     * Sass Compilation
     *
     */
+
     sass: {
       all: {
+        options: {
+          sourcemap: 'none'
+        },
         files: {
           'tmp/css/buttons.css': 'scss/buttons.scss',
           'tmp/css/showcase.css': 'showcase/scss/showcase.scss'
@@ -50,10 +54,12 @@ module.exports = function (grunt) {
       }
     },
 
+
     /*
     * Vendor Prefixing
     *
     */
+
     autoprefixer: {
       options: {
         browsers: ['last 3 versions', 'safari 5', 'ie 8', 'ie 9', 'Firefox >= 20']
