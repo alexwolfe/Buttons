@@ -44,9 +44,7 @@ module.exports = function (grunt) {
 
     sass: {
       all: {
-        options: {
-          sourcemap: 'none'
-        },
+        options: {},
         files: {
           'tmp/css/buttons.css': 'scss/buttons.scss',
           'tmp/css/showcase.css': 'showcase/scss/showcase.scss'
