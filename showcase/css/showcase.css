@@ -890,7 +890,16 @@ table {
 *
 */
 .promo-social {
-  float: left; }
+  float: left;
+  margin-top: 4px; }
+  .promo-social .fb-like,
+  .promo-social .github-button,
+  .promo-social .twitter-share-button {
+    vertical-align: middle; }
+  .promo-social .github-button {
+    min-width: 100px; }
+  .promo-social .twitter-share-button {
+    margin-left: -10px; }
 
 .promotional {
   background: rgba(255, 255, 255, 0.9);
@@ -911,8 +920,9 @@ table {
     margin: 0px 10px 0px 0px;
     line-height: 34px;
     float: right; }
-    .promotional h3 .fa-hand-o-left {
-      margin-left: 12px; }
+    .promotional h3 .fa-hand-o-right {
+      margin-right: 2px;
+      margin-left: 6px; }
   .promotional > form {
     float: right; }
   .promotional .newsletter-email {

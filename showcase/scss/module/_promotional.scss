@@ -7,6 +7,19 @@ $line-height: 24px;
 
 .promo-social {
   float: left;
+  margin-top: 4px;
+
+  .fb-like,
+  .github-button,
+  .twitter-share-button {
+    vertical-align: middle;
+  }
+  .github-button {
+    min-width: 100px;
+  }
+  .twitter-share-button {
+    margin-left: -10px;
+  }
 }
 
 .promotional {
@@ -29,8 +42,9 @@ $line-height: 24px;
     line-height: 34px;
     float: right;
 
-    .fa-hand-o-left {
-      margin-left: 12px;
+    .fa-hand-o-right {
+      margin-right: 2px;
+      margin-left: 6px;
     }
   }
 
