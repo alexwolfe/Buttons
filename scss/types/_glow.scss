@@ -8,10 +8,12 @@
 
 $ubtn-default-glow-color: #2c9adb !default;
 
+
 /*
 * Glow animation mixin for Compass users
 *
 */
+
 @mixin glow($animation-name) {
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -23,6 +25,7 @@ $ubtn-default-glow-color: #2c9adb !default;
 * Glowing Keyframes
 *
 */
+
 @if($ubtn-use-compass) {
   @include keyframes(glowing) {
     from { @include box-shadow(0 0 0 rgba($ubtn-default-glow-color, 0.3));}
@@ -43,6 +46,7 @@ $ubtn-default-glow-color: #2c9adb !default;
 * Glowing Keyframes for various colors
 *
 */
+
 @each $ubtn-color in $ubtn-colors {
   $ubtn-name: nth($ubtn-color, 1);
   $ubtn-background: nth($ubtn-color, 2);
@@ -64,6 +68,7 @@ $ubtn-default-glow-color: #2c9adb !default;
   }
 }
 
+
 /*
 * Glowing Buttons Base Styes
 *
@@ -71,6 +76,7 @@ $ubtn-default-glow-color: #2c9adb !default;
 * rythmically around the edges of
 * a button.
 */
+
 #{$ubtn-namespace}-glow {
   @if($ubtn-use-compass) {
     @include glow(glowing);
@@ -94,11 +100,13 @@ $ubtn-default-glow-color: #2c9adb !default;
   }
 }
 
+
 /*
 * Glowing Button Colors
 *
 * Create colors for glowing buttons
 */
+
 #{$ubtn-namespace}-glow {
   @each $ubtn-color in $ubtn-colors {
     $ubtn-name: nth($ubtn-color, 1);

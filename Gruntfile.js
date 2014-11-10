@@ -44,7 +44,6 @@ module.exports = function (grunt) {
 
     sass: {
       all: {
-        options: {},
         files: {
           'tmp/css/buttons.css': 'scss/buttons.scss',
           'tmp/css/showcase.css': 'showcase/scss/showcase.scss'
@@ -75,6 +74,7 @@ module.exports = function (grunt) {
     * Minify files
     *
     */
+
     cssmin: {
       add_banner: {
         options: {
@@ -91,6 +91,7 @@ module.exports = function (grunt) {
     * Copy files
     *
     */
+
     copy: {
       css_library: {
         files: [{
@@ -131,6 +132,7 @@ module.exports = function (grunt) {
     * Clean tmp folders
     *
     */
+
     clean: {
       dev: {
         src: ["tmp"]
@@ -140,10 +142,12 @@ module.exports = function (grunt) {
       }
     },
 
+
     /*
     * Launch local server
     *
     */
+
     connect: {
       livereload: {
         options: {
@@ -163,10 +167,12 @@ module.exports = function (grunt) {
       }
     },
 
+
     /*
     * Watch for changes
     *
     */
+
     watch: {
       scripts: {
         files: ['js/**/*.js'],
@@ -193,10 +199,12 @@ module.exports = function (grunt) {
       }
     },
 
+
     /*
     * QUnit
     *
     */
+
     qunit: {
       options: {
         urls:[
@@ -238,27 +246,30 @@ module.exports = function (grunt) {
         }
       }
     }
-
   });
 
 
   /**
-  * Grunt Tasks
+  * Grunt Helper Tasks
   *
   */
 
-  // Test task.
   grunt.registerTask('test', 'qunit');
   grunt.registerTask('sauceserver', 'connect:sauce');
   grunt.registerTask('sauce', 'saucelabs-qunit');
-
   var testSubtasks = ['test'];
   if (process.env.SAUCE_ACCESS_KEY !== undefined) {
     testSubtasks.push('sauceserver');
     testSubtasks.push('sauce');
   }
-
   grunt.registerTask('copyMain', ['copy:css_library', 'copy:css_showcase', 'copy:js_showcase']);
+
+
+  /**
+  * Grunt Core Build Tasks
+  *
+  */
+
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'copyMain', 'clean:dev']);
   grunt.registerTask('dev', ['includes', 'sass', 'autoprefixer', 'cssmin', 'copyMain', 'clean:dev', 'connect', 'watch']);
   grunt.registerTask('dist', ['clean:build', 'includes', 'sass', 'autoprefixer', 'cssmin', 'copyMain', 'copy:showcase_dist', 'clean:dev']);

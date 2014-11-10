@@ -95,10 +95,6 @@
   margin: 0;
   display: block;
 
-  &#{$ubtn-namespace}-dropdown-divider {
-   border-top: 1px solid darken($ubtn-bgcolor, 3%);
-  }
-
   > a {
     display: block;
     line-height: $ubtn-height;
@@ -116,6 +112,9 @@
   }
 }
 
+#{$ubtn-namespace}-dropdown-divider {
+ border-top: 1px solid darken($ubtn-bgcolor, 3%);
+}
 
 /*
 * Dropdown Colors
@@ -123,6 +122,7 @@
 * Create colors for buttons
 * (.button-primary, .button-secondary, etc.)
 */
+
 #{$ubtn-namespace}-dropdown {
 
   @each $ubtn-color in $ubtn-colors {
@@ -138,10 +138,11 @@
         background: rgba($ubtn-background, .95);
         border-color: darken($ubtn-background, 10%);
 
+        #{$ubtn-namespace}-dropdown-divider {
+         border-color: darken($ubtn-background, 7%);
+        }
+
         > li {
-          &#{$ubtn-namespace}-dropdown-divider {
-           border-color: darken($ubtn-background, 7%);
-          }
 
           > a {
             color: $ubtn-color;

@@ -4,51 +4,53 @@
 * A visual effect adding a flat shadow to the text of a button
 */
 
-//Loops $length times building a long shadow. Defaults downward right.
-@function longshadow($type, $color, $length, $expand: false, $direction: right) {
-  $values: 0 0 $color;
-  @if $expand == true {
-    $values: 0 0 0 $color;
-  }
 
+/*
+* Long Shadow Function
+*
+* Loops $length times building a long shadow. Defaults downward right
+*/
+
+@function longshadowFunc($type, $color, $length, $direction: right) {
+  $values: 0px 0px $color;
+
+  //LEFT SHADOW
   @if $direction == right {
     @for $i from 1 through $length {
       $kolor: $color;
-
-      @if $expand == true {
-        $values: #{$values}, #{$i}px #{$i}px unquote($i * .15 + 'px ') $kolor;
-      } @else {
-        $values: #{$values}, #{$i}px #{$i}px #{$kolor};
-      }
+      $values: #{$values}, #{$i}px #{$i}px #{$kolor};
     }
   }
+
+  //RIGHT SHADOW
   @if $direction == left {
     @for $i from 1 through $length {
       $kolor: $color;
       $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$kolor};
     }
   }
+
   @return $values;
 }
 
-@mixin base($direction) {
-  //Clips anything leftover shadow outside of longshadow button
+
+/*
+* LONG SHADOW MIXIN
+*
+*/
+
+@mixin longshadow($direction) {
   overflow: hidden;
 
-  //Create long shadow for each of our action colors
+  //CREATE LONG SHADOW WITH COLOR
   @each $ubtn-color in $ubtn-colors {
     $ubtn-name: nth($ubtn-color, 1);
     $ubtn-background: nth($ubtn-color, 2);
     $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
 
-    &#{$ubtn-namespace}-#{$ubtn-name} {
-      //Note we use high number here to allow the longshadow to work up to ~200px/200px size tested w/ fa-3x icon
-      text-shadow: longshadow(text, darken($ubtn-background, 10%), 85, false, $direction);
-
-      //Expand (skew)
-      &#{$ubtn-namespace}-longshadow-expand {
-        text-shadow: longshadow(text, darken($ubtn-background, 10%), 100, true, $direction);
-      }
+    &#{$ubtn-color-namespace} {
+      text-shadow: longshadowFunc(text, darken($ubtn-background, 10%), 85, $direction);
 
       &:active,
       &.active,
@@ -57,17 +59,25 @@
       }
     }
   }
-
 }
 
-//Long Shadow downwards to the right (default)
+
+/*
+* Shadow Right
+*
+*/
+
 #{$ubtn-namespace}-longshadow,
 #{$ubtn-namespace}-longshadow-right {
-  @include base(right);
+  @include longshadow(right);
 }
 
-//Long Shadow downwards to the left
+
+/*
+* Shadow Left
+*
+*/
+
 #{$ubtn-namespace}-longshadow-left {
-  @include base(left);
+  @include longshadow(left);
 }
-
