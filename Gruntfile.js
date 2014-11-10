@@ -180,7 +180,7 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['scss/**/*.scss', 'showcase/scss/**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'copy:main', 'clean:dev']
+        tasks: ['sass', 'autoprefixer', 'copy:css_showcase', 'copy:css_library', 'clean:dev']
       },
       includes: {
         files: ['showcase/includes/**/*.html', 'showcase/pages/**/*.html'],

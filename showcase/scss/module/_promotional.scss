@@ -5,6 +5,10 @@
 
 $line-height: 24px;
 
+.promo-social {
+  float: left;
+}
+
 .promotional {
   background: rgba($white, .9);
   box-shadow: 0px -1px 1px rgba(0, 0, 0, .1);
@@ -21,9 +25,9 @@ $line-height: 24px;
     color: $blue-shade-5;
     font-size: 18px;
     font-weight: normal;
-    margin: 0px;
+    margin: 0px 10px 0px 0px;
     line-height: 34px;
-    float: left;
+    float: right;
 
     .fa-hand-o-left {
       margin-left: 12px;
@@ -31,8 +35,7 @@ $line-height: 24px;
   }
 
   > form {
-    width: 750px;
-    margin: 0px auto;
+    float: right;
   }
 
 
@@ -79,11 +82,15 @@ $line-height: 24px;
   @media handheld and (max-width: $phone-breakpoint),
   screen and (max-device-width: $phone-breakpoint),
   screen and (max-width: $tablet-breakpoint) {
-    h3,
+
     form {
       width: auto;
       display: block;
       font-size: 14px;
+    }
+
+    h3, .promo-social {
+      display: none;
     }
 
     .email-icon {

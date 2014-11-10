@@ -31,6 +31,12 @@
 </head>
 <body>
   <!-- NAV -->
+  <nav id="unicorn-nav" class="unicorn-nav clearfix">
+    <h1><a href="/">Unicorn UI</a></h1>
+    <h2>A highly customizable and production ready UI library for the web.</h2>
+
+    <div class="clear"></div>
+  </nav>
   <nav id="top-nav" class="top-nav clearfix animated fadeInDown">
     <h1><a href="#hero">Buttons</a></h1>
 
@@ -42,8 +48,6 @@
       </ul>
     </span>
   </nav>
-
-
 
   <!-- HERO -->
   <header id="hero" class="hero hero-buttons">
@@ -71,8 +75,6 @@
       </p>
 
       <a class="hero-cta button button-plain button-uppercase button-rounded" href="css/buttons.css">Download</a>
-      <iframe src="http://ghbtns.com/github-btn.html?user=unicorn-ui&repo=Buttons&type=watch&count=true" class="github-button" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
     </div>
 
 
@@ -554,7 +556,7 @@
   <link rel="stylesheet" href="css/buttons.css">
 
   <!-- Only needed if you want support for dropdown menus -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="js/buttons.js"></script>
 
   <!-- Only needed if you want font icons -->
@@ -567,7 +569,7 @@
   &lt;link rel=&quot;stylesheet&quot; href=&quot;css/buttons.css&quot;&gt;
 
   &lt;!-- Only needed if you want support for dropdown menus --&gt;
-  &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
   &lt;script type=&quot;text/javascript&quot; src=&quot;js/buttons.js&quot;&gt;&lt;/script&gt;
 
   &lt;!-- Only needed if you want font icons --&gt;
@@ -622,13 +624,40 @@
 
     <form action="//unicorn-ui.us9.list-manage.com/subscribe/post?u=8d64dfb6a9a561029375e03a8&amp;amp;id=b5db98a4bb" method="post"  name="mc-embedded-subscribe-form" target="_blank">
 
-  	  <h3>New goodies on the way! Be the first to know! <i class="fa fa-hand-o-right"></i></h3>
-
       <input type="submit" value="Let's do this!" name="subscribe" id="mc-embedded-subscribe" class="button button-primary button-rounded button-raised button-small button-newsletter"/>
       <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="you@email.com" class="newsletter-email"/>
       <span class="email-icon"><i class="fa fa-envelope"></i></span>
+
+      <h3>New goodies on the way!<i class="fa fa-hand-o-right"></i> </h3>
+
       <div class="clear"></div>
     </form>
+
+    <div class="promo-social">
+      <!-- FACEBOOK LIKE BUTTON -->
+      <div id="fb-root"></div>
+      <script>
+          (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=162853010460019";
+              fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <div class="fb-like" data-href="http://unicorn-ui.com/buttons/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+
+      <!-- GITHUB STAR BUTTON -->
+      <iframe class="github-button" src="http://ghbtns.com/github-btn.html?user=alexwolfe&repo=Buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+
+      <!-- GITHUB FORK BUTTON -->
+      <iframe class="github-button" src="http://ghbtns.com/github-btn.html?user=alexwolfe&repo=Buttons&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+
+
+      <!-- TWITTER TWEET BUTTON -->
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://unicorn-ui.com/buttons/" data-text="Buttons - a customizable CSS button library built with Sass">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
   </footer>
 
 
@@ -648,7 +677,7 @@
 
   <!-- JAVASCRIPT INCLUDES -->
   <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="js/scrollMonitor.js"></script>
   <script type="text/javascript" src="js/zeroclipboard/dist/ZeroClipboard.js"></script>
   <script type="text/javascript" src="js/polyfill.js"></script>

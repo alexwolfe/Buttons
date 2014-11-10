@@ -73,7 +73,7 @@ $ubtn-shapes: (square 0) (box 10px) (rounded 4px) (pill 200px) (circle 100%) !de
 * Each block contains the (name, size multiplier).
 * The class is generated using the name: (ex .button-giant).
 */
-$ubtn-sizes: (giant 2) (jumbo 1.5) (large 1.25) (normal 1) (small .75) (tiny .6) !default;
+$ubtn-sizes: (giant 1.75) (jumbo 1.5) (large 1.25) (normal 1) (small .75) (tiny .6) !default;
 // Use a map if you prefer when running Sass 3.3+
 // $ubtn-sizes: (
 //   giant: 2,
