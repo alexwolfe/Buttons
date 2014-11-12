@@ -26,4 +26,10 @@
     color: $gray;
     padding: 0px 10px;
   }
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    display: none;
+  }
 }

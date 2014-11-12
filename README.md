@@ -4,79 +4,71 @@
 
 [![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
 
-Welcome to Unicorn-UI Buttons! Yup, we've got a new home &#9786;
+#Buttons 2.0
 
-Buttons 2.0 is a fully customizable CSS button library that's built using Sass, and created by [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
+Buttons is a highly customizable production ready mobile web and desktop css button library. Buttons is a free  open source project created using Sass.
 
-## Buttons 2.0 Showcase
+Authors [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twitter.com/roblevintennis).
 
-We've created the Buttons 2.0 [showcase page](http://unicorn-ui.com/buttons/showcase/) to show off the latest version of Buttons. It features copy and paste ready example snippets:
+## Showcase Demo
 
-[![Buttons 2.0 Showcase](https://www.dropbox.com/s/y9cbmxmih6uwrmm/buttons-showcase.png?dl=1 "Buttons 2.0 Showcase")](http://unicorn-ui.com/buttons/showcase/)
+View the  [showcase demo](http://unicorn-ui.com/buttons/) to see the buttons in action. The showcase provides full list of examples along with code snippets to speed up development.
 
-Oh, and you've heard it right–Buttons 2.0 is mobile optimized and ready to drop in to your &ldquo;mobile first&rdquo; sites:
+[![Buttons 2.0 Showcase](https://www.dropbox.com/s/y9cbmxmih6uwrmm/buttons-showcase.png?dl=1 "Buttons 2.0 Showcase")](http://unicorn-ui.com/buttons/)
 
-[![Buttons 2.0 Showcase–Mobile](https://www.dropbox.com/s/t92eti7adipz32p/buttons-showcase-mobile.png?dl=1 "Buttons 2.0 Showcase Mobile")](http://unicorn-ui.com/buttons/showcase/)
 
-*Note that you'll have access to that same showcase page locally, if you choose to clone the repo and utilize our Grunt development workflow (see below for instructions on setting that up).*
-
-## Coming Soon–Buttons Builder 2.0
-
-Currently, [the Buttons Builder Website](http://unicorn-ui.com/buttons/builder/) uses Buttons 1.0 :disappointed:, but we're working hard to get that updated to work with the new Buttons 2.0 library so check back soon or get on our mailing list (via the [showcase page](http://unicorn-ui.com/buttons/showcase/)) to get notified. The Buttons Builder let's you view live examples and fully customize your Buttons download.
-
-## Coming Soon–Buttons 2.0 Playground
-
-We're planning to create a Buttons playground which will incorporate SVG, animations, etc., and spark your creative juices. Again, check back soon or get on the mailing list to get notified (via the [showcase page](http://unicorn-ui.com/buttons/showcase/)).
-
----
 
 ## Setup & Installation
 
 1. Download the latest [buttons.css](http://unicorn-ui.com/buttons/showcase/css/buttons.css)
-2. Include css in the head of your webpage. *You only need the font-awesome css if you're using icons*
-    `<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">`
-    `<link rel="stylesheet" href="css/buttons.css">`
-3. Include jQuery and buttons.js if you're using dropdown menu buttons.
-    `<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>`
-    `<script type="text/javascript" src="js/buttons.js"></script>`
-4. Create buttons in your html. [View code examples here](http://unicorn-ui.com/buttons/showcase/).
+2. Include buttons in your website:
 
+```html
+  <!-- Buttons core css -->
+  <link rel="stylesheet" href="css/buttons.css">
 
-## or Install with Bower
-You can also install Buttons using [Bower](http://bower.io/) if you're using that for your package management.
+  <!-- Only needed if you want support for dropdown menus -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/buttons.js"></script>
 
-`bower install buttons`
-
-## Customize Buttons
-
-1. Clone the Buttons repo
-2. Make sure you have Sass installed
-3. Run `npm install` from your terminal
-4. Edit the `_options.scss` with your own custom values (see example values below)
-5. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
-
-	`$ sass --watch --scss scss/buttons.scss:css/buttons.css # compile with Sass`
-
-	`$ compass watch # compile with Compass`
-
-6. The `css/buttons.css` file should now be updated
-
-## Grunt
-
-If you plan to make any significant modifications or contributions to Buttons, you'll likely want to take advantage of the Grunt tasks available. You'll of course need to ensure you have [Grunt Setup](http://gruntjs.com/). You can run one of the following from the root directory of Buttons:
-
-```shell
-grunt # default task which compiles with sass and leverages autoprefixer and cssmin
-grunt dev # does same as above but starts a live watch too
+  <!-- Only needed if you want font icons -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 ```
 
-### General Options
 
-In order to edit your Button options, simply change option values within the `_options.scss` file to your liking. After you make your edits run `compass watch`, or, `sass --watch --scss scss/buttons.scss:css/buttons.css` from Button's root directory and your updates should be reflected in `css/buttons.css`.
+## Bower Installation
+1. If you're using [Bower](http://bower.io/) you can run  `bower install buttons`
 
-At any time, you can directly open up the `index.html` file in a browser to view your changes.
+## Transitioning From Buttons 1.0 to Buttons 2.0
+We've made some major improvements to the Buttons library. In order to integrate buttons into your current project you'll need to make the following changes:
 
-#### Options
+1. Compass has been replaced with [autoprefixer](https://github.com/postcss/autoprefixer). Compass is not recommended but it is still supported.
+2. Button colors are now complete independent (ex. button-primary) we no longer have classes like <code>button-flat-primary</code> to achieve this you now simply add <code>button-flat button-primary</code>
+3. Buttons styles are now independent (ex. button-flat, button-3d, etc.). You can apply these styles and they will automatically pick up the color attached to the button (ex. button-primary button-3d)
+
+## Customize Buttons (Recommended uses Sass & Autoprefixer)
+0. Clone the Buttons repository.
+0. Make sure you have [node.js](http://nodejs.org/) installed.
+0. From the command line cd into the root for the Buttons directory
+0. Run ```npm install``` or ```sudo npm install``` (depending on your system permissions).
+0. On the command line run ```grunt dev```, this will open a browser with Buttons
+0. Locate **scss** in the root directory
+0. You can modify the _options.scss where you can customize colors, typography, and …
+0. Anytime you save your changes the Buttons showcase page will live reload with your changes!
+
+## Customize Buttons with only Sass or Compass
+0. Clone the Buttons repo
+0. Make sure you have Sass installed
+0. Run `npm install` from your terminal
+0. Edit the `_options.scss` with your own custom values (see example values below)
+0. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
+  For Sass run: `$ sass --watch --scss scss/buttons.scss:css/buttons.css`
+  For Compass run: `$ compass watch`
+0. The `css/buttons.css` file should now be updated
+
+## Button Options
+
+To edit Buttons simply change values within the `_options.scss` file. After you make your edits recompile your sass file and your changes will get processed.
 
 * **$ubtn:** This prefix stands for Unicorn Button and prevents namespace collisions that could occur if you import buttons as part of your Sass build process. We kindly ask you not to use the prefix $ubtn in your project in order to avoid possilbe name conflicts. Thanks!
 * **$ubtn-namespace:**  Desired CSS namespace for your buttons (default .button)
@@ -95,16 +87,17 @@ At any time, you can directly open up the `index.html` file in a browser to view
 
 ## Excluding Button Types
 
-By default, Buttons will compile all *Button Types* to your `css/buttons.css` file. However, you can exclude types from your compilation unit in order to improve performance. To do so, simply comment out or delete the corresponding *import* line for that button type. For example, to remove the 3D button type, find the corresponding line in the `scss/button.scss` file that reads:
+By default, Buttons will include all  button types. You can exclude types from your compilation by simply removing the corresponding *@import* statement in the buttons.scss file.
+
 ```shell
+//Example import statement for 3d button.
 @import 'types/3d';
 ```
-and comment out or remove that line and then recompile (see instructions on how to compile above).
+Remove this statement then recompile to create a build without 3d buttons.
 
 ## Browser Support
-Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all the way down to Internet Explorer 8.
+Buttons works in all modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all to Internet Explorer 8.
 
 
-## Authors
-Created by Unicorn-UI (visit us at [unicorn-ui.com](http://unicorn-ui.com)) whos team members consist of Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis).
-
+## About Buttons
+Buttons is part of the [Unicorn-UI Framework](http://unicorn-ui.com). Created by Alex Wolfe [@alexwolfe](https://twitter.com/alexwolfe) and Rob Levin [@roblevintennis ](https://twitter.com/roblevintennis).
