@@ -4,23 +4,18 @@ $svgHighlight: #e67e22;
 $svgPrimary: #3498db;
 $neutralFillColor: #ccc;
 
-@mixin svgColors($fillColor: false, $color: false, $patchCurrentColorForIE: false) {
+@mixin svgColors($fillColor: false, $color: false) {
   @if $fillColor {
     fill: $fillColor;
   }
   @if $color {
     color: $color;
   }
-  @if $patchCurrentColorForIE {
-    * [fill='currentColor'] {
-      fill: currentColor;
-    }
-  }
 }
 
 
 // http://bugs.jquery.com/ticket/11352
-svg use { pointer-events: none;}
+svg { pointer-events: none;}
 
 .svgs {
   svg {
@@ -29,21 +24,21 @@ svg use { pointer-events: none;}
     display: block;
     margin: 0 auto;
 
-    &.completed {@include svgColors($neutralFillColor, $svgSuccess, true);}
-    &.completed-2{@include svgColors($neutralFillColor, deeppink, true);}
-    &.overdue {@include svgColors($neutralFillColor, $svgCaution, true);}
-    &.survey {@include svgColors($neutralFillColor, $svgHighlight, true);}
-    &.trending {@include svgColors($neutralFillColor, $svgPrimary, true);}
-    &.late {@include svgColors($neutralFillColor, $svgCaution, true);}
+    &.completed {@include svgColors($neutralFillColor, $svgSuccess);}
+    &.completed-2{@include svgColors($neutralFillColor, deeppink);}
+    &.overdue {@include svgColors($neutralFillColor, $svgCaution);}
+    &.survey {@include svgColors($neutralFillColor, $svgHighlight);}
+    &.trending {@include svgColors($neutralFillColor, $svgPrimary);}
+    &.late {@include svgColors($neutralFillColor, $svgCaution);}
   }
 }
 
 .button:hover svg {
-  &.completed {@include svgColors(false, lighten($svgSuccess, 10%), true);}
-  &.completed-2{@include svgColors(false, fuchsia, true);}
-  &.overdue {@include svgColors(false, lighten($svgCaution, 10%), true);}
-  &.survey {@include svgColors(false, lighten($svgHighlight, 10%), true);}
-  &.trending {@include svgColors(false, lighten($svgPrimary, 10%), true);}
-  &.late {@include svgColors(false, lighten($svgCaution, 10%), true);}
+  &.completed {@include svgColors(false, lighten($svgSuccess, 10%));}
+  &.completed-2{@include svgColors(false, fuchsia);}
+  &.overdue {@include svgColors(false, lighten($svgCaution, 10%));}
+  &.survey {@include svgColors(false, lighten($svgHighlight, 10%));}
+  &.trending {@include svgColors(false, lighten($svgPrimary, 10%));}
+  &.late {@include svgColors(false, lighten($svgCaution, 10%));}
 }
 

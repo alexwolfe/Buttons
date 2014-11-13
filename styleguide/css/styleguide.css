@@ -649,14 +649,14 @@ body {
 *
 */
 .background-dark {
-  color: #FFFFFF;
+  color: white;
   background: #229ffd; }
   .background-dark a {
-    color: #FFFFFF; }
+    color: white; }
 
 .background-light {
   color: #a9adb1;
-  background: #FFFFFF; }
+  background: white; }
 
 .background-subtle {
   background: #f3faff; }
@@ -685,9 +685,9 @@ body {
   color: #a9adb1; }
 
 .text-light {
-  color: #FFFFFF; }
+  color: white; }
   .text-light a {
-    color: #FFFFFF; }
+    color: white; }
 
 .top-nav {
   display: none;
@@ -760,9 +760,9 @@ body {
   font-weight: 100;
   position: relative;
   border-radius: 100%;
-  background: #FFFFFF;
+  background: white;
   color: #145f98;
-  text-shadow: 0px 1px 0px #FFFFFF;
+  text-shadow: 0px 1px 0px white;
   -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer; }
@@ -845,7 +845,7 @@ body {
     background-color: #61bafd;
     margin-left: -2px;
     font-size: 14px;
-    color: #FFFFFF;
+    color: white;
     -webkit-transition: all .3s ease-in;
             transition: all .3s ease-in; }
     .promotional .newsletter-button:hover {
@@ -929,7 +929,7 @@ body {
     top: 130px;
     left: 70px;
     z-index: 2;
-    background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%); }
+    background: linear-gradient(90deg, #9d50bb 10%, #6e48aa 90%); }
   .phone .phone-status-bar {
     background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
     position: absolute;
@@ -1042,7 +1042,7 @@ body {
     left: 0px;
     top: 60px;
     padding: 0px 20px;
-    background: #FFFFFF;
+    background: white;
     -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
     .docs > header .docs-title {
@@ -1070,7 +1070,7 @@ body {
   border: 1px solid #e8edf2;
   border-radius: 4px;
   position: relative;
-  background: #FFFFFF;
+  background: white;
   margin-top: 40px;
   /*
   * Codebox Header
@@ -1101,7 +1101,7 @@ body {
       font-size: 12px;
       appearance: none;
       border-left: 1px solid #e8edf2;
-      background: #FFFFFF;
+      background: white;
       display: none; }
       .codebox header .codebox-copy.is-visible {
         display: block; }
@@ -1286,7 +1286,7 @@ body {
 .arrow-light {
   color: #f3faff; }
 
-svg use {
+svg {
   pointer-events: none; }
 
 .svgs svg {
@@ -1295,57 +1295,33 @@ svg use {
   display: block;
   margin: 0 auto; }
   .svgs svg.completed {
-    fill: #ccc;
+    fill: #cccccc;
     color: #27ae60; }
-    .svgs svg.completed * [fill='currentColor'] {
-      fill: currentColor; }
   .svgs svg.completed-2 {
-    fill: #ccc;
+    fill: #cccccc;
     color: deeppink; }
-    .svgs svg.completed-2 * [fill='currentColor'] {
-      fill: currentColor; }
   .svgs svg.overdue {
-    fill: #ccc;
+    fill: #cccccc;
     color: #e74c3c; }
-    .svgs svg.overdue * [fill='currentColor'] {
-      fill: currentColor; }
   .svgs svg.survey {
-    fill: #ccc;
+    fill: #cccccc;
     color: #e67e22; }
-    .svgs svg.survey * [fill='currentColor'] {
-      fill: currentColor; }
   .svgs svg.trending {
-    fill: #ccc;
+    fill: #cccccc;
     color: #3498db; }
-    .svgs svg.trending * [fill='currentColor'] {
-      fill: currentColor; }
   .svgs svg.late {
-    fill: #ccc;
+    fill: #cccccc;
     color: #e74c3c; }
-    .svgs svg.late * [fill='currentColor'] {
-      fill: currentColor; }
 
 .button:hover svg.completed {
   color: #36d278; }
-  .button:hover svg.completed * [fill='currentColor'] {
-    fill: currentColor; }
 .button:hover svg.completed-2 {
-  color: fuchsia; }
-  .button:hover svg.completed-2 * [fill='currentColor'] {
-    fill: currentColor; }
+  color: magenta; }
 .button:hover svg.overdue {
   color: #ed7669; }
-  .button:hover svg.overdue * [fill='currentColor'] {
-    fill: currentColor; }
 .button:hover svg.survey {
   color: #eb9950; }
-  .button:hover svg.survey * [fill='currentColor'] {
-    fill: currentColor; }
 .button:hover svg.trending {
   color: #5faee3; }
-  .button:hover svg.trending * [fill='currentColor'] {
-    fill: currentColor; }
 .button:hover svg.late {
   color: #ed7669; }
-  .button:hover svg.late * [fill='currentColor'] {
-    fill: currentColor; }

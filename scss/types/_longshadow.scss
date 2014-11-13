@@ -32,23 +32,17 @@
 }
 
 @mixin base($direction) {
-  //Clips anything leftover shadow outside of longshadow button
   overflow: hidden;
 
-  //Create long shadow for each of our action colors
+  //CREATE LONG SHADOW WITH COLOR
   @each $ubtn-color in $ubtn-colors {
     $ubtn-name: nth($ubtn-color, 1);
     $ubtn-background: nth($ubtn-color, 2);
     $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
 
-    &#{$ubtn-namespace}-#{$ubtn-name} {
-      //Note we use high number here to allow the longshadow to work up to ~200px/200px size tested w/ fa-3x icon
-      text-shadow: longshadow(text, darken($ubtn-background, 10%), 85, false, $direction);
-
-      //Expand (skew)
-      &#{$ubtn-namespace}-longshadow-expand {
-        text-shadow: longshadow(text, darken($ubtn-background, 10%), 100, true, $direction);
-      }
+    &#{$ubtn-color-namespace} {
+      text-shadow: longshadowFunc(text, darken($ubtn-background, 10%), 85, $direction);
 
       &:active,
       &.active,
