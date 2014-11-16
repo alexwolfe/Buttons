@@ -1,0 +1,53 @@
+/*
+* Color Mixin
+*
+* Iterates through the list of colors and creates
+*
+*/
+
+@mixin colors($type-namespace) {
+  #{$type-namespace} {
+    @each $ubtn-color in $ubtn-colors {
+      $ubtn-name: nth($ubtn-color, 1);
+      $ubtn-background: nth($ubtn-color, 2);
+      $ubtn-color: nth($ubtn-color, 3);
+      $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+      &#{$ubtn-color-namespace} {
+        @content;
+      }
+    }
+  }
+}
+
+
+/*
+* No Animation
+*
+* Sets animation property to none
+*/
+@mixin no_animation {
+  animation-name: none;
+}
+
+
+/*
+* Clearfix
+*
+* Clears floats inside the container
+*/
+@mixin clearfix {
+  *zoom: 1;
+
+  &:after, &:before {
+    content: '.';
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+}

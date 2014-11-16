@@ -1,0 +1,73 @@
+/*
+* Layout margin & padding
+*
+*/
+@for $i from 1 through 10 {
+  $l-space: $i * 10;
+
+  .l-margin-#{$l-space} {
+    margin: 0px + $l-space;
+  }
+
+  .l-margin-top-#{$l-space} {
+    margin-top: 0px + $l-space;
+  }
+
+  .l-margin-bottom-#{$l-space} {
+    margin-bottom: 0px + $l-space;
+  }
+
+  .l-padding-#{$l-space} {
+    padding: 0px + $l-space;
+  }
+
+  .l-padding-top-#{$l-space} {
+    padding-top: 0px + $l-space;
+  }
+
+  .l-padding-bottom-#{$l-space} {
+    padding-bottom: 0px + $l-space;
+  }
+}
+
+
+/*
+* Layout Over & Under
+*
+* Used to create dynamic background effects that.
+* The main content should be over and the background
+* sould remain under.
+*/
+
+.l-over {
+  position: relative;
+  z-index: $layer-2;
+}
+.l-under {
+  z-index: $layer-1;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+/*
+* Alignment
+*
+*/
+
+.l-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.l-right {
+  text-align: right;
+}
+.l-left {
+  text-align: left;
+}
+

@@ -1,0 +1,131 @@
+/*
+* Promotional Module
+*
+*/
+
+$line-height: 24px;
+
+.promo-social {
+  float: left;
+  margin-top: 4px;
+
+  .fb-like,
+  .github-button,
+  .twitter-share-button {
+    vertical-align: middle;
+  }
+  .github-button {
+    min-width: 100px;
+  }
+  .twitter-share-button {
+    margin-left: -10px;
+  }
+}
+
+.promotional {
+  background: rgba($white, .9);
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, .1);
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: $layer-5;
+  padding: 20px;
+
+  h3 {
+    color: $blue-shade-5;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px 10px 0px 0px;
+    line-height: 34px;
+    float: right;
+
+    .fa-hand-o-right {
+      margin-right: 2px;
+      margin-left: 6px;
+    }
+  }
+
+  > form {
+    float: right;
+  }
+
+
+  .newsletter-email {
+    float: right;
+    padding: 4px 8px;
+    vertical-align: middle;
+    line-height: $line-height;
+    height: $line-height;
+    border: 1px solid lighten($gray, 10%);
+    outline: none;
+  }
+
+  .email-icon {
+    float: right;
+    border: 1px solid lighten($gray, 10%);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 4px 8px;
+    line-height: $line-height;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-right: -1px;;
+    color: lighten($gray, 10%);
+  }
+
+  .newsletter-button {
+    line-height: $line-height;
+  }
+
+  .button-newsletter {
+    float: right;
+    border-radius: 0px 3px 3px 0px;
+    border-left-color: $gray;
+    padding: 0px 10px;
+    height: 34px;
+    line-height: 34px;
+
+    &:hover {
+      color: rgba(255, 255, 255, .9);
+      background-color: $blue-shade-6;
+    }
+  }
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+
+    form {
+      width: auto;
+      display: block;
+      font-size: 14px;
+    }
+
+    h3, .promo-social {
+      display: none;
+    }
+
+    .email-icon {
+      display: none;
+    }
+
+    h3,
+    form {
+      float: none;
+    }
+
+    .newsletter-email {
+      float: left;
+    }
+
+
+    .newsletter-email,
+    .button-newsletter {
+      margin: 0px;
+      border-radius: 3px;
+    }
+  }
+}

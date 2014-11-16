@@ -1,0 +1,18 @@
+/*
+* Button Sizes
+*
+* This file creates the various button sizes
+* (ex. .button-large, .button-small, etc.)
+*/
+@each $ubtn-size in $ubtn-sizes {
+  $ubtn-size-name: nth($ubtn-size, 1);
+  $ubtn-size-multiplier: nth($ubtn-size, 2);
+  $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size-name};
+
+  #{$ubtn-size-namespace} {
+    font-size: $ubtn-font-size * $ubtn-size-multiplier;
+    height: $ubtn-height * $ubtn-size-multiplier;
+    line-height: $ubtn-height * $ubtn-size-multiplier;
+    padding: 0 ($ubtn-height * $ubtn-size-multiplier);
+  }
+}

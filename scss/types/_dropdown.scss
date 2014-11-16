@@ -1,0 +1,159 @@
+/*
+* Dropdown menu buttons
+*
+* A dropdown menu appears
+* when a button is pressed
+*/
+
+
+/*
+* Dropdown Container
+*
+*/
+#{$ubtn-namespace}-dropdown {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+}
+
+
+/*
+* Dropdown List Style
+*
+*/
+#{$ubtn-namespace}-dropdown-list {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  min-width: 100%;
+  list-style-type: none;
+  background: lighten(rgba($ubtn-bgcolor, .95), 10%);
+  border-style: solid;
+  border-width: 1px;
+  border-color: darken($ubtn-bgcolor, 10%);
+  font-family: $ubtn-font-family;
+
+  @if($ubtn-use-compass) {
+    @include box-shadow(0 2px 7px rgba(0, 0, 0, 0.2));
+    @include box-sizing(border-box);
+    @include border-radius(3px);
+  }
+  @else {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+
+  /*
+  * Dropdown Below
+  *
+  */
+  &.is-below {
+    top: 100%;
+    border-top: none;
+
+    @if($ubtn-use-compass) {
+      @include border-radius(0 0 3px 3px);
+    }
+    @else {
+      border-radius: 0 0 3px 3px;
+    }
+  }
+
+  /*
+  * Dropdown Above
+  *
+  */
+  &.is-above {
+    bottom: 100%;
+    top: auto;
+    border-bottom: none;
+
+    @if($ubtn-use-compass) {
+      @include box-shadow(0 -2px 7px rgba(0, 0, 0, 0.2));
+      @include border-radius(3px 3px 0 0);
+    }
+    @else {
+      border-radius: 3px 3px 0 0;
+      box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+
+/*
+* Dropdown Buttons
+*
+*/
+#{$ubtn-namespace}-dropdown-list > li {
+  padding: 0;
+  margin: 0;
+  display: block;
+
+  > a {
+    display: block;
+    line-height: $ubtn-height;
+    font-size:  $ubtn-font-size * .8;
+    padding: 5px 10px;
+    float: none;
+    color: $ubtn-font-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($ubtn-font-color, 3%);
+      background: lighten($ubtn-bgcolor, 3%);
+      text-decoration: none;
+    }
+  }
+}
+
+#{$ubtn-namespace}-dropdown-divider {
+ border-top: 1px solid darken($ubtn-bgcolor, 3%);
+}
+
+/*
+* Dropdown Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+
+#{$ubtn-namespace}-dropdown {
+
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-dropdown-' + $ubtn-name;
+
+    // Crete class for .button-primary
+    &#{$ubtn-color-namespace} {
+
+      #{$ubtn-namespace}-dropdown-list {
+        background: rgba($ubtn-background, .95);
+        border-color: darken($ubtn-background, 10%);
+
+        #{$ubtn-namespace}-dropdown-divider {
+         border-color: darken($ubtn-background, 7%);
+        }
+
+        > li {
+
+          > a {
+            color: $ubtn-color;
+
+            &:hover {
+              color: darken($ubtn-color, 5%);
+              background: darken($ubtn-background, 5%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

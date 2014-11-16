@@ -1,0 +1,230 @@
+/*
+* Codebox Module
+*
+*/
+
+.codebox {
+  border: 1px solid $light;
+  border-radius: 4px;
+  position: relative;
+  background: $white;
+  margin-top: 40px;
+
+  /*
+  * Codebox Header
+  *
+  */
+
+  header {
+    border-bottom: 1px solid $light;
+    height: 39px;
+
+    h3, .codebox-copy {
+      padding: 0px 20px;
+      margin: 0px;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $gray;
+    }
+
+    h3 {
+      line-height: 39px;
+      float: left;
+    }
+
+    .codebox-copy {
+      height: 39px;
+      float: right;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      appearance: none;
+      border-left: 1px solid $light;
+      background: $white;
+      display: none;
+
+      &.is-visible {
+        display: block;
+      }
+
+      &:hover,
+      &.is-selected,
+      &.zeroclipboard-is-hover {
+        color: $blue-shade-6;
+      }
+    }
+  }
+
+
+  /*
+  * Codebox Body
+  *
+  */
+
+  .codebox-body {
+    margin: 0px;
+    padding: 20px;
+    font-family: Monaco, Consolas, monospace;
+    font-size: 13px;
+    overflow: auto;
+
+    .linenums {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: lighten($blue-shade-6, 30%);
+      line-height: 1.5;
+      font-size: 13px;
+
+      li {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .codebox-overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: $layer-1;
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, 1));
+  }
+}
+
+
+
+/*
+* Sreen Style Language Formatting
+*
+*/
+
+@media screen {
+  /* string content */
+  .str {
+    color: #99cc99;
+  }
+
+  .pln {
+    color: #999;
+  }
+
+  /* a keyword */
+  .kwd {
+    color: #cc99cc;
+  }
+
+  /* a comment */
+  .com {
+    color: #999999;
+  }
+
+  /* a type name */
+  .typ {
+    color: #6699cc;
+  }
+
+  /* a literal value */
+  .lit {
+    color: #f99157;
+  }
+
+  /* punctuation */
+  .pun {
+    color: #cccccc;
+  }
+
+  /* lisp open bracket */
+  .opn {
+    color: #cccccc;
+  }
+
+  /* lisp close bracket */
+  .clo {
+    color: #cccccc;
+  }
+
+  /* a markup tag name */
+  .tag {
+    color: #f2777a;
+  }
+
+  /* a markup attribute name */
+  .atn {
+    color: #f99157;
+  }
+
+  /* a markup attribute value */
+  .atv {
+    color: #66cccc;
+  }
+
+  /* a declaration */
+  .dec {
+    color: #f99157;
+  }
+
+  /* a variable name */
+  .var {
+    color: #f2777a;
+  }
+
+  /* a function name */
+  .fun {
+    color: #6699cc;
+  }
+}
+
+/*
+* Print Style Language Formatting
+*
+*/
+
+@media print, projection {
+
+  .is-preview {
+    max-height: 100% !important;
+  }
+
+  .str {
+    color: #006600;
+  }
+
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+
+  .lit {
+    color: #004444;
+  }
+
+  .pun, .opn, .clo {
+    color: #444400;
+  }
+
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .atn {
+    color: #440044;
+  }
+
+  .atv {
+    color: #006600;
+  }
+}

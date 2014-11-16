@@ -1,0 +1,91 @@
+/*
+* Showcase Module
+*
+* used to describe and showcase elements
+*/
+.showcase {
+  position: relative;
+  padding: 60px 120px;
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    padding: 20px 10px;
+  }
+
+  .showcase-header-top-right,
+  .showcase-header-top-left {
+    position: absolute;
+    top: 40px;
+    z-index: $layer-3;
+  }
+
+  .showcase-header-top-right {
+    right: 60px;
+  }
+
+  .showcase-header-top-left {
+    left: 60px;
+  }
+
+
+  /*
+  * Showcase Titles
+  *
+  */
+
+  .showcase-title,
+  .showcase-sub-title {
+    font-family: $brand-font;
+    font-weight: 100;
+  }
+
+  .showcase-title {
+    font-size: 32px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+  }
+
+  .showcase-sub-title {
+    font-size: 16px;
+    margin: 0px 0px 40px 0px;
+  }
+
+
+  /*
+  * Buttons
+  *
+  */
+
+  .button,
+  .button-dropdown,
+  .button-group {
+    margin: 5px;
+
+    .button,
+    .button-dropdown {
+      margin: 0px;
+    }
+  }
+}
+
+
+/*
+* Showcase with Phone
+*
+* used to showcase a phone module
+*/
+.showcase-phone {
+  min-height: 480px;
+  padding: 160px 430px 60px 40px;
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    padding: 20px 10px;
+  }
+
+  .l-over {
+    max-width: 490px;
+  }
+}

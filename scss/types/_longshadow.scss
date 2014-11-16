@@ -1,0 +1,83 @@
+/*
+* Long Shadow Buttons
+*
+* A visual effect adding a flat shadow to the text of a button
+*/
+
+
+/*
+* Long Shadow Function
+*
+* Loops $length times building a long shadow. Defaults downward right
+*/
+
+@function longshadowFunc($type, $color, $length, $direction: right) {
+  $values: 0px 0px $color;
+
+  //LEFT SHADOW
+  @if $direction == right {
+    @for $i from 1 through $length {
+      $kolor: $color;
+      $values: #{$values}, #{$i}px #{$i}px #{$kolor};
+    }
+  }
+
+  //RIGHT SHADOW
+  @if $direction == left {
+    @for $i from 1 through $length {
+      $kolor: $color;
+      $values: #{$values}, unquote($i * -1 + 'px') #{$i}px #{$kolor};
+    }
+  }
+
+  @return $values;
+}
+
+
+/*
+* LONG SHADOW MIXIN
+*
+*/
+
+@mixin longshadow($direction) {
+  overflow: hidden;
+
+  //CREATE LONG SHADOW WITH COLOR
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+    &#{$ubtn-color-namespace} {
+      text-shadow: longshadowFunc(text, darken($ubtn-background, 10%), 85, $direction);
+
+      &:active,
+      &.active,
+      &.is-active  {
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+      }
+    }
+  }
+}
+
+
+/*
+* Shadow Right
+*
+*/
+
+#{$ubtn-namespace}-longshadow,
+#{$ubtn-namespace}-longshadow-right {
+  @include longshadow(right);
+}
+
+
+/*
+* Shadow Left
+*
+*/
+
+#{$ubtn-namespace}-longshadow-left {
+  @include longshadow(left);
+}

@@ -1,0 +1,115 @@
+/*
+* Hero Module
+*
+*/
+
+
+.hero {
+  position: relative;
+  padding: 60px 40px;
+  background: $blue-shade-6;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  height: 500px;
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    height: auto;
+    padding: 40px 10px;
+  }
+
+  .hero-pitch {
+    width: 320px;
+    margin: 0px auto 30px;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
+
+    @media handheld and (max-width: $phone-breakpoint),
+    screen and (max-device-width: $phone-breakpoint),
+    screen and (max-width: $tablet-breakpoint) {
+      width: auto;
+      margin: 0px 10px 20px 10px;
+    }
+  }
+
+  .github-button {
+    margin: 0 0 -4px 5px;
+  }
+
+  .hero-cta {
+    font-family: $brand-font;
+    font-weight: 500;
+    line-height: 44px;
+    height: 40px;
+  }
+
+  // BADGES
+
+  .hero-badge {
+    border-top: 2px solid $blue-shade-7;
+    position: absolute;
+    z-index: $layer-2;
+    color: $blue-shade-7;
+    text-decoration: none;
+    width: 140px;
+    height: 30px;
+  }
+
+  .hero-unicorn-badge {
+    padding: 8px 0px 0px 30px;
+    bottom: 20px;
+    left: 20px;
+    color: $blue-shade-7;
+    font-size: 12px;
+
+    > i {
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      z-index: $layer-1;
+      font-size: 40px;
+      line-height: 30px;
+      height: 30px;
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    > em {
+      display: block;
+      font-style: normal;
+    }
+
+    @media handheld and (max-width: $phone-breakpoint),
+    screen and (max-device-width: $phone-breakpoint),
+    screen and (max-width: $tablet-breakpoint) {
+      position: relative;
+      display: block;
+      left: auto;
+      bottom: auto;
+      margin: 30px auto 0px auto;
+      color: $blue-shade-8;
+    }
+  }
+
+  .hero-mobile-badge {
+    padding: 8px 10px 0px 10px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-align: left;
+
+    > i {
+      margin: 0px 2px;
+    }
+
+    @media handheld and (max-width: $phone-breakpoint),
+    screen and (max-device-width: $phone-breakpoint),
+    screen and (max-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+}

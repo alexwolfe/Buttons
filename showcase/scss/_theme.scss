@@ -1,0 +1,89 @@
+/*
+* Background Colors
+*
+*/
+
+.background-dark {
+  color: $white;
+  background: $blue-shade-6;
+
+  a {
+    color: $white;
+  }
+}
+.background-light {
+  color: $gray;
+  background: $white;
+}
+.background-inverse {
+  color: $white;
+  background: linear-gradient(90deg, $blue-shade-7 10%, $blue-shade-6 90%); /* W3C */
+
+  a {
+    color: $white;
+  }
+}
+.background-subtle {
+  background: lighten($blue-shade-1, 4%);
+}
+
+
+/*
+* Background Patterns
+*
+*/
+.pattern-p6 {
+  background: url('../images/backgrounds/p6.png') top left repeat;
+}
+.pattern-debut {
+  background: url('../images/backgrounds/debut_light.png') top left repeat;
+}
+
+
+/*
+* Background Shapes
+*
+*/
+
+.background-arrow-top-left {
+  background: url('../images/arrows/white-arrows-left.png') left -200px no-repeat;
+}
+
+.background-arrow-top-right {
+  background: url('../images/arrows/white-arrows-right.png') right -200px no-repeat;
+}
+.background-blue-arrow-top-left {
+  background: url('../images/arrows/blue-arrows-left.png') left -200px no-repeat;
+}
+
+.background-blue-arrow-top-right {
+  background: url('../images/arrows/blue-arrows-right.png') right -200px no-repeat;
+}
+
+
+@media handheld and (max-width: $phone-breakpoint),
+screen and (max-device-width: $phone-breakpoint),
+screen and (max-width: $tablet-breakpoint) {
+
+  .background-arrow-top-left, 
+  .background-arrow-top-right  {
+    background: none;
+  }
+}
+
+
+/*
+* Text Colors
+*
+*/
+.text-nuetral {
+  color: $gray;
+}
+
+.text-light {
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}

@@ -1,0 +1,11 @@
+<!-- JAVASCRIPT TEMPLATING -->
+<script id="template-codebox" type="text/x-handlebars-template">
+  <div  class="codebox">
+    <header class="clearfix">
+      <h3>{{title}}</h3>
+      <button class="codebox-copy" data-clipboard-target="{{id}}"><i class="fa fa-cut"></i> Copy</button>
+    </header>
+
+    <pre class="prettyprint codebox-body linenums" id="{{id}}">{{{code}}}</pre>
+  </div>
+</script>

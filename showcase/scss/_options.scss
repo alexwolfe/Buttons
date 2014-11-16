@@ -1,0 +1,52 @@
+/*
+* Typography
+*
+*/
+$brand-font: "proxima-nova", Helvetica, Verdana, Arial, "Lucida Grande", sans-serif;
+
+/*
+* Colors
+*
+*/
+$white: #FFFFFF;
+$black: #000000;
+$gray: #a9adb1;
+$light: #e8edf2;
+
+$blue-shade-1: #dff1fe;
+$blue-shade-2: #c0e3fe;
+$blue-shade-3: #a0d6fe;
+$blue-shade-4: #80c8fd;
+$blue-shade-5: #61bafd;
+$blue-shade-6: #229ffd;
+$blue-shade-7: #1a7fcc;
+$blue-shade-8: #145f98;
+$blue-shade-9: #0d3f66;
+$blue-shade-10: #062032;
+
+
+/*
+* Layer Indexing
+*
+* Can be use for z-index
+*/
+$layer-1: 1;
+$layer-2: 2;
+$layer-3: 3;
+$layer-4: 4;
+$layer-5: 5;
+$layer-6: 6;
+$layer-7: 7;
+$layer-8: 8;
+$layer-9: 9;
+$layer-10: 10;
+
+
+/*
+* Mobile Layout Breakpoints
+*
+*/
+
+$phone-breakpoint: 480px;
+$tablet-breakpoint: 940px;
+$vertical-breakpoint: 620px;

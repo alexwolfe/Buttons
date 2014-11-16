@@ -1,0 +1,109 @@
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+
+#{$ubtn-namespace}-border {
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+  line-height: $ubtn-height - 4;
+
+  &:hover {
+    background-color: rgba(lighten($ubtn-bgcolor, 10%), .9)
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    box-shadow: none;
+    text-shadow: none;
+
+    @if $ubtn-use-compass {
+      @include transition-property(all);
+      @include transition-duration(.3s);
+    }
+    @else {
+      transition-property: all;
+      transition-duration:.3s;
+    }
+  }
+}
+
+
+/*
+* Border Optional Sizes
+*
+* A slight variation in border thickness
+*/
+#{$ubtn-namespace}-border-thin {
+  @extend #{$ubtn-namespace}-border;
+  border-width: 1px;
+}
+#{$ubtn-namespace}-border-thick {
+  @extend #{$ubtn-namespace}-border;
+  border-width: 3px;
+}
+
+
+
+/*
+* Border Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+
+#{$ubtn-namespace}-border,
+#{$ubtn-namespace}-border-thin,
+#{$ubtn-namespace}-border-thick {
+
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+    &#{$ubtn-color-namespace} {
+      color: $ubtn-background;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(lighten($ubtn-background, 10%), .9);
+        color: rgba($ubtn-color, .9);
+      }
+
+      &:active,
+      &.active,
+      &.is-active {
+        background-color: rgba(desaturate($ubtn-background, 10%), .7);
+        color: rgba($ubtn-color, .5);
+
+        @if $ubtn-use-compass {
+          @include opacity(.3);
+        }
+        @else {
+          opacity: .3;
+        }
+      }
+    }
+  }
+
+  /*
+  * Border Button Size Adjustment
+  *
+  * The line-height must be adjusted to compinsate for
+  * the width of the border.
+  */
+  @each $ubtn-sizes-hash in $ubtn-sizes {
+    $ubtn-size: nth($ubtn-sizes-hash, 1);
+    $ubtn-multiplier : nth($ubtn-sizes-hash, 2);
+    $ubtn-size-namespace: #{$ubtn-namespace}-#{$ubtn-size};
+
+    &#{$ubtn-size-namespace} {
+      line-height: $ubtn-height * $ubtn-multiplier - 4;
+    }
+  }
+}

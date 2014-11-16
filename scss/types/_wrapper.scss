@@ -1,0 +1,23 @@
+/*
+* Button Wrapper
+*
+* A wrap around effect to highlight
+* the shape of the button and offer
+* a subtle visual effect.
+*/
+#{$ubtn-namespace}-wrap {
+  border: 1px solid #e3e3e3;
+  display: inline-block;
+  padding: 9px;
+
+  @if($ubtn-use-compass) {
+    @include background(linear-gradient(#f2f2f2, #FFF));
+    @include border-radius(200px);
+    @include box-shadow(inset 0 1px 3px rgba(0, 0, 0, 0.04));
+  }
+  @else {
+    background: linear-gradient(#f2f2f2, #FFF);
+    border-radius: 200px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+}

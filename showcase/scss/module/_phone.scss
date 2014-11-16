@@ -1,0 +1,83 @@
+.phone {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: $layer-3;
+  height: 800px;
+  width: 440px;
+  background: url("../images/mobile/iphone-6.png") top left no-repeat;
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+
+  .phone-screen {
+    position: absolute;
+    width: 300px;
+    height: 538px;
+    top: 130px;
+    left: 70px;
+    z-index: $layer-2;
+    background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%);
+  }
+
+  .phone-status-bar {
+    background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    z-index: $layer-1;
+  }
+
+  .phone-header {
+    padding: 20px 0px 0px 0px;
+    background: rgba($white, .2);
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+
+    > h3 {
+      font-family: $brand-font;
+      font-weight: 100;
+      font-style: 18px;
+      margin: 0px;
+      padding: 0px;
+      line-height: 44px;
+    }
+
+    .button-left,
+    .button-right {
+      position: absolute;
+      z-index: $layer-1;
+      margin: 0px;
+    }
+
+    .button-left {
+      left: 0px;
+      top: 25px;
+    }
+
+    .button-right {
+      right: 0px;
+      top: 22px;
+    }
+  }
+
+  .phone-body {
+    padding: 10px;
+  }
+
+  .phone-footer {
+    padding: 10px 20px;
+    background: rgba($white, .2);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: $layer-1;
+  }
+}

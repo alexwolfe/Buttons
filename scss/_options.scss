@@ -1,0 +1,85 @@
+/*
+* $ubtn prefix (reserved)
+*
+* This prefix stands for Unicorn Button - ubtn
+* We provide a prefix to the Sass Variables to
+* prevent namespace collisions that could occur if
+* you import buttons as part of your Sass build process.
+* We kindly ask you not to use the prefix $ubtn in your project
+* in order to avoid possilbe name conflicts. Thanks!
+*/
+$ubtn: 'Unicorn Buttons';
+
+
+/*
+* Button Namespace (ex .button or .btn)
+*
+*/
+$ubtn-namespace: '.button' !default; //prefix for all classes
+
+
+/*
+* Button Defaults
+*
+* Some default settings that are used throughout the button library.
+* Changes to these settings will be picked up by all of the other modules.
+* The colors used here are the default colors for the base button (gray).
+* The font size and height are used to set the base size for the buttons.
+* The size values will be used to calculate the larger and smaller button sizes.
+*/
+$ubtn-bgcolor: #EEE !default;
+$ubtn-font-color: #666 !default;
+$ubtn-font-weight: 300 !default;
+$ubtn-font-size: 16px !default;
+$ubtn-height: 40px !default;
+$ubtn-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif  !default;
+
+
+/*
+* Button Colors
+*
+* $ubtn-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
+*/
+$ubtn-colors: ('primary' #1B9AF7  #FFF) ('plain' #FFF #1B9AF7) ('inverse' #222 #EEE) ('action' #A5DE37  #FFF) ('highlight' #FEAE1B #FFF)('caution' #FF4351 #FFF) ('royal' #7B72E9 #FFF) !default;
+
+
+/*
+* Button Shapes
+*
+* $ubtn-shapes is used to generate the different button shapes.
+* Edit or add shapes to the list below and recompile.
+* Each block contains the (name, border-radius).
+* The class is generated using the name: (ex .button-square).
+*/
+$ubtn-shapes: (square 0) (box 10px) (rounded 4px) (pill 200px) (circle 100%) !default;
+// Use a map if you prefer when running Sass 3.3+
+// $ubtn-shapes: (
+//   square: 0,
+//   box: 10px,
+//   rounded: 3px,
+//   pill: 200px,
+//   circle: 100%
+// ) !default;
+
+
+/*
+* Button Sizes
+*
+* $ubtn-sizes is used to generate the different button sizes.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, size multiplier).
+* The class is generated using the name: (ex .button-giant).
+*/
+$ubtn-sizes: (giant 1.75) (jumbo 1.5) (large 1.25) (normal 1) (small .75) (tiny .6) !default;
+// Use a map if you prefer when running Sass 3.3+
+// $ubtn-sizes: (
+//   giant: 2,
+//   jumbo: 1.5,
+//   large: 1.25,
+//   default: 1,
+//   small: .75,
+//   tiny: .5
+// ) !default;

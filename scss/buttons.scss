@@ -1,4 +1,6 @@
 /*! @license
+*
+* Buttons
 * Copyright 2012-2014 Alex Wolfe and Rob Levin
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,4 +16,50 @@
 * limitations under the License.
 */
 
-@import 'partials/buttons'
+
+/*
+* Compass (optional)
+*
+* We recommend the use of autoprefixer instead of Compass
+* when using buttons. However, buttons does support Compass.
+* simply change $ubtn-use-compass to true and uncomment the
+* @import 'compass' code below to use Compass.
+*/
+
+$ubtn-use-compass: false;
+// @import 'compass';
+
+
+/*
+* Required Files
+*
+* These files include the variables and options
+* and base css styles that are required to generate buttons.
+*/
+
+@import 'options';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+
+
+/*
+* Button Types (optional)
+*
+* All of the files below represent the various button
+* types (including shapes & sizes). None of these files
+* are required. Simple remove the uneeded type below and
+* the button type will be excluded from the final build
+*/
+
+@import 'types/shapes';
+@import 'types/border';
+@import 'types/borderless';
+@import 'types/raised';
+@import 'types/3d';
+@import 'types/glow';
+@import 'types/dropdown';
+@import 'types/groups';
+@import 'types/wrapper';
+@import 'types/longshadow';
+@import 'types/sizes';

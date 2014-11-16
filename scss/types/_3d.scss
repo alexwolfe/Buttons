@@ -1,0 +1,91 @@
+/*
+* 3D Buttons
+*
+* These buttons have a heavy three dimensional
+* style that mimics the visual appearance of a
+* real life button.
+*/
+
+#{$ubtn-namespace}-3d {
+  position: relative;
+  top: 0;
+
+  @if($ubtn-use-compass) {
+    @include box-shadow(0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2));
+  }
+  @else {
+    box-shadow: 0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2);
+  }
+
+  &:hover, &:focus {
+    @if($ubtn-use-compass) {
+      @include box-shadow(0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2));
+    }
+    @else {
+      box-shadow: 0 7px 0 darken($ubtn-bgcolor, 20%), 0 8px 3px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    top: 5px;
+
+    @if($ubtn-use-compass) {
+      @include transition-property(all);
+      @include transition-duration(.15s);
+      @include box-shadow(0 2px 0 darken($ubtn-bgcolor, 20%), 0 3px 3px rgba(0, 0, 0, .2));
+    }
+    @else {
+      transition-property: all;
+      transition-duration: .15s;
+      box-shadow: 0 2px 0 darken($ubtn-bgcolor, 20%), 0 3px 3px rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+
+/*
+* 3D Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+#{$ubtn-namespace}-3d {
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+    // .button-border-primary .button-border-action etc.
+    &#{$ubtn-color-namespace} {
+      @if($ubtn-use-compass) {
+        @include box-shadow(0 7px 0 darken($ubtn-background, 10%), 0 8px 3px rgba(0, 0, 0, .30));
+      }
+      @else {
+        box-shadow: 0 7px 0 darken($ubtn-background, 10%), 0 8px 3px rgba(0, 0, 0, .30);
+      }
+
+      &:hover, &:focus {
+        @if($ubtn-use-compass) {
+          @include box-shadow(0 7px 0 darken($ubtn-background, 12%), 0 8px 3px rgba(0, 0, 0, .30));
+        }
+        @else {
+          box-shadow: 0 7px 0 darken($ubtn-background, 12%), 0 8px 3px rgba(0, 0, 0, .30);
+        }
+      }
+
+      &:active,
+      &.active,
+      &.is-active {
+        @if($ubtn-use-compass) {
+          @include box-shadow(0 2px 0 darken($ubtn-background, 20%), 0 4px 3px rgba(0, 0, 0, .2));
+        }
+        @else {
+          box-shadow: 0 2px 0 darken($ubtn-background, 20%), 0 3px 3px rgba(0, 0, 0, .2);
+        }
+      }
+    }
+  }
+}

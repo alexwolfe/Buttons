@@ -1,0 +1,31 @@
+/*
+* Buton Groups
+*
+* A group of related buttons
+* displayed edge to edge
+*/
+
+#{$ubtn-namespace}-group {
+  @include clearfix;
+  position: relative;
+  display: inline-block;
+
+  #{$ubtn-namespace},
+  #{$ubtn-namespace}-dropdown {
+    float: left;
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+      border-right: none;
+    }
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

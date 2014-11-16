@@ -2,3 +2,5 @@
 .DS_Store
 *.psd
 node_modules
+showcase/css/showcase.css.map
+showcase-dist

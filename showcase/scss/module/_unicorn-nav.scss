@@ -1,0 +1,35 @@
+.unicorn-nav {
+  background: $white;
+
+  h1, h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  h1 {
+    float: left;
+
+    a {
+      text-decoration: none;
+      color: $blue-shade-6;
+      text-transform: uppercase;
+      padding: 0px 10px;
+      float: left;
+    }
+  }
+
+  h2 {
+    float: right;
+    color: $gray;
+    padding: 0px 10px;
+  }
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}

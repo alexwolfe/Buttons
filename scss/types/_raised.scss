@@ -1,0 +1,85 @@
+/*
+* Raised Buttons
+*
+* A classic looking button that offers
+* great depth and affordance.
+*/
+#{$ubtn-namespace}-raised {
+  border-color: darken($ubtn-bgcolor, 5%);
+  border-style: solid;
+  border-width: 1px;
+  line-height: $ubtn-height - 2;
+
+  @if($ubtn-use-compass) {
+    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 2px rgba(0, 0, 0, .15));
+    @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 5%), darken($ubtn-bgcolor, 5%)));
+  }
+  @else {
+    background: linear-gradient(lighten($ubtn-bgcolor, 3%), darken($ubtn-bgcolor, 5%));
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .15);
+  }
+
+  &:hover, &:focus {
+    @if($ubtn-use-compass) {
+      @include background(linear-gradient(top,  lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 7%)));
+    }
+    @else {
+      background: linear-gradient(top,  lighten($ubtn-bgcolor, 8%), darken($ubtn-bgcolor, 7%));
+    }
+  }
+
+  &:active,
+  &.active,
+  &.is-active {
+    background: desaturate($ubtn-bgcolor, 10%);
+
+    @if($ubtn-use-compass) {
+      @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1));
+    }
+    @else {
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .2), 0px 1px 0px rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+
+/*
+* Raised Button Colors
+*
+* Create colors for raised buttons
+*/
+#{$ubtn-namespace}-raised {
+  @each $ubtn-color in $ubtn-colors {
+    $ubtn-name: nth($ubtn-color, 1);
+    $ubtn-background: nth($ubtn-color, 2);
+    $ubtn-color: nth($ubtn-color, 3);
+    $ubtn-color-namespace: $ubtn-namespace + '-' + $ubtn-name;
+
+    &#{$ubtn-color-namespace} {
+      border-color: darken($ubtn-background, 5%);
+
+      @if($ubtn-use-compass) {
+        @include background(linear-gradient(top,  lighten($ubtn-background, 5%), darken($ubtn-background, 5%)));
+      }
+      @else {
+        background: linear-gradient(lighten($ubtn-background, 5%), darken($ubtn-background, 5%));
+      }
+
+      &:hover,
+      &:focus {
+        @if($ubtn-use-compass) {
+          @include background(linear-gradient(top,  lighten($ubtn-background, 8%), darken($ubtn-background, 7%)));
+        }
+        @else {
+          background: linear-gradient(top,  lighten($ubtn-background, 8%), darken($ubtn-background, 7%));
+        }
+      }
+      &:active,
+      &.active,
+      &.is-active  {
+        border-color: darken($ubtn-background, 10%);
+        background: desaturate($ubtn-background, 10%);
+      }
+    }
+  }
+}

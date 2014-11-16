@@ -1,0 +1,55 @@
+.docs {
+  position: relative;
+  padding: 120px 120px 20px 120px;
+  font-family: $brand-font;
+
+
+
+  > header {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    padding: 0px 40px;
+    background: rgba($white, .9);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+    border-radius: 0px 3px 3px 0px;
+
+    .docs-title {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 60px;
+      padding: 0px;
+      margin: 0px;
+      color: darken($gray, 25%);
+    }
+  }
+
+  .docs-content {
+    > p {
+      line-height: 1.7;
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    .docs-list > li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media handheld and (max-width: $phone-breakpoint),
+  screen and (max-device-width: $phone-breakpoint),
+  screen and (max-width: $tablet-breakpoint) {
+    padding: 80px 10px 20px 10px;
+
+    header {
+      top: 20px;
+
+      .docs-title {
+        font-size: 18px;
+        line-height: 40px;
+      }
+    }
+  }
+}
