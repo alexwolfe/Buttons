@@ -37,7 +37,7 @@ View the  [showcase demo](http://unicorn-ui.com/buttons/) to see the buttons in 
 
 
 ## Bower Installation
-1. If you're using [Bower](http://bower.io/) you can run  `bower install buttons`
+1. If you're using [Bower](http://bower.io/) you can run  `bower install Buttons`
 
 ## Transitioning From Buttons 1.0 to Buttons 2.0
 We've made some major improvements to the Buttons library. In order to integrate buttons into your current project you'll need to make the following changes:
