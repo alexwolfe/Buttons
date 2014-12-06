@@ -88,7 +88,7 @@
       @include box-shadow(0 1px 2px rgba(0, 0, 0, .10) !important);
       @include opacity(.8 !important);
     }
-    else {
+    @else {
       box-shadow: none !important;
       opacity:.8 !important;
     }
