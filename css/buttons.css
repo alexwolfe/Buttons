@@ -1298,7 +1298,7 @@
 .button-group {
   position: relative;
   display: inline-block; }
-  .button-group:after, .button-group:before {
+  .button-group:after {
     content: " ";
     display: block;
     clear: both; }

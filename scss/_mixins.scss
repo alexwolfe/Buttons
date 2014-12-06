@@ -37,9 +37,9 @@
 * Clears floats inside the container
 */
 @mixin clearfix {
-  &:after, &:before {
-		content: " ";
-		display: block;
-		clear: both;
-	}
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 }
