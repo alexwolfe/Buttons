@@ -686,21 +686,21 @@ table {
 *
 */
 .background-dark {
-  color: white;
+  color: #FFFFFF;
   background: #229ffd; }
   .background-dark a {
-    color: white; }
+    color: #FFFFFF; }
 
 .background-light {
   color: #a9adb1;
-  background: white; }
+  background: #FFFFFF; }
 
 .background-inverse {
-  color: white;
+  color: #FFFFFF;
   background: linear-gradient(90deg, #1a7fcc 10%, #229ffd 90%);
   /* W3C */ }
   .background-inverse a {
-    color: white; }
+    color: #FFFFFF; }
 
 .background-subtle {
   background: #f3faff; }
@@ -743,9 +743,9 @@ table {
   color: #a9adb1; }
 
 .text-light {
-  color: white; }
+  color: #FFFFFF; }
   .text-light a {
-    color: white; }
+    color: #FFFFFF; }
 
 .top-nav {
   display: none;
@@ -809,7 +809,7 @@ table {
         background: white; }
 
 .unicorn-nav {
-  background: white; }
+  background: #FFFFFF; }
   .unicorn-nav h1, .unicorn-nav h2 {
     margin: 0px;
     padding: 0px;
@@ -850,9 +850,9 @@ table {
   font-weight: 100;
   position: relative;
   border-radius: 100%;
-  background: white;
+  background: #FFFFFF;
   color: #145f98;
-  text-shadow: 0px 1px 0px white;
+  text-shadow: 0px 1px 0px #FFFFFF;
   -webkit-box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 7px 0px #e0e0e0, 0px 12px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer; }
@@ -1079,7 +1079,7 @@ table {
     top: 130px;
     left: 70px;
     z-index: 2;
-    background: linear-gradient(90deg, #9d50bb 10%, #6e48aa 90%); }
+    background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%); }
   .phone .phone-status-bar {
     background: url("../images/mobile/iphone-status-bar.png") top left no-repeat;
     position: absolute;
@@ -1233,7 +1233,7 @@ table {
   border: 1px solid #e8edf2;
   border-radius: 4px;
   position: relative;
-  background: white;
+  background: #FFFFFF;
   margin-top: 40px;
   /*
   * Codebox Header
@@ -1264,7 +1264,7 @@ table {
       font-size: 12px;
       appearance: none;
       border-left: 1px solid #e8edf2;
-      background: white;
+      background: #FFFFFF;
       display: none; }
       .codebox header .codebox-copy.is-visible {
         display: block; }
