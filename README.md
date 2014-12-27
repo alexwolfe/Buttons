@@ -43,7 +43,7 @@ View the  [showcase demo](http://unicorn-ui.com/buttons/) to see the buttons in 
 We've made some major improvements to the Buttons library. In order to integrate buttons into your current project you'll need to make the following changes:
 
 1. Compass has been replaced with [autoprefixer](https://github.com/postcss/autoprefixer). Compass is not recommended but it is still supported.
-2. Button colors are now complete independent (ex. button-primary). We no longer have classes like <code>button-flat-primary</code>, so to achieve this you now simply add <code>button-flat button-primary</code>
+2. Button colors are now completely independent (ex. button-primary). We no longer have classes like <code>button-flat-primary</code>, so to achieve this you now simply add <code>button-flat button-primary</code>
 3. Buttons styles are now independent (ex. button-flat, button-3d, etc.). You can apply these styles and they will automatically pick up the color attached to the button (ex. button-primary button-3d)
 
 ## Customize Buttons (Recommended uses Sass & Autoprefixer)
