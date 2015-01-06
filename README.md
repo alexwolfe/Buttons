@@ -57,14 +57,14 @@ We've made some major improvements to the Buttons library. In order to integrate
 0. Anytime you save your changes the Buttons showcase page will live reload with your changes!
 
 ## Customize Buttons with only Sass or Compass
-0. Clone the Buttons repo
-0. Make sure you have Sass installed
-0. Run `npm install` from your terminal
-0. Edit the `_options.scss` with your own custom values (see example values below)
-0. Buttons now works with–or without–Compass. So choose one of the following examples accordingly and run from the command line in Buttons's root directory:
-  For Sass run: `$ sass --watch --scss scss/buttons.scss:css/buttons.css`
+0. Clone the Buttons repo.
+0. Make sure you have Sass installed.
+0. Run `npm install` from your terminal.
+0. Edit the `_options.scss` with your own custom values (see example values below).
+0. Buttons now works with or without Compass, so choose one of the following examples accordingly and run from the command line in Buttons's root directory:  
+  For Sass run: `$ sass --watch --scss scss/buttons.scss:css/buttons.css`  
   For Compass run: `$ compass watch`
-0. The `css/buttons.css` file should now be updated
+0. The `css/buttons.css` file should now be updated.
 
 ## Button Options
 
