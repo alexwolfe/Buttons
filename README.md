@@ -49,11 +49,11 @@ We've made some major improvements to the Buttons library. In order to integrate
 ## Customize Buttons (Recommended uses Sass & Autoprefixer)
 0. Clone the Buttons repository.
 0. Make sure you have [node.js](http://nodejs.org/) installed.
-0. From the command line cd into the root for the Buttons directory
+0. From the command line `cd` into the root for the Buttons directory.
 0. Run ```npm install``` or ```sudo npm install``` (depending on your system permissions).
-0. On the command line run ```grunt dev```, this will open a browser with Buttons
-0. Locate **scss** in the root directory
-0. You can modify the _options.scss where you can customize colors, typography, and …
+0. On the command line run ```grunt dev```; this will open a browser with Buttons.
+0. Locate **scss** in the root directory.
+0. You can modify the _options.scss file where you can customize colors, typography, etc.
 0. Anytime you save your changes the Buttons showcase page will live reload with your changes!
 
 ## Customize Buttons with only Sass or Compass
