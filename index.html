@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="A variety of highly customizable CSS Buttons built with Sass and Compass. The Buttons framework is ready to use and easy to install.">
     <meta name="viewport" content="width=device-width">
-    <link href='//fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--<link href='//fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
 
@@ -21,15 +23,16 @@
     <title>Buttons - A CSS button library built with Sass and Compass</title>
 </head>
 <body id="home">
-   <!-- FACEBOOK LIKE BUTTON -->
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
+    <!-- FACEBOOK LIKE BUTTON -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
             js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=162853010460019";
             fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        }(document, 'script', 'facebook-jssdk'));</script>
 
 
     <nav id="main-nav">
@@ -53,8 +56,8 @@
 
     <header class="clear">
         <hgroup>
-          <h1>Buttons</h1>
-          <h2>A CSS button library built with Sass &amp; Compass</h2>
+            <h1>Buttons</h1>
+            <h2>A CSS button library built with Sass &amp; Compass</h2>
         </hgroup>
 
         <span class="button-wrap button-download">
@@ -70,7 +73,7 @@
 
             <!-- TWITTER TWEET BUTTON -->
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alexwolfe.github.io/Buttons/" data-text="Buttons - a customizable CSS button library built with Sass &amp; Compass">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
 
             <!-- FACEBOOK LIKE BUTTON -->
             <div class="fb-like" data-href="http://alexwolfe.github.io/Buttons/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
@@ -479,10 +482,8 @@
          &lt;li class=&quot;button-dropdown-divider&quot;&gt;&lt;a href=&quot;http://google.com&quot;&gt;Google&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/span&gt;
-
 &lt;span class=&quot;button-dropdown&quot; data-buttons=&quot;dropdown&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary&quot;&gt; press me &lt;i class=&quot;fa fa-caret-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-
     &lt;!-- Dropdown Below Button --&gt;
     &lt;ul class=&quot;button-dropdown-menu-below&quot;&gt;
          &lt;li&gt;&lt;a href=&quot;http://airwolfe.com&quot;&gt;AirWolfe.com&lt;/a&gt;&lt;/li&gt;
@@ -490,10 +491,8 @@
          &lt;li class=&quot;button-dropdown-divider&quot;&gt;&lt;a href=&quot;http://google.com&quot;&gt;Google&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/span&gt;
-
 &lt;span class=&quot;button-dropdown&quot; data-buttons=&quot;dropdown&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary&quot;&gt; press me &lt;i class=&quot;fa fa-caret-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-
     &lt;!-- Dropdown Above Button --&gt;
     &lt;ul class=&quot;button-dropdown-menu-above&quot;&gt;
          &lt;li&gt;&lt;a href=&quot;http://airwolfe.com&quot;&gt;AirWolfe.com&lt;/a&gt;&lt;/li&gt;
@@ -517,15 +516,15 @@
 
             <section class="gallery">
                 <a href="#" class="button button-block button-rounded button-large">press me</a>
-                <br/>
+                <br />
                 <a href="#" class="button button-block button-rounded button-primary button-large">press me</a>
-                <br/>
+                <br />
                 <a href="#" class="button button-block button-rounded button-action button-large">press me</a>
-                <br/>
+                <br />
                 <a href="#" class="button button-block button-rounded button-highlight button-large">press me</a>
-                <br/>
+                <br />
                 <a href="#" class="button button-block button-rounded button-caution button-large">press me</a>
-                <br/>
+                <br />
                 <a href="#" class="button button-block button-rounded button-royal button-large">press me</a>
             </section>
 
@@ -558,7 +557,8 @@
 &lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary button-large&quot;&gt;press me&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary&quot;&gt;press me&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary button-small&quot;&gt;press me&lt;/a&gt;
-&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary button-tiny&quot;&gt;press me&lt;/a&gt;</pre></section>
+&lt;a href=&quot;#&quot; class=&quot;button button-rounded button-flat-primary button-tiny&quot;&gt;press me&lt;/a&gt;</pre>
+        </section>
 
 
 
@@ -688,11 +688,11 @@
             <section class="gallery">
 
                 <ul>
-                    <li><input type="submit" value="press me" class="button button-pill button-primary"/></li>
+                    <li><input type="submit" value="press me" class="button button-pill button-primary" /></li>
                     <li><button class="button button-pill button-primary">press me</button>  </li>
 
                     <!-- DISABLED BUTTONS -->
-                    <li><input  disabled type="submit"  value="press me" class="button button-pill button-primary"/></li>
+                    <li><input disabled type="submit" value="press me" class="button button-pill button-primary" /></li>
                     <li><button disabled class="button  button-pill button-primary">press me</button>  </li>
                     <li><button disabled class="button button-pill button-flat-primary">press me</button>  </li>
                     <li><a href="#" class="button disabled button-pill button-primary ">press me</a></li>
@@ -702,11 +702,39 @@
             <pre class="prettyprint linenums">
 &lt;input type=&quot;submit&quot; value=&quot;press me&quot; class=&quot;button button-pill button-primary&quot;/&gt;
 &lt;button class=&quot;button button-pill button-primary&quot;&gt;press me&lt;/button&gt;
-
 &lt;!-- DISABLED BUTTONS --&gt;
 &lt;input  disabled type=&quot;submit&quot;  value=&quot;press me&quot; class=&quot;button button-pill button-primary&quot;/&gt;
 &lt;button disabled class=&quot;button  button-pill button-primary&quot;&gt;press me&lt;/button&gt;
 &lt;a href=&quot;#&quot; class=&quot;button disabled button-pill button-primary&quot;&gt;press me&lt;/a&gt;</pre>
+        </section>
+
+
+        <section id="form" class="showcase">
+            <hgroup>
+                <h3>Modern Button</h3>
+            </hgroup>
+
+            <section class="gallery">
+
+                <ul>
+                    <li><input type="submit" value="press me" class="modern-button" /></li>
+                    <li><button class="modern-button">press me</button>  </li>
+
+                    <!-- DISABLED BUTTONS -->
+                    <li><input disabled type="submit" value="press me" class="modern-button" /></li>
+                    <li><button disabled class="modern-button">press me</button>  </li>
+                    <li><button disabled class="modern-button">press me</button></li>
+                </ul>
+            </section>
+
+            <pre class="prettyprint linenums">
+&lt;input type=&quot;submit&quot; value=&quot;press me&quot; class=&quot;modern-button&quot;/&gt;
+&lt;button class=&quot;modern-button&quot;&gt;press me&lt;/button&gt;
+&lt;!-- DISABLED BUTTONS --&gt;
+&lt;input  disabled type=&quot;submit&quot;  value=&quot;press me&quot; class=&quot;modern-button&quot;/&gt;
+&lt;button disabled class=&quot;modern-button&quot;&gt;press me&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;modern-button&quot;&gt;press me&lt;/a&gt;
+</pre>
         </section>
 
     </section>
@@ -716,35 +744,38 @@
         <section class="instructions">
             <h2>Getting Started</h2>
             <section class="setup">
-                <h3><i class="fa fa-code"></i> Setup Buttons</h2>
-                <ol class="steps">
-                    <li>
-                        <a class="button button-rounded button-flat-primary button-tiny" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> Download Buttons</a> and add files to your website.
-                    </li>
-                    <li> Add css in the head of your webpage.
+                <h3>
+                    <i class="fa fa-code"></i> Setup Buttons</h2>
+                    <ol class="steps">
+                        <li>
+                            <a class="button button-rounded button-flat-primary button-tiny" href="https://github.com/alexwolfe/Buttons/raw/gh-pages/Buttons.zip"><i class="fa fa-download"></i> Download Buttons</a> and add files to your website.
+                        </li>
+                        <li>
+                            Add css in the head of your webpage.
 <pre class="prettyprint linenums">&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;css/buttons.css&quot;&gt;
-
 &lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;js/buttons.js&quot;&gt;&lt;/script&gt;</pre>
 
-                    <em>* You only need the font-awesome css if you're using icons</em><br/>
-                    <em>* You only need jquery &amp; buttons.js if you're using dropdown buttons</em>
-                    </li>
-                    <li>Create buttons in your html.</li>
-                </ol>
+                            <em>* You only need the font-awesome css if you're using icons</em><br />
+                            <em>* You only need jquery &amp; buttons.js if you're using dropdown buttons</em>
+                        </li>
+                        <li>Create buttons in your html.</li>
+                    </ol>
             </section>
 
             <section class="customize">
-                <h3><i class="fa fa-github"></i> Customize Buttons</h2>
-                <ol class="steps">
-                    <li><a class="button button-rounded button-flat-action button-tiny" href="https://github.com/alexwolfe/Buttons/"><i class="fa fa-github"></i> Fork or Download</a> the Buttons project on github.
-                    </li>
-                    <li>Make sure you have <a target="_blank" href="http://sass-lang.com/download.html">Sass</a> and <a target="_blank" href="http://compass-style.org/install/">Compass</a> installed.</li>
-                    <li>Edit the _options.scss with your own custom values</li>
-                    <li>In the root of the Buttons directory type <strong>compass watch</strong> on the command line.</li>
-                    <li>The buttons.css file should now be updated</li>
-                </ol>
+                <h3>
+                    <i class="fa fa-github"></i> Customize Buttons</h2>
+                    <ol class="steps">
+                        <li>
+                            <a class="button button-rounded button-flat-action button-tiny" href="https://github.com/alexwolfe/Buttons/"><i class="fa fa-github"></i> Fork or Download</a> the Buttons project on github.
+                        </li>
+                        <li>Make sure you have <a target="_blank" href="http://sass-lang.com/download.html">Sass</a> and <a target="_blank" href="http://compass-style.org/install/">Compass</a> installed.</li>
+                        <li>Edit the _options.scss with your own custom values</li>
+                        <li>In the root of the Buttons directory type <strong>compass watch</strong> on the command line.</li>
+                        <li>The buttons.css file should now be updated</li>
+                    </ol>
             </section>
             <div class="clear"></div>
         </section>
@@ -765,13 +796,15 @@
     <script type="text/javascript" src="js/buttons.js"></script>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-41954774-1', 'alexwolfe.github.io');
-      ga('send', 'pageview');
+        ga('create', 'UA-41954774-1', 'alexwolfe.github.io');
+        ga('send', 'pageview');
 
     </script>
 </body>
