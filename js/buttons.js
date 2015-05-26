@@ -111,5 +111,22 @@
   $(document).on('click', '[data-buttons=dropdown] > a', function(e) {
     e.preventDefault();
   });
+  
+  /* Barzon Added 20150526 */
+  //ON MOUSEENTER EVENT ADDED IF WANT TO DISPLAY MENU
+    $(document).on('mouseenter', '[data-buttons=dropdown]', function () {
+        $('[data-buttons=dropdown]').each(function () {
+            $(this).find('ul').hide();
+        });
+        $(this).find('ul').show();
+    });
+    $(document).on('click', function () {
+        $('[data-buttons=dropdown]').each(function () {                        
+            if ($(this).find('ul').css('display') === 'block') {
+                $(this).find('ul').hide();
+            }
+        });
+    });
+/* Barzon End */
 
 })( jQuery, window, document);
