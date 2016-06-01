@@ -70,7 +70,7 @@ We've made some major improvements to the Buttons library. In order to integrate
 
 To edit Buttons simply change values within the `_options.scss` file. After you make your edits recompile your sass file and your changes will get processed.
 
-* **$ubtn:** This prefix stands for Unicorn Button and prevents namespace collisions that could occur if you import buttons as part of your Sass build process. We kindly ask you not to use the prefix $ubtn in your project in order to avoid possilbe name conflicts. Thanks!
+* **$ubtn:** This prefix stands for Unicorn Button and prevents namespace collisions that could occur if you import buttons as part of your Sass build process. We kindly ask you not to use the prefix $ubtn in your project in order to avoid possible name conflicts. Thanks!
 * **$ubtn-namespace:**  Desired CSS namespace for your buttons (default .button)
 * **$ubtn-glow-namespace:** Desired CSS namespace for your glow effect (default .glow)
 * **$ubtn-colors:** List of colors in format like `(name, background, color)`.
