@@ -43,3 +43,17 @@
     clear: both;
   }
 }
+
+
+/*
+* Center Align
+*
+* Centers element inside it's container
+*/
+@mixin center_align($ca-width) {
+  position: relative;
+  width: $ca-width;
+  left: 50%;
+  margin-left: $ca-width * -0.5;
+}
+
