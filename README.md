@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
 
-#Buttons 2.0
+# Buttons 2.0
 
 Buttons is a highly customizable production ready mobile web and desktop css button library. Buttons is a free  open source project created using Sass.
 
