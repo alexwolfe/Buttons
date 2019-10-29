@@ -14,7 +14,7 @@ Authors [Alex Wolfe](https://twitter.com/alexwolfe) and [Rob Levin](https://twit
 
 View the  [showcase demo](http://unicorn-ui.com/buttons/) to see the buttons in action. The showcase provides a full list of examples along with code snippets to speed up development.
 
-[![Buttons 2.0 Showcase](https://www.dropbox.com/s/y9cbmxmih6uwrmm/buttons-showcase.png?dl=1 "Buttons 2.0 Showcase")](http://unicorn-ui.com/buttons/)
+[Buttons 2.0 Showcase](http://unicorn-ui.com/buttons/)
 
 
 
