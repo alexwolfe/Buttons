@@ -728,7 +728,7 @@
           box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15); }
   .button-raised:hover, .button-raised:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
-    background: linear-gradient(top, white, gainsboro); }
+    background: linear-gradient(to bottom, white, gainsboro); }
   .button-raised:active, .button-raised.active, .button-raised.is-active {
     background: #eeeeee;
     -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;
@@ -745,7 +745,7 @@
   background: linear-gradient(#34a5f8, #088ef0); }
   .button-raised.button-primary:hover, .button-raised.button-primary:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#42abf8), to(#0888e6));
-    background: linear-gradient(top, #42abf8, #0888e6); }
+    background: linear-gradient(to bottom, #42abf8, #0888e6); }
   .button-raised.button-primary:active, .button-raised.button-primary.active, .button-raised.button-primary.is-active {
     border-color: #0880d7;
     background: #2798eb; }
@@ -755,7 +755,7 @@
   background: linear-gradient(white, #f2f2f2); }
   .button-raised.button-plain:hover, .button-raised.button-plain:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ededed));
-    background: linear-gradient(top, white, #ededed); }
+    background: linear-gradient(to bottom, white, #ededed); }
   .button-raised.button-plain:active, .button-raised.button-plain.active, .button-raised.button-plain.is-active {
     border-color: #e6e6e6;
     background: white; }
@@ -765,7 +765,7 @@
   background: linear-gradient(#2f2f2f, #151515); }
   .button-raised.button-inverse:hover, .button-raised.button-inverse:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#363636), to(#101010));
-    background: linear-gradient(top, #363636, #101010); }
+    background: linear-gradient(to bottom, #363636, #101010); }
   .button-raised.button-inverse:active, .button-raised.button-inverse.active, .button-raised.button-inverse.is-active {
     border-color: #090909;
     background: #222222; }
@@ -775,7 +775,7 @@
   background: linear-gradient(#afe24d, #9ad824); }
   .button-raised.button-action:hover, .button-raised.button-action:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#b5e45a), to(#94cf22));
-    background: linear-gradient(top, #b5e45a, #94cf22); }
+    background: linear-gradient(to bottom, #b5e45a, #94cf22); }
   .button-raised.button-action:active, .button-raised.button-action.active, .button-raised.button-action.is-active {
     border-color: #8bc220;
     background: #a1d243; }
@@ -785,7 +785,7 @@
   background: linear-gradient(#feb734, #fea502); }
   .button-raised.button-highlight:hover, .button-raised.button-highlight:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#febc44), to(#f49f01));
-    background: linear-gradient(top, #febc44, #f49f01); }
+    background: linear-gradient(to bottom, #febc44, #f49f01); }
   .button-raised.button-highlight:active, .button-raised.button-highlight.active, .button-raised.button-highlight.is-active {
     border-color: #e59501;
     background: #f3ab26; }
@@ -795,7 +795,7 @@
   background: linear-gradient(#ff5c69, #ff2939); }
   .button-raised.button-caution:hover, .button-raised.button-caution:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#ff6c77), to(#ff1f30));
-    background: linear-gradient(top, #ff6c77, #ff1f30); }
+    background: linear-gradient(to bottom, #ff6c77, #ff1f30); }
   .button-raised.button-caution:active, .button-raised.button-caution.active, .button-raised.button-caution.is-active {
     border-color: #ff1022;
     background: #f64c59; }
@@ -805,7 +805,7 @@
   background: linear-gradient(#9088ec, #665ce6); }
   .button-raised.button-royal:hover, .button-raised.button-royal:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#9c95ef), to(#5e53e4));
-    background: linear-gradient(top, #9c95ef, #5e53e4); }
+    background: linear-gradient(to bottom, #9c95ef, #5e53e4); }
   .button-raised.button-royal:active, .button-raised.button-royal.active, .button-raised.button-royal.is-active {
     border-color: #5246e2;
     background: #827ae1; }
